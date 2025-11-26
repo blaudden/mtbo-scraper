@@ -1,0 +1,43 @@
+# Test Events for MTBO Scraper
+
+# SWE-51338: Single day event with lists (Entry, Start, Result) and Livelox
+# Used for: List counting, Livelox extraction, General parsing
+https://eventor.orientering.se/Events/Show/51338
+
+# SWE-50597: Multi-day event (O-Ringen)
+# Used for: Multi-day event parsing, Stage extraction
+https://eventor.orientering.se/Events/Show/50597
+
+# SWE-56468: Future event (Skinkloppet)
+# Used for: Info text extraction, Event with no lists yet
+https://eventor.orientering.se/Events/Show/56468
+
+# NOR-21169: Norwegian event
+# Used for: Norwegian Eventor parsing, Attribute mapping
+https://eventor.orientering.no/Events/Show/21169
+
+# IOF-8558: IOF Event (WMMTBOC)
+# Used for: IOF Eventor parsing, International attributes
+https://eventor.orienteering.org/Events/Show/8558
+
+# IOF-8277: IOF Multi-day (CX80 World Cup)
+# Used for: IOF Multi-day parsing
+https://eventor.orienteering.org/Events/Show/8277
+
+# SWE-54361: Single day event
+# Used for: Basic single day parsing
+https://eventor.orientering.se/Events/Show/54361
+
+# SWE-46200: Event with large lists
+# Used for: Performance testing, Large list parsing
+https://eventor.orientering.se/Events/Show/46200
+
+# IOF-8346: Another IOF event
+# Used for: Additional IOF testing
+https://eventor.orienteering.org/Events/Show/8346
+
+# SWE-54359: Another SWE single event
+# Used for: Additional SWE testing
+https://eventor.orientering.se/Events/Show/54359
+https://eventor.orientering.se/Events/Show/46200 # SWE multi-race (5 stages) with Livelox per race
+https://eventor.orienteering.org/Events/Show/7490 # IOF multi-race event (5 races)
