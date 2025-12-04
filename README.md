@@ -6,7 +6,7 @@ The MTBO Scraper is a Python-based tool designed to collect Mountain Bike Orient
 
 ## Output
 
-The scraper produces a JSON file (default: `events.json`) containing a list of events. Each event includes:
+The scraper produces a JSON file (default: `mtbo_events.json`) containing a list of events. Each event includes:
 
 - Stable ID (`{Country}-{EventId}`)
 - Name, Date, Organizers, Country, Status

@@ -30,7 +30,7 @@ EVENTOR_CONFIGS = [
 @click.command()
 @click.option('--start-date', help='Start date (YYYY-MM-DD)')
 @click.option('--end-date', help='End date (YYYY-MM-DD)')
-@click.option('--output', default='events.json', help='Output JSON file')
+@click.option('--output', default='mtbo_events.json', help='Output JSON file')
 def main(start_date, end_date, output):
     """MTBO Eventor Scraper"""
     logger.info("Starting MTBO Scraper")
