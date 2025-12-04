@@ -34,7 +34,7 @@ The scraper extracts event details, document links, entry statistics, and precis
 
 4.  **Storage (`src.storage.Storage`)**:
 
-    - Manages persistence to `events.json`.
+    - Manages persistence to `mtbo_events.json`.
     - Merges new data with existing data to prevent duplicates while updating records.
 
 5.  **Controller (`src.main`)**:
@@ -48,7 +48,7 @@ The scraper extracts event details, document links, entry statistics, and precis
 3.  **Parser** extracts event summaries.
 4.  **Scraper** fetches detail pages for each event.
 5.  **Parser** extracts full details and map data.
-6.  **Storage** saves the aggregated list to `events.json`.
+6.  **Storage** saves the aggregated list to `mtbo_events.json`.
 
 ## Map Extraction Logic
 
