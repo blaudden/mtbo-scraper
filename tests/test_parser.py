@@ -322,3 +322,16 @@ def test_info_extraction_with_embargo_present(parser):
     
     assert "Information och anmälan hittas på" in event.info_text
     assert "The competition area is embargoed" not in event.info_text
+
+def test_parse_swe_classes(parser):
+    """Test parsing classes from SWE-57105 which has 'Åldersklasser' and 'Öppna klasser'"""
+    html = load_test_file("SWE_57105_main.html")
+    event = Event(event_id="SWE-57105", name="Test", start_date="2026-08-15", end_date="2026-08-15", organizers=[], country="SWE", status="Active", url="")
+    
+    parser.parse_event_details(html, event)
+    
+    assert event.classes, "Should extract classes"
+    assert "D21" in event.classes
+    assert "H21" in event.classes
+    assert "Öppen lång" in event.classes
+
