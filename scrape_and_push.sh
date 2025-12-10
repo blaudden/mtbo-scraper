@@ -12,7 +12,7 @@ cd "$(dirname "$0")"
 
 # 1. Run Scraper
 echo "Starting scrape at $(date)" >> "$LOG_FILE"
-./scrape_now.sh --output "$OUTPUT_FILE" >> "$LOG_FILE" 2>&1
+./scrape_now.sh --output "$OUTPUT_FILE" "$@" >> "$LOG_FILE" 2>&1
 EXIT_CODE=$?
 
 if [ $EXIT_CODE -ne 0 ]; then
