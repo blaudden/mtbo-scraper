@@ -370,14 +370,18 @@ class EventorParser:
                 if "no classes" in table.get_text().lower():
                     event.classes = []
                 else:
-                    # Extract classes from rows
-                    # Usually "Classes" is a key
-                    classes_row = table.find('th', string=re.compile(r'Classes', re.I))
-                    if classes_row:
-                        td = classes_row.find_next_sibling('td')
+                    # Extract classes from ALL rows in the table
+                    # This handles "Classes", "Age classes", "Open classes", etc.
+                    all_classes = []
+                    for row in table.find_all('tr'):
+                        td = row.find('td')
                         if td:
                             # Split by comma or newlines
-                            event.classes = [c.strip() for c in td.get_text(separator=',').split(',') if c.strip()]
+                            # Some tables use <br> for separation, some use commas
+                            row_classes = [c.strip() for c in td.get_text(separator=',').split(',') if c.strip()]
+                            all_classes.extend(row_classes)
+                    
+                    event.classes = all_classes
 
         # 4. Races / Stages
         # Look for "Stage", "Race", or "Etapp" captions (Swedish Eventor uses "Etapp" even in English mode)
