@@ -52,7 +52,12 @@ class Scraper:
         
         for attempt in range(retries):
             try:
-                logger.info(f"Fetching URL: {url} (Attempt {attempt + 1}/{retries})")
+                # Only log retries (Attempt 2+)
+                if attempt > 0:
+                    logger.info(f"Fetching URL: {url} (Attempt {attempt + 1}/{retries})")
+                else:
+                    logger.info(f"Fetching URL: {url}")
+                
                 response = self.scraper.get(url, params=params)
                 response.raise_for_status()
                 return response

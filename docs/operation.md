@@ -53,6 +53,12 @@ To automatically scrape, verify, and push changes to git, use `scrape_and_push.s
 0 3 * * * /path/to/mtbo-scraper/scrape_and_push.sh >> /path/to/mtbo-scraper/scraper.log 2>&1
 ```
 
+You can also pass arguments to `scrape_and_push.sh`, which will be forwarded to the scraper:
+
+```bash
+./scrape_and_push.sh --start-date 2025-01-01
+```
+
 ## Logging
 
 Logs are written to:
