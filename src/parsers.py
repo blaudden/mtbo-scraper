@@ -264,11 +264,12 @@ class EventorParser:
             
             # 2. Extract the text with clean formatting
             text = info_p.get_text(separator='\n', strip=True)
-            # Skip embargo-related paragraphs
-            if text.startswith("Keep in mind that as a competitor"):
+            # Skip paragraphs that are part of the map position/embargo section
+            if info_p.find_parent(class_=['mapPosition', 'eventCenterMaps']):
                 continue
-            # Skip paragraphs that are just about map restrictions
-            if "Du som avser delta" in text or "tävlingsområdet genom avsiktlig rekognosering" in text:
+                
+            # Skip known embargo text patterns (legacy fallback)
+            if text.startswith("Keep in mind that as a competitor"):
                 continue
             # This is the actual event info
             event.info_text = text

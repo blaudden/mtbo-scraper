@@ -298,3 +298,27 @@ def test_parse_livelox_links(parser):
     assert "name" in first_link
     assert "url" in first_link
     assert "Livelox" in first_link["name"] or "Livelox" in first_link["url"]
+
+def test_embargo_filtering_real_file(parser):
+    # Load the real file which has embargo text inside div.mapPosition
+    html = load_test_file("SWE_57105_main.html")
+    event = Event(event_id="SWE-57105", name="Test", start_date="2026-08-15", end_date="2026-08-15", organizers=[], country="SWE", status="Active", url="")
+    
+    parser.parse_event_details(html, event)
+    
+    # This event ONLY has embargo text in mapPosition, no general info text.
+    # So info_text should be empty.
+    assert "embargoed" not in event.info_text.lower()
+    assert "Du som avser delta" not in event.info_text
+    assert event.info_text == ""
+
+def test_info_extraction_with_embargo_present(parser):
+    # Load a file that HAS valid info AND embargo text (SWE_50597)
+    # We want to ensure we capture the VALID info but NOT the embargo info
+    html = load_test_file("SWE_50597_multi.html")
+    event = Event(event_id="SWE-50597", name="Test", start_date="2026-07-20", end_date="2026-07-25", organizers=[], country="SWE", status="Active", url="")
+    
+    parser.parse_event_details(html, event)
+    
+    assert "Information och anmälan hittas på" in event.info_text
+    assert "The competition area is embargoed" not in event.info_text
