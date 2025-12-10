@@ -66116,7 +66116,11 @@
       "Event director": "Eilert Aamodt",
       "Course setter": "Marius E. Aamodt"
     },
-    "classes": [],
+    "classes": [
+      "Lang",
+      "Kort",
+      "Nybegynner"
+    ],
     "races": [
       {
         "race_id": "22025",
@@ -67814,7 +67818,35 @@
       "Course setter": "Yngve Mobråthen",
       "Course controller": "Hans Jørgen Kvåle"
     },
-    "classes": [],
+    "classes": [
+      "D 10-12",
+      "D 13-14",
+      "D 15-16",
+      "D 17-20",
+      "D 21-",
+      "D 40-",
+      "D 50-",
+      "D 60-",
+      "D 70-",
+      "H 10-12",
+      "H 13-14",
+      "H 15-16",
+      "H 17-20",
+      "H 21-",
+      "H 40-",
+      "H 50-",
+      "H 60-",
+      "H 70-",
+      "N-åpen",
+      "C-åpen 10-16",
+      "C-åpen 17-",
+      "B-åpen",
+      "el-sykkel",
+      "A-åpen",
+      "A-lang",
+      "A-mellom",
+      "B/C-åpen"
+    ],
     "races": [
       {
         "race_id": "21990",
@@ -67899,7 +67931,35 @@
       "Course setter": "Yngve Mobråthen",
       "Course controller": "Hans Jørgen Kvåle"
     },
-    "classes": [],
+    "classes": [
+      "D 10-12",
+      "D 13-14",
+      "D 15-16",
+      "D 17-20",
+      "D 21-",
+      "D 40-",
+      "D 50-",
+      "D 60-",
+      "D 70-",
+      "H 10-12",
+      "H 13-14",
+      "H 15-16",
+      "H 17-20",
+      "H 21-",
+      "H 40-",
+      "H 50-",
+      "H 60-",
+      "H 70-",
+      "N-åpen",
+      "C-åpen 10-16",
+      "C-åpen 17-",
+      "B-åpen",
+      "el-sykkel",
+      "A-åpen",
+      "A-lang",
+      "A-mellom",
+      "B/C-åpen"
+    ],
     "races": [
       {
         "race_id": "21991",
@@ -73400,7 +73460,6 @@
     "url": "/Events/Show/22375",
     "info_text": "Oppmøte kl. 18:00 på Jordetstranda. Fellesstarter fra 18:15.\nA-løype (løp-sykkel-vasseo)\nC-løype (løp-sykkel-vasseo)\nN-løype (løp-vasseo)",
     "attributes": {
-      "Organiser": "Larvik OK",
       "Region": "Vestfold og Telemark",
       "Status": "completed",
       "Entry deadline": "Tuesday 12 August 2025 at 23:59",
@@ -73419,7 +73478,7 @@
       "Website": "http://www.larvikok.no",
       "Contact person": "Per Olav Gulbrandsen",
       "Contact phone number": "41300777",
-      "Contact email": "",
+      "Contact email": "pogulbrandsen@gmail.com",
       "Event director": "Per Olav Gulbrandsen",
       "Course setter": "Per Olav Gulbrandsen"
     },
@@ -77882,7 +77941,6 @@
     "url": "/Events/Show/21700",
     "info_text": "MOI inviterer til sykkelorientering i Nordbyen. Start fra kl. 17.30 fra Jensgurilia. Tre løyper, kort mellom og lang, ca. 2, 5 og 8 km.",
     "attributes": {
-      "Organiser": "Molde og Omegn IF",
       "Region": "Møre og Romsdal",
       "Status": "completed",
       "Entry deadline": "Tuesday 14 October 2025 at 23:59",
@@ -77891,13 +77949,11 @@
       "Paratilbud": "no",
       "Race distance": "Middle",
       "Time of event": "day",
-      "Discipline": [
-        "MTBO"
-      ],
+      "Discipline": "MTBO",
       "Punching system": "Emit"
     },
     "contact": {
-      "Contact persons": "Håkon Klerud JohannessenEndre Klokk LeiteKjetil Okkenhaug",
+      "Contact persons": "Håkon Klerud Johannessen\nEndre Klokk Leite\nKjetil Okkenhaug",
       "Event director": "Kjetil Okkenhaug"
     },
     "classes": [
@@ -78311,7 +78367,6 @@
     "url": "/Events/Show/22410",
     "info_text": "Velkommen til den 20. Gørretråkket i Moss/ Rygge - trolig Norges eldste sykkelorienteringsarrangement.\nRittet går i det åpne herregårdslandskapet i Rygge - variert skog- kultur og kystlandskap med lite til lett kupering. EL-sykkel-klasser !\n----\nDet blir intervallstart fra 12:00\n---",
     "attributes": {
-      "Organiser": "OK Moss",
       "Region": "Østfold",
       "Status": "Reported",
       "Normal entry deadline": "Sunday 19 October 2025 at 23:59",
@@ -78321,16 +78376,14 @@
       "Paratilbud": "no",
       "Race distance": "Middle",
       "Time of event": "day",
-      "Discipline": [
-        "MTBO"
-      ],
+      "Discipline": "MTBO",
       "Punching systems": "SportIdent\nEmit"
     },
     "contact": {
       "Website": "http://www.ok-moss.no",
       "Contact person": "Øyvind Løken",
       "Contact phone number": "40006629",
-      "Contact email": "",
+      "Contact email": "oyvind@morsa.no",
       "Event director": "Øyvind Løken"
     },
     "classes": [
