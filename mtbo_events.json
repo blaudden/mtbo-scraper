@@ -77624,7 +77624,7 @@
     "info_text": "Välkommen till en enkel poängorientering/rogaining där man springer i par eller enskilt. Samling vid klubbstugan med start 10:00. Finns en löparklass och en MTBO-klass.\nTävlingstiden är 2 timmar, poängavdrag om målgång sker efter tävlingstidens slut.\nAppen OsynligO används för registrering av kontrolltagning.\nDusch, bastu och soppa efteråt i klubbstugan.\nÖppet för andra klubbar att delta.",
     "attributes": {
       "Region": "Ångermanland",
-      "Status": "entries opened",
+      "Status": "entries closed",
       "Entry deadline": "Saturday 6 December 2025 at 23:59",
       "Event form": "individual",
       "Event classification": "Club event",
@@ -77658,12 +77658,17 @@
         "start_list_url": null,
         "result_list_url": null,
         "entry_list": {
-          "total_count": 6,
+          "total_count": 12,
           "class_counts": {}
         },
         "start_list": null,
         "result_list": null,
-        "livelox_links": [],
+        "livelox_links": [
+          {
+            "name": "Livelox",
+            "url": "https://eventor.orientering.se/Home/RedirectToLivelox?redirectUrl=/Events/Show/175440"
+          }
+        ],
         "map_positions": [
           {
             "raceid": 1,
@@ -78057,7 +78062,7 @@
   },
   {
     "id": "SWE-54359",
-    "name": "MTBO, Svenska cupen, sprint + Haningeträffen",
+    "name": "MTBO, Svenska cupen, #1, sprint + Haningeträffen",
     "start_date": "2026-05-08",
     "end_date": "2026-05-08",
     "organizers": [
@@ -78077,7 +78082,8 @@
       "Discipline": "MTBO",
       "Event attributes": [
         "Nivå 1",
-        "Orientering Terräng"
+        "Orientering Terräng",
+        "Instruktör på plats"
       ],
       "Punching system": "SportIdent"
     },
@@ -78089,7 +78095,7 @@
     "races": [
       {
         "race_id": "54359",
-        "name": "MTBO, Svenska cupen, sprint + Haningeträffen",
+        "name": "MTBO, Svenska cupen, #1, sprint + Haningeträffen",
         "date": "2026-05-08",
         "time": "",
         "distance": "Sprint",
@@ -78169,7 +78175,7 @@
   },
   {
     "id": "SWE-54361",
-    "name": "MTBO, Svenska cupen, lång + Haningeträffen",
+    "name": "MTBO, Svenska cupen, #2, lång + Haningeträffen",
     "start_date": "2026-05-09",
     "end_date": "2026-05-09",
     "organizers": [
@@ -78178,7 +78184,7 @@
     "country": "SWE",
     "status": "Active",
     "url": "/Events/Show/54361",
-    "info_text": "",
+    "info_text": "The competition area is embargoed for all training and competition until the competition has finished. Because the competition is a quality level 1 competition, it also includes club members who will not participate in the competition themselves.",
     "attributes": {
       "Region": "Stockholm",
       "Status": "approved",
@@ -78187,7 +78193,11 @@
       "Race distance": "Long",
       "Time of event": "day",
       "Discipline": "MTBO",
-      "Event attribute": "Orientering Terräng",
+      "Event attributes": [
+        "Nivå 1",
+        "Orientering Terräng",
+        "Instruktör på plats"
+      ],
       "Punching system": "SportIdent"
     },
     "contact": {
@@ -78198,7 +78208,7 @@
     "races": [
       {
         "race_id": "54361",
-        "name": "MTBO, Svenska cupen, lång + Haningeträffen",
+        "name": "MTBO, Svenska cupen, #2, lång + Haningeträffen",
         "date": "2026-05-09",
         "time": "",
         "distance": "Long",
@@ -78995,6 +79005,588 @@
               [
                 12.219501025678102,
                 57.69366484186156
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "documents": [],
+    "map_positions": []
+  },
+  {
+    "id": "SWE-57105",
+    "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #, medel",
+    "start_date": "2026-08-14",
+    "end_date": "2026-08-14",
+    "organizers": [
+      "IF Thor"
+    ],
+    "country": "SWE",
+    "status": "Active",
+    "url": "/Events/Show/57105",
+    "info_text": "The competition area is embargoed for all training and competition until the competition has finished. Because the competition is a quality level 1 competition, it also includes club members who will not participate in the competition themselves.",
+    "attributes": {
+      "Region": "Uppland",
+      "Status": "approved",
+      "Event form": "individual",
+      "Event classification": "Championship event",
+      "Race distance": "Middle",
+      "Time of event": "day",
+      "Discipline": "MTBO",
+      "Event attributes": [
+        "Nivå 1",
+        "Orientering Terräng",
+        "Instruktör på plats"
+      ],
+      "Punching system": "SportIdent"
+    },
+    "contact": {
+      "Contact person": "Lars Pontén",
+      "Contact email": "lars.ponten@gmail.com",
+      "Event director": "Lars Pontén"
+    },
+    "classes": [],
+    "races": [
+      {
+        "race_id": "57105",
+        "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #, medel",
+        "date": "2026-08-14",
+        "time": "",
+        "distance": "Middle",
+        "night_or_day": "day",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": [
+          {
+            "raceid": 1,
+            "lat": 59.8282417721364,
+            "lon": 17.6107641937577,
+            "polygon": [
+              [
+                17.49748955073959,
+                59.8186412407116
+              ],
+              [
+                17.58158175967567,
+                59.796304368588125
+              ],
+              [
+                17.592488538583844,
+                59.80377309005223
+              ],
+              [
+                17.595255227115707,
+                59.80594382498137
+              ],
+              [
+                17.605614352449113,
+                59.80752910580557
+              ],
+              [
+                17.608978002233776,
+                59.81150916620777
+              ],
+              [
+                17.610306012729072,
+                59.8171292177783
+              ],
+              [
+                17.60902448196526,
+                59.825767625977306
+              ],
+              [
+                17.610520259598445,
+                59.82752183698926
+              ],
+              [
+                17.608341663871485,
+                59.828213521004926
+              ],
+              [
+                17.61069334912357,
+                59.82964572775728
+              ],
+              [
+                17.602294989696997,
+                59.83795247984898
+              ],
+              [
+                17.594185756639696,
+                59.838818291897326
+              ],
+              [
+                17.59185435213572,
+                59.84177206944722
+              ],
+              [
+                17.591752986722504,
+                59.84380900472905
+              ],
+              [
+                17.576052480471507,
+                59.84919009403842
+              ],
+              [
+                17.573539731503498,
+                59.848821980111126
+              ],
+              [
+                17.57360857775679,
+                59.84579489662977
+              ],
+              [
+                17.569452595814926,
+                59.84492926600856
+              ],
+              [
+                17.567019825897745,
+                59.84706784194364
+              ],
+              [
+                17.564587055980553,
+                59.846354998565545
+              ],
+              [
+                17.56793211461668,
+                59.84279055266765
+              ],
+              [
+                17.561850189823716,
+                59.8411609645583
+              ],
+              [
+                17.554247783832494,
+                59.84559122086176
+              ],
+              [
+                17.545297928570236,
+                59.84211172484086
+              ],
+              [
+                17.542088569873272,
+                59.8393873277295
+              ],
+              [
+                17.534895179690423,
+                59.8406105540104
+              ],
+              [
+                17.530426669343644,
+                59.83962825168368
+              ],
+              [
+                17.512983006518038,
+                59.83071225208198
+              ],
+              [
+                17.49748955073959,
+                59.8186412407116
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "documents": [],
+    "map_positions": []
+  },
+  {
+    "id": "SWE-57106",
+    "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #, sprint",
+    "start_date": "2026-08-14",
+    "end_date": "2026-08-14",
+    "organizers": [
+      "IF Thor"
+    ],
+    "country": "SWE",
+    "status": "Active",
+    "url": "/Events/Show/57106",
+    "info_text": "The competition area is embargoed for all training and competition until the competition has finished. Because the competition is a quality level 1 competition, it also includes club members who will not participate in the competition themselves.",
+    "attributes": {
+      "Region": "Uppland",
+      "Status": "approved",
+      "Event form": "individual",
+      "Event classification": "Championship event",
+      "Race distance": "Sprint",
+      "Time of event": "day",
+      "Discipline": "MTBO",
+      "Event attributes": [
+        "Nivå 1",
+        "Orientering Terräng",
+        "Instruktör på plats"
+      ],
+      "Punching system": "SportIdent"
+    },
+    "contact": {
+      "Contact person": "Lars Pontén",
+      "Contact email": "lars.ponten@gmail.com",
+      "Event director": "Lars Pontén"
+    },
+    "classes": [],
+    "races": [
+      {
+        "race_id": "57106",
+        "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #, sprint",
+        "date": "2026-08-14",
+        "time": "",
+        "distance": "Sprint",
+        "night_or_day": "day",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": [
+          {
+            "raceid": 1,
+            "lat": 59.8580489332592,
+            "lon": 17.6388534075838,
+            "polygon": [
+              [
+                17.660861485414753,
+                59.78817488049242
+              ],
+              [
+                17.66269172371269,
+                59.79001677528785
+              ],
+              [
+                17.664688347310435,
+                59.79085396657828
+              ],
+              [
+                17.66746057856014,
+                59.796119206692595
+              ],
+              [
+                17.668943968847287,
+                59.80071429134648
+              ],
+              [
+                17.666992139522115,
+                59.805387275013516
+              ],
+              [
+                17.6688658956743,
+                59.808960291230676
+              ],
+              [
+                17.669256261539346,
+                59.80947069085829
+              ],
+              [
+                17.672155714712712,
+                59.81483532794249
+              ],
+              [
+                17.672155714712712,
+                59.81647519049611
+              ],
+              [
+                17.669065809927556,
+                59.824241864162616
+              ],
+              [
+                17.6604827410799,
+                59.832351790621544
+              ],
+              [
+                17.656706190786934,
+                59.84097720450188
+              ],
+              [
+                17.648098431654212,
+                59.84631658504529
+              ],
+              [
+                17.644350919349836,
+                59.84823820196456
+              ],
+              [
+                17.642711382716673,
+                59.84678719536521
+              ],
+              [
+                17.64571986266193,
+                59.84201210402722
+              ],
+              [
+                17.65121302672443,
+                59.84304697138194
+              ],
+              [
+                17.65224299498615,
+                59.840287253612075
+              ],
+              [
+                17.64919145607633,
+                59.83717758236216
+              ],
+              [
+                17.646146602329026,
+                59.836589148592054
+              ],
+              [
+                17.6440032488924,
+                59.84149465828591
+              ],
+              [
+                17.63954005309162,
+                59.8408047181199
+              ],
+              [
+                17.647093153677556,
+                59.82303383382728
+              ],
+              [
+                17.655676222525212,
+                59.82458700764144
+              ],
+              [
+                17.662886000357243,
+                59.80663480471824
+              ],
+              [
+                17.657392836294743,
+                59.798173203351496
+              ],
+              [
+                17.659575188086347,
+                59.79454809234474
+              ],
+              [
+                17.657701431934157,
+                59.79325186729295
+              ],
+              [
+                17.65936401771644,
+                59.788733041169195
+              ],
+              [
+                17.660861485414753,
+                59.78817488049242
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "documents": [],
+    "map_positions": []
+  },
+  {
+    "id": "SWE-57107",
+    "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #, lång",
+    "start_date": "2026-08-15",
+    "end_date": "2026-08-15",
+    "organizers": [
+      "IF Thor"
+    ],
+    "country": "SWE",
+    "status": "Active",
+    "url": "/Events/Show/57107",
+    "info_text": "The competition area is embargoed for all training and competition until the competition has finished. Because the competition is a quality level 1 competition, it also includes club members who will not participate in the competition themselves.",
+    "attributes": {
+      "Region": "Uppland",
+      "Status": "approved",
+      "Event form": "individual",
+      "Event classification": "Championship event",
+      "Race distance": "Long",
+      "Time of event": "day",
+      "Discipline": "MTBO",
+      "Event attributes": [
+        "Nivå 1",
+        "Orientering Terräng",
+        "Instruktör på plats"
+      ],
+      "Punching system": "SportIdent"
+    },
+    "contact": {
+      "Contact person": "Lars Pontén",
+      "Contact email": "lars.ponten@gmail.com",
+      "Event director": "Lars Pontén"
+    },
+    "classes": [],
+    "races": [
+      {
+        "race_id": "57107",
+        "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #, lång",
+        "date": "2026-08-15",
+        "time": "",
+        "distance": "Long",
+        "night_or_day": "day",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": [
+          {
+            "raceid": 1,
+            "lat": 59.8282896815637,
+            "lon": 17.6106940353749,
+            "polygon": [
+              [
+                17.497795511403652,
+                59.81976038555746
+              ],
+              [
+                17.581325283925818,
+                59.79512563929893
+              ],
+              [
+                17.58638757128819,
+                59.80035466633646
+              ],
+              [
+                17.592395782961518,
+                59.804123727715734
+              ],
+              [
+                17.59835958406049,
+                59.80682320436446
+              ],
+              [
+                17.60491976526936,
+                59.80697316888063
+              ],
+              [
+                17.609988996203487,
+                59.81267132064201
+              ],
+              [
+                17.610309740181144,
+                59.814834201247805
+              ],
+              [
+                17.61231983007923,
+                59.81804913558821
+              ],
+              [
+                17.609439056902673,
+                59.819497406089994
+              ],
+              [
+                17.60902849143278,
+                59.82215869187107
+              ],
+              [
+                17.609247005357556,
+                59.82623586357212
+              ],
+              [
+                17.610322494010138,
+                59.82739420034605
+              ],
+              [
+                17.607864234232807,
+                59.82828223126165
+              ],
+              [
+                17.608939722885392,
+                59.829093021421585
+              ],
+              [
+                17.610476135246223,
+                59.82955632122335
+              ],
+              [
+                17.606024591774528,
+                59.83424011199742
+              ],
+              [
+                17.599837148134345,
+                59.83873505377548
+              ],
+              [
+                17.59330395084422,
+                59.83894631816304
+              ],
+              [
+                17.591684018888262,
+                59.84243914910962
+              ],
+              [
+                17.591751516053094,
+                59.84372767381868
+              ],
+              [
+                17.581491946998693,
+                59.84708438554898
+              ],
+              [
+                17.577847100097785,
+                59.84952541783534
+              ],
+              [
+                17.576092173812164,
+                59.84915249393384
+              ],
+              [
+                17.573662275878227,
+                59.848982981688096
+              ],
+              [
+                17.5745043796646,
+                59.845941060091434
+              ],
+              [
+                17.567347818345834,
+                59.84429334192626
+              ],
+              [
+                17.56749691337332,
+                59.842795345542044
+              ],
+              [
+                17.56198039735676,
+                59.84144709115981
+              ],
+              [
+                17.556314786312736,
+                59.845192107400266
+              ],
+              [
+                17.544685374169735,
+                59.84294514821394
+              ],
+              [
+                17.54336555050258,
+                59.840399084939946
+              ],
+              [
+                17.53514329241138,
+                59.84024859697928
+              ],
+              [
+                17.53047359201975,
+                59.840093882028185
+              ],
+              [
+                17.52338638971243,
+                59.8374486729256
+              ],
+              [
+                17.51785162219624,
+                59.8350745883873
+              ],
+              [
+                17.520754000283997,
+                59.83280209178585
+              ],
+              [
+                17.497795511403652,
+                59.81976038555746
               ]
             ]
           }
