@@ -78626,7 +78626,7 @@
       "Event type": "World Ranking Event"
     },
     "contact": {
-      "Website": "https://raidlinks07.e-monsite.com/",
+      "Website": "http://vtto.raidlinks.fr",
       "Contact phone number": "+33 687 368 734",
       "Contact email": "contact@raidlinks.fr",
       "Event Adviser": "Bernard Mortellier"
@@ -78718,8 +78718,7 @@
       "Normal entry deadline": "10 April 2026 at 23:59 local time (UTC+2)",
       "Late entry deadline": "12 April 2026 at 23:59 local time (UTC+2)",
       "Discipline": "MTBO",
-      "Event type": "World Ranking Event",
-      "Punching systems": "Sportident"
+      "Event type": "World Ranking Event"
     },
     "contact": {
       "Website": "http://mtbo.hsvwrn-ol.at",
@@ -78814,8 +78813,7 @@
       "Normal entry deadline": "10 April 2026 at 23:59 local time (UTC+2)",
       "Late entry deadline": "12 April 2026 at 23:59 local time (UTC+2)",
       "Discipline": "MTBO",
-      "Event type": "World Ranking Event",
-      "Punching systems": "Sportident"
+      "Event type": "World Ranking Event"
     },
     "contact": {
       "Website": "http://mtbo.hsvwrn-ol.at",
@@ -78909,9 +78907,9 @@
   },
   {
     "id": "IOF-8614",
-    "name": "World Cup Round 1 in MTB Orienteering and U23 World MTB Orienteering Championships 2026",
-    "start_date": "2026-04-30",
-    "end_date": "2026-04-30",
+    "name": "CX80 World Cup Round 1 in MTB Orienteering and U23 World MTB Orienteering Championships 2026",
+    "start_date": "2026-04-29",
+    "end_date": "2026-05-03",
     "organizers": [
       "Hungary"
     ],
@@ -78925,7 +78923,10 @@
         "Balatonfuredi Sport Club",
         "Hangya SZKE"
       ],
-      "Status": "approved",
+      "Status": "entries opened",
+      "Team size start": "1 January 2026 at 0:00 local time (UTC+1)",
+      "Team size deadline": "1 March 2026 at 0:00 local time (UTC+1)",
+      "Team names deadline": "20 April 2026 at 0:00 local time (UTC+2)",
       "Discipline": "MTBO",
       "Event type": "World Cup"
     },
@@ -78953,11 +78954,11 @@
     ],
     "races": [
       {
-        "race_id": "8614",
-        "name": "World Cup Round 1 in MTB Orienteering and U23 World MTB Orienteering Championships 2026",
-        "date": "2026-04-30",
-        "time": "",
-        "distance": "",
+        "race_id": "8935",
+        "name": "Middle",
+        "date": "2026-05-01",
+        "time": "10:00",
+        "distance": "Middle",
         "night_or_day": "",
         "entry_list_url": null,
         "start_list_url": null,
@@ -78974,9 +78975,46 @@
             "polygon": null
           }
         ]
+      },
+      {
+        "race_id": "8936",
+        "name": "Long",
+        "date": "2026-05-02",
+        "time": "10:00",
+        "distance": "Long",
+        "night_or_day": "",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
+      },
+      {
+        "race_id": "8937",
+        "name": "Sprint",
+        "date": "2026-05-03",
+        "time": "10:00",
+        "distance": "Sprint",
+        "night_or_day": "",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
       }
     ],
     "documents": [
+      {
+        "name": "Embargoed Areas",
+        "url": "https://www.google.com/maps/d/viewer?mid=1JknUOhIjRtWPQ9L2hUICPTQS7wjszBU&ll=46.96277495254481%2C17.79158105&z=11",
+        "type": "external link"
+      },
       {
         "name": "Bulletin 2",
         "url": "/Documents/Event/9326/Bulletin-2",
@@ -79010,7 +79048,7 @@
         "Orientering Terräng",
         "Instruktör på plats"
       ],
-      "Punching system": "SportIdent"
+      "Punching system": "Sportident"
     },
     "contact": {
       "Contact person": "Ilana Jode",
@@ -79123,7 +79161,7 @@
         "Orientering Terräng",
         "Instruktör på plats"
       ],
-      "Punching system": "SportIdent"
+      "Punching system": "Sportident"
     },
     "contact": {
       "Contact person": "Ilana Jode",
@@ -79209,9 +79247,9 @@
   },
   {
     "id": "IOF-8557",
-    "name": "World Cup Round 2 in MTB Orienteering European  MTB Orienteering Championships 2026",
-    "start_date": "2026-05-21",
-    "end_date": "2026-05-21",
+    "name": "CX80 World Cup Round 2 in MTB Orienteering and European MTB Orienteering Championships 2026",
+    "start_date": "2026-05-23",
+    "end_date": "2026-05-28",
     "organizers": [
       "Portugal"
     ],
@@ -79221,24 +79259,42 @@
     "info_text": "",
     "attributes": {
       "Organising federation": "Portugal",
-      "Status": "approved",
+      "Status": "entries opened",
+      "Team size start": "1 January 2026 at 0:00 local time (UTC)",
+      "Team size deadline": "24 March 2026 at 23:59 local time (UTC)",
+      "Team names deadline": "14 May 2026 at 23:59 local time (UTC+1)",
       "Discipline": "MTBO",
       "Event types": [
         "Regional Championships",
-        "World Cup"
+        "World Cup",
+        "World Ranking Event"
       ]
     },
     "contact": {
+      "Website": "https://emtboc2026.fpo.pt/www/",
+      "Contact persons": "Augusto Almeida\nAndre Mora",
+      "Contact phone number": "+351 960 360 996",
+      "Contact email": "mtbo2026@fpo.pt",
+      "Event directors": [
+        "Augusto Almeida",
+        "Antonio Amador"
+      ],
+      "Course setter": "Alexandre Reis",
+      "Event controllers": "Tiago Fernandes\nTiago Lopes",
       "IOF Senior Event Adviser": "Giaime Origgi"
     },
-    "classes": [],
+    "classes": [
+      "Men",
+      "Women",
+      "Team Officials"
+    ],
     "races": [
       {
-        "race_id": "8557",
-        "name": "World Cup Round 2 in MTB Orienteering European  MTB Orienteering Championships 2026",
-        "date": "2026-05-21",
-        "time": "",
-        "distance": "",
+        "race_id": "8931",
+        "name": "Sprint",
+        "date": "2026-05-25",
+        "time": "9:00",
+        "distance": "Sprint",
         "night_or_day": "",
         "entry_list_url": null,
         "start_list_url": null,
@@ -79255,6 +79311,54 @@
             "polygon": null
           }
         ]
+      },
+      {
+        "race_id": "8932",
+        "name": "Middle",
+        "date": "2026-05-26",
+        "time": "9:00",
+        "distance": "Middle",
+        "night_or_day": "",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
+      },
+      {
+        "race_id": "8933",
+        "name": "Mass start",
+        "date": "2026-05-27",
+        "time": "9:00",
+        "distance": "Mass Start",
+        "night_or_day": "",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
+      },
+      {
+        "race_id": "8934",
+        "name": "Relay",
+        "date": "2026-05-28",
+        "time": "9:00",
+        "distance": "Relay",
+        "night_or_day": "",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
       }
     ],
     "documents": [
@@ -79274,8 +79378,8 @@
   {
     "id": "IOF-8558",
     "name": "European Junior and Youth MTB Orienteering Championships 2026",
-    "start_date": "2026-05-21",
-    "end_date": "2026-05-21",
+    "start_date": "2026-05-23",
+    "end_date": "2026-05-28",
     "organizers": [
       "Portugal"
     ],
@@ -79285,21 +79389,40 @@
     "info_text": "",
     "attributes": {
       "Organising federation": "Portugal",
-      "Status": "approved",
+      "Status": "entries opened",
+      "Team size start": "1 January 2026 at 0:00 local time (UTC)",
+      "Team size deadline": "24 March 2026 at 23:59 local time (UTC)",
+      "Team names deadline": "14 May 2026 at 23:59 local time (UTC+1)",
       "Discipline": "MTBO",
       "Event type": "Regional Championships"
     },
     "contact": {
+      "Website": "https://emtboc2026.fpo.pt/www/",
+      "Contact persons": "Augusto Almeida\nAndre Mora",
+      "Contact phone number": "+351 960 360 996",
+      "Contact email": "mtbo2026@fpo.pt",
+      "Event directors": [
+        "Augusto Almeida",
+        "Antonio Amador"
+      ],
+      "Course setter": "Alexandre Reis",
+      "Event controllers": "Tiago Fernandes\nTiago Lopes",
       "IOF Senior Event Adviser": "Giaime Origgi"
     },
-    "classes": [],
+    "classes": [
+      "M20",
+      "W20",
+      "M17",
+      "W17",
+      "Team Officials"
+    ],
     "races": [
       {
-        "race_id": "8558",
-        "name": "European Junior and Youth MTB Orienteering Championships 2026",
-        "date": "2026-05-21",
-        "time": "",
-        "distance": "",
+        "race_id": "8927",
+        "name": "Sprint",
+        "date": "2026-05-25",
+        "time": "9:00",
+        "distance": "Sprint",
         "night_or_day": "",
         "entry_list_url": null,
         "start_list_url": null,
@@ -79316,6 +79439,54 @@
             "polygon": null
           }
         ]
+      },
+      {
+        "race_id": "8928",
+        "name": "Middle",
+        "date": "2026-05-26",
+        "time": "9:00",
+        "distance": "Middle",
+        "night_or_day": "",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
+      },
+      {
+        "race_id": "8929",
+        "name": "Long",
+        "date": "2026-05-27",
+        "time": "9:00",
+        "distance": "Long",
+        "night_or_day": "",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
+      },
+      {
+        "race_id": "8930",
+        "name": "Relay",
+        "date": "2026-05-28",
+        "time": "9:00",
+        "distance": "Relay",
+        "night_or_day": "",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
       }
     ],
     "documents": [
@@ -79353,7 +79524,7 @@
         "Nivå 1",
         "Orientering Terräng"
       ],
-      "Punching system": "SportIdent"
+      "Punching system": "Sportident"
     },
     "contact": {
       "Website": "https://www.oringen.se",
@@ -79941,7 +80112,7 @@
   },
   {
     "id": "SWE-57105",
-    "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #, medel",
+    "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #3, medel",
     "start_date": "2026-08-14",
     "end_date": "2026-08-14",
     "organizers": [
@@ -79964,7 +80135,7 @@
         "Orientering Terräng",
         "Instruktör på plats"
       ],
-      "Punching system": "SportIdent"
+      "Punching system": "Sportident"
     },
     "contact": {
       "Contact person": "Lars Pontén",
@@ -80009,7 +80180,7 @@
     "races": [
       {
         "race_id": "57105",
-        "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #, medel",
+        "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #3, medel",
         "date": "2026-08-14",
         "time": "",
         "distance": "Middle",
@@ -80157,7 +80328,7 @@
   },
   {
     "id": "SWE-57106",
-    "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #, sprint",
+    "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #4, sprint",
     "start_date": "2026-08-14",
     "end_date": "2026-08-14",
     "organizers": [
@@ -80180,7 +80351,7 @@
         "Orientering Terräng",
         "Instruktör på plats"
       ],
-      "Punching system": "SportIdent"
+      "Punching system": "Sportident"
     },
     "contact": {
       "Contact person": "Lars Pontén",
@@ -80225,7 +80396,7 @@
     "races": [
       {
         "race_id": "57106",
-        "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #, sprint",
+        "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #4, sprint",
         "date": "2026-08-14",
         "time": "",
         "distance": "Sprint",
@@ -80377,7 +80548,7 @@
   },
   {
     "id": "SWE-57107",
-    "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #, lång",
+    "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #5, lång",
     "start_date": "2026-08-15",
     "end_date": "2026-08-15",
     "organizers": [
@@ -80400,7 +80571,7 @@
         "Orientering Terräng",
         "Instruktör på plats"
       ],
-      "Punching system": "SportIdent"
+      "Punching system": "Sportident"
     },
     "contact": {
       "Contact person": "Lars Pontén",
@@ -80445,7 +80616,7 @@
     "races": [
       {
         "race_id": "57107",
-        "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #, lång",
+        "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #5, lång",
         "date": "2026-08-15",
         "time": "",
         "distance": "Long",
@@ -80625,7 +80796,7 @@
   },
   {
     "id": "IOF-8277",
-    "name": "World MTB Orienteering Championships 2026",
+    "name": "World MTB Orienteering Championships 2026 and CX80 World Cup",
     "start_date": "2026-08-24",
     "end_date": "2026-08-30",
     "organizers": [
@@ -80642,7 +80813,7 @@
       "Discipline": "MTBO",
       "Event types": [
         "World Championships",
-        "World Ranking Event"
+        "World Cup"
       ]
     },
     "contact": {
@@ -81770,7 +81941,7 @@
       "Time of event": "day",
       "Discipline": "MTBO",
       "Event attribute": "Orientering Terräng",
-      "Punching system": "SportIdent"
+      "Punching system": "Sportident"
     },
     "contact": {
       "Website": "http://www.mtbo26.se",
@@ -81822,7 +81993,7 @@
       "Time of event": "day",
       "Discipline": "MTBO",
       "Event attribute": "Orientering Terräng",
-      "Punching system": "SportIdent"
+      "Punching system": "Sportident"
     },
     "contact": {
       "Website": "http://www.mtbo26.se",
@@ -81874,7 +82045,7 @@
       "Time of event": "day",
       "Discipline": "MTBO",
       "Event attribute": "Orientering Terräng",
-      "Punching system": "SportIdent"
+      "Punching system": "Sportident"
     },
     "contact": {
       "Website": "http://www.mtbo26.se",
@@ -81982,8 +82153,7 @@
       "Organising club": "Scottish Orienteering Association",
       "Status": "approved",
       "Discipline": "MTBO",
-      "Event type": "World Masters",
-      "Punching systems": "Sportident"
+      "Event type": "World Masters"
     },
     "contact": {
       "Website": "http://www.mtbo2026.org",
@@ -82143,7 +82313,7 @@
       "Time of event": "day",
       "Discipline": "MTBO",
       "Event attribute": "Orientering Terräng",
-      "Punching system": "SportIdent"
+      "Punching system": "Sportident"
     },
     "contact": {
       "Contact person": "Cecilia Lingerud",
@@ -82195,7 +82365,7 @@
       "Time of event": "day",
       "Discipline": "MTBO",
       "Event attribute": "Orientering Terräng",
-      "Punching system": "SportIdent"
+      "Punching system": "Sportident"
     },
     "contact": {
       "Contact person": "Cecilia Lingerud",
@@ -82211,6 +82381,98 @@
         "time": "",
         "distance": "Middle",
         "night_or_day": "day",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
+      }
+    ],
+    "documents": [],
+    "map_positions": []
+  },
+  {
+    "id": "IOF-8885",
+    "name": "Australian MTBO Middle Distance Championships",
+    "start_date": "2026-10-09",
+    "end_date": "2026-10-09",
+    "organizers": [
+      "Australia"
+    ],
+    "country": "Australia",
+    "status": "Active",
+    "url": "/Events/Show/8885",
+    "info_text": "",
+    "attributes": {
+      "Organising federation": "Australia",
+      "Status": "approved",
+      "Discipline": "MTBO",
+      "Event type": "World Ranking Event"
+    },
+    "contact": {
+      "Website": "http://ausmtbochamps2026.orienteering.asn.au",
+      "Contact phone number": "+61 427840816",
+      "Contact email": "2026mtbo@orienteering.asn.au",
+      "Event Adviser": "Kathy Liley"
+    },
+    "classes": [],
+    "races": [
+      {
+        "race_id": "8885",
+        "name": "Australian MTBO Middle Distance Championships",
+        "date": "2026-10-09",
+        "time": "",
+        "distance": "",
+        "night_or_day": "",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
+      }
+    ],
+    "documents": [],
+    "map_positions": []
+  },
+  {
+    "id": "IOF-8884",
+    "name": "Australian MTBO Long Distance Championships",
+    "start_date": "2026-10-10",
+    "end_date": "2026-10-10",
+    "organizers": [
+      "Australia"
+    ],
+    "country": "Australia",
+    "status": "Active",
+    "url": "/Events/Show/8884",
+    "info_text": "",
+    "attributes": {
+      "Organising federation": "Australia",
+      "Status": "approved",
+      "Discipline": "MTBO",
+      "Event type": "World Ranking Event"
+    },
+    "contact": {
+      "Website": "http://ausmtbochamps2026.orienteering.asn.au",
+      "Contact phone number": "+61 427840816",
+      "Contact email": "2026mtbo@orienteering.asn.au",
+      "Event Adviser": "Kathy Liley"
+    },
+    "classes": [],
+    "races": [
+      {
+        "race_id": "8884",
+        "name": "Australian MTBO Long Distance Championships",
+        "date": "2026-10-10",
+        "time": "",
+        "distance": "",
+        "night_or_day": "",
         "entry_list_url": null,
         "start_list_url": null,
         "result_list_url": null,
@@ -82248,11 +82510,12 @@
         "Orientering Terräng",
         "Instruktör på plats"
       ],
-      "Punching system": "SportIdent"
+      "Punching system": "Sportident"
     },
     "contact": {
       "Contact person": "Linda Allwood",
-      "Contact email": "linda_allwood@hotmail.com"
+      "Contact email": "linda_allwood@hotmail.com",
+      "Event controller": "Cecilia Lingerud"
     },
     "classes": [],
     "races": [
@@ -82340,11 +82603,12 @@
         "Orientering Terräng",
         "Instruktör på plats"
       ],
-      "Punching system": "SportIdent"
+      "Punching system": "Sportident"
     },
     "contact": {
       "Contact person": "Linda Allwood",
-      "Contact email": "linda_allwood@hotmail.com"
+      "Contact email": "linda_allwood@hotmail.com",
+      "Event controller": "Cecilia Lingerud"
     },
     "classes": [],
     "races": [
@@ -82423,7 +82687,7 @@
     "country": "Latvia",
     "status": "Active",
     "url": "/Events/Show/8559",
-    "info_text": "Keep in mind that as a competitor you are not allowed to get to know the competition area through intentional reconnaissance, unless it is clearly permitted by the organiser. For details, see the rules.",
+    "info_text": "",
     "attributes": {
       "Organising federation": "Latvia",
       "Status": "approved",
@@ -82473,7 +82737,7 @@
     "country": "Latvia",
     "status": "Active",
     "url": "/Events/Show/8560",
-    "info_text": "Keep in mind that as a competitor you are not allowed to get to know the competition area through intentional reconnaissance, unless it is clearly permitted by the organiser. For details, see the rules.",
+    "info_text": "",
     "attributes": {
       "Organising federation": "Latvia",
       "Status": "approved",
