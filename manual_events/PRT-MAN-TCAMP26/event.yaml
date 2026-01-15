@@ -1,0 +1,50 @@
+id: "PRT-MAN-TCAMP26"
+name: "MTBO Traning Camp 2026"
+start_date: "2026-03-07"
+end_date: "2026-03-15"
+country: "PRT"
+organizers: ["CN Alvito", "FEDO"]
+status: "Planned"
+url: "https://eventoscnalvito.wixsite.com/mtbo-tcamp2026"
+documents:
+  - name: "General Info"
+    url: "https://eventoscnalvito.wixsite.com/mtbo-tcamp2026/general-info"
+    type: "Website"
+  - name: "Overview Map"
+    url: "file://overview_map.png"
+    type: "Map"
+races:
+  # Middle & Sprint races (7-8 March)
+  - name: "Troféu Ori-BTT, Middle"
+    date: "2026-03-07"
+    distance: "Middle"
+    time: "10:00" # Placeholder
+  - name: "Troféu Ori-BTT, Sprint"
+    date: "2026-03-08"
+    distance: "Sprint"
+    time: "10:00" # Placeholder
+
+  # Training Camp (9-12 March)
+  - name: "Training Camp Day 1"
+    date: "2026-03-09"
+    distance: "Training"
+  - name: "Training Camp Day 2"
+    date: "2026-03-10"
+    distance: "Training"
+  - name: "Training Camp Day 3"
+    date: "2026-03-11"
+    distance: "Training"
+  - name: "Training Camp Day 4"
+    date: "2026-03-12"
+    distance: "Training"
+
+  # Iberian MTBO Championship (14-15 March) - Spain
+  - name: "Iberian Championship, Middle"
+    date: "2026-03-14"
+    distance: "Middle"
+  - name: "Iberian Championship, Sprint"
+    date: "2026-03-14"
+    distance: "Sprint"
+  - name: "Iberian Championship, Mass Start"
+    date: "2026-03-15"
+    distance: "Long" 
