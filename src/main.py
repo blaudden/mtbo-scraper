@@ -11,6 +11,7 @@ from src.sources.eventor import EventorSource
 from src.models import Event
 
 from src.sources.manual import ManualSource
+from src.diff import calculate_stats
 
 # Setup logging
 logging.basicConfig(
@@ -58,7 +59,8 @@ def chunk_date_range(start_date: str, end_date: str, chunk_months=6):
 @click.option('--start-date', help='Start date (YYYY-MM-DD)')
 @click.option('--end-date', help='End date (YYYY-MM-DD)')
 @click.option('--output', default='mtbo_events.json', help='Output JSON file')
-def main(start_date, end_date, output):
+@click.option('--commit-msg-file', default=None, help='File to write commit message to')
+def main(start_date, end_date, output, commit_msg_file):
     """MTBO Eventor Scraper"""
     logger.info("Starting MTBO Scraper")
     
@@ -80,6 +82,10 @@ def main(start_date, end_date, output):
     logger.info(f"Scraping events from {start_date} to {end_date}")
         
     storage = Storage(output)
+    # Load old events to calculate diff later
+    old_events_dict = storage.load()
+    old_events = list(old_events_dict.values())
+    
     all_events: List[Event] = []
 
     # 1. Load Manual Events
@@ -123,8 +129,21 @@ def main(start_date, end_date, output):
             logger.info(f"Sleeping for {sleep_sec} seconds before next chunk...")
             time.sleep(sleep_sec)
                 
-    storage.save(all_events)
+    # Save returns the new list of events (merged)
+    new_events = storage.save(all_events)
     logger.info("Scraping completed.")
+    
+    # Calculate stats and write commit message
+    stats_msg = calculate_stats(old_events, new_events)
+    print(stats_msg)
+    
+    if commit_msg_file:
+        try:
+            with open(commit_msg_file, 'w') as f:
+                f.write(stats_msg)
+            logger.info(f"Commit message written to {commit_msg_file}")
+        except Exception as e:
+            logger.error(f"Failed to write commit message: {e}")
 
 if __name__ == '__main__':
     main()
