@@ -65,5 +65,7 @@ class Storage:
             with open(self.filepath, 'w', encoding='utf-8') as f:
                 json.dump(sorted_events, f, indent=2, ensure_ascii=False)
             logger.info(f"Saved {len(sorted_events)} events to {self.filepath}")
+            return sorted_events
         except Exception as e:
             logger.error(f"Failed to save storage: {e}")
+            return []
