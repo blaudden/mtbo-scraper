@@ -78608,6 +78608,182 @@
     "map_positions": []
   },
   {
+    "id": "PRT-MAN-TCAMP26",
+    "name": "MTBO Traning Camp 2026",
+    "start_date": "2026-03-07",
+    "end_date": "2026-03-15",
+    "organizers": [
+      "CN Alvito",
+      "FEDO"
+    ],
+    "country": "PRT",
+    "status": "Planned",
+    "url": "https://eventoscnalvito.wixsite.com/mtbo-tcamp2026",
+    "info_text": "",
+    "attributes": {},
+    "contact": {},
+    "classes": [],
+    "races": [
+      {
+        "race_id": "PRT-MAN-TCAMP26-middle-distance-(troféu-ori-btt)",
+        "name": "Middle Distance (Troféu Ori-BTT)",
+        "date": "2026-03-07",
+        "time": "10:00",
+        "distance": "Middle",
+        "night_or_day": "day",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
+      },
+      {
+        "race_id": "PRT-MAN-TCAMP26-sprint-(troféu-ori-btt)",
+        "name": "Sprint (Troféu Ori-BTT)",
+        "date": "2026-03-08",
+        "time": "10:00",
+        "distance": "Sprint",
+        "night_or_day": "day",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
+      },
+      {
+        "race_id": "PRT-MAN-TCAMP26-training-camp-day-1",
+        "name": "Training Camp Day 1",
+        "date": "2026-03-09",
+        "time": "00:00",
+        "distance": "Training",
+        "night_or_day": "day",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
+      },
+      {
+        "race_id": "PRT-MAN-TCAMP26-training-camp-day-2",
+        "name": "Training Camp Day 2",
+        "date": "2026-03-10",
+        "time": "00:00",
+        "distance": "Training",
+        "night_or_day": "day",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
+      },
+      {
+        "race_id": "PRT-MAN-TCAMP26-training-camp-day-3",
+        "name": "Training Camp Day 3",
+        "date": "2026-03-11",
+        "time": "00:00",
+        "distance": "Training",
+        "night_or_day": "day",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
+      },
+      {
+        "race_id": "PRT-MAN-TCAMP26-training-camp-day-4",
+        "name": "Training Camp Day 4",
+        "date": "2026-03-12",
+        "time": "00:00",
+        "distance": "Training",
+        "night_or_day": "day",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
+      },
+      {
+        "race_id": "PRT-MAN-TCAMP26-iberian-championship---middle",
+        "name": "Iberian Championship - Middle",
+        "date": "2026-03-14",
+        "time": "00:00",
+        "distance": "Middle",
+        "night_or_day": "day",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
+      },
+      {
+        "race_id": "PRT-MAN-TCAMP26-iberian-championship---sprint",
+        "name": "Iberian Championship - Sprint",
+        "date": "2026-03-14",
+        "time": "00:00",
+        "distance": "Sprint",
+        "night_or_day": "day",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
+      },
+      {
+        "race_id": "PRT-MAN-TCAMP26-iberian-championship---mass-start",
+        "name": "Iberian Championship - Mass Start",
+        "date": "2026-03-15",
+        "time": "00:00",
+        "distance": "Long",
+        "night_or_day": "day",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
+      }
+    ],
+    "documents": [
+      {
+        "name": "General Info",
+        "url": "https://eventoscnalvito.wixsite.com/mtbo-tcamp2026/general-info",
+        "type": "Website"
+      },
+      {
+        "name": "Overview Map",
+        "url": "file://manual_events/PRT-MAN-TCAMP26/overview_map.png",
+        "type": "Map"
+      }
+    ],
+    "map_positions": []
+  },
+  {
     "id": "IOF-8827",
     "name": "National race Long distance",
     "start_date": "2026-03-13",
@@ -79052,7 +79228,8 @@
     },
     "contact": {
       "Contact person": "Ilana Jode",
-      "Contact email": "info@haningesok.se"
+      "Contact email": "info@haningesok.se",
+      "Event controller": "Anders Stjerndahl"
     },
     "classes": [],
     "races": [
@@ -79165,7 +79342,8 @@
     },
     "contact": {
       "Contact person": "Ilana Jode",
-      "Contact email": "info@haningesok.se"
+      "Contact email": "info@haningesok.se",
+      "Event controller": "Anders Stjerndahl"
     },
     "classes": [],
     "races": [
@@ -79243,6 +79421,128 @@
       }
     ],
     "documents": [],
+    "map_positions": []
+  },
+  {
+    "id": "DK-MAN-MTBOCAMP26",
+    "name": "MTBO Camp 2026",
+    "start_date": "2026-05-13",
+    "end_date": "2026-05-17",
+    "organizers": [
+      "Navet"
+    ],
+    "country": "DNK",
+    "status": "Planned",
+    "url": "http://www.mtbocamp.dk",
+    "info_text": "",
+    "attributes": {},
+    "contact": {},
+    "classes": [],
+    "races": [
+      {
+        "race_id": "DK-MAN-MTBOCAMP26-sprint-(master-series)",
+        "name": "Sprint (Master Series)",
+        "date": "2026-05-13",
+        "time": "17:00",
+        "distance": "Sprint",
+        "night_or_day": "day",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
+      },
+      {
+        "race_id": "DK-MAN-MTBOCAMP26-long-(master-series)",
+        "name": "Long (Master Series)",
+        "date": "2026-05-14",
+        "time": "10:00",
+        "distance": "Long",
+        "night_or_day": "day",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
+      },
+      {
+        "race_id": "DK-MAN-MTBOCAMP26-flying-mile",
+        "name": "Flying Mile",
+        "date": "2026-05-14",
+        "time": "18:00",
+        "distance": "Sprint",
+        "night_or_day": "day",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
+      },
+      {
+        "race_id": "DK-MAN-MTBOCAMP26-danish-championship-sprint",
+        "name": "Danish Championship Sprint",
+        "date": "2026-05-15",
+        "time": "19:00",
+        "distance": "Sprint",
+        "night_or_day": "day",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
+      },
+      {
+        "race_id": "DK-MAN-MTBOCAMP26-ultra-long",
+        "name": "Ultra Long",
+        "date": "2026-05-16",
+        "time": "00:00",
+        "distance": "Ultra Long",
+        "night_or_day": "day",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
+      },
+      {
+        "race_id": "DK-MAN-MTBOCAMP26-middle",
+        "name": "Middle",
+        "date": "2026-05-17",
+        "time": "09:00",
+        "distance": "Middle",
+        "night_or_day": "day",
+        "entry_list_url": null,
+        "start_list_url": null,
+        "result_list_url": null,
+        "entry_list": null,
+        "start_list": null,
+        "result_list": null,
+        "livelox_links": [],
+        "map_positions": []
+      }
+    ],
+    "documents": [
+      {
+        "name": "Bulletin 1",
+        "url": "file://manual_events/DK-MAN-MTBOCAMP26/MTBO CAMP 20206 Bulletin 1.pdf",
+        "type": "Bulletin"
+      }
+    ],
     "map_positions": []
   },
   {
@@ -80124,7 +80424,9 @@
     "info_text": "",
     "attributes": {
       "Region": "Uppland",
-      "Status": "approved",
+      "Status": "entries opened",
+      "Normal entry deadline": "Sunday 9 August 2026 at 23:59",
+      "Late entry deadline": "Wednesday 12 August 2026 at 20:00",
       "Event form": "individual",
       "Event classification": "Championship event",
       "Race distance": "Middle",
@@ -80140,7 +80442,8 @@
     "contact": {
       "Contact person": "Lars Pontén",
       "Contact email": "lars.ponten@gmail.com",
-      "Event director": "Lars Pontén"
+      "Event director": "Lars Pontén",
+      "Event controller": "Patrik Svedberg"
     },
     "classes": [
       "D21",
@@ -80340,7 +80643,9 @@
     "info_text": "",
     "attributes": {
       "Region": "Uppland",
-      "Status": "approved",
+      "Status": "entries opened",
+      "Normal entry deadline": "Sunday 9 August 2026 at 23:59",
+      "Late entry deadline": "Wednesday 12 August 2026 at 20:00",
       "Event form": "individual",
       "Event classification": "Championship event",
       "Race distance": "Sprint",
@@ -80356,7 +80661,8 @@
     "contact": {
       "Contact person": "Lars Pontén",
       "Contact email": "lars.ponten@gmail.com",
-      "Event director": "Lars Pontén"
+      "Event director": "Lars Pontén",
+      "Event controller": "Patrik Svedberg"
     },
     "classes": [
       "D21",
@@ -80401,10 +80707,13 @@
         "time": "",
         "distance": "Sprint",
         "night_or_day": "day",
-        "entry_list_url": null,
+        "entry_list_url": "/Events/Entries?eventId=57106&groupBy=EventClass",
         "start_list_url": null,
         "result_list_url": null,
-        "entry_list": null,
+        "entry_list": {
+          "total_count": 0,
+          "class_counts": {}
+        },
         "start_list": null,
         "result_list": null,
         "livelox_links": [],
@@ -80560,7 +80869,9 @@
     "info_text": "",
     "attributes": {
       "Region": "Uppland",
-      "Status": "approved",
+      "Status": "entries opened",
+      "Normal entry deadline": "Sunday 9 August 2026 at 23:59",
+      "Late entry deadline": "Wednesday 12 August 2026 at 20:00",
       "Event form": "individual",
       "Event classification": "Championship event",
       "Race distance": "Long",
@@ -80576,7 +80887,8 @@
     "contact": {
       "Contact person": "Lars Pontén",
       "Contact email": "lars.ponten@gmail.com",
-      "Event director": "Lars Pontén"
+      "Event director": "Lars Pontén",
+      "Event controller": "Patrik Svedberg"
     },
     "classes": [
       "D21",
@@ -80621,10 +80933,13 @@
         "time": "",
         "distance": "Long",
         "night_or_day": "day",
-        "entry_list_url": null,
+        "entry_list_url": "/Events/Entries?eventId=57107&groupBy=EventClass",
         "start_list_url": null,
         "result_list_url": null,
-        "entry_list": null,
+        "entry_list": {
+          "total_count": 0,
+          "class_counts": {}
+        },
         "start_list": null,
         "result_list": null,
         "livelox_links": [],
@@ -81948,7 +82263,8 @@
       "Contact person": "Klaus Csúcs",
       "Contact phone number": "+46738398784",
       "Contact email": "info@mtbo26.se",
-      "Event director": "Klaus Csúcs"
+      "Event director": "Klaus Csúcs",
+      "Event controller": "Magnus Blåudd"
     },
     "classes": [],
     "races": [
@@ -82000,7 +82316,8 @@
       "Contact person": "Klaus Csúcs",
       "Contact phone number": "+46738398784",
       "Contact email": "info@mtbo26.se",
-      "Event director": "Klaus Csúcs"
+      "Event director": "Klaus Csúcs",
+      "Event controller": "Magnus Blåudd"
     },
     "classes": [],
     "races": [
@@ -82052,7 +82369,8 @@
       "Contact person": "Klaus Csúcs",
       "Contact phone number": "+46738398784",
       "Contact email": "info@mtbo26.se",
-      "Event director": "Klaus Csúcs"
+      "Event director": "Klaus Csúcs",
+      "Event controller": "Magnus Blåudd"
     },
     "classes": [],
     "races": [
