@@ -10,6 +10,8 @@ from src.storage import Storage
 from src.sources.eventor import EventorSource
 from src.models import Event
 
+from src.sources.manual import ManualSource
+
 # Setup logging
 logging.basicConfig(
     level=logging.INFO,
@@ -26,6 +28,7 @@ EVENTOR_CONFIGS = [
     {"country": "NOR", "url": "https://eventor.orientering.no"},
     {"country": "IOF", "url": "https://eventor.orienteering.org"}
 ]
+MANUAL_EVENTS_DIR = "manual_events"
 
 def chunk_date_range(start_date: str, end_date: str, chunk_months=6):
     """
@@ -78,6 +81,11 @@ def main(start_date, end_date, output):
         
     storage = Storage(output)
     all_events: List[Event] = []
+
+    # 1. Load Manual Events
+    manual_source = ManualSource(MANUAL_EVENTS_DIR)
+    manual_events = manual_source.load_events()
+    all_events.extend(manual_events)
     
     # Initialize Sources
     sources = []
