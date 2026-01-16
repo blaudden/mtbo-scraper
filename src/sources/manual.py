@@ -68,7 +68,7 @@ class ManualSource:
         races = []
         for race_data in data.get('races', []):
             race = Race(
-                race_id=f"{data.get('id')}-{race_data.get('name').replace(' ', '-').lower()}",
+                race_id=f"{data.get('id')}-{race_data.get('name').replace(',', '').replace(' ', '-').lower()}",
                 name=race_data.get('name'),
                 date=race_data.get('date'),
                 time=race_data.get('time', '00:00'),

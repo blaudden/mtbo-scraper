@@ -78625,7 +78625,7 @@
     "classes": [],
     "races": [
       {
-        "race_id": "PRT-MAN-TCAMP26-troféu-ori-btt,-middle",
+        "race_id": "PRT-MAN-TCAMP26-troféu-ori-btt-middle",
         "name": "Troféu Ori-BTT, Middle",
         "date": "2026-03-07",
         "time": "10:00",
@@ -78641,7 +78641,7 @@
         "map_positions": []
       },
       {
-        "race_id": "PRT-MAN-TCAMP26-troféu-ori-btt,-sprint",
+        "race_id": "PRT-MAN-TCAMP26-troféu-ori-btt-sprint",
         "name": "Troféu Ori-BTT, Sprint",
         "date": "2026-03-08",
         "time": "10:00",
@@ -78721,7 +78721,7 @@
         "map_positions": []
       },
       {
-        "race_id": "PRT-MAN-TCAMP26-iberian-championship,-middle",
+        "race_id": "PRT-MAN-TCAMP26-iberian-championship-middle",
         "name": "Iberian Championship, Middle",
         "date": "2026-03-14",
         "time": "00:00",
@@ -78737,7 +78737,7 @@
         "map_positions": []
       },
       {
-        "race_id": "PRT-MAN-TCAMP26-iberian-championship,-sprint",
+        "race_id": "PRT-MAN-TCAMP26-iberian-championship-sprint",
         "name": "Iberian Championship, Sprint",
         "date": "2026-03-14",
         "time": "00:00",
@@ -78753,7 +78753,7 @@
         "map_positions": []
       },
       {
-        "race_id": "PRT-MAN-TCAMP26-iberian-championship,-mass-start",
+        "race_id": "PRT-MAN-TCAMP26-iberian-championship-mass-start",
         "name": "Iberian Championship, Mass Start",
         "date": "2026-03-15",
         "time": "00:00",
