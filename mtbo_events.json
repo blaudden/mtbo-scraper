@@ -78625,8 +78625,8 @@
     "classes": [],
     "races": [
       {
-        "race_id": "PRT-MAN-TCAMP26-middle-distance-(troféu-ori-btt)",
-        "name": "Middle Distance (Troféu Ori-BTT)",
+        "race_id": "PRT-MAN-TCAMP26-troféu-ori-btt,-middle",
+        "name": "Troféu Ori-BTT, Middle",
         "date": "2026-03-07",
         "time": "10:00",
         "distance": "Middle",
@@ -78641,8 +78641,8 @@
         "map_positions": []
       },
       {
-        "race_id": "PRT-MAN-TCAMP26-sprint-(troféu-ori-btt)",
-        "name": "Sprint (Troféu Ori-BTT)",
+        "race_id": "PRT-MAN-TCAMP26-troféu-ori-btt,-sprint",
+        "name": "Troféu Ori-BTT, Sprint",
         "date": "2026-03-08",
         "time": "10:00",
         "distance": "Sprint",
@@ -78721,8 +78721,8 @@
         "map_positions": []
       },
       {
-        "race_id": "PRT-MAN-TCAMP26-iberian-championship---middle",
-        "name": "Iberian Championship - Middle",
+        "race_id": "PRT-MAN-TCAMP26-iberian-championship,-middle",
+        "name": "Iberian Championship, Middle",
         "date": "2026-03-14",
         "time": "00:00",
         "distance": "Middle",
@@ -78737,8 +78737,8 @@
         "map_positions": []
       },
       {
-        "race_id": "PRT-MAN-TCAMP26-iberian-championship---sprint",
-        "name": "Iberian Championship - Sprint",
+        "race_id": "PRT-MAN-TCAMP26-iberian-championship,-sprint",
+        "name": "Iberian Championship, Sprint",
         "date": "2026-03-14",
         "time": "00:00",
         "distance": "Sprint",
@@ -78753,8 +78753,8 @@
         "map_positions": []
       },
       {
-        "race_id": "PRT-MAN-TCAMP26-iberian-championship---mass-start",
-        "name": "Iberian Championship - Mass Start",
+        "race_id": "PRT-MAN-TCAMP26-iberian-championship,-mass-start",
+        "name": "Iberian Championship, Mass Start",
         "date": "2026-03-15",
         "time": "00:00",
         "distance": "Long",
@@ -78781,7 +78781,14 @@
         "type": "Map"
       }
     ],
-    "map_positions": []
+    "map_positions": [
+      {
+        "raceid": 0,
+        "lat": 38.29,
+        "lon": -7.38,
+        "polygon": null
+      }
+    ]
   },
   {
     "id": "IOF-8827",
@@ -78799,7 +78806,8 @@
       "Organising federation": "France",
       "Status": "approved",
       "Discipline": "MTBO",
-      "Event type": "World Ranking Event"
+      "Event type": "World Ranking Event",
+      "Punching system": "Sportident"
     },
     "contact": {
       "Website": "http://vtto.raidlinks.fr",
@@ -78894,7 +78902,8 @@
       "Normal entry deadline": "10 April 2026 at 23:59 local time (UTC+2)",
       "Late entry deadline": "12 April 2026 at 23:59 local time (UTC+2)",
       "Discipline": "MTBO",
-      "Event type": "World Ranking Event"
+      "Event type": "World Ranking Event",
+      "Punching system": "Sportident"
     },
     "contact": {
       "Website": "http://mtbo.hsvwrn-ol.at",
@@ -78989,7 +78998,8 @@
       "Normal entry deadline": "10 April 2026 at 23:59 local time (UTC+2)",
       "Late entry deadline": "12 April 2026 at 23:59 local time (UTC+2)",
       "Discipline": "MTBO",
-      "Event type": "World Ranking Event"
+      "Event type": "World Ranking Event",
+      "Punching system": "Sportident"
     },
     "contact": {
       "Website": "http://mtbo.hsvwrn-ol.at",
@@ -79543,7 +79553,14 @@
         "type": "Bulletin"
       }
     ],
-    "map_positions": []
+    "map_positions": [
+      {
+        "raceid": 0,
+        "lat": 56.36,
+        "lon": 8.62,
+        "polygon": null
+      }
+    ]
   },
   {
     "id": "IOF-8557",
@@ -82471,7 +82488,8 @@
       "Organising club": "Scottish Orienteering Association",
       "Status": "approved",
       "Discipline": "MTBO",
-      "Event type": "World Masters"
+      "Event type": "World Masters",
+      "Punching system": "Sportident"
     },
     "contact": {
       "Website": "http://www.mtbo2026.org",
@@ -82728,15 +82746,21 @@
       "Organising federation": "Australia",
       "Status": "approved",
       "Discipline": "MTBO",
-      "Event type": "World Ranking Event"
+      "Event type": "World Ranking Event",
+      "Punching system": "Sportident"
     },
     "contact": {
       "Website": "http://ausmtbochamps2026.orienteering.asn.au",
       "Contact phone number": "+61 427840816",
       "Contact email": "2026mtbo@orienteering.asn.au",
+      "Event director": "John Gavens",
+      "Course setter": "Robert Edmonds",
       "Event Adviser": "Kathy Liley"
     },
-    "classes": [],
+    "classes": [
+      "M21A",
+      "W21A"
+    ],
     "races": [
       {
         "race_id": "8885",
@@ -82752,10 +82776,23 @@
         "start_list": null,
         "result_list": null,
         "livelox_links": [],
-        "map_positions": []
+        "map_positions": [
+          {
+            "raceid": 1,
+            "lat": -37.4324127670719,
+            "lon": 143.903935127099,
+            "polygon": null
+          }
+        ]
       }
     ],
-    "documents": [],
+    "documents": [
+      {
+        "name": "Bulletin 1",
+        "url": "https://eventor.orienteering.asn.au/Documents/Event/22515/1/BULLETIN-1",
+        "type": "external link"
+      }
+    ],
     "map_positions": []
   },
   {
@@ -82774,15 +82811,22 @@
       "Organising federation": "Australia",
       "Status": "approved",
       "Discipline": "MTBO",
-      "Event type": "World Ranking Event"
+      "Event type": "World Ranking Event",
+      "Punching system": "Sportident"
     },
     "contact": {
       "Website": "http://ausmtbochamps2026.orienteering.asn.au",
       "Contact phone number": "+61 427840816",
       "Contact email": "2026mtbo@orienteering.asn.au",
+      "Event director": "John Gavens",
+      "Course setter": "Dion Keech",
+      "Event controller": "Kathy Liley",
       "Event Adviser": "Kathy Liley"
     },
-    "classes": [],
+    "classes": [
+      "M21A",
+      "W21A"
+    ],
     "races": [
       {
         "race_id": "8884",
@@ -82798,10 +82842,33 @@
         "start_list": null,
         "result_list": null,
         "livelox_links": [],
-        "map_positions": []
+        "map_positions": [
+          {
+            "raceid": 1,
+            "lat": -37.5522634655174,
+            "lon": 143.896815663088,
+            "polygon": null
+          }
+        ]
       }
     ],
-    "documents": [],
+    "documents": [
+      {
+        "name": "Previous maps - Nerrina 1:15000, - 2023",
+        "url": "https://eventor.orienteering.asn.au/Documents/Event/22506/1/Previous-map---Nerrina-1-15000---2023",
+        "type": "external link"
+      },
+      {
+        "name": "Previous map - Creswick Forest 1:20000 - 2023",
+        "url": "https://eventor.orienteering.asn.au/Documents/Event/22507/3/Previous-map---Creswick-Forest---East---1-20000---2023",
+        "type": "external link"
+      },
+      {
+        "name": "Bulletin 1",
+        "url": "https://eventor.orienteering.asn.au/Documents/Event/22515/1/BULLETIN-1",
+        "type": "external link"
+      }
+    ],
     "map_positions": []
   },
   {
