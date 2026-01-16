@@ -27,7 +27,7 @@ logger = logging.getLogger(__name__)
 EVENTOR_CONFIGS = [
     {"country": "SWE", "url": "https://eventor.orientering.se"},
     {"country": "NOR", "url": "https://eventor.orientering.no"},
-    {"country": "IOF", "url": "https://eventor.orienteering.org"}
+    {"country": "IOF", "url": "https://eventor.orienteering.sport"}
 ]
 MANUAL_EVENTS_DIR = "manual_events"
 
