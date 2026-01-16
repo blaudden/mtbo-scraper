@@ -6,6 +6,8 @@ country: "DNK"
 organizers: ["Navet"]
 status: "Planned"
 url: "http://www.mtbocamp.dk"
+lat: 56.36
+lon: 8.62
 documents:
   - name: "Bulletin 1"
     url: "file://MTBO CAMP 20206 Bulletin 1.pdf"

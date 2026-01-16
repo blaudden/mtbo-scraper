@@ -67,16 +67,28 @@ class ManualSource:
 
         races = []
         for race_data in data.get('races', []):
-            races.append(Race(
+            race = Race(
                 race_id=f"{data.get('id')}-{race_data.get('name').replace(' ', '-').lower()}",
                 name=race_data.get('name'),
                 date=race_data.get('date'),
                 time=race_data.get('time', '00:00'),
                 distance=race_data.get('distance'),
                 night_or_day=race_data.get('night_or_day', 'day')
-            ))
+            )
+            
+            # Support race-level position if specified
+            if 'lat' in race_data and 'lon' in race_data:
+                # Use a temporary integer race_id for map position if needed, 
+                # or just use 1 since we are attaching it to this specific race object
+                race.map_positions.append(MapPosition(
+                    raceid=1, 
+                    lat=float(race_data['lat']), 
+                    lon=float(race_data['lon'])
+                ))
+            
+            races.append(race)
 
-        return Event(
+        event = Event(
             event_id=data.get('id'),
             name=data.get('name'),
             start_date=data.get('start_date'),
@@ -92,3 +104,13 @@ class ManualSource:
             attributes=data.get('attributes', {}),
             contact=data.get('contact', {})
         )
+
+        # Support event-level position
+        if 'lat' in data and 'lon' in data:
+            event.map_positions.append(MapPosition(
+                raceid=0,
+                lat=float(data['lat']),
+                lon=float(data['lon'])
+            ))
+            
+        return event

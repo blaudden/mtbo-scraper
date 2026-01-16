@@ -20,10 +20,11 @@ Use this skill when you need to add an event to the system that cannot be scrape
     - Create a directory in `manual_events/` matching the ID.
     - `mkdir -p manual_events/{EventID}`
 
-3.  **Gather Assets**
+3.  **Gather Assets & Location**
 
     - Download any relevant PDFs (Bulletins, invitation) to this directory.
     - If you have a PDF, use `pdftotext` to extract text for analysis: `pdftotext "Bulletin.pdf" -`
+    - Determine the event coordinates (latitude and longitude). It doesn't need to be exact. If there are multiple locations, approximate the middle.
 
 4.  **Create `event.yaml`**
 
@@ -45,6 +46,8 @@ country: "DNK" # ISO 3 code (DNK, SWE, NOR, etc.)
 organizers: ["Organizer Name"]
 status: "Planned" # Planned, Active, Cancelled
 url: "http://event-website.com"
+lat: 55.000 # Latitude (approximate middle if multiple locations)
+lon: 12.000 # Longitude (approximate middle if multiple locations)
 documents:
   - name: "Bulletin 1"
     url: "file://Bulletin1.pdf" # Relative to this yaml file
