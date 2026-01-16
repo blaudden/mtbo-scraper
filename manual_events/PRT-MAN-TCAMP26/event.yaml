@@ -6,6 +6,8 @@ country: "PRT"
 organizers: ["CN Alvito", "FEDO"]
 status: "Planned"
 url: "https://eventoscnalvito.wixsite.com/mtbo-tcamp2026"
+lat: 38.29
+lon: -7.38
 documents:
   - name: "General Info"
     url: "https://eventoscnalvito.wixsite.com/mtbo-tcamp2026/general-info"
@@ -47,4 +49,4 @@ races:
     distance: "Sprint"
   - name: "Iberian Championship, Mass Start"
     date: "2026-03-15"
-    distance: "Long" 
+    distance: "Long"
