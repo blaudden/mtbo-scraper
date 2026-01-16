@@ -1,5 +1,9 @@
 beautifulsoup4
-cloudscraper
+cloudscraper @ git+https://github.com/VeNoMouS/cloudscraper.git@3.0.0
 lxml
 click
 requests
+selenium
+undetected-chromedriver
+setuptools
+pyvirtualdisplay

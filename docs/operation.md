@@ -4,10 +4,26 @@
 
 1.  Ensure `uv` is installed.
 2.  Clone the repository.
-3.  Install dependencies:
+3.  Install Python dependencies:
+
     ```bash
     uv sync
     ```
+
+4.  **System Requirements** (for Cloudflare bypass):
+
+    - **Google Chrome** - Required by undetected-chromedriver
+
+      ```bash
+      # Ubuntu/Debian
+      wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+      sudo dpkg -i google-chrome-stable_current_amd64.deb
+      ```
+
+    - **Xvfb** - Required for headless/cron environments
+      ```bash
+      sudo apt-get install xvfb
+      ```
 
 ## Usage
 
@@ -68,8 +84,26 @@ Logs are written to:
 
 ## Troubleshooting
 
-- **Cloudflare Errors**: If the scraper fails with 403/Cloudflare errors, check if `cloudscraper` needs updating or if Eventor has changed its protection.
-- **Missing Map Data**: If map positions are missing, verify that the event actually has a map published on Eventor.
+### Cloudflare Errors
+
+The scraper uses a two-tier Cloudflare bypass:
+
+1. **cloudscraper** - Handles most JavaScript challenges automatically
+2. **undetected-chromedriver** - For "managed challenge" (opens real browser)
+
+Common issues:
+
+- **Browser window pops up**: This is expected behavior when managed challenge is encountered. The browser opens briefly to solve the Cloudflare challenge, then closes. Cookies are cached for subsequent requests.
+
+- **"Could not start virtual display"**: Install Xvfb: `sudo apt-get install xvfb`
+
+- **Chrome not found**: Install Google Chrome (see Installation section)
+
+- **Infinite loop / hanging**: This was a bug in cloudscraper 3.0.0's `auto_refresh_on_403` feature. It's disabled in our configuration.
+
+### Missing Map Data
+
+If map positions are missing, verify that the event actually has a map published on Eventor.
 
 ## Running Tests
 

@@ -6,7 +6,7 @@ The MTBO Scraper is a Python-based tool designed to collect Mountain Bike Orient
 
 - Sweden (https://eventor.orientering.se)
 - Norway (https://eventor.orientering.no)
-- IOF (https://eventor.orienteering.org)
+- IOF (https://eventor.orienteering.sport)
 
 The scraper extracts event details, document links, entry statistics, and precise map locations (including embargoed area polygons) into a structured JSON format.
 
@@ -16,9 +16,11 @@ The scraper extracts event details, document links, entry statistics, and precis
 
 1.  **Scraper (`src.scraper.Scraper`)**:
 
-    - Handles HTTP requests.
-    - Uses `cloudscraper` to bypass Cloudflare protection.
+    - Handles HTTP requests with automatic Cloudflare bypass.
+    - **Primary**: Uses `cloudscraper` (v3.0.0) for most requests.
+    - **Fallback**: Uses `undetected-chromedriver` for Cloudflare "managed challenges".
     - Implements rate limiting and exponential backoff.
+    - Caches browser cookies per domain for efficient subsequent requests.
 
 2.  **Parser (`src.parsers.EventorParser`)**:
 
@@ -41,6 +43,70 @@ The scraper extracts event details, document links, entry statistics, and precis
     - CLI entry point using `click`.
     - Orchestrates the scraping flow: List -> Details -> Storage.
 
+## Cloudflare Bypass Architecture
+
+The scraper handles Cloudflare protection with a two-tier approach:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                         Request                             │
+└──────────────────────────┬──────────────────────────────────┘
+                           │
+                           ▼
+┌─────────────────────────────────────────────────────────────┐
+│                      cloudscraper                            │
+│  (Primary - handles v1/v2/v3 JavaScript challenges)          │
+└──────────────────────────┬──────────────────────────────────┘
+                           │
+              ┌────────────┴────────────┐
+              │                         │
+              ▼                         ▼
+        ┌──────────┐           ┌─────────────────┐
+        │ 200 OK   │           │  403 Managed    │
+        │          │           │  Challenge      │
+        └────┬─────┘           └────────┬────────┘
+             │                          │
+             │                          ▼
+             │               ┌─────────────────────────────┐
+             │               │  undetected-chromedriver    │
+             │               │  (Opens real browser)       │
+             │               │  - Waits for challenge      │
+             │               │  - Extracts cookies         │
+             │               │  - Applies to cloudscraper  │
+             │               └────────────┬────────────────┘
+             │                            │
+             │                            ▼
+             │               ┌─────────────────────────────┐
+             │               │  Retry with cookies         │
+             │               │  (cloudscraper + cf_clearance)
+             │               └────────────┬────────────────┘
+             │                            │
+             ▼                            ▼
+┌─────────────────────────────────────────────────────────────┐
+│                      Response                                │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Cloudflare Challenge Types
+
+| Type                | Protection Level | Bypass Method             |
+| ------------------- | ---------------- | ------------------------- |
+| v1 (JavaScript)     | Low              | cloudscraper (automatic)  |
+| v2 (CAPTCHA)        | Medium           | cloudscraper + solver     |
+| v3 (VM Challenge)   | Medium           | cloudscraper (automatic)  |
+| Managed (Turnstile) | High             | Browser fallback required |
+
+Sites using **Managed Challenge**, requires a real browser.
+
+### Cookie Reuse
+
+After obtaining cookies from the browser, they are applied to the cloudscraper session:
+
+- `cf_clearance` - Main Cloudflare bypass token
+- User-Agent - Must match between browser and subsequent requests
+
+Subsequent requests to the same domain use cached cookies, avoiding repeated browser launches.
+
 ## Data Flow
 
 1.  **CLI** receives start/end dates.
@@ -58,3 +124,20 @@ The scraper looks for hidden `<input class="options">` elements within `.mapPosi
 - `polygonVertices` (Embargoed area polygon)
 
 This data is normalized to a consistent `[lon, lat]` format for GeoJSON compatibility.
+
+## Dependencies
+
+### Core
+
+- `beautifulsoup4` - HTML parsing
+- `lxml` - Fast XML/HTML parser
+- `click` - CLI framework
+- `requests` - HTTP client
+
+### Cloudflare Bypass
+
+- `cloudscraper` (v3.0.0 from GitHub) - Primary Cloudflare bypass
+- `undetected-chromedriver` - Browser automation fallback
+- `selenium` - WebDriver protocol
+- `setuptools` - Python 3.12 compatibility (distutils)
+- `pyvirtualdisplay` - Virtual framebuffer for headless environments
