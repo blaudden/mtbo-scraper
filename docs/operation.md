@@ -38,6 +38,11 @@ Run the scraper using the provided bash script:
 - `--start-date YYYY-MM-DD`: Start date for scraping (default: 4 weeks ago).
 - `--end-date YYYY-MM-DD`: End date for scraping (default: Dec 31st of current year).
 - `--output FILE`: Output JSON file path (default: `mtbo_events.json`).
+- `--verbose, -v`: Increase logging verbosity. Use multiple times for more detail:
+  - No flag: WARNING level (errors and warnings only)
+  - `-v`: INFO level (general progress information)
+  - `-vv` or more: DEBUG level (detailed execution trace)
+- `--json-logs`: Output logs in JSON format for machine parsing and AI agents.
 
 ### Examples
 
@@ -51,6 +56,18 @@ Scrape a specific range:
 
 ```bash
 ./scrape_now.sh --start-date 2025-06-01 --end-date 2025-08-31
+```
+
+Verbose output for debugging:
+
+```bash
+./scrape_now.sh -vv --start-date 2025-01-01
+```
+
+JSON logs for automated monitoring:
+
+```bash
+./scrape_now.sh --json-logs --output events.json
 ```
 
 ## Scheduling
@@ -75,7 +92,47 @@ You can also pass arguments to `scrape_and_push.sh`, which will be forwarded to 
 ./scrape_and_push.sh --start-date 2025-01-01
 ```
 
+```
+
 ## Logging
+
+The scraper supports two logging modes: **human-readable** (default) and **JSON** for machine parsing.
+
+### Logging Modes
+
+#### Human-Readable (Default)
+
+Standard console output with timestamps and log levels:
+
+```bash
+./scrape_now.sh -v
+```
+
+Output:
+```
+2026-01-23 22:44:51 [info] scraper_starting output_file=mtbo_events.json
+2026-01-23 22:44:51 [info] date_range_determined start_date=2025-12-26 end_date=2026-12-31
+```
+
+#### JSON Format (for AI Agents & Monitoring)
+
+Machine-parseable structured logs:
+
+```bash
+./scrape_now.sh --json-logs
+```
+
+Output:
+```json
+{"event": "scraper_starting", "level": "info", "timestamp": "2026-01-23T22:44:51.123Z", "output_file": "mtbo_events.json"}
+{"event": "date_range_determined", "level": "info", "timestamp": "2026-01-23T22:44:51.456Z", "start_date": "2025-12-26", "end_date": "2026-12-31"}
+```
+
+### Verbosity Levels
+
+- **Default** (no `-v` flag): WARNING level - only errors and warnings
+- **`-v`**: INFO level - general progress and completion messages
+- **`-vv`** or more: DEBUG level - detailed trace including HTTP requests
 
 Logs are written to:
 
@@ -115,7 +172,7 @@ The project includes comprehensive unit tests to verify parsing functionality.
 ./run_tests.sh
 ```
 
-This will run all tests using `pytest` with verbose output.
+This will run the `ruff` linter followed by all `pytest` tests with verbose output.
 
 Or:
 
@@ -143,6 +200,14 @@ uv run python -m pytest tests/test_new_events.py -v
 ```bash
 # Run a specific test by name
 uv run python -m pytest tests/test_parser.py::test_parse_swe_multi -v
+
+## Code Formatting
+
+To automatically format the code to satisfy Ruff's style guidelines (and pass the linter), run:
+
+```bash
+uv run ruff format .
+```
 ```
 
 ### Test Coverage
