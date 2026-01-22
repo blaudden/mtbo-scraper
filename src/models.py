@@ -1,130 +1,246 @@
 from dataclasses import dataclass, field
-from typing import List, Optional, Dict, Any
+from typing import Any
+
 
 @dataclass
-class MapPosition:
-    raceid: int
+class Position:
+    """Represents a geographical position."""
+
     lat: float
-    lon: float
-    polygon: Optional[List[List[float]]] = None
+    lng: float
+
+
+@dataclass
+class Area:
+    """Represents a geographical area, potentially with a polygon boundary."""
+
+    lat: float
+    lng: float
+    polygon: list[list[float]] | None = None
+
+
+@dataclass
+class Url:
+    """Represents a URL resource associated with an event or race."""
+
+    type: str  # IOF: Website, StartList, ResultList; Custom: EntryList, Livelox
+    url: str
+
 
 @dataclass
 class Document:
-    name: str
-    url: str
+    """Represents a document resource."""
+
+    # Invitation, Bulletin, StartList, TechnicalInformation,
+    # EmbargoMap, ResultList, Other
     type: str
+    title: str
+    url: str
+    published_time: str | None = None  # ISO 8601 datetime
+
+
+@dataclass
+class Official:
+    """Represents an event official."""
+
+    role: str  # e.g., EventDirector, CourseSetter
+    name: str
+
+
+@dataclass
+class Organiser:
+    """Represents an event organiser."""
+
+    name: str
+    country_code: str | None = None
+
+
+@dataclass
+class EntryDeadline:
+    """Represents an entry deadline."""
+
+    type: str  # normal, late
+    datetimez: str  # ISO 8601 datetime with offset (YYYY-MM-DDTHH:mm:ss+HH:MM)
+
 
 @dataclass
 class Race:
+    """Represents a single race/stage within an event.
+
+    Follows IOF 3.0 terminology with snake_case attributes.
     """
-    Represents a single race/stage within a multi-day event.
-    
-    Date format: ISO 8601 (YYYY-MM-DD)
-    Time format: Local time in HH:MM format (24-hour)
-    Night or day: Indicates day/night racing (values: "day", "night", "combined day and night")
-    """
-    race_id: str # Eventor race ID (e.g. "52358") or synthetic ID (e.g. "50597-stage-1") if not available from Eventor
-    name: str  # e.g., "Stage 1", "Middle", "Etapp 1"
-    date: str  # ISO format: YYYY-MM-DD
-    time: str  # Local time: HH:MM (24-hour format)
-    distance: str  # Unified field for distance/format (e.g., "Long", "Middle", "Sprint")
-    night_or_day: str = ""  # Day/night indicator: "day", "night", or "combined day and night"
-    
-    # Race-specific details
-    map_positions: List[MapPosition] = field(default_factory=list)
-    
-    # List URLs (race-specific)
-    entry_list_url: Optional[str] = None
-    start_list_url: Optional[str] = None
-    result_list_url: Optional[str] = None
-    
-    # List data (structured as dicts with total_count and class_counts)
-    entry_list: Optional[Dict[str, Any]] = None
-    start_list: Optional[Dict[str, Any]] = None
-    result_list: Optional[Dict[str, Any]] = None
-    
-    livelox_links: List[Dict[str, str]] = field(default_factory=list) # [{"name": "...", "url": "..."}]
+
+    race_number: int  # 1-based index
+    name: str
+    datetimez: str  # ISO 8601 datetime with offset (YYYY-MM-DDTHH:mm:ss+HH:MM)
+    discipline: str  # Sprint, Middle, Long, Ultralong
+
+    # Optional/Custom fields
+    night_or_day: str | None = None  # day, night, combined
+    punching_system: str | None = None  # e.g. SI
+
+    # Position: Optional center point (lat, lng)
+    position: Position | None = None
+
+    # Areas: List of areas (center + polygon)
+    areas: list[Area] = field(default_factory=list)
+
+    urls: list[Url] = field(default_factory=list)
+    # Documents specific to this race (e.g. start list if per race)
+    documents: list[Document] = field(default_factory=list)
+
+    # List counts (Class -> Count)
+    entry_counts: dict[str, int] | None = None
+    start_counts: dict[str, int] | None = None
+    result_counts: dict[str, int] | None = None
+
+    # Internal tracking
+    _internal_eventor_id: str | None = None
+
 
 @dataclass
 class Event:
+    """Represents an MTBO event.
+
+    Follows IOF 3.0 terminology with snake_case attributes.
     """
-    Represents an orienteering event.
-    
-    Date formats:
-    - start_date, end_date: ISO 8601 (YYYY-MM-DD)
-    - For multi-day events, end_date is the date of the last race
-    """
-    event_id: str # Format: {Country}-{EventId} (e.g. SWE-12345)
+
+    id: str  # {CountryCode}_{SourceId}
     name: str
-    start_date: str  # ISO format: YYYY-MM-DD
-    end_date: str  # ISO format: YYYY-MM-DD
-    organizers: List[str]
-    country: str # ISO 3166-1 alpha-3 code (e.g. SWE, NOR, IOF)
-    status: str
-    url: str
-    
-    # Details
-    info_text: str = "" # Free text from info box
-    attributes: Dict[str, Any] = field(default_factory=dict) # General info (values can be str or List[str])
-    contact: Dict[str, str] = field(default_factory=dict)
-    classes: List[str] = field(default_factory=list) # List of class names or types
-    races: List[Race] = field(default_factory=list)
-    documents: List[Document] = field(default_factory=list)
-    map_positions: List[MapPosition] = field(default_factory=list) # Event-level map positions (for IOF events)
-    
-    def to_dict(self):
+    start_time: str  # YYYY-MM-DD (plain date)
+    end_time: str  # YYYY-MM-DD (plain date)
+    status: str  # IOF EventStatus: Planned, Applied, Proposed,
+    # Sanctioned, Canceled, Rescheduled
+    original_status: str  # Raw scraped status
+    races: list[Race]  # minItems: 1
+
+    # Optional fields
+    classification: str | None = None  # International, National, Regional, Local, Club
+    form: str | None = None  # Individual, Team, Relay
+    organisers: list[Organiser] = field(default_factory=list)
+    officials: list[Official] = field(default_factory=list)
+    classes: list[str] = field(default_factory=list)
+    urls: list[Url] = field(default_factory=list)
+    url: str | None = None  # Internal URL for scraping details
+    # (not exposed in JSON usually)
+    documents: list[Document] = field(default_factory=list)
+    information: str | None = None
+    region: str | None = None
+    punching_system: str | None = None
+    entry_deadlines: list[EntryDeadline] = field(default_factory=list)
+
+    def to_dict(self) -> dict[str, Any]:
+        """Converts the Event object to a dictionary matching the JSON Schema structure.
+
+        Returns:
+            A dictionary representation of the event.
+        """
         return {
-            "id": self.event_id,
+            "id": self.id,
             "name": self.name,
-            "start_date": self.start_date,
-            "end_date": self.end_date,
-            "organizers": self.organizers,
-            "country": self.country,
+            "start_time": self.start_time,
+            "end_time": self.end_time,
             "status": self.status,
-            "url": self.url,
-            "info_text": self.info_text,
-            "attributes": self.attributes,
-            "contact": self.contact,
-            "classes": self.classes,
-            "races": [
-                {
-                    "race_id": r.race_id,
-                    "name": r.name,
-                    "date": r.date,
-                    "time": r.time,
-                    "distance": r.distance,
-                    "night_or_day": r.night_or_day,
-                    "entry_list_url": r.entry_list_url,
-                    "start_list_url": r.start_list_url,
-                    "result_list_url": r.result_list_url,
-                    "entry_list": r.entry_list,
-                    "start_list": r.start_list,
-                    "result_list": r.result_list,
-                    "livelox_links": r.livelox_links,
-                    "map_positions": [
-                        {
-                            "raceid": mp.raceid,
-                            "lat": mp.lat,
-                            "lon": mp.lon,
-                            "polygon": mp.polygon
-                        } for mp in r.map_positions
-                    ]
-                } for r in self.races
+            "original_status": self.original_status,
+            "classification": self.classification,
+            "form": self.form,
+            "organisers": [
+                {"name": o.name, "country_code": o.country_code}
+                for o in self.organisers
             ],
+            "officials": [{"role": o.role, "name": o.name} for o in self.officials],
+            "classes": self.classes,
+            "urls": [{"type": u.type, "url": u.url} for u in self.urls],
             "documents": [
                 {
-                    "name": d.name,
+                    "type": d.type,
+                    "title": d.title,
                     "url": d.url,
-                    "type": d.type
-                } for d in self.documents
+                    "published_time": d.published_time,
+                }
+                for d in self.documents
             ],
-            "map_positions": [
+            "information": self.information,
+            "region": self.region,
+            "punching_system": self.punching_system,
+            "races": [
                 {
-                    "raceid": mp.raceid,
-                    "lat": mp.lat,
-                    "lon": mp.lon,
-                    "polygon": mp.polygon
-                } for mp in self.map_positions
-            ]
+                    "race_number": r.race_number,
+                    "name": r.name,
+                    "datetimez": r.datetimez,
+                    "discipline": r.discipline,
+                    "night_or_day": r.night_or_day,
+                    "punching_system": r.punching_system,
+                    "position": {"lat": r.position.lat, "lng": r.position.lng}
+                    if r.position
+                    else None,
+                    "areas": [
+                        {"lat": a.lat, "lng": a.lng, "polygon": a.polygon}
+                        for a in r.areas
+                    ],
+                    "urls": [{"type": u.type, "url": u.url} for u in r.urls],
+                    "documents": [
+                        {
+                            "type": d.type,
+                            "title": d.title,
+                            "url": d.url,
+                            "published_time": d.published_time,
+                        }
+                        for d in r.documents
+                    ],
+                    "entry_counts": r.entry_counts,
+                    "start_counts": r.start_counts,
+                    "result_counts": r.result_counts,
+                }
+                for r in self.races
+            ],
+            "entry_deadlines": [
+                {"type": d.type, "datetimez": d.datetimez} for d in self.entry_deadlines
+            ],
         }
 
+
+@dataclass
+class Source:
+    """Represents a data source."""
+
+    country_code: str
+    name: str
+    url: str
+
+
+@dataclass
+class Meta:
+    """Represents metadata for the event list."""
+
+    sources: list[Source]
+
+
+@dataclass
+class EventListWrapper:
+    """Top-level wrapper for the scraped event list."""
+
+    schema_version: str
+    create_time: str
+    creator: str
+    meta: Meta
+    events: list[Event]
+
+    def to_dict(self) -> dict[str, Any]:
+        """Converts the wrapper to a dictionary.
+
+        Returns:
+            A dictionary representation of the event list wrapper.
+        """
+        return {
+            "schema_version": self.schema_version,
+            "create_time": self.create_time,
+            "creator": self.creator,
+            "meta": {
+                "sources": [
+                    {"country_code": s.country_code, "name": s.name, "url": s.url}
+                    for s in self.meta.sources
+                ]
+            },
+            "events": [e.to_dict() for e in self.events],
+        }

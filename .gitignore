@@ -7,4 +7,10 @@ wheels/
 *.egg-info
 
 # Virtual environments
-.venv
+.env
+venv/
+.venv/
+
+# Common IDE folders
+.idea/
+.vscode/

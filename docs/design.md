@@ -22,7 +22,7 @@ The scraper extracts event details, document links, entry statistics, and precis
     - Implements rate limiting and exponential backoff.
     - Caches browser cookies per domain for efficient subsequent requests.
 
-2.  **Parser (`src.parsers.EventorParser`)**:
+2.  **Parser (`src.sources.eventor_parser.EventorParser`)**:
 
     - Parses HTML content using `BeautifulSoup` and `lxml`.
     - **List Parsing**: Extracts basic event info from the event list page.
@@ -30,18 +30,75 @@ The scraper extracts event details, document links, entry statistics, and precis
     - **Map Extraction**: Implements a specific recipe to extract map coordinates and polygons from the `input.options` JSON embedded in the page.
 
 3.  **Models (`src.models`)**:
+    - Uses **IOF XML 3.0 Standard** terminology (converted to snake_case).
+    - `EventListWrapper`: Top-level container with metadata and source info.
+    - `Event`: Represents an IOF Event (containing one or more Races).
+    - `Race`: Represents a competition stage (with discipline, date, counts).
+    - `Source`: Metadata about the data origin (SWE, NOR, IOF).
 
-    - `Event`: Data class representing a single event.
-    - `MapPosition`: Data class representing a specific competition leg (etapp) location.
+4.  **Exception Hierarchy (`src.exceptions`)**:
+    - **`ScraperError`**: Base exception with structured error data and correction hints.
+    - **`NetworkError`**: HTTP/connection failures (includes retryable flag).
+    - **`CloudflareError`**: Cloudflare bypass failures.
+    - **`ParseError`**: HTML parsing failures (includes event_id, field, selector).
+    - **`ValidationError`**: Data validation failures.
+    - **`ConfigurationError`**: Invalid configuration/arguments.
 
-4.  **Storage (`src.storage.Storage`)**:
+5.  **Structured Logging (`structlog`)**:
+    - Dual-mode logging: human-readable (console) and JSON (machine-parseable).
+    - Verbosity control via CLI flags (`-v`, `-vv`).
+    - Contextual log data for debugging and monitoring.
+
+6.  **Storage (`src.storage.Storage`)**:
 
     - Manages persistence to `mtbo_events.json`.
     - Merges new data with existing data to prevent duplicates while updating records.
 
-5.  **Controller (`src.main`)**:
+7.  **Controller (`src.main`)**:
     - CLI entry point using `click`.
     - Orchestrates the scraping flow: List -> Details -> Storage.
+
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Main {
+        +run()
+    }
+    class Storage {
+        +load()
+        +save()
+    }
+    class BaseSource {
+        <<Abstract>>
+        +fetch_event_list()
+        +fetch_event_details()
+    }
+    class EventorSource {
+        +country
+        +base_url
+        +fetch_event_list()
+        +fetch_event_details()
+    }
+    class ManualSource {
+        +load_events()
+    }
+    class EventorParser {
+        +parse_event_list()
+        +parse_event_details()
+    }
+    class Scraper {
+        +get()
+    }
+
+    Main --> Storage : uses
+    Main --> EventorSource : uses
+    Main --> ManualSource : uses
+    EventorSource --|> BaseSource : inherits
+    ManualSource --|> BaseSource : inherits (conceptually)
+    EventorSource --> Scraper : uses
+    EventorSource --> EventorParser : uses
+```
 
 ## Cloudflare Bypass Architecture
 
@@ -133,6 +190,7 @@ This data is normalized to a consistent `[lon, lat]` format for GeoJSON compatib
 - `lxml` - Fast XML/HTML parser
 - `click` - CLI framework
 - `requests` - HTTP client
+- `structlog` - Structured logging
 
 ### Cloudflare Bypass
 
@@ -141,3 +199,52 @@ This data is normalized to a consistent `[lon, lat]` format for GeoJSON compatib
 - `selenium` - WebDriver protocol
 - `setuptools` - Python 3.12 compatibility (distutils)
 - `pyvirtualdisplay` - Virtual framebuffer for headless environments
+- `ruff` - Static code analysis and linting (dev dependency)
+
+## Schema Design (IOF 3.0 Based)
+
+The project uses a JSON schema adapted from the IOF XML 3.0 Data Exchange Standard.
+
+- **Terminology**: `Event`, `Race`, `Class`, `Organisation` are mapped directly.
+- **Structure**:
+  - `events`: Array of Event objects.
+  - `races`: Each Event has ≥1 Race objects.
+  - `urls`: Typed links (`Website`, `StartList`, `ResultList`, `Livelox`).
+- **Statistics**: `Race` objects store `entry_counts`, `start_counts`, and `result_counts` as nested objects (`{total_count, class_counts}`).
+
+## AI Agent Readiness
+
+The scraper is designed to be easily consumed by AI agents and automated systems:
+
+### Structured Error Messages
+
+All custom exceptions include:
+- **Error context**: Event IDs, field names, selectors, URLs
+- **Correction hints**: Actionable suggestions for agents to resolve errors
+- **Machine-readable data**: Accessible via `.error_data` dict and `.to_dict()` method
+
+### Structured Logging
+
+Two logging modes for different audiences:
+- **Human-readable**: Console output with colors and formatting
+- **JSON**: Machine-parseable logs with full context (`--json-logs` flag)
+
+Each log entry includes:
+- Event name/type
+- Contextual data (event_id, country, URLs, etc.)
+- Timestamps in ISO format
+- Log level
+
+### Type Safety
+
+- Python type hints throughout codebase
+- Strict mypy checking enabled
+- Return types specified for all public functions
+- Helps AI agents understand function signatures and data flow
+
+### Error Recovery
+
+Exceptions include `retryable` flags to indicate whether operations should be retried:
+- `NetworkError.retryable` - Indicates if request can be retried
+- Error suggestions guide agents on next steps
+- Structured error data enables automated error handling

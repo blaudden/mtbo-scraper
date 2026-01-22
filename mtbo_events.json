@@ -1,1 +1,5262 @@
-
+{
+  "schema_version": "1.0",
+  "create_time": "2026-01-23T21:01:12.981286+00:00",
+  "creator": "MTBO Scraper",
+  "meta": {
+    "sources": [
+      {
+        "country_code": "SWE",
+        "name": "Swedish Eventor",
+        "url": "https://eventor.orientering.se"
+      },
+      {
+        "country_code": "IOF",
+        "name": "IOF Eventor",
+        "url": "https://eventor.orienteering.org"
+      },
+      {
+        "country_code": "NOR",
+        "name": "Norwegian Eventor",
+        "url": "https://eventor.orientering.no"
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "SWE_54016",
+      "name": "Tränings-OL + MTBO",
+      "start_time": "2025-07-01",
+      "end_time": "2025-07-01",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "classification": "Local",
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Ljusdals OK",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Stefan Mårdberg"
+        }
+      ],
+      "classes": [
+        "Kort",
+        "Lång",
+        "MTB Kort",
+        "MTB Lång",
+        "Nybörjare"
+      ],
+      "urls": [],
+      "documents": [],
+      "information": null,
+      "region": "Hälsingland",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Tränings-OL + MTBO",
+          "datetimez": "2025-07-01T00:00:00+02:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": {
+            "lat": 61.834054209277,
+            "lng": 16.0319527560391
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/161834"
+            },
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=54016&groupBy=EventClass"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=54016&groupBy=EventClass"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=54016&groupBy=EventClass"
+            }
+          ],
+          "documents": [],
+          "entry_counts": {
+            "total_count": 0,
+            "class_counts": {}
+          },
+          "start_counts": {
+            "total_count": 39,
+            "class_counts": {
+              "MTB Kort": 12,
+              "MTB Lång": 7,
+              "Kort": 6,
+              "Lång": 9,
+              "Nybörjare": 5
+            }
+          },
+          "result_counts": {
+            "total_count": 39,
+            "class_counts": {
+              "MTB Kort": 12,
+              "MTB Lång": 7,
+              "Kort": 6,
+              "Lång": 9,
+              "Nybörjare": 5
+            }
+          }
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_8442",
+      "name": "MTBO5days 2025 - stage 3",
+      "start_time": "2025-07-03",
+      "end_time": "2025-07-03",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "classification": null,
+      "form": null,
+      "organisers": [
+        {
+          "name": "Czechia",
+          "country_code": "IOF"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "+420739284969"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:BRURDhtKIwEECgsTAFoBFQ=="
+        }
+      ],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Website",
+          "url": "http://mtbo5days.eu"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Bulletin",
+          "title": "Bulletin 1",
+          "url": "/Documents/Event/9090/Bulletin-1",
+          "published_time": null
+        },
+        {
+          "type": "Bulletin",
+          "title": "Bulletin 2",
+          "url": "/Documents/Event/9091/Bulletin-2",
+          "published_time": null
+        }
+      ],
+      "information": "Part of multiday stage race, please use the organizer site for Entries.",
+      "region": null,
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "MTBO5days 2025 - stage 3",
+          "datetimez": "2025-07-03T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "punching_system": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=8442&groupBy=EventClass"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=8442&groupBy=EventClass"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=8442&groupBy=EventClass"
+            }
+          ],
+          "documents": [],
+          "entry_counts": {
+            "total_count": 0,
+            "class_counts": {}
+          },
+          "start_counts": {
+            "total_count": 133,
+            "class_counts": {
+              "Men": 89,
+              "Women": 44
+            }
+          },
+          "result_counts": {
+            "total_count": 133,
+            "class_counts": {
+              "Men": 89,
+              "Women": 44
+            }
+          }
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_8443",
+      "name": "MTBO5days 2025 - stage 4",
+      "start_time": "2025-07-04",
+      "end_time": "2025-07-04",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "classification": null,
+      "form": null,
+      "organisers": [
+        {
+          "name": "Czechia",
+          "country_code": "IOF"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "+420739284969"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:BRURDhtKIwEECgsTAFoBFQ=="
+        }
+      ],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Website",
+          "url": "http://mtbo5days.eu"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Bulletin",
+          "title": "Bulletin 1",
+          "url": "/Documents/Event/9088/Bulletin-1",
+          "published_time": null
+        },
+        {
+          "type": "Bulletin",
+          "title": "Bulletin 2",
+          "url": "/Documents/Event/9089/Bulletin-2",
+          "published_time": null
+        }
+      ],
+      "information": "Part of multiday stage race, please use the organizer site for Entries.",
+      "region": null,
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "MTBO5days 2025 - stage 4",
+          "datetimez": "2025-07-04T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "punching_system": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=8443&groupBy=EventClass"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=8443&groupBy=EventClass"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=8443&groupBy=EventClass"
+            }
+          ],
+          "documents": [],
+          "entry_counts": {
+            "total_count": 0,
+            "class_counts": {}
+          },
+          "start_counts": {
+            "total_count": 132,
+            "class_counts": {
+              "Men": 90,
+              "Women": 42
+            }
+          },
+          "result_counts": {
+            "total_count": 132,
+            "class_counts": {
+              "Men": 90,
+              "Women": 42
+            }
+          }
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_8474",
+      "name": "Estonian and Baltic MTBO championships in sprint",
+      "start_time": "2025-07-11",
+      "end_time": "2025-07-11",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "classification": null,
+      "form": null,
+      "organisers": [
+        {
+          "name": "Estonia",
+          "country_code": "IOF"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "+37255563731"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:GRsMGgMfCh4NFQkTBBAiCEASCh5PEwof"
+        },
+        {
+          "role": "Event director",
+          "name": "Tonu Lillelaid"
+        },
+        {
+          "role": "Course setter",
+          "name": "Erik Aibast"
+        }
+      ],
+      "classes": [
+        "M21",
+        "W21"
+      ],
+      "urls": [
+        {
+          "type": "Website",
+          "url": "https://tammed.ee/voistlused/emv-ro-2025"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Bulletin",
+          "title": "Bulletin 1",
+          "url": "/Documents/Event/8871/Bulletin-1",
+          "published_time": null
+        }
+      ],
+      "information": null,
+      "region": null,
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Estonian and Baltic MTBO championships in sprint",
+          "datetimez": "2025-07-11T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "punching_system": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=8474&groupBy=EventClass"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=8474&groupBy=EventClass"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=8474&groupBy=EventClass"
+            }
+          ],
+          "documents": [],
+          "entry_counts": {
+            "total_count": 53,
+            "class_counts": {}
+          },
+          "start_counts": {
+            "total_count": 54,
+            "class_counts": {
+              "M21": 30,
+              "W21": 24
+            }
+          },
+          "result_counts": {
+            "total_count": 54,
+            "class_counts": {
+              "M21": 30,
+              "W21": 24
+            }
+          }
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "NOR_21169",
+      "name": "Modum MtbO Festival",
+      "start_time": "2025-07-11",
+      "end_time": "2025-07-11",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "classification": "National",
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Modum OL",
+          "country_code": "NOR"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Leif Eriksson"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "+4797627672"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:ARELCQMUFgEVERNcCAYLBF4ADBwhFwgTBBhMDEIe"
+        },
+        {
+          "role": "Event director",
+          "name": "Leif Eriksson"
+        },
+        {
+          "role": "Course setter",
+          "name": "David Løver"
+        }
+      ],
+      "classes": [
+        "Kort",
+        "Lang",
+        "Mellom"
+      ],
+      "urls": [],
+      "documents": [
+        {
+          "type": "Invitation",
+          "title": "Innbydelse",
+          "url": "/Documents/Event/46399/Innbydelse",
+          "published_time": null
+        }
+      ],
+      "information": null,
+      "region": "Buskerud",
+      "punching_system": "Emit",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Modum MtbO Festival",
+          "datetimez": "2025-07-11T00:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": {
+            "lat": 59.9228578440969,
+            "lng": 9.96065905397763
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/162594"
+            },
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=21169&groupBy=EventClass"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=21169&groupBy=EventClass"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=21169&groupBy=EventClass"
+            }
+          ],
+          "documents": [],
+          "entry_counts": {
+            "total_count": 16,
+            "class_counts": {}
+          },
+          "start_counts": {
+            "total_count": 16,
+            "class_counts": {
+              "Lang": 10,
+              "Mellom": 2,
+              "Kort": 4
+            }
+          },
+          "result_counts": {
+            "total_count": 15,
+            "class_counts": {
+              "Lang": 10,
+              "Mellom": 2,
+              "Kort": 3
+            }
+          }
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_8473",
+      "name": "Estonian and Baltic MTBO championships in long distance",
+      "start_time": "2025-07-12",
+      "end_time": "2025-07-12",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "classification": null,
+      "form": null,
+      "organisers": [
+        {
+          "name": "Estonia",
+          "country_code": "IOF"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "+37255563731"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:GRsMGgMfCh4NFQkTBBAiCEASCh5PEwof"
+        }
+      ],
+      "classes": [
+        "M21",
+        "W21"
+      ],
+      "urls": [
+        {
+          "type": "Website",
+          "url": "https://tammed.ee/voistlused/emv-ro-2025"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Bulletin",
+          "title": "Bulletin 1",
+          "url": "/Documents/Event/8872/Bulletin-1",
+          "published_time": null
+        }
+      ],
+      "information": null,
+      "region": null,
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Estonian and Baltic MTBO championships in long distance",
+          "datetimez": "2025-07-12T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "punching_system": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=8473&groupBy=EventClass"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=8473&groupBy=EventClass"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=8473&groupBy=EventClass"
+            }
+          ],
+          "documents": [],
+          "entry_counts": {
+            "total_count": 30,
+            "class_counts": {}
+          },
+          "start_counts": {
+            "total_count": 27,
+            "class_counts": {
+              "M21": 16,
+              "W21": 11
+            }
+          },
+          "result_counts": {
+            "total_count": 27,
+            "class_counts": {
+              "M21": 16,
+              "W21": 11
+            }
+          }
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "NOR_21170",
+      "name": "Modum MtbO Festival",
+      "start_time": "2025-07-12",
+      "end_time": "2025-07-12",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "classification": "National",
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Modum OL",
+          "country_code": "NOR"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Leif Eriksson"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "+4797627672"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:ARELCQMUFgEVERNcCAYLBF4ADBwhFwgTBBhMDEIe"
+        },
+        {
+          "role": "Event director",
+          "name": "Leif Eriksson"
+        },
+        {
+          "role": "Course setter",
+          "name": "David Løver"
+        }
+      ],
+      "classes": [
+        "Kort",
+        "Lang",
+        "Mellom"
+      ],
+      "urls": [],
+      "documents": [
+        {
+          "type": "Invitation",
+          "title": "Innbydelse",
+          "url": "/Documents/Event/46400/Innbydelse",
+          "published_time": null
+        }
+      ],
+      "information": null,
+      "region": "Buskerud",
+      "punching_system": "Emit",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Modum MtbO Festival",
+          "datetimez": "2025-07-12T00:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": {
+            "lat": 59.9228566570185,
+            "lng": 9.96066097407458
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/162623"
+            },
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=21170&groupBy=EventClass"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=21170&groupBy=EventClass"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=21170&groupBy=EventClass"
+            }
+          ],
+          "documents": [],
+          "entry_counts": {
+            "total_count": 16,
+            "class_counts": {}
+          },
+          "start_counts": {
+            "total_count": 21,
+            "class_counts": {
+              "Lang": 16,
+              "Mellom": 2,
+              "Kort": 3
+            }
+          },
+          "result_counts": {
+            "total_count": 21,
+            "class_counts": {
+              "Lang": 16,
+              "Mellom": 2,
+              "Kort": 3
+            }
+          }
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_54733",
+      "name": "Närke- och Värmlandsserien i MTBO, deltävling 3",
+      "start_time": "2025-07-14",
+      "end_time": "2025-07-14",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "classification": "Local",
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Garphyttans IF",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Jan Gustafsson"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:CgERG0wVEAEOHksAGBoMDk8KIx0UBAkdAh9MDEIe"
+        }
+      ],
+      "classes": [
+        "D 3 km",
+        "D 5 km",
+        "D 8 km",
+        "H 3 km",
+        "H 5 km",
+        "H 8 km"
+      ],
+      "urls": [],
+      "documents": [
+        {
+          "type": "Invitation",
+          "title": "Inbjudan",
+          "url": "/Documents/Event/112990/Inbjudan",
+          "published_time": null
+        },
+        {
+          "type": "Bulletin",
+          "title": "PM",
+          "url": "/Documents/Event/113850/PM",
+          "published_time": null
+        },
+        {
+          "type": "Invitation",
+          "title": "Inbjudan hela Närkeserien",
+          "url": "/Documents/Event/113508/Inbjudan-hela-N-rkeserien",
+          "published_time": null
+        },
+        {
+          "type": "Other",
+          "title": "Kartnorm MTBO",
+          "url": "/Documents/Event/113509/Kartnorm-MTBO",
+          "published_time": null
+        },
+        {
+          "type": "ResultList",
+          "title": "Liveresultat",
+          "url": "https://liveresultat.orientering.se/followfull.php?comp=34104&lang=sv",
+          "published_time": null
+        }
+      ],
+      "information": null,
+      "region": "Örebro Län",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Närke- och Värmlandsserien i MTBO, deltävling 3",
+          "datetimez": "2025-07-14T00:00:00+02:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": {
+            "lat": 59.2902939958285,
+            "lng": 14.6999256029259
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/162692"
+            },
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=54733&groupBy=EventClass"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=54733&groupBy=EventClass"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=54733&groupBy=EventClass"
+            }
+          ],
+          "documents": [],
+          "entry_counts": {
+            "total_count": 43,
+            "class_counts": {}
+          },
+          "start_counts": {
+            "total_count": 56,
+            "class_counts": {
+              "H 8 km": 27,
+              "D 8 km": 8,
+              "H 5 km": 6,
+              "D 5 km": 11,
+              "H 3 km": 2,
+              "D 3 km": 2
+            }
+          },
+          "result_counts": {
+            "total_count": 56,
+            "class_counts": {
+              "H 8 km": 27,
+              "D 8 km": 8,
+              "H 5 km": 6,
+              "D 5 km": 11,
+              "H 3 km": 2,
+              "D 3 km": 2
+            }
+          }
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_55234",
+      "name": "5 Toppar",
+      "start_time": "2025-07-15",
+      "end_time": "2025-07-15",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "classification": "Local",
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Skogslöparna",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Eero Niemi"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:CBEQAG0dChcMGUsBCA=="
+        }
+      ],
+      "classes": [
+        "KORTA",
+        "LÅNGA"
+      ],
+      "urls": [],
+      "documents": [
+        {
+          "type": "Bulletin",
+          "title": "PM",
+          "url": "/Documents/Event/114027/PM",
+          "published_time": null
+        }
+      ],
+      "information": "Välkomna till ett sommaräventyr i Örnsköldsviks närområde! Fem bergstoppar ska bestigas! Totalt ca 28 km vägcykling till bergsfötterna och ca 3,5 km \" skyrunning\".\nNyhet! En kortare variant med tre toppar med ca 19 km vägcykling och ca 2 km \" skyrunning\". Individuellt eller kör gärna med någon. Det kan man bestämma strax innan start. Samling  på Bryggerivägen 5 i Järved. Kartorna ( ganska många....) delas ut från 12.30. Masstart kl 13.00. Fika till alla vid målgång!\nAlla välkomna , icke Skogslöpare 50 kr startavgift.",
+      "region": "Ångermanland",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "5 Toppar",
+          "datetimez": "2025-07-15T00:00:00+02:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": {
+            "lat": 63.2698638378716,
+            "lng": 18.7687354652614
+          },
+          "areas": [
+            {
+              "lat": 63.2698638378716,
+              "lng": 18.7687354652614,
+              "polygon": [
+                [
+                  63.26790779517512,
+                  18.765309629289302
+                ],
+                [
+                  63.261809546942175,
+                  18.78200865181855
+                ],
+                [
+                  63.25019961988929,
+                  18.828001461841772
+                ],
+                [
+                  63.239992635350944,
+                  18.900191124805705
+                ],
+                [
+                  63.32685628618634,
+                  18.974243373121478
+                ],
+                [
+                  63.34803579506513,
+                  18.810735150680813
+                ],
+                [
+                  63.26790779517512,
+                  18.765309629289302
+                ]
+              ]
+            }
+          ],
+          "urls": [
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/162794"
+            },
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=55234&groupBy=EventClass"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=55234&groupBy=EventClass"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=55234&groupBy=EventClass"
+            }
+          ],
+          "documents": [],
+          "entry_counts": {
+            "total_count": 8,
+            "class_counts": {}
+          },
+          "start_counts": {
+            "total_count": 9,
+            "class_counts": {
+              "LÅNGA": 6,
+              "KORTA": 3
+            }
+          },
+          "result_counts": {
+            "total_count": 9,
+            "class_counts": {
+              "LÅNGA": 6,
+              "KORTA": 3
+            }
+          }
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_44022",
+      "name": "O-Ringen Jönköping",
+      "start_time": "2025-07-20",
+      "end_time": "2025-07-26",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "classification": "National",
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Svensk Orientering Events",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Magnus Johansson"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:BBoEAG0cERsPFwAcQwcH"
+        }
+      ],
+      "classes": [
+        "0",
+        "3",
+        "3-dagars Blå 3",
+        "3-dagars Gul 2",
+        "3-dagars Gul 5",
+        "3-dagars Orange 3",
+        "3-dagars Röd 5",
+        "3-dagars Svart 5",
+        "3-dagars Svart 7",
+        "5",
+        "Blå 2",
+        "Blå 3",
+        "D10",
+        "D11",
+        "D12",
+        "D12 Kort",
+        "D13",
+        "D14",
+        "D14 Kort",
+        "D15",
+        "D16",
+        "D16 Kort",
+        "D17-20 Kort",
+        "D18",
+        "D18 Elit",
+        "D20",
+        "D20 Elit",
+        "D21",
+        "D21 Elit",
+        "D21 Kort",
+        "D21 Lång",
+        "D21 Motion",
+        "D35",
+        "D35 Kort",
+        "D35 Motion",
+        "D40",
+        "D40 Kort",
+        "D40 Motion",
+        "D45",
+        "D45 Kort",
+        "D45 Motion",
+        "D50",
+        "D50 Kort",
+        "D50 Motion",
+        "D55",
+        "D55 Kort",
+        "D55 Motion",
+        "D60",
+        "D60 Kort",
+        "D60 Motion",
+        "D65",
+        "D65 Kort",
+        "D65 Motion",
+        "D70",
+        "D70 Kort",
+        "D70 Motion",
+        "D75",
+        "D80",
+        "D80 Motion",
+        "D85",
+        "D90",
+        "D95",
+        "Etappstart Blå 2",
+        "Etappstart Blå 3",
+        "Etappstart Gul 10",
+        "Etappstart Gul 2",
+        "Etappstart Gul 3",
+        "Etappstart Gul 5",
+        "Etappstart Inskolning",
+        "Etappstart Orange 2",
+        "Etappstart Orange 3",
+        "Etappstart Orange 4",
+        "Etappstart Para-I",
+        "Etappstart Prova på 2",
+        "Etappstart Röd 5",
+        "Etappstart Röd 6",
+        "Etappstart Svart 5",
+        "Etappstart Svart 7",
+        "Gul 10",
+        "Gul 2",
+        "Gul 3",
+        "Gul 5",
+        "H10",
+        "H11",
+        "H12",
+        "H12 Kort",
+        "H13",
+        "H14",
+        "H14 Kort",
+        "H15",
+        "H16",
+        "H16 Kort",
+        "H17-20 Kort",
+        "H18",
+        "H18 Elit",
+        "H20",
+        "H20 Elit",
+        "H21",
+        "H21 Elit",
+        "H21 Kort",
+        "H21 Lång",
+        "H21 Motion",
+        "H35",
+        "H35 Kort",
+        "H35 Motion",
+        "H40",
+        "H40 Kort",
+        "H40 Motion",
+        "H45",
+        "H45 Kort-1",
+        "H45 Kort-2",
+        "H45 Motion",
+        "H50",
+        "H50 Kort-1",
+        "H50 Kort-2",
+        "H50 Motion",
+        "H55",
+        "H55 Kort",
+        "H55 Motion",
+        "H60",
+        "H60 Kort",
+        "H60 Motion",
+        "H65",
+        "H65 Kort",
+        "H65 Motion",
+        "H70",
+        "H70 Kort",
+        "H70 Motion",
+        "H75",
+        "H80",
+        "H80 Motion",
+        "H85",
+        "H90",
+        "H95",
+        "Inskolning",
+        "Orange 2",
+        "Orange 3",
+        "Orange 4",
+        "Para-I",
+        "Röd 5",
+        "Röd 6",
+        "Svart 5",
+        "Svart 7",
+        "Vit 2"
+      ],
+      "urls": [
+        {
+          "type": "Website",
+          "url": "https://www.oringen.se"
+        }
+      ],
+      "documents": [
+        {
+          "type": "StartList",
+          "title": "Start- och resultatlistor",
+          "url": "https://resultat.oringen.se/2025",
+          "published_time": null
+        },
+        {
+          "type": "Other",
+          "title": "Anmälan Protest Etapp 1",
+          "url": "/Documents/Event/114186/Anm-lan-Protest-Etapp-1",
+          "published_time": null
+        }
+      ],
+      "information": "Information och anmälan hittas på\nwww.oringen.se\n/ Information and registration can be found at\nwww.oringen.se.",
+      "region": null,
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Etapp 1",
+          "datetimez": "2025-07-21T00:00:00+02:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "punching_system": "Sportident",
+          "position": {
+            "lat": 57.707043305776,
+            "lng": 14.1904369515431
+          },
+          "areas": [
+            {
+              "lat": 57.707043305776,
+              "lng": 14.1904369515431,
+              "polygon": [
+                [
+                  57.70816851991495,
+                  14.181661126589967
+                ],
+                [
+                  57.71835150690734,
+                  14.181661126589967
+                ],
+                [
+                  57.71768485134021,
+                  14.188015683083538
+                ],
+                [
+                  57.71998779124297,
+                  14.192327703561315
+                ],
+                [
+                  57.72198205765423,
+                  14.195351125458544
+                ],
+                [
+                  57.72265540929729,
+                  14.202015902199964
+                ],
+                [
+                  57.72143314818561,
+                  14.209798602120799
+                ],
+                [
+                  57.720663576437374,
+                  14.212590603188149
+                ],
+                [
+                  57.719990187733885,
+                  14.214572023300462
+                ],
+                [
+                  57.7204230819101,
+                  14.217364024367813
+                ],
+                [
+                  57.72023068513769,
+                  14.219345444480128
+                ],
+                [
+                  57.72008638688715,
+                  14.221146735491319
+                ],
+                [
+                  57.720182585784784,
+                  14.222677832850835
+                ],
+                [
+                  57.72124075678266,
+                  14.225559898468745
+                ],
+                [
+                  57.72138505043074,
+                  14.227991641333855
+                ],
+                [
+                  57.72056737881823,
+                  14.230063125996727
+                ],
+                [
+                  57.72023068513769,
+                  14.232765062513518
+                ],
+                [
+                  57.72061547765975,
+                  14.23429615987303
+                ],
+                [
+                  57.720904069366554,
+                  14.235917321783107
+                ],
+                [
+                  57.72176983067973,
+                  14.238259000097658
+                ],
+                [
+                  57.72321272017834,
+                  14.246184680546898
+                ],
+                [
+                  57.7239822377216,
+                  14.247535648805291
+                ],
+                [
+                  57.72431889650127,
+                  14.248706487962568
+                ],
+                [
+                  57.724366990357,
+                  14.250147520771522
+                ],
+                [
+                  57.725857868180356,
+                  14.251678618131038
+                ],
+                [
+                  57.72422270859812,
+                  14.254200425546712
+                ],
+                [
+                  57.72143314818561,
+                  14.269241205490165
+                ],
+                [
+                  57.72148124587656,
+                  14.270682238299115
+                ],
+                [
+                  57.72061547765975,
+                  14.273924562119264
+                ],
+                [
+                  57.71628632590529,
+                  14.271042496501355
+                ],
+                [
+                  57.71445830636202,
+                  14.269061076389058
+                ],
+                [
+                  57.7127264132198,
+                  14.267710108130657
+                ],
+                [
+                  57.71181232510199,
+                  14.267980301782341
+                ],
+                [
+                  57.710753878447974,
+                  14.268880947287935
+                ],
+                [
+                  57.70141896381756,
+                  14.275815917681031
+                ],
+                [
+                  57.698098233599865,
+                  14.26032481498478
+                ],
+                [
+                  57.69737629544065,
+                  14.255191135602882
+                ],
+                [
+                  57.696654342893225,
+                  14.241771517569488
+                ],
+                [
+                  57.69588424431686,
+                  14.230063125996729
+                ],
+                [
+                  57.69685144413182,
+                  14.222716484649817
+                ],
+                [
+                  57.69564816445896,
+                  14.215781514256724
+                ],
+                [
+                  57.69574442830361,
+                  14.203892993582844
+                ],
+                [
+                  57.695311238988296,
+                  14.199299701504309
+                ],
+                [
+                  57.69389834029553,
+                  14.19306763621884
+                ],
+                [
+                  57.6921264027238,
+                  14.190184673130755
+                ],
+                [
+                  57.69135596805347,
+                  14.185571932189815
+                ],
+                [
+                  57.69389834029553,
+                  14.185716080344218
+                ],
+                [
+                  57.70200102954087,
+                  14.182637759650769
+                ],
+                [
+                  57.70816851991495,
+                  14.181661126589967
+                ]
+              ]
+            }
+          ],
+          "urls": [
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/161771"
+            },
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=44022&groupBy=EventClass"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=44022&eventRaceId=45607&groupBy=EventClass"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=44022&eventRaceId=45607&groupBy=EventClass"
+            }
+          ],
+          "documents": [],
+          "entry_counts": {
+            "total_count": 0,
+            "class_counts": {}
+          },
+          "start_counts": {
+            "total_count": 10691,
+            "class_counts": {
+              "D21 Elit": 55,
+              "H21 Elit": 73,
+              "D20 Elit": 101,
+              "H20 Elit": 120,
+              "D18 Elit": 120,
+              "H18 Elit": 121,
+              "D21 Lång": 7,
+              "H21 Lång": 67,
+              "D21": 109,
+              "H21": 201,
+              "D21 Kort": 173,
+              "H21 Kort": 236,
+              "D20": 47,
+              "H20": 86,
+              "D18": 116,
+              "H18": 169,
+              "D17-20 Kort": 48,
+              "H17-20 Kort": 49,
+              "D16": 128,
+              "H16": 155,
+              "D16 Kort": 40,
+              "H16 Kort": 37,
+              "D15": 127,
+              "H15": 174,
+              "D14": 132,
+              "H14": 154,
+              "D14 Kort": 25,
+              "H14 Kort": 24,
+              "D13": 143,
+              "H13": 133,
+              "D12": 126,
+              "H12": 125,
+              "D12 Kort": 14,
+              "H12 Kort": 13,
+              "D11": 105,
+              "H11": 116,
+              "D10": 142,
+              "H10": 160,
+              "D35": 18,
+              "H35": 28,
+              "D35 Kort": 77,
+              "H35 Kort": 76,
+              "D40": 46,
+              "H40": 83,
+              "D40 Kort": 113,
+              "H40 Kort": 140,
+              "D45": 108,
+              "H45": 156,
+              "D45 Kort": 190,
+              "H45 Kort-1": 124,
+              "H45 Kort-2": 120,
+              "D50": 115,
+              "H50": 214,
+              "D50 Kort": 159,
+              "H50 Kort-1": 121,
+              "H50 Kort-2": 117,
+              "D55": 74,
+              "H55": 156,
+              "D55 Kort": 97,
+              "H55 Kort": 161,
+              "D60": 54,
+              "H60": 128,
+              "D60 Kort": 72,
+              "H60 Kort": 106,
+              "D65": 40,
+              "H65": 75,
+              "D65 Kort": 54,
+              "H65 Kort": 110,
+              "D70": 19,
+              "H70": 64,
+              "D70 Kort": 57,
+              "H70 Kort": 104,
+              "D75": 48,
+              "H75": 137,
+              "D80": 23,
+              "H80": 57,
+              "D85": 2,
+              "H85": 20,
+              "H90": 5,
+              "D21 Motion": 33,
+              "H21 Motion": 35,
+              "D35 Motion": 28,
+              "H35 Motion": 13,
+              "D40 Motion": 58,
+              "H40 Motion": 35,
+              "D45 Motion": 73,
+              "H45 Motion": 28,
+              "D50 Motion": 74,
+              "H50 Motion": 36,
+              "D55 Motion": 52,
+              "H55 Motion": 42,
+              "D60 Motion": 35,
+              "H60 Motion": 33,
+              "D65 Motion": 29,
+              "H65 Motion": 26,
+              "D70 Motion": 34,
+              "H70 Motion": 22,
+              "D80 Motion": 4,
+              "H80 Motion": 15,
+              "Inskolning": 230,
+              "Vit 2,5": 112,
+              "Gul 2,5": 105,
+              "Gul 3,5": 66,
+              "Gul 5,0": 41,
+              "Gul 10,0": 17,
+              "Orange 2,5": 50,
+              "Orange 3,3": 72,
+              "Orange 4,0": 63,
+              "Röd 5,0": 21,
+              "Röd 6,0": 15,
+              "Blå 2,5": 42,
+              "Blå 3,5": 86,
+              "Svart 5,0": 54,
+              "Svart 7,5": 16,
+              "Para-I": 10,
+              "Etappstart Prova på 2,5": 76,
+              "Etappstart Inskolning": 84,
+              "Etappstart Gul 2,5": 129,
+              "Etappstart Gul 3,5": 92,
+              "Etappstart Gul 5,0": 44,
+              "Etappstart Gul 10,0": 26,
+              "Etappstart Orange 2,5": 53,
+              "Etappstart Orange 3,3": 131,
+              "Etappstart Orange 4,0": 95,
+              "Etappstart Röd 5,0": 56,
+              "Etappstart Röd 6,0": 33,
+              "Etappstart Blå 2,5": 56,
+              "Etappstart Blå 3,5": 203,
+              "Etappstart Svart 5,0": 198,
+              "Etappstart Svart 7,5": 71
+            }
+          },
+          "result_counts": {
+            "total_count": 10691,
+            "class_counts": {
+              "D21 Elit": 55,
+              "H21 Elit": 73,
+              "D20 Elit": 101,
+              "H20 Elit": 120,
+              "D18 Elit": 120,
+              "H18 Elit": 121,
+              "D21 Lång": 7,
+              "H21 Lång": 67,
+              "D21": 109,
+              "H21": 201,
+              "D21 Kort": 173,
+              "H21 Kort": 236,
+              "D20": 47,
+              "H20": 86,
+              "D18": 116,
+              "H18": 169,
+              "D17-20 Kort": 48,
+              "H17-20 Kort": 49,
+              "D16": 128,
+              "H16": 155,
+              "D16 Kort": 40,
+              "H16 Kort": 37,
+              "D15": 127,
+              "H15": 174,
+              "D14": 132,
+              "H14": 154,
+              "D14 Kort": 25,
+              "H14 Kort": 24,
+              "D13": 143,
+              "H13": 133,
+              "D12": 126,
+              "H12": 125,
+              "D12 Kort": 14,
+              "H12 Kort": 13,
+              "D11": 105,
+              "H11": 116,
+              "D10": 142,
+              "H10": 160,
+              "D35": 18,
+              "H35": 28,
+              "D35 Kort": 77,
+              "H35 Kort": 76,
+              "D40": 46,
+              "H40": 83,
+              "D40 Kort": 113,
+              "H40 Kort": 140,
+              "D45": 108,
+              "H45": 156,
+              "D45 Kort": 190,
+              "H45 Kort-1": 124,
+              "H45 Kort-2": 120,
+              "D50": 115,
+              "H50": 214,
+              "D50 Kort": 159,
+              "H50 Kort-1": 121,
+              "H50 Kort-2": 117,
+              "D55": 74,
+              "H55": 156,
+              "D55 Kort": 97,
+              "H55 Kort": 161,
+              "D60": 54,
+              "H60": 128,
+              "D60 Kort": 72,
+              "H60 Kort": 106,
+              "D65": 40,
+              "H65": 75,
+              "D65 Kort": 54,
+              "H65 Kort": 110,
+              "D70": 19,
+              "H70": 64,
+              "D70 Kort": 57,
+              "H70 Kort": 104,
+              "D75": 48,
+              "H75": 137,
+              "D80": 23,
+              "H80": 57,
+              "D85": 2,
+              "H85": 20,
+              "H90": 5,
+              "D21 Motion": 33,
+              "H21 Motion": 35,
+              "D35 Motion": 28,
+              "H35 Motion": 13,
+              "D40 Motion": 58,
+              "H40 Motion": 35,
+              "D45 Motion": 73,
+              "H45 Motion": 28,
+              "D50 Motion": 74,
+              "H50 Motion": 36,
+              "D55 Motion": 52,
+              "H55 Motion": 42,
+              "D60 Motion": 35,
+              "H60 Motion": 33,
+              "D65 Motion": 29,
+              "H65 Motion": 26,
+              "D70 Motion": 34,
+              "H70 Motion": 22,
+              "D80 Motion": 4,
+              "H80 Motion": 15,
+              "Inskolning": 230,
+              "Vit 2,5": 112,
+              "Gul 2,5": 105,
+              "Gul 3,5": 66,
+              "Gul 5,0": 41,
+              "Gul 10,0": 17,
+              "Orange 2,5": 50,
+              "Orange 3,3": 72,
+              "Orange 4,0": 63,
+              "Röd 5,0": 21,
+              "Röd 6,0": 15,
+              "Blå 2,5": 42,
+              "Blå 3,5": 86,
+              "Svart 5,0": 54,
+              "Svart 7,5": 16,
+              "Para-I": 10,
+              "Etappstart Prova på 2,5": 76,
+              "Etappstart Inskolning": 84,
+              "Etappstart Gul 2,5": 129,
+              "Etappstart Gul 3,5": 92,
+              "Etappstart Gul 5,0": 44,
+              "Etappstart Gul 10,0": 26,
+              "Etappstart Orange 2,5": 53,
+              "Etappstart Orange 3,3": 131,
+              "Etappstart Orange 4,0": 95,
+              "Etappstart Röd 5,0": 56,
+              "Etappstart Röd 6,0": 33,
+              "Etappstart Blå 2,5": 56,
+              "Etappstart Blå 3,5": 203,
+              "Etappstart Svart 5,0": 198,
+              "Etappstart Svart 7,5": 71
+            }
+          }
+        },
+        {
+          "race_number": 2,
+          "name": "Etapp 2",
+          "datetimez": "2025-07-22T00:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "punching_system": "Sportident",
+          "position": {
+            "lat": 57.70691273925,
+            "lng": 14.1902569321965
+          },
+          "areas": [
+            {
+              "lat": 57.70691273925,
+              "lng": 14.1902569321965,
+              "polygon": [
+                [
+                  57.709998553009115,
+                  14.182555311497026
+                ],
+                [
+                  57.71828659386509,
+                  14.182781829752892
+                ],
+                [
+                  57.71786316332347,
+                  14.187878490509924
+                ],
+                [
+                  57.72209724583897,
+                  14.19569337033737
+                ],
+                [
+                  57.72246014414972,
+                  14.20282869539721
+                ],
+                [
+                  57.72070610193589,
+                  14.212455721271601
+                ],
+                [
+                  57.72010124008142,
+                  14.215060681214085
+                ],
+                [
+                  57.720524644440985,
+                  14.217778900284502
+                ],
+                [
+                  57.720222213261025,
+                  14.222988820169467
+                ],
+                [
+                  57.721310953681694,
+                  14.226726371391289
+                ],
+                [
+                  57.7203431860363,
+                  14.233521919067323
+                ],
+                [
+                  57.722157729143504,
+                  14.240204207615431
+                ],
+                [
+                  57.7233068927232,
+                  14.246659977907667
+                ],
+                [
+                  57.72421410135223,
+                  14.247566050931141
+                ],
+                [
+                  57.72439554034881,
+                  14.25028427000156
+                ],
+                [
+                  57.72602845038108,
+                  14.251643379536764
+                ],
+                [
+                  57.720585130373735,
+                  14.273955427739764
+                ],
+                [
+                  57.71290260808715,
+                  14.268065953087197
+                ],
+                [
+                  57.70753721439539,
+                  14.269476368785108
+                ],
+                [
+                  57.70088075710672,
+                  14.273666956518667
+                ],
+                [
+                  57.69773364229806,
+                  14.258830010759311
+                ],
+                [
+                  57.69676524426856,
+                  14.244899138023431
+                ],
+                [
+                  57.695796820350665,
+                  14.230062192264075
+                ],
+                [
+                  57.69688629543802,
+                  14.2228136080763
+                ],
+                [
+                  57.695675765540614,
+                  14.214998728248855
+                ],
+                [
+                  57.695796820350665,
+                  14.205824738886202
+                ],
+                [
+                  57.695252070519956,
+                  14.200841337257105
+                ],
+                [
+                  57.69543365470702,
+                  14.19846289557049
+                ],
+                [
+                  57.69264926382036,
+                  14.19098779312685
+                ],
+                [
+                  57.69131752296633,
+                  14.186797205393292
+                ],
+                [
+                  57.691862331959356,
+                  14.185438095858084
+                ],
+                [
+                  57.69688629543802,
+                  14.184985059346346
+                ],
+                [
+                  57.70318039885885,
+                  14.182040322020065
+                ],
+                [
+                  57.709998553009115,
+                  14.182555311497026
+                ]
+              ]
+            }
+          ],
+          "urls": [
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/161772"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=44022&eventRaceId=45608&groupBy=EventClass"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=44022&eventRaceId=45608&groupBy=EventClass"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "total_count": 10960,
+            "class_counts": {
+              "D21 Elit": 55,
+              "H21 Elit": 73,
+              "D20 Elit": 101,
+              "H20 Elit": 120,
+              "D18 Elit": 120,
+              "H18 Elit": 121,
+              "D21 Lång": 7,
+              "H21 Lång": 67,
+              "D21": 109,
+              "H21": 201,
+              "D21 Kort": 173,
+              "H21 Kort": 236,
+              "D20": 47,
+              "H20": 86,
+              "D18": 116,
+              "H18": 169,
+              "D17-20 Kort": 48,
+              "H17-20 Kort": 49,
+              "D16": 128,
+              "H16": 155,
+              "D16 Kort": 40,
+              "H16 Kort": 37,
+              "D15": 126,
+              "H15": 174,
+              "D14": 132,
+              "H14": 154,
+              "D14 Kort": 25,
+              "H14 Kort": 24,
+              "D13": 143,
+              "H13": 133,
+              "D12": 126,
+              "H12": 125,
+              "D12 Kort": 14,
+              "H12 Kort": 13,
+              "D11": 105,
+              "H11": 116,
+              "D10": 142,
+              "H10": 160,
+              "D35": 18,
+              "H35": 28,
+              "D35 Kort": 77,
+              "H35 Kort": 76,
+              "D40": 46,
+              "H40": 83,
+              "D40 Kort": 113,
+              "H40 Kort": 140,
+              "D45": 108,
+              "H45": 156,
+              "D45 Kort": 190,
+              "H45 Kort-1": 124,
+              "H45 Kort-2": 120,
+              "D50": 115,
+              "H50": 214,
+              "D50 Kort": 159,
+              "H50 Kort-1": 121,
+              "H50 Kort-2": 117,
+              "D55": 74,
+              "H55": 156,
+              "D55 Kort": 97,
+              "H55 Kort": 161,
+              "D60": 54,
+              "H60": 128,
+              "D60 Kort": 72,
+              "H60 Kort": 106,
+              "D65": 40,
+              "H65": 75,
+              "D65 Kort": 54,
+              "H65 Kort": 110,
+              "D70": 19,
+              "H70": 64,
+              "D70 Kort": 57,
+              "H70 Kort": 104,
+              "D75": 48,
+              "H75": 137,
+              "D80": 23,
+              "H80": 57,
+              "D85": 2,
+              "H85": 20,
+              "H90": 5,
+              "D21 Motion": 33,
+              "H21 Motion": 35,
+              "D35 Motion": 28,
+              "H35 Motion": 13,
+              "D40 Motion": 58,
+              "H40 Motion": 35,
+              "D45 Motion": 73,
+              "H45 Motion": 28,
+              "D50 Motion": 74,
+              "H50 Motion": 36,
+              "D55 Motion": 52,
+              "H55 Motion": 42,
+              "D60 Motion": 35,
+              "H60 Motion": 33,
+              "D65 Motion": 29,
+              "H65 Motion": 26,
+              "D70 Motion": 34,
+              "H70 Motion": 22,
+              "D80 Motion": 4,
+              "H80 Motion": 15,
+              "Inskolning": 230,
+              "Vit 2,5": 112,
+              "Gul 2,5": 105,
+              "Gul 3,5": 66,
+              "Gul 5,0": 41,
+              "Gul 10,0": 17,
+              "Orange 2,5": 50,
+              "Orange 3,3": 72,
+              "Orange 4,0": 63,
+              "Röd 5,0": 21,
+              "Röd 6,0": 16,
+              "Blå 2,5": 42,
+              "Blå 3,5": 86,
+              "Svart 5,0": 54,
+              "Svart 7,5": 16,
+              "Para-I": 11,
+              "Etappstart Prova på 2,5": 80,
+              "Etappstart Inskolning": 97,
+              "Etappstart Gul 2,5": 133,
+              "Etappstart Gul 3,5": 91,
+              "Etappstart Gul 5,0": 68,
+              "Etappstart Gul 10,0": 31,
+              "Etappstart Orange 2,5": 61,
+              "Etappstart Orange 3,3": 137,
+              "Etappstart Orange 4,0": 126,
+              "Etappstart Röd 5,0": 77,
+              "Etappstart Röd 6,0": 66,
+              "Etappstart Blå 2,5": 53,
+              "Etappstart Blå 3,5": 240,
+              "Etappstart Svart 5,0": 251,
+              "Etappstart Svart 7,5": 102,
+              "Etappstart Para-I": 2
+            }
+          },
+          "result_counts": {
+            "total_count": 10960,
+            "class_counts": {
+              "D21 Elit": 55,
+              "H21 Elit": 73,
+              "D20 Elit": 101,
+              "H20 Elit": 120,
+              "D18 Elit": 120,
+              "H18 Elit": 121,
+              "D21 Lång": 7,
+              "H21 Lång": 67,
+              "D21": 109,
+              "H21": 201,
+              "D21 Kort": 173,
+              "H21 Kort": 236,
+              "D20": 47,
+              "H20": 86,
+              "D18": 116,
+              "H18": 169,
+              "D17-20 Kort": 48,
+              "H17-20 Kort": 49,
+              "D16": 128,
+              "H16": 155,
+              "D16 Kort": 40,
+              "H16 Kort": 37,
+              "D15": 126,
+              "H15": 174,
+              "D14": 132,
+              "H14": 154,
+              "D14 Kort": 25,
+              "H14 Kort": 24,
+              "D13": 143,
+              "H13": 133,
+              "D12": 126,
+              "H12": 125,
+              "D12 Kort": 14,
+              "H12 Kort": 13,
+              "D11": 105,
+              "H11": 116,
+              "D10": 142,
+              "H10": 160,
+              "D35": 18,
+              "H35": 28,
+              "D35 Kort": 77,
+              "H35 Kort": 76,
+              "D40": 46,
+              "H40": 83,
+              "D40 Kort": 113,
+              "H40 Kort": 140,
+              "D45": 108,
+              "H45": 156,
+              "D45 Kort": 190,
+              "H45 Kort-1": 124,
+              "H45 Kort-2": 120,
+              "D50": 115,
+              "H50": 214,
+              "D50 Kort": 159,
+              "H50 Kort-1": 121,
+              "H50 Kort-2": 117,
+              "D55": 74,
+              "H55": 156,
+              "D55 Kort": 97,
+              "H55 Kort": 161,
+              "D60": 54,
+              "H60": 128,
+              "D60 Kort": 72,
+              "H60 Kort": 106,
+              "D65": 40,
+              "H65": 75,
+              "D65 Kort": 54,
+              "H65 Kort": 110,
+              "D70": 19,
+              "H70": 64,
+              "D70 Kort": 57,
+              "H70 Kort": 104,
+              "D75": 48,
+              "H75": 137,
+              "D80": 23,
+              "H80": 57,
+              "D85": 2,
+              "H85": 20,
+              "H90": 5,
+              "D21 Motion": 33,
+              "H21 Motion": 35,
+              "D35 Motion": 28,
+              "H35 Motion": 13,
+              "D40 Motion": 58,
+              "H40 Motion": 35,
+              "D45 Motion": 73,
+              "H45 Motion": 28,
+              "D50 Motion": 74,
+              "H50 Motion": 36,
+              "D55 Motion": 52,
+              "H55 Motion": 42,
+              "D60 Motion": 35,
+              "H60 Motion": 33,
+              "D65 Motion": 29,
+              "H65 Motion": 26,
+              "D70 Motion": 34,
+              "H70 Motion": 22,
+              "D80 Motion": 4,
+              "H80 Motion": 15,
+              "Inskolning": 230,
+              "Vit 2,5": 112,
+              "Gul 2,5": 105,
+              "Gul 3,5": 66,
+              "Gul 5,0": 41,
+              "Gul 10,0": 17,
+              "Orange 2,5": 50,
+              "Orange 3,3": 72,
+              "Orange 4,0": 63,
+              "Röd 5,0": 21,
+              "Röd 6,0": 16,
+              "Blå 2,5": 42,
+              "Blå 3,5": 86,
+              "Svart 5,0": 54,
+              "Svart 7,5": 16,
+              "Para-I": 11,
+              "Etappstart Prova på 2,5": 80,
+              "Etappstart Inskolning": 97,
+              "Etappstart Gul 2,5": 133,
+              "Etappstart Gul 3,5": 91,
+              "Etappstart Gul 5,0": 68,
+              "Etappstart Gul 10,0": 31,
+              "Etappstart Orange 2,5": 61,
+              "Etappstart Orange 3,3": 137,
+              "Etappstart Orange 4,0": 126,
+              "Etappstart Röd 5,0": 77,
+              "Etappstart Röd 6,0": 66,
+              "Etappstart Blå 2,5": 53,
+              "Etappstart Blå 3,5": 240,
+              "Etappstart Svart 5,0": 251,
+              "Etappstart Svart 7,5": 102,
+              "Etappstart Para-I": 2
+            }
+          }
+        },
+        {
+          "race_number": 3,
+          "name": "Etapp 3",
+          "datetimez": "2025-07-24T00:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "punching_system": "Sportident",
+          "position": {
+            "lat": 57.6966793407015,
+            "lng": 14.3052058526218
+          },
+          "areas": [
+            {
+              "lat": 57.6966793407015,
+              "lng": 14.3052058526218,
+              "polygon": [
+                [
+                  57.69936538381751,
+                  14.305863748241508
+                ],
+                [
+                  57.69988682635352,
+                  14.308140685346311
+                ],
+                [
+                  57.702424406201914,
+                  14.312564448864217
+                ],
+                [
+                  57.70523986891757,
+                  14.315752160810945
+                ],
+                [
+                  57.705135596423844,
+                  14.319135038795222
+                ],
+                [
+                  57.702841525600775,
+                  14.320891533133214
+                ],
+                [
+                  57.70155539202452,
+                  14.324534632500903
+                ],
+                [
+                  57.701451108922015,
+                  14.32824278721444
+                ],
+                [
+                  57.696201804852876,
+                  14.331235333123612
+                ],
+                [
+                  57.68903312299787,
+                  14.33127361624984
+                ],
+                [
+                  57.685694761081464,
+                  14.327240184807065
+                ],
+                [
+                  57.68145181571364,
+                  14.325418635123224
+                ],
+                [
+                  57.67923399376957,
+                  14.324963247702245
+                ],
+                [
+                  57.676346939237504,
+                  14.32639446531098
+                ],
+                [
+                  57.67377274493137,
+                  14.329191845182597
+                ],
+                [
+                  57.67175500541006,
+                  14.331598892979104
+                ],
+                [
+                  57.66980673656988,
+                  14.32795579361142
+                ],
+                [
+                  57.66966757050437,
+                  14.325483690469058
+                ],
+                [
+                  57.67092004586749,
+                  14.319498598650718
+                ],
+                [
+                  57.671441897834654,
+                  14.302844430112716
+                ],
+                [
+                  57.67561222674115,
+                  14.303494983571236
+                ],
+                [
+                  57.679299342470614,
+                  14.302649264075168
+                ],
+                [
+                  57.679855855667284,
+                  14.301998710616651
+                ],
+                [
+                  57.68201226360699,
+                  14.297770113136302
+                ],
+                [
+                  57.690211170991944,
+                  14.298615832632375
+                ],
+                [
+                  57.69160201914062,
+                  14.300307271624506
+                ],
+                [
+                  57.692784198090806,
+                  14.302974540804419
+                ],
+                [
+                  57.69936538381751,
+                  14.305863748241508
+                ]
+              ]
+            }
+          ],
+          "urls": [
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/161773"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=44022&eventRaceId=45609&groupBy=EventClass"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=44022&eventRaceId=45609&groupBy=EventClass"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "total_count": 11867,
+            "class_counts": {
+              "D21 Elit": 55,
+              "H21 Elit": 73,
+              "D20 Elit": 101,
+              "H20 Elit": 120,
+              "D18 Elit": 120,
+              "H18 Elit": 121,
+              "D21 Lång": 7,
+              "H21 Lång": 67,
+              "D21": 109,
+              "H21": 201,
+              "D21 Kort": 173,
+              "H21 Kort": 236,
+              "D20": 47,
+              "H20": 86,
+              "D18": 116,
+              "H18": 169,
+              "D17-20 Kort": 48,
+              "H17-20 Kort": 49,
+              "D16": 128,
+              "H16": 155,
+              "D16 Kort": 40,
+              "H16 Kort": 37,
+              "D15": 127,
+              "H15": 174,
+              "D14": 132,
+              "H14": 154,
+              "D14 Kort": 25,
+              "H14 Kort": 24,
+              "D13": 143,
+              "H13": 133,
+              "D12": 126,
+              "H12": 125,
+              "D12 Kort": 14,
+              "H12 Kort": 13,
+              "D11": 105,
+              "H11": 116,
+              "D10": 142,
+              "H10": 160,
+              "D35": 18,
+              "H35": 28,
+              "D35 Kort": 77,
+              "H35 Kort": 76,
+              "D40": 46,
+              "H40": 83,
+              "D40 Kort": 113,
+              "H40 Kort": 140,
+              "D45": 108,
+              "H45": 156,
+              "D45 Kort": 190,
+              "H45 Kort-1": 124,
+              "H45 Kort-2": 120,
+              "D50": 115,
+              "H50": 214,
+              "D50 Kort": 159,
+              "H50 Kort-1": 121,
+              "H50 Kort-2": 117,
+              "D55": 74,
+              "H55": 156,
+              "D55 Kort": 97,
+              "H55 Kort": 161,
+              "D60": 54,
+              "H60": 128,
+              "D60 Kort": 72,
+              "H60 Kort": 106,
+              "D65": 40,
+              "H65": 75,
+              "D65 Kort": 54,
+              "H65 Kort": 110,
+              "D70": 19,
+              "H70": 64,
+              "D70 Kort": 57,
+              "H70 Kort": 104,
+              "D75": 48,
+              "H75": 137,
+              "D80": 23,
+              "H80": 57,
+              "D85": 2,
+              "H85": 20,
+              "H90": 5,
+              "D21 Motion": 33,
+              "H21 Motion": 35,
+              "D35 Motion": 28,
+              "H35 Motion": 13,
+              "D40 Motion": 58,
+              "H40 Motion": 35,
+              "D45 Motion": 73,
+              "H45 Motion": 28,
+              "D50 Motion": 74,
+              "H50 Motion": 36,
+              "D55 Motion": 52,
+              "H55 Motion": 42,
+              "D60 Motion": 35,
+              "H60 Motion": 33,
+              "D65 Motion": 29,
+              "H65 Motion": 26,
+              "D70 Motion": 34,
+              "H70 Motion": 22,
+              "D80 Motion": 4,
+              "H80 Motion": 15,
+              "Inskolning": 230,
+              "Vit 2,5": 112,
+              "Gul 2,5": 105,
+              "Gul 3,5": 66,
+              "Gul 5,0": 41,
+              "Gul 10,0": 17,
+              "Orange 2,5": 50,
+              "Orange 3,3": 72,
+              "Orange 4,0": 63,
+              "Röd 5,0": 21,
+              "Röd 6,0": 16,
+              "Blå 2,5": 42,
+              "Blå 3,5": 86,
+              "Svart 5,0": 54,
+              "Svart 7,5": 16,
+              "Para-I": 11,
+              "3-dagars Gul 2,5": 36,
+              "3-dagars Gul 5,0": 12,
+              "3-dagars Orange 3,3": 77,
+              "3-dagars Röd 5,0": 37,
+              "3-dagars Blå 3,5": 69,
+              "3-dagars Svart 5,0": 61,
+              "3-dagars Svart 7,5": 28,
+              "Etappstart Prova på 2,5": 133,
+              "Etappstart Inskolning": 159,
+              "Etappstart Gul 2,5": 169,
+              "Etappstart Gul 3,5": 126,
+              "Etappstart Gul 5,0": 82,
+              "Etappstart Gul 10,0": 40,
+              "Etappstart Orange 2,5": 94,
+              "Etappstart Orange 3,3": 145,
+              "Etappstart Orange 4,0": 148,
+              "Etappstart Röd 5,0": 127,
+              "Etappstart Röd 6,0": 70,
+              "Etappstart Blå 2,5": 83,
+              "Etappstart Blå 3,5": 316,
+              "Etappstart Svart 5,0": 331,
+              "Etappstart Svart 7,5": 172,
+              "Etappstart Para-I": 6
+            }
+          },
+          "result_counts": {
+            "total_count": 11867,
+            "class_counts": {
+              "D21 Elit": 55,
+              "H21 Elit": 73,
+              "D20 Elit": 101,
+              "H20 Elit": 120,
+              "D18 Elit": 120,
+              "H18 Elit": 121,
+              "D21 Lång": 7,
+              "H21 Lång": 67,
+              "D21": 109,
+              "H21": 201,
+              "D21 Kort": 173,
+              "H21 Kort": 236,
+              "D20": 47,
+              "H20": 86,
+              "D18": 116,
+              "H18": 169,
+              "D17-20 Kort": 48,
+              "H17-20 Kort": 49,
+              "D16": 128,
+              "H16": 155,
+              "D16 Kort": 40,
+              "H16 Kort": 37,
+              "D15": 127,
+              "H15": 174,
+              "D14": 132,
+              "H14": 154,
+              "D14 Kort": 25,
+              "H14 Kort": 24,
+              "D13": 143,
+              "H13": 133,
+              "D12": 126,
+              "H12": 125,
+              "D12 Kort": 14,
+              "H12 Kort": 13,
+              "D11": 105,
+              "H11": 116,
+              "D10": 142,
+              "H10": 160,
+              "D35": 18,
+              "H35": 28,
+              "D35 Kort": 77,
+              "H35 Kort": 76,
+              "D40": 46,
+              "H40": 83,
+              "D40 Kort": 113,
+              "H40 Kort": 140,
+              "D45": 108,
+              "H45": 156,
+              "D45 Kort": 190,
+              "H45 Kort-1": 124,
+              "H45 Kort-2": 120,
+              "D50": 115,
+              "H50": 214,
+              "D50 Kort": 159,
+              "H50 Kort-1": 121,
+              "H50 Kort-2": 117,
+              "D55": 74,
+              "H55": 156,
+              "D55 Kort": 97,
+              "H55 Kort": 161,
+              "D60": 54,
+              "H60": 128,
+              "D60 Kort": 72,
+              "H60 Kort": 106,
+              "D65": 40,
+              "H65": 75,
+              "D65 Kort": 54,
+              "H65 Kort": 110,
+              "D70": 19,
+              "H70": 64,
+              "D70 Kort": 57,
+              "H70 Kort": 104,
+              "D75": 48,
+              "H75": 137,
+              "D80": 23,
+              "H80": 57,
+              "D85": 2,
+              "H85": 20,
+              "H90": 5,
+              "D21 Motion": 33,
+              "H21 Motion": 35,
+              "D35 Motion": 28,
+              "H35 Motion": 13,
+              "D40 Motion": 58,
+              "H40 Motion": 35,
+              "D45 Motion": 73,
+              "H45 Motion": 28,
+              "D50 Motion": 74,
+              "H50 Motion": 36,
+              "D55 Motion": 52,
+              "H55 Motion": 42,
+              "D60 Motion": 35,
+              "H60 Motion": 33,
+              "D65 Motion": 29,
+              "H65 Motion": 26,
+              "D70 Motion": 34,
+              "H70 Motion": 22,
+              "D80 Motion": 4,
+              "H80 Motion": 15,
+              "Inskolning": 230,
+              "Vit 2,5": 112,
+              "Gul 2,5": 105,
+              "Gul 3,5": 66,
+              "Gul 5,0": 41,
+              "Gul 10,0": 17,
+              "Orange 2,5": 50,
+              "Orange 3,3": 72,
+              "Orange 4,0": 63,
+              "Röd 5,0": 21,
+              "Röd 6,0": 16,
+              "Blå 2,5": 42,
+              "Blå 3,5": 86,
+              "Svart 5,0": 54,
+              "Svart 7,5": 16,
+              "Para-I": 11,
+              "3-dagars Gul 2,5": 36,
+              "3-dagars Gul 5,0": 12,
+              "3-dagars Orange 3,3": 77,
+              "3-dagars Röd 5,0": 37,
+              "3-dagars Blå 3,5": 69,
+              "3-dagars Svart 5,0": 61,
+              "3-dagars Svart 7,5": 28,
+              "Etappstart Prova på 2,5": 133,
+              "Etappstart Inskolning": 159,
+              "Etappstart Gul 2,5": 169,
+              "Etappstart Gul 3,5": 126,
+              "Etappstart Gul 5,0": 82,
+              "Etappstart Gul 10,0": 40,
+              "Etappstart Orange 2,5": 94,
+              "Etappstart Orange 3,3": 145,
+              "Etappstart Orange 4,0": 148,
+              "Etappstart Röd 5,0": 127,
+              "Etappstart Röd 6,0": 70,
+              "Etappstart Blå 2,5": 83,
+              "Etappstart Blå 3,5": 316,
+              "Etappstart Svart 5,0": 331,
+              "Etappstart Svart 7,5": 172,
+              "Etappstart Para-I": 6
+            }
+          }
+        },
+        {
+          "race_number": 4,
+          "name": "Etapp 4",
+          "datetimez": "2025-07-25T00:00:00+02:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "punching_system": "Sportident",
+          "position": {
+            "lat": 57.6431864864092,
+            "lng": 14.0751212324149
+          },
+          "areas": [
+            {
+              "lat": 57.6431864864092,
+              "lng": 14.0751212324149,
+              "polygon": [
+                [
+                  57.65658723909365,
+                  14.068705802461906
+                ],
+                [
+                  57.65192973811301,
+                  14.073058387579898
+                ],
+                [
+                  57.6408910989459,
+                  14.074572330229634
+                ],
+                [
+                  57.628633264459864,
+                  14.069462773786775
+                ],
+                [
+                  57.620425294364196,
+                  14.064353217343907
+                ],
+                [
+                  57.60795779309953,
+                  14.064353217343907
+                ],
+                [
+                  57.609478449088954,
+                  14.041454834766647
+                ],
+                [
+                  57.61779024409077,
+                  14.042022563260298
+                ],
+                [
+                  57.61789159571191,
+                  14.02972177923119
+                ],
+                [
+                  57.624174844129755,
+                  14.014771595565046
+                ],
+                [
+                  57.63207803264771,
+                  14.000956868886202
+                ],
+                [
+                  57.63673808133143,
+                  14.001713840211071
+                ],
+                [
+                  57.651290868101256,
+                  14.015572481288075
+                ],
+                [
+                  57.67463564424534,
+                  14.018337219476996
+                ],
+                [
+                  57.67558601812203,
+                  14.026038990146047
+                ],
+                [
+                  57.67526922959783,
+                  14.033345798216683
+                ],
+                [
+                  57.67875375112638,
+                  14.041442531484151
+                ],
+                [
+                  57.68783305178127,
+                  14.053488890735744
+                ],
+                [
+                  57.6887830796928,
+                  14.061190661404792
+                ],
+                [
+                  57.68825528948352,
+                  14.071459688963527
+                ],
+                [
+                  57.68783305178127,
+                  14.080543828727025
+                ],
+                [
+                  57.684982818603345,
+                  14.082913604317502
+                ],
+                [
+                  57.67695873640798,
+                  14.085085898608774
+                ],
+                [
+                  57.67231240322337,
+                  14.076396721443691
+                ],
+                [
+                  57.6696721759084,
+                  14.073434501955594
+                ],
+                [
+                  57.66829918173144,
+                  14.068694950774637
+                ],
+                [
+                  57.65658723909365,
+                  14.068705802461906
+                ]
+              ]
+            }
+          ],
+          "urls": [
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/161774"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=44022&eventRaceId=45610&groupBy=EventClass"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=44022&eventRaceId=45610&groupBy=EventClass"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "total_count": 11580,
+            "class_counts": {
+              "D21 Elit": 55,
+              "H21 Elit": 73,
+              "D20 Elit": 100,
+              "H20 Elit": 120,
+              "D18 Elit": 120,
+              "H18 Elit": 121,
+              "D21 Lång": 7,
+              "H21 Lång": 67,
+              "D21": 109,
+              "H21": 201,
+              "D21 Kort": 173,
+              "H21 Kort": 236,
+              "D20": 47,
+              "H20": 86,
+              "D18": 116,
+              "H18": 169,
+              "D17-20 Kort": 48,
+              "H17-20 Kort": 49,
+              "D16": 128,
+              "H16": 155,
+              "D16 Kort": 40,
+              "H16 Kort": 37,
+              "D15": 127,
+              "H15": 174,
+              "D14": 132,
+              "H14": 154,
+              "D14 Kort": 25,
+              "H14 Kort": 24,
+              "D13": 143,
+              "H13": 133,
+              "D12": 126,
+              "H12": 125,
+              "D12 Kort": 14,
+              "H12 Kort": 13,
+              "D11": 105,
+              "H11": 116,
+              "D10": 142,
+              "H10": 160,
+              "D35": 18,
+              "H35": 28,
+              "D35 Kort": 77,
+              "H35 Kort": 76,
+              "D40": 46,
+              "H40": 83,
+              "D40 Kort": 113,
+              "H40 Kort": 140,
+              "D45": 108,
+              "H45": 156,
+              "D45 Kort": 190,
+              "H45 Kort-1": 124,
+              "H45 Kort-2": 120,
+              "D50": 115,
+              "H50": 213,
+              "D50 Kort": 159,
+              "H50 Kort-1": 121,
+              "H50 Kort-2": 117,
+              "D55": 74,
+              "H55": 156,
+              "D55 Kort": 97,
+              "H55 Kort": 161,
+              "D60": 54,
+              "H60": 128,
+              "D60 Kort": 72,
+              "H60 Kort": 106,
+              "D65": 40,
+              "H65": 75,
+              "D65 Kort": 54,
+              "H65 Kort": 110,
+              "D70": 19,
+              "H70": 64,
+              "D70 Kort": 57,
+              "H70 Kort": 104,
+              "D75": 48,
+              "H75": 136,
+              "D80": 23,
+              "H80": 57,
+              "D85": 2,
+              "H85": 20,
+              "H90": 5,
+              "D21 Motion": 33,
+              "H21 Motion": 35,
+              "D35 Motion": 28,
+              "H35 Motion": 13,
+              "D40 Motion": 58,
+              "H40 Motion": 35,
+              "D45 Motion": 73,
+              "H45 Motion": 28,
+              "D50 Motion": 74,
+              "H50 Motion": 36,
+              "D55 Motion": 52,
+              "H55 Motion": 42,
+              "D60 Motion": 35,
+              "H60 Motion": 33,
+              "D65 Motion": 29,
+              "H65 Motion": 26,
+              "D70 Motion": 34,
+              "H70 Motion": 22,
+              "D80 Motion": 4,
+              "H80 Motion": 15,
+              "Inskolning": 230,
+              "Vit 2,5": 112,
+              "Gul 2,5": 104,
+              "Gul 3,5": 66,
+              "Gul 5,0": 41,
+              "Gul 10,0": 17,
+              "Orange 2,5": 50,
+              "Orange 3,3": 72,
+              "Orange 4,0": 63,
+              "Röd 5,0": 21,
+              "Röd 6,0": 16,
+              "Blå 2,5": 42,
+              "Blå 3,5": 86,
+              "Svart 5,0": 54,
+              "Svart 7,5": 16,
+              "Para-I": 11,
+              "3-dagars Gul 2,5": 36,
+              "3-dagars Gul 5,0": 12,
+              "3-dagars Orange 3,3": 77,
+              "3-dagars Röd 5,0": 37,
+              "3-dagars Blå 3,5": 69,
+              "3-dagars Svart 5,0": 61,
+              "3-dagars Svart 7,5": 28,
+              "Etappstart Prova på 2,5": 105,
+              "Etappstart Inskolning": 124,
+              "Etappstart Gul 2,5": 171,
+              "Etappstart Gul 3,5": 126,
+              "Etappstart Gul 5,0": 59,
+              "Etappstart Gul 10,0": 35,
+              "Etappstart Orange 2,5": 93,
+              "Etappstart Orange 3,3": 159,
+              "Etappstart Orange 4,0": 102,
+              "Etappstart Röd 5,0": 89,
+              "Etappstart Röd 6,0": 37,
+              "Etappstart Blå 2,5": 86,
+              "Etappstart Blå 3,5": 304,
+              "Etappstart Svart 5,0": 300,
+              "Etappstart Svart 7,5": 127,
+              "Etappstart Para-I": 1
+            }
+          },
+          "result_counts": {
+            "total_count": 11580,
+            "class_counts": {
+              "D21 Elit": 55,
+              "H21 Elit": 73,
+              "D20 Elit": 100,
+              "H20 Elit": 120,
+              "D18 Elit": 120,
+              "H18 Elit": 121,
+              "D21 Lång": 7,
+              "H21 Lång": 67,
+              "D21": 109,
+              "H21": 201,
+              "D21 Kort": 173,
+              "H21 Kort": 236,
+              "D20": 47,
+              "H20": 86,
+              "D18": 116,
+              "H18": 169,
+              "D17-20 Kort": 48,
+              "H17-20 Kort": 49,
+              "D16": 128,
+              "H16": 155,
+              "D16 Kort": 40,
+              "H16 Kort": 37,
+              "D15": 127,
+              "H15": 174,
+              "D14": 132,
+              "H14": 154,
+              "D14 Kort": 25,
+              "H14 Kort": 24,
+              "D13": 143,
+              "H13": 133,
+              "D12": 126,
+              "H12": 125,
+              "D12 Kort": 14,
+              "H12 Kort": 13,
+              "D11": 105,
+              "H11": 116,
+              "D10": 142,
+              "H10": 160,
+              "D35": 18,
+              "H35": 28,
+              "D35 Kort": 77,
+              "H35 Kort": 76,
+              "D40": 46,
+              "H40": 83,
+              "D40 Kort": 113,
+              "H40 Kort": 140,
+              "D45": 108,
+              "H45": 156,
+              "D45 Kort": 190,
+              "H45 Kort-1": 124,
+              "H45 Kort-2": 120,
+              "D50": 115,
+              "H50": 213,
+              "D50 Kort": 159,
+              "H50 Kort-1": 121,
+              "H50 Kort-2": 117,
+              "D55": 74,
+              "H55": 156,
+              "D55 Kort": 97,
+              "H55 Kort": 161,
+              "D60": 54,
+              "H60": 128,
+              "D60 Kort": 72,
+              "H60 Kort": 106,
+              "D65": 40,
+              "H65": 75,
+              "D65 Kort": 54,
+              "H65 Kort": 110,
+              "D70": 19,
+              "H70": 64,
+              "D70 Kort": 57,
+              "H70 Kort": 104,
+              "D75": 48,
+              "H75": 136,
+              "D80": 23,
+              "H80": 57,
+              "D85": 2,
+              "H85": 20,
+              "H90": 5,
+              "D21 Motion": 33,
+              "H21 Motion": 35,
+              "D35 Motion": 28,
+              "H35 Motion": 13,
+              "D40 Motion": 58,
+              "H40 Motion": 35,
+              "D45 Motion": 73,
+              "H45 Motion": 28,
+              "D50 Motion": 74,
+              "H50 Motion": 36,
+              "D55 Motion": 52,
+              "H55 Motion": 42,
+              "D60 Motion": 35,
+              "H60 Motion": 33,
+              "D65 Motion": 29,
+              "H65 Motion": 26,
+              "D70 Motion": 34,
+              "H70 Motion": 22,
+              "D80 Motion": 4,
+              "H80 Motion": 15,
+              "Inskolning": 230,
+              "Vit 2,5": 112,
+              "Gul 2,5": 104,
+              "Gul 3,5": 66,
+              "Gul 5,0": 41,
+              "Gul 10,0": 17,
+              "Orange 2,5": 50,
+              "Orange 3,3": 72,
+              "Orange 4,0": 63,
+              "Röd 5,0": 21,
+              "Röd 6,0": 16,
+              "Blå 2,5": 42,
+              "Blå 3,5": 86,
+              "Svart 5,0": 54,
+              "Svart 7,5": 16,
+              "Para-I": 11,
+              "3-dagars Gul 2,5": 36,
+              "3-dagars Gul 5,0": 12,
+              "3-dagars Orange 3,3": 77,
+              "3-dagars Röd 5,0": 37,
+              "3-dagars Blå 3,5": 69,
+              "3-dagars Svart 5,0": 61,
+              "3-dagars Svart 7,5": 28,
+              "Etappstart Prova på 2,5": 105,
+              "Etappstart Inskolning": 124,
+              "Etappstart Gul 2,5": 171,
+              "Etappstart Gul 3,5": 126,
+              "Etappstart Gul 5,0": 59,
+              "Etappstart Gul 10,0": 35,
+              "Etappstart Orange 2,5": 93,
+              "Etappstart Orange 3,3": 159,
+              "Etappstart Orange 4,0": 102,
+              "Etappstart Röd 5,0": 89,
+              "Etappstart Röd 6,0": 37,
+              "Etappstart Blå 2,5": 86,
+              "Etappstart Blå 3,5": 304,
+              "Etappstart Svart 5,0": 300,
+              "Etappstart Svart 7,5": 127,
+              "Etappstart Para-I": 1
+            }
+          }
+        },
+        {
+          "race_number": 5,
+          "name": "Etapp 5",
+          "datetimez": "2025-07-26T00:00:00+02:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "punching_system": "Sportident",
+          "position": {
+            "lat": 57.6432742808888,
+            "lng": 14.0748681794617
+          },
+          "areas": [
+            {
+              "lat": 57.6432742808888,
+              "lng": 14.0748681794617,
+              "polygon": [
+                [
+                  57.65517820163362,
+                  14.069663634023525
+                ],
+                [
+                  57.651036803245546,
+                  14.072789522638448
+                ],
+                [
+                  57.63988453502466,
+                  14.07130100425039
+                ],
+                [
+                  57.62879305931338,
+                  14.070562526260627
+                ],
+                [
+                  57.62377188724818,
+                  14.06520386006362
+                ],
+                [
+                  57.60974080756836,
+                  14.065203860063617
+                ],
+                [
+                  57.61037870145756,
+                  14.042876084242764
+                ],
+                [
+                  57.618271711893016,
+                  14.042131825048733
+                ],
+                [
+                  57.61795283561307,
+                  14.029925974266666
+                ],
+                [
+                  57.62114147248613,
+                  14.013254568320432
+                ],
+                [
+                  57.63245887352966,
+                  14.00164412489359
+                ],
+                [
+                  57.63692110448309,
+                  14.002239532248813
+                ],
+                [
+                  57.65249058360823,
+                  14.014687535060254
+                ],
+                [
+                  57.674634406987934,
+                  14.016324905287119
+                ],
+                [
+                  57.674714001924144,
+                  14.02287438619457
+                ],
+                [
+                  57.67558953469009,
+                  14.024511756421433
+                ],
+                [
+                  57.67495278568441,
+                  14.031210089167686
+                ],
+                [
+                  57.67654463723039,
+                  14.037610718236333
+                ],
+                [
+                  57.6821155672464,
+                  14.046690680403477
+                ],
+                [
+                  57.687906071641834,
+                  14.054209723258214
+                ],
+                [
+                  57.688940413393794,
+                  14.06090805600447
+                ],
+                [
+                  57.68814476851276,
+                  14.07088112920445
+                ],
+                [
+                  57.688065203063815,
+                  14.08025879504921
+                ],
+                [
+                  57.67803855865307,
+                  14.086361720440243
+                ],
+                [
+                  57.67509369969224,
+                  14.080258795049218
+                ],
+                [
+                  57.672307802128984,
+                  14.075942091723853
+                ],
+                [
+                  57.66952169050356,
+                  14.073709314141766
+                ],
+                [
+                  57.66753147970721,
+                  14.067904092428343
+                ],
+                [
+                  57.65517820163362,
+                  14.069663634023525
+                ]
+              ]
+            }
+          ],
+          "urls": [
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/161775"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=44022&eventRaceId=45611&groupBy=EventClass"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=44022&eventRaceId=45611&groupBy=EventClass"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "total_count": 11607,
+            "class_counts": {
+              "D21 Elit": 55,
+              "H21 Elit": 72,
+              "D20 Elit": 101,
+              "H20 Elit": 121,
+              "D18 Elit": 120,
+              "H18 Elit": 121,
+              "D21 Lång": 7,
+              "H21 Lång": 67,
+              "D21": 109,
+              "H21": 201,
+              "D21 Kort": 173,
+              "H21 Kort": 235,
+              "D20": 47,
+              "H20": 86,
+              "D18": 116,
+              "H18": 169,
+              "D17-20 Kort": 48,
+              "H17-20 Kort": 49,
+              "D16": 128,
+              "H16": 155,
+              "D16 Kort": 40,
+              "H16 Kort": 37,
+              "D15": 127,
+              "H15": 174,
+              "D14": 132,
+              "H14": 154,
+              "D14 Kort": 25,
+              "H14 Kort": 24,
+              "D13": 143,
+              "H13": 133,
+              "D12": 126,
+              "H12": 125,
+              "D12 Kort": 14,
+              "H12 Kort": 13,
+              "D11": 105,
+              "H11": 116,
+              "D10": 142,
+              "H10": 160,
+              "D35": 18,
+              "H35": 28,
+              "D35 Kort": 77,
+              "H35 Kort": 76,
+              "D40": 46,
+              "H40": 83,
+              "D40 Kort": 113,
+              "H40 Kort": 140,
+              "D45": 108,
+              "H45": 156,
+              "D45 Kort": 190,
+              "H45 Kort-1": 124,
+              "H45 Kort-2": 120,
+              "D50": 115,
+              "H50": 212,
+              "D50 Kort": 159,
+              "H50 Kort-1": 121,
+              "H50 Kort-2": 117,
+              "D55": 74,
+              "H55": 156,
+              "D55 Kort": 97,
+              "H55 Kort": 161,
+              "D60": 54,
+              "H60": 128,
+              "D60 Kort": 72,
+              "H60 Kort": 106,
+              "D65": 40,
+              "H65": 75,
+              "D65 Kort": 54,
+              "H65 Kort": 110,
+              "D70": 19,
+              "H70": 64,
+              "D70 Kort": 57,
+              "H70 Kort": 104,
+              "D75": 48,
+              "H75": 137,
+              "D80": 23,
+              "H80": 57,
+              "D85": 2,
+              "H85": 20,
+              "H90": 5,
+              "D21 Motion": 33,
+              "H21 Motion": 35,
+              "D35 Motion": 28,
+              "H35 Motion": 13,
+              "D40 Motion": 58,
+              "H40 Motion": 35,
+              "D45 Motion": 73,
+              "H45 Motion": 28,
+              "D50 Motion": 74,
+              "H50 Motion": 36,
+              "D55 Motion": 52,
+              "H55 Motion": 42,
+              "D60 Motion": 35,
+              "H60 Motion": 33,
+              "D65 Motion": 29,
+              "H65 Motion": 26,
+              "D70 Motion": 34,
+              "H70 Motion": 22,
+              "D80 Motion": 4,
+              "H80 Motion": 15,
+              "Inskolning": 230,
+              "Vit 2,5": 114,
+              "Gul 2,5": 104,
+              "Gul 3,5": 66,
+              "Gul 5,0": 41,
+              "Gul 10,0": 17,
+              "Orange 2,5": 50,
+              "Orange 3,3": 72,
+              "Orange 4,0": 63,
+              "Röd 5,0": 21,
+              "Röd 6,0": 16,
+              "Blå 2,5": 42,
+              "Blå 3,5": 86,
+              "Svart 5,0": 54,
+              "Svart 7,5": 16,
+              "Para-I": 11,
+              "3-dagars Gul 2,5": 36,
+              "3-dagars Gul 5,0": 12,
+              "3-dagars Orange 3,3": 77,
+              "3-dagars Röd 5,0": 37,
+              "3-dagars Blå 3,5": 69,
+              "3-dagars Svart 5,0": 61,
+              "3-dagars Svart 7,5": 28,
+              "Etappstart Prova på 2,5": 113,
+              "Etappstart Inskolning": 154,
+              "Etappstart Gul 2,5": 167,
+              "Etappstart Gul 3,5": 114,
+              "Etappstart Gul 5,0": 58,
+              "Etappstart Gul 10,0": 22,
+              "Etappstart Orange 2,5": 85,
+              "Etappstart Orange 3,3": 184,
+              "Etappstart Orange 4,0": 86,
+              "Etappstart Röd 5,0": 81,
+              "Etappstart Röd 6,0": 38,
+              "Etappstart Blå 2,5": 86,
+              "Etappstart Blå 3,5": 285,
+              "Etappstart Svart 5,0": 316,
+              "Etappstart Svart 7,5": 148,
+              "Etappstart Para-I": 6
+            }
+          },
+          "result_counts": {
+            "total_count": 11607,
+            "class_counts": {
+              "D21 Elit": 55,
+              "H21 Elit": 72,
+              "D20 Elit": 101,
+              "H20 Elit": 121,
+              "D18 Elit": 120,
+              "H18 Elit": 121,
+              "D21 Lång": 7,
+              "H21 Lång": 67,
+              "D21": 109,
+              "H21": 201,
+              "D21 Kort": 173,
+              "H21 Kort": 235,
+              "D20": 47,
+              "H20": 86,
+              "D18": 116,
+              "H18": 169,
+              "D17-20 Kort": 48,
+              "H17-20 Kort": 49,
+              "D16": 128,
+              "H16": 155,
+              "D16 Kort": 40,
+              "H16 Kort": 37,
+              "D15": 127,
+              "H15": 174,
+              "D14": 132,
+              "H14": 154,
+              "D14 Kort": 25,
+              "H14 Kort": 24,
+              "D13": 143,
+              "H13": 133,
+              "D12": 126,
+              "H12": 125,
+              "D12 Kort": 14,
+              "H12 Kort": 13,
+              "D11": 105,
+              "H11": 116,
+              "D10": 142,
+              "H10": 160,
+              "D35": 18,
+              "H35": 28,
+              "D35 Kort": 77,
+              "H35 Kort": 76,
+              "D40": 46,
+              "H40": 83,
+              "D40 Kort": 113,
+              "H40 Kort": 140,
+              "D45": 108,
+              "H45": 156,
+              "D45 Kort": 190,
+              "H45 Kort-1": 124,
+              "H45 Kort-2": 120,
+              "D50": 115,
+              "H50": 212,
+              "D50 Kort": 159,
+              "H50 Kort-1": 121,
+              "H50 Kort-2": 117,
+              "D55": 74,
+              "H55": 156,
+              "D55 Kort": 97,
+              "H55 Kort": 161,
+              "D60": 54,
+              "H60": 128,
+              "D60 Kort": 72,
+              "H60 Kort": 106,
+              "D65": 40,
+              "H65": 75,
+              "D65 Kort": 54,
+              "H65 Kort": 110,
+              "D70": 19,
+              "H70": 64,
+              "D70 Kort": 57,
+              "H70 Kort": 104,
+              "D75": 48,
+              "H75": 137,
+              "D80": 23,
+              "H80": 57,
+              "D85": 2,
+              "H85": 20,
+              "H90": 5,
+              "D21 Motion": 33,
+              "H21 Motion": 35,
+              "D35 Motion": 28,
+              "H35 Motion": 13,
+              "D40 Motion": 58,
+              "H40 Motion": 35,
+              "D45 Motion": 73,
+              "H45 Motion": 28,
+              "D50 Motion": 74,
+              "H50 Motion": 36,
+              "D55 Motion": 52,
+              "H55 Motion": 42,
+              "D60 Motion": 35,
+              "H60 Motion": 33,
+              "D65 Motion": 29,
+              "H65 Motion": 26,
+              "D70 Motion": 34,
+              "H70 Motion": 22,
+              "D80 Motion": 4,
+              "H80 Motion": 15,
+              "Inskolning": 230,
+              "Vit 2,5": 114,
+              "Gul 2,5": 104,
+              "Gul 3,5": 66,
+              "Gul 5,0": 41,
+              "Gul 10,0": 17,
+              "Orange 2,5": 50,
+              "Orange 3,3": 72,
+              "Orange 4,0": 63,
+              "Röd 5,0": 21,
+              "Röd 6,0": 16,
+              "Blå 2,5": 42,
+              "Blå 3,5": 86,
+              "Svart 5,0": 54,
+              "Svart 7,5": 16,
+              "Para-I": 11,
+              "3-dagars Gul 2,5": 36,
+              "3-dagars Gul 5,0": 12,
+              "3-dagars Orange 3,3": 77,
+              "3-dagars Röd 5,0": 37,
+              "3-dagars Blå 3,5": 69,
+              "3-dagars Svart 5,0": 61,
+              "3-dagars Svart 7,5": 28,
+              "Etappstart Prova på 2,5": 113,
+              "Etappstart Inskolning": 154,
+              "Etappstart Gul 2,5": 167,
+              "Etappstart Gul 3,5": 114,
+              "Etappstart Gul 5,0": 58,
+              "Etappstart Gul 10,0": 22,
+              "Etappstart Orange 2,5": 85,
+              "Etappstart Orange 3,3": 184,
+              "Etappstart Orange 4,0": 86,
+              "Etappstart Röd 5,0": 81,
+              "Etappstart Röd 6,0": 38,
+              "Etappstart Blå 2,5": 86,
+              "Etappstart Blå 3,5": 285,
+              "Etappstart Svart 5,0": 316,
+              "Etappstart Svart 7,5": 148,
+              "Etappstart Para-I": 6
+            }
+          }
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_46200",
+      "name": "O-Ringen Jönköping, MTBO",
+      "start_time": "2025-07-20",
+      "end_time": "2025-07-26",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "classification": "National",
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Svensk Orientering Events",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact email",
+          "name": "enc:BBoEAG0cERsPFwAcQwcH"
+        }
+      ],
+      "classes": [
+        "D10",
+        "D12",
+        "D14",
+        "D16",
+        "D20",
+        "D21",
+        "D35",
+        "D40",
+        "D45",
+        "D50",
+        "D55",
+        "D60",
+        "D65",
+        "D70",
+        "D75",
+        "D80",
+        "Etappstart Lätt lång",
+        "Etappstart Lätt mellan",
+        "Etappstart Mycket lätt kort",
+        "Etappstart Svår kort",
+        "Etappstart Svår lång",
+        "Etappstart Svår mellan",
+        "H10",
+        "H12",
+        "H14",
+        "H16",
+        "H20",
+        "H21",
+        "H35",
+        "H40",
+        "H45",
+        "H50",
+        "H55",
+        "H60",
+        "H65",
+        "H70",
+        "H75",
+        "H80",
+        "Lätt lång",
+        "Lätt mellan",
+        "Svår mellan"
+      ],
+      "urls": [
+        {
+          "type": "Website",
+          "url": "https://oringen.se"
+        }
+      ],
+      "documents": [
+        {
+          "type": "StartList",
+          "title": "Start- och resultatlistor",
+          "url": "https://resultat.oringen.se/2025",
+          "published_time": null
+        }
+      ],
+      "information": "Mer information samt anmälan hittar du på\nwww.oringen.se\nStarttider och resultat hittar du på\nhttps://resultat.oringen.se\n---\nMore information and registration can be found at\nwww.oringen.se\nStart times and results can be found at\nhttps://resultat.oringen.se",
+      "region": null,
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Etapp 1",
+          "datetimez": "2025-07-21T00:00:00+02:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "punching_system": "Sportident",
+          "position": {
+            "lat": 57.7070050058555,
+            "lng": 14.1902442567824
+          },
+          "areas": [
+            {
+              "lat": 57.7070050058555,
+              "lng": 14.1902442567824,
+              "polygon": [
+                [
+                  57.71183840211057,
+                  14.17560706110041
+                ],
+                [
+                  57.70895448079335,
+                  14.178691969803419
+                ],
+                [
+                  57.706207675494056,
+                  14.17920612125392
+                ],
+                [
+                  57.701812353602975,
+                  14.182676643544802
+                ],
+                [
+                  57.69528706401931,
+                  14.185761552247811
+                ],
+                [
+                  57.6940505608965,
+                  14.178820507666035
+                ],
+                [
+                  57.69460012305021,
+                  14.17432168247415
+                ],
+                [
+                  57.6937070803171,
+                  14.169822857282263
+                ],
+                [
+                  57.69185222891642,
+                  14.165324032090375
+                ],
+                [
+                  57.690821714883754,
+                  14.157868836058109
+                ],
+                [
+                  57.69872157348621,
+                  14.1558122302561
+                ],
+                [
+                  57.699065006523654,
+                  14.15285585941572
+                ],
+                [
+                  57.69645483377349,
+                  14.143215519718815
+                ],
+                [
+                  57.706617546586216,
+                  14.12931096186645
+                ],
+                [
+                  57.714138451378915,
+                  14.129617023573974
+                ],
+                [
+                  57.71697201026757,
+                  14.133799866910135
+                ],
+                [
+                  57.7204591628832,
+                  14.133289764064262
+                ],
+                [
+                  57.726723340715694,
+                  14.139949483011417
+                ],
+                [
+                  57.72803071000257,
+                  14.143724244070873
+                ],
+                [
+                  57.72503458547109,
+                  14.148825272529605
+                ],
+                [
+                  57.72503458547109,
+                  14.152498013019892
+                ],
+                [
+                  57.722147176196785,
+                  14.156374794648526
+                ],
+                [
+                  57.72236510191553,
+                  14.160557637984683
+                ],
+                [
+                  57.72465324273381,
+                  14.165250584166715
+                ],
+                [
+                  57.72203821284532,
+                  14.174432435392427
+                ],
+                [
+                  57.71669860671878,
+                  14.177697093606017
+                ],
+                [
+                  57.71183840211057,
+                  14.17560706110041
+                ]
+              ]
+            }
+          ],
+          "urls": [
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/161781"
+            },
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=46200&groupBy=EventClass"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=46200&eventRaceId=47850&groupBy=EventClass"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=46200&eventRaceId=47850&groupBy=EventClass"
+            }
+          ],
+          "documents": [],
+          "entry_counts": {
+            "total_count": 0,
+            "class_counts": {}
+          },
+          "start_counts": {
+            "total_count": 298,
+            "class_counts": {
+              "D21": 21,
+              "H21": 30,
+              "D20": 6,
+              "H20": 9,
+              "D16": 4,
+              "H16": 10,
+              "D14": 2,
+              "H12": 3,
+              "H35": 3,
+              "D45": 5,
+              "H45": 15,
+              "D50": 4,
+              "H50": 22,
+              "D55": 8,
+              "H55": 23,
+              "D60": 8,
+              "H60": 21,
+              "H65": 10,
+              "D70": 4,
+              "H70": 17,
+              "H75": 6,
+              "H80": 2,
+              "Lätt mellan": 6,
+              "Lätt lång": 3,
+              "Svår mellan": 11,
+              "Etappstart Lätt mellan": 5,
+              "Etappstart Lätt lång": 11,
+              "Etappstart Svår kort": 2,
+              "Etappstart Svår mellan": 13,
+              "Etappstart Svår lång": 14
+            }
+          },
+          "result_counts": {
+            "total_count": 298,
+            "class_counts": {
+              "D21": 21,
+              "H21": 30,
+              "D20": 6,
+              "H20": 9,
+              "D16": 4,
+              "H16": 10,
+              "D14": 2,
+              "H12": 3,
+              "H35": 3,
+              "D45": 5,
+              "H45": 15,
+              "D50": 4,
+              "H50": 22,
+              "D55": 8,
+              "H55": 23,
+              "D60": 8,
+              "H60": 21,
+              "H65": 10,
+              "D70": 4,
+              "H70": 17,
+              "H75": 6,
+              "H80": 2,
+              "Lätt mellan": 6,
+              "Lätt lång": 3,
+              "Svår mellan": 11,
+              "Etappstart Lätt mellan": 5,
+              "Etappstart Lätt lång": 11,
+              "Etappstart Svår kort": 2,
+              "Etappstart Svår mellan": 13,
+              "Etappstart Svår lång": 14
+            }
+          }
+        },
+        {
+          "race_number": 2,
+          "name": "Etapp 2",
+          "datetimez": "2025-07-22T06:00:00+02:00",
+          "discipline": "Sprint",
+          "night_or_day": "day",
+          "punching_system": "Sportident",
+          "position": {
+            "lat": 57.8078906479334,
+            "lng": 14.2845689592513
+          },
+          "areas": [
+            {
+              "lat": 57.8078906479334,
+              "lng": 14.2845689592513,
+              "polygon": [
+                [
+                  57.80673393131448,
+                  14.279493421839287
+                ],
+                [
+                  57.80870720534381,
+                  14.280543768735177
+                ],
+                [
+                  57.809184965133824,
+                  14.279850628174392
+                ],
+                [
+                  57.810083994966874,
+                  14.281538205595341
+                ],
+                [
+                  57.80990419079302,
+                  14.28322578301629
+                ],
+                [
+                  57.81026379824439,
+                  14.284575844953048
+                ],
+                [
+                  57.810083994966874,
+                  14.286094664631904
+                ],
+                [
+                  57.809994092991985,
+                  14.290313608184276
+                ],
+                [
+                  57.810983002390685,
+                  14.294532551736648
+                ],
+                [
+                  57.809724385722774,
+                  14.299932799483688
+                ],
+                [
+                  57.80623868590317,
+                  14.302197147518731
+                ],
+                [
+                  57.80485436546701,
+                  14.305514032453122
+                ],
+                [
+                  57.797999911396516,
+                  14.310030172408977
+                ],
+                [
+                  57.7963275964558,
+                  14.304336186604944
+                ],
+                [
+                  57.78972769470943,
+                  14.306823850305735
+                ],
+                [
+                  57.78810699856268,
+                  14.302401337059878
+                ],
+                [
+                  57.78790072292395,
+                  14.297591853905011
+                ],
+                [
+                  57.790788474603175,
+                  14.287143666361679
+                ],
+                [
+                  57.795682967893015,
+                  14.282443424078243
+                ],
+                [
+                  57.80160427959191,
+                  14.2800663232086
+                ],
+                [
+                  57.80673393131448,
+                  14.279493421839287
+                ]
+              ]
+            }
+          ],
+          "urls": [
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/161782"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=46200&eventRaceId=47851&groupBy=EventClass"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=46200&eventRaceId=47851&groupBy=EventClass"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "total_count": 296,
+            "class_counts": {
+              "D21": 21,
+              "H21": 30,
+              "D20": 6,
+              "H20": 9,
+              "D16": 4,
+              "H16": 10,
+              "D14": 2,
+              "H12": 3,
+              "H35": 3,
+              "D45": 5,
+              "H45": 15,
+              "D50": 4,
+              "H50": 22,
+              "D55": 8,
+              "H55": 23,
+              "D60": 8,
+              "H60": 21,
+              "H65": 10,
+              "D70": 4,
+              "H70": 17,
+              "H75": 6,
+              "H80": 2,
+              "Lätt mellan": 6,
+              "Lätt lång": 3,
+              "Svår mellan": 11,
+              "Etappstart Mycket lätt kort": 2,
+              "Etappstart Lätt mellan": 5,
+              "Etappstart Lätt lång": 10,
+              "Etappstart Svår mellan": 10,
+              "Etappstart Svår lång": 16
+            }
+          },
+          "result_counts": {
+            "total_count": 296,
+            "class_counts": {
+              "D21": 21,
+              "H21": 30,
+              "D20": 6,
+              "H20": 9,
+              "D16": 4,
+              "H16": 10,
+              "D14": 2,
+              "H12": 3,
+              "H35": 3,
+              "D45": 5,
+              "H45": 15,
+              "D50": 4,
+              "H50": 22,
+              "D55": 8,
+              "H55": 23,
+              "D60": 8,
+              "H60": 21,
+              "H65": 10,
+              "D70": 4,
+              "H70": 17,
+              "H75": 6,
+              "H80": 2,
+              "Lätt mellan": 6,
+              "Lätt lång": 3,
+              "Svår mellan": 11,
+              "Etappstart Mycket lätt kort": 2,
+              "Etappstart Lätt mellan": 5,
+              "Etappstart Lätt lång": 10,
+              "Etappstart Svår mellan": 10,
+              "Etappstart Svår lång": 16
+            }
+          }
+        },
+        {
+          "race_number": 3,
+          "name": "Etapp 3",
+          "datetimez": "2025-07-24T00:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "punching_system": "Sportident",
+          "position": {
+            "lat": 57.7860600673448,
+            "lng": 14.0851302079023
+          },
+          "areas": [
+            {
+              "lat": 57.7860600673448,
+              "lng": 14.0851302079023,
+              "polygon": [
+                [
+                  57.780209989165684,
+                  14.0833152733559
+                ],
+                [
+                  57.77719891895026,
+                  14.07735856768223
+                ],
+                [
+                  57.77629142389617,
+                  14.07225281996194
+                ],
+                [
+                  57.77402258649019,
+                  14.072407539589827
+                ],
+                [
+                  57.77476513078602,
+                  14.057863894568396
+                ],
+                [
+                  57.77270247004705,
+                  14.047729758941763
+                ],
+                [
+                  57.774806382799284,
+                  14.039297539221893
+                ],
+                [
+                  57.78425185304718,
+                  14.048193917825428
+                ],
+                [
+                  57.794176400044705,
+                  14.060297092644575
+                ],
+                [
+                  57.79882386492318,
+                  14.063239617105724
+                ],
+                [
+                  57.80100870009903,
+                  14.074688869569403
+                ],
+                [
+                  57.80129725334493,
+                  14.089774033288437
+                ],
+                [
+                  57.80125603159394,
+                  14.096736416543381
+                ],
+                [
+                  57.79379411889718,
+                  14.100062888542956
+                ],
+                [
+                  57.788351308969226,
+                  14.101842164263664
+                ],
+                [
+                  57.787485331713725,
+                  14.098825131519861
+                ],
+                [
+                  57.785918272443126,
+                  14.097123215613099
+                ],
+                [
+                  57.78525843766229,
+                  14.095421299706338
+                ],
+                [
+                  57.78360879794701,
+                  14.095034500636615
+                ],
+                [
+                  57.781381664763046,
+                  14.09139858938126
+                ],
+                [
+                  57.780209989165684,
+                  14.0833152733559
+                ]
+              ]
+            }
+          ],
+          "urls": [
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/161783"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=46200&eventRaceId=47852&groupBy=EventClass"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=46200&eventRaceId=47852&groupBy=EventClass"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "total_count": 298,
+            "class_counts": {
+              "D21": 21,
+              "H21": 30,
+              "D20": 6,
+              "H20": 9,
+              "D16": 4,
+              "H16": 10,
+              "D14": 2,
+              "H12": 3,
+              "H35": 3,
+              "D45": 5,
+              "H45": 15,
+              "D50": 4,
+              "H50": 22,
+              "D55": 8,
+              "H55": 23,
+              "D60": 8,
+              "H60": 21,
+              "H65": 10,
+              "D70": 4,
+              "H70": 17,
+              "H75": 6,
+              "H80": 2,
+              "Lätt mellan": 6,
+              "Lätt lång": 3,
+              "Svår mellan": 11,
+              "Etappstart Mycket lätt kort": 2,
+              "Etappstart Lätt mellan": 4,
+              "Etappstart Lätt lång": 7,
+              "Etappstart Svår kort": 4,
+              "Etappstart Svår mellan": 13,
+              "Etappstart Svår lång": 15
+            }
+          },
+          "result_counts": {
+            "total_count": 298,
+            "class_counts": {
+              "D21": 21,
+              "H21": 30,
+              "D20": 6,
+              "H20": 9,
+              "D16": 4,
+              "H16": 10,
+              "D14": 2,
+              "H12": 3,
+              "H35": 3,
+              "D45": 5,
+              "H45": 15,
+              "D50": 4,
+              "H50": 22,
+              "D55": 8,
+              "H55": 23,
+              "D60": 8,
+              "H60": 21,
+              "H65": 10,
+              "D70": 4,
+              "H70": 17,
+              "H75": 6,
+              "H80": 2,
+              "Lätt mellan": 6,
+              "Lätt lång": 3,
+              "Svår mellan": 11,
+              "Etappstart Mycket lätt kort": 2,
+              "Etappstart Lätt mellan": 4,
+              "Etappstart Lätt lång": 7,
+              "Etappstart Svår kort": 4,
+              "Etappstart Svår mellan": 13,
+              "Etappstart Svår lång": 15
+            }
+          }
+        },
+        {
+          "race_number": 4,
+          "name": "Etapp 4",
+          "datetimez": "2025-07-25T00:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "punching_system": "Sportident",
+          "position": {
+            "lat": 57.6540391024314,
+            "lng": 14.0636760310639
+          },
+          "areas": [
+            {
+              "lat": 57.6540391024314,
+              "lng": 14.0636760310639,
+              "polygon": [
+                [
+                  57.65332495776377,
+                  14.063727257999613
+                ],
+                [
+                  57.652238352914964,
+                  14.057042370154264
+                ],
+                [
+                  57.65346078108206,
+                  14.052980666146961
+                ],
+                [
+                  57.65486425893474,
+                  14.05171138364468
+                ],
+                [
+                  57.6571278185034,
+                  14.047311204303437
+                ],
+                [
+                  57.65880276167019,
+                  14.046803491302525
+                ],
+                [
+                  57.6600702348282,
+                  14.045111114632814
+                ],
+                [
+                  57.66179030614171,
+                  14.044688020465387
+                ],
+                [
+                  57.66237873286741,
+                  14.04206483662734
+                ],
+                [
+                  57.66649745268535,
+                  14.033518334445308
+                ],
+                [
+                  57.67564694883259,
+                  14.034899656499062
+                ],
+                [
+                  57.677275792342385,
+                  14.038284409838479
+                ],
+                [
+                  57.67768299178525,
+                  14.040653737176072
+                ],
+                [
+                  57.679718920393185,
+                  14.044630822349887
+                ],
+                [
+                  57.682026167923794,
+                  14.04632319901959
+                ],
+                [
+                  57.68261426635473,
+                  14.049031001691125
+                ],
+                [
+                  57.68528320854074,
+                  14.051315710195235
+                ],
+                [
+                  57.687680565305584,
+                  14.053854275199795
+                ],
+                [
+                  57.688675647951214,
+                  14.059100642875896
+                ],
+                [
+                  57.688811338922136,
+                  14.063839297551079
+                ],
+                [
+                  57.68849472586626,
+                  14.069339521727635
+                ],
+                [
+                  57.687771028493415,
+                  14.071878086732198
+                ],
+                [
+                  57.688313802877985,
+                  14.078393736910575
+                ],
+                [
+                  57.68682115375796,
+                  14.084994005922443
+                ],
+                [
+                  57.68320235524362,
+                  14.089648041764143
+                ],
+                [
+                  57.68247855217916,
+                  14.089055709929745
+                ],
+                [
+                  57.68216188379324,
+                  14.087871046260947
+                ],
+                [
+                  57.680668981280064,
+                  14.089309566430199
+                ],
+                [
+                  57.67759250341544,
+                  14.086009431924264
+                ],
+                [
+                  57.67569219547386,
+                  14.080932301915137
+                ],
+                [
+                  57.67406328081387,
+                  14.07991687591331
+                ],
+                [
+                  57.67288679693374,
+                  14.07661674140738
+                ],
+                [
+                  57.66944762516903,
+                  14.073316606901448
+                ],
+                [
+                  57.66845201456931,
+                  14.069254902894146
+                ],
+                [
+                  57.6669585474184,
+                  14.06790100155838
+                ],
+                [
+                  57.65839838181569,
+                  14.068493333392775
+                ],
+                [
+                  57.65459565425101,
+                  14.07001647239551
+                ],
+                [
+                  57.65332495776377,
+                  14.063727257999613
+                ]
+              ]
+            }
+          ],
+          "urls": [
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/161784"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=46200&eventRaceId=47853&groupBy=EventClass"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=46200&eventRaceId=47853&groupBy=EventClass"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "total_count": 332,
+            "class_counts": {
+              "D21": 21,
+              "H21": 30,
+              "D20": 6,
+              "H20": 9,
+              "D16": 4,
+              "H16": 10,
+              "D14": 2,
+              "H12": 3,
+              "H35": 3,
+              "D45": 5,
+              "H45": 15,
+              "D50": 4,
+              "H50": 22,
+              "D55": 8,
+              "H55": 23,
+              "D60": 8,
+              "H60": 21,
+              "H65": 10,
+              "D70": 4,
+              "H70": 17,
+              "H75": 6,
+              "H80": 2,
+              "Lätt mellan": 6,
+              "Lätt lång": 2,
+              "Svår mellan": 11,
+              "Etappstart Mycket lätt kort": 2,
+              "Etappstart Lätt mellan": 10,
+              "Etappstart Lätt lång": 15,
+              "Etappstart Svår kort": 2,
+              "Etappstart Svår mellan": 18,
+              "Etappstart Svår lång": 33
+            }
+          },
+          "result_counts": {
+            "total_count": 332,
+            "class_counts": {
+              "D21": 21,
+              "H21": 30,
+              "D20": 6,
+              "H20": 9,
+              "D16": 4,
+              "H16": 10,
+              "D14": 2,
+              "H12": 3,
+              "H35": 3,
+              "D45": 5,
+              "H45": 15,
+              "D50": 4,
+              "H50": 22,
+              "D55": 8,
+              "H55": 23,
+              "D60": 8,
+              "H60": 21,
+              "H65": 10,
+              "D70": 4,
+              "H70": 17,
+              "H75": 6,
+              "H80": 2,
+              "Lätt mellan": 6,
+              "Lätt lång": 2,
+              "Svår mellan": 11,
+              "Etappstart Mycket lätt kort": 2,
+              "Etappstart Lätt mellan": 10,
+              "Etappstart Lätt lång": 15,
+              "Etappstart Svår kort": 2,
+              "Etappstart Svår mellan": 18,
+              "Etappstart Svår lång": 33
+            }
+          }
+        },
+        {
+          "race_number": 5,
+          "name": "Etapp 5",
+          "datetimez": "2025-07-26T00:00:00+02:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "punching_system": "Sportident",
+          "position": {
+            "lat": 57.6540950970591,
+            "lng": 14.063683575435
+          },
+          "areas": [
+            {
+              "lat": 57.6540950970591,
+              "lng": 14.063683575435,
+              "polygon": [
+                [
+                  57.65340609787836,
+                  14.05314297261742
+                ],
+                [
+                  57.65927493121495,
+                  14.056672405235059
+                ],
+                [
+                  57.65761644411293,
+                  14.065686766920651
+                ],
+                [
+                  57.65797366312586,
+                  14.068596164078434
+                ],
+                [
+                  57.65840742434162,
+                  14.073127192438914
+                ],
+                [
+                  57.66432647086302,
+                  14.077801305905519
+                ],
+                [
+                  57.67463197333035,
+                  14.081191385768086
+                ],
+                [
+                  57.677809238352324,
+                  14.088233887217573
+                ],
+                [
+                  57.67792690948721,
+                  14.095643185617558
+                ],
+                [
+                  57.67737777425668,
+                  14.099311155122498
+                ],
+                [
+                  57.677024754358854,
+                  14.1055467032809
+                ],
+                [
+                  57.678083803739526,
+                  14.113029361070982
+                ],
+                [
+                  57.678201473983194,
+                  14.12902170811253
+                ],
+                [
+                  57.67588722241479,
+                  14.138191631874886
+                ],
+                [
+                  57.66933591282353,
+                  14.15102952514219
+                ],
+                [
+                  57.664745367993476,
+                  14.158805620492666
+                ],
+                [
+                  57.64489392617213,
+                  14.154375029670653
+                ],
+                [
+                  57.637792422309815,
+                  14.125486200080722
+                ],
+                [
+                  57.63182747666724,
+                  14.120650603313893
+                ],
+                [
+                  57.63025166704503,
+                  14.072294635645568
+                ],
+                [
+                  57.63936790473335,
+                  14.068930742242554
+                ],
+                [
+                  57.64296875070201,
+                  14.06745903887874
+                ],
+                [
+                  57.64398142428004,
+                  14.05421370860437
+                ],
+                [
+                  57.65340609787836,
+                  14.05314297261742
+                ]
+              ]
+            }
+          ],
+          "urls": [
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/161785"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=46200&eventRaceId=47854&groupBy=EventClass"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=46200&eventRaceId=47854&groupBy=EventClass"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "total_count": 327,
+            "class_counts": {
+              "D21": 21,
+              "H21": 30,
+              "D20": 6,
+              "H20": 9,
+              "D16": 4,
+              "H16": 10,
+              "D14": 2,
+              "H12": 3,
+              "H35": 3,
+              "D45": 5,
+              "H45": 15,
+              "D50": 4,
+              "H50": 21,
+              "D55": 8,
+              "H55": 23,
+              "D60": 8,
+              "H60": 21,
+              "H65": 10,
+              "D70": 4,
+              "H70": 17,
+              "H75": 6,
+              "H80": 2,
+              "Lätt mellan": 6,
+              "Lätt lång": 2,
+              "Svår mellan": 11,
+              "Etappstart Mycket lätt kort": 4,
+              "Etappstart Lätt mellan": 17,
+              "Etappstart Lätt lång": 10,
+              "Etappstart Svår kort": 4,
+              "Etappstart Svår mellan": 17,
+              "Etappstart Svår lång": 24
+            }
+          },
+          "result_counts": {
+            "total_count": 327,
+            "class_counts": {
+              "D21": 21,
+              "H21": 30,
+              "D20": 6,
+              "H20": 9,
+              "D16": 4,
+              "H16": 10,
+              "D14": 2,
+              "H12": 3,
+              "H35": 3,
+              "D45": 5,
+              "H45": 15,
+              "D50": 4,
+              "H50": 21,
+              "D55": 8,
+              "H55": 23,
+              "D60": 8,
+              "H60": 21,
+              "H65": 10,
+              "D70": 4,
+              "H70": 17,
+              "H75": 6,
+              "H80": 2,
+              "Lätt mellan": 6,
+              "Lätt lång": 2,
+              "Svår mellan": 11,
+              "Etappstart Mycket lätt kort": 4,
+              "Etappstart Lätt mellan": 17,
+              "Etappstart Lätt lång": 10,
+              "Etappstart Svår kort": 4,
+              "Etappstart Svår mellan": 17,
+              "Etappstart Svår lång": 24
+            }
+          }
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_55298",
+      "name": "Val till SOFTs Ungdomsråd",
+      "start_time": "2025-07-20",
+      "end_time": "2025-07-20",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "classification": "National",
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Haninge SOK",
+          "country_code": "SWE"
+        },
+        {
+          "name": "Svenska Orienteringsförbundet",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Felix Persson"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "0763190350"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:GBoFL0IBChcPBAAABBoFQV4W"
+        },
+        {
+          "role": "Event directors",
+          "name": "Karolina Östlund"
+        },
+        {
+          "role": "Event directors",
+          "name": "Felix Persson"
+        },
+        {
+          "role": "Course setters",
+          "name": "Ella Andersson"
+        },
+        {
+          "role": "Course setters",
+          "name": "Felix Persson"
+        },
+        {
+          "role": "Course setters",
+          "name": "Kaisa Rooba"
+        },
+        {
+          "role": "Event controller",
+          "name": "Karolina Östlund"
+        }
+      ],
+      "classes": [
+        "Rösta"
+      ],
+      "urls": [
+        {
+          "type": "Website",
+          "url": "https://www.orientering.se/forening/foreningen/barn-ungdom/ungdomsradet/"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Bulletin",
+          "title": "\"PM\" Hur du förtidsröstar",
+          "url": "/Documents/Event/114108/-PM--Hur-du-f-rtidsr-star",
+          "published_time": null
+        },
+        {
+          "type": "Other",
+          "title": "Vem du kan rösta på (översikt)",
+          "url": "/Documents/Event/114110/Vem-du-kan-r-sta-p--(-versikt)",
+          "published_time": null
+        },
+        {
+          "type": "Other",
+          "title": "Mer detaljerad beskrivning av kandidaterna",
+          "url": "https://docs.google.com/document/d/15pM--LTPElT4hruRWEQ32IV00ZOHVWqpbOG4ZvYDYq4/edit?usp=drivesdk",
+          "published_time": null
+        }
+      ],
+      "information": "En \"tävling\" som används som plattform för att utföra val till SOFT's Ungdomsråd. Här kan du som är mellan 12 och 25 men som inte har möjlighet att rösta under O-ringen möjligheten att förtidsrösta mellan Fredag 18 juli till lördag den 19 Juli. Nu kan du Rösta! Läs med i \"PM\"\nOmröstningen öppnar idag på oringen torget runt klockan 14.",
+      "region": "Stockholm",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Val till SOFTs Ungdomsråd",
+          "datetimez": "2025-07-20T00:00:00+02:00",
+          "discipline": "Long",
+          "night_or_day": "combined",
+          "punching_system": null,
+          "position": {
+            "lat": 57.789202498745,
+            "lng": 14.2299196897485
+          },
+          "areas": [
+            {
+              "lat": 57.789202498745,
+              "lng": 14.2299196897485,
+              "polygon": [
+                [
+                  57.79122176243075,
+                  14.23201752878354
+                ],
+                [
+                  57.787975248834414,
+                  14.234269481145226
+                ],
+                [
+                  57.78662613159355,
+                  14.225653693889955
+                ],
+                [
+                  57.79046031032536,
+                  14.22233673108869
+                ],
+                [
+                  57.79159260763319,
+                  14.231840395070481
+                ],
+                [
+                  57.79122176243075,
+                  14.23201752878354
+                ]
+              ]
+            }
+          ],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=55298&groupBy=EventClass"
+            }
+          ],
+          "documents": [],
+          "entry_counts": {
+            "total_count": 17,
+            "class_counts": {}
+          },
+          "start_counts": null,
+          "result_counts": null
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_55366",
+      "name": "O-Ringen Jönköping, Prova På MTBO",
+      "start_time": "2025-07-23",
+      "end_time": "2025-07-23",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "classification": "Local",
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Svensk Orientering Events",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Tomas Lundh"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:GRsPDl5dDwcPFA0yChkDBkFdAB0M"
+        }
+      ],
+      "classes": [
+        "Prova på MTBO 3 km",
+        "Prova på MTBO 5 km"
+      ],
+      "urls": [],
+      "documents": [],
+      "information": null,
+      "region": null,
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "O-Ringen Jönköping, Prova På MTBO",
+          "datetimez": "2025-07-23T00:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": {
+            "lat": 57.8082580191944,
+            "lng": 14.2820503234863
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/163306"
+            },
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=55366&groupBy=EventClass"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=55366&groupBy=EventClass"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=55366&groupBy=EventClass"
+            }
+          ],
+          "documents": [],
+          "entry_counts": {
+            "total_count": 0,
+            "class_counts": {}
+          },
+          "start_counts": {
+            "total_count": 92,
+            "class_counts": {
+              "Prova på MTBO 3 km": 40,
+              "Prova på MTBO 5 km": 52
+            }
+          },
+          "result_counts": {
+            "total_count": 92,
+            "class_counts": {
+              "Prova på MTBO 3 km": 40,
+              "Prova på MTBO 5 km": 52
+            }
+          }
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_55254",
+      "name": "Veckans bana v31",
+      "start_time": "2025-07-30",
+      "end_time": "2025-07-30",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "classification": "Local",
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Forsa OK",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Per-Åke Blad"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:DxgDC0VLWzIGHQQbAVoBAEA="
+        }
+      ],
+      "classes": [
+        "Kort",
+        "Lång",
+        "Mellan"
+      ],
+      "urls": [],
+      "documents": [],
+      "information": "Gemensam träning på veckans bana är ändrad till onsdag 30/7 kl 17.30. Samling och  längs vägen mellan Tannakorset och Lintjärn.\nTre längder 2,5, 3,5 och 7 km,  + att det kommer att finnas två MTBO banor, läs mer på veckans bana v31 MTBO på eventor. Utskrivna kartor kommer finnas på plats.\nKontrollerna är markerade med vita plastband (inga skärmar).\nÖvriga klubbar är välkomna.\nFör er som vill köra en banan själv senare under veckan finns kartor att skriva ut på\nwww.forsaok.se.\nÅterkommer med dessa i slutet på v30.",
+      "region": "Hälsingland",
+      "punching_system": "other",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Veckans bana v31",
+          "datetimez": "2025-07-30T00:00:00+02:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": {
+            "lat": 61.7884227093571,
+            "lng": 16.9630925240241
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/162211"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_55332",
+      "name": "Veckans bana v31 MTBO",
+      "start_time": "2025-07-30",
+      "end_time": "2025-07-30",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "classification": "Local",
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Forsa OK",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Per-Åke Blad"
+        }
+      ],
+      "classes": [
+        "MBTO kort",
+        "MTBO lång"
+      ],
+      "urls": [],
+      "documents": [],
+      "information": "Två banor: kort 6,5 km och lång 9,1 km.\nSamling mellan Lintjärn och Tannakorset onsdag 30/7 kl. 17.30 för gemensam träning. Kartställ finns att låna, övriga klubbar är välkommen.",
+      "region": "Hälsingland",
+      "punching_system": "other",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Veckans bana v31 MTBO",
+          "datetimez": "2025-07-30T00:00:00+02:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": {
+            "lat": 61.788099676054,
+            "lng": 16.9628384203713
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=55332&groupBy=EventClass"
+            },
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/162777"
+            }
+          ],
+          "documents": [],
+          "entry_counts": {
+            "total_count": 2,
+            "class_counts": {}
+          },
+          "start_counts": null,
+          "result_counts": null
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "PRT-MAN-TCAMP26",
+      "name": "MTBO Traning Camp 2026",
+      "start_time": "2026-03-07",
+      "end_time": "2026-03-15",
+      "status": "Sanctioned",
+      "original_status": "Planned",
+      "classification": null,
+      "form": null,
+      "organisers": [
+        {
+          "name": "CN Alvito",
+          "country_code": "PRT"
+        },
+        {
+          "name": "FEDO",
+          "country_code": "PRT"
+        }
+      ],
+      "officials": [],
+      "classes": [],
+      "urls": [],
+      "documents": [
+        {
+          "type": "Other",
+          "title": "General Info",
+          "url": "https://eventoscnalvito.wixsite.com/mtbo-tcamp2026/general-info",
+          "published_time": null
+        },
+        {
+          "type": "EmbargoMap",
+          "title": "Overview Map",
+          "url": "file://manual_events/PRT-MAN-TCAMP26/overview_map.png",
+          "published_time": null
+        }
+      ],
+      "information": "",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Troféu Ori-BTT, Middle",
+          "datetimez": "2026-03-07T10:00:00+00:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null
+        },
+        {
+          "race_number": 1,
+          "name": "Troféu Ori-BTT, Sprint",
+          "datetimez": "2026-03-08T10:00:00+00:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null
+        },
+        {
+          "race_number": 1,
+          "name": "Training Camp Day 1",
+          "datetimez": "2026-03-09T00:00:00+00:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null
+        },
+        {
+          "race_number": 1,
+          "name": "Training Camp Day 2",
+          "datetimez": "2026-03-10T00:00:00+00:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null
+        },
+        {
+          "race_number": 1,
+          "name": "Training Camp Day 3",
+          "datetimez": "2026-03-11T00:00:00+00:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null
+        },
+        {
+          "race_number": 1,
+          "name": "Training Camp Day 4",
+          "datetimez": "2026-03-12T00:00:00+00:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null
+        },
+        {
+          "race_number": 1,
+          "name": "Iberian Championship, Middle",
+          "datetimez": "2026-03-14T00:00:00+00:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null
+        },
+        {
+          "race_number": 1,
+          "name": "Iberian Championship, Sprint",
+          "datetimez": "2026-03-14T00:00:00+00:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null
+        },
+        {
+          "race_number": 1,
+          "name": "Iberian Championship, Mass Start",
+          "datetimez": "2026-03-15T00:00:00+00:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "DK-MAN-MTBOCAMP26",
+      "name": "MTBO Camp 2026",
+      "start_time": "2026-05-13",
+      "end_time": "2026-05-17",
+      "status": "Planned",
+      "original_status": "Planned",
+      "classification": null,
+      "form": null,
+      "organisers": [
+        {
+          "name": "Navet",
+          "country_code": "DNK"
+        }
+      ],
+      "officials": [],
+      "classes": [],
+      "urls": [],
+      "documents": [
+        {
+          "type": "Bulletin",
+          "title": "Bulletin 1",
+          "url": "file://manual_events/DK-MAN-MTBOCAMP26/MTBO CAMP 20206 Bulletin 1.pdf",
+          "published_time": null
+        }
+      ],
+      "information": "",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Sprint (Master Series)",
+          "datetimez": "2026-05-13T17:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null
+        },
+        {
+          "race_number": 1,
+          "name": "Long (Master Series)",
+          "datetimez": "2026-05-14T10:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null
+        },
+        {
+          "race_number": 1,
+          "name": "Flying Mile",
+          "datetimez": "2026-05-14T18:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null
+        },
+        {
+          "race_number": 1,
+          "name": "Danish Championship Sprint",
+          "datetimez": "2026-05-15T19:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null
+        },
+        {
+          "race_number": 1,
+          "name": "Ultra Long",
+          "datetimez": "2026-05-16T00:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null
+        },
+        {
+          "race_number": 1,
+          "name": "Middle",
+          "datetimez": "2026-05-17T09:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "punching_system": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null
+        }
+      ],
+      "entry_deadlines": []
+    }
+  ]
+}
