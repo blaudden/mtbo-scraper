@@ -127,22 +127,21 @@ class EventorSource(BaseSource):
         }
 
     def _save_start_list_yaml(
-        self, event: Event, all_races_data: list[dict]
+        self, event: Event, race_number: int, race_data: dict
     ) -> tuple[bool, str]:
-        """Saves start list data to YAML and returns (changed, filepath)."""
+        """Saves a single race's start list to YAML and returns (changed, filepath)."""
         import yaml
 
         year = event.start_time[:4] if event.start_time else "unknown"
         output_dir = f"data/events/{year}"
         os.makedirs(output_dir, exist_ok=True)
 
-        filename = f"{event.id}_startlist.yaml"
+        filename = f"{event.id}_startlist_{race_number}.yaml"
         filepath = os.path.join(output_dir, filename)
 
-        new_content = {"races": all_races_data}
         # Serialize to string for comparison
         # allow_unicode=True is important for Swedish names
-        new_yaml_str = yaml.dump(new_content, allow_unicode=True)
+        new_yaml_str = yaml.dump(race_data, allow_unicode=True)
 
         content_changed = True
         if os.path.exists(filepath):
@@ -202,8 +201,6 @@ class EventorSource(BaseSource):
         # Determine if we should save Start Lists to YAML
         save_yaml = self._should_download_start_list(event)
 
-        all_races_start_data = []
-
         for race in event.races:
             # 1. Fetch Lists
             entries = self._fetch_race_list_items(race, "EntryList")
@@ -223,15 +220,13 @@ class EventorSource(BaseSource):
                 valid_lists = [lst for lst in [entries, starts, results] if lst]
                 self._generate_race_fingerprints(race, valid_lists)
 
-            # 4. Collect Start List Data for YAML
+            # 4. Save Start List YAML for this race
             if save_yaml and starts:
                 race_data = self._collect_start_list_data(race, starts)
-                all_races_start_data.append(race_data)
-
-        # 5. Save YAML if needed
-        if all_races_start_data:
-            changed, filepath = self._save_start_list_yaml(event, all_races_start_data)
-            self._update_local_file_url(event, filepath, changed)
+                changed, filepath = self._save_start_list_yaml(
+                    event, race.race_number, race_data
+                )
+                self._update_local_file_url(event, filepath, changed)
 
     def fetch_event_details(self, event: Event) -> Event | None:
         """Fetches detailed information for a specific event.

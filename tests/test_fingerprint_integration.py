@@ -72,18 +72,22 @@ def test_fingerprint_and_yaml_saving(
     print(f"Fingerprints found: {len(race1.fingerprints)}")
 
     # Verify YAML creation
-    # It should have created data/events/2025/SWE_46200_startlist.yaml
-    expected_file = Path("data/events/2025/SWE_46200_startlist.yaml")
+    # It should have created data/events/2025/SWE_46200_startlist_N.yaml
+    # for each race
+    yaml_files_created = list(
+        Path("data/events/2025").glob("SWE_46200_startlist_*.yaml")
+    )
 
-    if expected_file.exists():
-        print("YAML file created successfully.")
-        content = yaml.safe_load(expected_file.read_text(encoding="utf-8"))
-        assert "races" in content
-        assert len(content["races"]) > 0
-        r1_data = content["races"][0]
-        assert len(r1_data["participants"]) > 0
+    if yaml_files_created:
+        print(f"YAML files created successfully: {len(yaml_files_created)}")
+        # Check first one
+        content = yaml.safe_load(yaml_files_created[0].read_text(encoding="utf-8"))
+        assert "race_number" in content
+        assert "participants" in content
+        assert len(content["participants"]) > 0
 
         # Cleanup
-        expected_file.unlink()
+        for f in yaml_files_created:
+            f.unlink()
     else:
-        pytest.fail(f"YAML file {expected_file} was not created.")
+        pytest.fail("No YAML files matching SWE_46200_startlist_*.yaml were created.")
