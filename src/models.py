@@ -28,6 +28,7 @@ class Url:
     # Custom: EntryList, Livelox, Series, LocalStartList
     type: str
     url: str
+    title: str | None = None
     last_updated_at: str | None = None
 
 
@@ -161,6 +162,7 @@ class Event:
                 {
                     "type": u.type,
                     "url": u.url,
+                    "title": u.title,
                     "last_updated_at": u.last_updated_at,
                 }
                 for u in self.urls
@@ -196,6 +198,7 @@ class Event:
                         {
                             "type": u.type,
                             "url": u.url,
+                            "title": u.title,
                             "last_updated_at": u.last_updated_at,
                         }
                         for u in r.urls

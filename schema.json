@@ -407,6 +407,12 @@
                     "type": "string",
                     "format": "uri"
                 },
+                "title": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "last_updated_at": {
                     "type": "string",
                     "format": "date-time"

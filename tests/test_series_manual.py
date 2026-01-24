@@ -36,6 +36,7 @@ def test_series_extraction_swe_46200() -> None:
     assert len(series_links) > 0, "No 'Series' type URL found"
 
     assert "/Standings/View/Series/1438" in series_links[0].url
+    assert series_links[0].title == "Svenska VeteranCupen MTBO 2025"
     print("\nSUCCESS: Found Series URL.")
 
 

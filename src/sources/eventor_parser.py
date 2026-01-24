@@ -337,8 +337,14 @@ class EventorParser:
                     and link["url"] == href
                     for link in links
                 ):
+                    title = a.get_text(strip=True)
                     links.append(
-                        {"race_index": race_index, "type": l_type, "url": href}
+                        {
+                            "race_index": race_index,
+                            "type": l_type,
+                            "url": href,
+                            "title": title,
+                        }
                     )
 
         return links
@@ -899,7 +905,7 @@ class EventorParser:
 
         for bl in box_links:
             idx = bl.get("race_index")
-            url_obj = Url(type=bl["type"], url=bl["url"])
+            url_obj = Url(type=bl["type"], url=bl["url"], title=bl.get("title"))
             assigned_urls.add(bl["url"])
 
             if idx and 1 <= idx <= len(event.races):
