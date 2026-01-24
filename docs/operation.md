@@ -37,7 +37,7 @@ Run the scraper using the provided bash script:
 
 - `--start-date YYYY-MM-DD`: Start date for scraping (default: 4 weeks ago).
 - `--end-date YYYY-MM-DD`: End date for scraping (default: Dec 31st of current year).
-- `--output FILE`: Output JSON file path (default: `mtbo_events.json`).
+- `--output FILE`: Output Index file path (default: `mtbo_events.json`). The actual event data is stored in `data/events/{year}/events.json`.
 - `--verbose, -v`: Increase logging verbosity. Use multiple times for more detail:
   - No flag: WARNING level (errors and warnings only)
   - `-v`: INFO level (general progress information)

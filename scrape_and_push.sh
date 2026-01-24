@@ -13,10 +13,8 @@ cd "$(dirname "$0")"
 
 # 1. Run Scraper
 echo "Starting scrape at $(date)" >> "$LOG_FILE"
-# Pass --commit-msg-file to the scraper. Output now points to the directory.
-# Note: src/main.py passes this to Storage. Storage handles directory or file.
-# If we pass a directory, Storage treats it as root.
-./scrape_now.sh --output "$OUTPUT_DIR" --commit-msg-file .commit_msg "$@" >> "$LOG_FILE" 2>&1
+# Pass --commit-msg-file. Output points to the Umbrella Index file.
+./scrape_now.sh --output "$OUTPUT_FILE" --commit-msg-file .commit_msg "$@" >> "$LOG_FILE" 2>&1
 EXIT_CODE=$?
 
 if [ $EXIT_CODE -ne 0 ]; then
@@ -25,6 +23,10 @@ if [ $EXIT_CODE -ne 0 ]; then
 fi
 
 # 2. Verify Output
+if [ ! -f "$OUTPUT_FILE" ]; then
+    echo "Output index $OUTPUT_FILE missing. Aborting." >> "$LOG_FILE"
+    exit 1
+fi
 if [ ! -d "$OUTPUT_DIR" ]; then
     echo "Output directory $OUTPUT_DIR missing. Aborting." >> "$LOG_FILE"
     exit 1
@@ -36,9 +38,7 @@ get_dir_size() {
     du -sb "$1" 2>/dev/null | cut -f1 || echo 0
 }
 
-# This is tricky with git. git show HEAD:dir isn't simple for size.
-# We can skip size check relative to git for now, or just check absolute size.
-# Or check if any file exists.
+# Check data directory size
 FILE_SIZE=$(get_dir_size "$OUTPUT_DIR")
 
 if [ "$FILE_SIZE" -lt "$MIN_SIZE_BYTES" ]; then
@@ -47,9 +47,9 @@ if [ "$FILE_SIZE" -lt "$MIN_SIZE_BYTES" ]; then
 fi
 
 # 3. Git Commit and Push
-# Check if there are changes
-if git diff --quiet "$OUTPUT_DIR"; then
-    echo "No changes to $OUTPUT_DIR." >> "$LOG_FILE"
+# Check if there are changes in either index or data
+if git diff --quiet "$OUTPUT_FILE" "$OUTPUT_DIR"; then
+    echo "No changes to $OUTPUT_FILE or $OUTPUT_DIR." >> "$LOG_FILE"
 else
     echo "Changes detected. Retrieving stats..." >> "$LOG_FILE"
 
@@ -63,8 +63,8 @@ else
 
     echo "Commit message: $COMMIT_MSG" >> "$LOG_FILE"
 
-    # Stage the directory (new/modified/deleted files)
-    git add "$OUTPUT_DIR"
+    # Stage the directory (new/modified/deleted files) and index
+    git add "$OUTPUT_FILE" "$OUTPUT_DIR"
     git commit -m "$COMMIT_MSG" >> "$LOG_FILE" 2>&1
     git push >> "$LOG_FILE" 2>&1
     echo "Pushed changes to git." >> "$LOG_FILE"

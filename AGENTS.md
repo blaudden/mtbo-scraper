@@ -13,7 +13,8 @@ graph TD
     Sources --> Eventor[eventor_source.py]
     Sources --> Manual[manual_source.py]
     Scraper --> Storage[src/storage.py]
-    Storage --> JSON[mtbo_events.json]
+    Storage --> Index[mtbo_events.json]
+    Index -.-> Partitions[data/events/YYYY/events.json]
     Scraper --> Utils[src/utils/]
 ```
 
@@ -25,7 +26,7 @@ graph TD
 | `src/scraper.py` | Core `MTBOScraper` class. Manages source execution. |
 | `src/models.py` | Pydantic models (Event, Race, Organizer) defining the data structure. |
 | `src/sources/` | Source-specific implementations (Eventor, Manual). |
-| `src/storage.py` | Handles reading/writing the `mtbo_events.json` state. |
+| `src/storage.py` | Handles reading/writing the Umbrella Index and Partitions. |
 | `src/exceptions.py` | Custom exception hierarchy for precise error handling. |
 | `src/utils/` | Shared utilities (Date manipulation, Crypto, Diffs). |
 

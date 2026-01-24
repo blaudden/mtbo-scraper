@@ -51,8 +51,10 @@ The scraper extracts event details, document links, entry statistics, and precis
 
 6.  **Storage (`src.storage.Storage`)**:
 
-    - Manages persistence to `mtbo_events.json`.
-    - Merges new data with existing data to prevent duplicates while updating records.
+    - **Umbrella Index**: Manages `mtbo_events.json` as a lightweight index pointing to partitioned data.
+    - **Partitioning**: Splits events by year into `data/events/{YYYY}/events.json`.
+    - **Atomic Updates**: Only writes partition files if content has changed (diff check).
+    - **Concurrency**: Designed to support parallel scraping by isolating year partitions (future proofing).
 
 7.  **Controller (`src.main`)**:
     - CLI entry point using `click`.
@@ -171,7 +173,7 @@ Subsequent requests to the same domain use cached cookies, avoiding repeated bro
 3.  **Parser** extracts event summaries.
 4.  **Scraper** fetches detail pages for each event.
 5.  **Parser** extracts full details and map data.
-6.  **Storage** saves the aggregated list to `mtbo_events.json`.
+6.  **Storage** updates the year-based partitions and the root `mtbo_events.json` index.
 
 ## Map Extraction Logic
 
@@ -201,9 +203,16 @@ This data is normalized to a consistent `[lon, lat]` format for GeoJSON compatib
 - `pyvirtualdisplay` - Virtual framebuffer for headless environments
 - `ruff` - Static code analysis and linting (dev dependency)
 
-## Schema Design (IOF 3.0 Based)
+## Schema Design (V2.0)
 
-The project uses a JSON schema adapted from the IOF XML 3.0 Data Exchange Standard.
+The project uses a JSON schema (V2.0) that decouples the index from the data.
+
+### Umbrella Index (`mtbo_events.json`)
+- `partitions`: Map of Year -> Partition Metadata (`path`, `count`, `last_updated_at`).
+- `last_scraped_at`: Timestamp of the last scrape execution.
+
+### Event List Partition (`data/events/{YYYY}/events.json`)
+Adapted from the IOF XML 3.0 Data Exchange Standard.
 
 - **Terminology**: `Event`, `Race`, `Class`, `Organisation` are mapped directly.
 - **Structure**:

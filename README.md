@@ -23,30 +23,34 @@ pip install -e .
 ```
 
 ## Output
+The scraper produces a partitioned dataset using an **Umbrella Index** architecture to handle large datasets efficiently.
 
-The scraper produces a JSON file (default: `mtbo_events.json`) containing a list of events. Each event includes:
+### File Structure
+- `mtbo_events.json` (Index): The root entry point. Contains metadata and pointers to year-based partition files.
+- `data/events/{YYYY}/events.json`: Partitioned event data file for a specific year.
 
-- Stable ID (`{Country}-{EventId}`)
-- Name, Date, Organizers, Country, Status
-- Document links
-- Map positions (coordinates and polygons)
-
-## JSON Schema
-
-The output structure is strictly defined by the included `schema.json` file. This schema is based on the **IOF XML 3.0** standard but adapted for JSON with snake_case naming conventions.
-
-### Validation
-You can validate the generated `mtbo_events.json` against the schema using any JSON Schema 2020-12 compliant validator.
-
-Example using Python `jsonschema`:
-
-```bash
-pip install jsonschema
-jsonschema -i mtbo_events.json schema.json
+### Index Format (`mtbo_events.json`)
+```json
+{
+  "schema_version": "2.0",
+  "last_scraped_at": "2025-01-01T12:00:00+00:00",
+  "data_root": "data/events",
+  "partitions": {
+    "2025": {
+      "path": "data/events/2025/events.json",
+      "count": 150,
+      "last_updated_at": "2025-01-01T12:00:00+00:00"
+    }
+  }
+}
 ```
 
+## JSON Schema
+The output structure is strictly defined by the included `schema.json` file (Version 2.0).
+
 ### Key Concepts
-- **Wrapper**: Top-level object containing `meta` (source systems) and `events` list.
+- **Umbrella Index**: The top-level `mtbo_events.json` does not contain events directly. It indexes partitions.
+- **Partitions**: Events are grouped by year. Each partition file follows the "Event List" schema.
 - **Event**: Represents the competition event. ID format: `{Country}_{SourceId}`.
 - **Race**: Each event has one or more races (stages).
 - **Encryption**: Emails in spam-protected tags are stored as `enc:{base64}`.
