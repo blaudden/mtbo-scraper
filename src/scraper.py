@@ -1,13 +1,13 @@
-import logging
 import random
 import time
 from typing import cast
 
 import cloudscraper
+import structlog
 from requests import Response
 from requests.exceptions import RequestException
 
-logger = logging.getLogger(__name__)
+logger = structlog.get_logger(__name__)
 
 
 class Scraper:
@@ -52,7 +52,7 @@ class Scraper:
         wait_time = random.uniform(*self.delay_range)
         if elapsed < wait_time:
             sleep_time = wait_time - elapsed
-            logger.debug(f"Rate limiting: sleeping for {sleep_time:.2f}s")
+            logger.debug("rate_limiting_sleep", sleep_time=round(sleep_time, 2))
             time.sleep(sleep_time)
         self.last_request_time = time.time()
 
@@ -95,7 +95,7 @@ class Scraper:
         parsed = urlparse(url)
         base_url = f"{parsed.scheme}://{parsed.netloc}/"
 
-        logger.info(f"Opening browser to obtain cookies for: {parsed.netloc}")
+        logger.info("opening_browser_for_cookies", domain=parsed.netloc)
 
         # Check if we have a display (for cron/headless environments)
         has_display = os.environ.get("DISPLAY") is not None
@@ -105,11 +105,11 @@ class Scraper:
             try:
                 from pyvirtualdisplay import Display
 
-                logger.info("No display detected, starting virtual display (Xvfb)...")
+                logger.info("virtual_display_starting", reason="no_display_detected")
                 virtual_display = Display(visible=False, size=(1920, 1080))
                 virtual_display.start()
             except Exception as e:
-                logger.warning(f"Could not start virtual display: {e}")
+                logger.warning("virtual_display_start_failed", error=str(e))
                 logger.warning("Install Xvfb with: sudo apt-get install xvfb")
 
         options = uc.ChromeOptions()
@@ -123,7 +123,7 @@ class Scraper:
             driver.get(base_url)
 
             # Wait for Cloudflare challenge to resolve
-            logger.info("Waiting for Cloudflare challenge to resolve...")
+            logger.info("waiting_for_cloudflare_challenge")
             max_wait = 30
             for i in range(max_wait):
                 time.sleep(1)
@@ -131,11 +131,15 @@ class Scraper:
                 if "Just a moment" not in title and "Checking" not in title:
                     break
                 if i % 5 == 0:
-                    logger.debug(f"Still waiting... ({i}/{max_wait}s)")
+                    logger.debug(
+                        "cloudflare_challenge_wait_progress",
+                        seconds=i,
+                        max_wait=max_wait,
+                    )
 
             # Check if challenge was solved
             if "Just a moment" in driver.title:
-                logger.error("Browser fallback failed - challenge not solved")
+                logger.error("browser_fallback_failed_challenge_not_solved")
                 return False
 
             # Extract cookies and apply to cloudscraper session
@@ -153,13 +157,14 @@ class Scraper:
             self.scraper.headers.update({"User-Agent": user_agent})
 
             logger.info(
-                f"Browser bypass successful! Got {len(cookies)} cookies "
-                f"for {parsed.netloc}"
+                "browser_bypass_successful",
+                cookie_count=len(cookies),
+                domain=parsed.netloc,
             )
             return True
 
         except Exception as e:
-            logger.error(f"Browser fallback error: {e}")
+            logger.error("browser_fallback_error", error=str(e))
             return False
         finally:
             if driver:
@@ -202,11 +207,14 @@ class Scraper:
         for attempt in range(retries):
             try:
                 if attempt > 0:
-                    logger.info(
-                        f"Fetching URL: {url} (Attempt {attempt + 1}/{retries})"
+                    logger.debug(
+                        "fetching_url",
+                        url=url,
+                        attempt=attempt + 1,
+                        max_retries=retries,
                     )
                 else:
-                    logger.info(f"Fetching URL: {url}")
+                    logger.debug("fetching_url", url=url)
 
                 response = self.scraper.get(url, params=params)
 
@@ -215,9 +223,7 @@ class Scraper:
                     # Only use browser if we haven't already obtained
                     # cookies for this domain
                     if domain not in self._browser_cookies_obtained:
-                        logger.warning(
-                            f"Cloudflare managed challenge detected for {domain}"
-                        )
+                        logger.warning("cloudflare_challenge_detected", domain=domain)
 
                         if self._obtain_browser_cookies(url):
                             self._browser_cookies_obtained.add(domain)
@@ -229,13 +235,11 @@ class Scraper:
                                 logger.error("Still blocked after obtaining cookies")
                                 return None
                         else:
-                            logger.error(
-                                f"Failed to obtain browser cookies for {domain}"
-                            )
+                            logger.error("browser_cookies_fetch_failed", domain=domain)
                             return None
                     else:
                         # We already have cookies but still getting challenged
-                        logger.error(f"Cookies expired for {domain}, need to refresh")
+                        logger.error("cloudflare_cookies_expired", domain=domain)
                         self._browser_cookies_obtained.discard(domain)
 
                         if self._obtain_browser_cookies(url):
@@ -251,11 +255,13 @@ class Scraper:
                 return cast(Response, response)
 
             except RequestException as e:
-                logger.warning(f"Request failed: {e}")
+                logger.warning("request_failed", error=str(e))
                 if attempt < retries - 1:
                     time.sleep(2**attempt)  # Exponential backoff
                 else:
-                    logger.error(f"Failed to fetch {url} after {retries} attempts.")
+                    logger.error(
+                        "request_failed_max_attempts", url=url, retries=retries
+                    )
                     return None
 
         return None

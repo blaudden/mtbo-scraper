@@ -1,5 +1,4 @@
-import logging
-import traceback
+import structlog
 
 from src.models import Event
 from src.scraper import Scraper
@@ -7,7 +6,7 @@ from src.sources.base_source import BaseSource
 from src.sources.eventor_parser import EventorParser
 from src.utils.date_and_time import parse_date_to_iso
 
-logger = logging.getLogger(__name__)
+logger = structlog.get_logger(__name__)
 
 
 class EventorSource(BaseSource):
@@ -35,7 +34,7 @@ class EventorSource(BaseSource):
         Returns:
             A list of Event objects with basic information found on the list page.
         """
-        logger.info(f"Scraping {self.country} ({self.base_url})...")
+        logger.info("scraping_source", country=self.country, base_url=self.base_url)
 
         params = {
             "disciplines": "MountainBike",
@@ -58,11 +57,11 @@ class EventorSource(BaseSource):
 
         response = self.scraper.get(list_url, params=params)
         if not response:
-            logger.error(f"Failed to fetch event list for {self.country}")
+            logger.error("event_list_fetch_failed", country=self.country)
             return []
 
         events = self.parser.parse_event_list(response.text, self.country)
-        logger.info(f"Found {len(events)} events for {self.country}")
+        logger.info("events_found", count=len(events), country=self.country)
         return events
 
     def fetch_event_details(self, event: Event) -> Event | None:
@@ -76,7 +75,9 @@ class EventorSource(BaseSource):
         """
         if not event.url:
             logger.error(
-                f"Event {event.id} ({event.name}) has no URL. Skipping detail scrape."
+                "event_missing_url",
+                event_id=event.id,
+                event_name=event.name,
             )
             return None
 
@@ -146,9 +147,12 @@ class EventorSource(BaseSource):
 
                 return event
             except Exception as e:
-                logger.error(f"Failed to parse details for {event.id}: {e}")
-                traceback.print_exc()
+                logger.error(
+                    "event_details_parse_failed",
+                    event_id=event.id,
+                    error=str(e),
+                )
                 return None
         else:
-            logger.error(f"Failed to fetch details for {event.id}")
+            logger.error("event_details_fetch_failed", event_id=event.id)
             return None

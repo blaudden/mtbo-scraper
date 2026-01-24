@@ -117,41 +117,30 @@ def main(
         log_level = logging.DEBUG
 
     # Configure structlog
+    processors: list = [
+        structlog.stdlib.add_log_level,
+        structlog.stdlib.add_logger_name,
+        structlog.processors.TimeStamper(
+            fmt="iso" if json_logs else "%Y-%m-%d %H:%M:%S", utc=False
+        ),
+        structlog.processors.StackInfoRenderer(),
+        structlog.processors.format_exc_info,
+    ]
+
     if json_logs:
-        # JSON output for machines/agents
-        structlog.configure(
-            processors=[
-                structlog.stdlib.add_log_level,
-                structlog.stdlib.add_logger_name,
-                structlog.processors.TimeStamper(fmt="iso", utc=False),
-                structlog.processors.StackInfoRenderer(),
-                structlog.processors.format_exc_info,
-                structlog.processors.JSONRenderer(),
-            ],
-            wrapper_class=structlog.stdlib.BoundLogger,
-            context_class=dict,
-            logger_factory=structlog.stdlib.LoggerFactory(),
-            cache_logger_on_first_use=True,
-        )
+        processors.append(structlog.processors.JSONRenderer())
     else:
-        # Human-readable output
-        structlog.configure(
-            processors=[
-                structlog.stdlib.add_log_level,
-                structlog.stdlib.add_logger_name,
-                structlog.processors.TimeStamper(fmt="%Y-%m-%d %H:%M:%S", utc=False),
-                structlog.processors.StackInfoRenderer(),
-                structlog.processors.format_exc_info,
-                structlog.dev.ConsoleRenderer(sort_keys=False),
-            ],
-            wrapper_class=structlog.stdlib.BoundLogger,
-            context_class=dict,
-            logger_factory=structlog.stdlib.LoggerFactory(),
-            cache_logger_on_first_use=True,
-        )
+        processors.append(structlog.dev.ConsoleRenderer(sort_keys=False))
+
+    structlog.configure(
+        processors=processors,
+        wrapper_class=structlog.stdlib.BoundLogger,
+        context_class=dict,
+        logger_factory=structlog.stdlib.LoggerFactory(),
+        cache_logger_on_first_use=True,
+    )
 
     # Also configure standard logging for libraries
-    # We use a very simple format because structlog does the heavy lifting
     logging.basicConfig(
         level=log_level,
         format="%(message)s",
@@ -191,25 +180,52 @@ def main(
 
     for i, (chunk_start, chunk_end) in enumerate(chunks):
         logger.info(
-            f"Processing chunk {i + 1}/{len(chunks)}: {chunk_start} to {chunk_end}"
+            "processing_chunk",
+            index=i + 1,
+            total=len(chunks),
+            start=chunk_start,
+            end=chunk_end,
         )
 
         chunk_events: list[Event] = []
 
         for source in sources:
             try:
+                logger.info(
+                    "scraping_source_start",
+                    country=source.country,
+                    chunk=f"{chunk_start}-{chunk_end}",
+                )
+
                 # 1. Fetch List for this chunk
                 events = source.fetch_event_list(chunk_start, chunk_end)
+                total_events = len(events)
 
                 # 2. Fetch Details
-                for event in events:
+                for idx, event in enumerate(events):
+                    # Log progress every 5 events or for the first/last one
+                    if idx == 0 or (idx + 1) % 5 == 0 or (idx + 1) == total_events:
+                        percent = 0.0
+                        if total_events > 0:
+                            percent = round(((idx + 1) / total_events) * 100, 1)
+
+                        logger.info(
+                            "scraping_progress",
+                            country=source.country,
+                            current=idx + 1,
+                            total=total_events,
+                            percent=percent,
+                        )
+
                     detailed_event = source.fetch_event_details(event)
                     if detailed_event:
                         chunk_events.append(detailed_event)
             except Exception as e:
                 logger.error(
-                    f"Error processing source {source.country} in chunk "
-                    f"{chunk_start}-{chunk_end}: {e}"
+                    "source_processing_failed",
+                    country=source.country,
+                    chunk=f"{chunk_start}-{chunk_end}",
+                    error=str(e),
                 )
                 continue
 
@@ -218,12 +234,12 @@ def main(
         # Sleep between chunks if not the last one
         if i < len(chunks) - 1:
             sleep_sec = 5
-            logger.info(f"Sleeping for {sleep_sec} seconds before next chunk...")
+            logger.info("sleeping_between_chunks", seconds=sleep_sec)
             time.sleep(sleep_sec)
 
     # Save returns the new list of events (merged)
     new_events = storage.save(all_events)
-    logger.info("Scraping completed.")
+    logger.info("scraping_completed")
 
     # Calculate stats and write commit message
     stats_msg = calculate_stats(old_events, new_events)
