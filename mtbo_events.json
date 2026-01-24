@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "last_scraped_at": "2026-01-24T21:14:10.714940+00:00",
+  "last_scraped_at": "2026-01-24T21:52:27.652427+00:00",
   "data_root": "data/events",
   "partitions": {
     "2025": {
@@ -10,8 +10,13 @@
     },
     "2026": {
       "path": "data/events/2026/events.json",
-      "count": 2,
-      "last_updated_at": "2026-01-24T20:48:24.510296+00:00"
+      "count": 26,
+      "last_updated_at": "2026-01-24T21:52:27.652427+00:00"
+    },
+    "2027": {
+      "path": "data/events/2027/events.json",
+      "count": 4,
+      "last_updated_at": "2026-01-24T21:52:27.652427+00:00"
     }
   }
 }
