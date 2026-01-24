@@ -957,16 +957,23 @@ class EventorParser:
                     r_id = race_id_match.group(1)
                     if r_id in race_map:
                         if not any(u.url == href for u in race_map[r_id].urls):
-                            race_map[r_id].urls.append(Url(type=l_type, url=href))
+                            title = a.get_text(strip=True)
+                            race_map[r_id].urls.append(
+                                Url(type=l_type, url=href, title=title)
+                            )
                         assigned = True
 
                 if not assigned:
                     if len(event.races) == 1:
                         if not any(u.url == href for u in event.races[0].urls):
-                            event.races[0].urls.append(Url(type=l_type, url=href))
+                            title = a.get_text(strip=True)
+                            event.races[0].urls.append(
+                                Url(type=l_type, url=href, title=title)
+                            )
                     else:
                         if not any(u.url == href for u in event.urls):
-                            event.urls.append(Url(type=l_type, url=href))
+                            title = a.get_text(strip=True)
+                            event.urls.append(Url(type=l_type, url=href, title=title))
 
     def _assign_map_positions(self, soup: Tag, event: Event) -> None:
         map_positions = self._extract_map_positions(soup)

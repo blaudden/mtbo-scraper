@@ -180,15 +180,27 @@ class EventorSource(BaseSource):
         elif changed:
             local_url_obj.last_updated_at = now_iso
 
+    def _should_download_start_list(self, event: Event) -> bool:
+        """Determines if a local start list in YAML format should be generated."""
+        if self.country != "SWE":
+            return False
+
+        series_link = next((u for u in event.urls if u.type == "Series"), None)
+        if not series_link or not series_link.title:
+            return False
+
+        title = series_link.title.lower()
+        if "svenska" in title and "cup" in title:
+            return True
+
+        return False
+
     def fetch_and_process_lists(self, event: Event) -> None:
         """Fetches Start/Result/Entry lists, updates counts, fingerprints,
         and saves YAML.
         """
         # Determine if we should save Start Lists to YAML
-        save_yaml = False
-        series_link = next((u for u in event.urls if u.type == "Series"), None)
-        if self.country == "SWE" and series_link:
-            save_yaml = True
+        save_yaml = self._should_download_start_list(event)
 
         all_races_start_data = []
 
