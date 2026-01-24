@@ -23,8 +23,12 @@ class Area:
 class Url:
     """Represents a URL resource associated with an event or race."""
 
-    type: str  # IOF: Website, StartList, ResultList; Custom: EntryList, Livelox
+    # The type is one of the following:
+    # IOF: Website, StartList, ResultList
+    # Custom: EntryList, Livelox, Series, LocalStartList
+    type: str
     url: str
+    last_updated_at: str | None = None
 
 
 @dataclass
@@ -89,6 +93,9 @@ class Race:
     # Documents specific to this race (e.g. start list if per race)
     documents: list[Document] = field(default_factory=list)
 
+    # Participant fingerprints (SHA256 of Name|Club)
+    fingerprints: list[str] = field(default_factory=list)
+
     # List counts (Class -> Count)
     entry_counts: dict[str, int] | None = None
     start_counts: dict[str, int] | None = None
@@ -150,7 +157,14 @@ class Event:
             ],
             "officials": [{"role": o.role, "name": o.name} for o in self.officials],
             "classes": self.classes,
-            "urls": [{"type": u.type, "url": u.url} for u in self.urls],
+            "urls": [
+                {
+                    "type": u.type,
+                    "url": u.url,
+                    "last_updated_at": u.last_updated_at,
+                }
+                for u in self.urls
+            ],
             "documents": [
                 {
                     "type": d.type,
@@ -178,7 +192,14 @@ class Event:
                         {"lat": a.lat, "lng": a.lng, "polygon": a.polygon}
                         for a in r.areas
                     ],
-                    "urls": [{"type": u.type, "url": u.url} for u in r.urls],
+                    "urls": [
+                        {
+                            "type": u.type,
+                            "url": u.url,
+                            "last_updated_at": u.last_updated_at,
+                        }
+                        for u in r.urls
+                    ],
                     "documents": [
                         {
                             "type": d.type,
@@ -191,6 +212,7 @@ class Event:
                     "entry_counts": r.entry_counts,
                     "start_counts": r.start_counts,
                     "result_counts": r.result_counts,
+                    "fingerprints": r.fingerprints,
                 }
                 for r in self.races
             ],

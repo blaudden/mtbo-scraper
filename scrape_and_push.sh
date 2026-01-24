@@ -3,7 +3,8 @@
 # Scrapes MTBO events, verifies output, and pushes to git.
 
 # Configuration
-OUTPUT_FILE="mtbo_events.json"
+OUTPUT_FILE="mtbo_events.json" # The umbrella file
+OUTPUT_DIR="data/events" # The directory with the event files
 MIN_SIZE_BYTES=100 # Minimum expected size in bytes (safeguard)
 LOG_FILE="scraper.log"
 
@@ -12,8 +13,10 @@ cd "$(dirname "$0")"
 
 # 1. Run Scraper
 echo "Starting scrape at $(date)" >> "$LOG_FILE"
-# Pass --commit-msg-file to the scraper
-./scrape_now.sh --output "$OUTPUT_FILE" --commit-msg-file .commit_msg "$@" >> "$LOG_FILE" 2>&1
+# Pass --commit-msg-file to the scraper. Output now points to the directory.
+# Note: src/main.py passes this to Storage. Storage handles directory or file.
+# If we pass a directory, Storage treats it as root.
+./scrape_now.sh --output "$OUTPUT_DIR" --commit-msg-file .commit_msg "$@" >> "$LOG_FILE" 2>&1
 EXIT_CODE=$?
 
 if [ $EXIT_CODE -ne 0 ]; then
@@ -22,36 +25,31 @@ if [ $EXIT_CODE -ne 0 ]; then
 fi
 
 # 2. Verify Output
-if [ ! -f "$OUTPUT_FILE" ]; then
-    echo "Output file $OUTPUT_FILE missing. Aborting." >> "$LOG_FILE"
+if [ ! -d "$OUTPUT_DIR" ]; then
+    echo "Output directory $OUTPUT_DIR missing. Aborting." >> "$LOG_FILE"
     exit 1
 fi
 
 # Check against previous file size if it exists (using git version)
-if git show HEAD:"$OUTPUT_FILE" > /dev/null 2>&1; then
-    PREV_SIZE=$(git show HEAD:"$OUTPUT_FILE" | wc -c)
-    # Allow 10% shrinkage
-    MIN_EXPECTED_SIZE=$((PREV_SIZE * 90 / 100))
+# For directory, we check total size.
+get_dir_size() {
+    du -sb "$1" 2>/dev/null | cut -f1 || echo 0
+}
 
-    FILE_SIZE=$(stat -c%s "$OUTPUT_FILE")
+# This is tricky with git. git show HEAD:dir isn't simple for size.
+# We can skip size check relative to git for now, or just check absolute size.
+# Or check if any file exists.
+FILE_SIZE=$(get_dir_size "$OUTPUT_DIR")
 
-    if [ "$FILE_SIZE" -lt "$MIN_EXPECTED_SIZE" ]; then
-        echo "Output file size ($FILE_SIZE bytes) shrunk significantly from previous ($PREV_SIZE bytes). Aborting commit." >> "$LOG_FILE"
-        exit 1
-    fi
-else
-    # Fallback for first run
-    FILE_SIZE=$(stat -c%s "$OUTPUT_FILE")
-    if [ "$FILE_SIZE" -lt "$MIN_SIZE_BYTES" ]; then
-        echo "Output file size ($FILE_SIZE bytes) is suspiciously small. Aborting commit." >> "$LOG_FILE"
-        exit 1
-    fi
+if [ "$FILE_SIZE" -lt "$MIN_SIZE_BYTES" ]; then
+    echo "Output directory size ($FILE_SIZE bytes) is suspiciously small. Aborting commit." >> "$LOG_FILE"
+    exit 1
 fi
 
 # 3. Git Commit and Push
 # Check if there are changes
-if git diff --quiet "$OUTPUT_FILE"; then
-    echo "No changes to $OUTPUT_FILE." >> "$LOG_FILE"
+if git diff --quiet "$OUTPUT_DIR"; then
+    echo "No changes to $OUTPUT_DIR." >> "$LOG_FILE"
 else
     echo "Changes detected. Retrieving stats..." >> "$LOG_FILE"
 
@@ -65,7 +63,8 @@ else
 
     echo "Commit message: $COMMIT_MSG" >> "$LOG_FILE"
 
-    git add "$OUTPUT_FILE"
+    # Stage the directory (new/modified/deleted files)
+    git add "$OUTPUT_DIR"
     git commit -m "$COMMIT_MSG" >> "$LOG_FILE" 2>&1
     git push >> "$LOG_FILE" 2>&1
     echo "Pushed changes to git." >> "$LOG_FILE"

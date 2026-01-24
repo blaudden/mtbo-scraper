@@ -272,7 +272,13 @@ class EventorParser:
         boxes = soup.find_all("div", class_="eventInfoBox")
 
         # Track counters per type to handle sequences without explicit stage numbers
-        counters = {"StartList": 0, "ResultList": 0, "EntryList": 0, "Livelox": 0}
+        counters = {
+            "StartList": 0,
+            "ResultList": 0,
+            "EntryList": 0,
+            "Livelox": 0,
+            "Series": 0,
+        }
 
         for box in boxes:
             header = box.find("h3")
@@ -291,6 +297,8 @@ class EventorParser:
                 l_type = "EntryList"
             elif "livelox" in header_text:
                 l_type = "Livelox"
+            elif "serier" in header_text:
+                l_type = "Series"
 
             if not l_type:
                 continue
@@ -298,7 +306,11 @@ class EventorParser:
             counters[l_type] += 1
 
             # Default to ordinal position for this type
-            race_index = counters[l_type]
+            race_index: int | None = counters[l_type]
+            if l_type == "Series":
+                # Series links apply to the entire event, not a specific race.
+                # Setting index to None ensures it is assigned to the Event object.
+                race_index = None
 
             # Try to extract explicit stage number "etapp X", "stage X", ...
             index_match = re.search(
@@ -945,3 +957,69 @@ class EventorParser:
 
                 if areas:
                     event.races[i].areas.extend(areas)
+
+    def parse_participant_list(self, html_content: str) -> list[dict[str, str | None]]:
+        """Parses a start, result, or entry list to extract participants.
+
+        Args:
+            html_content: The HTML content of the page.
+
+        Returns:
+            A list of participant dictionaries containing:
+            - name
+            - club
+            - class_name
+            - start_number (optional)
+        """
+        soup = BeautifulSoup(html_content, "html.parser")
+        participants = []
+
+        # Eventor lists usually follow the pattern:
+        # div.eventClassHeader -> table (startList, resultList, entryList, etc)
+
+        class_headers = soup.find_all("div", class_="eventClassHeader")
+
+        for header in class_headers:
+            h3 = header.find("h3")
+            if not h3:
+                continue
+            class_name = h3.get_text(strip=True)
+
+            # The table is usually the next sibling found
+            # Sometimes there might be a <p> or <a> in between
+            table = header.find_next_sibling("table")
+            if not table:
+                continue
+
+            # Iterate rows
+            tbody = table.find("tbody")
+            if not tbody:
+                continue
+
+            for row in tbody.find_all("tr"):
+                # Use class names to find columns robustly
+                name_cell = row.find("td", class_="n")
+                club_cell = row.find("td", class_="o")
+                num_cell = row.find(
+                    "td", class_="b"
+                )  # 'b' seems to be bib/start number in start lists
+
+                # In result lists, sometimes name/club are combined or different?
+                # Usually standard Eventor uses 'n' and 'o'.
+
+                if name_cell and club_cell:
+                    name = name_cell.get_text(strip=True)
+                    club = club_cell.get_text(strip=True)
+                    start_number = num_cell.get_text(strip=True) if num_cell else None
+
+                    if name:  # basic validation
+                        participants.append(
+                            {
+                                "name": name,
+                                "club": club,
+                                "class_name": class_name,
+                                "start_number": start_number,
+                            }
+                        )
+
+        return participants

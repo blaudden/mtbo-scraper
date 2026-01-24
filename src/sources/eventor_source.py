@@ -1,6 +1,9 @@
+import os
+from datetime import UTC, datetime
+
 import structlog
 
-from src.models import Event
+from src.models import Event, Race, Url
 from src.scraper import Scraper
 from src.sources.base_source import BaseSource
 from src.sources.eventor_parser import EventorParser
@@ -64,6 +67,160 @@ class EventorSource(BaseSource):
         logger.info("events_found", count=len(events), country=self.country)
         return events
 
+    def _fetch_race_list_items(self, race: Race, list_type: str) -> list[dict]:
+        """Fetches and parses a specific list type (Entry/Start/Result) for a race."""
+        url_obj = next((u for u in race.urls if u.type == list_type), None)
+        if not url_obj:
+            return []
+
+        full_url = (
+            f"{self.base_url}{url_obj.url}"
+            if url_obj.url.startswith("/")
+            else url_obj.url
+        )
+
+        resp = self.scraper.get(full_url)
+        if not resp:
+            return []
+
+        return self.parser.parse_participant_list(resp.text)
+
+    def _update_race_counts(
+        self, race: Race, list_type: str, items: list[dict]
+    ) -> None:
+        """Aggregates class counts and updates the race object."""
+        counts: dict[str, int] = {}
+        for i in items:
+            c = i.get("class_name", "Unknown")
+            counts[c] = counts.get(c, 0) + 1
+
+        if list_type == "EntryList":
+            race.entry_counts = counts
+        elif list_type == "StartList":
+            race.start_counts = counts
+        elif list_type == "ResultList":
+            race.result_counts = counts
+
+    def _generate_race_fingerprints(self, race: Race, lists: list[list[dict]]) -> None:
+        """Generates fingerprints for the race based on participant lists."""
+        from src.utils.fingerprint import Fingerprinter
+
+        if not lists:
+            return
+
+        unique_participants = Fingerprinter.merge_participants(lists)
+        race.fingerprints = Fingerprinter.generate_fingerprints(unique_participants)
+
+    def _collect_start_list_data(self, race: Race, starts: list[dict]) -> dict:
+        """Formats start list data for YAML export."""
+        return {
+            "race_number": race.race_number,
+            "participants": [
+                {
+                    "start_number": p.get("start_number"),
+                    "name": p.get("name"),
+                    "club": p.get("club"),
+                    "class": p.get("class_name"),
+                }
+                for p in starts
+            ],
+        }
+
+    def _save_start_list_yaml(
+        self, event: Event, all_races_data: list[dict]
+    ) -> tuple[bool, str]:
+        """Saves start list data to YAML and returns (changed, filepath)."""
+        import yaml
+
+        year = event.start_time[:4] if event.start_time else "unknown"
+        output_dir = f"data/events/{year}"
+        os.makedirs(output_dir, exist_ok=True)
+
+        filename = f"{event.id}_startlist.yaml"
+        filepath = os.path.join(output_dir, filename)
+
+        new_content = {"races": all_races_data}
+        # Serialize to string for comparison
+        # allow_unicode=True is important for Swedish names
+        new_yaml_str = yaml.dump(new_content, allow_unicode=True)
+
+        content_changed = True
+        if os.path.exists(filepath):
+            try:
+                with open(filepath, encoding="utf-8") as f:
+                    old_yaml_str = f.read()
+                if old_yaml_str == new_yaml_str:
+                    content_changed = False
+            except Exception:
+                pass
+
+        if content_changed:
+            with open(filepath, "w", encoding="utf-8") as f:
+                f.write(new_yaml_str)
+
+        return content_changed, filepath
+
+    def _update_local_file_url(
+        self, event: Event, filepath: str, changed: bool
+    ) -> None:
+        """Updates or adds the LocalStartList URL for the event."""
+        now_iso = datetime.now(UTC).isoformat()
+
+        local_url_obj = next(
+            (u for u in event.urls if u.type == "LocalStartList"), None
+        )
+
+        if not local_url_obj:
+            local_url_obj = Url(
+                type="LocalStartList",
+                url=filepath,
+                last_updated_at=now_iso,
+            )
+            event.urls.append(local_url_obj)
+        elif changed:
+            local_url_obj.last_updated_at = now_iso
+
+    def fetch_and_process_lists(self, event: Event) -> None:
+        """Fetches Start/Result/Entry lists, updates counts, fingerprints,
+        and saves YAML.
+        """
+        # Determine if we should save Start Lists to YAML
+        save_yaml = False
+        series_link = next((u for u in event.urls if u.type == "Series"), None)
+        if self.country == "SWE" and series_link:
+            save_yaml = True
+
+        all_races_start_data = []
+
+        for race in event.races:
+            # 1. Fetch Lists
+            entries = self._fetch_race_list_items(race, "EntryList")
+            starts = self._fetch_race_list_items(race, "StartList")
+            results = self._fetch_race_list_items(race, "ResultList")
+
+            # 2. Update Counts
+            if entries:
+                self._update_race_counts(race, "EntryList", entries)
+            if starts:
+                self._update_race_counts(race, "StartList", starts)
+            if results:
+                self._update_race_counts(race, "ResultList", results)
+
+            # 3. Fingerprinting (SWE only)
+            if self.country == "SWE":
+                valid_lists = [lst for lst in [entries, starts, results] if lst]
+                self._generate_race_fingerprints(race, valid_lists)
+
+            # 4. Collect Start List Data for YAML
+            if save_yaml and starts:
+                race_data = self._collect_start_list_data(race, starts)
+                all_races_start_data.append(race_data)
+
+        # 5. Save YAML if needed
+        if all_races_start_data:
+            changed, filepath = self._save_start_list_yaml(event, all_races_start_data)
+            self._update_local_file_url(event, filepath, changed)
+
     def fetch_event_details(self, event: Event) -> Event | None:
         """Fetches detailed information for a specific event.
 
@@ -102,48 +259,8 @@ class EventorSource(BaseSource):
                         event.end_time = max(race_dates).split("T")[0]
 
                 # Fetch and parse lists for each race
-                for race in event.races:
-                    # Fetch and parse Entry List
-                    entry_url = next(
-                        (u.url for u in race.urls if u.type == "EntryList"), None
-                    )
-                    if entry_url:
-                        full_url = (
-                            f"{self.base_url}{entry_url}"
-                            if entry_url.startswith("/")
-                            else entry_url
-                        )
-                        resp = self.scraper.get(full_url)
-                        if resp:
-                            race.entry_counts = self.parser.parse_list_count(resp.text)
-
-                    # Fetch and parse Start List
-                    start_url = next(
-                        (u.url for u in race.urls if u.type == "StartList"), None
-                    )
-                    if start_url:
-                        full_url = (
-                            f"{self.base_url}{start_url}"
-                            if start_url.startswith("/")
-                            else start_url
-                        )
-                        resp = self.scraper.get(full_url)
-                        if resp:
-                            race.start_counts = self.parser.parse_list_count(resp.text)
-
-                    # Fetch and parse Result List
-                    result_url = next(
-                        (u.url for u in race.urls if u.type == "ResultList"), None
-                    )
-                    if result_url:
-                        full_url = (
-                            f"{self.base_url}{result_url}"
-                            if result_url.startswith("/")
-                            else result_url
-                        )
-                        resp = self.scraper.get(full_url)
-                        if resp:
-                            race.result_counts = self.parser.parse_list_count(resp.text)
+                # Fetch and process lists (counts, fingerprints, YAML)
+                self.fetch_and_process_lists(event)
 
                 return event
             except Exception as e:

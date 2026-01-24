@@ -1,101 +1,111 @@
 import json
 import logging
-import os
 from datetime import UTC, datetime
+from pathlib import Path
 from typing import Any
 
-from .models import Event, EventListWrapper, Meta, Source
+from .models import Event, Source
 
 logger = logging.getLogger(__name__)
 
 
 class Storage:
-    """Handles loading and saving of event data to a JSON file."""
+    """Handles loading and saving of event data, using an Umbrella Index architecture.
 
-    def __init__(self, filepath: str):
+    The root file (e.g. mtbo_events.json) acts as an index pointing
+    to partitioned data files.
+    """
+
+    def __init__(self, root_path: str):
         """Initializes the Storage instance.
 
         Args:
-            filepath: The path to the JSON file.
+            root_path: The path to the Umbrella Index file (e.g. 'mtbo_events.json').
         """
-        self.filepath = filepath
+        self.index_file = Path(root_path)
+        # Default data root if not specified in index
+        self.default_data_dir = Path("data/events")
 
-    def load(self) -> dict[str, dict[str, Any]]:
-        """Loads raw event dicts from the JSON file.
-
-        Returns:
-            A dictionary mapping event IDs to their raw dictionary representations.
-            Returns an empty dictionary if the file does not exist or fails to load.
-
-        Example:
-            >>> storage = Storage("mtbo_events.json")
-            >>> events_map = storage.load()
-            >>> if events_map:
-            ...     print(f"Loaded {len(events_map)} events")
-        """
-        if not os.path.exists(self.filepath):
+    def _load_index(self) -> dict[str, Any]:
+        """Loads the index file if it exists."""
+        if not self.index_file.exists():
             return {}
 
         try:
-            with open(self.filepath, encoding="utf-8") as f:
-                data = json.load(f)
-
-                events_map = {}
-
-                # Check if new format (dict)
-                if isinstance(data, dict) and "events" in data:
-                    for item in data["events"]:
-                        if "id" in item:
-                            events_map[item["id"]] = item
-
-                return events_map
+            with open(self.index_file, encoding="utf-8") as f:
+                return json.load(f)  # type: ignore
         except Exception as e:
-            logger.error(f"Failed to load storage: {e}")
+            logger.error(f"Failed to load index file: {e}")
             return {}
 
-    def save(self, events: list[Event]) -> list[dict[str, Any]]:
-        """Saves a list of Event objects to the JSON file, merging with existing data.
-
-        Args:
-            events: A list of Event objects to save.
+    def load(self) -> dict[str, dict[str, Any]]:
+        """Loads events from all partitions defined in the index.
 
         Returns:
-            A list of dicts representing all events (merged and broken down)
-            currently in storage. Returns an empty list on failure.
-
-        Example:
-            >>> from src.models import Event
-            >>> storage = Storage("mtbo_events.json")
-            >>> events = [Event(id="SWE_123", name="Test Event", ...)]
-            >>> saved_events = storage.save(events)
-            >>> print(f"Saved {len(saved_events)} events")
+            A dictionary mapping event IDs to their raw dictionary representations.
         """
+        index_data = self._load_index()
+        events_map = {}
+
+        # Handle Umbrella Index
+        if "partitions" in index_data:
+            for _, meta in index_data["partitions"].items():
+                path_str = meta.get("path")
+                if not path_str:
+                    continue
+
+                full_path = Path(path_str)
+                # If path is relative, it is relative to CWD
+                if full_path.exists():
+                    try:
+                        with open(full_path, encoding="utf-8") as f:
+                            partition_data = json.load(f)
+                            # Expecting {"events": [...]}
+                            p_events = partition_data.get("events", [])
+                            for e in p_events:
+                                if "id" in e:
+                                    events_map[e["id"]] = e
+                    except Exception as e:
+                        logger.error(f"Failed to load partition {full_path}: {e}")
+
+        return events_map
+
+    def save(self, events: list[Event]) -> list[dict[str, Any]]:
+        """Saves events, splitting them into year-based partitions and updating
+        the Index."""
+        # 1. Load existing state
         existing_map = self.load()
 
-        # Load existing create_time to preserve if no changes happen
-        original_create_time = datetime.now(UTC).isoformat()
-        if os.path.exists(self.filepath):
-            try:
-                with open(self.filepath, encoding="utf-8") as f:
-                    data = json.load(f)
-                    if "create_time" in data:
-                        original_create_time = data["create_time"]
-            except Exception:
-                pass
-
-        # Update/Overwrite with new scraped objects
-        # We assume that simply overwriting with new data is what we want.
-        # Detection of "meaningful change" is done by comparing the final JSON output.
+        # 2. Update with new events
         for event in events:
             existing_map[event.id] = event.to_dict()
 
-        # Convert to list and sort
-        sorted_events_list = sorted(
-            existing_map.values(),
-            key=lambda x: (x.get("start_time", ""), x.get("id", "")),
-        )
+        # 3. Group by Year
+        events_by_year: dict[str, list[dict[str, Any]]] = {}
 
-        # Sources to scrape
+        for e_id, e_data in existing_map.items():
+            start_time = e_data.get("start_time", "")
+            if start_time:
+                year = start_time[:4]
+            else:
+                logger.error(f"Event {e_id} has no start_time.")
+                raise ValueError(f"Event {e_id} has no start_time")
+
+            if year not in events_by_year:
+                events_by_year[year] = []
+            events_by_year[year].append(e_data)
+
+        # 4. Prepare Index Structure
+        now_iso = datetime.now(UTC).isoformat()
+        current_index = self._load_index()
+
+        # Ensure 'partitions' dict exists
+        partitions = current_index.get("partitions", {})
+
+        # 5. Process Each Partition
+        all_saved_events = []
+
+        # Common Metadata for wrappers
         sources = [
             Source(
                 country_code="SWE",
@@ -114,53 +124,76 @@ class Storage:
             ),
         ]
 
-        # Tentatively use CURRENT time as create_time
-        now_iso = datetime.now(UTC).isoformat()
+        for year, year_events in events_by_year.items():
+            year_dir = self.default_data_dir / year
+            year_dir.mkdir(parents=True, exist_ok=True)
+            file_path = year_dir / "events.json"
 
-        # Construct proposed output
-        wrapper = EventListWrapper(
-            schema_version="1.0",
-            create_time=now_iso,
-            creator="MTBO Scraper",
-            meta=Meta(sources=sources),
-            events=[],
-        )
-        output_dict = wrapper.to_dict()
-        output_dict["events"] = sorted_events_list
-
-        # Compare with existing file content
-        try:
-            current_content = ""
-            if os.path.exists(self.filepath):
-                with open(self.filepath, encoding="utf-8") as f:
-                    current_content = f.read()
-
-            # Check if ONLY time changed
-            # To do this robustly, we can revert 'create_time' to original and compare.
-            if os.path.exists(self.filepath):
-                # Try generating content with ORIGINAL time
-                wrapper.create_time = original_create_time
-                output_dict["create_time"] = original_create_time
-                test_content = (
-                    json.dumps(output_dict, indent=2, ensure_ascii=False) + "\n"
-                )
-
-                if test_content == current_content:
-                    logger.info("No content changes detected. Skipping file update.")
-                    return sorted_events_list
-
-            # If we are here, there ARE content changes.
-            # We must save using the NEW time (now_iso), which we set
-            # initially but reverted for the test. So reset it back.
-            output_dict["create_time"] = now_iso
-            new_content_with_new_time = (
-                json.dumps(output_dict, indent=2, ensure_ascii=False) + "\n"
+            # Sort
+            sorted_events = sorted(
+                year_events,
+                key=lambda x: (x.get("start_time", ""), x.get("id", "")),
             )
 
-            with open(self.filepath, "w", encoding="utf-8") as f:
-                f.write(new_content_with_new_time)
-            logger.info(f"Saved {len(sorted_events_list)} events to {self.filepath}")
-            return sorted_events_list
-        except Exception as e:
-            logger.error(f"Failed to save storage: {e}")
-            return []
+            # Minimal wrapper as per plan: just data + meta, NO timestamps in child file
+            output_dict = {
+                "schema_version": "2.0",
+                "meta": {
+                    "sources": [
+                        {"country_code": s.country_code, "name": s.name, "url": s.url}
+                        for s in sources
+                    ]
+                },
+                "events": sorted_events,
+            }
+
+            # Check for changes
+            content_changed = False
+            if file_path.exists():
+                try:
+                    with open(file_path, encoding="utf-8") as f:
+                        old_content = json.load(f)
+                    if old_content != output_dict:
+                        content_changed = True
+                except Exception:
+                    content_changed = True
+            else:
+                content_changed = True
+
+            if content_changed:
+                with open(file_path, "w", encoding="utf-8") as f:
+                    json.dump(output_dict, f, indent=2, ensure_ascii=False)
+                    f.write("\n")
+                logger.info(f"Updated partition {year} at {file_path}")
+
+            # Update Partition Metadata in Index
+            # Preserve last_updated_at if no change, else update it
+            existing_meta = partitions.get(year, {})
+            last_updated = existing_meta.get("last_updated_at", now_iso)
+
+            if content_changed:
+                last_updated = now_iso
+
+            partitions[year] = {
+                "path": str(file_path),
+                "count": len(sorted_events),
+                "last_updated_at": last_updated,
+            }
+
+            all_saved_events.extend(sorted_events)
+
+        # 6. Save Umbrella Index
+        # Update always to record "last_scraped_at" (Consumer requirement)
+        new_index = {
+            "schema_version": "2.0",
+            "last_scraped_at": now_iso,
+            "data_root": str(self.default_data_dir),
+            "partitions": partitions,
+        }
+
+        with open(self.index_file, "w", encoding="utf-8") as f:
+            json.dump(new_index, f, indent=2, ensure_ascii=False)
+            f.write("\n")
+        logger.info(f"Updated index file at {self.index_file}")
+
+        return all_saved_events
