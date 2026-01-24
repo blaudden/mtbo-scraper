@@ -170,92 +170,97 @@ class EventorParser:
             event_rows = soup.select("div#eventList tbody tr")
 
         for row in event_rows:
-            if not row.find("td"):
-                continue
-
-            try:
-                cols = row.find_all("td")
-                if len(cols) < 4:
-                    continue
-
-                # Column 0: Date
-                date_col = cols[0]
-                date_span = date_col.find("span", attrs={"data-date": True})
-                start_date_str = ""
-                end_date_str = ""
-
-                if date_span:
-                    full_date = str(date_span["data-date"])
-                    # Usually returned as YYYY-MM-DD
-                    start_date_str = full_date.split(" ")[0]
-                    end_date_str = start_date_str  # Default to single day
-                else:
-                    # Basic fallback
-                    pass
-
-                # Column 1: Name and URL
-                name_col = cols[1]
-                name_link = name_col.find("a")
-                if not name_link:
-                    continue
-
-                name = name_link.get_text(strip=True)
-                url = str(name_link["href"])
-
-                event_id_match = re.search(r"/Events/Show/(\d+)", url)
-                if not event_id_match:
-                    continue
-                source_id = event_id_match.group(1)
-                event_id = f"{country}_{source_id}"
-
-                # Column 2: Organizer(s)
-                org_col = cols[2]
-                org_text = org_col.get_text(separator="\n", strip=True)
-                organiser_names = [
-                    org.strip() for org in org_text.split("\n") if org.strip()
-                ]
-                organisers = [
-                    Organiser(name=o, country_code=country) for o in organiser_names
-                ]
-
-                # Status
-                raw_status = "Active"
-                if row.select_one(".cancelled"):
-                    raw_status = "Cancelled"
-                status = self._map_status(raw_status)
-
-                # Base Event without details
-                # Create default race
-                # Calculate Race datetime with offset from the plain start date
-                race_start_datetime = format_iso_datetime(start_date_str, None, country)
-
-                race = Race(
-                    race_number=1,
-                    name=name,
-                    datetimez=race_start_datetime,
-                    discipline="Other",
-                )
-
-                events.append(
-                    Event(
-                        id=event_id,
-                        name=name,
-                        start_time=start_date_str,
-                        end_time=end_date_str,
-                        status=status,
-                        original_status=raw_status,
-                        races=[race],
-                        organisers=organisers,
-                        urls=[],
-                        url=url,
-                        region=None,  # Will be populated if possible
-                    )
-                )
-            except Exception as e:
-                print(f"Error parsing row: {e}")
-                continue
+            event = self._parse_event_list_row(row, country)
+            if event:
+                events.append(event)
 
         return events
+
+    def _parse_event_list_row(self, row: Tag, country: str) -> Event | None:
+        """Parses a single row from the event list table."""
+        if not row.find("td"):
+            return None
+
+        try:
+            cols = row.find_all("td")
+            if len(cols) < 4:
+                return None
+
+            # Column 0: Date
+            date_col = cols[0]
+            date_span = date_col.find("span", attrs={"data-date": True})
+            start_date_str = ""
+            end_date_str = ""
+
+            if date_span:
+                full_date = str(date_span["data-date"])
+                # Usually returned as YYYY-MM-DD
+                start_date_str = full_date.split(" ")[0]
+                end_date_str = start_date_str  # Default to single day
+            else:
+                # Basic fallback
+                pass
+
+            # Column 1: Name and URL
+            name_col = cols[1]
+            name_link = name_col.find("a")
+            if not name_link:
+                return None
+
+            name = name_link.get_text(strip=True)
+            url = str(name_link["href"])
+
+            event_id_match = re.search(r"/Events/Show/(\d+)", url)
+            if not event_id_match:
+                return None
+            source_id = event_id_match.group(1)
+            event_id = f"{country}_{source_id}"
+
+            # Column 2: Organizer(s)
+            org_col = cols[2]
+            org_text = org_col.get_text(separator="\n", strip=True)
+            # simple split by newline for organisers.
+            organiser_names = [
+                org.strip() for org in org_text.split("\n") if org.strip()
+            ]
+            organisers = [
+                Organiser(name=o, country_code=country) for o in organiser_names
+            ]
+
+            # Status
+            raw_status = "Active"
+            if row.select_one(".cancelled"):
+                raw_status = "Cancelled"
+            status = self._map_status(raw_status)
+
+            # Base Event without details
+            # Create default race
+            # Calculate Race datetime with offset from the plain start date
+            race_start_datetime = format_iso_datetime(start_date_str, None, country)
+
+            race = Race(
+                race_number=1,
+                name=name,
+                datetimez=race_start_datetime,
+                discipline="Other",
+            )
+
+            return Event(
+                id=event_id,
+                name=name,
+                start_time=start_date_str,
+                end_time=end_date_str,
+                status=status,
+                original_status=raw_status,
+                races=[race],
+                organisers=organisers,
+                urls=[],
+                url=url,
+                region=None,  # Will be populated if possible
+            )
+        except Exception as e:
+            self.logger.warning(f"Error parsing event row: {e}", exc_info=True)
+            return None
 
     def _extract_links_from_infoboxes(self, soup: Tag) -> list[dict[str, Any]]:
         """Extracts Start/Result/Entry/Livelox links from eventInfoBox containers.
@@ -297,7 +302,7 @@ class EventorParser:
                 l_type = "EntryList"
             elif "livelox" in header_text:
                 l_type = "Livelox"
-            elif "serier" in header_text:
+            elif "serier" in header_text or "series" in header_text:
                 l_type = "Series"
 
             if not l_type:
@@ -443,7 +448,16 @@ class EventorParser:
                 areas = [Area(lat=lat, lng=lon, polygon=polygon)] if polygon else []
 
                 results.append((pos, areas))
-            except Exception:
+            except (ValueError, json.JSONDecodeError) as e:
+                self.logger.warning(
+                    f"Failed to parse map position data: {e}",
+                    extra={"raw_value": str(input_el.get("value", ""))[:100]},
+                )
+                continue
+            except Exception as e:
+                self.logger.error(
+                    f"Unexpected error in map position extraction: {e}", exc_info=True
+                )
                 continue
         return results
 
