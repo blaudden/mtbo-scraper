@@ -163,6 +163,13 @@
                         "null"
                     ]
                 },
+                "tags": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Discipline tags (e.g., FootO, MTBO, SkiO, TrailO, Indoor)"
+                },
                 "form": {
                     "type": [
                         "string",

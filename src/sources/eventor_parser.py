@@ -153,6 +153,31 @@ class EventorParser:
                 return "Individual"
         return None
 
+    def _parse_disciplines(self, attributes: dict[str, str]) -> list[str]:
+        """Parses discipline tags from attributes.
+
+        Extracts disciplines like FootO, MTBO, SkiO, TrailO, Indoor from
+        the Disciplines or Discipline field.
+
+        Args:
+            attributes: Dictionary of event attributes.
+
+        Returns:
+            List of discipline tags.
+        """
+        tags = []
+        for key, value in attributes.items():
+            if "discipline" in key.lower():
+                # Split by common separators and normalize
+                parts = self.split_multi_value_field(value)
+                for part in parts:
+                    # Normalize common variations
+                    normalized = part.strip()
+                    if normalized:
+                        tags.append(normalized)
+                break  # Only process first discipline field
+        return tags
+
     def parse_event_list(self, html_content: str, country: str) -> list[Event]:
         """Parses the event list page and returns a list of Event objects.
 
@@ -571,6 +596,9 @@ class EventorParser:
             if "punching" in k.lower() or "stämpling" in k.lower():
                 event.punching_system = v
                 break
+
+        # Parse discipline tags
+        event.tags = self._parse_disciplines(attributes)
 
     def _extract_info_text(self, soup: Tag) -> str | None:
         """Extracts the main information text from the event page.

@@ -124,6 +124,9 @@ class Event:
 
     # Optional fields
     classification: str | None = None  # International, National, Regional, Local, Club
+    tags: list[str] = field(
+        default_factory=list
+    )  # Discipline tags: FootO, MTBO, SkiO, TrailO, Indoor
     form: str | None = None  # Individual, Team, Relay
     organisers: list[Organiser] = field(default_factory=list)
     officials: list[Official] = field(default_factory=list)
@@ -151,6 +154,7 @@ class Event:
             "status": self.status,
             "original_status": self.original_status,
             "classification": self.classification,
+            "tags": self.tags,
             "form": self.form,
             "organisers": [
                 {"name": o.name, "country_code": o.country_code}
