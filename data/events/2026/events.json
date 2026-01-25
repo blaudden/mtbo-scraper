@@ -94,6 +94,7 @@
       "status": "Sanctioned",
       "original_status": "Planned",
       "classification": null,
+      "tags": [],
       "form": null,
       "organisers": [
         {
@@ -1053,6 +1054,7 @@
       "status": "Planned",
       "original_status": "Planned",
       "classification": null,
+      "tags": [],
       "form": null,
       "organisers": [
         {
