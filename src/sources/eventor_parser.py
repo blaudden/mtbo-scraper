@@ -120,14 +120,23 @@ class EventorParser:
 
     def _map_classification(self, attributes: dict[str, str]) -> str | None:
         for k, v in attributes.items():
-            # Check keys like "Event classification", "Event type"
+            # Check keys like "Event classification", "Event type", "Event types"
             if "class" in k.lower() or "type" in k.lower():
                 vl = v.lower()
-                if "international" in vl or "wre" in vl:
+                # Top-level international events
+                # (Championships, World Cup, World Masters)
+                if "championship" in vl or "world cup" in vl or "world masters" in vl:
                     return "International"
-                if "national" in vl or "sm" in vl:
+                # World Ranking Events are Regional level
+                # Check for both "world ranking event" and "wre"
+                if "world ranking" in vl:
+                    return "Regional"
+                # Other international indicators
+                if "international" in vl:
+                    return "International"
+                if "national" in vl:
                     return "National"
-                if "region" in vl or "dm" in vl:
+                if "region" in vl:
                     return "Regional"
                 if "local" in vl or "club" in vl:
                     return "Local"

@@ -181,18 +181,29 @@ class EventorSource(BaseSource):
 
     def _should_download_start_list(self, event: Event) -> bool:
         """Determines if a local start list in YAML format should be generated."""
-        if self.country != "SWE":
-            return False
+        # Swedish Cup events
+        if self.country == "SWE":
+            series_link = next((u for u in event.urls if u.type == "Series"), None)
+            if series_link and series_link.title:
+                title = series_link.title.lower()
+                if "svenska" in title and "cup" in title:
+                    return True
 
-        series_link = next((u for u in event.urls if u.type == "Series"), None)
-        if not series_link or not series_link.title:
-            return False
-
-        title = series_link.title.lower()
-        if "svenska" in title and "cup" in title:
+        # IOF International events (Championships, World Cup)
+        if self.country == "IOF" and event.classification == "International":
             return True
 
         return False
+
+    def _should_fetch_counts(self, event: Event) -> bool:
+        """Determines if entry/start/result counts should be fetched.
+
+        IOF International events only download startlists, no counts/fingerprints.
+        All other events fetch counts.
+        """
+        if self.country == "IOF" and event.classification == "International":
+            return False
+        return True
 
     def fetch_and_process_lists(self, event: Event) -> None:
         """Fetches Start/Result/Entry lists, updates counts, fingerprints,
@@ -200,25 +211,30 @@ class EventorSource(BaseSource):
         """
         # Determine if we should save Start Lists to YAML
         save_yaml = self._should_download_start_list(event)
+        # Determine if we should fetch counts/fingerprints
+        fetch_counts = self._should_fetch_counts(event)
 
         for race in event.races:
             # 1. Fetch Lists
-            entries = self._fetch_race_list_items(race, "EntryList")
             starts = self._fetch_race_list_items(race, "StartList")
-            results = self._fetch_race_list_items(race, "ResultList")
 
-            # 2. Update Counts
-            if entries:
-                self._update_race_counts(race, "EntryList", entries)
-            if starts:
-                self._update_race_counts(race, "StartList", starts)
-            if results:
-                self._update_race_counts(race, "ResultList", results)
+            # Only fetch entry/result lists if we need counts
+            if fetch_counts:
+                entries = self._fetch_race_list_items(race, "EntryList")
+                results = self._fetch_race_list_items(race, "ResultList")
 
-            # 3. Fingerprinting (SWE only)
-            if self.country == "SWE":
-                valid_lists = [lst for lst in [entries, starts, results] if lst]
-                self._generate_race_fingerprints(race, valid_lists)
+                # 2. Update Counts
+                if entries:
+                    self._update_race_counts(race, "EntryList", entries)
+                if starts:
+                    self._update_race_counts(race, "StartList", starts)
+                if results:
+                    self._update_race_counts(race, "ResultList", results)
+
+                # 3. Fingerprinting (SWE only)
+                if self.country == "SWE":
+                    valid_lists = [lst for lst in [entries, starts, results] if lst]
+                    self._generate_race_fingerprints(race, valid_lists)
 
             # 4. Save Start List YAML for this race
             if save_yaml and starts:

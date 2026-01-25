@@ -99,3 +99,67 @@ class TestDownloadLogic:
         )
         source = EventorSource("NOR", "http://mock")
         assert source._should_download_start_list(event) is False
+
+    def test_should_download_iof_international(self) -> None:
+        """Test that IOF International events download startlists."""
+        event = Event(
+            id="IOF_7490",
+            name="World Championships",
+            start_time="2025-08-11",
+            end_time="2025-08-17",
+            status="Sanctioned",
+            original_status="Active",
+            classification="International",
+            races=[],
+            urls=[],
+        )
+        source = EventorSource("IOF", "http://mock")
+        assert source._should_download_start_list(event) is True
+
+    def test_should_not_download_iof_regional(self) -> None:
+        """Test that IOF Regional events don't download startlists."""
+        event = Event(
+            id="IOF_8558",
+            name="Regional Event",
+            start_time="2025-08-11",
+            end_time="2025-08-17",
+            status="Sanctioned",
+            original_status="Active",
+            classification="Regional",
+            races=[],
+            urls=[],
+        )
+        source = EventorSource("IOF", "http://mock")
+        assert source._should_download_start_list(event) is False
+
+    def test_should_not_fetch_counts_iof_international(self) -> None:
+        """Test that IOF International events don't fetch counts."""
+        event = Event(
+            id="IOF_7490",
+            name="World Championships",
+            start_time="2025-08-11",
+            end_time="2025-08-17",
+            status="Sanctioned",
+            original_status="Active",
+            classification="International",
+            races=[],
+            urls=[],
+        )
+        source = EventorSource("IOF", "http://mock")
+        assert source._should_fetch_counts(event) is False
+
+    def test_should_fetch_counts_other_events(self) -> None:
+        """Test that non-IOF-International events do fetch counts."""
+        event = Event(
+            id="SWE_123",
+            name="Test Event",
+            start_time="2025-07-01",
+            end_time="2025-07-01",
+            status="Planned",
+            original_status="Planned",
+            classification="National",
+            races=[],
+            urls=[],
+        )
+        source = EventorSource("SWE", "http://mock")
+        assert source._should_fetch_counts(event) is True

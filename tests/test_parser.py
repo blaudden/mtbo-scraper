@@ -335,3 +335,36 @@ def test_iof_venue_timezone(parser: EventorParser) -> None:
 
     # Race date (2026-08-26 10:00) -> 2026-08-26T10:00:00+02:00 (extracted from UTC+2)
     assert updated_event.races[0].datetimez == "2026-08-26T10:00:00+02:00"
+
+
+def test_iof_world_championship_classification(parser: EventorParser) -> None:
+    """Test that World Championships are classified as International."""
+    html = load_test_file("IOF_7490_main.html")
+    event = create_base_event("IOF_7490", "World Championships", "2025-08-11", "IOF")
+
+    parsed_event = parser.parse_event_details(html, event)
+
+    # Should be International (has "World Championships" in Event types)
+    assert parsed_event.classification == "International"
+
+
+def test_iof_european_championship_classification(parser: EventorParser) -> None:
+    """Test that European Championships (Regional Championships) are International."""
+    html = load_test_file("IOF_8558_single.html")
+    event = create_base_event("IOF_8558", "European Championships", "2026-05-23", "IOF")
+
+    parsed_event = parser.parse_event_details(html, event)
+
+    # Should be International (has "Regional Championships" = European)
+    assert parsed_event.classification == "International"
+
+
+def test_iof_world_cup_classification(parser: EventorParser) -> None:
+    """Test that World Cup events are classified as International."""
+    html = load_test_file("IOF_8277_multi.html")
+    event = create_base_event("IOF_8277", "World Championships", "2026-08-25", "IOF")
+
+    parsed_event = parser.parse_event_details(html, event)
+
+    # Should be International (has "World Championships" in Event types)
+    assert parsed_event.classification == "International"
