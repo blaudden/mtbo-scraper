@@ -15,15 +15,17 @@ logger = structlog.get_logger(__name__)
 class EventorSource(BaseSource):
     """Source implementation for Eventor (SWE, NOR, IOF, etc.)."""
 
-    def __init__(self, country: str, base_url: str):
+    def __init__(self, country: str, base_url: str, output_dir: str = "data/events"):
         """Initializes the EventorSource.
 
         Args:
             country: The country code (e.g. "SWE").
             base_url: The base URL of the Eventor instance.
+            output_dir: Base directory for output files (default: "data/events").
         """
         self.country = country
         self.base_url = base_url.rstrip("/")
+        self.output_dir = output_dir
         self.scraper = Scraper()
         self.parser = EventorParser()
 
@@ -133,7 +135,7 @@ class EventorSource(BaseSource):
         import yaml
 
         year = event.start_time[:4] if event.start_time else "unknown"
-        output_dir = f"data/events/{year}"
+        output_dir = f"{self.output_dir}/{year}"
         os.makedirs(output_dir, exist_ok=True)
 
         filename = f"{event.id}_startlist_{race_number}.yaml"

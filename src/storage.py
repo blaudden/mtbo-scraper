@@ -16,15 +16,16 @@ class Storage:
     to partitioned data files.
     """
 
-    def __init__(self, root_path: str):
+    def __init__(self, root_path: str, data_dir: str = "data/events"):
         """Initializes the Storage instance.
 
         Args:
             root_path: The path to the Umbrella Index file (e.g. 'mtbo_events.json').
+            data_dir: Base directory for event data files (default: 'data/events').
         """
         self.index_file = Path(root_path)
         # Default data root if not specified in index
-        self.default_data_dir = Path("data/events")
+        self.default_data_dir = Path(data_dir)
 
     def _load_index(self) -> dict[str, Any]:
         """Loads the index file if it exists."""
