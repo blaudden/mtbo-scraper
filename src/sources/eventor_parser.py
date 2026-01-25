@@ -877,7 +877,6 @@ class EventorParser:
             datetimez=race_datetime,
             discipline=discipline,
             night_or_day=self._map_night_or_day(race_data.get("time of event", "")),
-            punching_system=event.punching_system,
         )
         race._internal_eventor_id = race_id
         return race

@@ -301,3 +301,43 @@ To github.com:blaudden/mtbo-scraper.git
    a677d4e..416c0c0  main -> main
 Pushed changes to git.
 Incremental scrape and push completed successfully at sön 25 jan 2026 14:04:17 CET
+Starting incremental scrape at sön 25 jan 2026 20:09:22 CET
+Starting scrape at sön 25 jan 2026 20:09:22 CET
+[2m2026-01-25 20:09:23[0m [[32m[1minfo     [0m] [1mscraper_starting              [0m [[0m[1m[34m__main__[0m][0m [36moutput_file[0m=[35mmtbo_events.json[0m
+[2m2026-01-25 20:09:23[0m [[32m[1minfo     [0m] [1mdate_range_determined         [0m [[0m[1m[34m__main__[0m][0m [36mstart_date[0m=[35m2026-01-18[0m [36mend_date[0m=[35m2026-02-08[0m
+Loaded 2 manual events from manual_events
+[2m2026-01-25 20:09:23[0m [[32m[1minfo     [0m] [1mprocessing_chunk              [0m [[0m[1m[34m__main__[0m][0m [36mindex[0m=[35m1[0m [36mtotal[0m=[35m1[0m [36mstart[0m=[35m2026-01-18[0m [36mend[0m=[35m2026-02-08[0m
+[2m2026-01-25 20:09:23[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mchunk[0m=[35m2026-01-18-2026-02-08[0m
+[2m2026-01-25 20:09:23[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mSWE[0m [36mbase_url[0m=[35mhttps://eventor.orientering.se[0m
+[2m2026-01-25 20:09:23[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m0[0m [36mcountry[0m=[35mSWE[0m
+[2m2026-01-25 20:09:23[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mchunk[0m=[35m2026-01-18-2026-02-08[0m
+[2m2026-01-25 20:09:23[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mNOR[0m [36mbase_url[0m=[35mhttps://eventor.orientering.no[0m
+[2m2026-01-25 20:09:23[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m0[0m [36mcountry[0m=[35mNOR[0m
+[2m2026-01-25 20:09:23[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mchunk[0m=[35m2026-01-18-2026-02-08[0m
+[2m2026-01-25 20:09:23[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mIOF[0m [36mbase_url[0m=[35mhttps://eventor.orienteering.sport[0m
+[2m2026-01-25 20:09:23[0m [[33m[1mwarning  [0m] [1mcloudflare_challenge_detected [0m [[0m[1m[34msrc.scraper[0m][0m [36mdomain[0m=[35meventor.orienteering.sport[0m
+[2m2026-01-25 20:09:24[0m [[32m[1minfo     [0m] [1mopening_browser_for_cookies   [0m [[0m[1m[34msrc.scraper[0m][0m [36mdomain[0m=[35meventor.orienteering.sport[0m
+patching driver executable /home/mblaudd/.local/share/undetected_chromedriver/undetected_chromedriver
+[2m2026-01-25 20:09:25[0m [[32m[1minfo     [0m] [1mwaiting_for_cloudflare_challenge[0m [[0m[1m[34msrc.scraper[0m][0m
+[2m2026-01-25 20:09:29[0m [[32m[1minfo     [0m] [1mbrowser_bypass_successful     [0m [[0m[1m[34msrc.scraper[0m][0m [36mcookie_count[0m=[35m5[0m [36mdomain[0m=[35meventor.orienteering.sport[0m
+[2m2026-01-25 20:09:29[0m [[32m[1minfo     [0m] [1mRetrying request with browser cookies...[0m [[0m[1m[34msrc.scraper[0m][0m
+[2m2026-01-25 20:09:29[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m0[0m [36mcountry[0m=[35mIOF[0m
+Updated partition 2026 at data/events/2026/events.json
+Updated index file at mtbo_events.json
+[2m2026-01-25 20:09:29[0m [[32m[1minfo     [0m] [1mscraping_completed            [0m [[0m[1m[34m__main__[0m][0m
+Update MTBO events: 2026-01-25
+New: 0, Changed: 2, Deleted: 0
+[2m2026-01-25 20:09:29[0m [[32m[1minfo     [0m] [1mCommit message written to .commit_msg[0m [[0m[1m[34m__main__[0m][0m
+ensuring close
+Scrape finished at sön 25 jan 2026 20:09:30 CET with exit code 0
+Changes detected. Retrieving stats...
+Commit message: Update MTBO events: 2026-01-25
+New: 0, Changed: 2, Deleted: 0
+remote:
+remote: GitHub found 1 vulnerability on blaudden/mtbo-scraper's default branch (1 high). To find out more, visit:
+remote:      https://github.com/blaudden/mtbo-scraper/security/dependabot/1
+remote:
+To github.com:blaudden/mtbo-scraper.git
+   416c0c0..8b76eb8  main -> main
+Pushed changes to git.
+Incremental scrape and push completed successfully at sön 25 jan 2026 20:09:32 CET

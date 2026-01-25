@@ -82,7 +82,6 @@ class Race:
 
     # Optional/Custom fields
     night_or_day: str | None = None  # day, night, combined
-    punching_system: str | None = None  # e.g. SI
 
     # Position: Optional center point (lat, lng)
     position: Position | None = None
@@ -192,7 +191,6 @@ class Event:
                     "datetimez": r.datetimez,
                     "discipline": r.discipline,
                     "night_or_day": r.night_or_day,
-                    "punching_system": r.punching_system,
                     "position": {"lat": r.position.lat, "lng": r.position.lng}
                     if r.position
                     else None,
