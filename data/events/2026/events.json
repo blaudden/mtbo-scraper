@@ -93,7 +93,7 @@
       "end_time": "2026-03-15",
       "status": "Sanctioned",
       "original_status": "Planned",
-      "classification": null,
+      "types": [],
       "tags": [],
       "form": null,
       "organisers": [
@@ -1053,7 +1053,7 @@
       "end_time": "2026-05-17",
       "status": "Planned",
       "original_status": "Planned",
-      "classification": null,
+      "types": [],
       "tags": [],
       "form": null,
       "organisers": [
