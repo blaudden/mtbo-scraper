@@ -27,7 +27,10 @@
       "end_time": "2026-03-06",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": "Local",
+      "types": [
+        "Local"
+      ],
+      "tags": [],
       "form": "Individual",
       "organisers": [
         {
@@ -38,11 +41,7 @@
       "officials": [
         {
           "role": "Contact person",
-          "name": "Britt"
-        },
-        {
-          "role": "Contact person",
-          "name": "Marie Svensson"
+          "name": "Britt-Marie Svensson"
         },
         {
           "role": "Contact phone number",
@@ -73,7 +72,6 @@
           "datetimez": "2026-03-06T00:00:00+01:00",
           "discipline": "Middle",
           "night_or_day": "day",
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -133,7 +131,6 @@
           "datetimez": "2026-03-07T10:00:00+00:00",
           "discipline": "Middle",
           "night_or_day": "day",
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -149,7 +146,6 @@
           "datetimez": "2026-03-08T10:00:00+00:00",
           "discipline": "Middle",
           "night_or_day": "day",
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -165,7 +161,6 @@
           "datetimez": "2026-03-09T00:00:00+00:00",
           "discipline": "Middle",
           "night_or_day": "day",
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -181,7 +176,6 @@
           "datetimez": "2026-03-10T00:00:00+00:00",
           "discipline": "Middle",
           "night_or_day": "day",
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -197,7 +191,6 @@
           "datetimez": "2026-03-11T00:00:00+00:00",
           "discipline": "Middle",
           "night_or_day": "day",
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -213,7 +206,6 @@
           "datetimez": "2026-03-12T00:00:00+00:00",
           "discipline": "Middle",
           "night_or_day": "day",
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -229,7 +221,6 @@
           "datetimez": "2026-03-14T00:00:00+00:00",
           "discipline": "Middle",
           "night_or_day": "day",
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -245,7 +236,6 @@
           "datetimez": "2026-03-14T00:00:00+00:00",
           "discipline": "Middle",
           "night_or_day": "day",
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -261,7 +251,6 @@
           "datetimez": "2026-03-15T00:00:00+00:00",
           "discipline": "Middle",
           "night_or_day": "day",
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -281,7 +270,10 @@
       "end_time": "2026-03-13",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": null,
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
       "form": null,
       "organisers": [
         {
@@ -319,7 +311,6 @@
           "datetimez": "2026-03-13T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -339,7 +330,10 @@
       "end_time": "2026-03-14",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": null,
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
       "form": null,
       "organisers": [
         {
@@ -377,7 +371,6 @@
           "datetimez": "2026-03-14T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -397,7 +390,10 @@
       "end_time": "2026-04-17",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": null,
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
       "form": null,
       "organisers": [
         {
@@ -465,7 +461,6 @@
           "datetimez": "2026-04-17T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
-          "punching_system": null,
           "position": {
             "lat": 47.8937887672928,
             "lng": 16.2969676108402
@@ -526,7 +521,10 @@
       "end_time": "2026-04-18",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": null,
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
       "form": null,
       "organisers": [
         {
@@ -594,7 +592,6 @@
           "datetimez": "2026-04-18T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
-          "punching_system": null,
           "position": {
             "lat": 47.9293607056857,
             "lng": 16.3050828685842
@@ -671,7 +668,10 @@
       "end_time": "2026-05-03",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": null,
+      "types": [
+        "World Cup"
+      ],
+      "tags": [],
       "form": null,
       "organisers": [
         {
@@ -754,7 +754,6 @@
           "datetimez": "2026-05-01T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": null,
-          "punching_system": null,
           "position": {
             "lat": 46.951,
             "lng": 17.877
@@ -773,7 +772,6 @@
           "datetimez": "2026-05-02T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": null,
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -789,7 +787,6 @@
           "datetimez": "2026-05-03T10:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": null,
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -809,7 +806,10 @@
       "end_time": "2026-05-08",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": "National",
+      "types": [
+        "National"
+      ],
+      "tags": [],
       "form": "Individual",
       "organisers": [
         {
@@ -851,7 +851,6 @@
           "datetimez": "2026-05-08T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
-          "punching_system": null,
           "position": {
             "lat": 59.1633769125766,
             "lng": 18.1302414987415
@@ -933,7 +932,10 @@
       "end_time": "2026-05-09",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": "National",
+      "types": [
+        "National"
+      ],
+      "tags": [],
       "form": "Individual",
       "organisers": [
         {
@@ -975,7 +977,6 @@
           "datetimez": "2026-05-09T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
-          "punching_system": null,
           "position": {
             "lat": 59.1634595778521,
             "lng": 18.1303076872197
@@ -1083,7 +1084,6 @@
           "datetimez": "2026-05-13T17:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -1099,7 +1099,6 @@
           "datetimez": "2026-05-14T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -1115,7 +1114,6 @@
           "datetimez": "2026-05-14T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -1131,7 +1129,6 @@
           "datetimez": "2026-05-15T19:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -1147,7 +1144,6 @@
           "datetimez": "2026-05-16T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -1163,7 +1159,6 @@
           "datetimez": "2026-05-17T09:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -1183,7 +1178,12 @@
       "end_time": "2026-05-28",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": "Regional",
+      "types": [
+        "Regional Championships",
+        "World Cup",
+        "World Ranking Event"
+      ],
+      "tags": [],
       "form": null,
       "organisers": [
         {
@@ -1266,7 +1266,6 @@
           "datetimez": "2026-05-25T09:00:00+01:00",
           "discipline": "Sprint",
           "night_or_day": null,
-          "punching_system": null,
           "position": {
             "lat": 39.6586002305028,
             "lng": -8.56942608980294
@@ -1285,7 +1284,6 @@
           "datetimez": "2026-05-26T09:00:00+01:00",
           "discipline": "Middle",
           "night_or_day": null,
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -1301,7 +1299,6 @@
           "datetimez": "2026-05-27T09:00:00+01:00",
           "discipline": "Other",
           "night_or_day": null,
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -1317,7 +1314,6 @@
           "datetimez": "2026-05-28T09:00:00+01:00",
           "discipline": "Other",
           "night_or_day": null,
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -1337,7 +1333,10 @@
       "end_time": "2026-05-28",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": "Regional",
+      "types": [
+        "Regional Championships"
+      ],
+      "tags": [],
       "form": null,
       "organisers": [
         {
@@ -1422,7 +1421,6 @@
           "datetimez": "2026-05-25T09:00:00+01:00",
           "discipline": "Sprint",
           "night_or_day": null,
-          "punching_system": null,
           "position": {
             "lat": 39.6592965472435,
             "lng": -8.54535850320164
@@ -1441,7 +1439,6 @@
           "datetimez": "2026-05-26T09:00:00+01:00",
           "discipline": "Middle",
           "night_or_day": null,
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -1457,7 +1454,6 @@
           "datetimez": "2026-05-27T09:00:00+01:00",
           "discipline": "Long",
           "night_or_day": null,
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -1473,7 +1469,6 @@
           "datetimez": "2026-05-28T09:00:00+01:00",
           "discipline": "Other",
           "night_or_day": null,
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -1493,7 +1488,10 @@
       "end_time": "2026-07-25",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": "National",
+      "types": [
+        "National"
+      ],
+      "tags": [],
       "form": "Individual",
       "organisers": [
         {
@@ -1535,7 +1533,6 @@
           "datetimez": "2026-07-20T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
-          "punching_system": "Sportident",
           "position": {
             "lat": 57.699314733097,
             "lng": 12.0446277631969
@@ -1633,7 +1630,6 @@
           "datetimez": "2026-07-21T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
-          "punching_system": "Sportident",
           "position": {
             "lat": 57.6992417968402,
             "lng": 12.044607843143
@@ -1747,7 +1743,6 @@
           "datetimez": "2026-07-23T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
-          "punching_system": "Sportident",
           "position": {
             "lat": 57.744290488963,
             "lng": 11.9192503726385
@@ -1857,7 +1852,6 @@
           "datetimez": "2026-07-24T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
-          "punching_system": "Sportident",
           "position": {
             "lat": 57.6521853136906,
             "lng": 12.0579259302608
@@ -1983,7 +1977,6 @@
           "datetimez": "2026-07-25T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
-          "punching_system": "Sportident",
           "position": {
             "lat": 57.6951835287148,
             "lng": 12.2250413893741
@@ -2121,7 +2114,10 @@
       "end_time": "2026-08-14",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": null,
+      "types": [
+        "Championship"
+      ],
+      "tags": [],
       "form": "Individual",
       "organisers": [
         {
@@ -2201,7 +2197,6 @@
           "datetimez": "2026-08-14T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
-          "punching_system": null,
           "position": {
             "lat": 59.8282417721364,
             "lng": 17.6107641937577
@@ -2364,7 +2359,10 @@
       "end_time": "2026-08-14",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": null,
+      "types": [
+        "Championship"
+      ],
+      "tags": [],
       "form": "Individual",
       "organisers": [
         {
@@ -2444,7 +2442,6 @@
           "datetimez": "2026-08-14T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
-          "punching_system": null,
           "position": {
             "lat": 59.8580489332592,
             "lng": 17.6388534075838
@@ -2611,7 +2608,10 @@
       "end_time": "2026-08-15",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": null,
+      "types": [
+        "Championship"
+      ],
+      "tags": [],
       "form": "Individual",
       "organisers": [
         {
@@ -2691,7 +2691,6 @@
           "datetimez": "2026-08-15T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
-          "punching_system": null,
           "position": {
             "lat": 59.8282896815637,
             "lng": 17.6106940353749
@@ -2886,7 +2885,11 @@
       "end_time": "2026-08-30",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": null,
+      "types": [
+        "World Championships",
+        "World Cup"
+      ],
+      "tags": [],
       "form": null,
       "organisers": [
         {
@@ -2987,7 +2990,6 @@
           "datetimez": "2026-08-26T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": null,
-          "punching_system": null,
           "position": {
             "lat": 61.008823840793,
             "lng": 14.5215779079777
@@ -3421,7 +3423,6 @@
           "datetimez": "2026-08-27T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": null,
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -3437,7 +3438,6 @@
           "datetimez": "2026-08-29T10:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": null,
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -3453,7 +3453,6 @@
           "datetimez": "2026-08-30T10:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -3473,7 +3472,10 @@
       "end_time": "2026-08-30",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": null,
+      "types": [
+        "Junior World Championships"
+      ],
+      "tags": [],
       "form": null,
       "organisers": [
         {
@@ -3570,7 +3572,6 @@
           "datetimez": "2026-08-26T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": null,
-          "punching_system": null,
           "position": {
             "lat": 61.0088284982449,
             "lng": 14.5213876369406
@@ -4028,7 +4029,6 @@
           "datetimez": "2026-08-27T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": null,
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -4044,7 +4044,6 @@
           "datetimez": "2026-08-29T10:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": null,
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -4060,7 +4059,6 @@
           "datetimez": "2026-08-30T10:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -4080,7 +4078,10 @@
       "end_time": "2026-08-27",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": "National",
+      "types": [
+        "National"
+      ],
+      "tags": [],
       "form": "Individual",
       "organisers": [
         {
@@ -4130,7 +4131,6 @@
           "datetimez": "2026-08-27T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -4150,7 +4150,10 @@
       "end_time": "2026-08-28",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": "National",
+      "types": [
+        "National"
+      ],
+      "tags": [],
       "form": "Individual",
       "organisers": [
         {
@@ -4200,7 +4203,6 @@
           "datetimez": "2026-08-28T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -4220,7 +4222,10 @@
       "end_time": "2026-08-29",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": "National",
+      "types": [
+        "National"
+      ],
+      "tags": [],
       "form": "Individual",
       "organisers": [
         {
@@ -4270,7 +4275,6 @@
           "datetimez": "2026-08-29T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -4290,7 +4294,10 @@
       "end_time": "2026-09-12",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": null,
+      "types": [
+        "World Masters"
+      ],
+      "tags": [],
       "form": null,
       "organisers": [
         {
@@ -4366,7 +4373,6 @@
           "datetimez": "2026-09-09T10:00:00+01:00",
           "discipline": "Middle",
           "night_or_day": "day",
-          "punching_system": "Sportident",
           "position": {
             "lat": 57.60802,
             "lng": -3.6168
@@ -4392,7 +4398,6 @@
           "datetimez": "2026-09-10T10:00:00+01:00",
           "discipline": "Sprint",
           "night_or_day": "day",
-          "punching_system": "Sportident",
           "position": {
             "lat": 57.60802,
             "lng": -3.6168
@@ -4411,7 +4416,6 @@
           "datetimez": "2026-09-11T10:00:00+01:00",
           "discipline": "Other",
           "night_or_day": "day",
-          "punching_system": "Sportident",
           "position": {
             "lat": 57.60802,
             "lng": -3.6168
@@ -4430,7 +4434,6 @@
           "datetimez": "2026-09-12T10:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
-          "punching_system": "Sportident",
           "position": {
             "lat": 57.608,
             "lng": -3.6168
@@ -4453,7 +4456,10 @@
       "end_time": "2026-09-18",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": null,
+      "types": [
+        "Championship"
+      ],
+      "tags": [],
       "form": "Individual",
       "organisers": [
         {
@@ -4496,7 +4502,6 @@
           "datetimez": "2026-09-18T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -4516,7 +4521,10 @@
       "end_time": "2026-09-19",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": null,
+      "types": [
+        "Championship"
+      ],
+      "tags": [],
       "form": "Individual",
       "organisers": [
         {
@@ -4559,7 +4567,6 @@
           "datetimez": "2026-09-19T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
-          "punching_system": null,
           "position": null,
           "areas": [],
           "urls": [],
@@ -4579,7 +4586,10 @@
       "end_time": "2026-10-09",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": null,
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
       "form": null,
       "organisers": [
         {
@@ -4641,7 +4651,6 @@
           "datetimez": "2026-10-09T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
-          "punching_system": null,
           "position": {
             "lat": -37.4324127670719,
             "lng": 143.903935127099
@@ -4664,7 +4673,10 @@
       "end_time": "2026-10-10",
       "status": "Sanctioned",
       "original_status": "Active",
-      "classification": null,
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
       "form": null,
       "organisers": [
         {
@@ -4736,7 +4748,6 @@
           "datetimez": "2026-10-10T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
-          "punching_system": null,
           "position": {
             "lat": -37.5522634655174,
             "lng": 143.896815663088
