@@ -15,15 +15,17 @@ class TestEventorParserUtils:
         assert EventorParser.split_multi_value_field(text) == expected
 
     def test_split_multi_value_field_concatenated_camel_case(self) -> None:
-        """Test splitting concatenated names like NameLastname."""
+        """Test that concatenated names without delimiters are returned as-is."""
         text = "HenrikJohnsson"
-        expected = ["Henrik Johnsson"]
+        # No delimiter, so return as-is (heuristic splitting removed)
+        expected = ["HenrikJohnsson"]
         assert EventorParser.split_multi_value_field(text) == expected
 
     def test_split_multi_value_field_concatenated_pairs(self) -> None:
-        """Test splitting concatenated pairs e.g. Name LastnameName Lastname."""
+        """Test that concatenated pairs without delimiters are returned as-is."""
         text = "Henrik JohnssonGustav Jonsson"
-        expected = ["Henrik Johnsson", "Gustav Jonsson"]
+        # No delimiter, so return as-is (heuristic splitting removed)
+        expected = ["Henrik JohnssonGustav Jonsson"]
         assert EventorParser.split_multi_value_field(text) == expected
 
     def test_split_multi_value_field_acronym(self) -> None:

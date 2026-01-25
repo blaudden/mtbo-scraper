@@ -26,7 +26,14 @@ class EventorParser:
 
     @staticmethod
     def split_multi_value_field(value: str) -> list[str]:
-        """Splits multi-value fields that are concatenated or comma-separated.
+        """Splits multi-value fields using delimiters from source HTML.
+
+        This function relies ONLY on delimiters that exist in the original HTML:
+        - Newlines (from <br> tags or actual newlines)
+        - Commas
+
+        NO heuristic splitting is performed. If the HTML doesn't have proper
+        delimiters, the value is returned as-is.
 
         Args:
             value: The input string to split.
@@ -34,51 +41,17 @@ class EventorParser:
         Returns:
             A list of extracted string values.
         """
-        # First try newline separation (from <br> or actual newlines)
+        # Split by newlines (from <br> tags converted by BeautifulSoup)
         if "\n" in value:
-            return [v.strip() for v in value.split("\n") if v.strip()]
+            parts = [v.strip() for v in value.split("\n") if v.strip()]
+            return parts if parts else [value]
 
-        # Then try comma separation
+        # Split by commas
         if "," in value:
-            return [v.strip() for v in value.split(",") if v.strip()]
+            parts = [v.strip() for v in value.split(",") if v.strip()]
+            return parts if parts else [value]
 
-        # If all uppercase, assume it's an acronym (e.g. MTBO) and don't split
-        if value.isupper():
-            return [value]
-
-        # Check for non-ASCII characters (e.g., Swedish ä, ö, å)
-        # If present, skip complex splitting to avoid breaking words
-        if not value.isascii():
-            return [value]
-
-        # Try to split concatenated names (e.g., "Henrik JohnssonGustav Jonsson")
-        parts = re.findall(r"[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*", value)
-
-        if parts:
-            # Group into pairs (firstname lastname)
-            result = []
-            i = 0
-            while i < len(parts):
-                if i + 1 < len(parts):
-                    # Check if next part looks like a lastname (single capitalized word)
-                    if " " not in parts[i] and " " not in parts[i + 1]:
-                        result.append(f"{parts[i]} {parts[i + 1]}")
-                        i += 2
-                    else:
-                        result.append(parts[i])
-                        i += 1
-                else:
-                    result.append(parts[i])
-                    i += 1
-            if result:
-                return result
-
-        # Try to split camelCase/PascalCase patterns (for disciplines)
-        parts = re.findall(r"[A-Z][a-z]*[OI]?", value)
-        if len(parts) > 1:
-            return parts
-
-        # Return as single item if no pattern found
+        # No delimiters found - return as single value
         return [value] if value else []
 
     def _map_status(self, raw_status: str) -> str:
