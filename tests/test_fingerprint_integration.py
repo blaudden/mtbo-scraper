@@ -22,13 +22,13 @@ def swe_46200_start_list_html(test_data_dir: Path) -> str:
 
 
 def test_fingerprint_and_yaml_saving(
-    swe_46200_html: str, swe_46200_start_list_html: str, tmp_path: Path
+    swe_46200_html: str, swe_46200_start_list_html: str, temp_event_data_dir: Path
 ) -> None:
-    # Setup - use tmp_path for output instead of real data directory
+    # Setup - use temp_event_data_dir fixture from conftest.py
     source = EventorSource(
         "SWE",
         "https://eventor.orientering.se",
-        output_dir=str(tmp_path / "data" / "events"),
+        output_dir=str(temp_event_data_dir),
     )
 
     # Mock Scraper
@@ -76,8 +76,8 @@ def test_fingerprint_and_yaml_saving(
     assert len(race1.fingerprints) > 0
     print(f"Fingerprints found: {len(race1.fingerprints)}")
 
-    # Verify YAML creation in tmp_path (not real data directory)
-    test_output_dir = tmp_path / "data" / "events" / "2025"
+    # Verify YAML creation in temp_event_data_dir (not real data directory)
+    test_output_dir = temp_event_data_dir / "2025"
     yaml_files_created = list(test_output_dir.glob("SWE_46200_startlist_*.yaml"))
 
     if yaml_files_created:

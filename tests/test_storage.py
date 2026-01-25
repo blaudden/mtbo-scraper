@@ -6,10 +6,12 @@ from src.models import Event
 from src.storage import Storage
 
 
-def test_storage_index_and_timestamps(tmp_path: Path) -> None:
+def test_storage_index_and_timestamps(
+    tmp_path: Path, temp_event_data_dir: Path
+) -> None:
     # 1. Setup Environment
     root_file = tmp_path / "mtbo_events.json"
-    data_dir = tmp_path / "data/events"
+    data_dir = temp_event_data_dir
 
     # Init storage
     storage = Storage(str(root_file))
@@ -99,11 +101,3 @@ def test_storage_index_and_timestamps(tmp_path: Path) -> None:
     with open(file_2025) as f:
         p_data_v3 = json.load(f)
         assert p_data_v3["events"][0]["name"] == "New Event MODIFIED"
-
-
-if __name__ == "__main__":
-    import tempfile
-
-    with tempfile.TemporaryDirectory() as td:
-        test_storage_index_and_timestamps(Path(td))
-        print("Test passed!")

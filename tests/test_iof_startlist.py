@@ -28,12 +28,12 @@ def test_iof_startlist_download(
     iof_7490_main_html: str,
     iof_7490_race2_main_html: str,
     iof_7490_race2_start_list_html: str,
-    tmp_path: Path,
+    temp_event_data_dir: Path,
 ) -> None:
     """Test IOF International events classification and download logic."""
-    # Setup - use tmp_path to avoid writing to real data directory
+    # Setup - use temp_event_data_dir fixture from conftest.py
     source = EventorSource(
-        "IOF", "https://eventor.orienteering.org", output_dir=str(tmp_path)
+        "IOF", "https://eventor.orienteering.org", output_dir=str(temp_event_data_dir)
     )
 
     # Mock Scraper
