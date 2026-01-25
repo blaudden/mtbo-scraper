@@ -191,9 +191,19 @@ class EventorSource(BaseSource):
                 if "svenska" in title and "cup" in title:
                     return True
 
-        # IOF International events (Championships, World Cup)
-        if self.country == "IOF" and event.classification == "International":
-            return True
+        # IOF events with specific championship types
+        if self.country == "IOF":
+            # Download for: Junior World Championships, World Championships,
+            # World Cup, World Masters
+            championship_types = {
+                "Junior World Championships",
+                "World Championships",
+                "World Cup",
+                "World Masters",
+            }
+            # Check if any championship type is in event.types
+            if any(t in championship_types for t in event.types):
+                return True
 
         return False
 
@@ -203,8 +213,16 @@ class EventorSource(BaseSource):
         IOF International events only download startlists, no counts/fingerprints.
         All other events fetch counts.
         """
-        if self.country == "IOF" and event.classification == "International":
-            return False
+        if self.country == "IOF":
+            # IOF events with these types only download startlists
+            championship_types = {
+                "Junior World Championships",
+                "World Championships",
+                "World Cup",
+                "World Masters",
+            }
+            if any(t in championship_types for t in event.types):
+                return False
         return True
 
     def fetch_and_process_lists(self, event: Event) -> None:

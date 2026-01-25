@@ -58,6 +58,7 @@ def test_fingerprint_and_yaml_saving(
         status="Planned",
         original_status="Planned",
         url="/Events/Show/46200",
+        types=["Test event"],
         races=[],
     )
 

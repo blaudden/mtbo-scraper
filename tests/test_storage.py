@@ -24,6 +24,7 @@ def test_storage_index_and_timestamps(tmp_path: Path) -> None:
         end_time="2025-01-01",
         status="Planned",
         original_status="Planned",
+        types=["Test event"],
         races=[],
     )
 
@@ -82,6 +83,7 @@ def test_storage_index_and_timestamps(tmp_path: Path) -> None:
         end_time="2025-01-01",
         status="Planned",
         original_status="Planned",
+        types=["Test event"],
         races=[],
     )
 

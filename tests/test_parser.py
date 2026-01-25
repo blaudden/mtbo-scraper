@@ -32,6 +32,7 @@ def create_base_event(id: str, name: str, date: str, country: str = "SWE") -> Ev
         end_time=date,
         status="Sanctioned",
         original_status="Active",
+        types=["Test event"],  # Placeholder, will be overwritten by parser
         races=[],
         organisers=[Organiser(name="Org", country_code=country)],
     )
@@ -100,8 +101,8 @@ def test_parse_swe_multi(parser: EventorParser) -> None:
     assert race3.discipline == "Sprint"
     assert race3.datetimez == "2026-07-23T00:00:00+02:00"
 
-    # Classification - "National event" -> "National"
-    assert parsed_event.classification == "National"
+    # Types - ["National"] (cleaned from "National event")
+    assert parsed_event.types == ["National"]
 
 
 def test_parse_nor_single(parser: EventorParser) -> None:
@@ -337,37 +338,42 @@ def test_iof_venue_timezone(parser: EventorParser) -> None:
     assert updated_event.races[0].datetimez == "2026-08-26T10:00:00+02:00"
 
 
-def test_iof_world_championship_classification(parser: EventorParser) -> None:
-    """Test that World Championships are classified as International."""
+def test_iof_world_championship_type(parser: EventorParser) -> None:
+    """Test that World Championships type is extracted correctly."""
     html = load_test_file("IOF_7490_main.html")
     event = create_base_event("IOF_7490", "World Championships", "2025-08-11", "IOF")
 
     parsed_event = parser.parse_event_details(html, event)
 
-    # Should be International (has "World Championships" in Event types)
-    assert parsed_event.classification == "International"
+    # Should extract raw values from "Event types" as a list
+    # HTML contains: "World Championships\nWorld Cup\nWorld Ranking Event"
+    assert "World Championships" in parsed_event.types
+    assert "World Cup" in parsed_event.types
+    assert "World Ranking Event" in parsed_event.types
 
 
-def test_iof_european_championship_classification(parser: EventorParser) -> None:
-    """Test that European Championships (Regional Championships) are International."""
+def test_iof_european_championship_type(parser: EventorParser) -> None:
+    """Test that European Championships type is extracted correctly."""
     html = load_test_file("IOF_8558_single.html")
     event = create_base_event("IOF_8558", "European Championships", "2026-05-23", "IOF")
 
     parsed_event = parser.parse_event_details(html, event)
 
-    # Should be International (has "Regional Championships" = European)
-    assert parsed_event.classification == "International"
+    # Should extract raw value from "Event type" attribute as a list
+    assert parsed_event.types == ["Regional Championships"]
 
 
-def test_iof_world_cup_classification(parser: EventorParser) -> None:
-    """Test that World Cup events are classified as International."""
+def test_iof_world_cup_type(parser: EventorParser) -> None:
+    """Test that World Cup event type is extracted correctly."""
     html = load_test_file("IOF_8277_multi.html")
     event = create_base_event("IOF_8277", "World Championships", "2026-08-25", "IOF")
 
     parsed_event = parser.parse_event_details(html, event)
 
-    # Should be International (has "World Championships" in Event types)
-    assert parsed_event.classification == "International"
+    # Should extract raw values from "Event types" as a list
+    # HTML contains: "World Championships\nWorld Ranking Event"
+    assert "World Championships" in parsed_event.types
+    assert "World Ranking Event" in parsed_event.types
 
 
 def test_discipline_tags(parser: EventorParser) -> None:

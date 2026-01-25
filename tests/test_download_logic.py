@@ -12,6 +12,7 @@ class TestDownloadLogic:
             end_time="2025-07-01",
             status="Planned",
             original_status="Planned",
+            types=["National event"],  # Raw value from Eventor
             races=[],
             urls=[
                 Url(
@@ -34,6 +35,7 @@ class TestDownloadLogic:
             end_time="2025-07-01",
             status="Planned",
             original_status="Planned",
+            types=["National event"],
             races=[],
             urls=[Url(type="Series", url="/series/1", title="svenska cupen")],
         )
@@ -49,6 +51,7 @@ class TestDownloadLogic:
             end_time="2025-07-01",
             status="Planned",
             original_status="Planned",
+            types=["National event"],
             races=[],
             urls=[Url(type="Series", url="/series/1", title="Närkeserien MTBO")],
         )
@@ -64,6 +67,7 @@ class TestDownloadLogic:
             end_time="2025-07-01",
             status="Planned",
             original_status="Planned",
+            types=["National event"],
             races=[],
             urls=[],
         )
@@ -79,6 +83,7 @@ class TestDownloadLogic:
             end_time="2025-07-01",
             status="Planned",
             original_status="Planned",
+            types=["National event"],
             races=[],
             urls=[Url(type="Series", url="/series/1", title=None)],
         )
@@ -94,6 +99,7 @@ class TestDownloadLogic:
             end_time="2025-07-01",
             status="Planned",
             original_status="Planned",
+            types=["National event"],
             races=[],
             urls=[Url(type="Series", url="/series/1", title="Svenska Cupen")],
         )
@@ -109,7 +115,7 @@ class TestDownloadLogic:
             end_time="2025-08-17",
             status="Sanctioned",
             original_status="Active",
-            classification="International",
+            types=["World Championships"],  # Raw value from IOF Eventor
             races=[],
             urls=[],
         )
@@ -125,7 +131,7 @@ class TestDownloadLogic:
             end_time="2025-08-17",
             status="Sanctioned",
             original_status="Active",
-            classification="Regional",
+            types=["Regional Championships"],  # Raw value from IOF Eventor
             races=[],
             urls=[],
         )
@@ -141,7 +147,7 @@ class TestDownloadLogic:
             end_time="2025-08-17",
             status="Sanctioned",
             original_status="Active",
-            classification="International",
+            types=["World Championships"],
             races=[],
             urls=[],
         )
@@ -157,7 +163,7 @@ class TestDownloadLogic:
             end_time="2025-07-01",
             status="Planned",
             original_status="Planned",
-            classification="National",
+            types=["National event"],
             races=[],
             urls=[],
         )

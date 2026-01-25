@@ -19,6 +19,7 @@ def test_series_extraction_swe_46200() -> None:
         end_time="2025-01-01",
         status="Planned",
         original_status="Planned",
+        types=["Test event"],
         races=[],
     )
 

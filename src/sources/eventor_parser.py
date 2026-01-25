@@ -118,29 +118,36 @@ class EventorParser:
             return "Ultralong"
         return "Other"
 
-    def _map_classification(self, attributes: dict[str, str]) -> str | None:
-        for k, v in attributes.items():
-            # Check keys like "Event classification", "Event type", "Event types"
-            if "class" in k.lower() or "type" in k.lower():
-                vl = v.lower()
-                # Top-level international events
-                # (Championships, World Cup, World Masters)
-                if "championship" in vl or "world cup" in vl or "world masters" in vl:
-                    return "International"
-                # World Ranking Events are Regional level
-                # Check for both "world ranking event" and "wre"
-                if "world ranking" in vl:
-                    return "Regional"
-                # Other international indicators
-                if "international" in vl:
-                    return "International"
-                if "national" in vl:
-                    return "National"
-                if "region" in vl:
-                    return "Regional"
-                if "local" in vl or "club" in vl:
-                    return "Local"
-        return None
+    def _extract_types(self, attributes: dict[str, str], country: str) -> list[str]:
+        """Extracts event types directly from Eventor attributes.
+
+        Args:
+            attributes: Dictionary of event attributes.
+            country: Country code (e.g., "IOF", "SWE", "NOR").
+
+        Returns:
+            List of event type strings from Eventor.
+        """
+        if country == "IOF":
+            # For IOF events, look for "Event type" or "Event types"
+            for k, v in attributes.items():
+                k_stripped = k.strip()
+                if k_stripped in ("Event type", "Event types"):
+                    # Split by newlines to get multiple types
+                    types = [t.strip() for t in v.split("\n") if t.strip()]
+                    return types
+        else:
+            # For SWE and NOR events, look for "Event classification"
+            for k, v in attributes.items():
+                if k.strip() == "Event classification":
+                    # Remove trailing " event" suffix
+                    cleaned = v.strip()
+                    if cleaned.endswith(" event"):
+                        cleaned = cleaned[:-6]  # Remove " event"
+                    return [cleaned]
+
+        # Return empty list if attribute not found
+        return []
 
     def _map_form(self, attributes: dict[str, str]) -> str | None:
         for _k, v in attributes.items():
@@ -422,7 +429,9 @@ class EventorParser:
             content_root,
             event,
         )
-        self._apply_attributes(event, attributes)
+        # Extract federation country from event ID (e.g., "IOF", "SWE", "NOR")
+        federation_country = event.id.split("_")[0]
+        self._apply_attributes(event, attributes, federation_country)
 
         # 2. Info Text
         event.information = self._extract_info_text(content_root)
@@ -579,16 +588,22 @@ class EventorParser:
 
         return attributes, venue_country
 
-    def _apply_attributes(self, event: Event, attributes: dict[str, str]) -> None:
+    def _apply_attributes(
+        self, event: Event, attributes: dict[str, str], country: str
+    ) -> None:
         """Applies extracted attributes to the Event object.
 
         Args:
             event: The Event object to update.
             attributes: The dictionary of attributes.
+            country: Country code (e.g., "IOF", "SWE", "NOR").
         """
         event.start_time = parse_date_to_iso(event.start_time)
         event.end_time = parse_date_to_iso(event.end_time)
-        event.classification = self._map_classification(attributes)
+
+        # Extract event types using the country code
+        event.types = self._extract_types(attributes, country)
+
         event.form = self._map_form(attributes)
 
         for k, v in attributes.items():

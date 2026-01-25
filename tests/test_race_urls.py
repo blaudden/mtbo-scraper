@@ -30,6 +30,7 @@ def test_parse_swe_46200_race_urls(parser: EventorParser) -> None:
         status="Active",
         original_status="Active",
         organisers=[Organiser(name="Svensk Orientering Events", country_code="SWE")],
+        types=["Test event"],
         races=[],
     )
 

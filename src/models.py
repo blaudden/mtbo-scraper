@@ -123,7 +123,9 @@ class Event:
     races: list[Race]  # minItems: 1
 
     # Optional fields
-    classification: str | None = None  # International, National, Regional, Local, Club
+    types: list[str] = field(
+        default_factory=list
+    )  # Event types from Eventor (e.g., ["World Championships", "World Cup"])
     tags: list[str] = field(
         default_factory=list
     )  # Additional event tags: e.g. FootO, SkiO, TrailO, Indoor
@@ -153,7 +155,7 @@ class Event:
             "end_time": self.end_time,
             "status": self.status,
             "original_status": self.original_status,
-            "classification": self.classification,
+            "types": self.types,
             "tags": self.tags,
             "form": self.form,
             "organisers": [

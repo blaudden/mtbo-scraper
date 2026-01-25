@@ -29,6 +29,7 @@ def test_parse_swe_46200_multi_race(parser: EventorParser) -> None:
         status="Active",
         original_status="Active",
         organisers=[Organiser(name="Org", country_code="SWE")],
+        types=["Test event"],
         races=[],
     )
 
@@ -154,6 +155,7 @@ def test_parse_iof_7490_multi_race(parser: EventorParser) -> None:
         status="Active",
         original_status="Active",
         organisers=[Organiser(name="Org", country_code="IOF")],
+        types=["Test event"],
         races=[],
     )
 
@@ -186,6 +188,7 @@ def test_parse_iof_7490_race_details(parser: EventorParser) -> None:
         status="Active",
         original_status="Active",
         organisers=[Organiser(name="Org", country_code="IOF")],
+        types=["Test event"],
         races=[],
     )
 
@@ -217,6 +220,7 @@ def test_contact_field_no_oversplit(parser: EventorParser) -> None:
         status="Active",
         original_status="Active",
         organisers=[Organiser(name="Org", country_code="IOF")],
+        types=["Test event"],
         races=[],
     )
 

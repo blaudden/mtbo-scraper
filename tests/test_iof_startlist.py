@@ -66,6 +66,7 @@ def test_iof_startlist_download(
         status="Sanctioned",
         original_status="Active",
         url="/Events/Show/7490",
+        types=["Test event"],
         races=[],
     )
 
@@ -75,8 +76,8 @@ def test_iof_startlist_download(
     assert updated_event is not None
     assert len(updated_event.races) > 0
 
-    # Verify classification is International (World Championships + World Cup)
-    assert updated_event.classification == "International"
+    # Verify types were extracted (contains "World Championships")
+    assert "World Championships" in updated_event.types
 
     # Verify download logic
     assert source._should_download_start_list(updated_event) is True
