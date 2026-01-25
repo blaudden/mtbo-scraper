@@ -154,16 +154,16 @@ class EventorParser:
         return None
 
     def _parse_disciplines(self, attributes: dict[str, str]) -> list[str]:
-        """Parses discipline tags from attributes.
+        """Parses additional discipline tags from attributes.
 
-        Extracts disciplines like FootO, MTBO, SkiO, TrailO, Indoor from
+        Extracts disciplines like FootO, SkiO, TrailO, Indoor from
         the Disciplines or Discipline field.
 
         Args:
-            attributes: Dictionary of event attributes.
+            attributes: Dictionary of additional event attributes.
 
         Returns:
-            List of discipline tags.
+            List of discipline tags (excluding MTBO).
         """
         tags = []
         for key, value in attributes.items():
@@ -176,6 +176,10 @@ class EventorParser:
                     if normalized:
                         tags.append(normalized)
                 break  # Only process first discipline field
+
+        # Remove MTBO from tags as all our events are MTBO
+        tags = [tag for tag in tags if tag != "MTBO"]
+
         return tags
 
     def parse_event_list(self, html_content: str, country: str) -> list[Event]:

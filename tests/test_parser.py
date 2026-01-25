@@ -368,3 +368,19 @@ def test_iof_world_cup_classification(parser: EventorParser) -> None:
 
     # Should be International (has "World Championships" in Event types)
     assert parsed_event.classification == "International"
+
+
+def test_discipline_tags(parser: EventorParser) -> None:
+    """Test that discipline tags are parsed correctly (excluding MTBO)."""
+    html = load_test_file("SWE_56468_main.html")
+    event = create_base_event("SWE_56468", "Test", "2025-01-01")
+
+    parsed_event = parser.parse_event_details(html, event)
+
+    # SWE_56468 has: FootO, MTBO, SkiO, TrailO, Orienteringsskytte, Indoor
+    # MTBO should be excluded
+    assert "FootO" in parsed_event.tags
+    assert "SkiO" in parsed_event.tags
+    assert "TrailO" in parsed_event.tags
+    assert "Indoor" in parsed_event.tags
+    assert "MTBO" not in parsed_event.tags  # Should be filtered out

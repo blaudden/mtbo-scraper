@@ -168,7 +168,7 @@
                     "items": {
                         "type": "string"
                     },
-                    "description": "Discipline tags (e.g., FootO, MTBO, SkiO, TrailO, Indoor)"
+                    "description": "Additional event tags (e.g., FootO, SkiO, TrailO, Indoor)"
                 },
                 "form": {
                     "type": [

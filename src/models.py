@@ -126,7 +126,7 @@ class Event:
     classification: str | None = None  # International, National, Regional, Local, Club
     tags: list[str] = field(
         default_factory=list
-    )  # Discipline tags: FootO, MTBO, SkiO, TrailO, Indoor
+    )  # Additional event tags: e.g. FootO, SkiO, TrailO, Indoor
     form: str | None = None  # Individual, Team, Relay
     organisers: list[Organiser] = field(default_factory=list)
     officials: list[Official] = field(default_factory=list)
