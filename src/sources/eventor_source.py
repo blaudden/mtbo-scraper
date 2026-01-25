@@ -161,15 +161,11 @@ class EventorSource(BaseSource):
 
         return content_changed, filepath
 
-    def _update_local_file_url(
-        self, event: Event, filepath: str, changed: bool
-    ) -> None:
-        """Updates or adds the LocalStartList URL for the event."""
+    def _update_local_file_url(self, race: Race, filepath: str, changed: bool) -> None:
+        """Updates or adds the LocalStartList URL for the race."""
         now_iso = datetime.now(UTC).isoformat()
 
-        local_url_obj = next(
-            (u for u in event.urls if u.type == "LocalStartList"), None
-        )
+        local_url_obj = next((u for u in race.urls if u.type == "LocalStartList"), None)
 
         if not local_url_obj:
             local_url_obj = Url(
@@ -177,7 +173,7 @@ class EventorSource(BaseSource):
                 url=filepath,
                 last_updated_at=now_iso,
             )
-            event.urls.append(local_url_obj)
+            race.urls.append(local_url_obj)
         elif changed:
             local_url_obj.last_updated_at = now_iso
 
@@ -262,7 +258,7 @@ class EventorSource(BaseSource):
                 changed, filepath = self._save_start_list_yaml(
                     event, race.race_number, race_data
                 )
-                self._update_local_file_url(event, filepath, changed)
+                self._update_local_file_url(race, filepath, changed)
 
     def fetch_event_details(self, event: Event) -> Event | None:
         """Fetches detailed information for a specific event.

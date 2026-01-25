@@ -78,7 +78,9 @@ def test_fingerprint_and_yaml_saving(
 
     # Verify YAML creation in temp_event_data_dir (not real data directory)
     test_output_dir = temp_event_data_dir / "2025"
-    yaml_files_created = list(test_output_dir.glob("SWE_46200_startlist_*.yaml"))
+    yaml_files_created = sorted(
+        list(test_output_dir.glob("SWE_46200_startlist_*.yaml"))
+    )
 
     if yaml_files_created:
         print(f"YAML files created successfully: {len(yaml_files_created)}")
@@ -87,6 +89,16 @@ def test_fingerprint_and_yaml_saving(
         assert "race_number" in content
         assert "participants" in content
         assert len(content["participants"]) > 0
+
+        # Verify that the URL is attached to the RACE, not the EVENT
+        local_urls_event = [u for u in updated_event.urls if u.type == "LocalStartList"]
+        assert len(local_urls_event) == 0, (
+            "LocalStartList should NOT be on Event object"
+        )
+
+        local_urls_race = [u for u in race1.urls if u.type == "LocalStartList"]
+        assert len(local_urls_race) == 1, "LocalStartList SHOULD be on Race object"
+        assert local_urls_race[0].url == str(yaml_files_created[0])
 
         # Files are in tmp_path, so they'll be auto-cleaned by pytest
     else:
