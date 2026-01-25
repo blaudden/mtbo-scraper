@@ -257,3 +257,13 @@ Exceptions include `retryable` flags to indicate whether operations should be re
 - `NetworkError.retryable` - Indicates if request can be retried
 - Error suggestions guide agents on next steps
 - Structured error data enables automated error handling
+
+## Eventor Data Model & API References
+
+Each Eventor instance (National Federation) operates independently with its own data model and API specifications:
+
+- **Sweden (SWE)**: [Eventor Sweden API](https://eventor.orientering.se/api/documentation)
+- **Norway (NOR)**: [Eventor Norway API](https://eventor.orientering.no/api/documentation)
+- **International (IOF)**: [IOF Eventor API](https://eventor.orienteering.org/api/documentation)
+
+Classification values ("Event classification") and other attributes depend on the instance. Our scraper maps these to a unified internal model where possible, but distinct handling is often required.
