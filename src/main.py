@@ -62,22 +62,39 @@ def chunk_date_range(
 
 
 def determine_date_range(
-    start_date: str | None, end_date: str | None
+    start_date: str | None, end_date: str | None, mode: str = "full"
 ) -> tuple[str, str]:
-    """Determines the effective start and end dates."""
-    if not start_date:
-        # Default to 4 weeks ago
-        start_date = (datetime.now() - timedelta(weeks=4)).strftime("%Y-%m-%d")
+    """Determines the effective start and end dates.
 
-    # Default end date if not provided:
-    # 1. Add ~6 months to start date
-    # 2. Add 1 year to that year
-    # 3. End on Dec 31st of that year
-    if not end_date:
-        start_dt = datetime.strptime(start_date, "%Y-%m-%d")
-        future_date = start_dt + timedelta(days=183)
-        target_year = future_date.year + 1
-        end_date = f"{target_year}-12-31"
+    Args:
+        start_date: Optional start date (YYYY-MM-DD)
+        end_date: Optional end date (YYYY-MM-DD)
+        mode: Scraping mode - 'full' or 'current'
+
+    Returns:
+        Tuple of (start_date, end_date)
+    """
+    if mode == "current":
+        # Current mode: 1 week back, 2 weeks forward
+        if not start_date:
+            start_date = (datetime.now() - timedelta(weeks=1)).strftime("%Y-%m-%d")
+        if not end_date:
+            end_date = (datetime.now() + timedelta(weeks=2)).strftime("%Y-%m-%d")
+    else:
+        # Full mode: default behavior
+        if not start_date:
+            # Default to 4 weeks ago
+            start_date = (datetime.now() - timedelta(weeks=4)).strftime("%Y-%m-%d")
+
+        # Default end date if not provided:
+        # 1. Add ~6 months to start date
+        # 2. Add 1 year to that year
+        # 3. End on Dec 31st of that year
+        if not end_date:
+            start_dt = datetime.strptime(start_date, "%Y-%m-%d")
+            future_date = start_dt + timedelta(days=183)
+            target_year = future_date.year + 1
+            end_date = f"{target_year}-12-31"
 
     return start_date, end_date
 
@@ -99,6 +116,15 @@ def determine_date_range(
     is_flag=True,
     help="Output logs in JSON format for machine parsing",
 )
+@click.option(
+    "--mode",
+    type=click.Choice(["full", "current"], case_sensitive=False),
+    default="full",
+    help=(
+        "Scraping mode: 'full' (default, entire range) or "
+        "'current' (1 week back, 2 weeks forward)"
+    ),
+)
 def main(
     start_date: str | None,
     end_date: str | None,
@@ -106,6 +132,7 @@ def main(
     commit_msg_file: str | None,
     verbose: int,
     json_logs: bool,
+    mode: str,
 ) -> None:
     """MTBO Eventor Scraper"""
     # Configure logging based on verbosity
@@ -150,7 +177,7 @@ def main(
 
     logger.info("scraper_starting", output_file=output)
 
-    start_date, end_date = determine_date_range(start_date, end_date)
+    start_date, end_date = determine_date_range(start_date, end_date, mode)
 
     logger.info("date_range_determined", start_date=start_date, end_date=end_date)
 

@@ -72,24 +72,37 @@ JSON logs for automated monitoring:
 
 ## Scheduling
 
-To run the scraper regularly (e.g., nightly), add a cron job using the script:
+To run the scraper regularly, add cron jobs using the provided scripts.
 
-```bash
-0 3 * * * /path/to/mtbo-scraper/scrape_now.sh >> /path/to/mtbo-scraper/scraper.log 2>&1
+### Recommended Schedule
+
+For optimal freshness with minimal load:
+
+```cron
+# Full weekly sync - Wednesday at 4:17 AM
+17 4 * * 3 /path/to/mtbo-scraper/scrape_and_push.sh >> /path/to/mtbo-scraper/scraper.log 2>&1
+
+# Daily incremental - Every day at 4:33 AM (1 week back, 2 weeks forward)
+33 4 * * * /path/to/mtbo-scraper/scrape_and_push_current.sh >> /path/to/mtbo-scraper/scraper.log 2>&1
 ```
+
+### Scraping Modes
+
+- **Full mode** (`scrape_and_push.sh`): Scrapes entire date range (4 weeks back to Dec 31st of next year)
+- **Current mode** (`scrape_and_push_current.sh`): Scrapes only current time window (1 week back, 2 weeks forward)
 
 ### Git Automation
 
-To automatically scrape, verify, and push changes to git, use `scrape_and_push.sh`:
+Both scripts automatically:
+1. Run the scraper
+2. Commit changes to git if any events were modified
+3. Push to remote repository
 
-```bash
-0 3 * * * /path/to/mtbo-scraper/scrape_and_push.sh >> /path/to/mtbo-scraper/scraper.log 2>&1
-```
-
-You can also pass arguments to `scrape_and_push.sh`, which will be forwarded to the scraper:
+You can also pass arguments to the scripts, which will be forwarded to the scraper:
 
 ```bash
 ./scrape_and_push.sh --start-date 2025-01-01
+./scrape_and_push_current.sh -vv  # Verbose logging
 ```
 
 ```
