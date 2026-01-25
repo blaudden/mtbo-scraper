@@ -31,8 +31,10 @@ def test_iof_startlist_download(
     tmp_path: Path,
 ) -> None:
     """Test IOF International events classification and download logic."""
-    # Setup
-    source = EventorSource("IOF", "https://eventor.orienteering.org")
+    # Setup - use tmp_path to avoid writing to real data directory
+    source = EventorSource(
+        "IOF", "https://eventor.orienteering.org", output_dir=str(tmp_path)
+    )
 
     # Mock Scraper
     mock_scraper = MagicMock()

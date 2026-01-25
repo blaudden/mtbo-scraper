@@ -390,3 +390,69 @@ def test_discipline_tags(parser: EventorParser) -> None:
     assert "TrailO" in parsed_event.tags
     assert "Indoor" in parsed_event.tags
     assert "MTBO" not in parsed_event.tags  # Should be filtered out
+
+
+def test_iof_7490_race_links(parser: EventorParser) -> None:
+    """Verifies that IOF_7490 (WMTBOC 2025) extracts links onto correct races."""
+    html = load_test_file("IOF_7490_main.html")
+
+    event = Event(
+        id="IOF_7490",
+        name="WMTBOC 2025",
+        start_time="2025-08-10",
+        end_time="2025-08-17",
+        status="Sanctioned",
+        original_status="Active",
+        races=[],
+    )
+
+    # Process the HTML
+    event = parser.parse_event_details(html, event)
+
+    # 5 races expected
+    assert len(event.races) == 5
+
+    # Race 1: Sprint
+    r1 = event.races[0]
+    assert r1.name == "Sprint"
+    assert any(u.type == "StartList" and "eventId=8446" in u.url for u in r1.urls)
+    assert any(u.type == "ResultList" and "/Events/Show/8446" in u.url for u in r1.urls)
+
+    # Race 2: Middle
+    r2 = event.races[1]
+    assert r2.name == "Middle"
+    assert any(u.type == "StartList" and "eventId=8447" in u.url for u in r2.urls)
+    assert any(u.type == "ResultList" and "/Events/Show/8447" in u.url for u in r2.urls)
+
+    # Race 5: Relay
+    r5 = event.races[4]
+    assert r5.name == "Relay"
+    assert any(u.type == "StartList" and "eventId=8451" in u.url for u in r5.urls)
+    # The Relay result link is NOT on the race (PDF/External Document)
+    assert not any(u.type == "ResultList" for u in r5.urls)
+    # But it SHOULD be in event.documents
+    assert any(
+        d.type == "ResultList" and "Relay results" in d.title for d in event.documents
+    )
+
+
+def test_iof_7490_no_event_links_leakage(parser: EventorParser) -> None:
+    """Ensures StartList links are moved to races and not left at event level."""
+    html = load_test_file("IOF_7490_main.html")
+
+    event = Event(
+        id="IOF_7490",
+        name="WMTBOC 2025",
+        start_time="2025-08-10",
+        end_time="2025-08-17",
+        status="Sanctioned",
+        original_status="Active",
+        races=[],
+    )
+
+    event = parser.parse_event_details(html, event)
+
+    # There should be NO StartList links on the main event object anymore
+    # as they were assigned to specific races
+    event_start_lists = [u for u in event.urls if u.type == "StartList"]
+    assert len(event_start_lists) == 0

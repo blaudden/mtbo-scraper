@@ -280,6 +280,45 @@ class EventorParser:
             self.logger.warning(f"Error parsing event row: {e}", exc_info=True)
             return None
 
+    def _detect_link_type(self, a: Tag) -> str | None:
+        """Identifies the type of Eventor service link based on its URL pattern.
+
+        This method analyzes the 'href' and 'class' attributes of an anchor tag
+        to determine if it points to a specific Eventor service like a start list,
+        result list, or Livelox.
+
+        Args:
+            a: The BeautifulSoup Tag representing the anchor (<a>) element.
+
+        Returns:
+            A string representing the service type ('StartList', 'ResultList',
+            'EntryList', 'Livelox', or 'Series'), or None if it doesn't match
+            a known service pattern.
+        """
+        href = str(a.get("href", "")).lower()
+
+        # 1. Entry List
+        if "/events/entries" in href and "groupby=eventclass" in href:
+            return "EntryList"
+
+        # 2. Start List
+        if "/events/startlist" in href:
+            return "StartList"
+
+        # 3. Result List
+        if "/events/resultlist" in href:
+            return "ResultList"
+
+        # 4. Livelox
+        if "livelox" in href or "livelox" in str(a.get("class", "")).lower():
+            return "Livelox"
+
+        # 5. Series
+        if "/standings/view/series" in href:
+            return "Series"
+
+        return None
+
     def _extract_links_from_infoboxes(self, soup: Tag) -> list[dict[str, Any]]:
         """Extracts Start/Result/Entry/Livelox links from eventInfoBox containers.
 
@@ -833,17 +872,24 @@ class EventorParser:
     def _parse_race_table(
         self, caption_tag: Tag, race_number: int, event: Event, venue_country: str
     ) -> Race:
-        table = caption_tag.find_parent("table")
-        race_name = caption_tag.get_text(strip=True)
-        race_data = {}
+        """Parses an Eventor race table to extract race details and associated links.
 
-        if table:
-            for row in table.find_all("tr"):
-                th = row.find("th")
-                td = row.find("td")
-                if th and td:
-                    race_data[th.get_text(strip=True).lower()] = td.get_text(strip=True)
+        Separates concern by first extracting raw table data and then processing
+        it into a Race model.
 
+        Args:
+            caption_tag: The <caption> element of the race table.
+            race_number: The sequential 1-based number of this race.
+            event: The Event object this race belongs to.
+            venue_country: The country code of the event venue.
+
+        Returns:
+            A populated Race object.
+        """
+        table_rows = self._extract_race_table_data(caption_tag)
+        race_data = {label: val for label, val, _ in table_rows}
+
+        # Process dates and disciplines
         date_str = race_data.get("date", "")
         date_only, time, offset = extract_time_from_date(date_str)
         date_only = parse_date_to_iso(date_only)
@@ -858,28 +904,96 @@ class EventorParser:
             date_only, time, venue_country, offset=offset
         )
 
-        race_id = None
-        links = table.find_all("a", href=True) if table else []
-        caption_link = caption_tag.find("a", href=True)
-        if caption_link and isinstance(caption_link, Tag):
-            links.append(caption_link)
+        # Extract links and internal Eventor ID
+        race_urls, internal_eventor_id = self._extract_links_from_race_rows(table_rows)
 
-        for link in links:
-            href_val = link["href"]
-            match = re.search(r"eventRaceId=(\d+)", str(href_val))
-            if match:
-                race_id = match.group(1)
-                break
+        # Fallback for internal_eventor_id from caption if still missing
+        if not internal_eventor_id:
+            caption_link = caption_tag.find("a", href=True)
+            if caption_link:
+                match = re.search(r"eventRaceId=(\d+)", str(caption_link["href"]))
+                if match:
+                    internal_eventor_id = match.group(1)
 
         race = Race(
             race_number=race_number,
-            name=race_name,
+            name=caption_tag.get_text(strip=True),
             datetimez=race_datetime,
             discipline=discipline,
             night_or_day=self._map_night_or_day(race_data.get("time of event", "")),
+            urls=race_urls,
         )
-        race._internal_eventor_id = race_id
+        # Store the internal Eventor ID (this is NOT the race_number)
+        race._internal_eventor_id = internal_eventor_id
         return race
+
+    def _extract_race_table_data(
+        self, caption_tag: Tag
+    ) -> list[tuple[str, str, list[Tag]]]:
+        """Extracts raw key-value pairs and associated anchor tags from a race table.
+
+        Args:
+            caption_tag: The <caption> element of the race table.
+
+        Returns:
+            A list of tuples: (lowercase_label, text_value, list_of_anchor_tags).
+        """
+        table = caption_tag.find_parent("table")
+        extracted_data: list[tuple[str, str, list[Tag]]] = []
+
+        if not table:
+            return extracted_data
+
+        for row in table.find_all("tr"):
+            th = row.find("th")
+            td = row.find("td")
+            if th and td:
+                label = th.get_text(strip=True).lower()
+                val = td.get_text(strip=True)
+                links = td.find_all("a", href=True)
+                extracted_data.append((label, val, links))
+
+        return extracted_data
+
+    def _extract_links_from_race_rows(
+        self, table_rows: list[tuple[str, str, list[Tag]]]
+    ) -> tuple[list[Url], str | None]:
+        """Identifies service links and internal Eventor ID from extracted table rows.
+
+        Args:
+            table_rows: The data structure returned by _extract_race_table_data.
+
+        Returns:
+            A tuple of (list of Url objects, internal Eventor ID string or None).
+        """
+        race_urls: list[Url] = []
+        internal_id = None
+
+        for label, val, links in table_rows:
+            for a in links:
+                href = a["href"]
+                l_type = self._detect_link_type(a)
+
+                # Contextual detection based on row header
+                if not l_type:
+                    if "result" in label:
+                        l_type = "ResultList"
+                    elif "start" in label:
+                        l_type = "StartList"
+
+                if l_type:
+                    if not any(u.url == href for u in race_urls):
+                        race_urls.append(
+                            Url(type=l_type, url=href, title=val or l_type)
+                        )
+
+                # Capture internal Eventor ID (eventRaceId)
+                if not internal_id:
+                    match = re.search(r"eventRaceId=(\d+)", str(href))
+                    if match:
+                        internal_id = match.group(1)
+
+        return race_urls, internal_id
 
     def _table_looks_like_race(self, table: Tag) -> bool:
         for row in table.find_all("tr"):
@@ -928,8 +1042,24 @@ class EventorParser:
                     pass
 
     def _assign_service_links(self, soup: Tag, event: Event) -> None:
+        """Distributes event-wide service links to the event or specific races.
+
+        This method first collects all links already assigned during race table
+        parsing. It then extracts links from event infoboxes and the general
+        page content, attempting to map them to specific races based on
+        internal Eventor IDs or simple event structures.
+
+        Args:
+            soup: The BeautifulSoup object representing the event details page.
+            event: The Event object to populate with links.
+        """
         box_links = self._extract_links_from_infoboxes(soup)
         assigned_urls = set()
+
+        # Add links already assigned in _parse_race_table
+        for r in event.races:
+            for u in r.urls:
+                assigned_urls.add(u.url)
 
         for bl in box_links:
             idx = bl.get("race_index")
@@ -961,21 +1091,7 @@ class EventorParser:
             if href in assigned_urls:
                 continue
 
-            l_type = None
-            if "/Events/Entries" in href and "groupBy=EventClass" in href:
-                l_type = "EntryList"
-            elif "/Events/StartList" in href:
-                l_type = "StartList"
-            elif "/Events/ResultList" in href:
-                l_type = "ResultList"
-            elif (
-                "livelox" in str(a.get("class", "")).lower()
-                or "livelox" in href.lower()
-            ):
-                a_class = a.get("class", "")
-                a_class_str = str(a_class)
-                if "livelox16x16" in a_class_str or "Livelox" in a.get_text():
-                    l_type = "Livelox"
+            l_type = self._detect_link_type(a)
 
             if l_type:
                 race_id_match = re.search(r"eventRaceId=(\d+)", str(href))
