@@ -21,6 +21,7 @@ class EventorSource(BaseSource):
         base_url: str,
         output_dir: str = "data/events",
         known_fingerprints: dict[str, set[str]] | None = None,
+        refresh: bool = False,
     ):
         """Initializes the EventorSource.
 
@@ -30,11 +31,13 @@ class EventorSource(BaseSource):
             output_dir: Base directory for output files (default: "data/events").
             known_fingerprints: Dictionary mapping year (str) to set of existing
                 fingerprints.
+            refresh: Whether to force refresh of startlists.
         """
         self.country = country
         self.base_url = base_url.rstrip("/")
         self.output_dir = output_dir
         self.known_fingerprints = known_fingerprints or {}
+        self.refresh = refresh
         self.scraper = Scraper()
         self.parser = EventorParser()
 
@@ -248,7 +251,31 @@ class EventorSource(BaseSource):
 
         for race in event.races:
             # 1. Fetch Lists
-            starts = self._fetch_race_list_items(race, "StartList")
+            starts = None
+            if save_yaml:
+                # Decide if we need to fetch starts from Eventor or if local is enough
+                local_url = next(
+                    (u for u in race.urls if u.type == "LocalStartList"), None
+                )
+
+                # Fetch if refresh requested OR no local file
+                # OR recent event (within 7 days of start)
+                should_fetch = self.refresh or not local_url
+
+                if not should_fetch:
+                    # Check if "recent"
+                    try:
+                        # race.datetimez is ISO: YYYY-MM-DDTHH:MM:SS+HH:MM
+                        race_date = datetime.fromisoformat(race.datetimez)
+                        now = datetime.now(race_date.tzinfo)
+                        # Fetch if event is in the future or started < 7 days ago
+                        if (race_date - now).days > -7:
+                            should_fetch = True
+                    except Exception:
+                        should_fetch = True  # Fallback to fetch if date parsing fails
+
+                if should_fetch:
+                    starts = self._fetch_race_list_items(race, "StartList")
 
             # Only fetch entry/result lists if we need counts
             if fetch_counts:
@@ -258,6 +285,15 @@ class EventorSource(BaseSource):
                 # 2. Update Counts
                 if entries:
                     self._update_race_counts(race, "EntryList", entries)
+                # Note: 'starts' might be None here if not fetched above
+                # In that case, we might miss counts if we don't fetch them.
+                # However, for IOF international (where fetch_counts is False),
+                # we only care about YAML.
+                # For SWE/NOR, fetch_counts is True, and we SHOULD ensure
+                # we have 'starts' for counts even if not saving YAML.
+                if not starts and fetch_counts:
+                    starts = self._fetch_race_list_items(race, "StartList")
+
                 if starts:
                     self._update_race_counts(race, "StartList", starts)
                 if results:

@@ -102,9 +102,12 @@ def determine_date_range(
 
 
 @click.command()
-@click.option("--start-date", help="Start date (YYYY-MM-DD)")
-@click.option("--end-date", help="End date (YYYY-MM-DD)")
-@click.option("--output", default="mtbo_events.json", help="Output JSON file")
+@click.option("--start-date", help="Start date (YYYY-MM-%d)")
+@click.option("--end-date", help="End date (YYYY-MM-%d)")
+@click.option("--output", "-o", default="mtbo_events.json", help="Output file path")
+@click.option(
+    "--refresh", is_flag=True, help="Force refresh of startlists for qualifying events"
+)
 @click.option("--commit-msg-file", default=None, help="File to write commit message to")
 @click.option(
     "--verbose",
@@ -135,6 +138,7 @@ def main(
     start_date: str | None,
     end_date: str | None,
     output: str,
+    refresh: bool,
     commit_msg_file: str | None,
     verbose: int,
     json_logs: bool,
@@ -218,6 +222,7 @@ def main(
                     config["country"],
                     config["url"],
                     known_fingerprints=year_to_fps,
+                    refresh=refresh,
                 )
             )
         elif config["type"] == "manual":
