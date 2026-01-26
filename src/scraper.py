@@ -67,6 +67,13 @@ class Scraper:
                         domain=cookie_dict.get("domain", ""),
                         path=cookie_dict.get("path", "/"),
                     )
+                    # Pre-populate obtained domains so we can track reuse
+                    if "domain" in cookie_dict:
+                        # Strip leading dot for consistency if present
+                        domain = cookie_dict["domain"]
+                        if domain.startswith("."):
+                            domain = domain[1:]
+                        self._browser_cookies_obtained.add(domain)
             logger.info("cookies_loaded_from_disk", count=len(cookies))
         except Exception as e:
             logger.warning("cookie_load_failed", error=str(e))
@@ -322,6 +329,13 @@ class Scraper:
                                 return None
                         else:
                             return None
+
+                # If first attempt succeeds without challenge and we had cookies, log it
+                if attempt == 0 and domain in self._browser_cookies_obtained:
+                    # We check again if it's not a challenge to be double sure
+                    # though if we are here it shouldn't be
+                    if not self._is_managed_challenge(response):
+                        logger.info("cookie_reuse_bypass_successful", domain=domain)
 
                 response.raise_for_status()
                 return cast(Response, response)
