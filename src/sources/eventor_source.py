@@ -12,6 +12,9 @@ from src.utils.date_and_time import parse_date_to_iso
 logger = structlog.get_logger(__name__)
 
 
+class EventorSource(BaseSource):
+    """Source implementation for Eventor (SWE, NOR, IOF, etc.)."""
+
     def __init__(
         self,
         country: str,
@@ -25,7 +28,8 @@ logger = structlog.get_logger(__name__)
             country: The country code (e.g. "SWE").
             base_url: The base URL of the Eventor instance.
             output_dir: Base directory for output files (default: "data/events").
-            known_fingerprints: Dictionary mapping year (str) to set of existing fingerprints.
+            known_fingerprints: Dictionary mapping year (str) to set of existing
+                fingerprints.
         """
         self.country = country
         self.base_url = base_url.rstrip("/")

@@ -14,6 +14,7 @@ from src.sources.manual_source import ManualSource
 # Use absolute imports for script execution
 from src.storage import Storage
 from src.utils.diff import calculate_stats
+from src.utils.fingerprint import Fingerprinter
 
 # Setup logging (will be configured in main() based on CLI flags)
 logger = structlog.get_logger(__name__)
@@ -202,16 +203,7 @@ def main(
     old_events_dict = storage.load()
     old_events = list(old_events_dict.values())
 
-    # Extract existing fingerprints per year for name-reversal consistency
-    year_to_fps: dict[str, set[str]] = {}
-    for ev in old_events:
-        year = ev.get("start_time", "")[:4]
-        if year:
-            if year not in year_to_fps:
-                year_to_fps[year] = set()
-            for race in ev.get("races", []):
-                for fp in race.get("fingerprints", []):
-                    year_to_fps[year].add(fp)
+    year_to_fps = Fingerprinter.extract_year_to_fingerprints(old_events)
 
     all_events_by_source: dict[str, list[Event]] = {}
 

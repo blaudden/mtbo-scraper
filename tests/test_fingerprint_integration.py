@@ -78,9 +78,7 @@ def test_fingerprint_and_yaml_saving(
 
     # Verify YAML creation in temp_event_data_dir (not real data directory)
     test_output_dir = temp_event_data_dir / "2025"
-    yaml_files_created = sorted(
-        list(test_output_dir.glob("SWE_46200_startlist_*.yaml"))
-    )
+    yaml_files_created = sorted(test_output_dir.glob("SWE_46200_startlist_*.yaml"))
 
     if yaml_files_created:
         print(f"YAML files created successfully: {len(yaml_files_created)}")

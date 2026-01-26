@@ -30,7 +30,7 @@ def test_storage_index_and_timestamps(
         races=[],
     )
 
-    storage.save([new_event])
+    storage.save({"MAN": [new_event]})
 
     # 3. Verify Index Structure
     with open(root_file) as f:
@@ -65,7 +65,7 @@ def test_storage_index_and_timestamps(
     time.sleep(1.1)
 
     # Save NO changes
-    storage.save([new_event])
+    storage.save({"MAN": [new_event]})
 
     with open(root_file) as f:
         index_v2 = json.load(f)
@@ -89,7 +89,7 @@ def test_storage_index_and_timestamps(
         races=[],
     )
 
-    storage.save([modified_event])
+    storage.save({"MAN": [modified_event]})
 
     with open(root_file) as f:
         index_v3 = json.load(f)

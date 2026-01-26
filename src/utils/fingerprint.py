@@ -82,7 +82,8 @@ class Fingerprinter:
 
         Args:
             participants: A list of participant dictionaries.
-            known_hashes: Optional set of existing fingerprints for the current context/year.
+            known_hashes: Optional set of existing fingerprints for the current
+                year/context.
 
         Returns:
             A sorted list of unique hash strings.
@@ -101,3 +102,27 @@ class Fingerprinter:
             fingerprints.add(fp)
 
         return sorted(fingerprints)
+
+    @staticmethod
+    def extract_year_to_fingerprints(events: list[dict]) -> dict[str, set[str]]:
+        """Extracts existing fingerprints from a list of events, grouped by year.
+
+        Args:
+            events: A list of event dictionaries.
+
+        Returns:
+            A dictionary mapping year (str) to a set of fingerprint hashes.
+        """
+        year_to_fps: dict[str, set[str]] = {}
+        for ev in events:
+            # Extract year from start_time (ISO format)
+            start_time = ev.get("start_time", "")
+            year = start_time[:4] if len(start_time) >= 4 else None
+
+            if year:
+                if year not in year_to_fps:
+                    year_to_fps[year] = set()
+                for race in ev.get("races", []):
+                    for fp in race.get("fingerprints", []):
+                        year_to_fps[year].add(fp)
+        return year_to_fps
