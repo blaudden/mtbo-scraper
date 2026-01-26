@@ -285,12 +285,8 @@ class EventorSource(BaseSource):
                 # 2. Update Counts
                 if entries:
                     self._update_race_counts(race, "EntryList", entries)
-                # Note: 'starts' might be None here if not fetched above
-                # In that case, we might miss counts if we don't fetch them.
-                # However, for IOF international (where fetch_counts is False),
-                # we only care about YAML.
-                # For SWE/NOR, fetch_counts is True, and we SHOULD ensure
-                # we have 'starts' for counts even if not saving YAML.
+                # Ensure 'starts' are available for counts and fingerprints
+                # (even if YAML generation is skipped for this race).
                 if not starts and fetch_counts:
                     starts = self._fetch_race_list_items(race, "StartList")
 

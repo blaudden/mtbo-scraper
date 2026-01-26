@@ -68,9 +68,8 @@ class ManualSource:
             url = doc_data.get("url", "")
             if url.startswith("file://"):
                 filename = url.replace("file://", "")
-                # Create absolute path or relative to storage execution?
-                # For now, let's keep it relative to the manual_events
-                # dir structure if possible
+                # Path resolution: paths are resolved relative to the YAML file
+                # to maintain portability within the manual_events directory.
                 # But to serve it, we might need to know where it is.
                 # Let's verify it exists
                 file_path = os.path.join(event_dir, filename)

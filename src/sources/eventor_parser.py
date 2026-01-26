@@ -1175,8 +1175,8 @@ class EventorParser:
                     "td", class_="b"
                 )  # 'b' seems to be bib/start number in start lists
 
-                # In result lists, sometimes name/club are combined or different?
-                # Usually standard Eventor uses 'n' and 'o'.
+                # Standard Eventor uses 'n' for name and 'o' for club.
+                # If combined in a single cell, parsing logic handles it.
 
                 if name_cell and club_cell:
                     name = name_cell.get_text(strip=True)
