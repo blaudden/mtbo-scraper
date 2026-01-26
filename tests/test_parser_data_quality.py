@@ -42,9 +42,12 @@ def test_start_number_handling_various_formats():
     <div class="eventClassHeader"><h3>Test Class</h3></div>
     <table>
         <tbody>
-            <tr><td class="n">Numeric</td><td class="o">Club</td><td class="b"> 123 </td></tr>
-            <tr><td class="n">Alpha</td><td class="o">Club</td><td class="b">123A</td></tr>
-            <tr><td class="n">Empty</td><td class="o">Club</td><td class="b">   </td></tr>
+            <tr><td class="n">Numeric</td><td class="o">Club</td>
+                <td class="b"> 123 </td></tr>
+            <tr><td class="n">Alpha</td><td class="o">Club</td>
+                <td class="b">123A</td></tr>
+            <tr><td class="n">Empty</td><td class="o">Club</td>
+                <td class="b">   </td></tr>
             <tr><td class="n">None</td><td class="o">Club</td></tr>
         </tbody>
     </table>
