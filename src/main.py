@@ -202,7 +202,7 @@ def main(
     old_events_dict = storage.load()
     old_events = list(old_events_dict.values())
 
-    all_events: list[Event] = []
+    all_events_by_source: dict[str, list[Event]] = {}
 
     # Initialize Sources
     eventor_sources: list[EventorSource] = []
@@ -218,7 +218,7 @@ def main(
     if run_manual:
         manual_source = ManualSource(MANUAL_EVENTS_DIR)
         manual_events = manual_source.load_events()
-        all_events.extend(manual_events)
+        all_events_by_source["MAN"] = manual_events
         logger.debug(
             "manual_events_loaded",
             count=len(manual_events),
@@ -239,9 +239,10 @@ def main(
                 end=chunk_end,
             )
 
-            chunk_events: list[Event] = []
-
             for source in eventor_sources:
+                if source.country not in all_events_by_source:
+                    all_events_by_source[source.country] = []
+
                 try:
                     logger.info(
                         "scraping_source_start",
@@ -271,7 +272,7 @@ def main(
 
                         detailed_event = source.fetch_event_details(event)
                         if detailed_event:
-                            chunk_events.append(detailed_event)
+                            all_events_by_source[source.country].append(detailed_event)
                 except Exception as e:
                     logger.error(
                         "source_processing_failed",
@@ -281,8 +282,6 @@ def main(
                     )
                     continue
 
-            all_events.extend(chunk_events)
-
             # Sleep between chunks if not the last one
             if i < len(chunks) - 1:
                 sleep_sec = 5
@@ -290,7 +289,7 @@ def main(
                 time.sleep(sleep_sec)
 
     # Save returns the new list of events (merged)
-    new_events = storage.save(all_events)
+    new_events = storage.save(all_events_by_source)
     logger.info("scraping_completed")
 
     # Calculate stats and write commit message

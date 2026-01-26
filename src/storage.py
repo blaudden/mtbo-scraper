@@ -71,20 +71,108 @@ class Storage:
 
         return events_map
 
-    def save(self, events: list[Event]) -> list[dict[str, Any]]:
+    def save(self, events_by_source: dict[str, list[Event]]) -> list[dict[str, Any]]:
         """Saves events, splitting them into year-based partitions and updating
-        the Index."""
+        the Index.
+
+        Args:
+            events_by_source: A dictionary mapping source names to lists of events.
+
+        Returns:
+            A list of all newly merged and sorted event dictionaries.
+        """
         # 1. Load existing state
         existing_map = self.load()
+        now_iso = datetime.now(UTC).isoformat()
+        current_index = self._load_index()
 
-        # 2. Update with new events
-        for event in events:
-            existing_map[event.id] = event.to_dict()
+        # Track which sources have changed
+        source_meta = current_index.get("sources", {})
 
-        # 3. Group by Year
+        # 2. Process each source
+        all_new_events = []
+        for source_name, source_events in events_by_source.items():
+            source_changed = False
+            new_ids = {e.id for e in source_events}
+
+            # Special handling for MAN: Sync deletions
+            if source_name == "MAN":
+                current_manual_ids = [
+                    eid
+                    for eid in existing_map.keys()
+                    if eid.startswith("MAN_") or "-" in eid  # Basic manual ID pattern
+                ]
+
+                # Refine heuristic: identify what actually identifies as MAN
+                def _heuristic_is_man(eid: str) -> bool:
+                    if (
+                        eid.startswith("SWE_")
+                        or eid.startswith("NOR_")
+                        or eid.startswith("IOF_")
+                    ):
+                        return False
+                    return True
+
+                current_manual_ids = [
+                    eid for eid in existing_map.keys() if _heuristic_is_man(eid)
+                ]
+
+                for eid in current_manual_ids:
+                    if eid not in new_ids:
+                        logger.info(f"Removing deleted manual event: {eid}")
+                        del existing_map[eid]
+                        source_changed = True
+
+            for event in source_events:
+                event_dict = event.to_dict()
+                existing_event = existing_map.get(event.id)
+
+                if existing_event != event_dict:
+                    source_changed = True
+                    existing_map[event.id] = event_dict
+
+                all_new_events.append(event)
+
+            # Update Source Metadata in Index
+            meta = source_meta.get(source_name, {})
+            last_updated = meta.get("last_updated_at", now_iso)
+
+            if source_changed:
+                last_updated = now_iso
+
+            source_meta[source_name] = {
+                "count": 0,  # Will calculate total below
+                "last_updated_at": last_updated,
+            }
+
+        # 3. Group by Year and Calculate Source Totals
         events_by_year: dict[str, list[dict[str, Any]]] = {}
+        source_counts: dict[str, int] = {name: 0 for name in source_meta.keys()}
+
+        def _identify_source(eid: str) -> str:
+            if eid.startswith("SWE_"):
+                return "SWE"
+            if eid.startswith("NOR_"):
+                return "NOR"
+            if eid.startswith("IOF_"):
+                return "IOF"
+            return "MAN"
 
         for e_id, e_data in existing_map.items():
+            # Source counting
+            src = _identify_source(e_id)
+            if src in source_counts:
+                source_counts[src] += 1
+            elif src == "MAN" and "MAN" not in source_counts:
+                # If MAN is not in config but events found, initialize it?
+                # Actually, main.py should have MAN in configs.
+                source_counts["MAN"] = 1
+            else:
+                # Fallback: if source not in config, we don't track its meta here
+                # but we could. For now, just focus on configured sources.
+                pass
+
+            # Year grouping
             start_time = e_data.get("start_time", "")
             if start_time:
                 year = start_time[:4]
@@ -96,10 +184,12 @@ class Storage:
                 events_by_year[year] = []
             events_by_year[year].append(e_data)
 
-        # 4. Prepare Index Structure
-        now_iso = datetime.now(UTC).isoformat()
-        current_index = self._load_index()
+        # Update final counts in source_meta
+        for name, count in source_counts.items():
+            if name in source_meta:
+                source_meta[name]["count"] = count
 
+        # 4. Prepare Index Structure
         # Ensure 'partitions' dict exists
         partitions = current_index.get("partitions", {})
 
@@ -107,7 +197,7 @@ class Storage:
         all_saved_events = []
 
         # Common Metadata for wrappers
-        sources = [
+        sources_meta = [
             Source(
                 country_code="SWE",
                 name="Swedish Eventor",
@@ -142,7 +232,7 @@ class Storage:
                 "meta": {
                     "sources": [
                         {"country_code": s.country_code, "name": s.name, "url": s.url}
-                        for s in sources
+                        for s in sources_meta
                     ]
                 },
                 "events": sorted_events,
@@ -190,6 +280,7 @@ class Storage:
             "last_scraped_at": now_iso,
             "data_root": str(self.default_data_dir),
             "partitions": partitions,
+            "sources": source_meta,
         }
 
         with open(self.index_file, "w", encoding="utf-8") as f:
