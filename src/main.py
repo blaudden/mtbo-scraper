@@ -202,6 +202,17 @@ def main(
     old_events_dict = storage.load()
     old_events = list(old_events_dict.values())
 
+    # Extract existing fingerprints per year for name-reversal consistency
+    year_to_fps: dict[str, set[str]] = {}
+    for ev in old_events:
+        year = ev.get("start_time", "")[:4]
+        if year:
+            if year not in year_to_fps:
+                year_to_fps[year] = set()
+            for race in ev.get("races", []):
+                for fp in race.get("fingerprints", []):
+                    year_to_fps[year].add(fp)
+
     all_events_by_source: dict[str, list[Event]] = {}
 
     # Initialize Sources
@@ -210,7 +221,13 @@ def main(
 
     for config in active_configs:
         if config["type"] == "eventor":
-            eventor_sources.append(EventorSource(config["country"], config["url"]))
+            eventor_sources.append(
+                EventorSource(
+                    config["country"],
+                    config["url"],
+                    known_fingerprints=year_to_fps,
+                )
+            )
         elif config["type"] == "manual":
             run_manual = True
 

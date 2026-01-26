@@ -12,20 +12,25 @@ from src.utils.date_and_time import parse_date_to_iso
 logger = structlog.get_logger(__name__)
 
 
-class EventorSource(BaseSource):
-    """Source implementation for Eventor (SWE, NOR, IOF, etc.)."""
-
-    def __init__(self, country: str, base_url: str, output_dir: str = "data/events"):
+    def __init__(
+        self,
+        country: str,
+        base_url: str,
+        output_dir: str = "data/events",
+        known_fingerprints: dict[str, set[str]] | None = None,
+    ):
         """Initializes the EventorSource.
 
         Args:
             country: The country code (e.g. "SWE").
             base_url: The base URL of the Eventor instance.
             output_dir: Base directory for output files (default: "data/events").
+            known_fingerprints: Dictionary mapping year (str) to set of existing fingerprints.
         """
         self.country = country
         self.base_url = base_url.rstrip("/")
         self.output_dir = output_dir
+        self.known_fingerprints = known_fingerprints or {}
         self.scraper = Scraper()
         self.parser = EventorParser()
 
@@ -111,7 +116,14 @@ class EventorSource(BaseSource):
             return
 
         unique_participants = Fingerprinter.merge_participants(lists)
-        race.fingerprints = Fingerprinter.generate_fingerprints(unique_participants)
+
+        # Use known fingerprints for the current year if available
+        year = race.datetimez[:4]
+        known_hashes = self.known_fingerprints.get(year)
+
+        race.fingerprints = Fingerprinter.generate_fingerprints(
+            unique_participants, known_hashes
+        )
 
     def _collect_start_list_data(self, race: Race, starts: list[dict]) -> dict:
         """Formats start list data for YAML export."""

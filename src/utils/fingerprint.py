@@ -17,12 +17,34 @@ class Fingerprinter:
         return text.strip().lower()
 
     @staticmethod
-    def generate_fingerprint_for_participant(p: Participant) -> str:
-        """Generates a SHA256 fingerprint for a single participant."""
+    def generate_fingerprint_for_participant(
+        p: Participant, known_hashes: set[str] | None = None
+    ) -> str:
+        """Generates a SHA256 fingerprint for a single participant.
+
+        If known_hashes is provided, it checks if a reversed version of the name
+        matches an existing hash to handle "Last First" vs "First Last" issues.
+        """
         norm_name = Fingerprinter._normalize(p["name"])
         norm_club = Fingerprinter._normalize(p["club"])
-        raw = f"{norm_name}|{norm_club}"
-        return hashlib.sha256(raw.encode("utf-8")).hexdigest()
+
+        def _get_hash(name: str) -> str:
+            raw = f"{name}|{norm_club}"
+            return hashlib.sha256(raw.encode("utf-8")).hexdigest()
+
+        h1 = _get_hash(norm_name)
+
+        if known_hashes and h1 not in known_hashes:
+            # Check if reversed name matches a known hash
+            words = norm_name.split()
+            if len(words) > 1:
+                reversed_name = " ".join(reversed(words))
+                if reversed_name != norm_name:
+                    h2 = _get_hash(reversed_name)
+                    if h2 in known_hashes:
+                        return h2
+
+        return h1
 
     @staticmethod
     def merge_participants(lists: list[list[dict]]) -> list[dict]:
@@ -53,11 +75,14 @@ class Fingerprinter:
         return merged
 
     @staticmethod
-    def generate_fingerprints(participants: list[dict]) -> list[str]:
+    def generate_fingerprints(
+        participants: list[dict], known_hashes: set[str] | None = None
+    ) -> list[str]:
         """Generates a sorted list of unique fingerprints from a list of participants.
 
         Args:
             participants: A list of participant dictionaries.
+            known_hashes: Optional set of existing fingerprints for the current context/year.
 
         Returns:
             A sorted list of unique hash strings.
@@ -70,7 +95,9 @@ class Fingerprinter:
                 "class_name": p.get("class_name", ""),
                 "start_number": p.get("start_number", None),
             }
-            fp = Fingerprinter.generate_fingerprint_for_participant(input_p)
+            fp = Fingerprinter.generate_fingerprint_for_participant(
+                input_p, known_hashes
+            )
             fingerprints.add(fp)
 
         return sorted(fingerprints)
