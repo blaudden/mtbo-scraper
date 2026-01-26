@@ -247,8 +247,8 @@ class EventorSource(BaseSource):
                 if results:
                     self._update_race_counts(race, "ResultList", results)
 
-                # 3. Fingerprinting (SWE only)
-                if self.country == "SWE":
+                # 3. Fingerprinting (SWE and NOR)
+                if self.country in ("SWE", "NOR"):
                     valid_lists = [lst for lst in [entries, starts, results] if lst]
                     self._generate_race_fingerprints(race, valid_lists)
 
