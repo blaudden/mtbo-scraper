@@ -74,7 +74,7 @@ class Scraper:
             return True
         return False
 
-    def _obtain_browser_cookies(self, url: str) -> bool:
+    def _obtain_browser_cookies(self, url: str, retries: int = 2) -> bool:
         """Use undetected-chromedriver to bypass Cloudflare and obtain cookies.
 
         Opens a real browser window (or virtual display in headless environments),
@@ -83,6 +83,7 @@ class Scraper:
 
         Args:
             url: The target URL that triggered the challenge.
+            retries: Number of retries for browser initialization/solving.
 
         Returns:
             True if cookies were obtained successfully, False otherwise.
@@ -95,88 +96,105 @@ class Scraper:
         parsed = urlparse(url)
         base_url = f"{parsed.scheme}://{parsed.netloc}/"
 
-        logger.info("opening_browser_for_cookies", domain=parsed.netloc)
+        for attempt in range(retries + 1):
+            logger.info(
+                "opening_browser_for_cookies",
+                domain=parsed.netloc,
+                attempt=attempt + 1,
+                max_attempts=retries + 1,
+            )
 
-        # Check if we have a display (for cron/headless environments)
-        has_display = os.environ.get("DISPLAY") is not None
-        virtual_display = None
+            # Check if we have a display (for cron/headless environments)
+            has_display = os.environ.get("DISPLAY") is not None
+            virtual_display = None
 
-        if not has_display:
+            if not has_display:
+                try:
+                    from pyvirtualdisplay import Display
+
+                    logger.info("virtual_display_starting", reason="no_display")
+                    virtual_display = Display(visible=False, size=(1920, 1080))
+                    virtual_display.start()
+                except Exception as e:
+                    logger.warning("virtual_display_start_failed", error=str(e))
+                    logger.warning("Install Xvfb with: sudo apt-get install xvfb")
+
+            options = uc.ChromeOptions()
+            options.add_argument("--no-sandbox")
+            options.add_argument("--disable-dev-shm-usage")
+            # Non-headless mode required for Cloudflare bypass
+
+            driver = None
             try:
-                from pyvirtualdisplay import Display
+                driver = uc.Chrome(options=options)
+                driver.get(base_url)
 
-                logger.info("virtual_display_starting", reason="no_display_detected")
-                virtual_display = Display(visible=False, size=(1920, 1080))
-                virtual_display.start()
-            except Exception as e:
-                logger.warning("virtual_display_start_failed", error=str(e))
-                logger.warning("Install Xvfb with: sudo apt-get install xvfb")
+                # Wait for Cloudflare challenge to resolve
+                logger.info("waiting_for_cloudflare_challenge")
+                max_wait = 30
+                for i in range(max_wait):
+                    time.sleep(1)
+                    title = driver.title
+                    if "Just a moment" not in title and "Checking" not in title:
+                        break
+                    if i % 5 == 0:
+                        logger.debug(
+                            "cloudflare_challenge_wait_progress",
+                            seconds=i,
+                            max_wait=max_wait,
+                        )
 
-        options = uc.ChromeOptions()
-        options.add_argument("--no-sandbox")
-        options.add_argument("--disable-dev-shm-usage")
-        # Non-headless mode required for Cloudflare bypass
+                # Check if challenge was solved
+                if "Just a moment" in driver.title:
+                    logger.error("browser_fallback_failed_challenge_not_solved")
+                    if attempt < retries:
+                        continue
+                    return False
 
-        driver = None
-        try:
-            driver = uc.Chrome(options=options)
-            driver.get(base_url)
-
-            # Wait for Cloudflare challenge to resolve
-            logger.info("waiting_for_cloudflare_challenge")
-            max_wait = 30
-            for i in range(max_wait):
-                time.sleep(1)
-                title = driver.title
-                if "Just a moment" not in title and "Checking" not in title:
-                    break
-                if i % 5 == 0:
-                    logger.debug(
-                        "cloudflare_challenge_wait_progress",
-                        seconds=i,
-                        max_wait=max_wait,
+                # Extract cookies and apply to cloudscraper session
+                cookies = driver.get_cookies()
+                for cookie in cookies:
+                    self.scraper.cookies.set(
+                        cookie["name"],
+                        cookie["value"],
+                        domain=cookie.get("domain", ""),
+                        path=cookie.get("path", "/"),
                     )
 
-            # Check if challenge was solved
-            if "Just a moment" in driver.title:
-                logger.error("browser_fallback_failed_challenge_not_solved")
-                return False
+                # Also update user-agent to match the browser
+                user_agent = driver.execute_script("return navigator.userAgent;")
+                self.scraper.headers.update({"User-Agent": user_agent})
 
-            # Extract cookies and apply to cloudscraper session
-            cookies = driver.get_cookies()
-            for cookie in cookies:
-                self.scraper.cookies.set(
-                    cookie["name"],
-                    cookie["value"],
-                    domain=cookie.get("domain", ""),
-                    path=cookie.get("path", "/"),
+                logger.info(
+                    "browser_bypass_successful",
+                    cookie_count=len(cookies),
+                    domain=parsed.netloc,
                 )
+                return True
 
-            # Also update user-agent to match the browser
-            user_agent = driver.execute_script("return navigator.userAgent;")
-            self.scraper.headers.update({"User-Agent": user_agent})
+            except Exception as e:
+                logger.error(
+                    "browser_fallback_error",
+                    error=str(e),
+                    attempt=attempt + 1,
+                )
+                if attempt < retries:
+                    time.sleep(5)  # Wait before retry
+                    continue
+                return False
+            finally:
+                if driver:
+                    try:
+                        driver.quit()
+                    except Exception:
+                        pass
+                if virtual_display:
+                    try:
+                        virtual_display.stop()
+                    except Exception:
+                        pass
 
-            logger.info(
-                "browser_bypass_successful",
-                cookie_count=len(cookies),
-                domain=parsed.netloc,
-            )
-            return True
-
-        except Exception as e:
-            logger.error("browser_fallback_error", error=str(e))
-            return False
-        finally:
-            if driver:
-                try:
-                    driver.quit()
-                except Exception:
-                    pass
-            if virtual_display:
-                try:
-                    virtual_display.stop()
-                except Exception:
-                    pass
+        return False
 
     def get(
         self, url: str, params: dict[str, str] | None = None, retries: int = 3
