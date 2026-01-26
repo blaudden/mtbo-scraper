@@ -118,7 +118,7 @@ class Storage:
 
         # 3. Group by Year and Calculate Source Totals
         events_by_year: dict[str, list[dict[str, Any]]] = {}
-        source_counts: dict[str, int] = {name: 0 for name in source_meta.keys()}
+        source_counts: dict[str, int] = dict.fromkeys(source_meta.keys(), 0)
 
         def _identify_source(eid: str) -> str:
             if eid.startswith("SWE_"):

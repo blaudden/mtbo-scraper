@@ -341,3 +341,394 @@ To github.com:blaudden/mtbo-scraper.git
    416c0c0..8b76eb8  main -> main
 Pushed changes to git.
 Incremental scrape and push completed successfully at sön 25 jan 2026 20:09:32 CET
+Starting scrape at sön 25 jan 2026 20:26:38 CET
+Starting scrape at sön 25 jan 2026 20:26:38 CET
+[2m2026-01-25 20:26:38[0m [[32m[1minfo     [0m] [1mscraper_starting              [0m [[0m[1m[34m__main__[0m][0m [36moutput_file[0m=[35mmtbo_events.json[0m
+[2m2026-01-25 20:26:38[0m [[32m[1minfo     [0m] [1mdate_range_determined         [0m [[0m[1m[34m__main__[0m][0m [36mstart_date[0m=[35m2025-01-01[0m [36mend_date[0m=[35m2026-12-31[0m
+Loaded 2 manual events from manual_events
+[2m2026-01-25 20:26:38[0m [[32m[1minfo     [0m] [1mprocessing_chunk              [0m [[0m[1m[34m__main__[0m][0m [36mindex[0m=[35m1[0m [36mtotal[0m=[35m5[0m [36mstart[0m=[35m2025-01-01[0m [36mend[0m=[35m2025-06-30[0m
+[2m2026-01-25 20:26:38[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mchunk[0m=[35m2025-01-01-2025-06-30[0m
+[2m2026-01-25 20:26:38[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mSWE[0m [36mbase_url[0m=[35mhttps://eventor.orientering.se[0m
+[2m2026-01-25 20:26:39[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m56[0m [36mcountry[0m=[35mSWE[0m
+[2m2026-01-25 20:26:39[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m1.8[0m
+[2m2026-01-25 20:27:08[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m5[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m8.9[0m
+[2m2026-01-25 20:27:39[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m10[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m17.9[0m
+[2m2026-01-25 20:28:05[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m15[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m26.8[0m
+[2m2026-01-25 20:28:30[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m20[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m35.7[0m
+[2m2026-01-25 20:29:02[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m25[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m44.6[0m
+[2m2026-01-25 20:29:39[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m30[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m53.6[0m
+[2m2026-01-25 20:30:13[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m35[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m62.5[0m
+[2m2026-01-25 20:30:52[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m40[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m71.4[0m
+[2m2026-01-25 20:31:28[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m45[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m80.4[0m
+[2m2026-01-25 20:31:51[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m50[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m89.3[0m
+[2m2026-01-25 20:32:28[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m55[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m98.2[0m
+[2m2026-01-25 20:32:36[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m56[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-25 20:32:44[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mchunk[0m=[35m2025-01-01-2025-06-30[0m
+[2m2026-01-25 20:32:44[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mNOR[0m [36mbase_url[0m=[35mhttps://eventor.orientering.no[0m
+[2m2026-01-25 20:32:45[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m4[0m [36mcountry[0m=[35mNOR[0m
+[2m2026-01-25 20:32:45[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m4[0m [36mpercent[0m=[35m25.0[0m
+[2m2026-01-25 20:33:04[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mcurrent[0m=[35m4[0m [36mtotal[0m=[35m4[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-25 20:33:11[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mchunk[0m=[35m2025-01-01-2025-06-30[0m
+[2m2026-01-25 20:33:11[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mIOF[0m [36mbase_url[0m=[35mhttps://eventor.orienteering.sport[0m
+[2m2026-01-25 20:33:11[0m [[33m[1mwarning  [0m] [1mcloudflare_challenge_detected [0m [[0m[1m[34msrc.scraper[0m][0m [36mdomain[0m=[35meventor.orienteering.sport[0m
+[2m2026-01-25 20:33:12[0m [[32m[1minfo     [0m] [1mopening_browser_for_cookies   [0m [[0m[1m[34msrc.scraper[0m][0m [36mdomain[0m=[35meventor.orienteering.sport[0m
+patching driver executable /home/mblaudd/.local/share/undetected_chromedriver/undetected_chromedriver
+[2m2026-01-25 20:33:14[0m [[32m[1minfo     [0m] [1mwaiting_for_cloudflare_challenge[0m [[0m[1m[34msrc.scraper[0m][0m
+[2m2026-01-25 20:33:18[0m [[32m[1minfo     [0m] [1mbrowser_bypass_successful     [0m [[0m[1m[34msrc.scraper[0m][0m [36mcookie_count[0m=[35m5[0m [36mdomain[0m=[35meventor.orienteering.sport[0m
+[2m2026-01-25 20:33:18[0m [[32m[1minfo     [0m] [1mRetrying request with browser cookies...[0m [[0m[1m[34msrc.scraper[0m][0m
+[2m2026-01-25 20:33:19[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m14[0m [36mcountry[0m=[35mIOF[0m
+[2m2026-01-25 20:33:19[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m14[0m [36mpercent[0m=[35m7.1[0m
+[2m2026-01-25 20:33:51[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m5[0m [36mtotal[0m=[35m14[0m [36mpercent[0m=[35m35.7[0m
+[2m2026-01-25 20:34:23[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m10[0m [36mtotal[0m=[35m14[0m [36mpercent[0m=[35m71.4[0m
+[2m2026-01-25 20:34:45[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m14[0m [36mtotal[0m=[35m14[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-25 20:34:53[0m [[32m[1minfo     [0m] [1msleeping_between_chunks       [0m [[0m[1m[34m__main__[0m][0m [36mseconds[0m=[35m5[0m
+[2m2026-01-25 20:34:58[0m [[32m[1minfo     [0m] [1mprocessing_chunk              [0m [[0m[1m[34m__main__[0m][0m [36mindex[0m=[35m2[0m [36mtotal[0m=[35m5[0m [36mstart[0m=[35m2025-07-01[0m [36mend[0m=[35m2025-12-28[0m
+[2m2026-01-25 20:34:58[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mchunk[0m=[35m2025-07-01-2025-12-28[0m
+[2m2026-01-25 20:34:58[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mSWE[0m [36mbase_url[0m=[35mhttps://eventor.orientering.se[0m
+[2m2026-01-25 20:34:59[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m54[0m [36mcountry[0m=[35mSWE[0m
+[2m2026-01-25 20:34:59[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m1.9[0m
+[2m2026-01-25 20:35:28[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m5[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m9.3[0m
+[2m2026-01-25 20:37:13[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m10[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m18.5[0m
+[2m2026-01-25 20:37:54[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m15[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m27.8[0m
+[2m2026-01-25 20:38:34[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m20[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m37.0[0m
+[2m2026-01-25 20:39:01[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m25[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m46.3[0m
+[2m2026-01-25 20:39:38[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m30[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m55.6[0m
+[2m2026-01-25 20:40:12[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m35[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m64.8[0m
+[2m2026-01-25 20:40:40[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m40[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m74.1[0m
+[2m2026-01-25 20:41:16[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m45[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m83.3[0m
+[2m2026-01-25 20:41:47[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m50[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m92.6[0m
+[2m2026-01-25 20:42:03[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m54[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-25 20:42:06[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mchunk[0m=[35m2025-07-01-2025-12-28[0m
+[2m2026-01-25 20:42:06[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mNOR[0m [36mbase_url[0m=[35mhttps://eventor.orientering.no[0m
+[2m2026-01-25 20:42:07[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m5[0m [36mcountry[0m=[35mNOR[0m
+[2m2026-01-25 20:42:07[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m5[0m [36mpercent[0m=[35m20.0[0m
+[2m2026-01-25 20:42:47[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mcurrent[0m=[35m5[0m [36mtotal[0m=[35m5[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-25 20:42:58[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mchunk[0m=[35m2025-07-01-2025-12-28[0m
+[2m2026-01-25 20:42:58[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mIOF[0m [36mbase_url[0m=[35mhttps://eventor.orienteering.sport[0m
+[2m2026-01-25 20:42:59[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m7[0m [36mcountry[0m=[35mIOF[0m
+[2m2026-01-25 20:42:59[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m7[0m [36mpercent[0m=[35m14.3[0m
+[2m2026-01-25 20:43:32[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m5[0m [36mtotal[0m=[35m7[0m [36mpercent[0m=[35m71.4[0m
+[2m2026-01-25 20:43:37[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m7[0m [36mtotal[0m=[35m7[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-25 20:43:40[0m [[32m[1minfo     [0m] [1msleeping_between_chunks       [0m [[0m[1m[34m__main__[0m][0m [36mseconds[0m=[35m5[0m
+[2m2026-01-25 20:43:45[0m [[32m[1minfo     [0m] [1mprocessing_chunk              [0m [[0m[1m[34m__main__[0m][0m [36mindex[0m=[35m3[0m [36mtotal[0m=[35m5[0m [36mstart[0m=[35m2025-12-29[0m [36mend[0m=[35m2026-06-27[0m
+[2m2026-01-25 20:43:45[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mchunk[0m=[35m2025-12-29-2026-06-27[0m
+[2m2026-01-25 20:43:45[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mSWE[0m [36mbase_url[0m=[35mhttps://eventor.orientering.se[0m
+[2m2026-01-25 20:43:45[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m3[0m [36mcountry[0m=[35mSWE[0m
+[2m2026-01-25 20:43:45[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m3[0m [36mpercent[0m=[35m33.3[0m
+[2m2026-01-25 20:43:49[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m3[0m [36mtotal[0m=[35m3[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-25 20:43:51[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mchunk[0m=[35m2025-12-29-2026-06-27[0m
+[2m2026-01-25 20:43:51[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mNOR[0m [36mbase_url[0m=[35mhttps://eventor.orientering.no[0m
+[2m2026-01-25 20:43:51[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m0[0m [36mcountry[0m=[35mNOR[0m
+[2m2026-01-25 20:43:51[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mchunk[0m=[35m2025-12-29-2026-06-27[0m
+[2m2026-01-25 20:43:51[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mIOF[0m [36mbase_url[0m=[35mhttps://eventor.orienteering.sport[0m
+[2m2026-01-25 20:43:51[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m7[0m [36mcountry[0m=[35mIOF[0m
+[2m2026-01-25 20:43:51[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m7[0m [36mpercent[0m=[35m14.3[0m
+[2m2026-01-25 20:44:00[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m5[0m [36mtotal[0m=[35m7[0m [36mpercent[0m=[35m71.4[0m
+[2m2026-01-25 20:44:04[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m7[0m [36mtotal[0m=[35m7[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-25 20:44:06[0m [[32m[1minfo     [0m] [1msleeping_between_chunks       [0m [[0m[1m[34m__main__[0m][0m [36mseconds[0m=[35m5[0m
+[2m2026-01-25 20:44:11[0m [[32m[1minfo     [0m] [1mprocessing_chunk              [0m [[0m[1m[34m__main__[0m][0m [36mindex[0m=[35m4[0m [36mtotal[0m=[35m5[0m [36mstart[0m=[35m2026-06-28[0m [36mend[0m=[35m2026-12-25[0m
+[2m2026-01-25 20:44:11[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mchunk[0m=[35m2026-06-28-2026-12-25[0m
+[2m2026-01-25 20:44:11[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mSWE[0m [36mbase_url[0m=[35mhttps://eventor.orientering.se[0m
+[2m2026-01-25 20:44:11[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m9[0m [36mcountry[0m=[35mSWE[0m
+[2m2026-01-25 20:44:11[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m9[0m [36mpercent[0m=[35m11.1[0m
+[2m2026-01-25 20:44:26[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m5[0m [36mtotal[0m=[35m9[0m [36mpercent[0m=[35m55.6[0m
+[2m2026-01-25 20:44:34[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m9[0m [36mtotal[0m=[35m9[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-25 20:44:36[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mchunk[0m=[35m2026-06-28-2026-12-25[0m
+[2m2026-01-25 20:44:36[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mNOR[0m [36mbase_url[0m=[35mhttps://eventor.orientering.no[0m
+[2m2026-01-25 20:44:36[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m0[0m [36mcountry[0m=[35mNOR[0m
+[2m2026-01-25 20:44:36[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mchunk[0m=[35m2026-06-28-2026-12-25[0m
+[2m2026-01-25 20:44:36[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mIOF[0m [36mbase_url[0m=[35mhttps://eventor.orienteering.sport[0m
+[2m2026-01-25 20:44:36[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m5[0m [36mcountry[0m=[35mIOF[0m
+[2m2026-01-25 20:44:36[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m5[0m [36mpercent[0m=[35m20.0[0m
+[2m2026-01-25 20:44:45[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m5[0m [36mtotal[0m=[35m5[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-25 20:44:47[0m [[32m[1minfo     [0m] [1msleeping_between_chunks       [0m [[0m[1m[34m__main__[0m][0m [36mseconds[0m=[35m5[0m
+[2m2026-01-25 20:44:52[0m [[32m[1minfo     [0m] [1mprocessing_chunk              [0m [[0m[1m[34m__main__[0m][0m [36mindex[0m=[35m5[0m [36mtotal[0m=[35m5[0m [36mstart[0m=[35m2026-12-26[0m [36mend[0m=[35m2026-12-31[0m
+[2m2026-01-25 20:44:52[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mchunk[0m=[35m2026-12-26-2026-12-31[0m
+[2m2026-01-25 20:44:52[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mSWE[0m [36mbase_url[0m=[35mhttps://eventor.orientering.se[0m
+[2m2026-01-25 20:44:53[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m0[0m [36mcountry[0m=[35mSWE[0m
+[2m2026-01-25 20:44:53[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mchunk[0m=[35m2026-12-26-2026-12-31[0m
+[2m2026-01-25 20:44:53[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mNOR[0m [36mbase_url[0m=[35mhttps://eventor.orientering.no[0m
+[2m2026-01-25 20:44:53[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m0[0m [36mcountry[0m=[35mNOR[0m
+[2m2026-01-25 20:44:53[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mchunk[0m=[35m2026-12-26-2026-12-31[0m
+[2m2026-01-25 20:44:53[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mIOF[0m [36mbase_url[0m=[35mhttps://eventor.orienteering.sport[0m
+[2m2026-01-25 20:44:53[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m0[0m [36mcountry[0m=[35mIOF[0m
+Updated partition 2025 at data/events/2025/events.json
+Updated partition 2026 at data/events/2026/events.json
+Updated index file at mtbo_events.json
+[2m2026-01-25 20:44:54[0m [[32m[1minfo     [0m] [1mscraping_completed            [0m [[0m[1m[34m__main__[0m][0m
+Update MTBO events: 2026-01-25
+New: 0, Changed: 166, Deleted: 0
+[2m2026-01-25 20:44:54[0m [[32m[1minfo     [0m] [1mCommit message written to .commit_msg[0m [[0m[1m[34m__main__[0m][0m
+ensuring close
+Scrape finished at sön 25 jan 2026 20:44:55 CET with exit code 0
+Changes detected. Retrieving stats...
+Commit message: Update MTBO events: 2026-01-25
+New: 0, Changed: 166, Deleted: 0
+remote:
+remote: GitHub found 1 vulnerability on blaudden/mtbo-scraper's default branch (1 high). To find out more, visit:
+remote:      https://github.com/blaudden/mtbo-scraper/security/dependabot/1
+remote:
+To github.com:blaudden/mtbo-scraper.git
+   60770f4..cf28760  main -> main
+Pushed changes to git.
+Scrape and push completed successfully at sön 25 jan 2026 20:44:59 CET
+Starting scrape at sön 25 jan 2026 22:08:40 CET
+Starting scrape at sön 25 jan 2026 22:08:41 CET
+[2m2026-01-25 22:08:41[0m [[32m[1minfo     [0m] [1mscraper_starting              [0m [[0m[1m[34m__main__[0m][0m [36moutput_file[0m=[35mmtbo_events.json[0m
+[2m2026-01-25 22:08:41[0m [[32m[1minfo     [0m] [1mdate_range_determined         [0m [[0m[1m[34m__main__[0m][0m [36mstart_date[0m=[35m2025-01-01[0m [36mend_date[0m=[35m2026-12-31[0m
+Loaded 2 manual events from manual_events
+[2m2026-01-25 22:08:41[0m [[32m[1minfo     [0m] [1mprocessing_chunk              [0m [[0m[1m[34m__main__[0m][0m [36mindex[0m=[35m1[0m [36mtotal[0m=[35m5[0m [36mstart[0m=[35m2025-01-01[0m [36mend[0m=[35m2025-06-30[0m
+[2m2026-01-25 22:08:41[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mchunk[0m=[35m2025-01-01-2025-06-30[0m
+[2m2026-01-25 22:08:41[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mSWE[0m [36mbase_url[0m=[35mhttps://eventor.orientering.se[0m
+[2m2026-01-25 22:08:41[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m56[0m [36mcountry[0m=[35mSWE[0m
+[2m2026-01-25 22:08:41[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m1.8[0m
+[2m2026-01-25 22:09:08[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m5[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m8.9[0m
+[2m2026-01-25 22:09:36[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m10[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m17.9[0m
+[2m2026-01-25 22:10:01[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m15[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m26.8[0m
+[2m2026-01-25 22:10:31[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m20[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m35.7[0m
+[2m2026-01-25 22:11:03[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m25[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m44.6[0m
+[2m2026-01-25 22:11:42[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m30[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m53.6[0m
+[2m2026-01-25 22:12:21[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m35[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m62.5[0m
+[2m2026-01-25 22:13:01[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m40[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m71.4[0m
+[2m2026-01-25 22:13:41[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m45[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m80.4[0m
+[2m2026-01-25 22:14:05[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m50[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m89.3[0m
+[2m2026-01-25 22:14:44[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m55[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m98.2[0m
+[2m2026-01-25 22:14:53[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m56[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-25 22:15:01[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mchunk[0m=[35m2025-01-01-2025-06-30[0m
+[2m2026-01-25 22:15:01[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mNOR[0m [36mbase_url[0m=[35mhttps://eventor.orientering.no[0m
+[2m2026-01-25 22:15:02[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m4[0m [36mcountry[0m=[35mNOR[0m
+[2m2026-01-25 22:15:02[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m4[0m [36mpercent[0m=[35m25.0[0m
+[2m2026-01-25 22:15:21[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mcurrent[0m=[35m4[0m [36mtotal[0m=[35m4[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-25 22:15:30[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mchunk[0m=[35m2025-01-01-2025-06-30[0m
+[2m2026-01-25 22:15:30[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mIOF[0m [36mbase_url[0m=[35mhttps://eventor.orienteering.sport[0m
+[2m2026-01-25 22:15:30[0m [[33m[1mwarning  [0m] [1mcloudflare_challenge_detected [0m [[0m[1m[34msrc.scraper[0m][0m [36mdomain[0m=[35meventor.orienteering.sport[0m
+[2m2026-01-25 22:15:30[0m [[32m[1minfo     [0m] [1mopening_browser_for_cookies   [0m [[0m[1m[34msrc.scraper[0m][0m [36mdomain[0m=[35meventor.orienteering.sport[0m
+patching driver executable /home/mblaudd/.local/share/undetected_chromedriver/undetected_chromedriver
+[2m2026-01-25 22:15:32[0m [[32m[1minfo     [0m] [1mwaiting_for_cloudflare_challenge[0m [[0m[1m[34msrc.scraper[0m][0m
+[2m2026-01-25 22:15:36[0m [[32m[1minfo     [0m] [1mbrowser_bypass_successful     [0m [[0m[1m[34msrc.scraper[0m][0m [36mcookie_count[0m=[35m5[0m [36mdomain[0m=[35meventor.orienteering.sport[0m
+[2m2026-01-25 22:15:36[0m [[32m[1minfo     [0m] [1mRetrying request with browser cookies...[0m [[0m[1m[34msrc.scraper[0m][0m
+[2m2026-01-25 22:15:36[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m14[0m [36mcountry[0m=[35mIOF[0m
+[2m2026-01-25 22:15:36[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m14[0m [36mpercent[0m=[35m7.1[0m
+[2m2026-01-25 22:16:09[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m5[0m [36mtotal[0m=[35m14[0m [36mpercent[0m=[35m35.7[0m
+[2m2026-01-25 22:16:43[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m10[0m [36mtotal[0m=[35m14[0m [36mpercent[0m=[35m71.4[0m
+[2m2026-01-25 22:17:25[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m14[0m [36mtotal[0m=[35m14[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-25 22:17:32[0m [[32m[1minfo     [0m] [1msleeping_between_chunks       [0m [[0m[1m[34m__main__[0m][0m [36mseconds[0m=[35m5[0m
+[2m2026-01-25 22:17:37[0m [[32m[1minfo     [0m] [1mprocessing_chunk              [0m [[0m[1m[34m__main__[0m][0m [36mindex[0m=[35m2[0m [36mtotal[0m=[35m5[0m [36mstart[0m=[35m2025-07-01[0m [36mend[0m=[35m2025-12-28[0m
+[2m2026-01-25 22:17:37[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mchunk[0m=[35m2025-07-01-2025-12-28[0m
+[2m2026-01-25 22:17:37[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mSWE[0m [36mbase_url[0m=[35mhttps://eventor.orientering.se[0m
+[2m2026-01-25 22:17:38[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m54[0m [36mcountry[0m=[35mSWE[0m
+[2m2026-01-25 22:17:38[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m1.9[0m
+[2m2026-01-25 22:18:04[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m5[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m9.3[0m
+[2m2026-01-25 22:19:56[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m10[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m18.5[0m
+Changes detected. Retrieving stats...
+Commit message: Update MTBO events: 2026-01-25
+New: 0, Changed: 26, Deleted: 0
+remote: 
+remote: GitHub found 1 vulnerability on blaudden/mtbo-scraper's default branch (1 high). To find out more, visit:        
+remote:      https://github.com/blaudden/mtbo-scraper/security/dependabot/1        
+remote: 
+To github.com:blaudden/mtbo-scraper.git
+   cf28760..2e6a214  main -> main
+Pushed changes to git.
+Scrape and push completed successfully at sön 25 jan 2026 22:27:57 CET
+Starting scrape at sön 25 jan 2026 22:37:43 CET
+Starting scrape at sön 25 jan 2026 22:37:43 CET
+[2m2026-01-25 22:37:44[0m [[32m[1minfo     [0m] [1mscraper_starting              [0m [[0m[1m[34m__main__[0m][0m [36moutput_file[0m=[35mmtbo_events.json[0m
+[2m2026-01-25 22:37:44[0m [[32m[1minfo     [0m] [1mdate_range_determined         [0m [[0m[1m[34m__main__[0m][0m [36mstart_date[0m=[35m2025-01-01[0m [36mend_date[0m=[35m2025-12-31[0m
+Loaded 2 manual events from manual_events
+[2m2026-01-25 22:37:44[0m [[32m[1minfo     [0m] [1mprocessing_chunk              [0m [[0m[1m[34m__main__[0m][0m [36mindex[0m=[35m1[0m [36mtotal[0m=[35m3[0m [36mstart[0m=[35m2025-01-01[0m [36mend[0m=[35m2025-06-30[0m
+[2m2026-01-25 22:37:44[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mchunk[0m=[35m2025-01-01-2025-06-30[0m
+[2m2026-01-25 22:37:44[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mSWE[0m [36mbase_url[0m=[35mhttps://eventor.orientering.se[0m
+[2m2026-01-25 22:37:44[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m56[0m [36mcountry[0m=[35mSWE[0m
+[2m2026-01-25 22:37:44[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m1.8[0m
+[2m2026-01-25 22:38:08[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m5[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m8.9[0m
+[2m2026-01-25 22:38:37[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m10[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m17.9[0m
+[2m2026-01-25 22:39:03[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m15[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m26.8[0m
+[2m2026-01-25 22:39:34[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m20[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m35.7[0m
+[2m2026-01-25 22:40:05[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m25[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m44.6[0m
+[2m2026-01-25 22:40:42[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m30[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m53.6[0m
+[2m2026-01-25 22:41:21[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m35[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m62.5[0m
+[2m2026-01-25 22:41:55[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m40[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m71.4[0m
+[2m2026-01-25 22:42:36[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m45[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m80.4[0m
+[2m2026-01-25 22:43:04[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m50[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m89.3[0m
+[2m2026-01-25 22:43:46[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m55[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m98.2[0m
+[2m2026-01-25 22:43:54[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m56[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-25 22:44:03[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mchunk[0m=[35m2025-01-01-2025-06-30[0m
+[2m2026-01-25 22:44:03[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mNOR[0m [36mbase_url[0m=[35mhttps://eventor.orientering.no[0m
+[2m2026-01-25 22:44:04[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m4[0m [36mcountry[0m=[35mNOR[0m
+[2m2026-01-25 22:44:04[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m4[0m [36mpercent[0m=[35m25.0[0m
+[2m2026-01-25 22:44:26[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mcurrent[0m=[35m4[0m [36mtotal[0m=[35m4[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-25 22:44:34[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mchunk[0m=[35m2025-01-01-2025-06-30[0m
+[2m2026-01-25 22:44:34[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mIOF[0m [36mbase_url[0m=[35mhttps://eventor.orienteering.sport[0m
+[2m2026-01-25 22:44:34[0m [[33m[1mwarning  [0m] [1mcloudflare_challenge_detected [0m [[0m[1m[34msrc.scraper[0m][0m [36mdomain[0m=[35meventor.orienteering.sport[0m
+[2m2026-01-25 22:44:34[0m [[32m[1minfo     [0m] [1mopening_browser_for_cookies   [0m [[0m[1m[34msrc.scraper[0m][0m [36mdomain[0m=[35meventor.orienteering.sport[0m
+patching driver executable /home/mblaudd/.local/share/undetected_chromedriver/undetected_chromedriver
+[2m2026-01-25 22:44:37[0m [[31m[1merror    [0m] [1mbrowser_fallback_error        [0m [[0m[1m[34msrc.scraper[0m][0m [36merror[0m=[35m'Message: session not created: cannot connect to chrome at 127.0.0.1:59765\nfrom session not created: This version of ChromeDriver only supports Chrome version 144\nCurrent browser version is 143.0.7499.192; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception\nStacktrace:\n#0 0x5978d4d66afa <unknown>\n#1 0x5978d478060f <unknown>\n#2 0x5978d47c495f <unknown>\n#3 0x5978d47c3710 <unknown>\n#4 0x5978d47b8711 <unknown>\n#5 0x5978d480b01e <unknown>\n#6 0x5978d480a70c <unknown>\n#7 0x5978d47c7842 <unknown>\n#8 0x5978d47c8631 <unknown>\n#9 0x5978d4d2c689 <unknown>\n#10 0x5978d4d2f581 <unknown>\n#11 0x5978d4d18ca9 <unknown>\n#12 0x5978d4d3013e <unknown>\n#13 0x5978d4cff3a0 <unknown>\n#14 0x5978d4d53fc8 <unknown>\n#15 0x5978d4d5419b <unknown>\n#16 0x5978d4d65e68 <unknown>\n#17 0x7d76f969caa4 <unknown>\n#18 0x7d76f9729c6c <unknown>\n'[0m
+[2m2026-01-25 22:44:37[0m [[31m[1merror    [0m] [1mbrowser_cookies_fetch_failed  [0m [[0m[1m[34msrc.scraper[0m][0m [36mdomain[0m=[35meventor.orienteering.sport[0m
+[2m2026-01-25 22:44:37[0m [[31m[1merror    [0m] [1mevent_list_fetch_failed       [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mIOF[0m
+[2m2026-01-25 22:44:37[0m [[32m[1minfo     [0m] [1msleeping_between_chunks       [0m [[0m[1m[34m__main__[0m][0m [36mseconds[0m=[35m5[0m
+[2m2026-01-25 22:44:42[0m [[32m[1minfo     [0m] [1mprocessing_chunk              [0m [[0m[1m[34m__main__[0m][0m [36mindex[0m=[35m2[0m [36mtotal[0m=[35m3[0m [36mstart[0m=[35m2025-07-01[0m [36mend[0m=[35m2025-12-28[0m
+[2m2026-01-25 22:44:42[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mchunk[0m=[35m2025-07-01-2025-12-28[0m
+[2m2026-01-25 22:44:42[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mSWE[0m [36mbase_url[0m=[35mhttps://eventor.orientering.se[0m
+[2m2026-01-25 22:44:42[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m54[0m [36mcountry[0m=[35mSWE[0m
+[2m2026-01-25 22:44:42[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m1.9[0m
+[2m2026-01-25 22:45:10[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m5[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m9.3[0m
+[2m2026-01-25 22:46:28[0m [[33m[1mwarning  [0m] [1mrequest_failed                [0m [[0m[1m[34msrc.scraper[0m][0m [36merror[0m=[35m'HTTPSConnectionPool(host=\'eventor.orientering.se\', port=443): Max retries exceeded with url: /Events/ResultList?eventId=46200&eventRaceId=47852&groupBy=EventClass&culture=en-GB (Caused by NameResolutionError("HTTPSConnection(host=\'eventor.orientering.se\', port=443): Failed to resolve \'eventor.orientering.se\' ([Errno -2] Name or service not known)"))'[0m
+[2m2026-01-25 22:46:48[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m10[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m18.5[0m
+[2m2026-01-25 22:47:23[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m15[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m27.8[0m
+[2m2026-01-25 22:48:01[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m20[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m37.0[0m
+[2m2026-01-25 22:48:30[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m25[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m46.3[0m
+[2m2026-01-25 22:49:03[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m30[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m55.6[0m
+[2m2026-01-25 22:49:40[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m35[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m64.8[0m
+[2m2026-01-25 22:50:13[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m40[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m74.1[0m
+[2m2026-01-25 22:50:42[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m45[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m83.3[0m
+[2m2026-01-25 22:51:14[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m50[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m92.6[0m
+[2m2026-01-25 22:51:35[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m54[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-25 22:51:37[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mchunk[0m=[35m2025-07-01-2025-12-28[0m
+[2m2026-01-25 22:51:37[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mNOR[0m [36mbase_url[0m=[35mhttps://eventor.orientering.no[0m
+[2m2026-01-25 22:51:38[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m5[0m [36mcountry[0m=[35mNOR[0m
+[2m2026-01-25 22:51:38[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m5[0m [36mpercent[0m=[35m20.0[0m
+[2m2026-01-25 22:52:13[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mcurrent[0m=[35m5[0m [36mtotal[0m=[35m5[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-25 22:52:22[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mchunk[0m=[35m2025-07-01-2025-12-28[0m
+[2m2026-01-25 22:52:22[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mIOF[0m [36mbase_url[0m=[35mhttps://eventor.orienteering.sport[0m
+[2m2026-01-25 22:52:22[0m [[33m[1mwarning  [0m] [1mcloudflare_challenge_detected [0m [[0m[1m[34msrc.scraper[0m][0m [36mdomain[0m=[35meventor.orienteering.sport[0m
+[2m2026-01-25 22:52:22[0m [[32m[1minfo     [0m] [1mopening_browser_for_cookies   [0m [[0m[1m[34msrc.scraper[0m][0m [36mdomain[0m=[35meventor.orienteering.sport[0m
+patching driver executable /home/mblaudd/.local/share/undetected_chromedriver/undetected_chromedriver
+[2m2026-01-25 22:52:24[0m [[31m[1merror    [0m] [1mbrowser_fallback_error        [0m [[0m[1m[34msrc.scraper[0m][0m [36merror[0m=[35m'Message: session not created: cannot connect to chrome at 127.0.0.1:53765\nfrom session not created: This version of ChromeDriver only supports Chrome version 144\nCurrent browser version is 143.0.7499.192; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception\nStacktrace:\n#0 0x58528fb1fafa <unknown>\n#1 0x58528f53960f <unknown>\n#2 0x58528f57d95f <unknown>\n#3 0x58528f57c710 <unknown>\n#4 0x58528f571711 <unknown>\n#5 0x58528f5c401e <unknown>\n#6 0x58528f5c370c <unknown>\n#7 0x58528f580842 <unknown>\n#8 0x58528f581631 <unknown>\n#9 0x58528fae5689 <unknown>\n#10 0x58528fae8581 <unknown>\n#11 0x58528fad1ca9 <unknown>\n#12 0x58528fae913e <unknown>\n#13 0x58528fab83a0 <unknown>\n#14 0x58528fb0cfc8 <unknown>\n#15 0x58528fb0d19b <unknown>\n#16 0x58528fb1ee68 <unknown>\n#17 0x79bed4a9caa4 <unknown>\n#18 0x79bed4b29c6c <unknown>\n'[0m
+[2m2026-01-25 22:52:24[0m [[31m[1merror    [0m] [1mbrowser_cookies_fetch_failed  [0m [[0m[1m[34msrc.scraper[0m][0m [36mdomain[0m=[35meventor.orienteering.sport[0m
+[2m2026-01-25 22:52:24[0m [[31m[1merror    [0m] [1mevent_list_fetch_failed       [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mIOF[0m
+[2m2026-01-25 22:52:24[0m [[32m[1minfo     [0m] [1msleeping_between_chunks       [0m [[0m[1m[34m__main__[0m][0m [36mseconds[0m=[35m5[0m
+[2m2026-01-25 22:52:29[0m [[32m[1minfo     [0m] [1mprocessing_chunk              [0m [[0m[1m[34m__main__[0m][0m [36mindex[0m=[35m3[0m [36mtotal[0m=[35m3[0m [36mstart[0m=[35m2025-12-29[0m [36mend[0m=[35m2025-12-31[0m
+[2m2026-01-25 22:52:29[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mchunk[0m=[35m2025-12-29-2025-12-31[0m
+[2m2026-01-25 22:52:29[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mSWE[0m [36mbase_url[0m=[35mhttps://eventor.orientering.se[0m
+[2m2026-01-25 22:52:29[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m0[0m [36mcountry[0m=[35mSWE[0m
+[2m2026-01-25 22:52:29[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mchunk[0m=[35m2025-12-29-2025-12-31[0m
+[2m2026-01-25 22:52:29[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mNOR[0m [36mbase_url[0m=[35mhttps://eventor.orientering.no[0m
+[2m2026-01-25 22:52:30[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m0[0m [36mcountry[0m=[35mNOR[0m
+[2m2026-01-25 22:52:30[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mchunk[0m=[35m2025-12-29-2025-12-31[0m
+[2m2026-01-25 22:52:30[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mIOF[0m [36mbase_url[0m=[35mhttps://eventor.orienteering.sport[0m
+[2m2026-01-25 22:52:30[0m [[33m[1mwarning  [0m] [1mcloudflare_challenge_detected [0m [[0m[1m[34msrc.scraper[0m][0m [36mdomain[0m=[35meventor.orienteering.sport[0m
+[2m2026-01-25 22:52:30[0m [[32m[1minfo     [0m] [1mopening_browser_for_cookies   [0m [[0m[1m[34msrc.scraper[0m][0m [36mdomain[0m=[35meventor.orienteering.sport[0m
+patching driver executable /home/mblaudd/.local/share/undetected_chromedriver/undetected_chromedriver
+[2m2026-01-25 22:52:32[0m [[31m[1merror    [0m] [1mbrowser_fallback_error        [0m [[0m[1m[34msrc.scraper[0m][0m [36merror[0m=[35m'Message: session not created: cannot connect to chrome at 127.0.0.1:48965\nfrom session not created: This version of ChromeDriver only supports Chrome version 144\nCurrent browser version is 143.0.7499.192; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception\nStacktrace:\n#0 0x5b9515947afa <unknown>\n#1 0x5b951536160f <unknown>\n#2 0x5b95153a595f <unknown>\n#3 0x5b95153a4710 <unknown>\n#4 0x5b9515399711 <unknown>\n#5 0x5b95153ec01e <unknown>\n#6 0x5b95153eb70c <unknown>\n#7 0x5b95153a8842 <unknown>\n#8 0x5b95153a9631 <unknown>\n#9 0x5b951590d689 <unknown>\n#10 0x5b9515910581 <unknown>\n#11 0x5b95158f9ca9 <unknown>\n#12 0x5b951591113e <unknown>\n#13 0x5b95158e03a0 <unknown>\n#14 0x5b9515934fc8 <unknown>\n#15 0x5b951593519b <unknown>\n#16 0x5b9515946e68 <unknown>\n#17 0x75b350e9caa4 <unknown>\n#18 0x75b350f29c6c <unknown>\n'[0m
+[2m2026-01-25 22:52:32[0m [[31m[1merror    [0m] [1mbrowser_cookies_fetch_failed  [0m [[0m[1m[34msrc.scraper[0m][0m [36mdomain[0m=[35meventor.orienteering.sport[0m
+[2m2026-01-25 22:52:32[0m [[31m[1merror    [0m] [1mevent_list_fetch_failed       [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mIOF[0m
+Updated partition 2025 at data/events/2025/events.json
+Updated index file at mtbo_events.json
+[2m2026-01-25 22:52:32[0m [[32m[1minfo     [0m] [1mscraping_completed            [0m [[0m[1m[34m__main__[0m][0m
+Update MTBO events: 2026-01-25
+New: 0, Changed: 15, Deleted: 0
+[2m2026-01-25 22:52:32[0m [[32m[1minfo     [0m] [1mCommit message written to .commit_msg[0m [[0m[1m[34m__main__[0m][0m
+ensuring close
+ensuring close
+ensuring close
+Scrape finished at sön 25 jan 2026 22:52:34 CET with exit code 0
+Changes detected. Retrieving stats...
+Commit message: Update MTBO events: 2026-01-25
+New: 0, Changed: 15, Deleted: 0
+remote: 
+remote: GitHub found 1 vulnerability on blaudden/mtbo-scraper's default branch (1 high). To find out more, visit:        
+remote:      https://github.com/blaudden/mtbo-scraper/security/dependabot/1        
+remote: 
+To github.com:blaudden/mtbo-scraper.git
+   2e6a214..14f829f  main -> main
+Pushed changes to git.
+Scrape and push completed successfully at sön 25 jan 2026 22:52:39 CET
+Starting scrape at mån 26 jan 2026 08:07:16 CET
+Starting scrape at mån 26 jan 2026 08:07:16 CET
+[2m2026-01-26 08:07:16[0m [[32m[1minfo     [0m] [1mscraper_starting              [0m [[0m[1m[34m__main__[0m][0m [36moutput_file[0m=[35mmtbo_events.json[0m
+[2m2026-01-26 08:07:16[0m [[32m[1minfo     [0m] [1mdate_range_determined         [0m [[0m[1m[34m__main__[0m][0m [36mstart_date[0m=[35m2025-01-01[0m [36mend_date[0m=[35m2025-12-31[0m
+Loaded 2 manual events from manual_events
+[2m2026-01-26 08:07:17[0m [[32m[1minfo     [0m] [1mprocessing_chunk              [0m [[0m[1m[34m__main__[0m][0m [36mindex[0m=[35m1[0m [36mtotal[0m=[35m3[0m [36mstart[0m=[35m2025-01-01[0m [36mend[0m=[35m2025-06-30[0m
+[2m2026-01-26 08:07:17[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mchunk[0m=[35m2025-01-01-2025-06-30[0m
+[2m2026-01-26 08:07:17[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mSWE[0m [36mbase_url[0m=[35mhttps://eventor.orientering.se[0m
+[2m2026-01-26 08:07:17[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m56[0m [36mcountry[0m=[35mSWE[0m
+[2m2026-01-26 08:07:17[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m1.8[0m
+[2m2026-01-26 08:07:48[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m5[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m8.9[0m
+[2m2026-01-26 08:08:22[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m10[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m17.9[0m
+[2m2026-01-26 08:08:46[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m15[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m26.8[0m
+[2m2026-01-26 08:09:14[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m20[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m35.7[0m
+[2m2026-01-26 08:09:47[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m25[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m44.6[0m
+[2m2026-01-26 08:10:27[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m30[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m53.6[0m
+[2m2026-01-26 08:11:06[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m35[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m62.5[0m
+[2m2026-01-26 08:11:48[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m40[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m71.4[0m
+[2m2026-01-26 08:12:27[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m45[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m80.4[0m
+[2m2026-01-26 08:12:52[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m50[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m89.3[0m
+[2m2026-01-26 08:13:30[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m55[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m98.2[0m
+[2m2026-01-26 08:13:37[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m56[0m [36mtotal[0m=[35m56[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-26 08:13:43[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mchunk[0m=[35m2025-01-01-2025-06-30[0m
+[2m2026-01-26 08:13:43[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mNOR[0m [36mbase_url[0m=[35mhttps://eventor.orientering.no[0m
+[2m2026-01-26 08:13:44[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m4[0m [36mcountry[0m=[35mNOR[0m
+[2m2026-01-26 08:13:44[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m4[0m [36mpercent[0m=[35m25.0[0m
+[2m2026-01-26 08:14:07[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mcurrent[0m=[35m4[0m [36mtotal[0m=[35m4[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-26 08:14:16[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mchunk[0m=[35m2025-01-01-2025-06-30[0m
+[2m2026-01-26 08:14:16[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mIOF[0m [36mbase_url[0m=[35mhttps://eventor.orienteering.sport[0m
+[2m2026-01-26 08:14:16[0m [[33m[1mwarning  [0m] [1mcloudflare_challenge_detected [0m [[0m[1m[34msrc.scraper[0m][0m [36mdomain[0m=[35meventor.orienteering.sport[0m
+[2m2026-01-26 08:14:16[0m [[32m[1minfo     [0m] [1mopening_browser_for_cookies   [0m [[0m[1m[34msrc.scraper[0m][0m [36mdomain[0m=[35meventor.orienteering.sport[0m [36mattempt[0m=[35m1[0m [36mmax_attempts[0m=[35m3[0m
+patching driver executable /home/mblaudd/.local/share/undetected_chromedriver/undetected_chromedriver
+[2m2026-01-26 08:14:17[0m [[32m[1minfo     [0m] [1mwaiting_for_cloudflare_challenge[0m [[0m[1m[34msrc.scraper[0m][0m
+[2m2026-01-26 08:14:20[0m [[32m[1minfo     [0m] [1mbrowser_bypass_successful     [0m [[0m[1m[34msrc.scraper[0m][0m [36mcookie_count[0m=[35m5[0m [36mdomain[0m=[35meventor.orienteering.sport[0m
+[2m2026-01-26 08:14:20[0m [[32m[1minfo     [0m] [1mRetrying request with browser cookies...[0m [[0m[1m[34msrc.scraper[0m][0m
+[2m2026-01-26 08:14:21[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m14[0m [36mcountry[0m=[35mIOF[0m
+[2m2026-01-26 08:14:21[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m14[0m [36mpercent[0m=[35m7.1[0m
+[2m2026-01-26 08:14:48[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m5[0m [36mtotal[0m=[35m14[0m [36mpercent[0m=[35m35.7[0m
+[2m2026-01-26 08:15:22[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m10[0m [36mtotal[0m=[35m14[0m [36mpercent[0m=[35m71.4[0m
+[2m2026-01-26 08:16:04[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m14[0m [36mtotal[0m=[35m14[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-26 08:16:12[0m [[32m[1minfo     [0m] [1msleeping_between_chunks       [0m [[0m[1m[34m__main__[0m][0m [36mseconds[0m=[35m5[0m
+[2m2026-01-26 08:16:17[0m [[32m[1minfo     [0m] [1mprocessing_chunk              [0m [[0m[1m[34m__main__[0m][0m [36mindex[0m=[35m2[0m [36mtotal[0m=[35m3[0m [36mstart[0m=[35m2025-07-01[0m [36mend[0m=[35m2025-12-28[0m
+[2m2026-01-26 08:16:17[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mchunk[0m=[35m2025-07-01-2025-12-28[0m
+[2m2026-01-26 08:16:17[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mSWE[0m [36mbase_url[0m=[35mhttps://eventor.orientering.se[0m
+[2m2026-01-26 08:16:18[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m54[0m [36mcountry[0m=[35mSWE[0m
+[2m2026-01-26 08:16:18[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m1.9[0m
+[2m2026-01-26 08:16:43[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m5[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m9.3[0m
+[2m2026-01-26 08:18:24[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m10[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m18.5[0m
+[2m2026-01-26 08:19:03[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m15[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m27.8[0m
+[2m2026-01-26 08:19:46[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m20[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m37.0[0m
+[2m2026-01-26 08:20:13[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m25[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m46.3[0m
+[2m2026-01-26 08:20:46[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m30[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m55.6[0m
+[2m2026-01-26 08:21:21[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m35[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m64.8[0m
+[2m2026-01-26 08:21:55[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m40[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m74.1[0m
+[2m2026-01-26 08:22:32[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m45[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m83.3[0m
+[2m2026-01-26 08:23:07[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m50[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m92.6[0m
+[2m2026-01-26 08:23:23[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mcurrent[0m=[35m54[0m [36mtotal[0m=[35m54[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-26 08:23:24[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mchunk[0m=[35m2025-07-01-2025-12-28[0m
+[2m2026-01-26 08:23:24[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mNOR[0m [36mbase_url[0m=[35mhttps://eventor.orientering.no[0m
+[2m2026-01-26 08:23:25[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m5[0m [36mcountry[0m=[35mNOR[0m
+[2m2026-01-26 08:23:25[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m5[0m [36mpercent[0m=[35m20.0[0m
+[2m2026-01-26 08:23:57[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mcurrent[0m=[35m5[0m [36mtotal[0m=[35m5[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-26 08:24:05[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mchunk[0m=[35m2025-07-01-2025-12-28[0m
+[2m2026-01-26 08:24:05[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mIOF[0m [36mbase_url[0m=[35mhttps://eventor.orienteering.sport[0m
+[2m2026-01-26 08:24:06[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m7[0m [36mcountry[0m=[35mIOF[0m
+[2m2026-01-26 08:24:06[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m1[0m [36mtotal[0m=[35m7[0m [36mpercent[0m=[35m14.3[0m
+[2m2026-01-26 08:24:40[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m5[0m [36mtotal[0m=[35m7[0m [36mpercent[0m=[35m71.4[0m
+[2m2026-01-26 08:25:03[0m [[32m[1minfo     [0m] [1mscraping_progress             [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mcurrent[0m=[35m7[0m [36mtotal[0m=[35m7[0m [36mpercent[0m=[35m100.0[0m
+[2m2026-01-26 08:25:12[0m [[32m[1minfo     [0m] [1msleeping_between_chunks       [0m [[0m[1m[34m__main__[0m][0m [36mseconds[0m=[35m5[0m
+[2m2026-01-26 08:25:17[0m [[32m[1minfo     [0m] [1mprocessing_chunk              [0m [[0m[1m[34m__main__[0m][0m [36mindex[0m=[35m3[0m [36mtotal[0m=[35m3[0m [36mstart[0m=[35m2025-12-29[0m [36mend[0m=[35m2025-12-31[0m
+[2m2026-01-26 08:25:17[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mSWE[0m [36mchunk[0m=[35m2025-12-29-2025-12-31[0m
+[2m2026-01-26 08:25:17[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mSWE[0m [36mbase_url[0m=[35mhttps://eventor.orientering.se[0m
+[2m2026-01-26 08:25:17[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m0[0m [36mcountry[0m=[35mSWE[0m
+[2m2026-01-26 08:25:17[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mNOR[0m [36mchunk[0m=[35m2025-12-29-2025-12-31[0m
+[2m2026-01-26 08:25:17[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mNOR[0m [36mbase_url[0m=[35mhttps://eventor.orientering.no[0m
+[2m2026-01-26 08:25:17[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m0[0m [36mcountry[0m=[35mNOR[0m
+[2m2026-01-26 08:25:17[0m [[32m[1minfo     [0m] [1mscraping_source_start         [0m [[0m[1m[34m__main__[0m][0m [36mcountry[0m=[35mIOF[0m [36mchunk[0m=[35m2025-12-29-2025-12-31[0m
+[2m2026-01-26 08:25:17[0m [[32m[1minfo     [0m] [1mscraping_source               [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcountry[0m=[35mIOF[0m [36mbase_url[0m=[35mhttps://eventor.orienteering.sport[0m
+[2m2026-01-26 08:25:18[0m [[32m[1minfo     [0m] [1mevents_found                  [0m [[0m[1m[34msrc.sources.eventor_source[0m][0m [36mcount[0m=[35m0[0m [36mcountry[0m=[35mIOF[0m
+Updated partition 2025 at data/events/2025/events.json
+Updated index file at mtbo_events.json
+[2m2026-01-26 08:25:18[0m [[32m[1minfo     [0m] [1mscraping_completed            [0m [[0m[1m[34m__main__[0m][0m
+Update MTBO events: 2026-01-26
+New: 0, Changed: 19, Deleted: 0
+[2m2026-01-26 08:25:18[0m [[32m[1minfo     [0m] [1mCommit message written to .commit_msg[0m [[0m[1m[34m__main__[0m][0m
+ensuring close
+Scrape finished at mån 26 jan 2026 08:25:19 CET with exit code 0
+Changes detected. Retrieving stats...
+Commit message: Update MTBO events: 2026-01-26
+New: 0, Changed: 19, Deleted: 0
+remote: 
+remote: GitHub found 1 vulnerability on blaudden/mtbo-scraper's default branch (1 high). To find out more, visit:        
+remote:      https://github.com/blaudden/mtbo-scraper/security/dependabot/1        
+remote: 
+To github.com:blaudden/mtbo-scraper.git
+   14f829f..6ec7dc7  main -> main
+Pushed changes to git.
+Scrape and push completed successfully at mån 26 jan 2026 08:25:23 CET
