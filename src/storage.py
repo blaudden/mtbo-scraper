@@ -93,7 +93,7 @@ class Storage:
         all_new_events = []
         for source_name, source_events in events_by_source.items():
             source_changed = False
-            
+
             for event in source_events:
                 event_dict = event.to_dict()
                 existing_event = existing_map.get(event.id)
@@ -135,12 +135,10 @@ class Storage:
             if src in source_counts:
                 source_counts[src] += 1
             elif src == "MAN" and "MAN" not in source_counts:
-                # If MAN is not in config but events found, initialize it?
-                # Actually, main.py should have MAN in configs.
+                # Track MAN count even if not explicitly in active config for this run
                 source_counts["MAN"] = 1
             else:
-                # Fallback: if source not in config, we don't track its meta here
-                # but we could. For now, just focus on configured sources.
+                # Do not track metadata for unconfigured sources
                 pass
 
             # Year grouping
