@@ -72,6 +72,7 @@ Run the scraper using the provided bash script:
 - `--start-date YYYY-MM-DD` - Start date for scraping (default: 4 weeks ago)
 - `--end-date YYYY-MM-DD` - End date for scraping (default: Dec 31st of next year)
 - `--output FILE` - Output JSON file path (default: `mtbo_events.json`)
+- `--source SOURCE` - Specific source to scrape (e.g., `SWE`, `NOR`, `IOF`, `MAN`)
 - `--verbose, -v` - Increase logging verbosity (use multiple times: `-v`, `-vv`)
 - `--json-logs` - Output logs in JSON format for machine parsing
 
@@ -86,6 +87,9 @@ Run the scraper using the provided bash script:
 
 # JSON logs for automated processing
 ./scrape_now.sh --json-logs --output events.json
+
+# Scrape only IOF source
+./scrape_now.sh --source IOF
 ```
 
 See [Docs/operation.md](docs/operation.md) for detailed usage and scheduling instructions.

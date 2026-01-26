@@ -19,10 +19,11 @@ from src.utils.diff import calculate_stats
 logger = structlog.get_logger(__name__)
 
 # Configuration
-EVENTOR_CONFIGS = [
-    {"country": "SWE", "url": "https://eventor.orientering.se"},
-    {"country": "NOR", "url": "https://eventor.orientering.no"},
-    {"country": "IOF", "url": "https://eventor.orienteering.sport"},
+SOURCE_CONFIGS = [
+    {"country": "SWE", "url": "https://eventor.orientering.se", "type": "eventor"},
+    {"country": "NOR", "url": "https://eventor.orientering.no", "type": "eventor"},
+    {"country": "IOF", "url": "https://eventor.orienteering.sport", "type": "eventor"},
+    {"country": "MAN", "url": None, "type": "manual"},
 ]
 MANUAL_EVENTS_DIR = "manual_events"
 
@@ -125,6 +126,10 @@ def determine_date_range(
         "'current' (1 week back, 2 weeks forward)"
     ),
 )
+@click.option(
+    "--source",
+    help="Specific source to scrape (e.g., SWE, NOR, IOF, MAN)",
+)
 def main(
     start_date: str | None,
     end_date: str | None,
@@ -133,6 +138,7 @@ def main(
     verbose: int,
     json_logs: bool,
     mode: str,
+    source: str | None,
 ) -> None:
     """MTBO Eventor Scraper"""
     # Configure logging based on verbosity
@@ -177,6 +183,16 @@ def main(
 
     logger.info("scraper_starting", output_file=output)
 
+    # Validate source if provided
+    active_configs = SOURCE_CONFIGS
+    if source:
+        source_upper = source.upper()
+        active_configs = [c for c in SOURCE_CONFIGS if c["country"] == source_upper]
+        if not active_configs:
+            valid_sources = ", ".join([c["country"] for c in SOURCE_CONFIGS])
+            logger.error("invalid_source", provided=source, valid_sources=valid_sources)
+            sys.exit(1)
+
     start_date, end_date = determine_date_range(start_date, end_date, mode)
 
     logger.info("date_range_determined", start_date=start_date, end_date=end_date)
@@ -188,81 +204,90 @@ def main(
 
     all_events: list[Event] = []
 
-    # 1. Load Manual Events
-    manual_source = ManualSource(MANUAL_EVENTS_DIR)
-    manual_events = manual_source.load_events()
-    all_events.extend(manual_events)
-    logger.debug(
-        "manual_events_loaded", count=len(manual_events), source_dir=MANUAL_EVENTS_DIR
-    )
-
     # Initialize Sources
-    sources = []
-    for config in EVENTOR_CONFIGS:
-        sources.append(EventorSource(config["country"], config["url"]))
+    eventor_sources: list[EventorSource] = []
+    run_manual = False
 
-    # Process in chunks
-    chunk_size_months = 6
-    chunks = list(chunk_date_range(start_date, end_date, chunk_size_months))
+    for config in active_configs:
+        if config["type"] == "eventor":
+            eventor_sources.append(EventorSource(config["country"], config["url"]))
+        elif config["type"] == "manual":
+            run_manual = True
 
-    for i, (chunk_start, chunk_end) in enumerate(chunks):
-        logger.info(
-            "processing_chunk",
-            index=i + 1,
-            total=len(chunks),
-            start=chunk_start,
-            end=chunk_end,
+    # 1. Load Manual Events
+    if run_manual:
+        manual_source = ManualSource(MANUAL_EVENTS_DIR)
+        manual_events = manual_source.load_events()
+        all_events.extend(manual_events)
+        logger.debug(
+            "manual_events_loaded",
+            count=len(manual_events),
+            source_dir=MANUAL_EVENTS_DIR,
         )
 
-        chunk_events: list[Event] = []
+    # 2. Process Eventor Sources in chunks
+    if eventor_sources:
+        chunk_size_months = 6
+        chunks = list(chunk_date_range(start_date, end_date, chunk_size_months))
 
-        for source in sources:
-            try:
-                logger.info(
-                    "scraping_source_start",
-                    country=source.country,
-                    chunk=f"{chunk_start}-{chunk_end}",
-                )
+        for i, (chunk_start, chunk_end) in enumerate(chunks):
+            logger.info(
+                "processing_chunk",
+                index=i + 1,
+                total=len(chunks),
+                start=chunk_start,
+                end=chunk_end,
+            )
 
-                # 1. Fetch List for this chunk
-                events = source.fetch_event_list(chunk_start, chunk_end)
-                total_events = len(events)
+            chunk_events: list[Event] = []
 
-                # 2. Fetch Details
-                for idx, event in enumerate(events):
-                    # Log progress every 5 events or for the first/last one
-                    if idx == 0 or (idx + 1) % 5 == 0 or (idx + 1) == total_events:
-                        percent = 0.0
-                        if total_events > 0:
-                            percent = round(((idx + 1) / total_events) * 100, 1)
+            for source in eventor_sources:
+                try:
+                    logger.info(
+                        "scraping_source_start",
+                        country=source.country,
+                        chunk=f"{chunk_start}-{chunk_end}",
+                    )
 
-                        logger.info(
-                            "scraping_progress",
-                            country=source.country,
-                            current=idx + 1,
-                            total=total_events,
-                            percent=percent,
-                        )
+                    # 1. Fetch List for this chunk
+                    events = source.fetch_event_list(chunk_start, chunk_end)
+                    total_events = len(events)
 
-                    detailed_event = source.fetch_event_details(event)
-                    if detailed_event:
-                        chunk_events.append(detailed_event)
-            except Exception as e:
-                logger.error(
-                    "source_processing_failed",
-                    country=source.country,
-                    chunk=f"{chunk_start}-{chunk_end}",
-                    error=str(e),
-                )
-                continue
+                    # 2. Fetch Details
+                    for idx, event in enumerate(events):
+                        # Log progress every 5 events or for the first/last one
+                        if idx == 0 or (idx + 1) % 5 == 0 or (idx + 1) == total_events:
+                            percent = 0.0
+                            if total_events > 0:
+                                percent = round(((idx + 1) / total_events) * 100, 1)
 
-        all_events.extend(chunk_events)
+                            logger.info(
+                                "scraping_progress",
+                                country=source.country,
+                                current=idx + 1,
+                                total=total_events,
+                                percent=percent,
+                            )
 
-        # Sleep between chunks if not the last one
-        if i < len(chunks) - 1:
-            sleep_sec = 5
-            logger.info("sleeping_between_chunks", seconds=sleep_sec)
-            time.sleep(sleep_sec)
+                        detailed_event = source.fetch_event_details(event)
+                        if detailed_event:
+                            chunk_events.append(detailed_event)
+                except Exception as e:
+                    logger.error(
+                        "source_processing_failed",
+                        country=source.country,
+                        chunk=f"{chunk_start}-{chunk_end}",
+                        error=str(e),
+                    )
+                    continue
+
+            all_events.extend(chunk_events)
+
+            # Sleep between chunks if not the last one
+            if i < len(chunks) - 1:
+                sleep_sec = 5
+                logger.info("sleeping_between_chunks", seconds=sleep_sec)
+                time.sleep(sleep_sec)
 
     # Save returns the new list of events (merged)
     new_events = storage.save(all_events)

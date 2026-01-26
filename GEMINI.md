@@ -39,6 +39,7 @@ graph TD
 ## 🚀 Common Commands
 
 - **Scrape**: `./scrape_now.sh`
+- **Scrape Source**: `./scrape_now.sh --source IOF`
 - **Test**: `./run_tests.sh`
 - **Type Check**: `uv run mypy src/`
 - **Lint**: `uv run ruff check .`
