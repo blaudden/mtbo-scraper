@@ -93,36 +93,7 @@ class Storage:
         all_new_events = []
         for source_name, source_events in events_by_source.items():
             source_changed = False
-            new_ids = {e.id for e in source_events}
-
-            # Special handling for MAN: Sync deletions
-            if source_name == "MAN":
-                current_manual_ids = [
-                    eid
-                    for eid in existing_map.keys()
-                    if eid.startswith("MAN_") or "-" in eid  # Basic manual ID pattern
-                ]
-
-                # Refine heuristic: identify what actually identifies as MAN
-                def _heuristic_is_man(eid: str) -> bool:
-                    if (
-                        eid.startswith("SWE_")
-                        or eid.startswith("NOR_")
-                        or eid.startswith("IOF_")
-                    ):
-                        return False
-                    return True
-
-                current_manual_ids = [
-                    eid for eid in existing_map.keys() if _heuristic_is_man(eid)
-                ]
-
-                for eid in current_manual_ids:
-                    if eid not in new_ids:
-                        logger.info(f"Removing deleted manual event: {eid}")
-                        del existing_map[eid]
-                        source_changed = True
-
+            
             for event in source_events:
                 event_dict = event.to_dict()
                 existing_event = existing_map.get(event.id)
