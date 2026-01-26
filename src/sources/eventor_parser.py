@@ -1188,13 +1188,13 @@ class EventorParser:
                     # Data Quality: Normalize start_number
                     start_number: str | int | None = None
                     if start_number_str:
-                        # Strip any remaining whitespace
-                        start_number_str = start_number_str.strip()
-                        if start_number_str:
-                            if start_number_str.isdigit():
-                                start_number = int(start_number_str)
-                            else:
-                                start_number = start_number_str
+                        # Extract only digits for integer conversion
+                        # to handle hidden characters or non-breaking spaces
+                        digits_only = "".join(re.findall(r"\d+", start_number_str))
+                        if digits_only and digits_only == start_number_str.strip():
+                            start_number = int(digits_only)
+                        else:
+                            start_number = start_number_str.strip()
 
                     if name:  # basic validation
                         participants.append(

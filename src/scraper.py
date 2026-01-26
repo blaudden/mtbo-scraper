@@ -1,3 +1,5 @@
+import json
+import os
 import random
 import time
 from typing import cast
@@ -45,6 +47,48 @@ class Scraper:
                 ),
             }
         )
+
+        # Cookie persistence
+        self.cookie_file = ".cookies.json"
+        self._load_cookies()
+
+    def _load_cookies(self) -> None:
+        """Loads cookies from disk if they exist."""
+        if not os.path.exists(self.cookie_file):
+            return
+
+        try:
+            with open(self.cookie_file, encoding="utf-8") as f:
+                cookies = json.load(f)
+                for cookie_dict in cookies:
+                    self.scraper.cookies.set(
+                        cookie_dict["name"],
+                        cookie_dict["value"],
+                        domain=cookie_dict.get("domain", ""),
+                        path=cookie_dict.get("path", "/"),
+                    )
+            logger.info("cookies_loaded_from_disk", count=len(cookies))
+        except Exception as e:
+            logger.warning("cookie_load_failed", error=str(e))
+
+    def _save_cookies(self) -> None:
+        """Saves current session cookies to disk."""
+        try:
+            cookies = []
+            for cookie in self.scraper.cookies:
+                cookies.append(
+                    {
+                        "name": cookie.name,
+                        "value": cookie.value,
+                        "domain": cookie.domain,
+                        "path": cookie.path,
+                    }
+                )
+            with open(self.cookie_file, "w", encoding="utf-8") as f:
+                json.dump(cookies, f, indent=2)
+            logger.info("cookies_saved_to_disk", count=len(cookies))
+        except Exception as e:
+            logger.warning("cookie_save_failed", error=str(e))
 
     def _wait_for_rate_limit(self) -> None:
         """Sleeps for a random amount of time to respect rate limits."""
@@ -122,11 +166,18 @@ class Scraper:
             options = uc.ChromeOptions()
             options.add_argument("--no-sandbox")
             options.add_argument("--disable-dev-shm-usage")
-            # Non-headless mode required for Cloudflare bypass
+            # Specify browser path to avoid mismatch with SNAP chromium (143)
+            # as ChromeDriver usually defaults to 144 now
+            browser_path = "/usr/bin/google-chrome"
+            if not os.path.exists(browser_path):
+                # Fallback to standard location
+                browser_path = None
 
             driver = None
             try:
-                driver = uc.Chrome(options=options)
+                driver = uc.Chrome(
+                    options=options, browser_executable_path=browser_path
+                )
                 driver.get(base_url)
 
                 # Wait for Cloudflare challenge to resolve
@@ -160,6 +211,9 @@ class Scraper:
                         domain=cookie.get("domain", ""),
                         path=cookie.get("path", "/"),
                     )
+
+                # Save new cookies to disk
+                self._save_cookies()
 
                 # Also update user-agent to match the browser
                 user_agent = driver.execute_script("return navigator.userAgent;")

@@ -14,3 +14,5 @@ venv/
 # Common IDE folders
 .idea/
 .vscode/
+# Scraping data
+.cookies.json

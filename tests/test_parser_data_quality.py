@@ -59,6 +59,19 @@ def test_start_number_handling_various_formats():
     assert numeric["start_number"] == 123
     assert isinstance(numeric["start_number"], int)
 
+    # Test with hidden characters (non-breaking space)
+    html_hidden = """
+    <table>
+        <tbody>
+            <tr><td class="n">Hidden</td><td class="o">Club</td><td class="b"> 202&nbsp;</td></tr>
+        </tbody>
+    </table>
+    """
+    participants_hidden = parser.parse_participant_list(html_hidden)
+    hidden = next(p for p in participants_hidden if p["name"] == "Hidden")
+    assert hidden["start_number"] == 202
+    assert isinstance(hidden["start_number"], int)
+
     alpha = next(p for p in participants if p["name"] == "Alpha")
     assert alpha["start_number"] == "123A"
     assert isinstance(alpha["start_number"], str)
