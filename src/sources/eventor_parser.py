@@ -1181,7 +1181,20 @@ class EventorParser:
                 if name_cell and club_cell:
                     name = name_cell.get_text(strip=True)
                     club = club_cell.get_text(strip=True)
-                    start_number = num_cell.get_text(strip=True) if num_cell else None
+                    start_number_str = (
+                        num_cell.get_text(strip=True) if num_cell else None
+                    )
+
+                    # Data Quality: Normalize start_number
+                    start_number: str | int | None = None
+                    if start_number_str:
+                        # Strip any remaining whitespace
+                        start_number_str = start_number_str.strip()
+                        if start_number_str:
+                            if start_number_str.isdigit():
+                                start_number = int(start_number_str)
+                            else:
+                                start_number = start_number_str
 
                     if name:  # basic validation
                         participants.append(

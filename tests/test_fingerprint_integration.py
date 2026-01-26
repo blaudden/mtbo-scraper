@@ -90,6 +90,11 @@ def test_fingerprint_and_yaml_saving(
         assert "participants" in content
         assert len(content["participants"]) > 0
 
+        # Verify that start_number is an integer in the YAML
+        p1 = content["participants"][0]
+        if "start_number" in p1 and p1["start_number"] is not None:
+            assert isinstance(p1["start_number"], int)
+
         # Verify that the URL is attached to the RACE, not the EVENT
         local_urls_event = [u for u in updated_event.urls if u.type == "LocalStartList"]
         assert len(local_urls_event) == 0, (
