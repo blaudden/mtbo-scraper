@@ -515,6 +515,66 @@
       "entry_deadlines": []
     },
     {
+      "id": "IOF_8906",
+      "name": "MTBO Italian Cup Middle distance",
+      "start_time": "2026-04-17",
+      "end_time": "2026-04-17",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Italy",
+          "country_code": "IOF"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "3477524977"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:BBoEAG0dCgAXEQsTGxEQC0hdCgY="
+        }
+      ],
+      "classes": [],
+      "urls": [
+        {
+          "type": "Website",
+          "url": "http://www.nirvanaverde.it",
+          "title": null,
+          "last_updated_at": null
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": null,
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "MTBO Italian Cup Middle distance",
+          "datetimez": "2026-04-17T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
       "id": "IOF_8806",
       "name": "MTBO Spring days 2026 - Sprint",
       "start_time": "2026-04-18",
@@ -652,6 +712,66 @@
               "last_updated_at": null
             }
           ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_8907",
+      "name": "MTBO Italian Championships Long Distance",
+      "start_time": "2026-04-18",
+      "end_time": "2026-04-18",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Italy",
+          "country_code": "IOF"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "3477524977"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:BBoEAG0dCgAXEQsTGxEQC0hdCgY="
+        }
+      ],
+      "classes": [],
+      "urls": [
+        {
+          "type": "Website",
+          "url": "http://www.nirvanaverde.it",
+          "title": null,
+          "last_updated_at": null
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "MTBO Italian Championships Long Distance",
+          "datetimez": "2026-04-18T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
           "documents": [],
           "entry_counts": null,
           "start_counts": null,
@@ -1206,7 +1326,7 @@
         },
         {
           "role": "Contact email",
-          "name": "enc:AAAAAB9DUUQhFhUdQwQW"
+          "name": "enc:CBkWDUIQUUJTRiUUHRtMH1k="
         },
         {
           "role": "Event directors",
@@ -1237,7 +1357,7 @@
       "urls": [
         {
           "type": "Website",
-          "url": "https://emtboc2026.fpo.pt/www/",
+          "url": "https://emtboc2026.fpo.pt",
           "title": null,
           "last_updated_at": null
         }
@@ -1359,7 +1479,7 @@
         },
         {
           "role": "Contact email",
-          "name": "enc:AAAAAB9DUUQhFhUdQwQW"
+          "name": "enc:CBkWDUIQUUJTRiUUHRtMH1k="
         },
         {
           "role": "Event directors",
@@ -1392,7 +1512,7 @@
       "urls": [
         {
           "type": "Website",
-          "url": "https://emtboc2026.fpo.pt/www/",
+          "url": "https://emtboc2026.fpo.pt",
           "title": null,
           "last_updated_at": null
         }
@@ -1469,6 +1589,98 @@
           "datetimez": "2026-05-28T09:00:00+01:00",
           "discipline": "Other",
           "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_57478",
+      "name": "MTBO, DM, medel, Ångermanland",
+      "start_time": "2026-06-24",
+      "end_time": "2026-06-24",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Regional"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Skogslöparna",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Eero Niemi"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:CBEQAG0dChcMGUsBCA=="
+        },
+        {
+          "role": "Event director",
+          "name": "Per-Johan Josefsson"
+        },
+        {
+          "role": "Course setter",
+          "name": "Per-Johan Josefsson"
+        },
+        {
+          "role": "Event controller",
+          "name": "Eero Niemi"
+        }
+      ],
+      "classes": [
+        "D10",
+        "D12",
+        "D14",
+        "D16",
+        "D17-20",
+        "D21",
+        "D40",
+        "D50",
+        "D60",
+        "D70",
+        "H10",
+        "H12",
+        "H14",
+        "H16",
+        "H17-20",
+        "H21",
+        "H40",
+        "H50",
+        "H60",
+        "H70",
+        "TrailO Öppen Kort",
+        "TrailO Öppen Lång",
+        "TrailO Öppen Mellan",
+        "Öppen Kort",
+        "Öppen Lång",
+        "Öppen Mellan"
+      ],
+      "urls": [],
+      "documents": [],
+      "information": null,
+      "region": "Ångermanland",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "MTBO, DM, medel, Ångermanland",
+          "datetimez": "2026-06-24T00:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
           "position": null,
           "areas": [],
           "urls": [],
@@ -4567,6 +4779,112 @@
           "datetimez": "2026-09-19T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_8915",
+      "name": "Coppa Italia Middle",
+      "start_time": "2026-09-25",
+      "end_time": "2026-09-25",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": "Team",
+      "organisers": [
+        {
+          "name": "Italy",
+          "country_code": "IOF"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "3497736022"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:GREDAl4YGhQTGRAeLRMPDkQfTREOHQ=="
+        }
+      ],
+      "classes": [],
+      "urls": [],
+      "documents": [],
+      "information": null,
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Coppa Italia Middle",
+          "datetimez": "2026-09-25T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_8916",
+      "name": "Coppa Italia Long",
+      "start_time": "2026-09-26",
+      "end_time": "2026-09-26",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": "Team",
+      "organisers": [
+        {
+          "name": "Italy",
+          "country_code": "IOF"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "3497736022"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:GREDAl4YGhQTGRAeLRMPDkQfTREOHQ=="
+        }
+      ],
+      "classes": [],
+      "urls": [],
+      "documents": [],
+      "information": null,
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Coppa Italia Long",
+          "datetimez": "2026-09-26T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
           "position": null,
           "areas": [],
           "urls": [],
