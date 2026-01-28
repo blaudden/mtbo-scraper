@@ -53,7 +53,14 @@
         }
       ],
       "classes": [],
-      "urls": [],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/57406",
+          "title": null,
+          "last_updated_at": null
+        }
+      ],
       "documents": [
         {
           "type": "Invitation",
@@ -954,6 +961,12 @@
       "classes": [],
       "urls": [
         {
+          "type": "Path",
+          "url": "Events/Show/54359",
+          "title": null,
+          "last_updated_at": null
+        },
+        {
           "type": "Series",
           "url": "/Standings/View/Series/1539",
           "title": "Svenska Cupen MTBO 2026",
@@ -1079,6 +1092,12 @@
       ],
       "classes": [],
       "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/54361",
+          "title": null,
+          "last_updated_at": null
+        },
         {
           "type": "Series",
           "url": "/Standings/View/Series/1539",
@@ -1669,7 +1688,14 @@
         "Öppen Lång",
         "Öppen Mellan"
       ],
-      "urls": [],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/57478",
+          "title": null,
+          "last_updated_at": null
+        }
+      ],
       "documents": [],
       "information": null,
       "region": "Ångermanland",
@@ -1727,6 +1753,12 @@
       ],
       "classes": [],
       "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/50597",
+          "title": null,
+          "last_updated_at": null
+        },
         {
           "type": "Website",
           "url": "https://www.oringen.se",
@@ -2392,6 +2424,12 @@
       ],
       "urls": [
         {
+          "type": "Path",
+          "url": "Events/Show/57105",
+          "title": null,
+          "last_updated_at": null
+        },
+        {
           "type": "Series",
           "url": "/Standings/View/Series/1539",
           "title": "Svenska Cupen MTBO 2026",
@@ -2636,6 +2674,12 @@
         "Öppen mellan"
       ],
       "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/57106",
+          "title": null,
+          "last_updated_at": null
+        },
         {
           "type": "Series",
           "url": "/Standings/View/Series/1539",
@@ -2885,6 +2929,12 @@
         "Öppen mellan"
       ],
       "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/57107",
+          "title": null,
+          "last_updated_at": null
+        },
         {
           "type": "Series",
           "url": "/Standings/View/Series/1539",
@@ -4326,6 +4376,12 @@
       "classes": [],
       "urls": [
         {
+          "type": "Path",
+          "url": "Events/Show/56226",
+          "title": null,
+          "last_updated_at": null
+        },
+        {
           "type": "Website",
           "url": "http://www.mtbo26.se",
           "title": null,
@@ -4398,6 +4454,12 @@
       "classes": [],
       "urls": [
         {
+          "type": "Path",
+          "url": "Events/Show/56227",
+          "title": null,
+          "last_updated_at": null
+        },
+        {
           "type": "Website",
           "url": "http://www.mtbo26.se",
           "title": null,
@@ -4469,6 +4531,12 @@
       ],
       "classes": [],
       "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/56228",
+          "title": null,
+          "last_updated_at": null
+        },
         {
           "type": "Website",
           "url": "http://www.mtbo26.se",
@@ -4702,7 +4770,14 @@
         }
       ],
       "classes": [],
-      "urls": [],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/53809",
+          "title": null,
+          "last_updated_at": null
+        }
+      ],
       "documents": [],
       "information": null,
       "region": "Blekinge\nSkåne\nSmåland",
@@ -4767,7 +4842,14 @@
         }
       ],
       "classes": [],
-      "urls": [],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/53810",
+          "title": null,
+          "last_updated_at": null
+        }
+      ],
       "documents": [],
       "information": null,
       "region": "Blekinge\nSkåne\nSmåland",
