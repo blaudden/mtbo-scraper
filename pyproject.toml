@@ -10,6 +10,7 @@ dependencies = [
     "cloudscraper @ git+https://github.com/VeNoMouS/cloudscraper.git@3.0.0",
     "jsonschema>=4.26.0",
     "lxml>=6.0.2",
+    "pycountry>=24.6.1",
     "pyvirtualdisplay>=3.0",
     "pyyaml>=6.0.3",
     "requests>=2.32.5",

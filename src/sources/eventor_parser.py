@@ -6,6 +6,7 @@ from typing import Any
 from bs4 import BeautifulSoup, Tag
 
 from src.models import Area, Document, Event, Official, Organiser, Position, Race, Url
+from src.utils.country import get_iso_country_code
 from src.utils.crypto import Crypto
 from src.utils.date_and_time import (
     extract_time_from_date,
@@ -241,9 +242,22 @@ class EventorParser:
             organiser_names = [
                 org.strip() for org in org_text.split("\n") if org.strip()
             ]
-            organisers = [
-                Organiser(name=o, country_code=country) for o in organiser_names
+            organiser_names = [
+                org.strip() for org in org_text.split("\n") if org.strip()
             ]
+
+            organisers = []
+            for org_name in organiser_names:
+                org_country = country
+
+                # If it's an IOF event, try to resolve the real country
+                # from the organizer name
+                if country == "IOF":
+                    resolved_code = get_iso_country_code(org_name)
+                    if resolved_code:
+                        org_country = resolved_code
+
+                organisers.append(Organiser(name=org_name, country_code=org_country))
 
             # Status
             raw_status = "Active"
@@ -596,7 +610,12 @@ class EventorParser:
                             attributes[key] = value
 
                         if venue_country == "IOF" and "federation" in key.lower():
-                            venue_country = value.strip()
+                            venue_country_name = value.strip()
+                            resolved_code = get_iso_country_code(venue_country_name)
+                            if resolved_code:
+                                venue_country = resolved_code
+                            else:
+                                venue_country = venue_country_name
 
         return attributes, venue_country
 
@@ -1129,7 +1148,9 @@ class EventorParser:
                 if areas:
                     event.races[i].areas.extend(areas)
 
-    def parse_participant_list(self, html_content: str) -> list[dict[str, str | None]]:
+    def parse_participant_list(
+        self, html_content: str
+    ) -> list[dict[str, str | int | None]]:
         """Parses a start, result, or entry list to extract participants.
 
         Args:
