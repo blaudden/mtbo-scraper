@@ -456,8 +456,19 @@ class EventorParser:
             event,
         )
         # Extract federation country from event ID (e.g., "IOF", "SWE", "NOR")
-        federation_country = event.id.split("_")[0]
+        federation_country = (
+            event.id.split("_")[0] if "_" in event.id else event.id.split("-")[0]
+        )
         self._apply_attributes(event, attributes, federation_country)
+
+        # Add a relative path URL for the event by stripping the base URL if present
+        if event.url:
+            path = event.url
+            if "://" in path:
+                path = path.split("://", 1)[1].split("/", 1)[1]
+            elif path.startswith("/"):
+                path = path.lstrip("/")
+            event.urls.append(Url(type="Path", url=path))
 
         # 2. Info Text
         event.information = self._extract_info_text(content_root)
