@@ -1,0 +1,362 @@
+participants:
+- class: Men 20
+  club: FRA
+  name: Augustin Leclere
+  start_number: 301
+- class: Men 20
+  club: FRA
+  name: Antoine Lesquer
+  start_number: 302
+- class: Men 20
+  club: FRA
+  name: Jocelin Lauret
+  start_number: 303
+- class: Men 20
+  club: FIN
+  name: Akseli Pesu
+  start_number: 304
+- class: Men 20
+  club: SWE
+  name: Melvin Lofgren
+  start_number: 305
+- class: Men 20
+  club: FIN
+  name: Nuutti Toivonen
+  start_number: 306
+- class: Men 20
+  club: ESP
+  name: Nicolas Lopez Gonzalez
+  start_number: 307
+- class: Men 20
+  club: FIN
+  name: Eevert Kenttamies
+  start_number: 308
+- class: Men 20
+  club: ITA
+  name: Matteo Traversi Montani
+  start_number: 309
+- class: Men 20
+  club: ITA
+  name: Rado Kalc
+  start_number: 310
+- class: Men 20
+  club: POL
+  name: Filip Janowski
+  start_number: 311
+- class: Men 20
+  club: ESP
+  name: Joan Montes
+  start_number: 312
+- class: Men 20
+  club: LTU
+  name: Daumantas Kiela
+  start_number: 313
+- class: Men 20
+  club: FIN
+  name: Eemil Koskinen
+  start_number: 314
+- class: Men 20
+  club: GER
+  name: Per Haehnel
+  start_number: 315
+- class: Men 20
+  club: POL
+  name: Norman Szymanski
+  start_number: 316
+- class: Men 20
+  club: SWE
+  name: Arvid Svensson
+  start_number: 317
+- class: Men 20
+  club: ESP
+  name: Marcos Silvarrey Oreiro
+  start_number: 318
+- class: Men 20
+  club: BUL
+  name: Marco Pelov
+  start_number: 319
+- class: Men 20
+  club: SWE
+  name: Axel Grafnings
+  start_number: 320
+- class: Men 20
+  club: POL
+  name: Oskar Szymanski
+  start_number: 321
+- class: Men 20
+  club: HUN
+  name: Bence Tamas
+  start_number: 322
+- class: Men 20
+  club: CZE
+  name: Jakub Racansky
+  start_number: 323
+- class: Men 20
+  club: LAT
+  name: Martins Mezsargs
+  start_number: 324
+- class: Men 20
+  club: LTU
+  name: Arnas Sausaitis
+  start_number: 325
+- class: Men 20
+  club: LAT
+  name: Ricards Bisenieks
+  start_number: 326
+- class: Men 20
+  club: EST
+  name: Kerto Kaasiku
+  start_number: 327
+- class: Men 20
+  club: LTU
+  name: Dziugas Kavaliauskas
+  start_number: 328
+- class: Men 20
+  club: EST
+  name: Kennet Keerberg
+  start_number: 329
+- class: Men 20
+  club: CZE
+  name: Tomas Polak
+  start_number: 330
+- class: Men 20
+  club: SWE
+  name: Joel Holmgard
+  start_number: 331
+- class: Men 20
+  club: LTU
+  name: Matas Stankunas
+  start_number: 332
+- class: Men 20
+  club: BUL
+  name: Rostislav Kostadinov
+  start_number: 333
+- class: Men 20
+  club: CZE
+  name: Eduard Toloch
+  start_number: 334
+- class: Men 20
+  club: FIN
+  name: Juuso Koski
+  start_number: 335
+- class: Men 20
+  club: LAT
+  name: Edijs Cakurs
+  start_number: 336
+- class: Men 20
+  club: CZE
+  name: Tomas Zrnik
+  start_number: 337
+- class: Men 20
+  club: FIN
+  name: Eetu Muhonen
+  start_number: 338
+- class: Men 20
+  club: POR
+  name: David Marques
+  start_number: 339
+- class: Men 20
+  club: CZE
+  name: Lukas Tuma
+  start_number: 340
+- class: Men 20
+  club: ITA
+  name: Michael Wild
+  start_number: 341
+- class: Men 20
+  club: POL
+  name: Dawid Marszalek
+  start_number: 342
+- class: Men 20
+  club: CZE
+  name: Antonin Svoboda
+  start_number: 343
+- class: Men 20
+  club: POL
+  name: Bartosz Malinowski
+  start_number: 344
+- class: Men 20
+  club: EST
+  name: Aksel Markus Hallik
+  start_number: 345
+- class: Men 20
+  club: LAT
+  name: Marts Poreiters
+  start_number: 346
+- class: Men 20
+  club: POL
+  name: Wojciech Malinowski
+  start_number: 347
+- class: Men 20
+  club: LAT
+  name: Adrians Poreiters
+  start_number: 348
+- class: Men 20
+  club: POR
+  name: Diogo Virginia
+  start_number: 349
+- class: Women 20
+  club: FRA
+  name: Jade Boussier
+  start_number: 401
+- class: Women 20
+  club: CZE
+  name: Sofie Stranska
+  start_number: 402
+- class: Women 20
+  club: LTU
+  name: Irmante Aleliunaite
+  start_number: 403
+- class: Women 20
+  club: FRA
+  name: Lola Colle
+  start_number: 404
+- class: Women 20
+  club: DEN
+  name: Sofie Okkels Jensen
+  start_number: 405
+- class: Women 20
+  club: CZE
+  name: Tereza Kadlecova
+  start_number: 406
+- class: Women 20
+  club: FIN
+  name: EmmaRiikka Laamanen
+  start_number: 407
+- class: Women 20
+  club: FIN
+  name: Kaisla Hakkinen
+  start_number: 408
+- class: Women 20
+  club: AUS
+  name: Maya Bennette
+  start_number: 409
+- class: Women 20
+  club: EST
+  name: Sandra Arak
+  start_number: 410
+- class: Women 20
+  club: CZE
+  name: Adela Ryglova
+  start_number: 411
+- class: Women 20
+  club: ESP
+  name: Sofia Martinez Gomez
+  start_number: 412
+- class: Women 20
+  club: ESP
+  name: Alba Munoz del Campo
+  start_number: 413
+- class: Women 20
+  club: DEN
+  name: Miri Brunstedt Noergaard
+  start_number: 414
+- class: Women 20
+  club: POL
+  name: Urszula Wasiewicz
+  start_number: 415
+- class: Women 20
+  club: LAT
+  name: Adele Balanasa
+  start_number: 416
+- class: Women 20
+  club: FIN
+  name: Aino Kankaanpaa
+  start_number: 417
+- class: Women 20
+  club: LAT
+  name: Annija Osane
+  start_number: 418
+- class: Women 20
+  club: POL
+  name: Maja Brzezinska
+  start_number: 419
+- class: Women 20
+  club: SWE
+  name: Emilia Jakobsson
+  start_number: 420
+- class: Women 20
+  club: LTU
+  name: Goda Kucejevaite
+  start_number: 421
+- class: Women 20
+  club: GER
+  name: Charlotte Anders
+  start_number: 422
+- class: Women 20
+  club: ITA
+  name: Sofia Dainese
+  start_number: 423
+- class: Women 20
+  club: LTU
+  name: Beatrice Simkute
+  start_number: 424
+- class: Women 20
+  club: ESP
+  name: Noa Rodriguez Sobrado
+  start_number: 425
+- class: Women 20
+  club: SWE
+  name: Hennie Lofgren
+  start_number: 426
+- class: Women 20
+  club: CZE
+  name: Marketa Fiserova
+  start_number: 427
+- class: Women 20
+  club: FIN
+  name: Liida Lahti
+  start_number: 428
+- class: Women 20
+  club: LTU
+  name: Vytene Puisyte
+  start_number: 429
+- class: Women 20
+  club: SWE
+  name: Emilia Lundstedt
+  start_number: 430
+- class: Women 20
+  club: GER
+  name: Linda Brandt
+  start_number: 431
+- class: Women 20
+  club: FIN
+  name: Karoliina Laamanen
+  start_number: 432
+- class: Women 20
+  club: CZE
+  name: Sarka Rypackova
+  start_number: 433
+- class: Women 20
+  club: SUI
+  name: Malin Lara Roehrl
+  start_number: 434
+- class: Women 20
+  club: FIN
+  name: Emma Lang
+  start_number: 435
+- class: Women 20
+  club: POL
+  name: Matylda Pietrowska
+  start_number: 436
+- class: Women 20
+  club: GER
+  name: Laura Faltejskova
+  start_number: 437
+- class: Women 20
+  club: CZE
+  name: Beata Ryglova
+  start_number: 438
+- class: Women 20
+  club: POL
+  name: Kamila Klaus
+  start_number: 439
+- class: Women 20
+  club: HKG
+  name: Tsz Yau Lee
+  start_number: 440
+- class: Women 20
+  club: FRA
+  name: Prune Masson
+  start_number: 441
+race_number: 3

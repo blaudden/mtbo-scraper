@@ -1,0 +1,426 @@
+participants:
+- class: MEN
+  club: Russia
+  name: Anton Foliforov
+  start_number: 101
+- class: MEN
+  club: Russia
+  name: Ruslan Gritsan
+  start_number: 102
+- class: MEN
+  club: Czech Republic
+  name: Jiri Hradil
+  start_number: 103
+- class: MEN
+  club: Norway
+  name: Hans Jorgen Kvale
+  start_number: 104
+- class: MEN
+  club: France
+  name: Baptiste Fuchs
+  start_number: 105
+- class: MEN
+  club: Estonia
+  name: Lauri Malsroos
+  start_number: 106
+- class: MEN
+  club: Finland
+  name: Jussi Laurila
+  start_number: 107
+- class: MEN
+  club: Finland
+  name: Pekka Niemi
+  start_number: 108
+- class: MEN
+  club: Russia
+  name: Valeriy Gluhov
+  start_number: 109
+- class: MEN
+  club: Italy
+  name: Luca Dallavalle
+  start_number: 110
+- class: MEN
+  club: France
+  name: Cédric Beill
+  start_number: 111
+- class: MEN
+  club: Austria MTBO Elite Team
+  name: Kevin Haselsberger
+  start_number: 112
+- class: MEN
+  club: Czech Republic
+  name: Marek Pospisek
+  start_number: 113
+- class: MEN
+  club: France
+  name: Clément Souvray
+  start_number: 114
+- class: MEN
+  club: Czech Republic
+  name: Vojtech Stransky
+  start_number: 115
+- class: MEN
+  club: Finland
+  name: Tuomo Lahtinen
+  start_number: 116
+- class: MEN
+  club: Lithuania
+  name: Jonas Maišelis
+  start_number: 117
+- class: MEN
+  club: Austria MTBO Elite Team
+  name: Bernhard Schachinger
+  start_number: 118
+- class: MEN
+  club: Finland
+  name: Samuli Saarela
+  start_number: 119
+- class: MEN
+  club: Russia
+  name: Grigory Medvedev
+  start_number: 120
+- class: MEN
+  club: Denmark
+  name: Rasmus Sögaard
+  start_number: 121
+- class: MEN
+  club: Czech Republic
+  name: Jan Svoboda
+  start_number: 123
+- class: MEN
+  club: Czech Republic
+  name: Martin Sevcik
+  start_number: 124
+- class: MEN
+  club: Austria MTBO Elite Team
+  name: Tobias Breitschädel
+  start_number: 125
+- class: MEN
+  club: France
+  name: Yoann Garde
+  start_number: 126
+- class: MEN
+  club: Lithuania
+  name: Regimantas Kavaliauskas
+  start_number: 127
+- class: MEN
+  club: Sweden
+  name: Linus Karlsson Mood
+  start_number: 128
+- class: MEN
+  club: Sweden
+  name: Marcus Jansson
+  start_number: 130
+- class: MEN
+  club: Italy
+  name: Piero Turra
+  start_number: 131
+- class: MEN
+  club: Estonia
+  name: Margus Hallik
+  start_number: 132
+- class: MEN
+  club: Sweden
+  name: Anders Frisk
+  start_number: 133
+- class: MEN
+  club: Austria MTBO Elite Team
+  name: Florian Exler
+  start_number: 134
+- class: MEN
+  club: Portugal
+  name: Joao Ferreira
+  start_number: 135
+- class: MEN
+  club: Austria MTBO Elite Team
+  name: Andreas Waldmann
+  start_number: 137
+- class: MEN
+  club: Lithuania
+  name: Donatas Mickus
+  start_number: 138
+- class: MEN
+  club: Czech Republic
+  name: Jan Lauerman
+  start_number: 139
+- class: MEN
+  club: Finland
+  name: Anders Blomster
+  start_number: 140
+- class: MEN
+  club: Russia
+  name: Dmitry Gladilin
+  start_number: 141
+- class: MEN
+  club: Hungary
+  name: László Rózsa
+  start_number: 142
+- class: MEN
+  club: Italy
+  name: Riccardo Rossetto
+  start_number: 143
+- class: MEN
+  club: Slovakia
+  name: Andrej Cully
+  start_number: 144
+- class: MEN
+  club: Slovakia
+  name: Matej Müller
+  start_number: 145
+- class: MEN
+  club: Germany
+  name: Mark Huster
+  start_number: 146
+- class: MEN
+  club: Austria MTBO Elite Team
+  name: Thomas Klimo
+  start_number: 147
+- class: MEN
+  club: Ukraina
+  name: Artem Stryzhak
+  start_number: 148
+- class: MEN
+  club: Lithuania
+  name: Tautvydas Žilinskas
+  start_number: 149
+- class: MEN
+  club: Latvia
+  name: Eduards Rens
+  start_number: 150
+- class: MEN
+  club: Great Britain
+  name: Edwyn Oliver-Evans
+  start_number: 151
+- class: MEN
+  club: Sweden
+  name: Sebastian Svärd
+  start_number: 152
+- class: MEN
+  club: France
+  name: Loic Lonchampt
+  start_number: 153
+- class: MEN
+  club: Portugal
+  name: Mário Guterres
+  start_number: 154
+- class: MEN
+  club: Finland
+  name: Aleksi Rantala
+  start_number: 155
+- class: MEN
+  club: Sweden
+  name: Erik Frost
+  start_number: 156
+- class: MEN
+  club: Estonia
+  name: Priit Poopuu
+  start_number: 157
+- class: MEN
+  club: Sweden
+  name: Anton Persson
+  start_number: 158
+- class: MEN
+  club: Germany
+  name: Hendrik Hess
+  start_number: 159
+- class: MEN
+  club: Hungary
+  name: Tibor Tamás
+  start_number: 161
+- class: MEN
+  club: Hungary
+  name: András Holluby
+  start_number: 162
+- class: MEN
+  club: Ukraina
+  name: Georgiy Romanov
+  start_number: 163
+- class: MEN
+  club: Ukraina
+  name: Yuriy Rasko
+  start_number: 164
+- class: MEN
+  club: Russia
+  name: Vladislav Ermolovich
+  start_number: 165
+- class: MEN
+  club: Germany
+  name: Ulf Uhlemann
+  start_number: 166
+- class: MEN
+  club: Hungary
+  name: Csaba Bedő
+  start_number: 167
+- class: MEN
+  club: Hungary
+  name: Ádám Beöthy
+  start_number: 168
+- class: MEN
+  club: Slovakia
+  name: Richard Chrappa
+  start_number: 169
+- class: MEN
+  club: Hungary
+  name: Péter Kirilla
+  start_number: 171
+- class: MEN
+  club: Slovakia
+  name: Matej Pilka
+  start_number: 172
+- class: MEN
+  club: Lithuania
+  name: Audrius Platakis
+  start_number: 173
+- class: MEN
+  club: Slovakia
+  name: Stefan Surgan
+  start_number: 174
+- class: MEN
+  club: Romania
+  name: Zoltán Tóth
+  start_number: 175
+- class: MEN
+  club: Slovakia
+  name: Matúš Trnovec
+  start_number: 176
+- class: WOMEN
+  club: Finland
+  name: Marika Hara
+  start_number: 201
+- class: WOMEN
+  club: Great Britain
+  name: Emily Benham
+  start_number: 202
+- class: WOMEN
+  club: Russia
+  name: Svetlana Poverina
+  start_number: 203
+- class: WOMEN
+  club: Czech Republic
+  name: Martina Tichovska
+  start_number: 204
+- class: WOMEN
+  club: Sweden
+  name: Cecilia Thomasson
+  start_number: 205
+- class: WOMEN
+  club: Finland
+  name: Ingrid Stengard
+  start_number: 206
+- class: WOMEN
+  club: Finland
+  name: Eeva-Liisa Hakala
+  start_number: 207
+- class: WOMEN
+  club: Russia
+  name: Tatiana Repina
+  start_number: 208
+- class: WOMEN
+  club: Czech Republic
+  name: Renata Paulickova
+  start_number: 209
+- class: WOMEN
+  club: France
+  name: Gaelle Barlet
+  start_number: 210
+- class: WOMEN
+  club: France
+  name: Hana Garde
+  start_number: 211
+- class: WOMEN
+  club: Denmark
+  name: Camilla Sögaard
+  start_number: 212
+- class: WOMEN
+  club: Austria MTBO Elite Team
+  name: Michaela Gigon
+  start_number: 213
+- class: WOMEN
+  club: Switzerland
+  name: Maja Rothweiler
+  start_number: 214
+- class: WOMEN
+  club: Italy
+  name: Laura Scaravonati
+  start_number: 215
+- class: WOMEN
+  club: Lithuania
+  name: Ramune Arlauskiene
+  start_number: 216
+- class: WOMEN
+  club: Denmark
+  name: Nina Hoffmann
+  start_number: 217
+- class: WOMEN
+  club: Finland
+  name: Antonia Haga
+  start_number: 218
+- class: WOMEN
+  club: Austria MTBO Elite Team
+  name: Marina Reiner
+  start_number: 219
+- class: WOMEN
+  club: Austria MTBO Elite Team
+  name: Sonja Zinkl
+  start_number: 220
+- class: WOMEN
+  club: Russia
+  name: Anastasia Svir
+  start_number: 221
+- class: WOMEN
+  club: Germany
+  name: Anke Dannowski
+  start_number: 222
+- class: WOMEN
+  club: Lithuania
+  name: Asta Simkoniene
+  start_number: 223
+- class: WOMEN
+  club: Czech Republic
+  name: Katerina Novakova
+  start_number: 224
+- class: WOMEN
+  club: Czech Republic
+  name: Nadezda Skacelova
+  start_number: 225
+- class: WOMEN
+  club: Czech Republic
+  name: Marie Brezinova
+  start_number: 226
+- class: WOMEN
+  club: Hungary
+  name: Anna Füzy
+  start_number: 227
+- class: WOMEN
+  club: Slovakia
+  name: Stanislava Fajtová
+  start_number: 228
+- class: WOMEN
+  club: Denmark
+  name: Caecilie Christoffersen
+  start_number: 229
+- class: WOMEN
+  club: France
+  name: Nicole Hueber
+  start_number: 230
+- class: WOMEN
+  club: Finland
+  name: Marja Penttilä
+  start_number: 231
+- class: WOMEN
+  club: Lithuania
+  name: Algirda Zaliauskaite
+  start_number: 232
+- class: WOMEN
+  club: Sweden
+  name: Kajsa Engström
+  start_number: 233
+- class: WOMEN
+  club: Sweden
+  name: Agnes Elfving
+  start_number: 234
+- class: WOMEN
+  club: Slovakia
+  name: Natália Tyszová
+  start_number: 235
+race_number: 1

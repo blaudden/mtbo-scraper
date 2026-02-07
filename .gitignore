@@ -1,0 +1,21 @@
+# Log files
+scraper.log
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.env
+venv/
+.venv/
+
+# Common IDE folders
+.idea/
+.vscode/
+# Scraping data
+.cookies.json

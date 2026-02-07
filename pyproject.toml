@@ -1,0 +1,79 @@
+[project]
+name = "mtbo-scraper"
+version = "0.5.0"
+description = "Scraper for MTBO events from different sources"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "click>=8.3.1",
+    "lxml>=6.0.2",
+    "pycountry>=24.6.1",
+    "pyvirtualdisplay>=3.0",
+    "pyyaml>=6.0.3",
+    "requests>=2.32.5",
+    "structlog>=24.1.0",
+    "undetected-chromedriver>=3.5.5",
+    "setuptools",
+    "curl-cffi>=0.14.0",
+]
+
+[dependency-groups]
+dev = [
+    "jsonschema>=4.26.0",
+    "mypy>=1.19.1",
+    "pre-commit>=4.0.1",
+    "pytest>=9.0.2",
+    "ruff==0.15.0",
+    "types-beautifulsoup4>=4.12.0.20250516",
+    "types-lxml>=2026.1.1",
+    "types-pyyaml>=6.0.12.20250915",
+    "types-requests>=2.32.4.20260107",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --strict-markers"
+pythonpath = ["."]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "F",   # pyflakes
+    "W",   # pycodestyle warnings
+    "I",   # isort
+    "N",   # pep8-naming
+    "UP",  # pyupgrade
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+]
+ignore = []
+
+[tool.ruff.lint.isort]
+known-first-party = ["src"]
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+check_untyped_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+strict_equality = true
+
+[[tool.mypy.overrides]]
+module = [
+    "cloudscraper",
+    "undetected_chromedriver",
+    "pyvirtualdisplay",
+]
+ignore_missing_imports = true

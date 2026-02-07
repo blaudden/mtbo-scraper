@@ -1,0 +1,498 @@
+participants:
+- class: M21
+  club: FRA
+  name: Cedric Beill
+  start_number: null
+- class: M21
+  club: BUL
+  name: Stanimir Belomazhev
+  start_number: null
+- class: M21
+  club: DEN
+  name: Andreas Bergmann Hansen
+  start_number: null
+- class: M21
+  club: SUI
+  name: Simon Braendli
+  start_number: null
+- class: M21
+  club: AUT
+  name: Tobias Breitschaedel
+  start_number: null
+- class: M21
+  club: ITA
+  name: Luca Dallavalle
+  start_number: null
+- class: M21
+  club: LTU
+  name: Sarunas Dmukauskas
+  start_number: null
+- class: M21
+  club: AUT
+  name: Florian Exler
+  start_number: null
+- class: M21
+  club: IRL
+  name: Mick Farrell
+  start_number: null
+- class: M21
+  club: POR
+  name: Joao Ferreira
+  start_number: null
+- class: M21
+  club: AUS
+  name: Chris Firman
+  start_number: null
+- class: M21
+  club: RUS
+  name: Anton Foliforov
+  start_number: null
+- class: M21
+  club: SWE
+  name: Anders Frisk
+  start_number: null
+- class: M21
+  club: FRA
+  name: Baptiste Fuchs
+  start_number: null
+- class: M21
+  club: FRA
+  name: Yoann Garde
+  start_number: null
+- class: M21
+  club: RUS
+  name: Ruslan Gritsan
+  start_number: null
+- class: M21
+  club: FIN
+  name: Andre Haga
+  start_number: null
+- class: M21
+  club: EST
+  name: Margus Hallik
+  start_number: null
+- class: M21
+  club: AUT
+  name: Kevin Haselsberger
+  start_number: null
+- class: M21
+  club: JPN
+  name: Kazushige Hatori
+  start_number: null
+- class: M21
+  club: CZE
+  name: Jiri Hradil
+  start_number: null
+- class: M21
+  club: SWE
+  name: Marcus Jansson
+  start_number: null
+- class: M21
+  club: POL
+  name: Radoslaw Jaroszek
+  start_number: null
+- class: M21
+  club: DEN
+  name: Allan Jensen
+  start_number: null
+- class: M21
+  club: LTU
+  name: Regimantas Kavaliauskas
+  start_number: null
+- class: M21
+  club: RUS
+  name: Andrey Kornev
+  start_number: null
+- class: M21
+  club: RUS
+  name: Dmitriy Kuzmin
+  start_number: null
+- class: M21
+  club: NOR
+  name: Hans Jorgen Kvale
+  start_number: null
+- class: M21
+  club: CZE
+  name: Radek Laciga
+  start_number: null
+- class: M21
+  club: FIN
+  name: Tuomo Lahtinen
+  start_number: null
+- class: M21
+  club: FIN
+  name: Jussi Laurila
+  start_number: null
+- class: M21
+  club: FRA
+  name: Loic Lonchampt
+  start_number: null
+- class: M21
+  club: CZE
+  name: Vojtech Ludvik
+  start_number: null
+- class: M21
+  club: POR
+  name: Davide Machado
+  start_number: null
+- class: M21
+  club: LTU
+  name: Jonas Maiselis
+  start_number: null
+- class: M21
+  club: EST
+  name: Lauri Malsroos
+  start_number: null
+- class: M21
+  club: POR
+  name: Daniel Marques
+  start_number: null
+- class: M21
+  club: RUS
+  name: Grigory Medvedev
+  start_number: null
+- class: M21
+  club: GER
+  name: Benjamin Michael
+  start_number: null
+- class: M21
+  club: DEN
+  name: Rasmus Nielsen  Folino
+  start_number: null
+- class: M21
+  club: FIN
+  name: Pekka Niemi
+  start_number: null
+- class: M21
+  club: ITA
+  name: Giaime Origgi
+  start_number: null
+- class: M21
+  club: SLO
+  name: Matej Pistor
+  start_number: null
+- class: M21
+  club: CZE
+  name: Marek Pospisek
+  start_number: null
+- class: M21
+  club: USA
+  name: Thomas Puzak
+  start_number: null
+- class: M21
+  club: AUT
+  name: Andreas Rief
+  start_number: null
+- class: M21
+  club: ITA
+  name: Riccardo Rossetto
+  start_number: null
+- class: M21
+  club: HUN
+  name: Laszlo Rozsa
+  start_number: null
+- class: M21
+  club: FIN
+  name: Samuli Saarela
+  start_number: null
+- class: M21
+  club: AUT
+  name: Bernhard Schachinger
+  start_number: null
+- class: M21
+  club: CZE
+  name: Martin Sevcik
+  start_number: null
+- class: M21
+  club: POR
+  name: Carlos Simoes
+  start_number: null
+- class: M21
+  club: DEN
+  name: Rasmus Soegaard
+  start_number: null
+- class: M21
+  club: DEN
+  name: Michael Sommer
+  start_number: null
+- class: M21
+  club: FRA
+  name: Clement Souvray
+  start_number: null
+- class: M21
+  club: CZE
+  name: Vojtech Stransky
+  start_number: null
+- class: M21
+  club: UKR
+  name: Artem Stryzhak
+  start_number: null
+- class: M21
+  club: SVK
+  name: Stefan Surgan
+  start_number: null
+- class: M21
+  club: ESP
+  name: David Tarres Villegas
+  start_number: null
+- class: M21
+  club: FIN
+  name: Mika Tervala
+  start_number: null
+- class: M21
+  club: RUS
+  name: Eduard Tomashevskiy
+  start_number: null
+- class: M21
+  club: ROU
+  name: Zoltan Toth
+  start_number: null
+- class: M21
+  club: ITA
+  name: Piero Turra
+  start_number: null
+- class: M21
+  club: LAT
+  name: Toms Veits
+  start_number: null
+- class: M21
+  club: SWE
+  name: Per Vestling
+  start_number: null
+- class: M21
+  club: AUT
+  name: Andreas Waldmann
+  start_number: null
+- class: W21
+  club: ESP
+  name: Monica Aguilera Viladomiu
+  start_number: null
+- class: W21
+  club: LTU
+  name: Ramune Arlauskiene
+  start_number: null
+- class: W21
+  club: FRA
+  name: Gaelle Barlet
+  start_number: null
+- class: W21
+  club: GBR
+  name: Emily Benham
+  start_number: null
+- class: W21
+  club: RUS
+  name: Anastasiya Bolshova
+  start_number: null
+- class: W21
+  club: CZE
+  name: Marie Brezinova
+  start_number: null
+- class: W21
+  club: DEN
+  name: Caecilie Christoffersen
+  start_number: null
+- class: W21
+  club: POR
+  name: Tania Covas Costa
+  start_number: null
+- class: W21
+  club: GBR
+  name: Natalie Creswick
+  start_number: null
+- class: W21
+  club: GER
+  name: Anke Dannowski
+  start_number: null
+- class: W21
+  club: SWE
+  name: Agnes Elfving
+  start_number: null
+- class: W21
+  club: SVK
+  name: Stanislava Fajtova
+  start_number: null
+- class: W21
+  club: USA
+  name: Rachel Furman
+  start_number: null
+- class: W21
+  club: HUN
+  name: Anna Fuzy
+  start_number: null
+- class: W21
+  club: FRA
+  name: Hana Garde
+  start_number: null
+- class: W21
+  club: AUT
+  name: Michaela Gigon
+  start_number: null
+- class: W21
+  club: ESP
+  name: Amparo Gil Brotons
+  start_number: null
+- class: W21
+  club: USA
+  name: Sarah Ginsbach
+  start_number: null
+- class: W21
+  club: USA
+  name: Susan Grandjean
+  start_number: null
+- class: W21
+  club: FIN
+  name: Antonia Haga
+  start_number: null
+- class: W21
+  club: FIN
+  name: Marika Hara
+  start_number: null
+- class: W21
+  club: DEN
+  name: Nina Hoffmann
+  start_number: null
+- class: W21
+  club: FRA
+  name: Nicole Hueber
+  start_number: null
+- class: W21
+  club: EST
+  name: Ingrit Kala
+  start_number: null
+- class: W21
+  club: POL
+  name: Anna Kaminska
+  start_number: null
+- class: W21
+  club: JPN
+  name: Naoko Kano
+  start_number: null
+- class: W21
+  club: FIN
+  name: Susanna Laurila
+  start_number: null
+- class: W21
+  club: USA
+  name: Abra McNair
+  start_number: null
+- class: W21
+  club: JPN
+  name: Mihoko Mori
+  start_number: null
+- class: W21
+  club: CZE
+  name: Katerina Novakova
+  start_number: null
+- class: W21
+  club: LTU
+  name: Renata Paulauskiene
+  start_number: null
+- class: W21
+  club: CZE
+  name: Renata Paulickova
+  start_number: null
+- class: W21
+  club: POR
+  name: Susana Pontes
+  start_number: null
+- class: W21
+  club: RUS
+  name: Svetlana Poverina
+  start_number: null
+- class: W21
+  club: LTU
+  name: Roma Puisiene
+  start_number: null
+- class: W21
+  club: RUS
+  name: Tatiana Repina
+  start_number: null
+- class: W21
+  club: SUI
+  name: Maja Rothweiler
+  start_number: null
+- class: W21
+  club: FIN
+  name: Ruska Saarela
+  start_number: null
+- class: W21
+  club: FIN
+  name: Henna Saarinen
+  start_number: null
+- class: W21
+  club: ITA
+  name: Laura Scaravonati
+  start_number: null
+- class: W21
+  club: AUT
+  name: Nicole Senft
+  start_number: null
+- class: W21
+  club: RUS
+  name: Daria Sevbo
+  start_number: null
+- class: W21
+  club: POR
+  name: Ana Filipa Silva
+  start_number: null
+- class: W21
+  club: CZE
+  name: Nadezda Skacelova
+  start_number: null
+- class: W21
+  club: LAT
+  name: Ingrida Smite
+  start_number: null
+- class: W21
+  club: DEN
+  name: Camilla Soegaard
+  start_number: null
+- class: W21
+  club: CZE
+  name: Stipanka Stankova
+  start_number: null
+- class: W21
+  club: FIN
+  name: Ingrid Stengard
+  start_number: null
+- class: W21
+  club: LAT
+  name: Aiga Strazdina
+  start_number: null
+- class: W21
+  club: RUS
+  name: Anastasiya Svir
+  start_number: null
+- class: W21
+  club: SWE
+  name: Cecilia Thomasson
+  start_number: null
+- class: W21
+  club: CZE
+  name: Martina Tichovska
+  start_number: null
+- class: W21
+  club: GBR
+  name: Adel Tyson Bloor
+  start_number: null
+- class: W21
+  club: EST
+  name: Marje Venelaine
+  start_number: null
+- class: W21
+  club: SWE
+  name: Sanna Wallenborg
+  start_number: null
+- class: W21
+  club: SWE
+  name: Annika Wigren
+  start_number: null
+- class: W21
+  club: LTU
+  name: Algirda Zaliauskaite
+  start_number: null
+- class: W21
+  club: AUT
+  name: Sonja Zinkl
+  start_number: null
+race_number: 3

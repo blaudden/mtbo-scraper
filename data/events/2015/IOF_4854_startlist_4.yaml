@@ -1,0 +1,398 @@
+participants:
+- class: ME
+  club: ITA ITA
+  name: Cristian Galter
+  start_number: 59
+- class: ME
+  club: EST EST
+  name: Arbo Rae
+  start_number: 58
+- class: ME
+  club: FIN FIN
+  name: Kare Kaskinen
+  start_number: 57
+- class: ME
+  club: AUT AUT
+  name: Thomas Klimo
+  start_number: 56
+- class: ME
+  club: POR POR
+  name: Joel Morgado
+  start_number: 55
+- class: ME
+  club: ESP ESP
+  name: Jorge García Pardos
+  start_number: 54
+- class: ME
+  club: POR POR
+  name: Luís Barreiro
+  start_number: 53
+- class: ME
+  club: DEN DEN
+  name: Johan MacLassen
+  start_number: 52
+- class: ME
+  club: LTU LTU
+  name: Tautvydas Žilinskas
+  start_number: 51
+- class: ME
+  club: SWE SWE
+  name: David Eberlén
+  start_number: 50
+- class: ME
+  club: POL POL
+  name: Radoslaw Jaroszek
+  start_number: 49
+- class: ME
+  club: ESP ESP
+  name: Leandro Castillejos Ruiz
+  start_number: 48
+- class: ME
+  club: EST EST
+  name: Riivo Roose
+  start_number: 47
+- class: ME
+  club: AUT AUT
+  name: Floorian Exler
+  start_number: 46
+- class: ME
+  club: ITA ITA
+  name: Piero Turra
+  start_number: 45
+- class: ME
+  club: FRA FRA
+  name: Thibaud Guelennoc
+  start_number: 44
+- class: ME
+  club: DEN DEN
+  name: Allan Jensen
+  start_number: 43
+- class: ME
+  club: ESP ESP
+  name: Angel García García
+  start_number: 42
+- class: ME
+  club: POR POR
+  name: Mário Guterres
+  start_number: 41
+- class: ME
+  club: ESP ESP
+  name: Alejandro Martinez Flor
+  start_number: 40
+- class: ME
+  club: POR POR
+  name: Daniel Marques
+  start_number: 39
+- class: ME
+  club: SWE SWE
+  name: Linus Karlsson Mood
+  start_number: 38
+- class: ME
+  club: FIN FIN
+  name: Anders Blomster
+  start_number: 37
+- class: ME
+  club: LTU LTU
+  name: Tautvydas Zaliauskas
+  start_number: 36
+- class: ME
+  club: AUT AUT
+  name: Andreas Waldmann
+  start_number: 35
+- class: ME
+  club: SWE SWE
+  name: Marcus Jansson
+  start_number: 34
+- class: ME
+  club: ESP ESP
+  name: David Toll Clos
+  start_number: 33
+- class: ME
+  club: NOR NOR
+  name: Jorgen Madslien
+  start_number: 32
+- class: ME
+  club: EST EST
+  name: Margus Hallik
+  start_number: 31
+- class: ME
+  club: FIN FIN
+  name: Andre Haga
+  start_number: 30
+- class: ME
+  club: LTU LTU
+  name: Donatas Mickus
+  start_number: 29
+- class: ME
+  club: FIN FIN
+  name: Tuomo Lahtinen
+  start_number: 28
+- class: ME
+  club: POR POR
+  name: João Ferreira
+  start_number: 27
+- class: ME
+  club: ESP ESP
+  name: Iván Trigales Delgado
+  start_number: 26
+- class: ME
+  club: POR POR
+  name: Davide Machado
+  start_number: 25
+- class: ME
+  club: DEN DEN
+  name: Rasmus Søgaard
+  start_number: 24
+- class: ME
+  club: FRA FRA
+  name: Loic Lonchampt
+  start_number: 23
+- class: ME
+  club: CZE CZE
+  name: Frantisek Bogar
+  start_number: 22
+- class: ME
+  club: ITA ITA
+  name: Riccardo Rossetto
+  start_number: 21
+- class: ME
+  club: FRA FRA
+  name: Yoann Garde
+  start_number: 20
+- class: ME
+  club: CZE CZE
+  name: Jan Svoboda
+  start_number: 19
+- class: ME
+  club: ITA ITA
+  name: Luca Dallavalle
+  start_number: 18
+- class: ME
+  club: CZE CZE
+  name: Vojtech Stransky
+  start_number: 17
+- class: ME
+  club: RUS RUS
+  name: Grigoriy Medvedev
+  start_number: 16
+- class: ME
+  club: CZE CZE
+  name: Marek Pospisek
+  start_number: 15
+- class: ME
+  club: AUT AUT
+  name: Kevin Haselsberger
+  start_number: 14
+- class: ME
+  club: CZE CZE
+  name: Martin Sevcik
+  start_number: 13
+- class: ME
+  club: AUT AUT
+  name: Bernhard Schachinger
+  start_number: 12
+- class: ME
+  club: FRA FRA
+  name: Cedric Beill
+  start_number: 11
+- class: ME
+  club: RUS RUS
+  name: Valeriy Glukhov
+  start_number: 10
+- class: ME
+  club: FIN FIN
+  name: Pekka Niemi
+  start_number: 9
+- class: ME
+  club: RUS RUS
+  name: Anton Foliforov
+  start_number: 8
+- class: ME
+  club: NOR NOR
+  name: Hans Jorgen Kvale
+  start_number: 7
+- class: ME
+  club: RUS RUS
+  name: Ruslan Gritsan
+  start_number: 6
+- class: ME
+  club: EST EST
+  name: Lauri Malsroos
+  start_number: 5
+- class: ME
+  club: CZE CZE
+  name: Jiri Hradil
+  start_number: 4
+- class: ME
+  club: FIN FIN
+  name: Jussi Laurila
+  start_number: 3
+- class: ME
+  club: LTU LTU
+  name: Jonas Maišelis
+  start_number: 2
+- class: ME
+  club: FRA FRA
+  name: Baptiste Fuchs
+  start_number: 1
+- class: WE
+  club: JPN JPN
+  name: Misa Kawashima
+  start_number: 140
+- class: WE
+  club: LTU LTU
+  name: Roma Puišiene
+  start_number: 139
+- class: WE
+  club: POR POR
+  name: Tânia Covas
+  start_number: 138
+- class: WE
+  club: FIN FIN
+  name: Ruska Saarela
+  start_number: 137
+- class: WE
+  club: POR POR
+  name: Ana Filipa Silva
+  start_number: 136
+- class: WE
+  club: ESP ESP
+  name: Ana Varela Yañez
+  start_number: 135
+- class: WE
+  club: LTU LTU
+  name: Algirda Zaliauskaite
+  start_number: 134
+- class: WE
+  club: SWE SWE
+  name: Agnes Elfving
+  start_number: 133
+- class: WE
+  club: FIN FIN
+  name: Mona Lindroth
+  start_number: 132
+- class: WE
+  club: ESP ESP
+  name: Ámparo Gil Brotons
+  start_number: 131
+- class: WE
+  club: DEN DEN
+  name: Cæcilie Rueløkke Christoffersen
+  start_number: 130
+- class: WE
+  club: SVK SVK
+  name: Fajtova Stanislava
+  start_number: 129
+- class: WE
+  club: RUS RUS
+  name: Ekaterina Illarionova
+  start_number: 128
+- class: WE
+  club: FRA FRA
+  name: Nicole Hueber
+  start_number: 127
+- class: WE
+  club: FIN FIN
+  name: Henna Saarinen
+  start_number: 126
+- class: WE
+  club: GER GER
+  name: Anke Dannowski
+  start_number: 125
+- class: WE
+  club: SWE SWE
+  name: Anika Wigren
+  start_number: 124
+- class: WE
+  club: LTU LTU
+  name: Asta Šimkoniene
+  start_number: 123
+- class: WE
+  club: JPN JPN
+  name: Naoko Kano
+  start_number: 122
+- class: WE
+  club: AUT AUT
+  name: Marina Reiner
+  start_number: 121
+- class: WE
+  club: CZE CZE
+  name: Marie Brezinova
+  start_number: 120
+- class: WE
+  club: RUS RUS
+  name: Anastasiya Svir
+  start_number: 119
+- class: WE
+  club: AUT AUT
+  name: Michaela Gigon
+  start_number: 118
+- class: WE
+  club: CZE CZE
+  name: Nadezda Skacelova
+  start_number: 117
+- class: WE
+  club: AUT AUT
+  name: Sonja Zinkl
+  start_number: 116
+- class: WE
+  club: CZE CZE
+  name: Renata Paulickova
+  start_number: 115
+- class: WE
+  club: DEN DEN
+  name: Nina Hoffmann
+  start_number: 114
+- class: WE
+  club: SUI SUI
+  name: Maja Rothweiler
+  start_number: 113
+- class: WE
+  club: DEN DEN
+  name: Camilla Søgaard
+  start_number: 112
+- class: WE
+  club: ITA ITA
+  name: Laura Scaravonati
+  start_number: 111
+- class: WE
+  club: CZE CZE
+  name: Martina Tichovska
+  start_number: 110
+- class: WE
+  club: FIN FIN
+  name: Antonia Haga
+  start_number: 109
+- class: WE
+  club: RUS RUS
+  name: Svetlana Poverina
+  start_number: 108
+- class: WE
+  club: GBR GBR
+  name: Emily Benham
+  start_number: 107
+- class: WE
+  club: FRA FRA
+  name: Hana Garde
+  start_number: 106
+- class: WE
+  club: RUS RUS
+  name: Tatiana Repina
+  start_number: 105
+- class: WE
+  club: FIN FIN
+  name: Marika Hara
+  start_number: 104
+- class: WE
+  club: FRA FRA
+  name: Gaelle Barlet
+  start_number: 103
+- class: WE
+  club: FIN FIN
+  name: Ingrid Stengard
+  start_number: 102
+- class: WE
+  club: SWE SWE
+  name: Cecilia Thomasson
+  start_number: 101
+race_number: 4

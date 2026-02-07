@@ -1,0 +1,854 @@
+participants:
+- class: D21-SM
+  club: Garphyttans IF
+  name: Karin E Gustafsson
+  start_number: 170
+- class: D21-SM
+  club: Halmstad OK
+  name: Ingela Alvmyren
+  start_number: 171
+- class: D21-SM
+  club: IK Hakarpspojkarna
+  name: Johanna Jonsson
+  start_number: 172
+- class: D21-SM
+  club: Mölndal Outdoor IF
+  name: Sara Prince
+  start_number: 173
+- class: D21-SM
+  club: IF Thor
+  name: Susanne Wallenborg
+  start_number: 174
+- class: D21-SM
+  club: IFK Moras OK
+  name: Agnes Elfving
+  start_number: 175
+- class: D21-SM
+  club: Fältjägarnas IF
+  name: Cecilia Thomasson
+  start_number: 176
+- class: D21-SM
+  club: Attunda OK
+  name: Maria Frisk
+  start_number: 177
+- class: D21-SM
+  club: Mölndal Outdoor IF
+  name: Karolina Wildheim
+  start_number: 178
+- class: D21-SM
+  club: OK Nolaskogsarna
+  name: Sara Forsgren
+  start_number: 179
+- class: D21-SM
+  club: Lunds OK
+  name: Annika Wigren
+  start_number: 180
+- class: D21-SM
+  club: IFK Moras OK
+  name: Frida Persson
+  start_number: 181
+- class: D21-SM
+  club: IFK Lidingö SOK
+  name: Josefin Wångdahl
+  start_number: 182
+- class: H21-SM
+  club: Annebergs GIF
+  name: Fredrik Arbin
+  start_number: 29
+- class: H21-SM
+  club: IFK Lidingö SOK
+  name: Nils Malm
+  start_number: 1
+- class: H21-SM
+  club: Västerås SOK
+  name: Andreas Mathisen
+  start_number: 2
+- class: H21-SM
+  club: Garphyttans IF
+  name: Thomas Jansson
+  start_number: 3
+- class: H21-SM
+  club: Uddevalla OK
+  name: Daniel Olsson
+  start_number: 4
+- class: H21-SM
+  club: Bredaryds SOK
+  name: Peter Thelin
+  start_number: 5
+- class: H21-SM
+  club: Nässjö OK
+  name: Daniel Johansson
+  start_number: 6
+- class: H21-SM
+  club: Attunda OK
+  name: Henrik Hammas
+  start_number: 7
+- class: H21-SM
+  club: Mölndal Outdoor IF
+  name: Aaron Prince
+  start_number: 8
+- class: H21-SM
+  club: Sundbybergs IK
+  name: Björn Völcker
+  start_number: 9
+- class: H21-SM
+  club: IFK Moras OK
+  name: Erik Frost
+  start_number: 10
+- class: H21-SM
+  club: Kvarnsvedens GOIF OK
+  name: Martin Bergström
+  start_number: 11
+- class: H21-SM
+  club: Södertälje-Nykvarn OF
+  name: Rickard Ohlsson
+  start_number: 12
+- class: H21-SM
+  club: OK Gipen
+  name: Dennis Nyqvist
+  start_number: 13
+- class: H21-SM
+  club: Målilla OK
+  name: Peter Alvarsson
+  start_number: 14
+- class: H21-SM
+  club: OK Roslagen
+  name: Linus Mood
+  start_number: 15
+- class: H21-SM
+  club: Attunda OK
+  name: Anders Frisk
+  start_number: 16
+- class: H21-SM
+  club: OK Kåre
+  name: Marcus Hylén
+  start_number: 17
+- class: H21-SM
+  club: Garphyttans IF
+  name: Marcus Jansson
+  start_number: 18
+- class: H21-SM
+  club: IF Hallby SOK
+  name: Oskar Lund
+  start_number: 19
+- class: H21-SM
+  club: Leksands OK
+  name: Ola Jäderberg
+  start_number: 20
+- class: H21-SM
+  club: Garphyttans IF
+  name: Torbjörn Jansson
+  start_number: 21
+- class: H21-SM
+  club: IK Vista
+  name: Albin Sigby
+  start_number: 22
+- class: H21-SM
+  club: Gävle OK
+  name: Patrik Svedberg
+  start_number: 23
+- class: H21-SM
+  club: Bredaryds SOK
+  name: Fredrik Johansson
+  start_number: 24
+- class: H21-SM
+  club: OK Njudung
+  name: Magnus Wärnsved
+  start_number: 25
+- class: H21-SM
+  club: IFK Moras OK
+  name: Per Frost
+  start_number: 26
+- class: H21-SM
+  club: Almby IK
+  name: Johan Alfredsson
+  start_number: 27
+- class: H21-SM
+  club: SOK Viljan
+  name: Tord Hultberg
+  start_number: 28
+- class: D17-20-SM
+  club: Nyköpings OK
+  name: Rebecka Hylander
+  start_number: 185
+- class: D17-20-SM
+  club: Haninge SOK
+  name: Jennifer Andersson
+  start_number: 186
+- class: D17-20-SM
+  club: OK Kåre
+  name: Kajsa Engström
+  start_number: 187
+- class: D17-20-SM
+  club: Väsby OK
+  name: Katarina Hammas
+  start_number: 188
+- class: D17-20-SM
+  club: IK Vista
+  name: Gabriella Gustafsson
+  start_number: 189
+- class: D17-20-SM
+  club: Korsnäs IF OK
+  name: Erica Edman
+  start_number: 190
+- class: D17-20-SM
+  club: OK Landehof
+  name: Kim Josephson
+  start_number: 191
+- class: H17-20-SM
+  club: Haninge SOK
+  name: Joakim Skärlén
+  start_number: 30
+- class: H17-20-SM
+  club: Väsby OK
+  name: Filip Olsson
+  start_number: 31
+- class: H17-20-SM
+  club: Gotlands Bro OK
+  name: Simon Kappel
+  start_number: 32
+- class: H17-20-SM
+  club: Kvarnsvedens GOIF OK
+  name: Filip Bergström
+  start_number: 33
+- class: H17-20-SM
+  club: OK Tyr
+  name: Pontus Kullin Alfredsson
+  start_number: 34
+- class: H17-20-SM
+  club: Järla Orientering
+  name: Oscar Wiberg
+  start_number: 35
+- class: H17-20-SM
+  club: Finspångs SOK
+  name: Alexander Wiklund
+  start_number: 36
+- class: H17-20-SM
+  club: FK Göingarna
+  name: Hampus Larsson
+  start_number: 37
+- class: H17-20-SM
+  club: Säterbygdens OK
+  name: Oskar Sandberg
+  start_number: 38
+- class: H17-20-SM
+  club: Haninge SOK
+  name: Henrik Karlevall
+  start_number: 39
+- class: H17-20-SM
+  club: Länna IF
+  name: Nicklas DeWitt
+  start_number: 40
+- class: H17-20-SM
+  club: Haninge SOK
+  name: Sebastian Svärd
+  start_number: 41
+- class: H17-20-SM
+  club: Söders-Tyresö
+  name: Felix Tiderman-Björkblom
+  start_number: 42
+- class: H17-20-SM
+  club: FK Göingarna
+  name: Robin Larsson
+  start_number: 43
+- class: D16-USM
+  club: OK Djerf
+  name: Erica Olsson
+  start_number: 195
+- class: D16-USM
+  club: OK Södertörn
+  name: Tilde Backlund
+  start_number: 196
+- class: D16-USM
+  club: OK Tor
+  name: Emma Johnsson
+  start_number: 197
+- class: D16-USM
+  club: Järfälla OK
+  name: Emmy Albinsson
+  start_number: 198
+- class: H16-USM
+  club: OK Tor
+  name: Gustav Johnsson
+  start_number: 45
+- class: H16-USM
+  club: Haninge SOK
+  name: Emil Andersson
+  start_number: 46
+- class: H16-USM
+  club: IK Vikings OK
+  name: Simon Lundberg
+  start_number: 47
+- class: H16-USM
+  club: OK Alehof
+  name: Douglas Fransson Lee
+  start_number: 48
+- class: H16-USM
+  club: IFK Moras OK
+  name: Fredrik Norlin
+  start_number: 49
+- class: H16-USM
+  club: IK Vikings OK
+  name: Adrian Lundberg
+  start_number: 50
+- class: H16-USM
+  club: OK Roslagen
+  name: Waldemar Andersson
+  start_number: 51
+- class: D14
+  club: IFK Moras OK
+  name: Elin Norlin
+  start_number: 225
+- class: H14
+  club: Järfälla OK
+  name: Linus Albinsson
+  start_number: 140
+- class: H14
+  club: Kvarnsvedens GOIF OK
+  name: Rikard Bergström
+  start_number: 141
+- class: H14
+  club: Finspångs SOK
+  name: Joel Ernstsson
+  start_number: 142
+- class: H14
+  club: Eksjö SOK
+  name: Hugo Jacobsson
+  start_number: 143
+- class: H12
+  club: IF Hallby SOK
+  name: Emil Granath
+  start_number: 145
+- class: D40-RM
+  club: IK Vista
+  name: Ulrika Gustafsson
+  start_number: 200
+- class: D40-RM
+  club: Haninge SOK
+  name: Helene Ripa
+  start_number: 201
+- class: D40-RM
+  club: SOK Viljan
+  name: Åsa Bergfors
+  start_number: 202
+- class: D40-RM
+  club: OK Djerf
+  name: Annika Olsson
+  start_number: 203
+- class: D40-RM
+  club: OK Södertörn
+  name: Anna Backlund
+  start_number: 204
+- class: D40-RM
+  club: Haninge SOK
+  name: Johanna Almlund
+  start_number: 205
+- class: D40-RM
+  club: SOK Viljan
+  name: Maria Rindstig
+  start_number: 206
+- class: H40-RM
+  club: Södertälje-Nykvarn OF
+  name: Magnus Grahn
+  start_number: 55
+- class: H40-RM
+  club: Järfälla OK
+  name: Peter Albinsson
+  start_number: 56
+- class: H40-RM
+  club: Lunds OK
+  name: Nils Pistora
+  start_number: 57
+- class: H40-RM
+  club: Finspångs SOK
+  name: Erik Ernstsson
+  start_number: 58
+- class: H40-RM
+  club: Söders-Tyresö
+  name: Patrik Tiderman
+  start_number: 59
+- class: H40-RM
+  club: Värend GN OL
+  name: Mikael Johansson
+  start_number: 60
+- class: H40-RM
+  club: IFK Moras OK
+  name: Anders Norlin
+  start_number: 61
+- class: H40-RM
+  club: OK Nolaskogsarna
+  name: Fredrik Forsgren
+  start_number: 62
+- class: H40-RM
+  club: Skattkärrs IF
+  name: Stefan Wennberg
+  start_number: 63
+- class: H40-RM
+  club: Växjö AIS
+  name: Andreas Berggren
+  start_number: 64
+- class: H40-RM
+  club: OK Kolmården
+  name: Hans Persson
+  start_number: 65
+- class: H40-RM
+  club: Lidköpings VSK
+  name: Nils Gustavsson
+  start_number: 66
+- class: H40-RM
+  club: IFK Lidingö SOK
+  name: Jesper Svedberg
+  start_number: 67
+- class: H40-RM
+  club: Kvarnsvedens GOIF OK
+  name: Mikael Nolåkers
+  start_number: 68
+- class: H40-RM
+  club: Haninge SOK
+  name: Ronnie Pettersson
+  start_number: 69
+- class: H40-RM
+  club: Andrarums IF
+  name: Jan-Ove Wiking
+  start_number: 70
+- class: H40-RM
+  club: OK Rodhen
+  name: Magnus Blåudd
+  start_number: 71
+- class: H40-RM
+  club: IFK Moras OK
+  name: Patrik Persson
+  start_number: 72
+- class: H40-RM
+  club: Mölndal Outdoor IF
+  name: Martin Wildheim
+  start_number: 73
+- class: H40-RM
+  club: Värend GN OL
+  name: Anders Ahl
+  start_number: 74
+- class: H40-RM
+  club: Tolereds Allmänna IK
+  name: Fredrik Liljenvall
+  start_number: 75
+- class: H40-RM
+  club: OK Roslagen
+  name: Jens Andersson
+  start_number: 76
+- class: H40-RM
+  club: Kvarnsvedens GOIF OK
+  name: Peter Bergström
+  start_number: 77
+- class: H40-RM
+  club: Anderstorps OK
+  name: Geir Inge Folkestad
+  start_number: 78
+- class: H40-RM
+  club: Finspångs SOK
+  name: Benny Wiklund
+  start_number: 80
+- class: H40-RM
+  club: IK Vista
+  name: Mikael Gustafsson
+  start_number: 81
+- class: H40-RM
+  club: OK Djerf
+  name: Peter Olsson
+  start_number: 82
+- class: H40-RM
+  club: Haninge SOK
+  name: Ola Svärd
+  start_number: 83
+- class: H40-RM
+  club: Jönköpings OK
+  name: Thomas Bråhn
+  start_number: 84
+- class: H40-RM
+  club: OK Skogsfalken
+  name: Tony Larsson
+  start_number: 85
+- class: H40-RM
+  club: Söders-Tyresö
+  name: Peter Andersson
+  start_number: 86
+- class: D50-RM
+  club: Västerviks OK
+  name: Lotta Lidman Almqvist
+  start_number: 210
+- class: D50-RM
+  club: Garphyttans IF
+  name: Lena Jansson
+  start_number: 211
+- class: D50-RM
+  club: OK Kåre
+  name: Annika Engström
+  start_number: 212
+- class: D50-RM
+  club: IFK Moras OK
+  name: Maud Anglebrant
+  start_number: 213
+- class: D50-RM
+  club: Bredaryds SOK
+  name: Katarina Westin-Karlsson
+  start_number: 214
+- class: D50-RM
+  club: IFK Moras OK
+  name: Pia Frost
+  start_number: 215
+- class: D50-RM
+  club: Garphyttans IF
+  name: Birgitta Jansson
+  start_number: 216
+- class: D50-RM
+  club: IFK Lidingö SOK
+  name: Margareta Meiton
+  start_number: 217
+- class: H50-RM
+  club: OK Orion
+  name: Anders Lilienberg
+  start_number: 90
+- class: H50-RM
+  club: KFUM Örebro OK
+  name: Magnus Nilsson
+  start_number: 91
+- class: H50-RM
+  club: Kvarnsvedens GOIF OK
+  name: Stefan Killberg
+  start_number: 92
+- class: H50-RM
+  club: OK Tyr
+  name: Mikael Kullin
+  start_number: 93
+- class: H50-RM
+  club: Växjö OK
+  name: John E Eriksson
+  start_number: 94
+- class: H50-RM
+  club: Säterbygdens OK
+  name: Kjell Klaar
+  start_number: 95
+- class: H50-RM
+  club: IK Vista
+  name: Håkan Svensson
+  start_number: 96
+- class: H50-RM
+  club: Gotlands Bro OK
+  name: Åke Kappel
+  start_number: 97
+- class: H50-RM
+  club: IFK Lidingö SOK
+  name: Anders Stjerndahl
+  start_number: 98
+- class: H50-RM
+  club: OK Tylöskog
+  name: Anders Palmqvist
+  start_number: 99
+- class: H50-RM
+  club: IFK Moras OK
+  name: Mats Johansson
+  start_number: 100
+- class: H50-RM
+  club: Domnarvets GOIF
+  name: Per Leidevall
+  start_number: 101
+- class: H50-RM
+  club: Tjällmo-Godegårds OK
+  name: Urban Åberg
+  start_number: 102
+- class: H50-RM
+  club: Järfälla OK
+  name: Frank Steiner
+  start_number: 103
+- class: H50-RM
+  club: Växjö OK
+  name: Håkan Östergren
+  start_number: 104
+- class: H50-RM
+  club: Länna IF
+  name: Håkan Lång
+  start_number: 105
+- class: H50-RM
+  club: Kristinehamns OK
+  name: Leif Celander
+  start_number: 106
+- class: H50-RM
+  club: Ålems OK
+  name: Ulf Rindstig
+  start_number: 107
+- class: H50-RM
+  club: Alfta-Ösa OK
+  name: Peter Rosén
+  start_number: 108
+- class: H50-RM
+  club: Värend GN OL
+  name: Göran Persson
+  start_number: 109
+- class: H50-RM
+  club: Göteborg-Majorna OK
+  name: Per Gustavsson
+  start_number: 110
+- class: H50-RM
+  club: OK Södertörn
+  name: Per Backlund
+  start_number: 111
+- class: H50-RM
+  club: IFK Moras OK
+  name: Maffe Frost
+  start_number: 112
+- class: H50-RM
+  club: IK Vista
+  name: Thor-Björn Lund
+  start_number: 114
+- class: H50-RM
+  club: Södertälje-Nykvarn OF
+  name: Mats Heldt
+  start_number: 115
+- class: D60-RM
+  club: Kvarnsvedens GOIF OK
+  name: Ing-Marie Andrén
+  start_number: 220
+- class: D60-RM
+  club: Sol Tranås
+  name: Anna-Karin Argus-Johansson
+  start_number: 221
+- class: H60-RM
+  club: Surahammars SOK
+  name: Gunnar Munktelius
+  start_number: 120
+- class: H60-RM
+  club: Leksands OK
+  name: Lars Sahlberg
+  start_number: 121
+- class: H60-RM
+  club: OK Södertörn
+  name: Ronny Hedlund
+  start_number: 122
+- class: H60-RM
+  club: Tjällmo-Godegårds OK
+  name: Håkan Åberg
+  start_number: 123
+- class: H60-RM
+  club: Värend GN OL
+  name: Lars-Åke Sjökvist
+  start_number: 124
+- class: H60-RM
+  club: Kalmar OK
+  name: Sonny Myrefelt
+  start_number: 125
+- class: H60-RM
+  club: Ulricehamns OK
+  name: Claes-Göran Lundberg
+  start_number: 126
+- class: H60-RM
+  club: Tjällmo-Godegårds OK
+  name: Per-Martin Gustavson
+  start_number: 127
+- class: H60-RM
+  club: Söders-Tyresö
+  name: Bengt Andersson
+  start_number: 128
+- class: H60-RM
+  club: Linköpings OK
+  name: Pelle Skullman
+  start_number: 129
+- class: H60-RM
+  club: Järla Orientering
+  name: Jan-Erik Wiberg
+  start_number: 130
+- class: H60-RM
+  club: Kvarnsvedens GOIF OK
+  name: Esbjörn Andrén
+  start_number: 131
+- class: H60-RM
+  club: Skillingaryds FK
+  name: Göran Svensson
+  start_number: 132
+- class: H60-RM
+  club: Ulricehamns OK
+  name: Anders Thomasson
+  start_number: 133
+- class: H60-RM
+  club: Falkenbergs OK
+  name: Björn Johansson
+  start_number: 134
+- class: H60-RM
+  club: Väsby OK
+  name: Håkan Lindberg
+  start_number: 135
+- class: H60-RM
+  club: Tjällmo-Godegårds OK
+  name: Sten Granath
+  start_number: 136
+- class: H60-RM
+  club: Sol Tranås
+  name: Nils-Birger Johansson
+  start_number: 137
+- class: D21-Övriga
+  club: North West Orienteering Club
+  name: Marquita Gelderman
+  start_number: 227
+- class: H21-Övriga
+  club: IKP Prato - Alta Badia Orienteering
+  name: Alberto Bethaz
+  start_number: 150
+- class: H50-Övriga
+  club: North West Orienteering Club
+  name: Rob Garden
+  start_number: 155
+- class: Öppen motion 1
+  club: Halmstad OK
+  name: Tuva Lundin
+  start_number: 238
+- class: Öppen motion 1
+  club: Eksjö SOK
+  name: Isak Bogmark
+  start_number: 258
+- class: Öppen motion 1
+  club: SOK Viljan
+  name: Emil Kreutner
+  start_number: 231
+- class: Öppen motion 1
+  club: SOK Viljan
+  name: Helena Kreutner
+  start_number: 230
+- class: Öppen motion 1
+  club: Södertälje-Nykvarn OF
+  name: Marcus Grahn
+  start_number: 264
+- class: Öppen motion 1
+  club: Tolered-Utby Ol-klubb
+  name: Albin Liljenvall
+  start_number: 237
+- class: Öppen motion 5
+  club: Trollhättans SOK
+  name: Eric Berlin
+  start_number: 249
+- class: Öppen motion 5
+  club: IF Hallby SOK
+  name: Johan Granath
+  start_number: 236
+- class: Öppen motion 5
+  club: Säterbygdens OK
+  name: Anita Klaar
+  start_number: 251
+- class: Öppen motion 5
+  club: Leksands OK
+  name: Karin Jäderberg
+  start_number: 247
+- class: Öppen motion 5
+  club: Eksjö SOK
+  name: Liselotte Jansson
+  start_number: 261
+- class: Öppen motion 5
+  club: Lunds OK
+  name: Ing-Britt Swedenborg
+  start_number: 250
+- class: Öppen motion 5
+  club: Västerviks OK
+  name: Thomas Almqvist
+  start_number: 252
+- class: Öppen motion 5
+  club: Söders-Tyresö
+  name: Karin Almgren
+  start_number: 262
+- class: Öppen motion 5
+  club: Eksjö SOK
+  name: Birgit Henriksson
+  start_number: 265
+- class: Öppen motion 5
+  club: IK Hakarpspojkarna
+  name: Staffan Dittmer
+  start_number: 263
+- class: Öppen motion 5
+  club: Bredaryds SOK
+  name: Anne Turesson
+  start_number: 256
+- class: Öppen motion 5
+  club: Trollhättans SOK
+  name: Arne Berlin
+  start_number: 248
+- class: Öppen motion 5
+  club: Halmstad OK
+  name: Michaela Dekker
+  start_number: 239
+- class: Öppen motion 5
+  club: Eksjö SOK
+  name: Lasse Jansson
+  start_number: 268
+- class: Öppen motion 9
+  club: Lunds OK
+  name: Martin Wigren
+  start_number: 241
+- class: Öppen motion 9
+  club: Rydsnäs IF
+  name: Andreas Lundbom
+  start_number: 245
+- class: Öppen motion 9
+  club: OK 64 Torpa
+  name: Fredrik Skillermark
+  start_number: 244
+- class: Öppen motion 9
+  club: Garphyttans IF
+  name: Erik Jansson
+  start_number: 243
+- class: Öppen motion 9
+  club: Annebergs GIF
+  name: Stefan Arbin
+  start_number: 242
+- class: Öppen motion 9
+  club: Halmstad OK
+  name: Mattias Lundin
+  start_number: 240
+- class: Öppen motion 9
+  club: Emmaboda Verda OK
+  name: Kajsa Niemi
+  start_number: 257
+- class: Öppen motion 9
+  club: Klubblös
+  name: Leif Hallingfors
+  start_number: 246
+- class: Öppen motion 9
+  club: Västerviks OK
+  name: Henrik Pettersson
+  start_number: 253
+- class: Öppen motion 9
+  club: SOK Viljan
+  name: Lars Kreutner
+  start_number: 232
+- class: Öppen motion 9
+  club: Trollhättans SOK
+  name: Martin Schagerlind
+  start_number: 234
+- class: Öppen motion 9
+  club: OK Bävern
+  name: Johan Schagerlind
+  start_number: 233
+- class: Öppen motion 9
+  club: OK Bävern
+  name: Mikael Hall
+  start_number: 235
+- class: Öppen motion 9
+  club: OK Njudung
+  name: Anders Pettersson
+  start_number: 259
+- class: Öppen motion 9
+  club: Bredaryds SOK
+  name: Stefan Svensson
+  start_number: 254
+- class: Öppen motion 9
+  club: OK Njudung
+  name: Oskar Pettersson
+  start_number: 260
+- class: Öppen motion 9
+  club: Bredaryds SOK
+  name: Per Sigvardson
+  start_number: 255
+- class: Öppen motion 9
+  club: Eksjö SOK
+  name: Robin Bogmark
+  start_number: 267
+- class: Öppen motion 9
+  club: Borås CA
+  name: Andréa Thomasson
+  start_number: 266
+race_number: 1

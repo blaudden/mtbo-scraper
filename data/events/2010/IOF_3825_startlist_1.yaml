@@ -1,0 +1,470 @@
+participants:
+- class: Men
+  club: POR
+  name: Paulo Alipio
+  start_number: null
+- class: Men
+  club: LTU
+  name: Petras Andrasiunas
+  start_number: null
+- class: Men
+  club: LTU
+  name: Henrikas Antanavicius
+  start_number: null
+- class: Men
+  club: FRA
+  name: Matthieu Barthelemy
+  start_number: null
+- class: Men
+  club: HUN
+  name: Adam Beothy
+  start_number: null
+- class: Men
+  club: DEN
+  name: Andreas Bergmann
+  start_number: null
+- class: Men
+  club: ITA
+  name: Alberto Bethaz
+  start_number: null
+- class: Men
+  club: CZE
+  name: Frantisek Bogar
+  start_number: null
+- class: Men
+  club: AUT
+  name: Tobias Breitschadel
+  start_number: null
+- class: Men
+  club: SVK
+  name: Richard Chrappa
+  start_number: null
+- class: Men
+  club: GBR
+  name: Andy Conn
+  start_number: null
+- class: Men
+  club: ITA
+  name: Luca Dallavalle
+  start_number: null
+- class: Men
+  club: GER
+  name: Albert Denny
+  start_number: null
+- class: Men
+  club: LTU
+  name: Sarunas Dmukauskas
+  start_number: null
+- class: Men
+  club: POR
+  name: Joao Ferreira
+  start_number: null
+- class: Men
+  club: CRO
+  name: Elvis Forabosco
+  start_number: null
+- class: Men
+  club: RUS
+  name: Ruslan Gritsan
+  start_number: null
+- class: Men
+  club: POL
+  name: Maciej Gromadka
+  start_number: null
+- class: Men
+  club: UKR
+  name: Ferents Gutlebet
+  start_number: null
+- class: Men
+  club: AUT
+  name: Kevin Haselsberger
+  start_number: null
+- class: Men
+  club: JPN
+  name: Kazushi Higuchi
+  start_number: null
+- class: Men
+  club: HUN
+  name: Marcell Horvath
+  start_number: null
+- class: Men
+  club: CZE
+  name: Jiri Hradil
+  start_number: null
+- class: Men
+  club: GER
+  name: Mark Huster
+  start_number: null
+- class: Men
+  club: POL
+  name: Artur Jackiewicz
+  start_number: null
+- class: Men
+  club: DEN
+  name: Henrik  Johansen Konge
+  start_number: null
+- class: Men
+  club: GER
+  name: Torsten Kaufmann
+  start_number: null
+- class: Men
+  club: DEN
+  name: Erik  Knudsen Skovgaard
+  start_number: null
+- class: Men
+  club: RUS
+  name: Vladimir Koltunov
+  start_number: null
+- class: Men
+  club: DEN
+  name: Andreas Konring
+  start_number: null
+- class: Men
+  club: RUS
+  name: Victor Korchagin
+  start_number: null
+- class: Men
+  club: RUS
+  name: Andrey Kornev
+  start_number: null
+- class: Men
+  club: CZE
+  name: Radek Laciga
+  start_number: null
+- class: Men
+  club: CZE
+  name: Jan Lauerman
+  start_number: null
+- class: Men
+  club: FIN
+  name: Jussi Laurila
+  start_number: null
+- class: Men
+  club: HUN
+  name: Ferenc Levai
+  start_number: null
+- class: Men
+  club: POR
+  name: Davide Machado
+  start_number: null
+- class: Men
+  club: SVK
+  name: Rastislav Malatek
+  start_number: null
+- class: Men
+  club: POR
+  name: Daniel Marques
+  start_number: null
+- class: Men
+  club: RUS
+  name: Grigory Medvedev
+  start_number: null
+- class: Men
+  club: GER
+  name: Benjamin Michael
+  start_number: null
+- class: Men
+  club: POL
+  name: Karol Myszkowski
+  start_number: null
+- class: Men
+  club: HUN
+  name: Bence Nemeth
+  start_number: null
+- class: Men
+  club: ITA
+  name: Giaime Origgi
+  start_number: null
+- class: Men
+  club: SVK
+  name: Pavol Paprcka
+  start_number: null
+- class: Men
+  club: HUN
+  name: Laszlo Paulovits
+  start_number: null
+- class: Men
+  club: CZE
+  name: Marek Pospisek
+  start_number: null
+- class: Men
+  club: DEN
+  name: Bjarke Refslund
+  start_number: null
+- class: Men
+  club: AUT
+  name: Andreas Rief
+  start_number: null
+- class: Men
+  club: GER
+  name: Nick Rotter
+  start_number: null
+- class: Men
+  club: HUN
+  name: Laszlo Rozsa
+  start_number: null
+- class: Men
+  club: ITA
+  name: Mario Ruggiero
+  start_number: null
+- class: Men
+  club: CZE
+  name: Jaroslav Rygl
+  start_number: null
+- class: Men
+  club: FIN
+  name: Samuli Saarela
+  start_number: null
+- class: Men
+  club: FIN
+  name: Juho Saarinen
+  start_number: null
+- class: Men
+  club: SUI
+  name: Beat Schaffner
+  start_number: null
+- class: Men
+  club: SUI
+  name: Simon Seger
+  start_number: null
+- class: Men
+  club: DEN
+  name: Rasmus Soegaard
+  start_number: null
+- class: Men
+  club: FRA
+  name: Clement Souvray
+  start_number: null
+- class: Men
+  club: GBR
+  name: Mark Stodgell
+  start_number: null
+- class: Men
+  club: ITA
+  name: Martin Thomaseth
+  start_number: null
+- class: Men
+  club: FRA
+  name: Stefane Toussaint
+  start_number: null
+- class: Men
+  club: SVK
+  name: Matus Trnovec
+  start_number: null
+- class: Men
+  club: FIN
+  name: Tuukka Turkka
+  start_number: null
+- class: Men
+  club: ITA
+  name: Piero Turra
+  start_number: null
+- class: Men
+  club: SUI
+  name: James Welti
+  start_number: null
+- class: Men
+  club: GER
+  name: Falk Wenzel
+  start_number: null
+- class: Men
+  club: SUI
+  name: Rolf Wermelinger
+  start_number: null
+- class: Men
+  club: UKR
+  name: Oleksiy Zhdanovych
+  start_number: null
+- class: Men
+  club: RUS
+  name: Maxim Zhurkin
+  start_number: null
+- class: Men
+  club: LTU
+  name: Tautvydas Zilinskas
+  start_number: null
+- class: Women
+  club: FRA
+  name: Hana Bajtosova
+  start_number: null
+- class: Women
+  club: FRA
+  name: Gaelle Barlet
+  start_number: null
+- class: Women
+  club: GBR
+  name: Sarah Bayliss
+  start_number: null
+- class: Women
+  club: FRA
+  name: Valerie Bazaud
+  start_number: null
+- class: Women
+  club: GBR
+  name: Emily Benham
+  start_number: null
+- class: Women
+  club: CZE
+  name: Hana La Carbonara
+  start_number: null
+- class: Women
+  club: RUS
+  name: Ksenia Chernykh
+  start_number: null
+- class: Women
+  club: HUN
+  name: Veronika Cseh
+  start_number: null
+- class: Women
+  club: GER
+  name: Anke Dannowski
+  start_number: null
+- class: Women
+  club: CZE
+  name: Hana Dolezalova
+  start_number: null
+- class: Women
+  club: SVK
+  name: Alena Durcova
+  start_number: null
+- class: Women
+  club: SVK
+  name: Stanislava Fajtova
+  start_number: null
+- class: Women
+  club: HUN
+  name: Anna Fuzy
+  start_number: null
+- class: Women
+  club: AUT
+  name: Michaela Gigon
+  start_number: null
+- class: Women
+  club: FIN
+  name: Marika Hara
+  start_number: null
+- class: Women
+  club: CZE
+  name: Marie Hrdinova
+  start_number: null
+- class: Women
+  club: RUS
+  name: Tatiana Kalugina
+  start_number: null
+- class: Women
+  club: POL
+  name: Anna Kaminska
+  start_number: null
+- class: Women
+  club: FRA
+  name: Madeleine Kammerer
+  start_number: null
+- class: Women
+  club: RUS
+  name: Ekaterina Kononova
+  start_number: null
+- class: Women
+  club: HUN
+  name: Brigitta Koos
+  start_number: null
+- class: Women
+  club: DEN
+  name: Rikke Kornvig
+  start_number: null
+- class: Women
+  club: CZE
+  name: Michaela Lacigova
+  start_number: null
+- class: Women
+  club: FIN
+  name: Susanna Laurila
+  start_number: null
+- class: Women
+  club: DEN
+  name: Ann-Dorthe Lisbygd
+  start_number: null
+- class: Women
+  club: LTU
+  name: Karolina Mickeviciute
+  start_number: null
+- class: Women
+  club: RUS
+  name: Nadia Mikryukova
+  start_number: null
+- class: Women
+  club: RUS
+  name: Elena Nemchenko
+  start_number: null
+- class: Women
+  club: HUN
+  name: Eva Novai Makrai
+  start_number: null
+- class: Women
+  club: POL
+  name: Anita Nowakowska
+  start_number: null
+- class: Women
+  club: CZE
+  name: Renata Paulickova
+  start_number: null
+- class: Women
+  club: POR
+  name: Susana Pontes
+  start_number: null
+- class: Women
+  club: LTU
+  name: Vaida Reinartaite
+  start_number: null
+- class: Women
+  club: SUI
+  name: Maja Rothweiler
+  start_number: null
+- class: Women
+  club: SUI
+  name: Christine Schaffner Raeber
+  start_number: null
+- class: Women
+  club: LTU
+  name: Asta Simkoniene
+  start_number: null
+- class: Women
+  club: HUN
+  name: Agnes Simon
+  start_number: null
+- class: Women
+  club: AUS
+  name: Melanie Simpson
+  start_number: null
+- class: Women
+  club: FIN
+  name: Ingrid Stengard
+  start_number: null
+- class: Women
+  club: RUS
+  name: Natalia Szherbakova
+  start_number: null
+- class: Women
+  club: UKR
+  name: Anna Telyakevych
+  start_number: null
+- class: Women
+  club: DEN
+  name: Malene Telyakevych
+  start_number: null
+- class: Women
+  club: CZE
+  name: Martina Tichovska
+  start_number: null
+- class: Women
+  club: SVK
+  name: Daniela Trnovcova
+  start_number: null
+- class: Women
+  club: UKR
+  name: Vira Zhdanovych
+  start_number: null
+- class: Women
+  club: AUT
+  name: Sonja Zinkl
+  start_number: null
+race_number: 1
