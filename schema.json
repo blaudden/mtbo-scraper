@@ -1,0 +1,507 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/blaudden/mtbo-scraper/main/schema.json",
+    "title": "MTBO Scraper Data Schema v2.0",
+    "type": "object",
+    "description": "MTBO event data based on IOF XML 3.0 terminology with snake_case naming and scraper-specific enhancements",
+    "oneOf": [
+        {
+            "$ref": "#/$defs/UmbrellaIndex",
+            "description": "The root index file (mtbo_events.json)"
+        },
+        {
+            "$ref": "#/$defs/EventListWrapper",
+            "description": "The year-based data file (data/events/YYYY/events.json)"
+        }
+    ],
+    "$defs": {
+        "UmbrellaIndex": {
+            "type": "object",
+            "properties": {
+                "schema_version": {
+                    "const": "2.0"
+                },
+                "last_scraped_at": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "data_root": {
+                    "type": "string"
+                },
+                "partitions": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "object",
+                        "properties": {
+                            "path": {
+                                "type": "string"
+                            },
+                            "count": {
+                                "type": "integer"
+                            },
+                            "last_updated_at": {
+                                "type": "string",
+                                "format": "date-time"
+                            }
+                        },
+                        "required": [
+                            "path",
+                            "count",
+                            "last_updated_at"
+                        ]
+                    }
+                },
+                "sources": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "object",
+                        "properties": {
+                            "count": {
+                                "type": "integer"
+                            },
+                            "last_updated_at": {
+                                "type": "string",
+                                "format": "date-time"
+                            }
+                        },
+                        "required": [
+                            "count",
+                            "last_updated_at"
+                        ]
+                    }
+                }
+            },
+            "required": [
+                "schema_version",
+                "last_scraped_at",
+                "partitions",
+                "sources"
+            ]
+        },
+        "EventListWrapper": {
+            "type": "object",
+            "properties": {
+                "schema_version": {
+                    "const": "2.0"
+                },
+                "meta": {
+                    "$ref": "#/$defs/Meta"
+                },
+                "events": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/Event"
+                    }
+                }
+            },
+            "required": [
+                "schema_version",
+                "meta",
+                "events"
+            ]
+        },
+        "Meta": {
+            "type": "object",
+            "properties": {
+                "sources": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/Source"
+                    }
+                }
+            },
+            "required": [
+                "sources"
+            ]
+        },
+        "Source": {
+            "type": "object",
+            "properties": {
+                "country_code": {
+                    "type": "string",
+                    "pattern": "^[A-Z]{3}$"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "country_code",
+                "name",
+                "url"
+            ]
+        },
+        "Event": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "start_time": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "end_time": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "status": {
+                    "type": "string",
+                    "enum": [
+                        "Planned",
+                        "Applied",
+                        "Proposed",
+                        "Sanctioned",
+                        "Canceled",
+                        "Rescheduled"
+                    ]
+                },
+                "original_status": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "types": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Event types from Eventor (e.g., ['World Championships', 'World Cup'])"
+                },
+                "tags": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Additional event tags (e.g., FootO, SkiO, TrailO, Indoor)"
+                },
+                "form": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "organisers": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/Organiser"
+                    }
+                },
+                "officials": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/Official"
+                    }
+                },
+                "classes": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "documents": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/Document"
+                    }
+                },
+                "urls": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/Url"
+                    }
+                },
+                "information": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "region": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "punching_system": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "races": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "$ref": "#/$defs/Race"
+                    }
+                },
+                "entry_deadlines": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/EntryDeadline"
+                    }
+                }
+            },
+            "required": [
+                "id",
+                "name",
+                "start_time",
+                "end_time",
+                "status",
+                "races"
+            ]
+        },
+        "Race": {
+            "type": "object",
+            "properties": {
+                "race_number": {
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "name": {
+                    "type": "string"
+                },
+                "datetimez": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "discipline": {
+                    "type": "string"
+                },
+                "night_or_day": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "punching_system": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "position": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Position"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "areas": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/Area"
+                    }
+                },
+                "documents": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/Document"
+                    }
+                },
+                "urls": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/Url"
+                    }
+                },
+                "entry_counts": {
+                    "$ref": "#/$defs/Counts"
+                },
+                "start_counts": {
+                    "$ref": "#/$defs/Counts"
+                },
+                "result_counts": {
+                    "$ref": "#/$defs/Counts"
+                },
+                "fingerprints": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "race_number",
+                "datetimez",
+                "discipline"
+            ]
+        },
+        "Counts": {
+            "type": [
+                "object",
+                "null"
+            ],
+            "properties": {
+                "total_count": {
+                    "type": "integer"
+                },
+                "class_counts": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "integer"
+                    }
+                }
+            }
+        },
+        "Organiser": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "country_code": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "pattern": "^[A-Z]{3}$"
+                }
+            },
+            "required": [
+                "name"
+            ]
+        },
+        "Official": {
+            "type": "object",
+            "properties": {
+                "role": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "role",
+                "name"
+            ]
+        },
+        "Document": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
+                },
+                "published_time": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "format": "date-time"
+                }
+            },
+            "required": [
+                "type",
+                "title",
+                "url"
+            ]
+        },
+        "Url": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "Website, StartList, ResultList, EntryList, Livelox, Series, LocalStartList, Path"
+                },
+                "url": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "last_updated_at": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "format": "date-time"
+                }
+            },
+            "required": [
+                "type",
+                "url"
+            ]
+        },
+        "EntryDeadline": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "datetimez": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            },
+            "required": [
+                "type",
+                "datetimez"
+            ]
+        },
+        "Position": {
+            "type": "object",
+            "properties": {
+                "lat": {
+                    "type": "number"
+                },
+                "lng": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "lat",
+                "lng"
+            ]
+        },
+        "Area": {
+            "type": "object",
+            "properties": {
+                "lat": {
+                    "type": "number"
+                },
+                "lng": {
+                    "type": "number"
+                },
+                "polygon": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "items": {
+                        "type": "array",
+                        "minItems": 2,
+                        "maxItems": 2,
+                        "items": {
+                            "type": "number"
+                        }
+                    }
+                }
+            },
+            "required": [
+                "lat",
+                "lng"
+            ]
+        }
+    }
+}

@@ -1,0 +1,3821 @@
+{
+  "schema_version": "2.0",
+  "meta": {
+    "sources": [
+      {
+        "country_code": "SWE",
+        "name": "Swedish Eventor",
+        "url": "https://eventor.orientering.se"
+      },
+      {
+        "country_code": "IOF",
+        "name": "IOF Eventor",
+        "url": "https://eventor.orienteering.org"
+      },
+      {
+        "country_code": "NOR",
+        "name": "Norwegian Eventor",
+        "url": "https://eventor.orientering.no"
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "IOF_3822",
+      "name": "V Ori-BTT do Centro",
+      "start_time": "2010-04-16",
+      "end_time": "2010-04-16",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Portugal",
+          "country_code": "PRT"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3822",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118321+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.coc.pt/eventos/17abr2010/",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118321+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Jorge Ramos",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "V Ori-BTT do Centro",
+          "datetimez": "2010-04-16T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3822&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118324+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3822&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118324+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3822&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118324+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "Men": 50,
+            "Women": 26
+          },
+          "result_counts": {
+            "Men": 50,
+            "Women": 26
+          },
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3824",
+      "name": "V Ori-BTT do Centro",
+      "start_time": "2010-04-17",
+      "end_time": "2010-04-17",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Portugal",
+          "country_code": "PRT"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3824",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118409+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.coc.pt/eventos/17abr2010/",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118409+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Jorge Ramos",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "V Ori-BTT do Centro",
+          "datetimez": "2010-04-17T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3824&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118412+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3824&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118412+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3824&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118412+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "Men": 44,
+            "Women": 24
+          },
+          "result_counts": {
+            "Men": 44,
+            "Women": 24
+          },
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3825",
+      "name": "Hungarian MTBO Cup / World Cup Event 1",
+      "start_time": "2010-04-22",
+      "end_time": "2010-04-22",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Cup",
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Hungary",
+          "country_code": "HUN"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3825",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118285+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.mtbo.hu/",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118285+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Wolf Eberle",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Hungarian MTBO Cup / World Cup Event 1",
+          "datetimez": "2010-04-22T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3825&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118288+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3825&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118288+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3825&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118288+00:00"
+            },
+            {
+              "type": "LocalStartList",
+              "url": "data/events/2010/IOF_3825_startlist_1.yaml",
+              "title": null,
+              "last_updated_at": "2026-02-08T06:40:53.354753+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3826",
+      "name": "Hungarian MTBO Cup / World Cup Event 2",
+      "start_time": "2010-04-23",
+      "end_time": "2010-04-23",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Cup",
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Hungary",
+          "country_code": "HUN"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3826",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118360+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.mtbo.hu/",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118360+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Wolf Eberle",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Hungarian MTBO Cup / World Cup Event 2",
+          "datetimez": "2010-04-23T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3826&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118363+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3826&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118363+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3826&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118363+00:00"
+            },
+            {
+              "type": "LocalStartList",
+              "url": "data/events/2010/IOF_3826_startlist_1.yaml",
+              "title": null,
+              "last_updated_at": "2026-02-08T06:42:34.272511+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3829",
+      "name": "Hungarian MTBO Cup / World Cup Event 3",
+      "start_time": "2010-04-24",
+      "end_time": "2010-04-24",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Cup",
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Hungary",
+          "country_code": "HUN"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3829",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118331+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.mtbo.hu/",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118331+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Wolf Eberle",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Hungarian MTBO Cup / World Cup Event 3",
+          "datetimez": "2010-04-24T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3829&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118334+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3829&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118334+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3829&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118334+00:00"
+            },
+            {
+              "type": "LocalStartList",
+              "url": "data/events/2010/IOF_3829_startlist_1.yaml",
+              "title": null,
+              "last_updated_at": "2026-02-08T06:38:37.342106+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3841",
+      "name": "Les 4 jours d'O'Saône de Course d'Orientation à VTT",
+      "start_time": "2010-05-12",
+      "end_time": "2010-05-12",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "France",
+          "country_code": "FRA"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3841",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118452+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.vhso.fr",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118452+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: André Hermet",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Les 4 jours d'O'Saône de Course d'Orientation à VTT",
+          "datetimez": "2010-05-12T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3841&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118455+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3841&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118455+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3841&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118455+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "Men": 39,
+            "Women": 25
+          },
+          "result_counts": {
+            "Men": 39,
+            "Women": 25
+          },
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3843",
+      "name": "Les 4 jours d'O'Saône de Course d'Orientation à VTT",
+      "start_time": "2010-05-13",
+      "end_time": "2010-05-13",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "France",
+          "country_code": "FRA"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3843",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118310+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.vhso.fr",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118310+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: André Hermet",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Les 4 jours d'O'Saône de Course d'Orientation à VTT",
+          "datetimez": "2010-05-13T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3843&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118313+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3843&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118313+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3843&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118313+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "Men": 66,
+            "Women": 33
+          },
+          "result_counts": {
+            "Men": 66,
+            "Women": 33
+          },
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3851",
+      "name": "Long Distance - Hvalsoe",
+      "start_time": "2010-05-21",
+      "end_time": "2010-05-21",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Denmark",
+          "country_code": "DNK"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3851",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118476+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.orientering.dk/ok-oest/main/mtb-o/20100521mtbo.htm",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118476+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Arne Kristensen",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Long Distance - Hvalsoe",
+          "datetimez": "2010-05-21T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3851&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118478+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3851&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118478+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3851&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118478+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "Men": 14,
+            "Women": 10
+          },
+          "result_counts": {
+            "Men": 14,
+            "Women": 10
+          },
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3855",
+      "name": "Middle Distance - Klinteskoven",
+      "start_time": "2010-05-22",
+      "end_time": "2010-05-22",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Denmark",
+          "country_code": "DNK"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3855",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118371+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.orientering.dk/hg/MTBO/Bulletin1-2-Klinteskoven.pdf",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118371+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Tage V. Andersen",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Middle Distance - Klinteskoven",
+          "datetimez": "2010-05-22T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3855&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118401+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3855&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118401+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3855&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118401+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "Men": 14,
+            "Women": 9
+          },
+          "result_counts": {
+            "Men": 14,
+            "Women": 9
+          },
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3857",
+      "name": "BikeEst 2010 (Estonian Championship)",
+      "start_time": "2010-05-28",
+      "end_time": "2010-05-28",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Estonia",
+          "country_code": "EST"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3857",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118273+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.saaremaa.ee/SOK/",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118273+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Arbo Rae",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "BikeEst 2010 (Estonian Championship)",
+          "datetimez": "2010-05-28T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3857&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118275+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3857&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118275+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3857&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118275+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "Men": 12,
+            "Women": 7
+          },
+          "result_counts": {
+            "Men": 12,
+            "Women": 7
+          },
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3861",
+      "name": "World Cup Event 4",
+      "start_time": "2010-06-03",
+      "end_time": "2010-06-03",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Cup",
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Poland",
+          "country_code": "POL"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3861",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118239+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.harpagan.pl/worldcup/",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118239+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Alexey Kuzmin",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "World Cup Event 4",
+          "datetimez": "2010-06-03T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3861&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118241+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3861&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118241+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3861&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118241+00:00"
+            },
+            {
+              "type": "LocalStartList",
+              "url": "data/events/2010/IOF_3861_startlist_1.yaml",
+              "title": null,
+              "last_updated_at": "2026-02-07T23:00:06.771892+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3865",
+      "name": "World Cup Event 5",
+      "start_time": "2010-06-04",
+      "end_time": "2010-06-04",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Cup",
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Poland",
+          "country_code": "POL"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3865",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118297+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.harpagan.pl/worldcup/",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118297+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Alexey Kuzmin",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "World Cup Event 5",
+          "datetimez": "2010-06-04T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3865&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118300+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3865&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118300+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3865&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118300+00:00"
+            },
+            {
+              "type": "LocalStartList",
+              "url": "data/events/2010/IOF_3865_startlist_1.yaml",
+              "title": null,
+              "last_updated_at": "2026-02-07T23:01:46.845970+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3868",
+      "name": "World Cup Event 6",
+      "start_time": "2010-06-05",
+      "end_time": "2010-06-05",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Cup"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Poland",
+          "country_code": "POL"
+        }
+      ],
+      "officials": [],
+      "classes": [],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3868",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118444+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.harpagan.pl/worldcup/",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118444+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Alexey Kuzmin",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "World Cup Event 6",
+          "datetimez": "2010-06-05T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3877",
+      "name": "Linen MTB-O Race",
+      "start_time": "2010-07-02",
+      "end_time": "2010-07-02",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Finland",
+          "country_code": "FIN"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3877",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118423+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.jalasjarvi.fi/ya/suunnistus",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118423+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Timo Laurila",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Linen MTB-O Race",
+          "datetimez": "2010-07-02T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3877&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118426+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3877&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118426+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3877&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118426+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "Men": 37,
+            "Women": 9
+          },
+          "result_counts": {
+            "Men": 37,
+            "Women": 9
+          },
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3880",
+      "name": "Linen MTB-O Race",
+      "start_time": "2010-07-03",
+      "end_time": "2010-07-03",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Finland",
+          "country_code": "FIN"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3880",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118486+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.jalasjarvi.fi/ya/suunnistus",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118486+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Timo Laurila",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Linen MTB-O Race",
+          "datetimez": "2010-07-03T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3880&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118489+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3880&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118489+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3880&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118489+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "Men": 35,
+            "Women": 9
+          },
+          "result_counts": {
+            "Men": 35,
+            "Women": 9
+          },
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3883",
+      "name": "WMTBOC / World Cup Event 7",
+      "start_time": "2010-07-10",
+      "end_time": "2010-07-10",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Cup",
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Portugal",
+          "country_code": "PRT"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3883",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118465+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://mtbwoc2010.fpo.pt",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118465+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Jan Cegielka",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "WMTBOC / World Cup Event 7",
+          "datetimez": "2010-07-10T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3883&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118467+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3883&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118467+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3883&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118467+00:00"
+            },
+            {
+              "type": "LocalStartList",
+              "url": "data/events/2010/IOF_3883_startlist_1.yaml",
+              "title": null,
+              "last_updated_at": "2026-02-07T23:07:04.810758+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3885",
+      "name": "WMTBOC / World Cup Event 8",
+      "start_time": "2010-07-12",
+      "end_time": "2010-07-12",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Cup",
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Portugal",
+          "country_code": "PRT"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3885",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118259+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://mtbwoc2010.fpo.pt",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118259+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Jan Cegielka",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "WMTBOC / World Cup Event 8",
+          "datetimez": "2010-07-12T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3885&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118262+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3885&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118262+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3885&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118262+00:00"
+            },
+            {
+              "type": "LocalStartList",
+              "url": "data/events/2010/IOF_3885_startlist_1.yaml",
+              "title": null,
+              "last_updated_at": "2026-02-07T23:00:24.758921+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3887",
+      "name": "WMTBOC / World Cup Event 9",
+      "start_time": "2010-07-15",
+      "end_time": "2010-07-15",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Cup",
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Portugal",
+          "country_code": "PRT"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3887",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118343+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://mtbwoc2010.fpo.pt",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118343+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Jan Cegielka",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "WMTBOC / World Cup Event 9",
+          "datetimez": "2010-07-15T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3887&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118345+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3887&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118345+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3887&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118345+00:00"
+            },
+            {
+              "type": "LocalStartList",
+              "url": "data/events/2010/IOF_3887_startlist_1.yaml",
+              "title": null,
+              "last_updated_at": "2026-02-07T23:03:29.069565+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3888",
+      "name": "WMTBOC / World Cup Event 10",
+      "start_time": "2010-07-16",
+      "end_time": "2010-07-16",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Cup"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Portugal",
+          "country_code": "PRT"
+        }
+      ],
+      "officials": [],
+      "classes": [],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3888",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118433+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://mtbwoc2010.fpo.pt",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118433+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Jan Cegielka",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "WMTBOC / World Cup Event 10",
+          "datetimez": "2010-07-16T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3903",
+      "name": "MTBO Briedis 2010",
+      "start_time": "2010-08-12",
+      "end_time": "2010-08-12",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Lithuania",
+          "country_code": "LTU"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3903",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118184+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.mtbobriedis.lt",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118184+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Vitalijus Paulauskas",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "MTBO Briedis 2010",
+          "datetimez": "2010-08-12T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3903&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118186+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3903&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118186+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3903&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118186+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "Men": 30,
+            "Women": 9
+          },
+          "result_counts": {
+            "Men": 30,
+            "Women": 9
+          },
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3906",
+      "name": "MTBO Briedis 2010",
+      "start_time": "2010-08-13",
+      "end_time": "2010-08-13",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Lithuania",
+          "country_code": "LTU"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3906",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118194+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.mtbobriedis.lt",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118194+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Vitalijus Paulauskas",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "MTBO Briedis 2010",
+          "datetimez": "2010-08-13T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3906&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118197+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3906&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118197+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3906&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118197+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "Men": 31,
+            "Women": 8
+          },
+          "result_counts": {
+            "Men": 31,
+            "Women": 8
+          },
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3913",
+      "name": "Faaker See Middle Distance",
+      "start_time": "2010-09-03",
+      "end_time": "2010-09-03",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Austria",
+          "country_code": "AUT"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3913",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118228+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.mtbo-wre.at.tf",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118228+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Tibor Erdelyi",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Faaker See Middle Distance",
+          "datetimez": "2010-09-03T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3913&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118231+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3913&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118231+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3913&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118231+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "Men": 34,
+            "Women": 11
+          },
+          "result_counts": {
+            "Men": 34,
+            "Women": 11
+          },
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3915",
+      "name": "Faaker See Long Distance",
+      "start_time": "2010-09-04",
+      "end_time": "2010-09-04",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Austria",
+          "country_code": "AUT"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3915",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118215+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.mtbo-wre.at.tf",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118215+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Tibor Erdelyi",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Faaker See Long Distance",
+          "datetimez": "2010-09-04T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3915&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118219+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3915&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118219+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3915&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118219+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "Men": 28,
+            "Women": 11
+          },
+          "result_counts": {
+            "Men": 28,
+            "Women": 11
+          },
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3920",
+      "name": "World Cup Event 11",
+      "start_time": "2010-09-17",
+      "end_time": "2010-09-17",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Cup",
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Italy",
+          "country_code": "ITA"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3920",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118170+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.mtboitaly2010.it",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118170+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Sandor Talas",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "World Cup Event 11",
+          "datetimez": "2010-09-17T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3920&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118173+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3920&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118173+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3920&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118173+00:00"
+            },
+            {
+              "type": "LocalStartList",
+              "url": "data/events/2010/IOF_3920_startlist_1.yaml",
+              "title": null,
+              "last_updated_at": "2026-02-07T22:53:18.435593+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3921",
+      "name": "World Cup Event 12",
+      "start_time": "2010-09-18",
+      "end_time": "2010-09-18",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Cup",
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Italy",
+          "country_code": "ITA"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3921",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118204+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.mtboitaly2010.it",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118204+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Sandor Talas",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "World Cup Event 12",
+          "datetimez": "2010-09-18T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3921&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118207+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3921&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118207+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3921&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118207+00:00"
+            },
+            {
+              "type": "LocalStartList",
+              "url": "data/events/2010/IOF_3921_startlist_1.yaml",
+              "title": null,
+              "last_updated_at": "2026-02-07T22:54:50.154199+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3923",
+      "name": "World Cup Event 13",
+      "start_time": "2010-09-19",
+      "end_time": "2010-09-19",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Cup"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Italy",
+          "country_code": "ITA"
+        }
+      ],
+      "officials": [],
+      "classes": [],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3923",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118147+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.mtboitaly2010.it",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118147+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Sandor Talas",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "World Cup Event 13",
+          "datetimez": "2010-09-19T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3936",
+      "name": "Australian MTBO Championships",
+      "start_time": "2010-10-22",
+      "end_time": "2010-10-22",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Australia",
+          "country_code": "AUS"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3936",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118157+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://vicmtbo.com",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118157+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Jonathan Sutcliffe",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Australian MTBO Championships",
+          "datetimez": "2010-10-22T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3936&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118160+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3936&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118160+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3936&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118160+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "Men": 15,
+            "Women": 14
+          },
+          "result_counts": {
+            "Men": 15,
+            "Women": 14
+          },
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_3938",
+      "name": "Australian MTBO Championships",
+      "start_time": "2010-10-23",
+      "end_time": "2010-10-23",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Australia",
+          "country_code": "AUS"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/3938",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118132+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://vicmtbo.com",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118132+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "Event adviser: Kathy Liley",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Australian MTBO Championships",
+          "datetimez": "2010-10-23T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=3938&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118138+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=3938&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118138+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=3938&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118138+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "Men": 16,
+            "Women": 13
+          },
+          "result_counts": {
+            "Men": 16,
+            "Women": 13
+          },
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_1042",
+      "name": "Åhus MTBO",
+      "start_time": "2010-06-23",
+      "end_time": "2010-06-23",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "OK Pan-Kristianstad",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact persons",
+          "name": "Maria Cutova"
+        },
+        {
+          "role": "Contact persons",
+          "name": "Bengt-Göran Månsson"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "0709-795494"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:BhUMHEEaIwIAHkgZHx0RG0QSDQEVEQFcAwE="
+        },
+        {
+          "role": "Event director",
+          "name": "Bengt-Göran Månsson"
+        }
+      ],
+      "classes": [
+        "D16",
+        "D20",
+        "D21",
+        "D21 Motion",
+        "D40",
+        "D60",
+        "H16",
+        "H20",
+        "H21",
+        "H21 Motion",
+        "H40",
+        "H60"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/1042",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118055+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.pan-kristianstad.nu",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118055+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": "Skåne",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Åhus MTBO",
+          "datetimez": "2010-06-23T00:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "position": {
+            "lat": 55.94449,
+            "lng": 14.32334
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=1042&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118058+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_1046",
+      "name": "Kvarnsveden MTBO",
+      "start_time": "2010-06-30",
+      "end_time": "2010-06-30",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Kvarnsvedens GOIF OK",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Peter Bergström"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "070-771 03 40"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:AgYGCUIBAhwFFSUZChsLCUIYTQEE"
+        },
+        {
+          "role": "Event director",
+          "name": "Peter Bergström"
+        }
+      ],
+      "classes": [
+        "D12",
+        "D16",
+        "D21 Elit",
+        "D21 Motion",
+        "H12",
+        "H16",
+        "H21 Elit",
+        "H21 Motion",
+        "Öppen 1",
+        "Öppen 2",
+        "Öppen 3"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/1046",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118080+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.kgoifok.se",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118080+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": "Dalarna",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Kvarnsveden MTBO",
+          "datetimez": "2010-06-30T00:00:00+02:00",
+          "discipline": "Sprint",
+          "night_or_day": "day",
+          "position": {
+            "lat": 60.5282,
+            "lng": 15.3364
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=1046&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118083+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=1046&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118083+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "D21 Elit": 2,
+            "H21 Elit": 7,
+            "H16": 3,
+            "H12": 1,
+            "D21 Motion": 3,
+            "H21 Motion": 9,
+            "Öppen 2": 3,
+            "Öppen 3": 3
+          },
+          "result_counts": {
+            "D21 Elit": 2,
+            "H21 Elit": 7,
+            "H16": 3,
+            "H12": 1,
+            "D21 Motion": 3,
+            "H21 Motion": 9,
+            "Öppen 2": 3,
+            "Öppen 3": 3
+          },
+          "fingerprints": [
+            "03b45e032c88689650216c55eccc5289de8e166d3ba33961b24f2e07ef06ddf2",
+            "08d246125a95a46720e106f0ae81bc79f91dda20ebe4f7fd8052286a1d453ac6",
+            "18032527ca7a08ed7a888e5ec86effa20294f7ac176178f94886654710e973be",
+            "1a581336a6c2820b2eb139d0cc05abeea9b7c9b181cd2481ceadefadc7e8dfc1",
+            "23bc9c1ef80ed969d36b97b0388905d50879746eb02699b7d6e20f6ef6aece17",
+            "2457a7c0f975789c40437fd2beaf9168449526f1d276ac51f6a35e8d42026a65",
+            "3c17e51e9b76d3557959b04b392d9c543d0b9bcfa9bf4f5b5dcf76e8893e3ae4",
+            "401752cb92a24e9322aff9e74390126197494e05cd708153317b42e5ad5ccb99",
+            "4ac3633a556828cc6efcce76450cc12c75231cba413dce209063161bb7893f57",
+            "4fe3952f6f9ddff214a1b45ba8995b998868b9e51484dbb7f32003e6e31d4b6d",
+            "5adec113e49b2a7a772140a37621654946be6ed3c6570fde7107216a213f00ab",
+            "5b65d4fb0b2ed3b7dcf09322df590e23d1f7ac4950bdbc3e3567f847d0413e92",
+            "68709c59f61b5aef9379e0d7dd2f6795b8f465b139bb0df696be8046b78897d9",
+            "7336617ab5a91169f085f35d44ed36499dc59bd0652e17d7403fd3914fa0d8c1",
+            "77b98a51a170467baee0607f99430fb7932a09d7e22d2562b9eaeb06495f92ea",
+            "7ebeeccfd3e3cbabf07f8040601504bc750cf443afeb98c857407a6d070f99b8",
+            "81d234f7a0d78ca62fc4e24cd219e62d24c38160e53be4894a389e452126b7a8",
+            "8719392655e2d16aa40a372c293c7a7f7415775ebd0b8bbd95c2f0f6302c3130",
+            "878b7962981ad1241ecc16481f30bf54675b58b86447eb65717f51f2ca316ea4",
+            "880532617abf624b40cd152bbba5f390e8ff19623e1e59ff583561092f80f1d4",
+            "93a3f36a079ab01d6f344f15808b3b1a02d2a2076badebc20c7ee48a888e1244",
+            "953954eb90d329dde5a20461573a538c9412d1789cb4d482add13a29f7b79496",
+            "9682574cd2e50fc0558caacdf5c4d1648e320a799238257708acd223721ad53b",
+            "a2df6751dd46cc24ed7f5cba7a243d7663de5e6b3d974784b2b39ed0ba1ee3cc",
+            "a3da30d2603fddfe5039303d2c8289e174bfe1829e094ca88b8237470e914491",
+            "d368e68a06e047692fa636b753e08533fb686bcb5a054c2d129de639edb93e5f",
+            "d95dea1c16d2ff1f6de1aee6d53dcf8e648a514da436835009dde8e492074ecb",
+            "dc731711d8d7facf878fede16a313bf63661dbcab894b4bc81c73afaf80b6a11",
+            "e62d08bb14b633dd93fecc0fc7ec217e3958750609efacd1ed71c68d6d10aa4a",
+            "ea2e6546e57e8560035a8d9aabab3bc4aaf45b471428fd76c2d62846d4f0c469",
+            "ed6008ad4a970c1cd9df33b4fc11221c81d1ffe32166c98e3cfeed790aa2f074"
+          ]
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_1348",
+      "name": "MTB-O Friskussvängen",
+      "start_time": "2010-07-19",
+      "end_time": "2010-07-19",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "FK Friskus-Varberg",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Mikael Aftevik"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "0340-18342"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:DBoPDkESDTIHGwMABAcJGl5dEBc="
+        },
+        {
+          "role": "Event director",
+          "name": "Mikael Aftevik"
+        },
+        {
+          "role": "Course setter",
+          "name": "Thomas Josarp"
+        }
+      ],
+      "classes": [
+        "Bana 1 - Lång",
+        "Bana 2 - Mellan",
+        "Bana 3 - Kort"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/1348",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118106+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.fkfriskus.se",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118106+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "De deltagare som inte är orienterare, t.ex. MTB-cyklister (och därmed inte finns med i Eventor eller har SI-pinne), kan anmäla sig via E-post, (\n[email protected]\n) !\nAnge ditt namn, klubb, bana och ev. SI-pinne.\nAnmälan senast 18 juli, kl 15:00 !",
+      "region": "Halland",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "MTB-O Friskussvängen",
+          "datetimez": "2010-07-19T00:00:00+02:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "position": {
+            "lat": 57.12422,
+            "lng": 12.56583
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=1348&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118109+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=1348&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118109+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "Bana 1 - Lång": 36,
+            "Bana 2 - Mellan": 22,
+            "Bana 3 - Kort": 6
+          },
+          "result_counts": {
+            "Bana 1 - Lång": 36,
+            "Bana 2 - Mellan": 22,
+            "Bana 3 - Kort": 6
+          },
+          "fingerprints": [
+            "02314dc6bb0c82416308ab7c04b3c7a80ddc49861f9a6d2d5f4c6783f93e3dc7",
+            "051e946c30240b9d30aab527025d5e745df0f720de64d37eb52701d104306a5c",
+            "07fad17a0edee7366ea18e01a1e8a9709910167a6a5a0687499ec0f831c4c791",
+            "091f8edefacfa56d5f707c21fe537aaaf2176a70e5f8ed791f0d8444ff9e4dc8",
+            "097d0013a23d27f6ce8510c2fbfbd5af033ff71c3ea3879f83b44090b08612c2",
+            "0acb066b8cc92f81a7612142df1f25cecf75137ee28f880771306799eff9dc49",
+            "0da91813b25c38f1d7451466e3a482e6e52c305fe9aa98dcc7d1c2a254cde833",
+            "1a75d5f3a8ce13ec4143e90732a15189f97d26b4365c5befa39b1e01ef63ce73",
+            "1ad81f8b9b23fbd6fb2330dba10d9d82244cac9891208a2f0bfd66bd724b7c8e",
+            "1bc1eafc29a7d3e9e8d1c2cade206b1e4087f387a7034f242c7893846c3886cc",
+            "1c16dac14f152f3df25ce5d1ac43c3378cc4d5c48c42d885c693d8646746b55e",
+            "2429697691ab9bff44c0fe560ba115777d0f3f300a7025e1c32fff46b96b4662",
+            "2757758a35609cff086719a1121d7c3597fa380dfcaf9e46e0578c0e54f7d6e2",
+            "27e183f410af1a509aff7d8f4cd7f1171976498760530206b9c4f8b9b39d6baf",
+            "289a6515a0ddf52bb775f4c24f0196b86f4ea452c1626f62959261201e220841",
+            "2c98c5a29fe5047aba069b195bd43cf49fa4a76f4519500aac948368a5752649",
+            "2ca1d93d67b63c1dc4df249ff059a3eb2d58488ea5613101035ffb74c1300e92",
+            "2e15725e046d37aa1486d5fdddac03a44571a633bdf4338adbcae7c2377491e6",
+            "2f3420714cfa7e88bfdea0c2cc22d92787a2fb58883c13e2bb11cb7c88f99903",
+            "30936f9c6e5b267c189d97bade8682c02a4a19079b170d806ef4b8135210b93a",
+            "36b57082383bcdabc3e84d04ca0d29b05cc2a86f73d6f7b8d1b922c7ebc273f7",
+            "39a335c2d77a8d2646a31deca5aa00dc1ecf0b5cb4b2b096be4f914e8bb35bfb",
+            "3e57aba5a87bbc24411ae1045cc1658e417ae4ca534b8568600d3dcab78ea7b0",
+            "422eb7990477245ac930904116f58d12b03160fb0dc20a34fa6efc58bf873641",
+            "45e1d8b08823474b7a7f8a4ec51e883101c075d087c7cd74fb4b9237afba55b3",
+            "4bb021987cbeb8ae21594852dd43150afd6b35ea522410cd96c29b5c049476b2",
+            "5a0e4cf3d1feb22fbbb3ee8b357762a6407ca02c847e806c91c0cd993ad8eb8d",
+            "5be11aca089c7cb432e64ff49b7e4619f913542f4c4dbf9c45773ca0a92f3eec",
+            "69f2c4856f14102e2e2c20501e1754d10ebc756b19c970defeb7b14c6d475d20",
+            "6efb2965f41584d618cbd25462612427784de994b52caa48fa14991a90cd9840",
+            "741f18283dc48ed78e62793d308e96a280b73360325d400a7a0c947e286dcf5d",
+            "7e714e672f29e91fc20f5e31d81fa57c716088d6ddc301029757c26844781209",
+            "802610b219b2b282710d7e2d8b755ed7a64f0695beadc5df8c920fcbbda8b8a7",
+            "806ee6e2cc3a41151f9faf288457af19b4fac206e3169866ba1ae61f185b586f",
+            "840e06f49578e83b9758b5123f5baa059d830ed7e5d2268c3808510c41c2f69c",
+            "8618bb76cbddb3dd4501f47c1ba3eafdbcb835a13b85c1496b03fa34b2754d7c",
+            "87c0a2dd60145558d079f81e0812e17bf6232a5c463ab2e414cd06850baf5dc2",
+            "8d9739778df04b951e1901b4890c7976da408145d98bf185f96fea7d6382dc64",
+            "8fa0ebb0d8e091e202e75534f5a25d50b841e444acee3edcf7a064283f135c83",
+            "90b0c542f477cc537ae55b42b4d50c020c166c90b10fda5c55068b6ce857f990",
+            "9319ec40967bc144c27a3c4976554654c2e757b46602b08aa5fa76d7fcfb4902",
+            "98b9d0ecebfbb110d586b18480ccc4bcd6a888478c903a8a5042cf7e5775f16d",
+            "9a8959f6385021907a04aa3a36388e62f7cebd8b5f843bc8431add70bc2e56b9",
+            "9ed77d18bd3652856363b9c5b8c14cfaaf68a639605ff8c47450c97c26840d58",
+            "a2b96394522f2327014b20e7ecba1727d5e4616ad1322d504e1b11a71063cbcb",
+            "a331f9a2b46b6dfa01fc8b41fa40061239a6bd942b6972d2584a4465e0b65dc5",
+            "a389c17ac389ed4151dbec5f7f93c15ec0e1be09a5083a6db31b6d1b0d9c3b94",
+            "a7d0ed2676f718d1b10a438c7443f09cc2824b8aee7789c4eec055b28e66a09c",
+            "a9e64e8ecce0fd506c7cf074feabc3aaf13f058a96351835bd88e99d53ea6756",
+            "ab66ac7a09485ec8c96d8298323c988d3f22c6c4d4cf69a589970a0bcae530c3",
+            "ac9ff6798c180f8c6db73dfd5de555c1143ad5a334e45720c8b1b8928b95818b",
+            "adf30ce5ca3b12cbc9c2cf6a7b68728cf6b40c775acd0d42b69434af087069f7",
+            "c2505a351762546672f69545513c2b47ab650fa6be3142dcb5da165ab2140586",
+            "cd6e7bac619070bb81d09cf101faf66606e6c9bb5251282cd93c6516a361fafb",
+            "cec98ad44f39f67127495f9b9b94a9e13c9e8a3112ffae1bdfa1046b5a6f60f1",
+            "d784ca4ca9d4ae66dd3f7803d33623f252a761cf84861a48e7eddd11326cff44",
+            "da8381435d9c4787d5ebc49dd79f58c4681de2b9fcc0a4fb2e5d216d699be8d2",
+            "df3600bf4082b074222f0a46c51d04128b59e45ffa66a259d5d41169809e2b9c",
+            "e1bee544cb8c20c696b117d60abb8ee8a7986c3c3a97a9f7053273d63457a18c",
+            "e71be70bc3a58effc5abdb4025c9f41352c24f66d73cbe9b6aec66789cd76ac7",
+            "ed7dc9fc05650c254030a5ce2e99cab9d375582dcc013c5a31caab970197d4a7",
+            "f159241186b54cd0ab20a639a855176ee3e5c1eb7491e5d4df372d8974e3f2c2",
+            "f1cf31837e9ce855e3faabff106143e708a4d2a22869d13ac04a609429430519",
+            "f5ec468cb89eac07736da1193a6862afd695aff180146bc41596d2d4ab8d076e"
+          ]
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_1465",
+      "name": "Uppsala MTBO",
+      "start_time": "2010-09-25",
+      "end_time": "2010-09-25",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Regional"
+      ],
+      "tags": [
+        "FootO"
+      ],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "IF Thor",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Christian Rohner"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "070 570 81 39"
+        },
+        {
+          "role": "Event directors",
+          "name": "Christian Rohner"
+        },
+        {
+          "role": "Event directors",
+          "name": "Lars Vestling"
+        },
+        {
+          "role": "Event directors",
+          "name": "Magnus Wallenborg"
+        },
+        {
+          "role": "Course setters",
+          "name": "Christian Rohner"
+        },
+        {
+          "role": "Course setters",
+          "name": "Lars Vestling"
+        },
+        {
+          "role": "Course setters",
+          "name": "Magnus Wallenborg"
+        }
+      ],
+      "classes": [
+        "D14",
+        "D16",
+        "D17-20",
+        "D21",
+        "D40",
+        "D50",
+        "D60",
+        "H14",
+        "H16",
+        "H17-20",
+        "H21",
+        "H40",
+        "H50",
+        "H60",
+        "Minitramp",
+        "Ungdom",
+        "Öppen Kort",
+        "Öppen Lång"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/1465",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.117988+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Other",
+          "title": "Kartor",
+          "url": "http://www.ifthor.se/orientering/arrangemang/mtbo2010/index.htm",
+          "published_time": null
+        },
+        {
+          "type": "Other",
+          "title": "Sträcktider",
+          "url": "http://obasen.nu/winsplits/online/sv/default.asp?page=classes&databaseId=15438",
+          "published_time": null
+        }
+      ],
+      "information": null,
+      "region": "Uppland",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Uppsala MTBO",
+          "datetimez": "2010-09-25T00:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "position": {
+            "lat": 59.81978,
+            "lng": 17.70756
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=1465&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.117992+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=1465&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.117992+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "D21": 7,
+            "H21": 28,
+            "H17-20": 1,
+            "H16": 1,
+            "D14": 2,
+            "H14": 3,
+            "D40": 2,
+            "H40": 8,
+            "H50": 9,
+            "H60": 2,
+            "Ungdom": 3,
+            "Öppen Kort": 2,
+            "Öppen Lång": 11
+          },
+          "result_counts": {
+            "D21": 7,
+            "H21": 28,
+            "H17-20": 1,
+            "H16": 1,
+            "D14": 2,
+            "H14": 3,
+            "D40": 2,
+            "H40": 8,
+            "H50": 9,
+            "H60": 2,
+            "Ungdom": 3,
+            "Öppen Kort": 2,
+            "Öppen Lång": 11
+          },
+          "fingerprints": [
+            "047422ddc987810d124758e771ae52d2ded544bfb241fff511d10b94a1e1f7d2",
+            "0db258cb1861bcf7a78f19e4264eb475da8f96617ca20ebe7aebb72b66a4342b",
+            "18032527ca7a08ed7a888e5ec86effa20294f7ac176178f94886654710e973be",
+            "19db864d0ee5231d4cff6c2e5ce3ebaafd94aa72181b7fec26a6d68e8c1eee3e",
+            "1b3b8f1b241a7c75fee2a6d39ac92f80c0e9dd5149f8052d04bfc6604569d535",
+            "1c38446b50469c6fc1fb930f9c8d1e5ea20a85c3dc74069dfd8b242e12afa51c",
+            "1f8949e5c5ae6f2db8a31309595d27f91b44c5a9dc35ccde6296e8c606b8aa83",
+            "234e0653e24efb514d250366e04051a24c4310834ff228bc387c765fbc990459",
+            "2939c7b8fdec5446a1abab27e7ecea4c3c278a4f1b0da1a0c60cb399319fe702",
+            "2cb66acf6695c3316ef87c69ea6976d6d18e0ce45b3494a5fbc01dff0d988a4f",
+            "344a819f328a2216c5f8f74ac5d403297d104ef97120f64bf23066566a0b1d21",
+            "3af9ba6233404182257be096731b3b43e68bd2f83ce75e78fbe47e6a0f14d36b",
+            "3c17e51e9b76d3557959b04b392d9c543d0b9bcfa9bf4f5b5dcf76e8893e3ae4",
+            "3ebc6c45b1b95a105fe524e9106cabf5738aa5c6958866e8b39cef398a86937b",
+            "441316148de36b7f001df9f15ba45f7b1c86d5bffcad6ac68564cd95b23b4d9b",
+            "44c3e4d9861e6b65e6c5f7a0ec92ce73c5072710a4144ebe18be2f68d88c7b8f",
+            "4668845e1b6f8908e2c6c78969bff940d80a3016e15a6b355043d9b36cc25a01",
+            "4c24cc7115cdf5788639920bff156db7068e06386272d235c2701ac02684de9c",
+            "4c418a9a67bf06de2752286621c4963bd8d91d2553cb6f5b47b487625bd45604",
+            "4d755712e1dcd23822e7b1500a5f6b27c5d06ab952dbbbc261a258f4cd5ff027",
+            "50cb6281c926d6eaf51cad83ba472dd901873e6ffd7f2fb9f6fd44dbd9782eda",
+            "51fd6aac8f83e11f2142617f68cf58f292f934653e2b5376047217525a8d0b61",
+            "530798a60f76511de81c98fab24251b3adf25faf0a7c01b1b6ec2d0717154baf",
+            "53231342cbbe0310f32876c3e18430a8bef986257e882064c4a739015c09dd99",
+            "53d6ba8389413309259279aedec449a93f33663d62515cbb7fd76d24e4799b3f",
+            "5800099a692aef87f212f5ab33672dfef2b00b9ea5a7afb9ac24958c3d49164f",
+            "5995fb5bdaeddd9cbb83d3e81a761506252647630687b5eee4db6bf5d2a3ea3c",
+            "5bc40c5d70f8dc54f635a998e36694e668e468faa4f506bd18e1ba984605359c",
+            "5cc178f79cc31a330aaa877abb7d9d14509806efa1a0bd2900fde820108a74f6",
+            "6546e188cf03e160687f4d379a8ad12c8c87f6804c7e5c2d97de5930e2d9749b",
+            "65771655bd73d0a3ace20f568d71bb1e1d8e0e68ff20eeea5ec16fbf17b9b996",
+            "68709c59f61b5aef9379e0d7dd2f6795b8f465b139bb0df696be8046b78897d9",
+            "69ab919512e66e3db2090919940079fc47686910211234e9ba520f1460c7ba96",
+            "6a19ad04cdf696f9294fccbd94417b8c9dae285bdf5a35dcf844e8a0fa5eff83",
+            "6f2cd7b6fe2fc0872ca160e0681c7d490ee28ca525ae796306fd2e47b8750635",
+            "6f8dbd3619c4315a46fde68c025181654e084c1e21d100f8e8868a6bcd7af432",
+            "6fe10c58582e898d865b8acd0e917498d1f386578a5067b244b5d75f2c461a63",
+            "71eb3b409f9454ba2206075bfef60c496688ac499d4e7b7b34428287448d29d8",
+            "72ec295cc7318378e7d5348279628bccaeca9b16f94ef00801376650a740473b",
+            "77b98a51a170467baee0607f99430fb7932a09d7e22d2562b9eaeb06495f92ea",
+            "7cabe3ec817c3a74cc13ad8516518041e8b0244c460ee471795f66a4f961c781",
+            "7f2f65f49bd65039c6cbca2942c669bceb92033f088a2ade3323fd7665ed4818",
+            "809ff44f62b05608c0debd2e9bf29a42db1737a0356d79f30d787e55dbfbb3b6",
+            "872bf53cd9ca4ca6c8a3f6a9cebeaa17853b4fe1324da173aaacfe93e706392f",
+            "8931c7d0250cf48d25cbb16f23caf5c6fcac18c98a47817ad21ed8c3c9d21b31",
+            "89e50ee31ad7ac5dca29b3ae95aac6d2ca81f7a9e5a31c7e42d3c928cc6479a7",
+            "9528d35c42cedaccd3ea0ca752a4aa62efd10d40a11ac030300919973c7eceb4",
+            "97203a81453e086f576ec69c288a87891b19f11425bc01755be45db23f245aca",
+            "9c2b1c52aa9c5880b49c4734b3a03a2f424d104536a1f079c2385b65b80ec033",
+            "9eac27b1e4592dd0ff79d362c2cfc5568386131a7b7b65d8009a0bf7272dea5a",
+            "9ed5ddc305cc4577fe5ca8b80d6a25c3a2664351a64a4bf0243ddddf135854fc",
+            "a15bab33315a373f4dd8003258e633b2516924a18853b90940ad4c05f7547533",
+            "a3b20b71e0fa238b579b08fd8c0f4f176485263a0b3d27e1d5f22b5b91a3af28",
+            "a85b9c75304959747b3654961430b61793f9f6233b169de32543f9c5a0fabc92",
+            "ab09ab780ad9ac5edcde4cb5b961db5955f992d1f7bc1fa718a8728539d8ee6a",
+            "af86b47e05c64b30dc89467b2881b4938bb341d5d282d48e785f243d259639c6",
+            "b0043f469091008cfbc3ae97db51a2a9df721e8293b87c4cd71600b414976b82",
+            "b56737bfb8d4cebfdc4f0fb55e3ffa0a5abd11bb57f856d748042bbaa9eaa2eb",
+            "b6bb10f1e5214a33141b53ba47745beae0e316cbfec8f126538288b5b3d9ab66",
+            "b7ea98c8cf0ab3a86a8ec8f9df37bbe4efe7096bf94c2a9aa2a7a82bca507c1a",
+            "b850b914c04e5efbd1f654cbf4852267b6367bfb836df10dc2c4713faf1e3016",
+            "b9b4bae86e40c8ea6347f88a4c1f33bfeb70eb835087cb5011b213bd52fcde29",
+            "bb256493a84893a14aa922108a69cfca7332585ca6ea97ca28cb244fff99703f",
+            "bb615e59669fab21e32d4634ccb3edc37d05acd9a94accf6e807cf8fd438de9a",
+            "bbc42ec29fd9f938fdb649f9d3844594abe6a6e1ccae0ef2e1b2aa0bb2bd9505",
+            "bc4b5a2de34a02b70198d7fdcd743dab5eabfe42d51c08c0cfbf68efb19979bd",
+            "bf0d1857e0ec13911c6ba9f6e5da4518bd02590db9cda04c020bd3ad8b89cbce",
+            "c4c3f185d00a6f968afa7acb894021b835aeb9ef8a30dbc85c0b677f409ecec6",
+            "d13e40f289aab07dc57532dd389e7ba1563c9d592e718366afb2047e81fa1dd7",
+            "d41a28850ff4362ae1cea6bc115c5398c1f1b85bca980a66d0657da3644e46da",
+            "d635f001b6f2e1caadee2f7888d741b9bf124a455c5a670c912d0d18768f3158",
+            "d86320553da7b614852f62f16378b15f63dccf7dd7e9667a34681c82dd509a1c",
+            "dbf1b4b67baff718e1796e0339fd24ce4e3aa07250a1cb81eb03c041f80be0d0",
+            "dc033570ccca32af1f5606d33413603c6298611f45585b0cc79ca030f1abbbec",
+            "e0da47eb0aaba14e01a1382acfa7cd605349c677e92909615ae11c1b32802eea",
+            "e65fd41dd616375d54057ce21121d761437b77b38e82aa1d535c02949810bd35",
+            "f727053ae6e2994b3f2d3b6c6514d2a50e9f74ebc675780a32794596684bb488",
+            "f7c292503d3440e4d901f272b3885dc18abcc6dacc8688f0def4f9f9a72e5d3e",
+            "ff55648e5c75541b3bb0f45dafa520d275436cfcfedca504bcf6999d3b2be8d9"
+          ]
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_1610",
+      "name": "MTB-O från Brantbrink",
+      "start_time": "2010-10-17",
+      "end_time": "2010-10-17",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Söders-Tyresö",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Peter Andersson"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "070-913 21 26"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:DBoPDkESDVwRFREGDFoRAEkWEQEhHAwECFoRCg=="
+        }
+      ],
+      "classes": [
+        "Bana 1 - 12 km",
+        "Bana 2 - 9 km",
+        "Bana 3 - 6 km"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/1610",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118008+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.soders.org",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118008+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "MTB-O på MTB-O-karta.\n3 banor.\nAnmälan här eller till\n[email protected]\nalternativt 070-913 21 26",
+      "region": "Stockholm",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "MTB-O från Brantbrink",
+          "datetimez": "2010-10-17T00:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "position": {
+            "lat": 59.1929,
+            "lng": 17.90143
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=1610&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118011+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_1747",
+      "name": "MTBO i Södertälje",
+      "start_time": "2010-12-04",
+      "end_time": "2010-12-04",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Södertälje-Nykvarn OF",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Mats Heldt"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "0736553438"
+        },
+        {
+          "role": "Event director",
+          "name": "Mats Heldt"
+        }
+      ],
+      "classes": [
+        "Kort",
+        "Lång",
+        "Mellan"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/1747",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.117965+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.sno.nu",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.117965+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": "Södermanland",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "MTBO i Södertälje",
+          "datetimez": "2010-12-04T00:00:00+01:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "position": {
+            "lat": 59.15735,
+            "lng": 17.59781
+          },
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_754",
+      "name": "Högdalsturen MTBO",
+      "start_time": "2010-06-19",
+      "end_time": "2010-06-19",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Regional"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Tumba-Mälarhöjden OK",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Patrik Gunnarsson"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "0705-514668"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:BysSDlkBChk+FxAcAxUQHF4cDTIJHxEfDB0OQU4cDg=="
+        },
+        {
+          "role": "Event director",
+          "name": "Patrik Gunnarsson"
+        },
+        {
+          "role": "Course setter",
+          "name": "Patrik Gunnarsson"
+        }
+      ],
+      "classes": [
+        "D14",
+        "D16",
+        "D17-20",
+        "D21 Elit",
+        "D40",
+        "D50",
+        "H14",
+        "H16",
+        "H17-20",
+        "H21 Elit",
+        "H40",
+        "H50",
+        "Öppen Kort",
+        "Öppen Lång"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/754",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118117+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.tmok.nu",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118117+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": "Stockholm",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Högdalsturen MTBO",
+          "datetimez": "2010-06-19T00:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "position": {
+            "lat": 59.25144,
+            "lng": 18.07988
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=754&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118120+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=754&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118120+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "D21 Elit": 4,
+            "H21 Elit": 12,
+            "H14": 4,
+            "D40": 2,
+            "H40": 4,
+            "D50": 1,
+            "H50": 5,
+            "Öppen Lång": 2,
+            "Öppen Kort": 4
+          },
+          "result_counts": {
+            "D21 Elit": 4,
+            "H21 Elit": 12,
+            "H14": 4,
+            "D40": 2,
+            "H40": 4,
+            "D50": 1,
+            "H50": 5,
+            "Öppen Lång": 2,
+            "Öppen Kort": 4
+          },
+          "fingerprints": [
+            "0866bc4427e48bfd3261876e3322859021a3d30d9d94e41ca6d06541b3466409",
+            "1a581336a6c2820b2eb139d0cc05abeea9b7c9b181cd2481ceadefadc7e8dfc1",
+            "1ad937f3064158220f513b260ea79faea3e865e3c636178dd405b9b744a7f211",
+            "1c38446b50469c6fc1fb930f9c8d1e5ea20a85c3dc74069dfd8b242e12afa51c",
+            "1ca6f7e73818b01985cb600803bd04e0a24b2e60208d472b235ad87baf09d7ff",
+            "36682b83ec95765a4d66675501894eaa31fea1fd5d3c60f0fa94543ddc9347fc",
+            "3ebc6c45b1b95a105fe524e9106cabf5738aa5c6958866e8b39cef398a86937b",
+            "4372d892dbc400b502786998dec4e031c0af77d9c2f9aa511229a6d690bb4f9a",
+            "5cba931e0d1ce26e4ec970c154f22cb6e3dda510a2ec96d2d89cf4c08a44d8db",
+            "5d6e2e6a2f65c287fc86593a28c3a95156e62e12bcf584b3267eaf6d3c51cf2a",
+            "68709c59f61b5aef9379e0d7dd2f6795b8f465b139bb0df696be8046b78897d9",
+            "69da90e6999d07f2d39af27f87540e414e3bf481bdf4ceb4e35441b4ad47528b",
+            "6da1cdc714379b7a126a50e1f1e2500ee9e4e03c6b3c5fb0b204924a6dd10d09",
+            "71eb3b409f9454ba2206075bfef60c496688ac499d4e7b7b34428287448d29d8",
+            "76ee49bf3c08a9db9d21ead13dcebae6d6819b03da3ca29a4f69dae448176b12",
+            "77b98a51a170467baee0607f99430fb7932a09d7e22d2562b9eaeb06495f92ea",
+            "780d7ded23036120267b6fb073d8de59ec0cb2cab257ba64288681b93efd7a61",
+            "7e1145d4aab520dc530dcadea4687e58afd3af9427a13d39ca7f22bf203d346d",
+            "851f2feb4fcd33c71d8c1b9ca60b2d55a9d6d98787a8f2a38038eda81bdbcf89",
+            "89e50ee31ad7ac5dca29b3ae95aac6d2ca81f7a9e5a31c7e42d3c928cc6479a7",
+            "a15bab33315a373f4dd8003258e633b2516924a18853b90940ad4c05f7547533",
+            "a3b20b71e0fa238b579b08fd8c0f4f176485263a0b3d27e1d5f22b5b91a3af28",
+            "a66cf1907744a9c04aaaf5f68e59241d3af051e895ddefad8d4269e7436a92f5",
+            "a8c1a0425860584e7f223c189e76580a656df7276af0e788eb10ced1982e870d",
+            "aea4a0f91f8da32921dcd06ee06f45f636e5a64ad63fd02de131b518c1d41de2",
+            "b41a75beb77cb69e2c879cb7281e92e58083e90519870d928b716ee8e83e6470",
+            "b6bb10f1e5214a33141b53ba47745beae0e316cbfec8f126538288b5b3d9ab66",
+            "bbc42ec29fd9f938fdb649f9d3844594abe6a6e1ccae0ef2e1b2aa0bb2bd9505",
+            "c3a1c518f8f923fb93308ee51dab6469395277c38d592e67c3310306f422e869",
+            "d912da6c7143557a2fb1088157a683f1babfc6edacd52c552fc3183547f329ff",
+            "dc033570ccca32af1f5606d33413603c6298611f45585b0cc79ca030f1abbbec",
+            "e8af5520af89090c2fb7798d98641b9971d447e00454db9d3115fa01f697584b",
+            "ecfd7f70b19a7e6fd984b92cc72e9abd5c6b3a7feaa8bc22ddf1b959b0fcf1c4",
+            "f0aaa4b966df8804d9032d0e4bd3db7c86352788c139bccfc4d6f309962cb75d",
+            "f15a79ded2325b30280bcc3305b259a3212745a3c3da2c4ce12b02f6a0e9fdf1",
+            "f57ba00f1da7c31a955f9d3a11c9914aed240600383a6e3c594f351bbc8fc186",
+            "f7c292503d3440e4d901f272b3885dc18abcc6dacc8688f0def4f9f9a72e5d3e",
+            "fcb5078b8977cbe8edaf33dae873479b784bac41ddf773870306e44ebee81749"
+          ]
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_824",
+      "name": "Mora MTBO 2010",
+      "start_time": "2010-05-28",
+      "end_time": "2010-05-28",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "National"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "IFK Mora OK",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Per Frost"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "0730355368"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:HREQQUsBDB4NFQsyChkDBkFdAB0M"
+        },
+        {
+          "role": "Event director",
+          "name": "Per Frost"
+        },
+        {
+          "role": "Course setter",
+          "name": "Linus Karlsson"
+        }
+      ],
+      "classes": [
+        "D21 Elit",
+        "D21 Motion",
+        "H21 Elit",
+        "H21 Motion",
+        "U1",
+        "Öppen 1"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/824",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118042+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.ifkmora.se/ok/myc",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118042+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": "Dalarna",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Mora MTBO 2010",
+          "datetimez": "2010-05-28T00:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "position": {
+            "lat": 61.03269,
+            "lng": 14.49496
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=824&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-07T23:08:31.118046+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_825",
+      "name": "Mora MTBO 2010",
+      "start_time": "2010-05-29",
+      "end_time": "2010-05-29",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "National"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "IFK Mora OK",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Per Frost"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "0730355368"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:HREQQUsBDB4NFQsyChkDBkFdAB0M"
+        },
+        {
+          "role": "Event director",
+          "name": "Per Frost"
+        },
+        {
+          "role": "Course setter",
+          "name": "Linus Karlsson"
+        }
+      ],
+      "classes": [
+        "D21 Elit",
+        "D21 Motion",
+        "H21 Elit",
+        "H21 Motion",
+        "U1",
+        "Öppen 1"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/825",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118091+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.ifkmora.se/ok/myc",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118091+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": "Dalarna",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Mora MTBO 2010",
+          "datetimez": "2010-05-29T00:00:00+02:00",
+          "discipline": "Sprint",
+          "night_or_day": "day",
+          "position": {
+            "lat": 61.03255,
+            "lng": 14.49508
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=825&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118094+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=825&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118094+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "D21 Elit": 7,
+            "H21 Elit": 15,
+            "D21 Motion": 2,
+            "H21 Motion": 7,
+            "U1": 5,
+            "Öppen 1": 2
+          },
+          "result_counts": {
+            "D21 Elit": 7,
+            "H21 Elit": 15,
+            "D21 Motion": 2,
+            "H21 Motion": 7,
+            "U1": 5,
+            "Öppen 1": 2
+          },
+          "fingerprints": [
+            "02151f9ae08f0dbfcd10002af6dc403250ce70423236f61c9cb3bf007f2c0b64",
+            "054e22246f8554ea5396181fa15bde3a79f3e99a4c7785080cf492d7b37cdb22",
+            "18032527ca7a08ed7a888e5ec86effa20294f7ac176178f94886654710e973be",
+            "185e62ad3e732b9d5efba247e91172752163805ede833b6ad22821d003d6f530",
+            "198a296d9f55bec02b411e5a841c1df06494212b57235274ad108b7d30e60e02",
+            "1be16b013e319d4facb92ad98400cea5e01ddbb8d7de7277da2b0fc2b44b986d",
+            "1e480f3f3748a83798fe3adb927abcb009b2fc020a706453946799e8dbf9ba5f",
+            "2035d887979b95576808b8ab57594a76065ad5ca43cb6bfce46db67cfa127fb7",
+            "2776dd5e0fb4bf0a77dabd24de670ff95ff9c2cc0a34951defde791cae160476",
+            "40a8d123eceb90086e66c795c872df69952002b98fbeeb8ead27b151750171d6",
+            "41eae7a01b6ff20af6489b994fd37a66205ea531477798e6045ab7f6744d1320",
+            "530798a60f76511de81c98fab24251b3adf25faf0a7c01b1b6ec2d0717154baf",
+            "53b5d68b58795d59ee888865958195da1ac2c02809b7b329ca089c0385f12855",
+            "53d6ba8389413309259279aedec449a93f33663d62515cbb7fd76d24e4799b3f",
+            "5784cf70015f76bacf013f2f147e43294e4882ff4e0429a57f74161b0b3e6c67",
+            "5f86130f30d6f56b1349fea4dd3bf469e52632f946a7f0a7bde69b1849afa6dc",
+            "62d0b26f5fbe55fac2014bd5f1678b0659f2a9f7457ea82f9c98d5647bc65013",
+            "7336617ab5a91169f085f35d44ed36499dc59bd0652e17d7403fd3914fa0d8c1",
+            "75e4b59284a670242d0797f3a7c4e8a593d0074e453ab318cd2b1bf33ceb004a",
+            "851f2feb4fcd33c71d8c1b9ca60b2d55a9d6d98787a8f2a38038eda81bdbcf89",
+            "904549748e5c60c30bbbe2ade3f48f01de695c6026733a1cab7589a4fb176f9f",
+            "9ced8618274022ffd1387c84fed2d56b04efde04bec661da9883a8b93721494f",
+            "a3da30d2603fddfe5039303d2c8289e174bfe1829e094ca88b8237470e914491",
+            "a85b9c75304959747b3654961430b61793f9f6233b169de32543f9c5a0fabc92",
+            "a91523efda9982aaf96760995e498c25a1c9dba8c4ffc046b68f47b2945b3ea5",
+            "b188132e236ad80faf8c89824a24681cbecd013736506706648ac7f0009d7e42",
+            "b97c77263625a76d731fe4b3eb06757e93f68f5e40ab99c3896a7ca5a4cf3faf",
+            "c7d392d6502125e188823a8a9567ab761c5b42ba36befe460e371070d5459f64",
+            "d1a4530b552b1d9c9f0dd18875a5f1390fc2e8a75154895dea2cc785057fbc50",
+            "d368e68a06e047692fa636b753e08533fb686bcb5a054c2d129de639edb93e5f",
+            "d41a28850ff4362ae1cea6bc115c5398c1f1b85bca980a66d0657da3644e46da",
+            "d77064133d6c45ca503ac3b63a2868cbcdd493d961dfeaafc8014fb38c00e5ec",
+            "dc731711d8d7facf878fede16a313bf63661dbcab894b4bc81c73afaf80b6a11",
+            "dcb5381bf5482bf3bc564002b5ed660853f65f377a3f20d3cd8b732d0fd6f8b8",
+            "def4db99b035c7a9e3b81c7ff0df366fe7aeef34a1132f2a1c4a6efdc8bffc5f",
+            "e62d08bb14b633dd93fecc0fc7ec217e3958750609efacd1ed71c68d6d10aa4a",
+            "e9bca2f464fd142094dbe73aea1edd3a206ace2b488927fbef779d6ddfb6f1b4",
+            "fd4c5d8dabb18a6af414e5f4109c8f261eab682e2d9c1df6e558e1d7ad9cdaa7"
+          ]
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_859",
+      "name": "MTB-OL",
+      "start_time": "2010-08-12",
+      "end_time": "2010-08-12",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Njurunda OK",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Richard Lindström"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "070-5175576"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:GQEOA0AWCgEhGAoGABULAwMQDB8="
+        },
+        {
+          "role": "Event director",
+          "name": "Richard Lindström"
+        },
+        {
+          "role": "Course setter",
+          "name": "Richard Lindström"
+        }
+      ],
+      "classes": [
+        "Kort 5km",
+        "Lång 14km"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/859",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118022+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.njurundaok.org",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118022+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": "Medelpad",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "MTB-OL",
+          "datetimez": "2010-08-12T00:00:00+02:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "position": {
+            "lat": 62.26553,
+            "lng": 17.44745
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=859&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118025+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=859&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118025+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "Kort 5km": 4,
+            "Lång 14km": 4
+          },
+          "result_counts": {
+            "Kort 5km": 4,
+            "Lång 14km": 4
+          },
+          "fingerprints": [
+            "24d0e6f88c9444126b678e93c0360647baf5f3ee9939df7fc0ebf622181bbe6c",
+            "344fb3f7b33f773229cac1d0b6fbc75b74c1fbfa62c64c3313cbc63fc29ef9dc",
+            "362755b0acc1bc4bc215f9c53008532bb929d3449070ed037a55afcf68fba045",
+            "678aa475faaf425f788686a6d21f3faed2098e33de0e5bfd60ced2a6d52e9782",
+            "7d4afd0296b28c07d15063e17b4acad24d15bfc533ebfb69dfcd9dbf683e7268",
+            "933613c640df9113142a8c40ba60bc4421c2da271cbd4e13f6eb7276c9394167",
+            "9b7bdb0b07e818be4f272422413cc6488f57de78f77beb05bfa684a53d7e95d9",
+            "dadf99aaf7774a2891e714716eb9a92301fe1bad4025947dd2d2ae04780ad48e"
+          ]
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_900",
+      "name": "Bröllopssprinten MTBO",
+      "start_time": "2010-06-18",
+      "end_time": "2010-06-18",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Regional"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Tumba-Mälarhöjden OK",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Patrik Gunnarsson"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "0705-514668"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:BysSDlkBChk+FxAcAxUQHF4cDTIJHxEfDB0OQU4cDg=="
+        },
+        {
+          "role": "Event director",
+          "name": "Patrik Gunnarsson"
+        },
+        {
+          "role": "Course setter",
+          "name": "Patrik Gunnarsson"
+        }
+      ],
+      "classes": [
+        "D-16",
+        "D17-",
+        "H-16",
+        "H17-"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/900",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118068+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.tmok.nu",
+          "title": null,
+          "last_updated_at": "2026-02-07T23:08:31.118068+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": "Stockholm",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Bröllopssprinten MTBO",
+          "datetimez": "2010-06-18T00:00:00+02:00",
+          "discipline": "Sprint",
+          "night_or_day": "day",
+          "position": {
+            "lat": 59.38143,
+            "lng": 17.96718
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=900&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-07T23:08:31.118071+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=900&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-07T23:08:31.118071+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "H17-": 21,
+            "D17-": 4,
+            "H-16": 2
+          },
+          "result_counts": {
+            "H17-": 21,
+            "D17-": 4,
+            "H-16": 2
+          },
+          "fingerprints": [
+            "19658fe3261b019bcb46217341c0ae462c70f43577979a060d3f81f43c8b21b5",
+            "1a581336a6c2820b2eb139d0cc05abeea9b7c9b181cd2481ceadefadc7e8dfc1",
+            "1c38446b50469c6fc1fb930f9c8d1e5ea20a85c3dc74069dfd8b242e12afa51c",
+            "2f742fdcbc5c008db20c2891cddecb1ad7d996b2358b94db716af1b3f3f17eb6",
+            "3ebc6c45b1b95a105fe524e9106cabf5738aa5c6958866e8b39cef398a86937b",
+            "50e4aea81ce557db01482d39603f74029a88ecbf9b967e27e1e801d8287f316f",
+            "5cba931e0d1ce26e4ec970c154f22cb6e3dda510a2ec96d2d89cf4c08a44d8db",
+            "67f8713c76fd5177eefee17102b255e7f67774727170c196eeb2235ef1145adc",
+            "68709c59f61b5aef9379e0d7dd2f6795b8f465b139bb0df696be8046b78897d9",
+            "75d093648ecc702e394495dd5cbca4e0763dbf0a4a935f516c25f1657da9bbc2",
+            "811a6d10c5aa317518686dfa6b15224866378d2646d981538fea0ce788eccadd",
+            "851f2feb4fcd33c71d8c1b9ca60b2d55a9d6d98787a8f2a38038eda81bdbcf89",
+            "8b08dff36e352f302ca9e7016b84e646e677c7b7b4a011fe19d8389a67241717",
+            "91a35a32bd56a6c70834441d09362986a4e45c84b432921d6ef0e3b5ab8e8246",
+            "97158df4817670a2e6972d08ec1e0a7e97f1e47dede7752ebba0109a999d5767",
+            "a3b20b71e0fa238b579b08fd8c0f4f176485263a0b3d27e1d5f22b5b91a3af28",
+            "b41a75beb77cb69e2c879cb7281e92e58083e90519870d928b716ee8e83e6470",
+            "b43d97120a4072d46a9d4b3727e8ba5a2cd82d887bff6a234b81c710cd17f424",
+            "b7cee706a7a5117dc78709164efb6194470852e6352bec754f29cd553e2c1085",
+            "bbfeb0f875998b47eb4e22c3f74dc67e64f5577e0c1d9a5db4d9cad41e5e50b9",
+            "c3a1c518f8f923fb93308ee51dab6469395277c38d592e67c3310306f422e869",
+            "d912da6c7143557a2fb1088157a683f1babfc6edacd52c552fc3183547f329ff",
+            "dc033570ccca32af1f5606d33413603c6298611f45585b0cc79ca030f1abbbec",
+            "e65fd41dd616375d54057ce21121d761437b77b38e82aa1d535c02949810bd35",
+            "e8af5520af89090c2fb7798d98641b9971d447e00454db9d3115fa01f697584b",
+            "eb63097fc01a8002d9ccb9908bc0c19e0ec1b585eaf7ee3d9ec6a7dc278b3502",
+            "ecfd7f70b19a7e6fd984b92cc72e9abd5c6b3a7feaa8bc22ddf1b959b0fcf1c4"
+          ]
+        }
+      ],
+      "entry_deadlines": []
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+participants:
+- class: H21
+  club: OK Renen
+  name: Henrik Olsson
+  start_number: null
+- class: H21
+  club: Haninge SOK
+  name: Sebastian Svärd
+  start_number: null
+- class: H21
+  club: Domnarvets GOIF
+  name: Jesper Berg
+  start_number: null
+- class: H21
+  club: OK Renen
+  name: Karl Persson
+  start_number: null
+- class: D14
+  club: Övertorneå IF
+  name: Vendla Svahn
+  start_number: null
+- class: H14
+  club: Övertorneå IF
+  name: Bosse Keränen
+  start_number: null
+- class: D12
+  club: IFK Kiruna
+  name: Lo Engström
+  start_number: null
+- class: D12
+  club: OK Sarven
+  name: Zoé Spiral
+  start_number: null
+- class: H12
+  club: IFK Kiruna
+  name: Titus Engström
+  start_number: null
+- class: D40
+  club: OK Sarven
+  name: Lisa Spiral
+  start_number: null
+- class: D40
+  club: OK Kolmården
+  name: Ulrika Larsson
+  start_number: null
+- class: D40
+  club: IFK Kiruna
+  name: Karin Engström
+  start_number: null
+- class: H40
+  club: OK Sarven
+  name: Tovo Spiral
+  start_number: null
+- class: H40
+  club: Övertorneå IF
+  name: Arvo Björk
+  start_number: null
+- class: D50
+  club: Haninge SOK
+  name: Helene Ripa
+  start_number: null
+- class: D50
+  club: OK Hammaren
+  name: Ann-Sofie Täck
+  start_number: null
+- class: D50
+  club: Haninge SOK
+  name: Ulrika Andersson
+  start_number: null
+- class: D50
+  club: OK Skogsfalken
+  name: Cecilia Lingerud
+  start_number: null
+- class: H50
+  club: OK Hammaren
+  name: Jonas Holmgren
+  start_number: null
+- class: H50
+  club: OK Renen
+  name: Claes Turesson
+  start_number: null
+- class: H50
+  club: Haninge SOK
+  name: Ulf Andersson
+  start_number: null
+- class: H50
+  club: IFK Kiruna
+  name: Peter Engström
+  start_number: null
+- class: H50
+  club: OK Hammaren
+  name: Stellan Täck
+  start_number: null
+- class: H50
+  club: OK Renen
+  name: Thomas Johansson
+  start_number: null
+- class: H50
+  club: Haninge SOK
+  name: Ronnie Pettersson
+  start_number: null
+- class: H50
+  club: OK Skogsfalken
+  name: Joakim Sorinder
+  start_number: null
+- class: D60
+  club: OK Kåre
+  name: Annika Engström
+  start_number: null
+- class: D60
+  club: Domnarvets GOIF
+  name: Maria Emanuelsson
+  start_number: null
+- class: H60
+  club: IFK Göteborg Orientering
+  name: Magnus Aasa
+  start_number: null
+- class: H60
+  club: Kamrat och IF KIF
+  name: Nils-Robert Persson
+  start_number: null
+- class: H60
+  club: IFK Kiruna
+  name: Mikael Myrsell
+  start_number: null
+- class: H60
+  club: Tolered-Utby Ol-klubb
+  name: Maths Carlsson
+  start_number: null
+- class: H60
+  club: Gammelstads IF
+  name: Anders Abrahamsson
+  start_number: null
+- class: H60
+  club: Stora Tuna OK
+  name: Håkan Blomgren
+  start_number: null
+- class: H60
+  club: Umeå OK
+  name: Per Lindgren Sörlin
+  start_number: null
+- class: H60
+  club: Älvsby IF OK
+  name: Sture Norén
+  start_number: null
+- class: H70
+  club: Järla Orientering
+  name: Anders Asplund
+  start_number: null
+- class: H70
+  club: Bergnäsets AIK
+  name: Åke Gustafsson
+  start_number: null
+- class: Vit 2,0
+  club: Bergnäsets AIK
+  name: Karin Wennberg
+  start_number: null
+- class: Vit 2,0
+  club: Övertorneå IF
+  name: Viktor Mäkitaavola Björk
+  start_number: null
+- class: Vit 2,0
+  club: Övertorneå IF
+  name: Viggo Keränen
+  start_number: null
+- class: Vit 2,0
+  club: Övertorneå IF
+  name: Vilmer Svahn
+  start_number: null
+- class: Vit 2,0
+  club: OK Sarven
+  name: Hugo Spiral
+  start_number: null
+race_number: 1

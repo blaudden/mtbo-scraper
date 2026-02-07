@@ -1,0 +1,218 @@
+[
+  {
+    "description": "IOF-7490: IOF multi-race event (5 races)",
+    "used_for": "Multi-race parsing, IOF specific logic",
+    "files": [
+      {
+        "url": "https://eventor.orienteering.org/Events/Show/7490",
+        "filename": "IOF_7490_main.html"
+      },
+      {
+        "url": "https://eventor.orienteering.org/Events/Show/8446",
+        "filename": "IOF_7490_race1_main.html"
+      },
+      {
+        "url": "https://eventor.orienteering.org/Events/ResultList?eventId=8446&groupBy=EventClass",
+        "filename": "IOF_7490_race1_result_list.html"
+      },
+      {
+        "url": "https://eventor.orienteering.org/Events/StartList?eventId=8446&groupBy=EventClass",
+        "filename": "IOF_7490_race1_start_list.html"
+      },
+      {
+        "url": "https://eventor.orienteering.org/Events/Show/8446",
+        "filename": "IOF_7490_race2_main.html"
+      },
+      {
+        "url": "https://eventor.orienteering.org/Events/ResultList?eventId=8446&groupBy=EventClass",
+        "filename": "IOF_7490_race2_result_list.html"
+      },
+      {
+        "url": "https://eventor.orienteering.org/Events/StartList?eventId=8446&groupBy=EventClass",
+        "filename": "IOF_7490_race2_start_list.html"
+      },
+      {
+        "url": "https://eventor.orienteering.org/Events/Show/8446",
+        "filename": "IOF_7490_race3_main.html"
+      },
+      {
+        "url": "https://eventor.orienteering.org/Events/ResultList?eventId=8446&groupBy=EventClass",
+        "filename": "IOF_7490_race3_result_list.html"
+      },
+      {
+        "url": "https://eventor.orienteering.org/Events/StartList?eventId=8446&groupBy=EventClass",
+        "filename": "IOF_7490_race3_start_list.html"
+      },
+      {
+        "url": "https://eventor.orienteering.org/Events/Show/8446",
+        "filename": "IOF_7490_race4_main.html"
+      },
+      {
+        "url": "https://eventor.orienteering.org/Events/ResultList?eventId=8446&groupBy=EventClass",
+        "filename": "IOF_7490_race4_result_list.html"
+      },
+      {
+        "url": "https://eventor.orienteering.org/Events/StartList?eventId=8446&groupBy=EventClass",
+        "filename": "IOF_7490_race4_start_list.html"
+      },
+      {
+        "url": "https://eventor.orienteering.org/Events/Show/8446",
+        "filename": "IOF_7490_race5_main.html"
+      },
+      {
+        "url": "https://eventor.orienteering.org/Events/ResultList?eventId=8446&groupBy=EventClass",
+        "filename": "IOF_7490_race5_result_list.html"
+      },
+      {
+        "url": "https://eventor.orienteering.org/Events/StartList?eventId=8446&groupBy=EventClass",
+        "filename": "IOF_7490_race5_start_list.html"
+      }
+    ]
+  },
+  {
+    "description": "IOF-8277: IOF Multi-day (CX80 World Cup)",
+    "used_for": "IOF Multi-day parsing",
+    "files": [
+      {
+        "url": "https://eventor.orienteering.org/Events/Show/8277",
+        "filename": "IOF_8277_multi.html"
+      }
+    ]
+  },
+  {
+    "description": "IOF-8558: IOF Event (WMMTBOC)",
+    "used_for": "IOF Eventor parsing, International attributes",
+    "files": [
+      {
+        "url": "https://eventor.orienteering.org/Events/Show/8558",
+        "filename": "IOF_8558_single.html"
+      }
+    ]
+  },
+  {
+    "description": "NOR-21169: Norwegian event",
+    "used_for": "Norwegian Eventor parsing, Attribute mapping",
+    "files": [
+      {
+        "url": "https://eventor.orientering.no/Events/Show/21169",
+        "filename": "NOR_21169_single.html"
+      }
+    ]
+  },
+  {
+    "description": "SWE-46200: Event with large lists",
+    "used_for": "Large list parsing",
+    "files": [
+      {
+        "url": "https://eventor.orientering.se/Events/Show/46200",
+        "filename": "SWE_46200_main.html"
+      },
+      {
+        "url": "https://eventor.orientering.se/Events/ResultList?eventId=46200&eventRaceId=47850&groupBy=EventClass",
+        "filename": "SWE_46200_race1_result_list.html"
+      },
+      {
+        "url": "https://eventor.orientering.se/Events/StartList?eventId=46200&eventRaceId=47850&groupBy=EventClass",
+        "filename": "SWE_46200_race1_start_list.html"
+      },
+      {
+        "url": "https://eventor.orientering.se/Events/ResultList?eventId=46200&eventRaceId=47851&groupBy=EventClass",
+        "filename": "SWE_46200_race2_result_list.html"
+      },
+      {
+        "url": "https://eventor.orientering.se/Events/StartList?eventId=46200&eventRaceId=47851&groupBy=EventClass",
+        "filename": "SWE_46200_race2_start_list.html"
+      },
+      {
+        "url": "https://eventor.orientering.se/Events/ResultList?eventId=46200&eventRaceId=47852&groupBy=EventClass",
+        "filename": "SWE_46200_race3_result_list.html"
+      },
+      {
+        "url": "https://eventor.orientering.se/Events/StartList?eventId=46200&eventRaceId=47852&groupBy=EventClass",
+        "filename": "SWE_46200_race3_start_list.html"
+      },
+      {
+        "url": "https://eventor.orientering.se/Events/ResultList?eventId=46200&eventRaceId=47853&groupBy=EventClass",
+        "filename": "SWE_46200_race4_result_list.html"
+      },
+      {
+        "url": "https://eventor.orientering.se/Events/StartList?eventId=46200&eventRaceId=47853&groupBy=EventClass",
+        "filename": "SWE_46200_race4_start_list.html"
+      },
+      {
+        "url": "https://eventor.orientering.se/Events/ResultList?eventId=46200&eventRaceId=47854&groupBy=EventClass",
+        "filename": "SWE_46200_race5_result_list.html"
+      },
+      {
+        "url": "https://eventor.orientering.se/Events/StartList?eventId=46200&eventRaceId=47854&groupBy=EventClass",
+        "filename": "SWE_46200_race5_start_list.html"
+      }
+    ]
+  },
+  {
+    "description": "SWE-50597: Multi-day event (O-Ringen)",
+    "used_for": "Multi-day event parsing, Stage extraction",
+    "files": [
+      {
+        "url": "https://eventor.orientering.se/Events/Show/50597",
+        "filename": "SWE_50597_multi.html"
+      }
+    ]
+  },
+  {
+    "description": "SWE-51338: Single day event with lists (Entry, Start, Result) and Livelox",
+    "used_for": "List counting, Livelox extraction, General parsing",
+    "files": [
+      {
+        "url": "https://eventor.orientering.se/Events/Entries?eventId=51338&groupBy=EventClass",
+        "filename": "SWE_51338_entries.html"
+      },
+      {
+        "url": "https://eventor.orientering.se/Events/Show/51338",
+        "filename": "SWE_51338_main.html"
+      },
+      {
+        "url": "https://eventor.orientering.se/Events/ResultList?eventId=51338&groupBy=EventClass",
+        "filename": "SWE_51338_result_list.html"
+      },
+      {
+        "url": "https://eventor.orientering.se/Events/StartList?eventId=51338&groupBy=EventClass",
+        "filename": "SWE_51338_start_list.html"
+      }
+    ]
+  },
+  {
+    "description": "SWE-54359: Another SWE single event",
+    "used_for": "Additional SWE testing",
+    "files": [
+      {
+        "url": "https://eventor.orientering.se/Events/Show/54359",
+        "filename": "SWE_54359_main.html"
+      }
+    ]
+  },
+  {
+    "description": "SWE-54361: Single day event",
+    "used_for": "Basic single day parsing",
+    "files": [
+      {
+        "url": "https://eventor.orientering.se/Events/Show/54361",
+        "filename": "SWE_54361_main.html"
+      },
+      {
+        "url": "https://eventor.orientering.se/Events/Show/54361",
+        "filename": "SWE_54361_single.html"
+      }
+    ]
+  },
+  {
+    "description": "SWE-56468: Future event (Skinkloppet)",
+    "used_for": "Info text extraction, Event with no lists yet",
+    "files": [
+      {
+        "url": "https://eventor.orientering.se/Events/Show/56468",
+        "filename": "SWE_56468_main.html"
+      }
+    ]
+  }
+]
