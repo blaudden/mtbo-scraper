@@ -1,0 +1,1478 @@
+participants:
+- class: MtbO D21
+  club: IFK Mora OK
+  name: Erica Olsson
+  start_number: 40045
+- class: MtbO D21
+  club: Nyköpings OK
+  name: Rebecka Hylander
+  start_number: 40046
+- class: MtbO D21
+  club: IFK Mora OK
+  name: Matilda Jonsson
+  start_number: 40049
+- class: MtbO D21
+  club: Kamrat och IF KIF
+  name: Emelie Holmström
+  start_number: 40050
+- class: MtbO D21
+  club: WO.W
+  name: Natasha Sparg
+  start_number: 40051
+- class: MtbO D21
+  club: OK Trian
+  name: Ingrid Stengård
+  start_number: 40450
+- class: MtbO D21
+  club: Forsa OK
+  name: Linn Bylars
+  start_number: 40053
+- class: MtbO D21
+  club: Forsa OK
+  name: Amy Rankka
+  start_number: 40054
+- class: MtbO D21
+  club: Garphyttans IF
+  name: Karin Gustafsson
+  start_number: 40056
+- class: MtbO D21
+  club: Haninge SOK
+  name: Anna Tiderman
+  start_number: 40409
+- class: MtbO D21
+  club: FK Herkules
+  name: Helena Svensson
+  start_number: 40059
+- class: MtbO D21
+  club: Attunda OK
+  name: Emma Miléus
+  start_number: 40060
+- class: MtbO D21
+  club: Umeå OK
+  name: Stina Persson
+  start_number: 40478
+- class: MtbO D21
+  club: Fredrikshofs IF Skid & OK
+  name: Nadia Larsson
+  start_number: 40063
+- class: MtbO H21
+  club: IFK Kiruna
+  name: Magnus Karlsson
+  start_number: 40202
+- class: MtbO H21
+  club: Köping-Kolsva OK
+  name: Marcus Ek
+  start_number: 40204
+- class: MtbO H21
+  club: OK Renen
+  name: Martin Sundin
+  start_number: 40205
+- class: MtbO H21
+  club: Kvarnsvedens GoIF OK
+  name: Filip Bergström
+  start_number: 40207
+- class: MtbO H21
+  club: Köping-Kolsva OK
+  name: Henrik Holmberg
+  start_number: 40208
+- class: MtbO H21
+  club: FK Göingarna
+  name: Hampus Larsson
+  start_number: 40209
+- class: MtbO H21
+  club: BO.W
+  name: Ricky Thackray
+  start_number: 40210
+- class: MtbO H21
+  club: Forsa OK
+  name: Jens Wickberg
+  start_number: 40213
+- class: MtbO H21
+  club: IL BUL-Tromsø
+  name: Christian Peter MacLassen
+  start_number: 40214
+- class: MtbO H21
+  club: OK Pan-Kristianstad
+  name: Erik Thuresson
+  start_number: 40215
+- class: MtbO H21
+  club: Garphyttans IF
+  name: Torbjörn Jansson
+  start_number: 40216
+- class: MtbO H21
+  club: IFK Lidingö SOK
+  name: Jonn Are Myhren
+  start_number: 40217
+- class: MtbO H21
+  club: Garphyttans IF
+  name: Marcus Jansson
+  start_number: 40218
+- class: MtbO H21
+  club: Garphyttans IF
+  name: Thomas Jansson
+  start_number: 40220
+- class: MtbO H21
+  club: Umeå OK
+  name: Mattias Nyström
+  start_number: 40221
+- class: MtbO H21
+  club: Haninge SOK
+  name: Sebastian Svärd
+  start_number: 40223
+- class: MtbO H21
+  club: Göteborg-Majorna OK
+  name: Martin Ahlberger
+  start_number: 40224
+- class: MtbO H21
+  club: Göteborg-Majorna OK
+  name: Pär Gustavsson
+  start_number: 40226
+- class: MtbO H21
+  club: IFK Lidingö SOK
+  name: Erik Jansson
+  start_number: 40451
+- class: MtbO H21
+  club: OK Ravinen
+  name: Jonny Engel
+  start_number: 40228
+- class: MtbO D20
+  club: Avesta OK
+  name: Julia Wanner
+  start_number: 40034
+- class: MtbO D20
+  club: IFK Mora OK
+  name: Emma Johnsson
+  start_number: 40035
+- class: MtbO D20
+  club: Ntnui
+  name: Marit Melby Jacobsen
+  start_number: 40036
+- class: MtbO D20
+  club: Långhundra IF
+  name: Alva Jonsson
+  start_number: 40038
+- class: MtbO H20
+  club: Kvarnsvedens GoIF OK
+  name: Rikard Bergström
+  start_number: 40184
+- class: MtbO H20
+  club: OK Kåre
+  name: Rasmus Nordgren
+  start_number: 40186
+- class: MtbO H20
+  club: Säterbygdens OK
+  name: Emil Arvidsson
+  start_number: 40187
+- class: MtbO H20
+  club: IFK Mora OK
+  name: Gustav Johnsson
+  start_number: 40188
+- class: MtbO H20
+  club: Espoon Suunta
+  name: Leevi Väisänen
+  start_number: 40191
+- class: MtbO H20
+  club: Asker SK
+  name: Per Wisløff
+  start_number: 40192
+- class: MtbO H20
+  club: Asker SK
+  name: Trygve Myhr
+  start_number: 40194
+- class: MtbO H20
+  club: Torsås OK
+  name: Jonathan Westlund
+  start_number: 40196
+- class: MtbO H20
+  club: Frölunda OL
+  name: Martin Lamm
+  start_number: 40445
+- class: MtbO H20
+  club: Finspångs SOK
+  name: Joel Ernstsson
+  start_number: 40199
+- class: MtbO H20
+  club: IFK Enskede
+  name: Linus Albinsson
+  start_number: 40200
+- class: MtbO H20
+  club: NAIS Orienteringsklubb
+  name: Gustav Träff
+  start_number: 40492
+- class: MtbO D16
+  club: OK Hällen
+  name: Vera Carlsson
+  start_number: 40023
+- class: MtbO D16
+  club: IF Thor
+  name: Elsa Bäsén
+  start_number: 40027
+- class: MtbO H16
+  club: Tidaholm SOK Sisu
+  name: Johannes Jakobsson
+  start_number: 40173
+- class: MtbO H16
+  club: Vipsport.Ru
+  name: Yaroslav Shvedov
+  start_number: 40177
+- class: MtbO H16
+  club: Järfälla OK
+  name: Theodor Karlsson Brabie
+  start_number: 40182
+- class: MtbO D14
+  club: Södertälje-Nykvarn OF
+  name: Karolina Hede
+  start_number: 40011
+- class: MtbO D14
+  club: Gigant Orienteering CZ
+  name: Natali Chamrada
+  start_number: 40014
+- class: MtbO D14
+  club: Sidensjö IK
+  name: Nova Anundborg
+  start_number: 40016
+- class: MtbO D14
+  club: Helsingin Suunnistajat
+  name: Doris Väisänen
+  start_number: 40017
+- class: MtbO D14
+  club: Garphyttans IF
+  name: Stina Bern
+  start_number: 40019
+- class: MtbO H14
+  club: OK Renen
+  name: Albin Wollbrand
+  start_number: 40155
+- class: MtbO H14
+  club: HJS-Vansbro OK
+  name: Anton Fors
+  start_number: 40157
+- class: MtbO H14
+  club: Gigant Orienteering
+  name: Eduard Toloch
+  start_number: 40447
+- class: MtbO H14
+  club: Suunta Jyväskylä
+  name: Simo Klemettinen
+  start_number: 40160
+- class: MtbO H14
+  club: Czech Masters MTBO Team
+  name: Tomas Zrnik
+  start_number: 40161
+- class: MtbO H14
+  club: OK Hammaren
+  name: Axel Mäkinen
+  start_number: 40163
+- class: MtbO H14
+  club: IK Hakarpspojkarna
+  name: Måns Eliasson
+  start_number: 40165
+- class: MtbO H14
+  club: Järla Orientering
+  name: Axel Rudehill Sundell
+  start_number: 40167
+- class: MtbO H14
+  club: FK Herkules
+  name: Max Ekenstråle
+  start_number: 40170
+- class: MtbO H14
+  club: OK Södertörn
+  name: Björn Renner
+  start_number: 40171
+- class: MtbO D12
+  club: OK Nolaskogsarna
+  name: Ida Moström Ahlberg
+  start_number: 40004
+- class: MtbO H12
+  club: Grycksbo IF OK
+  name: Axel Gräfnings
+  start_number: 40144
+- class: MtbO H12
+  club: OK Renen
+  name: Melker Wollbrand
+  start_number: 40408
+- class: MtbO H12
+  club: Gigant Orienteering
+  name: Otakar Toloch
+  start_number: 40442
+- class: MtbO H12
+  club: Sidensjö IK
+  name: Titan Anundborg
+  start_number: 40148
+- class: MtbO H12
+  club: Långhundra IF
+  name: Ivar Jonsson
+  start_number: 40149
+- class: MtbO H35
+  club: Rold Skov OK
+  name: Johan MacLassen
+  start_number: 40232
+- class: MtbO H35
+  club: IFK Lidingö SOK
+  name: Johan Adolfsson
+  start_number: 40238
+- class: MtbO D40
+  club: OK Tor
+  name: Anette Larsson
+  start_number: 40073
+- class: MtbO D40
+  club: Södertälje-Nykvarn OF
+  name: Ingela Liwell
+  start_number: 40075
+- class: MtbO D40
+  club: Tidaholm SOK Sisu
+  name: Monika Jakobsson
+  start_number: 40076
+- class: MtbO D40
+  club: Grycksbo IF OK
+  name: Gunilla Gräfnings
+  start_number: 40077
+- class: MtbO D40
+  club: Leksands OK
+  name: Johanna Dalin
+  start_number: 40424
+- class: MtbO D40
+  club: North West Orienteering Club
+  name: Marquita Gelderman
+  start_number: 40080
+- class: MtbO D40
+  club: Lunds OK
+  name: Malin Ågren
+  start_number: 40082
+- class: MtbO D40
+  club: SK Pohjantähti
+  name: Camilla Munsterhjelm
+  start_number: 40083
+- class: MtbO D40
+  club: Hiiltomiehet
+  name: Katri Niittymäki
+  start_number: 40084
+- class: MtbO D40
+  club: OK Renen
+  name: Karin Wollbrand
+  start_number: 40079
+- class: MtbO D40
+  club: OK Kolmården
+  name: Malin Pilvinge
+  start_number: 40088
+- class: MtbO D40
+  club: Haninge SOK
+  name: Helene Ripa
+  start_number: 40090
+- class: MtbO D40
+  club: OK Denseln
+  name: Annica Crispin
+  start_number: 40437
+- class: MtbO D40
+  club: OK Södertörn
+  name: Daniela Renner
+  start_number: 40092
+- class: MtbO D40
+  club: Haninge SOK
+  name: Johanna Almlund
+  start_number: 40093
+- class: MtbO D40
+  club: OK Ravinen
+  name: Nina Herne
+  start_number: 40094
+- class: MtbO D40
+  club: Haninge SOK
+  name: Ulrika Andersson
+  start_number: 40095
+- class: MtbO D40
+  club: IFK Enskede
+  name: Malin Albinsson
+  start_number: 40096
+- class: MtbO H40
+  club: Leksands OK
+  name: Janne Skarner
+  start_number: 40240
+- class: MtbO H40
+  club: OK Skogshjortarna
+  name: Per Rubendahl
+  start_number: 40241
+- class: MtbO H40
+  club: Södertälje-Nykvarn OF
+  name: Stefan Pettersson
+  start_number: 40242
+- class: MtbO H40
+  club: Domnarvets GoIF
+  name: Magnus Eliasson
+  start_number: 40243
+- class: MtbO H40
+  club: Kvarnsvedens GoIF OK
+  name: Mikael Nolåkers
+  start_number: 40244
+- class: MtbO H40
+  club: IF Hagen
+  name: Björn Mårtensson
+  start_number: 40245
+- class: MtbO H40
+  club: Gigant Orienteering
+  name: Alexandr Toloch
+  start_number: 40441
+- class: MtbO H40
+  club: Södertälje-Nykvarn OF
+  name: Henrik Löfgren
+  start_number: 40247
+- class: MtbO H40
+  club: Grycksbo IF OK
+  name: Anders Jansson
+  start_number: 40248
+- class: MtbO H40
+  club: Kauka
+  name: Juhani Lehtinen
+  start_number: 40249
+- class: MtbO H40
+  club: OLT
+  name: Milan Rovensky
+  start_number: 40250
+- class: MtbO H40
+  club: Czech Masters MTBO Team
+  name: Tomas Zrnik
+  start_number: 40251
+- class: MtbO H40
+  club: Rasbo IK
+  name: Dennis Svensson
+  start_number: 40252
+- class: MtbO H40
+  club: Lunds OK
+  name: Johan Svärd
+  start_number: 40253
+- class: MtbO H40
+  club: OK Sorø
+  name: Michael Lindholm
+  start_number: 40254
+- class: MtbO H40
+  club: IF Thor
+  name: Per Melander
+  start_number: 40255
+- class: MtbO H40
+  club: Suunta Jyväskylä
+  name: Vesa Klemettinen
+  start_number: 40256
+- class: MtbO H40
+  club: OK Södertörn
+  name: Henrik Erlandsson
+  start_number: 40284
+- class: MtbO H40
+  club: Idrottsveteranerna
+  name: Mats Toftén
+  start_number: 40258
+- class: MtbO H40
+  club: Långhundra IF
+  name: Erik Jonsson
+  start_number: 40260
+- class: MtbO H40
+  club: Lunds OK
+  name: Nils Pistora
+  start_number: 40261
+- class: MtbO H40
+  club: Hiiltomiehet
+  name: Mika Häkkinen
+  start_number: 40262
+- class: MtbO H40
+  club: Vipsport.Ru
+  name: Andrey Shvedov
+  start_number: 40263
+- class: MtbO H40
+  club: Czech Masters MTBO Team
+  name: Robert Urbanik
+  start_number: 40264
+- class: MtbO H40
+  club: Skattkärrs SOK
+  name: Stefan Wennberg
+  start_number: 40265
+- class: MtbO H40
+  club: Eksjö SOK
+  name: Lasse Jansson
+  start_number: 40266
+- class: MtbO H40
+  club: Västvärmlands OK
+  name: Tommy Johansson
+  start_number: 40268
+- class: MtbO H40
+  club: OK Hammaren
+  name: Stellan Täck
+  start_number: 40269
+- class: MtbO H40
+  club: Lustens OK
+  name: Lars-Ola Westerlund
+  start_number: 40271
+- class: MtbO H40
+  club: Sundsvalls OK
+  name: Håkan Unander
+  start_number: 40272
+- class: MtbO H40
+  club: Haninge SOK
+  name: Ronnie Pettersson
+  start_number: 40273
+- class: MtbO H40
+  club: Tjalve IF Norrköping
+  name: Andreas Håkansson
+  start_number: 40274
+- class: MtbO H40
+  club: OK Södertörn
+  name: Richard Schandl
+  start_number: 40276
+- class: MtbO H40
+  club: Linköpings OK
+  name: Bertil Eronn
+  start_number: 40277
+- class: MtbO H40
+  club: FK Herkules
+  name: Mikael Svensson
+  start_number: 40278
+- class: MtbO H40
+  club: OK Södertörn
+  name: Anders Hedberg
+  start_number: 40279
+- class: MtbO H40
+  club: Järla Orientering
+  name: Rikard Söderberg
+  start_number: 40280
+- class: MtbO H40
+  club: Skåneslättens OL
+  name: Jonas Prellner
+  start_number: 40281
+- class: MtbO H40
+  club: FK Herkules
+  name: Tobias Ekenstråle
+  start_number: 40282
+- class: MtbO H40
+  club: OK Kolmården
+  name: Christer Casselsjö
+  start_number: 40285
+- class: MtbO H40
+  club: Haninge SOK
+  name: Ulf Andersson
+  start_number: 40286
+- class: MtbO D50
+  club: OK Kåre
+  name: Weonica Morell
+  start_number: 40097
+- class: MtbO D50
+  club: Eskilstuna OL
+  name: Monica Gustavsson
+  start_number: 40098
+- class: MtbO D50
+  club: Köping-Kolsva OK
+  name: Helena Holmberg
+  start_number: 40100
+- class: MtbO D50
+  club: OK Kåre
+  name: Annika Engström
+  start_number: 40101
+- class: MtbO D50
+  club: OK Skogshjortarna
+  name: Suzy Larsson
+  start_number: 40102
+- class: MtbO D50
+  club: OK Linné
+  name: Anna Karin Åqvist
+  start_number: 40104
+- class: MtbO D50
+  club: OK Trian
+  name: Anne-Maj Blomster
+  start_number: 40106
+- class: MtbO D50
+  club: Ounasvaaran Hiihtoseura
+  name: Lea Pirttilä
+  start_number: 40108
+- class: MtbO D50
+  club: SOK Aneby
+  name: Karin Freyland
+  start_number: 40110
+- class: MtbO D50
+  club: Garphyttans IF
+  name: Lena Jansson
+  start_number: 40111
+- class: MtbO D50
+  club: Kristinehamns OK
+  name: Lisbeth Celander
+  start_number: 40112
+- class: MtbO D50
+  club: Eksjö SOK
+  name: Monica Kollberg
+  start_number: 40113
+- class: MtbO D50
+  club: Finspångs SOK
+  name: Ingrid Svensson
+  start_number: 40115
+- class: MtbO D50
+  club: Linköpings OK
+  name: Karin Skullman
+  start_number: 40116
+- class: MtbO D50
+  club: Finspångs SOK
+  name: Eva Lindgren
+  start_number: 40118
+- class: MtbO D50
+  club: Västerbergslagens OL
+  name: Ragnhild Svens
+  start_number: 40010
+- class: MtbO D50
+  club: Stockholm Multisport klubb
+  name: Annika Björkroth
+  start_number: 40120
+- class: MtbO H50
+  club: Eskilstuna OL
+  name: Magnus Hellberg
+  start_number: 40287
+- class: MtbO H50
+  club: Kvarnsvedens GoIF OK
+  name: David Nolåkers
+  start_number: 40288
+- class: MtbO H50
+  club: OK Kåre
+  name: Steven Hale
+  start_number: 40289
+- class: MtbO H50
+  club: Garphyttans IF
+  name: Magnus Bern
+  start_number: 40290
+- class: MtbO H50
+  club: OK Skogshjortarna
+  name: Kjell Einarsson
+  start_number: 40291
+- class: MtbO H50
+  club: OK Renen
+  name: Mikael Sundberg
+  start_number: 40292
+- class: MtbO H50
+  club: Gammelstads IF
+  name: Anders Abrahamsson
+  start_number: 40294
+- class: MtbO H50
+  club: Ärla IF
+  name: Rickard Asplund
+  start_number: 40295
+- class: MtbO H50
+  club: Kvarnsvedens GoIF OK
+  name: Peter Bergström
+  start_number: 40296
+- class: MtbO H50
+  club: Vänersborgs SK
+  name: Torbjörn Salomonson
+  start_number: 40297
+- class: MtbO H50
+  club: Södertälje-Nykvarn OF
+  name: Mats Heldt
+  start_number: 40299
+- class: MtbO H50
+  club: Norbergs OK
+  name: Mats Bergman
+  start_number: 40300
+- class: MtbO H50
+  club: OK Kåre
+  name: Stefan Johansson
+  start_number: 40301
+- class: MtbO H50
+  club: Södertälje-Nykvarn OF
+  name: Per-Göran Månsson
+  start_number: 40302
+- class: MtbO H50
+  club: Trollhättans SOK
+  name: Dag Tryggö
+  start_number: 40303
+- class: MtbO H50
+  club: OK Kullingshof
+  name: Magnus Aasa
+  start_number: 40304
+- class: MtbO H50
+  club: Trosabygdens OK
+  name: Stefan Johansson
+  start_number: 40305
+- class: MtbO H50
+  club: OK Kåre
+  name: Christer Morell
+  start_number: 40306
+- class: MtbO H50
+  club: OK Hällen
+  name: Björn Carlsson
+  start_number: 40307
+- class: MtbO H50
+  club: Kvarnsvedens GoIF OK
+  name: Stefan Killberg
+  start_number: 40308
+- class: MtbO H50
+  club: Stora Tuna OK
+  name: Håkan Blomgren
+  start_number: 40309
+- class: MtbO H50
+  club: Modum O-Lag
+  name: Leif Eriksson
+  start_number: 40310
+- class: MtbO H50
+  club: Malax IF
+  name: Stefan Höstman
+  start_number: 40311
+- class: MtbO H50
+  club: OK Trian
+  name: Max Lindfors
+  start_number: 40312
+- class: MtbO H50
+  club: Twycross Orienteering Club
+  name: Iain Tebbutt
+  start_number: 40314
+- class: MtbO H50
+  club: Västerbergslagens OL
+  name: David Shearer
+  start_number: 40009
+- class: MtbO H50
+  club: Visborgs OK
+  name: Stig Dahl
+  start_number: 40316
+- class: MtbO H50
+  club: Tarpian Suunta
+  name: Pekka Mäki
+  start_number: 40317
+- class: MtbO H50
+  club: OLK Argus
+  name: René Hitz
+  start_number: 40318
+- class: MtbO H50
+  club: OK Trian
+  name: Patric Östergård
+  start_number: 40319
+- class: MtbO H50
+  club: Eksjö SOK
+  name: Stefan Kollberg
+  start_number: 40321
+- class: MtbO H50
+  club: IK Vista
+  name: Mikael Gustafsson
+  start_number: 40322
+- class: MtbO H50
+  club: Kristinehamns OK
+  name: Leif Celander
+  start_number: 40323
+- class: MtbO H50
+  club: Torsås OK
+  name: Jens Westlund
+  start_number: 40325
+- class: MtbO H50
+  club: Karlskrona SOK
+  name: Anders Pettersson
+  start_number: 40326
+- class: MtbO H50
+  club: OK Hammaren
+  name: Jonas Holmgren
+  start_number: 40327
+- class: MtbO H50
+  club: Jönköpings OK
+  name: Johan Hansson
+  start_number: 40328
+- class: MtbO H50
+  club: IFK Enskede
+  name: Peter Albinsson
+  start_number: 40329
+- class: MtbO H50
+  club: Linköpings OK
+  name: Magnus Herberthson
+  start_number: 40330
+- class: MtbO H50
+  club: Stockholm Multisport
+  name: Anders Sundell
+  start_number: 40333
+- class: MtbO H50
+  club: Finspångs SOK
+  name: Benny Lindgren
+  start_number: 40334
+- class: MtbO H50
+  club: OK Södertörn
+  name: Claes Renner
+  start_number: 40335
+- class: MtbO H50
+  club: ''
+  name: Manne Freyland
+  start_number: 40336
+- class: MtbO H50
+  club: IK Uven
+  name: Peter Toresäter
+  start_number: 40337
+- class: MtbO H50
+  club: Vännäs OK
+  name: Jonas Fridman
+  start_number: 40332
+- class: MtbO H50
+  club: IFK Lidingö SOK
+  name: Anders Sjerndahl
+  start_number: 40339
+- class: MtbO H50
+  club: ''
+  name: Johan Abrahamsson
+  start_number: 40341
+- class: MtbO H50
+  club: Finspångs SOK
+  name: Gunnar Nilsson
+  start_number: 40342
+- class: MtbO H50
+  club: OK Ravinen
+  name: Pär Westblad
+  start_number: 40343
+- class: MtbO H50
+  club: FK Herkules
+  name: Stefan Hammar
+  start_number: 40344
+- class: MtbO H50
+  club: ''
+  name: Leif Wigert
+  start_number: 40345
+- class: MtbO H50
+  club: Sundsvalls OK
+  name: Mattias Lindahl
+  start_number: 40346
+- class: MtbO D60
+  club: Bergnäsets AIK
+  name: Karin Wennberg
+  start_number: 40122
+- class: MtbO D60
+  club: Kvarnsvedens GoIF OK
+  name: Ing-Marie Andren
+  start_number: 40123
+- class: MtbO D60
+  club: Rold Skov OK
+  name: Annelise MacLassen
+  start_number: 40419
+- class: MtbO D60
+  club: Labirintas OK
+  name: Salvinija Deksniene
+  start_number: 40128
+- class: MtbO D60
+  club: Garphyttans IF
+  name: Birgitta Jansson
+  start_number: 40130
+- class: MtbO D60
+  club: IFK Lidingö SOK
+  name: Margareta Meiton
+  start_number: 40133
+- class: MtbO H60
+  club: Stora Tuna OK
+  name: Ulf Eriksson
+  start_number: 40347
+- class: MtbO H60
+  club: Ulricehamns OK
+  name: Anders Thomasson
+  start_number: 40348
+- class: MtbO H60
+  club: Södertälje-Nykvarn OF
+  name: Lars-Gunnar Andén
+  start_number: 40349
+- class: MtbO H60
+  club: Katrineholms OK
+  name: Torgny Jeppson
+  start_number: 40350
+- class: MtbO H60
+  club: Leksands OK
+  name: Lars Sahlberg
+  start_number: 40352
+- class: MtbO H60
+  club: Bergnäsets AIK
+  name: Åke Gustafsson
+  start_number: 40354
+- class: MtbO H60
+  club: Kvarnsvedens GoIF OK
+  name: Esbjörn Andren
+  start_number: 40355
+- class: MtbO H60
+  club: Nyköpings OK
+  name: Kent Bergendahl
+  start_number: 40356
+- class: MtbO H60
+  club: OL-Team Wehrsdorf
+  name: Harald Männel
+  start_number: 40357
+- class: MtbO H60
+  club: North West Orienteering Club
+  name: Rob Garden
+  start_number: 40358
+- class: MtbO H60
+  club: Labirintas OK
+  name: Saulius Marozas
+  start_number: 40359
+- class: MtbO H60
+  club: Långhundra IF
+  name: Mats Tibell
+  start_number: 40361
+- class: MtbO H60
+  club: IF Thor
+  name: Lars Pontén
+  start_number: 40363
+- class: MtbO H60
+  club: Petermuellersport.Ch
+  name: Peter Müller
+  start_number: 40364
+- class: MtbO H60
+  club: Kalmar OK
+  name: Sonny Myrefelt
+  start_number: 40366
+- class: MtbO H60
+  club: SOK Viljan
+  name: Manfred Olejnik
+  start_number: 40367
+- class: MtbO H60
+  club: ''
+  name: Anders Lindersson
+  start_number: 40368
+- class: MtbO H60
+  club: OK Tyr
+  name: Yngve Gottfridsson
+  start_number: 40370
+- class: MtbO H60
+  club: Väsby OK
+  name: Håkan Lindberg
+  start_number: 40371
+- class: MtbO H60
+  club: Tullinge SK
+  name: Nils-Robert Persson
+  start_number: 40372
+- class: MtbO H60
+  club: Snättringe SK
+  name: Jonny Nilsson
+  start_number: 40373
+- class: MtbO H60
+  club: ''
+  name: Inge Pettersson
+  start_number: 40375
+- class: MtbO H60
+  club: Bromma-Vällingby SOK
+  name: Jonny Hansson
+  start_number: 40376
+- class: MtbO H60
+  club: OK Södertörn
+  name: Thomas Eriksson
+  start_number: 40377
+- class: MtbO H60
+  club: Järla Orientering
+  name: Göran Andersson
+  start_number: 40378
+- class: MtbO H60
+  club: ''
+  name: Keith Dawson
+  start_number: 40379
+- class: MtbO H70
+  club: Ockelbo OK
+  name: Karl Olof Borg
+  start_number: 40385
+- class: MtbO H70
+  club: Värend GN OL
+  name: Lars-Åke Sjökvist
+  start_number: 40387
+- class: MtbO H70
+  club: OK Södertörn
+  name: Ronny Hedlund
+  start_number: 40390
+- class: MtbO H70
+  club: Järla Orientering
+  name: Jan-Erik Wiberg
+  start_number: 40391
+- class: MtbO H70
+  club: Ulricehamns OK
+  name: Claes-Göran Lundberg
+  start_number: 40393
+- class: MtbO Mycket lätt Kort
+  club: IK Ymer
+  name: Ellen Lindberg
+  start_number: 40406
+- class: MtbO Mycket lätt Kort
+  club: OK Vivill
+  name: Maria Erlandsson
+  start_number: 40422
+- class: MtbO Mycket lätt Kort
+  club: IFK Sävsjö
+  name: Tim Olsson
+  start_number: 40465
+- class: MtbO Mycket lätt Kort
+  club: Ockelbo OK
+  name: Inger Borg
+  start_number: 40418
+- class: MtbO Mycket lätt Kort
+  club: MGK Warberg
+  name: Linus Aftevik
+  start_number: 40410
+- class: MtbO Mycket lätt Kort
+  club: Grycksbo IF OK
+  name: Erik Gräfnings
+  start_number: 40401
+- class: MtbO Mycket lätt Kort
+  club: Bodø Orientering
+  name: Erlend Mathias Olsen
+  start_number: 40491
+- class: MtbO Mycket lätt Kort
+  club: IL BUL-Tromsø
+  name: Iris Tinna MacLassen
+  start_number: 40007
+- class: MtbO Mycket lätt Kort
+  club: Sävedalens AIK
+  name: Alva Österlin
+  start_number: 40510
+- class: MtbO Mycket lätt Kort
+  club: OK Vivill
+  name: Maria Erlandsson
+  start_number: null
+- class: MtbO Lätt Mellan
+  club: Hestra IF
+  name: Oskar Hjertberg
+  start_number: 40457
+- class: MtbO Lätt Mellan
+  club: Fossum IF
+  name: Anders Gylterud Kvålsgard
+  start_number: 40416
+- class: MtbO Lätt Mellan
+  club: Rörbäcksnäs IS
+  name: Karl Grönland
+  start_number: 40481
+- class: MtbO Lätt Mellan
+  club: Södertälje-Nykvarn OF
+  name: Agnes Liwell
+  start_number: 40487
+- class: MtbO Lätt Mellan
+  club: Leksands OK
+  name: Oskar Dalin
+  start_number: 40426
+- class: MtbO Lätt Mellan
+  club: ''
+  name: Patrik Moberg
+  start_number: 40436
+- class: MtbO Lätt Mellan
+  club: Långhundra IF
+  name: Jean-Marcell Lademo
+  start_number: 40464
+- class: MtbO Lätt Mellan
+  club: Domnarvets GoIF
+  name: Karin Brandt
+  start_number: 40561
+- class: MtbO Lätt Mellan
+  club: Kalmar OK
+  name: Agneta Olsson
+  start_number: 40420
+- class: MtbO Lätt Mellan
+  club: OK Djerf
+  name: Louise Winqvist
+  start_number: 40469
+- class: MtbO Lätt Mellan
+  club: OK Nolaskogsarna
+  name: Ture Mannelqvist
+  start_number: 40461
+- class: MtbO Lätt Mellan
+  club: Garphyttans IF
+  name: Isak Fredriksson
+  start_number: 40444
+- class: MtbO Lätt Mellan
+  club: Garphyttans IF
+  name: Göran Fredriksson
+  start_number: 40448
+- class: MtbO Lätt Mellan
+  club: Klubbklubb
+  name: Fredrik Floden
+  start_number: 40429
+- class: MtbO Lätt Mellan
+  club: IL Gular
+  name: Oddveig Åsheim
+  start_number: 40488
+- class: MtbO Lätt Mellan
+  club: Värend GN OL
+  name: Göran Persson
+  start_number: 40497
+- class: MtbO Lätt Mellan
+  club: OK Älme
+  name: Gunilla Nilsson
+  start_number: 40477
+- class: MtbO Lätt Mellan
+  club: Finspångs SOK
+  name: Ida Ernstsson
+  start_number: 40439
+- class: MtbO Lätt Mellan
+  club: OK Renen
+  name: Arvid Eriksson
+  start_number: 40003
+- class: MtbO Lätt Mellan
+  club: OK Renen
+  name: Urban Eriksson
+  start_number: 40001
+- class: MtbO Lätt Mellan
+  club: Garphyttans IF
+  name: Lukas Pallhed
+  start_number: 40453
+- class: MtbO Lätt Mellan
+  club: Trosabygdens OK
+  name: Sofia Gimholt
+  start_number: 40493
+- class: MtbO Lätt Mellan
+  club: Garphyttans IF
+  name: Helmina Pallhed
+  start_number: 40449
+- class: MtbO Lätt Mellan
+  club: OK Måsen
+  name: August Jacobsen
+  start_number: 40475
+- class: MtbO Lätt Mellan
+  club: Järfälla OK
+  name: Jannick Karlsson Brabie
+  start_number: 40523
+- class: MtbO Lätt Mellan
+  club: CK Örnen
+  name: Patrik Stenlund
+  start_number: 40509
+- class: MtbO Lätt Mellan
+  club: Nydalens SK
+  name: Anne Dahl
+  start_number: 40511
+- class: MtbO Lätt Mellan
+  club: Nydalens SK
+  name: Rolf Berg
+  start_number: 40541
+- class: MtbO Lätt Mellan
+  club: ''
+  name: Paulina Moberg
+  start_number: 40438
+- class: MtbO Lätt Mellan
+  club: SOK Viljan
+  name: Emma Rindstig
+  start_number: 40486
+- class: MtbO Lätt Mellan
+  club: OK Älme
+  name: Gunilla Nilsson
+  start_number: null
+- class: MtbO Lätt Lång
+  club: Klubbklubb
+  name: Torbjörn Håll
+  start_number: null
+- class: MtbO Lätt Lång
+  club: Norbergs OK
+  name: Inger Järviken
+  start_number: 40507
+- class: MtbO Lätt Lång
+  club: Sävast Ski Team
+  name: Clara Auland
+  start_number: null
+- class: MtbO Lätt Lång
+  club: Norbergs OK
+  name: Eva Järviken
+  start_number: 40421
+- class: MtbO Lätt Lång
+  club: OK Kåre
+  name: Anne-Sofie Afterbrand
+  start_number: 40078
+- class: MtbO Lätt Lång
+  club: Domnarvets GoIF
+  name: Kjell Emanuelsson
+  start_number: 40454
+- class: MtbO Lätt Lång
+  club: OK Älme
+  name: Torbjörn Ellesson
+  start_number: 40479
+- class: MtbO Lätt Lång
+  club: Klubblös
+  name: Elisabeth Savefjord
+  start_number: 40489
+- class: MtbO Lätt Lång
+  club: OK Kåre
+  name: Marie-Louise Kaipe
+  start_number: 40490
+- class: MtbO Lätt Lång
+  club: Ankeborgs OK
+  name: Kalle Anka
+  start_number: null
+- class: MtbO Lätt Lång
+  club: CK Örnen
+  name: Emma Thelander
+  start_number: 40516
+- class: MtbO Svår Kort
+  club: Forsa OK
+  name: Christer Engman
+  start_number: 40522
+- class: MtbO Svår Kort
+  club: Södertälje-Nykvarn OF
+  name: Helena Hede
+  start_number: 40541
+- class: MtbO Svår Kort
+  club: Långvikens OK
+  name: Anna Lundqvist
+  start_number: 40005
+- class: MtbO Svår Kort
+  club: Långvikens OK
+  name: Fredrik Hansson
+  start_number: 40006
+- class: MtbO Svår Kort
+  club: OK Tyr
+  name: Anette Wästlund
+  start_number: 40537
+- class: MtbO Svår Kort
+  club: Ronneby OK
+  name: Nina Ring
+  start_number: 40459
+- class: MtbO Svår Kort
+  club: Ljusdals OK
+  name: Jan-erik Skyttner
+  start_number: 40468
+- class: MtbO Svår Kort
+  club: OK Kullingshof
+  name: Kurt Andersson
+  start_number: 40508
+- class: MtbO Svår Mellan
+  club: Hadeland OL
+  name: Elisa-Mackenzie Dahlen
+  start_number: null
+- class: MtbO Svår Mellan
+  club: Sundsvalls OK
+  name: Anna Ålin
+  start_number: 40612
+- class: MtbO Svår Mellan
+  club: Klubbklubb
+  name: Ragnar Berg
+  start_number: 40423
+- class: MtbO Svår Mellan
+  club: Garphyttans IF
+  name: Joakim Westergren
+  start_number: 40411
+- class: MtbO Svår Mellan
+  club: Domnarvets GoIF
+  name: Ylva Andersson
+  start_number: 40414
+- class: MtbO Svår Mellan
+  club: OK Renen
+  name: Hanna Kivijärvi
+  start_number: 40048
+- class: MtbO Svår Mellan
+  club: Rånäs OK
+  name: Anki Pousette
+  start_number: 40425
+- class: MtbO Svår Mellan
+  club: Forsa OK
+  name: Leif Bylars
+  start_number: null
+- class: MtbO Svår Mellan
+  club: OK Vivill
+  name: Axel Erlandsson
+  start_number: 40462
+- class: MtbO Svår Mellan
+  club: ''
+  name: Kristina Karlsson
+  start_number: 40544
+- class: MtbO Svår Mellan
+  club: Långhundra IF
+  name: Olof Brahm
+  start_number: 40415
+- class: MtbO Svår Mellan
+  club: OK Hällen
+  name: Mikael Larsson
+  start_number: 40470
+- class: MtbO Svår Mellan
+  club: Västerås SOK
+  name: Stina Björnberg
+  start_number: 40623
+- class: MtbO Svår Mellan
+  club: ''
+  name: Stina Feil
+  start_number: 40549
+- class: MtbO Svår Mellan
+  club: SOK Viljan
+  name: Maria Rindstig
+  start_number: 40609
+- class: MtbO Svår Mellan
+  club: Karlskrona SOK
+  name: Peter Allwood
+  start_number: 40582
+- class: MtbO Svår Mellan
+  club: Trosabygdens OK
+  name: Joakim Gimholt
+  start_number: 40615
+- class: MtbO Svår Mellan
+  club: OK Måsen
+  name: Victor Jacobsen
+  start_number: 40600
+- class: MtbO Svår Mellan
+  club: IK Gandvik
+  name: Joel Andersson
+  start_number: 40566
+- class: MtbO Svår Mellan
+  club: IL BUL-Tromsø
+  name: Rakel Eva Gunnarsdóttir
+  start_number: 40008
+- class: MtbO Svår Mellan
+  club: OK Roxen
+  name: Pontus Lindblom
+  start_number: 40494
+- class: MtbO Svår Mellan
+  club: Peab IF
+  name: Fredrik Åslund
+  start_number: 40399
+- class: MtbO Svår Mellan
+  club: OK Orion
+  name: Pi Persson
+  start_number: 40605
+- class: MtbO Svår Mellan
+  club: Avesta OK
+  name: Sara Rudh
+  start_number: 40555
+- class: MtbO Svår Mellan
+  club: Kansu
+  name: Maarit Juura
+  start_number: 40570
+- class: MtbO Svår Mellan
+  club: Kansu
+  name: Esa Juura
+  start_number: 40575
+- class: MtbO Svår Mellan
+  club: Katrineholms OK
+  name: Fredrik Åslund
+  start_number: 40583
+- class: MtbO Svår Mellan
+  club: OK Fortūna
+  name: Jurgis Rubazevicius
+  start_number: 40594
+- class: MtbO Svår Mellan
+  club: OK Fortūna
+  name: Giedre Rubazevciene
+  start_number: 40595
+- class: MtbO Svår Mellan
+  club: Domnarvets GoIF
+  name: Karin Brandt
+  start_number: null
+- class: MtbO Svår Mellan
+  club: OK Vivill
+  name: Axel Erlandsson
+  start_number: null
+- class: MtbO Svår Mellan
+  club: OK Linné
+  name: Katarina Laurell
+  start_number: null
+- class: MtbO Svår Lång
+  club: Gottne Ck
+  name: Johan Westman
+  start_number: 40405
+- class: MtbO Svår Lång
+  club: ''
+  name: Evert Kvick
+  start_number: 40404
+- class: MtbO Svår Lång
+  club: OK Kåre
+  name: Anki Svärdby-Bergman
+  start_number: 40412
+- class: MtbO Svår Lång
+  club: OK Milan
+  name: Johan Alfredsson
+  start_number: 40446
+- class: MtbO Svår Lång
+  club: Klubbklubb
+  name: Frank Steiner
+  start_number: 40440
+- class: MtbO Svår Lång
+  club: Frösön
+  name: Elin Nirjens
+  start_number: 40432
+- class: MtbO Svår Lång
+  club: Frösön
+  name: Robert Nirjens
+  start_number: 40434
+- class: MtbO Svår Lång
+  club: OK Kåre
+  name: Kalle Dahlin
+  start_number: 40463
+- class: MtbO Svår Lång
+  club: Mullsjö SOK
+  name: Richard Lundstedt
+  start_number: 40476
+- class: MtbO Svår Lång
+  club: ''
+  name: Joel Young
+  start_number: 40630
+- class: MtbO Svår Lång
+  club: Gigant Orienteering
+  name: Alice Michálková
+  start_number: 40635
+- class: MtbO Svår Lång
+  club: Cykelintresset Umeå
+  name: Carola Häggström
+  start_number: 40452
+- class: MtbO Svår Lång
+  club: Selånger SOK
+  name: Ida Sellstedt
+  start_number: 40467
+- class: MtbO Svår Lång
+  club: IF Thor
+  name: Mats Pettersson
+  start_number: 40484
+- class: MtbO Svår Lång
+  club: Nydalens SK
+  name: Per Sandberg
+  start_number: 40474
+- class: MtbO Svår Lång
+  club: SOK Viljan
+  name: Våge Rindstig
+  start_number: 40659
+- class: MtbO Svår Lång
+  club: Finspångs SOK
+  name: Erik Ernstsson
+  start_number: 40634
+- class: MtbO Svår Lång
+  club: Ulricehamns OK
+  name: Per-Anders Järsenholt
+  start_number: 40456
+- class: MtbO Svår Lång
+  club: OK Älgen
+  name: Stefan Eriksson
+  start_number: 40471
+- class: MtbO Svår Lång
+  club: Klubblös
+  name: Joel Lindström
+  start_number: 40482
+- class: MtbO Svår Lång
+  club: Klubblös
+  name: Davis Kaza
+  start_number: 40483
+- class: MtbO Svår Lång
+  club: IFK Umeå
+  name: Julia Andersson
+  start_number: 40480
+- class: MtbO Svår Lång
+  club: Ulricehamns OK
+  name: Ann-Sofie Järsenholt
+  start_number: 40455
+- class: MtbO Svår Lång
+  club: OK Måsen
+  name: Jens Jacobsen
+  start_number: 40649
+- class: MtbO Svår Lång
+  club: Degerfors OK
+  name: Johan Lövgren
+  start_number: 40495
+- class: MtbO Svår Lång
+  club: Skogspojkarnas OK
+  name: Karin Ingemansson
+  start_number: 40506
+- class: MtbO Svår Lång
+  club: IK Ymer
+  name: Martina Lindberg
+  start_number: 40643
+- class: MtbO Svår Lång
+  club: Alvesta SOK
+  name: Jonatan Lundquist
+  start_number: 40485
+- class: MtbO Svår Lång
+  club: Nydalens SK
+  name: Jappe Hjelseth
+  start_number: 40505
+- class: MtbO Svår Lång
+  club: vaxholms Ok
+  name: Erik Fochsen
+  start_number: 40496
+- class: MtbO Svår Lång
+  club: Nydalens SK
+  name: Maiken Mo
+  start_number: 40407
+- class: MtbO Svår Lång
+  club: OK Linné
+  name: Stefan Lund
+  start_number: null
+- class: MtbO Svår Lång
+  club: Gigant Orienteering CZ
+  name: Dusan Chamrada
+  start_number: null
+- class: MtbO Svår Lång
+  club: Gigant Orienteering
+  name: Alice Michálková
+  start_number: null
+race_number: 1

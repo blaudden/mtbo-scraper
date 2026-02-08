@@ -1,0 +1,298 @@
+participants:
+- class: Men 20
+  club: POL Poland
+  name: Lukasz Czerniak
+  start_number: 248
+- class: Men 20
+  club: FRA France
+  name: Anathalel Dott
+  start_number: 247
+- class: Men 20
+  club: SWE Sweden
+  name: Felix Tiderman
+  start_number: 246
+- class: Men 20
+  club: POR Portugal
+  name: Daniel Costa
+  start_number: 245
+- class: Men 20
+  club: ITA Italy
+  name: Giovanni Dalla Gasperina
+  start_number: 244
+- class: Men 20
+  club: FIN Finland
+  name: Miska Tervala
+  start_number: 243
+- class: Men 20
+  club: RUS Russia
+  name: Vyatseslav Kosovetsc
+  start_number: 242
+- class: Men 20
+  club: SWE Sweden
+  name: Douglas Fransson Lee
+  start_number: 241
+- class: Men 20
+  club: FIN Finland
+  name: Petrus Hanhijarvi
+  start_number: 240
+- class: Men 20
+  club: POR Portugal
+  name: Jose Dores
+  start_number: 239
+- class: Men 20
+  club: FIN Finland
+  name: Verneri Nieminen
+  start_number: 238
+- class: Men 20
+  club: RUS Russia
+  name: Vladinir Voronkin
+  start_number: 237
+- class: Men 20
+  club: FIN Finland
+  name: Jesper Lindahl
+  start_number: 236
+- class: Men 20
+  club: SWE Sweden
+  name: Filip Bergstrom
+  start_number: 235
+- class: Men 20
+  club: LTU Lithuania
+  name: Aidas Zigilejus
+  start_number: 234
+- class: Men 20
+  club: POL Poland
+  name: Hubert Kielak
+  start_number: 233
+- class: Men 20
+  club: RUS Russia
+  name: Yuri Balev
+  start_number: 232
+- class: Men 20
+  club: ITA Italy
+  name: Dante Osti
+  start_number: 231
+- class: Men 20
+  club: CZE Czech Republic Youth
+  name: Matyas Ludvik
+  start_number: 230
+- class: Men 20
+  club: ESP Spain
+  name: Enrique Chousa Esteban
+  start_number: 229
+- class: Men 20
+  club: AUT Austria Youth
+  name: Theodor Abart
+  start_number: 228
+- class: Men 20
+  club: other
+  name: Fergus Mackie
+  start_number: 227
+- class: Men 20
+  club: SWE Sweden
+  name: Hampus Larsson
+  start_number: 226
+- class: Men 20
+  club: POR Portugal
+  name: Afonso Barreiros
+  start_number: 225
+- class: Men 20
+  club: RUS Russia
+  name: Fedor Shchepelev
+  start_number: 224
+- class: Men 20
+  club: POR Portugal
+  name: Pedro Morais
+  start_number: 223
+- class: Men 20
+  club: FRA France
+  name: Florian Pinsard
+  start_number: 222
+- class: Men 20
+  club: SWE Sweden
+  name: Pontus Kullin
+  start_number: 221
+- class: Men 20
+  club: AUT Austria Youth
+  name: Rafael Dobnik
+  start_number: 220
+- class: Men 20
+  club: SWE Sweden
+  name: Oskar Sandberg
+  start_number: 219
+- class: Men 20
+  club: CZE Czech Republic Youth
+  name: Martin Kanta
+  start_number: 218
+- class: Men 20
+  club: EST Estonia
+  name: Maerten Henrik Pais
+  start_number: 217
+- class: Men 20
+  club: POR Portugal
+  name: Andre Esteves
+  start_number: 216
+- class: Men 20
+  club: RUS Russia
+  name: Alexander Kulgaviy
+  start_number: 215
+- class: Men 20
+  club: TUR Turkey
+  name: Ferhat Alyilmaz
+  start_number: 214
+- class: Men 20
+  club: FRA France
+  name: Samson Deriaz
+  start_number: 213
+- class: Men 20
+  club: FIN Finland
+  name: Sauli Pietikainen
+  start_number: 212
+- class: Men 20
+  club: POR Portugal
+  name: Diogo Barradas
+  start_number: 211
+- class: Men 20
+  club: ITA Italy
+  name: Simone Bettega
+  start_number: 210
+- class: Men 20
+  club: FIN Finland
+  name: Sakari Puolakanaho
+  start_number: 209
+- class: Men 20
+  club: POL Poland
+  name: Jakub Jaroszek
+  start_number: 208
+- class: Men 20
+  club: RUS Russia
+  name: Leonid Tsvetkov
+  start_number: 207
+- class: Men 20
+  club: SUI Switzerland
+  name: Adrian Jaeggi
+  start_number: 206
+- class: Men 20
+  club: DEN Denmark
+  name: Oliver Friis
+  start_number: 205
+- class: Men 20
+  club: ESP Spain
+  name: Marc Lopez Suades
+  start_number: 204
+- class: Men 20
+  club: POL Poland
+  name: Artur Zebrowski
+  start_number: 203
+- class: Men 20
+  club: SVK Slovakia
+  name: Matej Muller
+  start_number: 202
+- class: Men 20
+  club: LTU Lithuania
+  name: Nojus Kalvaitis
+  start_number: 201
+- class: Women 20
+  club: FIN Finland
+  name: Jutta Nurminen
+  start_number: 325
+- class: Women 20
+  club: RUS Russia
+  name: Natalia Shatalova
+  start_number: 324
+- class: Women 20
+  club: POR Portugal
+  name: Sandra Rosa
+  start_number: 323
+- class: Women 20
+  club: RUS Russia
+  name: Uliana Sukholovskaya
+  start_number: 322
+- class: Women 20
+  club: FRA France
+  name: Lou Garcin
+  start_number: 321
+- class: Women 20
+  club: SWE Sweden
+  name: Kristin Hoog
+  start_number: 320
+- class: Women 20
+  club: POR Portugal
+  name: Bebiana Alves
+  start_number: 319
+- class: Women 20
+  club: RUS Russia
+  name: Alena Fedoseeva
+  start_number: 318
+- class: Women 20
+  club: FIN Finland
+  name: Julia Korhonen
+  start_number: 317
+- class: Women 20
+  club: LTU Lithuania
+  name: Viktorija Michnovic
+  start_number: 316
+- class: Women 20
+  club: CZE Czech Republic Youth
+  name: Andrea Kamenikova
+  start_number: 315
+- class: Women 20
+  club: RUS Russia
+  name: Daria Sevbo
+  start_number: 314
+- class: Women 20
+  club: SWE Sweden
+  name: Erika Duhlbo
+  start_number: 313
+- class: Women 20
+  club: other
+  name: Lucy Mackie
+  start_number: 312
+- class: Women 20
+  club: EST Estonia
+  name: Doris Kudre
+  start_number: 311
+- class: Women 20
+  club: FIN Finland
+  name: Jonna Juva
+  start_number: 310
+- class: Women 20
+  club: RUS Russia
+  name: Alexandra Dimova
+  start_number: 309
+- class: Women 20
+  club: CZE Czech Republic Youth
+  name: Veronika Kubinova
+  start_number: 308
+- class: Women 20
+  club: RUS Russia
+  name: Olga Mikhaylova
+  start_number: 307
+- class: Women 20
+  club: LTU Lithuania
+  name: Patricija Joana Babrauskaite
+  start_number: 306
+- class: Women 20
+  club: SWE Sweden
+  name: Jennifer Andersson
+  start_number: 305
+- class: Women 20
+  club: POR Portugal
+  name: Ana Margarida Rocha
+  start_number: 304
+- class: Women 20
+  club: AUT Austria Youth
+  name: Antonella Fantoni
+  start_number: 303
+- class: Women 20
+  club: FRA France
+  name: Constance Devillers
+  start_number: 302
+- class: Women 20
+  club: ESP Spain
+  name: Mar Soler Puig
+  start_number: 301
+- class: Women 20
+  club: ITA Italy
+  name: Michela Tomaselli
+  start_number: 326
+race_number: 3

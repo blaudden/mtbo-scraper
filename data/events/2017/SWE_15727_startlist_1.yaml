@@ -1,0 +1,466 @@
+participants:
+- class: D21
+  club: Fredrikshofs IF Skid & OK
+  name: Nadia Larsson
+  start_number: 731
+- class: D21
+  club: OK Nolaskogsarna
+  name: Sara Forsgren
+  start_number: 732
+- class: D21
+  club: Forsa OK
+  name: Linn Bylars
+  start_number: 734
+- class: D21
+  club: Garphyttans IF
+  name: Elin Fjellström
+  start_number: 735
+- class: D21
+  club: OK Trian
+  name: Ingrid Stengård
+  start_number: 736
+- class: D21
+  club: IFK Mora OK
+  name: Erica Olsson
+  start_number: 737
+- class: H21
+  club: Haninge SOK
+  name: Daniel Steen
+  start_number: 702
+- class: H21
+  club: Gävle OK
+  name: Patrik Svedberg
+  start_number: 703
+- class: H21
+  club: OK Rodhen
+  name: Oskar Molarin
+  start_number: 705
+- class: H21
+  club: Säterbygdens OK
+  name: Oskar Sandberg
+  start_number: 706
+- class: H21
+  club: Leksands OK
+  name: Ola Jäderberg
+  start_number: 707
+- class: H21
+  club: Garphyttans IF
+  name: Thomas Jansson
+  start_number: 708
+- class: H21
+  club: Ryda SK
+  name: Richard Karlsson
+  start_number: 711
+- class: H21
+  club: Garphyttans IF
+  name: Torbjörn Jansson
+  start_number: 712
+- class: H21
+  club: Västerås SOK
+  name: Andreas Mathisen
+  start_number: 713
+- class: H21
+  club: OK Rodhen
+  name: Magnus Blåudd
+  start_number: 714
+- class: H21
+  club: Haninge SOK
+  name: Sebastian Svärd
+  start_number: 715
+- class: H21
+  club: Kvarnsvedens GOIF OK
+  name: Filip Bergström
+  start_number: 716
+- class: H21
+  club: Garphyttans IF
+  name: Marcus Jansson
+  start_number: 717
+- class: H21
+  club: IFK Mora OK
+  name: Linus Mood
+  start_number: 718
+- class: H21
+  club: IFK Lidingö SOK
+  name: Jonn Are Myhren
+  start_number: 719
+- class: D17-20
+  club: Ryda SK
+  name: Elvira Larsson
+  start_number: 721
+- class: H17-20
+  club: OK Kåre
+  name: Rasmus Nordgren
+  start_number: 741
+- class: H17-20
+  club: Haninge SOK
+  name: Emil Andersson
+  start_number: 742
+- class: H17-20
+  club: OK Kåre
+  name: Jakob Bergman
+  start_number: 743
+- class: H17-20
+  club: Säterbygdens OK
+  name: Emil Arvidsson
+  start_number: 744
+- class: H17-20
+  club: Haninge SOK
+  name: Martin Skärlén
+  start_number: 745
+- class: H17-20
+  club: Kvarnsvedens GOIF OK
+  name: Rikard Bergström
+  start_number: 747
+- class: H17-20
+  club: Gävle OK
+  name: Felix Silver
+  start_number: 748
+- class: H17-20
+  club: OK Kåre
+  name: Martin Bergman
+  start_number: 749
+- class: H17-20
+  club: Kvarnsvedens GOIF OK
+  name: Axel Eriksson
+  start_number: 750
+- class: H17-20
+  club: Söders-Tyresö
+  name: Felix Tiderman
+  start_number: 751
+- class: H17-20
+  club: Haninge SOK
+  name: Joakim Skärlén
+  start_number: 752
+- class: H17-20
+  club: IFK Mora OK
+  name: Gustav Jonsson
+  start_number: 753
+- class: H17-20
+  club: OK Tyr
+  name: Pontus Alfredsson
+  start_number: 754
+- class: H16
+  club: IFK Enskede
+  name: Linus Albinsson
+  start_number: null
+- class: H16
+  club: Gävle OK
+  name: Isak Berggren
+  start_number: null
+- class: H16
+  club: OK Södertörn
+  name: Björn Renner
+  start_number: null
+- class: H12
+  club: OK Hedströmmen
+  name: Samuel Resman
+  start_number: null
+- class: D40
+  club: OK Tor
+  name: Anette Larsson
+  start_number: null
+- class: D40
+  club: OK Södertörn
+  name: Daniela Renner
+  start_number: null
+- class: D40
+  club: Gävle OK
+  name: Anna Berggren
+  start_number: null
+- class: D40
+  club: IFK Enskede
+  name: Malin Albinsson
+  start_number: null
+- class: D40
+  club: OK Hammaren
+  name: Ann-Sofie Täck
+  start_number: null
+- class: D40
+  club: OK Kåre
+  name: Liselott Nordgren
+  start_number: null
+- class: H40
+  club: Leksands OK
+  name: Janne Skarner
+  start_number: null
+- class: H40
+  club: Haninge SOK
+  name: Ola Svärd
+  start_number: null
+- class: H40
+  club: OK Hammaren
+  name: Stellan Täck
+  start_number: null
+- class: H40
+  club: IFK Enskede
+  name: Peter Albinsson
+  start_number: null
+- class: H40
+  club: OK Nolaskogsarna
+  name: Fredrik Forsgren
+  start_number: null
+- class: H40
+  club: Haninge SOK
+  name: Ulf Andersson
+  start_number: null
+- class: H40
+  club: Kvarnsvedens GOIF OK
+  name: Ola Eriksson
+  start_number: null
+- class: H40
+  club: Gällstadbygdens SOK
+  name: Johan Abrahamsson
+  start_number: null
+- class: H40
+  club: Domnarvets GOIF
+  name: Magnus Eliasson
+  start_number: null
+- class: D50
+  club: Kristinehamns OK
+  name: Lisbeth Celander
+  start_number: null
+- class: D50
+  club: OK Kåre
+  name: Anki Svärdby-Bergman
+  start_number: null
+- class: D50
+  club: Köping-Kolsva OK
+  name: Susanne Welén
+  start_number: null
+- class: D50
+  club: Säterbygdens OK
+  name: Carina Sandberg
+  start_number: null
+- class: D50
+  club: Finspångs SOK
+  name: Eva Lindgren
+  start_number: null
+- class: D50
+  club: OK Kåre
+  name: Weronica Morell
+  start_number: null
+- class: H50
+  club: OK Hammaren
+  name: Jonas Holmgren
+  start_number: null
+- class: H50
+  club: Trosabygdens OK
+  name: Stefan Johansson
+  start_number: null
+- class: H50
+  club: Sundbybergs IK
+  name: Hans Olsén
+  start_number: null
+- class: H50
+  club: Söders-Tyresö
+  name: Patrik Tiderman
+  start_number: null
+- class: H50
+  club: Södertälje-Nykvarn OF
+  name: Mats Heldt
+  start_number: null
+- class: H50
+  club: Kristinehamns OK
+  name: Leif Celander
+  start_number: null
+- class: H50
+  club: OK Tyr
+  name: Mikael Kullin
+  start_number: null
+- class: H50
+  club: OK Kåre
+  name: Christer Morell
+  start_number: null
+- class: H50
+  club: Haninge SOK
+  name: Gunnar Skärlén
+  start_number: null
+- class: H50
+  club: Säterbygdens OK
+  name: Kjell Klar
+  start_number: null
+- class: H50
+  club: Eskilstuna OL
+  name: Urban Risberg
+  start_number: null
+- class: H50
+  club: Stora Tuna OK
+  name: Ulf Eriksson
+  start_number: null
+- class: H50
+  club: Finspångs SOK
+  name: Benny Lindgren
+  start_number: null
+- class: H50
+  club: Domnarvets GOIF
+  name: Per Leidevall
+  start_number: null
+- class: H50
+  club: IFK Lidingö SOK
+  name: Anders Stjerndahl
+  start_number: null
+- class: H50
+  club: Kvarnsvedens GOIF OK
+  name: Peter Bergström
+  start_number: null
+- class: H50
+  club: Trollhättans SOK
+  name: Hans Kööhler
+  start_number: null
+- class: H50
+  club: OK Södertörn
+  name: Claes Renner
+  start_number: null
+- class: H50
+  club: Eskilstuna OL
+  name: Magnus Hellberg
+  start_number: null
+- class: H50
+  club: Gammelstads IF
+  name: Anders Abrahamsson
+  start_number: null
+- class: H50
+  club: Finspångs SOK
+  name: Kenneth Svensson
+  start_number: null
+- class: H50
+  club: Ärla IF
+  name: Rickard Asplund
+  start_number: null
+- class: H50
+  club: Eksjö SOK
+  name: Stefan Kollberg
+  start_number: null
+- class: H50
+  club: Kvarnsvedens GOIF OK
+  name: Stefan Killberg
+  start_number: null
+- class: H50
+  club: OK Kåre
+  name: Steven Hale
+  start_number: null
+- class: D60
+  club: Trollhättans SOK
+  name: Radka Kühnel
+  start_number: null
+- class: D60
+  club: IFK Lidingö SOK
+  name: Margareta Meiton
+  start_number: null
+- class: H60
+  club: Trollhättans SOK
+  name: Johan Karlsson
+  start_number: null
+- class: H60
+  club: OK Södertörn
+  name: Jan Lindgren
+  start_number: null
+- class: H60
+  club: Köping-Kolsva OK
+  name: Göran Welén
+  start_number: null
+- class: H60
+  club: Leksands OK
+  name: Lars Sahlberg
+  start_number: null
+- class: H60
+  club: Surahammars SOK
+  name: Gunnar Munktelius
+  start_number: null
+- class: H60
+  club: Bergnäsets AIK
+  name: Åke Gustafsson
+  start_number: null
+- class: H60
+  club: Stjärnhovs OK 65
+  name: Mats Gärling
+  start_number: null
+- class: H60
+  club: Stora Tuna OK
+  name: Torbjörn Larsson
+  start_number: null
+- class: Öppen motion 1
+  club: Edsbyns OK
+  name: Arvid Olanders
+  start_number: null
+- class: Öppen motion 1
+  club: Edsbyns OK
+  name: Carina Berglund
+  start_number: null
+- class: Öppen motion 1
+  club: Edsbyns OK
+  name: Wilmer Hasselqvist
+  start_number: null
+- class: Öppen motion 1
+  club: Edsbyns OK
+  name: Hedda Mattsson
+  start_number: null
+- class: Öppen motion 5
+  club: Alfta-Ösa OK
+  name: Leo Magnusson
+  start_number: null
+- class: Öppen motion 5
+  club: Säterbygdens OK
+  name: Thomas Arvidsson
+  start_number: null
+- class: Öppen motion 5
+  club: Säterbygdens OK
+  name: Anita Klaar
+  start_number: null
+- class: Öppen motion 5
+  club: Edsbyns SK
+  name: Magdalena Mattes
+  start_number: null
+- class: Öppen motion 5
+  club: Edsbyns SK
+  name: Azra Avdic
+  start_number: null
+- class: Öppen motion 5
+  club: OK Kåre
+  name: Alvin Edbäck
+  start_number: null
+- class: Öppen motion 5
+  club: OK Kåre
+  name: Johanna Edbäck
+  start_number: null
+- class: Öppen motion 5
+  club: OK Rodhen
+  name: Malin Lingh
+  start_number: null
+- class: Öppen motion 9
+  club: Edsbyns OK
+  name: Johan Norell
+  start_number: null
+- class: Öppen motion 9
+  club: Alfta-Ösa OK
+  name: Jakob Magnusson
+  start_number: null
+- class: Öppen motion 9
+  club: Gävle OK
+  name: Mikael Silver
+  start_number: null
+- class: Öppen motion 9
+  club: Gävle OK
+  name: Elvira Silver
+  start_number: null
+- class: Öppen motion 9
+  club: Edsbyns OK
+  name: Dan Eding
+  start_number: null
+- class: Öppen motion 9
+  club: Edsbyns OK
+  name: Pontus Eding
+  start_number: null
+- class: H70
+  club: Ulricehamns OK
+  name: Claes-Göran Lundberg
+  start_number: null
+- class: H70
+  club: OK Södertörn
+  name: Ronny Hedlund
+  start_number: null
+- class: H70
+  club: Insjöns IF OK
+  name: Kjell Eriksson
+  start_number: null
+race_number: 1
