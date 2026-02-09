@@ -1,0 +1,290 @@
+participants:
+- class: Men
+  club: Sweden
+  name: Jon Hansson
+  start_number: 201
+- class: Men
+  club: Czechia
+  name: Radek Lesage
+  start_number: 202
+- class: Men
+  club: France
+  name: Augustin Leclere
+  start_number: 203
+- class: Men
+  club: Lithuania
+  name: Arnas Sausaitis
+  start_number: 204
+- class: Men
+  club: Australia
+  name: Lucas Kent
+  start_number: 205
+- class: Men
+  club: Finland
+  name: Nuutti Toivonen
+  start_number: 206
+- class: Men
+  club: Norway
+  name: Marius Edvart Aamodt
+  start_number: 207
+- class: Men
+  club: Bulgaria
+  name: Mihail Stoev
+  start_number: 208
+- class: Men
+  club: Italy
+  name: Rado Kalc
+  start_number: 209
+- class: Men
+  club: Poland
+  name: Oskar Szymanski
+  start_number: 210
+- class: Men
+  club: Spain
+  name: Marcos Silvarrey Oreiro
+  start_number: 211
+- class: Men
+  club: Italy
+  name: Michele Traversi Montani
+  start_number: 212
+- class: Men
+  club: Austria
+  name: Lukas Wieser
+  start_number: 213
+- class: Men
+  club: Czechia
+  name: Adam Cernik
+  start_number: 214
+- class: Men
+  club: Finland
+  name: Tatu Aaltonen
+  start_number: 215
+- class: Men
+  club: Sweden
+  name: Arvid Svensson
+  start_number: 216
+- class: Men
+  club: Lithuania
+  name: Daumantas Kiela
+  start_number: 217
+- class: Men
+  club: Poland
+  name: Filip Janowski
+  start_number: 218
+- class: Men
+  club: Bulgaria
+  name: Anton Kapsazov
+  start_number: 219
+- class: Men
+  club: Japan
+  name: Hiro Ayano
+  start_number: 220
+- class: Men
+  club: Spain
+  name: Nicolas Lopez Gonzalez
+  start_number: 221
+- class: Men
+  club: Hungary
+  name: Bence Tamas
+  start_number: 222
+- class: Men
+  club: Finland
+  name: Akseli Pesu
+  start_number: 223
+- class: Men
+  club: Germany
+  name: Thomas Lucassen
+  start_number: 224
+- class: Men
+  club: France
+  name: Timothy Blot
+  start_number: 225
+- class: Men
+  club: Norway
+  name: Sondre Ladim
+  start_number: 226
+- class: Men
+  club: Czechia
+  name: Jakub Racansky
+  start_number: 227
+- class: Men
+  club: Poland
+  name: Norman Szymanski
+  start_number: 228
+- class: Men
+  club: Lithuania
+  name: Nojus Lukosius
+  start_number: 229
+- class: Men
+  club: Additional Chip
+  name: Fabio Goncalves
+  start_number: 230
+- class: Men
+  club: Sweden
+  name: Axel Grafnings
+  start_number: 231
+- class: Men
+  club: France
+  name: Jocelin Lauret
+  start_number: 232
+- class: Men
+  club: Germany
+  name: Per Haehnel
+  start_number: 233
+- class: Men
+  club: France
+  name: Antoine Lesquer
+  start_number: 234
+- class: Men
+  club: Sweden
+  name: Melvin Lofgren
+  start_number: 235
+- class: Men
+  club: Finland
+  name: Eevert Kenttamies
+  start_number: 236
+- class: Men
+  club: Spain
+  name: Joan Montes
+  start_number: 237
+- class: Men
+  club: Bulgaria
+  name: Marco Pelov
+  start_number: 238
+- class: Men
+  club: Spain
+  name: Fran Cortes Martinez
+  start_number: 239
+- class: Men
+  club: Norway
+  name: Ole Gunnar Kleppa Madslien
+  start_number: 240
+- class: Men
+  club: Italy
+  name: Matteo Traversi Montani
+  start_number: 241
+- class: Men
+  club: Finland
+  name: Eemil Koskinen
+  start_number: 242
+- class: Men
+  club: Austria
+  name: Hannes Hnilica
+  start_number: 243
+- class: Women
+  club: Spain
+  name: Marta Villa Rodriguez
+  start_number: 301
+- class: Women
+  club: Bulgaria
+  name: Ivana Pedeva
+  start_number: 302
+- class: Women
+  club: Sweden
+  name: Minna Palm
+  start_number: 303
+- class: Women
+  club: France
+  name: Jade Boussier
+  start_number: 304
+- class: Women
+  club: Czechia
+  name: Adela Ryglova
+  start_number: 305
+- class: Women
+  club: Finland
+  name: Annika Rantanen
+  start_number: 306
+- class: Women
+  club: Estonia
+  name: Marii Isabel Allikberg
+  start_number: 307
+- class: Women
+  club: Denmark
+  name: Sofie Okkels Jensen
+  start_number: 308
+- class: Women
+  club: Estonia
+  name: Anett Liisa Parts
+  start_number: 309
+- class: Women
+  club: Australia
+  name: Maya Bennette
+  start_number: 310
+- class: Women
+  club: Finland
+  name: Aino Kankaanpaa
+  start_number: 311
+- class: Women
+  club: Poland
+  name: Urszula Wasiewicz
+  start_number: 312
+- class: Women
+  club: France
+  name: Lola Colle
+  start_number: 313
+- class: Women
+  club: Czechia
+  name: Tereza Kadlecova
+  start_number: 314
+- class: Women
+  club: Sweden
+  name: Signe Feil
+  start_number: 315
+- class: Women
+  club: Spain
+  name: Alba Munoz del Campo
+  start_number: 316
+- class: Women
+  club: Bulgaria
+  name: Gergana Stoycheva
+  start_number: 317
+- class: Women
+  club: France
+  name: Enola Bardine
+  start_number: 318
+- class: Women
+  club: Czechia
+  name: Natali Chamrada
+  start_number: 319
+- class: Women
+  club: Denmark
+  name: Miri Brunstedt Noergaard
+  start_number: 320
+- class: Women
+  club: Bulgaria
+  name: Slavena Petkova
+  start_number: 321
+- class: Women
+  club: Czechia
+  name: Sofie Stranska
+  start_number: 322
+- class: Women
+  club: Estonia
+  name: Sandra Arak
+  start_number: 323
+- class: Women
+  club: Spain
+  name: Sofia Martinez Gomez
+  start_number: 324
+- class: Women
+  club: Sweden
+  name: Yrsa Rojgard
+  start_number: 325
+- class: Women
+  club: Finland
+  name: Kaisla Hakkinen
+  start_number: 326
+- class: Women
+  club: Lithuania
+  name: Irmante Aleliunaite
+  start_number: 327
+- class: Women
+  club: Finland
+  name: EmmaRiikka Laamanen
+  start_number: 328
+- class: Women
+  club: Italy
+  name: Iris Aurora Pecorari
+  start_number: 329
+race_number: 3
