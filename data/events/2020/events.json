@@ -553,6 +553,613 @@
       "entry_deadlines": []
     },
     {
+      "id": "IOF_6432",
+      "name": "European MTB Orienteering Championships 2020",
+      "start_time": "2020-05-10",
+      "end_time": "2020-05-16",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Regional Championships"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Portugal",
+          "country_code": "PRT"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Andre Mora"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "+351919919801"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:AAAAAB9DUUIhFhUdQwQW"
+        },
+        {
+          "role": "Event director",
+          "name": "Antonio Amador"
+        },
+        {
+          "role": "Course setter",
+          "name": "Alexandre Reis"
+        },
+        {
+          "role": "Event controller",
+          "name": "Tiago Fernandes"
+        }
+      ],
+      "classes": [
+        "Men Elite",
+        "Team Officials",
+        "Women Elite"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/6432",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.839859+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.mtbo2020.fpo.pt/",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.839859+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Bulletin",
+          "title": "Bulletin 2",
+          "url": "/Documents/Event/3100/Bulletin-2",
+          "published_time": "2019-07-16"
+        }
+      ],
+      "information": "New dates for the event is 2-7 October 2020.\nhttps://eventor.orienteering.org/Events/Show/6770",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Middle",
+          "datetimez": "2020-05-14T09:00:00+01:00",
+          "discipline": "Middle",
+          "night_or_day": null,
+          "position": {
+            "lat": 37.1475,
+            "lng": -8.02022
+          },
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        },
+        {
+          "race_number": 2,
+          "name": "Mass start",
+          "datetimez": "2020-05-15T09:00:00+01:00",
+          "discipline": "Long",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        },
+        {
+          "race_number": 3,
+          "name": "Mixed Relay",
+          "datetimez": "2020-05-16T09:00:00+01:00",
+          "discipline": "Long",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_6433",
+      "name": "European Junior and Youth MTB Orienteering Championships 2020",
+      "start_time": "2020-05-10",
+      "end_time": "2020-05-16",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Regional Championships"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Portugal",
+          "country_code": "PRT"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Andre Mora"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "+351919919801"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:AAAAAB9DUUIhFhUdQwQW"
+        },
+        {
+          "role": "Event director",
+          "name": "Antonio Amador"
+        },
+        {
+          "role": "Course setter",
+          "name": "Alexandre Reis"
+        },
+        {
+          "role": "Event controller",
+          "name": "Tiago Fernandes"
+        }
+      ],
+      "classes": [
+        "M17",
+        "M20",
+        "Team officials",
+        "W17",
+        "W20"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/6433",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.839794+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.mtbo2020.fpo.pt/",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.839794+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Bulletin",
+          "title": "Bulletin 2",
+          "url": "/Documents/Event/3101/Bulletin-2",
+          "published_time": "2019-07-16"
+        }
+      ],
+      "information": "New dates for the event is 2-7 October 2020.\nhttps://eventor.orienteering.org/Events/Show/6775",
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Sprint",
+          "datetimez": "2020-05-12T10:00:00+01:00",
+          "discipline": "Sprint",
+          "night_or_day": null,
+          "position": {
+            "lat": 37.15981,
+            "lng": -8.02983
+          },
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        },
+        {
+          "race_number": 2,
+          "name": "Middle",
+          "datetimez": "2020-05-14T09:00:00+01:00",
+          "discipline": "Middle",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        },
+        {
+          "race_number": 3,
+          "name": "Long",
+          "datetimez": "2020-05-15T09:00:00+01:00",
+          "discipline": "Long",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        },
+        {
+          "race_number": 4,
+          "name": "Relay",
+          "datetimez": "2020-05-16T09:00:00+01:00",
+          "discipline": "Long",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_6459",
+      "name": "Campeonato de España 2020 (Middle Distance)",
+      "start_time": "2020-04-17",
+      "end_time": "2020-04-17",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Spain",
+          "country_code": "ESP"
+        },
+        {
+          "name": "CLUB NAVALENO",
+          "country_code": "ESP"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "+34 669455234"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:ABUQAkQABhwSFAYyChkDBkFdAB0M"
+        }
+      ],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/6459",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.839836+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "https://www.plan-o.run/cemtbo2020",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.839836+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Bulletin",
+          "title": "Bulletin 1",
+          "url": "/Documents/Event/3618/Bulletin-1",
+          "published_time": "2020-02-18"
+        }
+      ],
+      "information": null,
+      "region": null,
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Campeonato de España 2020 (Middle Distance)",
+          "datetimez": "2020-04-17T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": {
+            "lat": 41.62161,
+            "lng": -2.65288
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=6459&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-09T17:20:24.839839+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_6460",
+      "name": "Campeonato de España 2020 (Long Distance)",
+      "start_time": "2020-04-18",
+      "end_time": "2020-04-18",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Spain",
+          "country_code": "ESP"
+        },
+        {
+          "name": "CLUB NAVALENO",
+          "country_code": "ESP"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "+34 669455234"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:ABUQAkQABhwSFAYyChkDBkFdAB0M"
+        }
+      ],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/6460",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.839777+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "https://www.plan-o.run/cemtbo2020",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.839777+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Bulletin",
+          "title": "Bulletin 1",
+          "url": "/Documents/Event/3619/Bulletin-1",
+          "published_time": "2020-02-18"
+        }
+      ],
+      "information": null,
+      "region": null,
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Campeonato de España 2020 (Long Distance)",
+          "datetimez": "2020-04-18T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": {
+            "lat": 41.62082,
+            "lng": -2.65175
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=6460&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-09T17:20:24.839781+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_6584",
+      "name": "Nationale",
+      "start_time": "2020-05-29",
+      "end_time": "2020-05-29",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "France",
+          "country_code": "FRA"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "+33687322299"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:DBoGHUgbBgAMFREyDBsOQU4cDg=="
+        }
+      ],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/6584",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.840352+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.samois.coursedorientation.fr",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.840352+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Bulletin",
+          "title": "Bulletin 1",
+          "url": "/Documents/Event/3677/Bulletin-1",
+          "published_time": "2020-03-08"
+        }
+      ],
+      "information": null,
+      "region": null,
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Nationale",
+          "datetimez": "2020-05-29T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": {
+            "lat": 48.34574,
+            "lng": 2.73752
+          },
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_6585",
+      "name": "Nationale",
+      "start_time": "2020-05-31",
+      "end_time": "2020-05-31",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "France",
+          "country_code": "FRA"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "+33687322299"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:DBoGHUgbBgAMFREyDBsOQU4cDg=="
+        }
+      ],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/6585",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.840130+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.samois.coursedorientation.fr",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.840130+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Bulletin",
+          "title": "Bulletin 1",
+          "url": "/Documents/Event/3678/Bulletin-1",
+          "published_time": "2020-03-08"
+        }
+      ],
+      "information": null,
+      "region": null,
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Nationale",
+          "datetimez": "2020-05-31T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": {
+            "lat": 48.3755,
+            "lng": 2.62341
+          },
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
       "id": "IOF_6592",
       "name": "Svenska Cupen MTBO #11 Masstart",
       "start_time": "2020-08-30",
@@ -954,6 +1561,894 @@
               ]
             }
           ],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_6610",
+      "name": "Championship of Russia",
+      "start_time": "2020-06-26",
+      "end_time": "2020-06-26",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Russian Federation",
+          "country_code": "RUS"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "+79112364744"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:DAQDG0gdCB0XMAgTBBhMHVg="
+        }
+      ],
+      "classes": [],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/6610",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.840339+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://spbof.ru",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.840339+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Championship of Russia",
+          "datetimez": "2020-06-26T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_6611",
+      "name": "Championship of St. Petersburg",
+      "start_time": "2020-06-27",
+      "end_time": "2020-06-27",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Russian Federation",
+          "country_code": "RUS"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "+79112364744"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:DAQDG0gdCB0XMAgTBBhMHVg="
+        }
+      ],
+      "classes": [],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/6611",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.840142+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://spbof.ru",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.840142+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Championship of St. Petersburg",
+          "datetimez": "2020-06-27T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_6614",
+      "name": "Balaton MTBO - Long",
+      "start_time": "2020-05-01",
+      "end_time": "2020-05-01",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Hungary",
+          "country_code": "HUN"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "+36707788228"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:DxUODlkcDR8VEgoyChkDBkFdAB0M"
+        }
+      ],
+      "classes": [],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/6614",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.839849+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://mtbo.hu/balatonmtbo/en/",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.839849+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Balaton MTBO - Long",
+          "datetimez": "2020-05-01T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_6615",
+      "name": "Balaton MTBO - Middle",
+      "start_time": "2020-05-02",
+      "end_time": "2020-05-02",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Hungary",
+          "country_code": "HUN"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "+36707788228"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:DxUODlkcDR8VEgoyChkDBkFdAB0M"
+        }
+      ],
+      "classes": [],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/6615",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.839763+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://mtbo.hu/balatonmtbo/en/",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.839763+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Balaton MTBO - Middle",
+          "datetimez": "2020-05-02T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_6617",
+      "name": "MTBOdays 2020",
+      "start_time": "2020-07-10",
+      "end_time": "2020-07-10",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Austria",
+          "country_code": "AUT"
+        },
+        {
+          "name": "OLT Transdanubien",
+          "country_code": "AUT"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Thomas Hnilica"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "+436641765849"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:AhIEBk4WIx8VEgoWDA0RQUwH"
+        },
+        {
+          "role": "Event director",
+          "name": "Thomas Hnilica"
+        },
+        {
+          "role": "Course setter",
+          "name": "Martin Veitsberger"
+        },
+        {
+          "role": "Event controller",
+          "name": "Michael Melcher"
+        },
+        {
+          "role": "Course controller",
+          "name": "Michael Melcher"
+        }
+      ],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/6617",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.840301+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.mtbodays.at",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.840301+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Bulletin",
+          "title": "Bulletin 1",
+          "url": "http://www.mtbodays.at/wp-content/uploads/2019/11/Bulletin1_final.pdf",
+          "published_time": null
+        }
+      ],
+      "information": null,
+      "region": null,
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "MTBOdays 2020",
+          "datetimez": "2020-07-10T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": {
+            "lat": 47.3171,
+            "lng": 16.10527
+          },
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_6618",
+      "name": "MTBOdays 2020",
+      "start_time": "2020-07-11",
+      "end_time": "2020-07-11",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Austria",
+          "country_code": "AUT"
+        },
+        {
+          "name": "OLT Transdanubien",
+          "country_code": "AUT"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Thomas Hnilica"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "+436641765849"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:AhIEBk4WIx8VEgoWDA0RQUwH"
+        },
+        {
+          "role": "Event director",
+          "name": "Thomas Hnilica"
+        },
+        {
+          "role": "Course setter",
+          "name": "Martin Veitsberger"
+        },
+        {
+          "role": "Event controller",
+          "name": "Michael Melcher"
+        },
+        {
+          "role": "Course controller",
+          "name": "Michael Melcher"
+        }
+      ],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/6618",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.839885+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.mtbodays.at",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.839885+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Bulletin",
+          "title": "Bulletin 1",
+          "url": "http://www.mtbodays.at/wp-content/uploads/2019/11/Bulletin1_final.pdf",
+          "published_time": null
+        }
+      ],
+      "information": null,
+      "region": null,
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "MTBOdays 2020",
+          "datetimez": "2020-07-11T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": {
+            "lat": 47.31719,
+            "lng": 16.10534
+          },
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_6622",
+      "name": "Tisvilde Hegn Long Distance WRE",
+      "start_time": "2020-04-22",
+      "end_time": "2020-04-22",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Denmark",
+          "country_code": "DNK"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "+45 24207184"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:BxERQV4HBhcPMBwfDB0OQU4cDg=="
+        }
+      ],
+      "classes": [],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/6622",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.839823+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://mtbocamp.dk",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.839823+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Tisvilde Hegn Long Distance WRE",
+          "datetimez": "2020-04-22T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_6623",
+      "name": "Teglstrup/Nyrup Hegn Middle Distance WRE",
+      "start_time": "2020-04-23",
+      "end_time": "2020-04-23",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Denmark",
+          "country_code": "DNK"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "+45 24207184"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:BxERQV4HBhcPMBwfDB0OQU4cDg=="
+        }
+      ],
+      "classes": [],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/6623",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.839736+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://mtbocamp.dk",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.839736+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Teglstrup/Nyrup Hegn Middle Distance WRE",
+          "datetimez": "2020-04-23T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_6723",
+      "name": "Estonian championships",
+      "start_time": "2020-07-25",
+      "end_time": "2020-07-25",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Estonia",
+          "country_code": "EST"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "+372 5139792"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:GRUQAkJdFxMTHAQCLRMPDkQfTREOHQ=="
+        }
+      ],
+      "classes": [],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/6723",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.840264+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.porterracing.ee",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.840264+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Estonian championships",
+          "datetimez": "2020-07-25T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_6724",
+      "name": "Estonian championships",
+      "start_time": "2020-07-24",
+      "end_time": "2020-07-24",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Estonia",
+          "country_code": "EST"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "+372 5139792"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:GRUQAkJdFxMTHAQCLRMPDkQfTREOHQ=="
+        }
+      ],
+      "classes": [],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/6724",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.839999+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.porterracing.ee",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.839999+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Estonian championships",
+          "datetimez": "2020-07-24T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_6725",
+      "name": "Bulgarian MTBO championships - Long",
+      "start_time": "2020-07-17",
+      "end_time": "2020-07-17",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Bulgaria",
+          "country_code": "BGR"
+        },
+        {
+          "name": "Variant 5 Targovishte",
+          "country_code": "BGR"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Ivan Sirakov"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "+359878561166"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:BAIDAV4aERMKHxNKVTQFAkwaD1wCHwg="
+        }
+      ],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/6725",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.840181+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.variant5.org",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.840181+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": null,
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Bulgarian MTBO championships - Long",
+          "datetimez": "2020-07-17T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_6726",
+      "name": "Bulgarian MTBO championships - Sprint",
+      "start_time": "2020-07-16",
+      "end_time": "2020-07-16",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Bulgaria",
+          "country_code": "BGR"
+        },
+        {
+          "name": "Variant 5 Targovishte",
+          "country_code": "BGR"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Ivan Sirakov"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "+359878561166"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:BAIDAV4aERMKHxNKVTQFAkwaD1wCHwg="
+        }
+      ],
+      "classes": [
+        "Men",
+        "Women"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/6726",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.840212+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.variant5.org",
+          "title": null,
+          "last_updated_at": "2026-02-09T17:20:24.840212+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": null,
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Bulgarian MTBO championships - Sprint",
+          "datetimez": "2020-07-16T00:00:00+00:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
           "urls": [],
           "documents": [],
           "entry_counts": null,
