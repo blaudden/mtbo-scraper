@@ -2827,6 +2827,768 @@
       "entry_deadlines": []
     },
     {
+      "id": "NOR_20390",
+      "name": "Treningsløp 10 og SykkelO",
+      "start_time": "2024-08-14",
+      "end_time": "2024-08-14",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Club"
+      ],
+      "tags": [
+        "FootO"
+      ],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Hadeland OL",
+          "country_code": "NOR"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "John Hofoss"
+        }
+      ],
+      "classes": [
+        "3km - A",
+        "5km - A",
+        "B/C",
+        "Nybegynner",
+        "SykkelO Lang",
+        "SykkelO kort",
+        "SykkelO mellom"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/20390",
+          "title": null,
+          "last_updated_at": "2026-02-09T21:09:20.833713+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Other",
+          "title": "Program",
+          "url": "/Documents/Event/42644/Program",
+          "published_time": "2024-08-12"
+        },
+        {
+          "type": "Other",
+          "title": "Livelox sykkel-o",
+          "url": "https://www.livelox.com/Events/Show/135296/SykkelO-treningslop",
+          "published_time": null
+        },
+        {
+          "type": "Other",
+          "title": "Livelox Treningsløp 10",
+          "url": "https://www.livelox.com/Events/Show/135295/Treningslop-10",
+          "published_time": null
+        }
+      ],
+      "information": null,
+      "region": "Innlandet",
+      "punching_system": "Emit",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Treningsløp 10 og SykkelO",
+          "datetimez": "2024-08-14T00:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "position": {
+            "lat": 60.4293223367041,
+            "lng": 10.5153877860409
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=20390&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-09T21:09:20.833720+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=20390&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-09T21:09:20.833720+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=20390&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-09T21:09:20.833720+00:00"
+            },
+            {
+              "type": "Livelox",
+              "url": "https://www.livelox.com/Events/Show/135296/SykkelO-treningslop",
+              "title": "",
+              "last_updated_at": "2026-02-09T21:09:20.833720+00:00"
+            },
+            {
+              "type": "Livelox",
+              "url": "https://www.livelox.com/Events/Show/135295/Treningslop-10",
+              "title": "",
+              "last_updated_at": "2026-02-09T21:09:20.833720+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "5km - A": 2,
+            "3km - A": 4,
+            "B/C": 4,
+            "Nybegynner": 4,
+            "SykkelO Lang": 4,
+            "SykkelO mellom": 8,
+            "SykkelO kort": 3
+          },
+          "result_counts": {
+            "5km - A": 2,
+            "3km - A": 4,
+            "B/C": 4,
+            "Nybegynner": 4,
+            "SykkelO Lang": 4,
+            "SykkelO mellom": 8,
+            "SykkelO kort": 3
+          },
+          "fingerprints": [
+            "0ded8edc7eb2c0e1fd19b3be5bccab8325fbf9952ec12dacc06c514d058117e8",
+            "2952c09904eb5e8b08d38bebcde5bdd7bca27a3447bf81e3424b7b60345ed3af",
+            "2f121baf53b49d80ff3b918e6a8c7407f55fb9c125dc7baf00078ff6b63caabf",
+            "3e3cb70b5bb38219e4679a6f3596642ddcdae8391f819a84005b122229407875",
+            "44da1b9f6ef05171c0841ab59ebd0a615f021fd560f893cc2aa5602cc47ef96e",
+            "5108dfa52c4a999f9e17a647752192ddaefe2098867879d43f1c80a50c7808c0",
+            "590c13e22c1cb280fdca1533dde9b6c04417a7267943749ddd26b4c500e0321b",
+            "60bdb3dc8382e0bebe19e9d8518241fe8e870c9e1221f2aec647ddc55ec2d96b",
+            "6609b2320e1bb8832862164018d947cad2979d6fd58abe445cd63c323b464640",
+            "668eb44292eeb2bcb38c41014751a4eee1d57f01e4a3ac5824a1b904df37bddb",
+            "6f50ea7c08baefc0a49d03536b7647bd68ec3cce73fb77c478f65956db703fb4",
+            "70f1ebf53118dee11b6ab8db0e885a6f5eac15e21e8b4d6e581928781f1eca0d",
+            "7be973b5b0f09980d3387823f9ccd967649db584504adbaadf57570c8c994e8e",
+            "85eeb50225b6976338b89705170c5c217f344c9168d459352b262d0ae916b922",
+            "919b36278536ff38449d90397a42e7e0da8ce99c19a2889ea1a23102c511bb79",
+            "96b0305bb69792c9137d8ddd043d2f376986a36125ce79b9e449b0ec1c53143b",
+            "9baa267576e447e653c7f2d8446427d622da899b7273af5650a0a49bbe905167",
+            "b69a142678b1a9870c6f9eb46fd11258263fb26385147606fdcaec1208f9d79d",
+            "b8fac985ca078ebdfb183520f959ab685df8e9a20715355166216a12487d24bd",
+            "c1bb339e666f6d4e68d9e3e2863dea46deb529a08a77e1465e2001afb6da05fd",
+            "cc9eeeafb936772b1a47c2e7ca6eecddc8c6ff92fc3b66ed49c2c49a3fed6fd8",
+            "d49bc3e606503744aa0ce9f7f1870e559d5014c1c4e83997fcbd10e24c46d951",
+            "d82d0cc02d79f55bad7a70a9887fb2656b64d74d73a5a81164563afe0f2456ae",
+            "e4cc38936dd833428487f0b84c8bcf17b2c60749ef4b8bb402efd16d5ebbc05a",
+            "e74c1a1a217f1b1b0934457a66b27304897d69536946d41b03b543e603a0f68d",
+            "ec501ec24a9767214c3ebb394e1844a0bea79ed0897f9a55d6d9510a2d2be49f",
+            "f1bd86caf91c32baeabae55a92f90b0749310a3692c5788485d033b56f13b56d",
+            "fe8e30fd44dff509f9ecaccb031c5ba9c4457511fa0fdf0dc90859bcf2acc369"
+          ]
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "NOR_20477",
+      "name": "O-triatlon",
+      "start_time": "2024-08-14",
+      "end_time": "2024-08-14",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Club"
+      ],
+      "tags": [
+        "FootO"
+      ],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Larvik OK",
+          "country_code": "NOR"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Per Olav Gulbrandsen"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "41300777"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:HRsFGkERERMPFBYXAzQFAkwaD1wCHwg="
+        },
+        {
+          "role": "Course setter",
+          "name": "Per Olav Gulbrandsen"
+        }
+      ],
+      "classes": [
+        "A -16",
+        "A 17-",
+        "C -12",
+        "C 13-",
+        "N"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/20477",
+          "title": null,
+          "last_updated_at": "2026-02-09T21:09:20.833747+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "https://larvikok.no",
+          "title": null,
+          "last_updated_at": "2026-02-09T21:09:20.833747+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Invitation",
+          "title": "Innbydelse",
+          "url": "/Documents/Event/42617/Innbydelse",
+          "published_time": "2024-08-08"
+        },
+        {
+          "type": "Bulletin",
+          "title": "PM",
+          "url": "/Documents/Event/42663/PM",
+          "published_time": "2024-08-13"
+        }
+      ],
+      "information": "Vi får våre venner i prosjektet Bbrave fra Ukraina med på o-triatlon.\nDette medfører at vi deler A-klassene over/under 16 år om man løper eller sykler først. Dette for å få til utlån av sykler.\nHar du sykkel og/eller sykkelhjelm å låne ut, gi beskjed til arrangøren.",
+      "region": "Vestfold og Telemark",
+      "punching_system": "Emit",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "O-triatlon",
+          "datetimez": "2024-08-14T00:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "position": {
+            "lat": 59.0229829465932,
+            "lng": 10.0246855793231
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/135342",
+              "title": "Map, courses and routes in Livelox",
+              "last_updated_at": "2026-02-09T21:09:20.833751+00:00"
+            },
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=20477&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-09T21:09:20.833751+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=20477&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-09T21:09:20.833751+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=20477&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-09T21:09:20.833751+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "A 17-": 32,
+            "A -16": 22,
+            "C 13-": 8,
+            "C -12": 2,
+            "N": 4
+          },
+          "result_counts": {
+            "A 17-": 32,
+            "A -16": 22,
+            "C 13-": 8,
+            "C -12": 2,
+            "N": 4
+          },
+          "fingerprints": [
+            "0231e751749356cfa87d82a08b32067825225457f0d72bdc2c44ed5d4e0b898a",
+            "08460341a248ec74995fa3a99430b16c17415ddf6b3575089ed04479f439de9f",
+            "0d3103422212b9beb16cf62e875b15629c7f8709080cf131d238dcaab9b8554e",
+            "104eaf216dc36686461e1086ac12d4bd418df31474c2aa972e313cf202533b6b",
+            "110dff191b9f9d7fb6d33704c495ffc788ab2b0be9b4bf970ee1fef21adf19aa",
+            "12992b9aba411afeedc8cf3fc37ebd5fd775e62a4c22893ec0de2cbb03420270",
+            "1f09836889b4a3483391ddcadabf6a37bbded2548ff52ee3acd3090b65a00677",
+            "20ba53c2cc383846b974ce5cc24ae0ac6c898509ecd5cddb5413e5aff71de543",
+            "21849598ad3d8f42fd0e307e9429a2ae2a2a08a4ade44fa1bd1fd813b5072388",
+            "27c3a463c902557224ef3862564aabfa362ae1cd83b76685e4696a46e6978fa5",
+            "2afb4cdd12261f1514ac1080e17c63da9fea2e9927b22895d8f682e14df9a23a",
+            "2fb0d5130a7314d45888cfc05425bcaff0d242927cd592922fbf5feb61ddc223",
+            "352ca387c5f48be758b9b933ca6a1662a424c3e677c7da09a1d755cc1b04625a",
+            "3c4af4708e920879a4e0be76986ed857aa7f810353f5c53bce9c015199d3b505",
+            "3c67545d5ed65d9dae94ad3428ea9f9a3be7fe55ab453ec27c41887a6e001235",
+            "3ebfd117ac0dcc4e76df79a2fbe0eb98ebc270dd703a91c42e2807ff6127b274",
+            "44b25e54a0cc9d5cd122cfc7e3be4ca5bcc774dfb9aa826fb52d6b237c2dcec9",
+            "4a18ebb331c582e49da269982b515fcde5cd5d26b85e3b098ce1b6d9d458be05",
+            "4d30358c43bd2104dc605e2502045d38d8c61c43d0785759e4449515e7f2a2d6",
+            "4e669e094aecfed6e7912b6b82e486cee10fc8f9dee537cacc015660bbd2b5e1",
+            "4e764cb9b0ac05bcee5dc21cbde37e3c4a1ae950c40c7031e7723756e5706a5e",
+            "4eb346374df16c5ad2742f97bb8aca7c4f6267b7c3bb79c05eaf803603d07e4e",
+            "4fb9f621702366420a8cf6a5496009d4cd272198e0e2c920c5bbffea12c0270b",
+            "513487e1f85c8314e78f056d80b63713c432ac3847930c7c0c8c8e4a691e473f",
+            "526c2b371d2f4d78de4d3072071542d1ba1a0d53ec5ecb136f8dcbc02e0bb048",
+            "56eac8829e79ca8a94619736e8a3fe6d286310bae6b15703f1f16b83a78220e8",
+            "59416c5cde9b72f0924498ec67f9129abb24f06cf350a3053f89f9f4eafb458f",
+            "5b399d655f42d51ab15dd360d782d27c4e2c0bcd844212fae24a87430d75f112",
+            "5d16c4ee64e3c2defb7517a0aa4d7ef893ece7b5ea8671368150390766c1576d",
+            "5fcccf043b74d6964da47a35ac2ddcc149edabdaaec90cd3f94aef64e957758e",
+            "62b48713929dff4921f44ad67c8cf125598fbbefeb266c52528bc6a2e1f1620b",
+            "62ef991f46e444fa41d5c6222e4644f0e0a13c622b9a0b86f642becf69989224",
+            "63538719a8b6894dfca9d8741e075ab832166316b9d1aeae805dcbb5884867c8",
+            "63c55f8ef3720d81df6ab4044e67d69c6975e76d0daaa19ceb42770162bb6f3f",
+            "69b063f6241571d87d89047a943fd080d9f234040c08266b05338cd222cbf454",
+            "711efd7bd9b44f149547c84deaa13c3a2c99ba354b531cdd156b76a204070c1a",
+            "73332da87ad6eb2e270f8d75aa41d719dfce4ac957ca5e66959a77761da0c9e1",
+            "74732d2ae6f5939db77631c303b6b4c2dfc958cf2a601bae0ca2465e9659cfec",
+            "7746cbbfe78143930f527615f88196ed79750d5cb57909f3ccfaf00e82c043dd",
+            "7d931d558e0d1d4bc2824f752d29efeb9dc4dc30da1265fa182886129859c4f2",
+            "82070229430ef56ed9c4e6726eda267209f9f78fbd971acb61288b742937761c",
+            "8492c6a5304e7d51d0cbd1ef5ba6ebee419e4a4c9b72d4fa9fc0f1352c2d9a71",
+            "86feb8552f6f64a7428499cae020e123a7749095687917a09f38cb5fe11f23a3",
+            "896cff4903145fadc155349bb49d008e3d42e7958c6b077ffe460823e50667aa",
+            "8e0c1745e1f64b957de86de071d36cdb1107d444c0b95f185759c33a7fcc6bcf",
+            "95d12903fbd698296e588d0b66689462562943584e043a3be0ad86a4df2b1eb2",
+            "9b35c3e4bd04a2041d70487844ca671c1e6e06396c3ceca0d5d2639f0c57adf2",
+            "a27940204f67d9ccf36c7e1bd27de7ea202096ac1b2cd729b11fa603738f14be",
+            "a2e9f6e32ba84c87b5de33c817a8b32af7db10f2bd10d1e7d54834abf0bfcf4c",
+            "a5a16d7aa3f44108fdfd5b8696cbd9c50c370db69005a160ab7a17f8f3ca4057",
+            "a9a609e4f98aae736c09bf49d2731f361558a7ed01e6421c091dda623ac83b00",
+            "afad32fb875f28fa6ebcd6b7126f169e4bffd59439f7d5a206ffdb52eb9e6db3",
+            "b5e887d9c7971551b3573f41a569f1732137951b61d4f43f59f407e76f0c3748",
+            "bbdb563c29fdf065e224c61a30fed4917cb49ea8def2afa1de5aed03ac1563f5",
+            "bd19b48b3361a9e6da0d0617159fde11912e775dce9e33e93852c4c859f1ac4e",
+            "c24008b7f89433ee266f877a8529ff146c6ae679959c8701168e597858db29a0",
+            "c47cc533242aa56680405744768dd339fcceea8c839e458403becbff0107aeca",
+            "cf38ffc4e600b00a6784c1bf0e73ac3db931cd3c7e4dbf5d74d4b8588536909b",
+            "cf7d2fbad41cb84c902bd02ba81bf8abd0a30dc10f7f0b829c6b94aaa3803ecb",
+            "d1697245e817107a19b2329886f83f6a13db69cd74f5f9b64caa951ca864e4af",
+            "d60ec92f0e9d9962b0bd5c6a479e236aa27c1793d0d459dcbbf6bfbcfa578554",
+            "d6a642bcde27486c782f329aad6578ba73a5f793309e5a07c20f675d75c2901b",
+            "df1cdb5fd0d43431f5d5da4ac32fa9aabb9443608532dc0d98fce6a77a58603a",
+            "e6c8833b24556fd7fd21eeba5a14b77b366775725243ae8e7f443bd7c3c812a0",
+            "e8bc90a4e4ba61211e7413a93244fdc7cca82264e1d5b15cb2b504ebcc370275",
+            "ecf2437f0114b758f98a90396e6e9142300e4d95404a23ad697b44adfbc0d894",
+            "ef091986e431f5b1831092569ca090fb44ce8dc4c03753167c2c2e2237a31a82",
+            "fde249456c14306db453ee7451f545e10d74660c82f903bfe7c45a508365ed49"
+          ]
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "NOR_20569",
+      "name": "Trondheim Urban",
+      "start_time": "2024-11-03",
+      "end_time": "2024-11-03",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [
+        "FootO",
+        "SkiO"
+      ],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Wing OK",
+          "country_code": "NOR"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Agnar Renolen"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "4046050"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:DAYQDkMUBh8EHhEyGh0MCEIYTRwO"
+        },
+        {
+          "role": "Event director",
+          "name": "Agnar Renolen"
+        },
+        {
+          "role": "Course setter",
+          "name": "Agnar Renolen"
+        }
+      ],
+      "classes": [
+        "D -12",
+        "D 13-14",
+        "D 15-16",
+        "D 17-18",
+        "D 19-",
+        "D 40-",
+        "D 55-",
+        "D 65-",
+        "H -12",
+        "H 13-14",
+        "H 15-16",
+        "H 17-18",
+        "H 19-",
+        "H 40-",
+        "H 55-",
+        "H 65-",
+        "Halvmaraton D",
+        "Halvmaraton H",
+        "MTBO",
+        "Rulleski-O",
+        "Åpen Kort",
+        "Åpen Lang",
+        "Åpen Lett",
+        "Åpen Mellom"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/20569",
+          "title": null,
+          "last_updated_at": "2026-02-09T21:09:20.833678+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Invitation",
+          "title": "Innbydelse",
+          "url": "/Documents/Event/43820/Innbydelse",
+          "published_time": "2024-10-20"
+        },
+        {
+          "type": "Bulletin",
+          "title": "PM",
+          "url": "/Documents/Event/43940/PM",
+          "published_time": "2024-11-01"
+        },
+        {
+          "type": "Other",
+          "title": "Løse postbeskrivelser",
+          "url": "/Documents/Event/43941/L-se-postbeskrivelser",
+          "published_time": "2024-11-01"
+        },
+        {
+          "type": "ResultList",
+          "title": "Live resultater",
+          "url": "https://center.time4o.com/wok/trondheim-urban-2024",
+          "published_time": null
+        }
+      ],
+      "information": null,
+      "region": "Sør-Trøndelag",
+      "punching_system": "Emit",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Trondheim Urban",
+          "datetimez": "2024-11-03T00:00:00+01:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "position": {
+            "lat": 63.4302656915013,
+            "lng": 10.3945131864861
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/141940",
+              "title": "Map, courses and routes in Livelox",
+              "last_updated_at": "2026-02-09T21:09:20.833683+00:00"
+            },
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=20569&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-09T21:09:20.833683+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=20569&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-02-09T21:09:20.833683+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=20569&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-02-09T21:09:20.833683+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": {
+            "D -12": 1,
+            "D 15-16": 5,
+            "D 19-": 4,
+            "D 40-": 2,
+            "D 55-": 6,
+            "D 65-": 2,
+            "H -12": 5,
+            "H 13-14": 1,
+            "H 15-16": 3,
+            "H 17-18": 1,
+            "H 19-": 3,
+            "H 40-": 12,
+            "H 55-": 12,
+            "H 65-": 7,
+            "Åpen Lett": 3,
+            "Åpen Kort": 5,
+            "Åpen Mellom": 7,
+            "Åpen Lang": 4,
+            "Halvmaraton H": 13,
+            "Halvmaraton D": 1
+          },
+          "result_counts": {
+            "D -12": 1,
+            "D 15-16": 5,
+            "D 19-": 4,
+            "D 40-": 2,
+            "D 55-": 6,
+            "D 65-": 2,
+            "H -12": 5,
+            "H 13-14": 1,
+            "H 15-16": 3,
+            "H 17-18": 1,
+            "H 19-": 3,
+            "H 40-": 12,
+            "H 55-": 12,
+            "H 65-": 7,
+            "Åpen Lett": 3,
+            "Åpen Kort": 5,
+            "Åpen Mellom": 7,
+            "Åpen Lang": 4,
+            "Halvmaraton H": 13,
+            "Halvmaraton D": 1
+          },
+          "fingerprints": [
+            "00bfa46e434e31bcad71d68feefd5a18d4a3e695bc09745eb3694885fd0741ab",
+            "05f4028195c4189c6463b0c3fe9039ff406ae047d546babf766fed6c81057f23",
+            "0847e5356f7b8d87bec0ba68885fa098911d959bdd2447215dfe54fb13e65759",
+            "0a01b6c12f2e0dedc6c0dce3bb35c46d12e35519f80de111aa6f4a5fc19c4230",
+            "0b5b5b342f15227dcb19df3c897433869b0d9c53323490435bc25c15471846c3",
+            "123ab95bd1c52592a2330016af9ded6b4ccadc3e58f8d29614369d6927f54f87",
+            "134dca43334bd24a29131278e1d03a7fd23dd34b7d53ea65275f8796420d6160",
+            "1511175ea5cff2675fbcac0d839862b29429ca40e8bd8731914f2f4e83c5d465",
+            "183455db060ef018a6fbd55fb62323b23e87d0b344ffc695093fd4665ea8c5ea",
+            "1868cb1ae96383631c6b43bc7a6948672e2da86f869c7379fdfdd1653e0a5a20",
+            "1bb810b9e0e4b74203f5c0f4711991113453fb5c646bef807e5a026c8317631b",
+            "1d20f380d6bd15aee73367cd0f7e2bba3dc62f5ac1916e9cf48aa8dc7b395c3e",
+            "21698254a787840fd77fa39d3fb3e874e7c720852244097c5bafcf7853df0a5a",
+            "2b9c3703219c16e96452bc360a0e073565b08733385cd9d45d7f5311ae04d6f4",
+            "2f97628e782f56f8a76af0c639bd38cc72ae39a8c3c8934f860091806a3fd6a5",
+            "309ea3dbc28a34e6d643291bf25370856b309de6b25c5b10ad2b7abcd61be903",
+            "357b6020ba6f66138ff6228aac5208a37f6fb74495811cfc20f137375b29f928",
+            "3a2bf211721807bbbe126157472f62d08914aad880aa99b1134cd238265ac84f",
+            "40d5f4b61c984d837c897556f6d0aeb034ee5921b7034ccd3064645010674996",
+            "4ad9feaa8789d887ae6382d7f90e74196344182c1049bc2438a6c9c62aa130c8",
+            "4e58747cc372e58a111e1466c0f98b88ed2c9f9232e6040e61d531319bd36960",
+            "53a4683820f70902ea089dde04f5b286885abcf26d7e5ea90dc8dde967fe9779",
+            "627942aa8c471da4d5f79509519437a4d364063c32cdd1030ffdbc4cb221dc65",
+            "63f67fab0563b347455560e40c20ed034a0fa8e9829420dfb7be2469da0d786b",
+            "641a647530e20b34874a86ec61dd3b7e0c29a6eacd87761c20c0786f2b20fbc3",
+            "6f2e8b7625a0de7045aee1d65c6835590edd261073793f4da9f63ea667df4e9b",
+            "70d8489b97da42c54b2530cf6b0960f26de81fd5ab0c2deb1444278c8c3f0965",
+            "76febddae06dd091bda38c2f568e533aec5a9617c263b54453f471f289d19d21",
+            "79b79046ec07237dcc6e92a9fcd889feb65c3e8129c78fd0cb124713a98a08ef",
+            "7b99fe3912af92d5c4864c580d5492fca40709df106b7dbb3f9b9f07abd29324",
+            "7c691c5e48fddce24f3a591fe796f519f4bfad30a85efad4c977e879058034f5",
+            "7d76e7faf130ce8f433bbb2c0552a6288b38df0f7c0c48d83a8deea398de3189",
+            "7e3aa64216d587bff984b61ba5248fb5e8f370544d94e608e4357cdea7e0cfa2",
+            "818aafda83593f791881810938dda70dd62758b1b2c97dfa44072a58e6c3136b",
+            "82c778668e38614c8f434c7481d65b84874eab5037fecb651187d0725a0ce84d",
+            "83e571f97275242c9ab1266a19d2f14adc6cbea8922be234cb449c9296a724b5",
+            "849c9262356979a0d6cbe6d41913a7d41399712b06052ad6db553c908b7a8d58",
+            "863293ea013741132528821f82b05495e429f8f37035b2ca3803e688fb27064c",
+            "887d6df5a86fa03a4b5f3b1bf3fe3193832bba146f1d5ea2a181df12fe1bb8c8",
+            "88bc606162f53378379d99d2d36ed2a2db0e05bea11a392a3f4ee9188ddd226e",
+            "8aa3190be1d7cc6b3805a544f11e964fed5bbda08c2e38bad417b59c80705b71",
+            "8d53c315c0c4fa76e04ffb7c162bca67fa7e013b3ebb75f09ad388690ed26d0e",
+            "926101a2d279dd16c987209965d1af117af69a6853958f39fd8e8eabfe7508fa",
+            "9c9004c950877b057b5d54e5d611839ef5d65b708440d1b962b0d3dc0383f449",
+            "9d26bc864dbce5df8b3ffca0185a569350084df9f727ef7a7ebf910ec259d458",
+            "9d3e893ffd366129f4fb02e6206ef2b755847dfb7db0e6eb965d942b6652615f",
+            "9dc6ba7f350a13605b4fe4c40891c92b13fc3a8fa9df38bf22687ea48b704421",
+            "9f6441837744b065042f814d862f289e2bf77a52d5f907f68333475b7d471492",
+            "9fdb30e3238964e666b686ca7e7b16510e12256fd7388baef333104cad733782",
+            "a293cb102477f34eeb6b1ee052c611ef21312575012074cbcde3a1d36c95bb1f",
+            "a37ccafa13e270614e901a3b55671eb24aa2df5731782414f437c760f94ece67",
+            "a4943d6343b5136364aa45ebb4150c9094c1597e32412e332aa4be2d9442c204",
+            "a52fcb250ce122debb652b400f7bdc2df2bb16975e49f3b460898b1f5d0df7da",
+            "a577de6eb766e0e0ed12ec3c13935f473f844398a37395855be8711f124ac28e",
+            "a5afcbebb89a997276c6a7dd02876c733ae25006af2a92d63c29b27739ed3d2e",
+            "a7a006d38d2bf90c1d6c2529a2283522bcf519ba88e4143f28d567e05a0a50b9",
+            "a7cef07cb2b670c6d3f1f75d6239df0526a8b8de1a6fa531613764345108bba9",
+            "a97dae10907ebea1a53297c19e3955879f1fd93875e077c0d856955a61dab266",
+            "add05a50fef48ee58b0b100a31a10a40a6ca61ab61dee7994bcaa355a1b6efd4",
+            "ae34ce1d255855dc29eec21da83beff911796eb378c581fa781881d27603d52a",
+            "aea987f9c57821e7891156c2d9f2b979b23fd5820c9879c3ec8b4f41abbc82d8",
+            "b44ad00d401edae3c7721a5d8ffd92977878e9214bd1631e3098b25b9f9aa6a7",
+            "b4ceba7f9057dee76ec43d398ee1eac4567be7ee2fff6662eecea3a286fb1a9c",
+            "b513a27e83a0e9a479395de2b86bd0d4aa3fc29d39f1e89cd31289398474cfdc",
+            "b55dc9e746396f28a70cef5e00c1a17d2573cebef76dd6c6f57de9fa0db8e204",
+            "b6efaeff243c13ed2ec17925586210ce402d0d5c3a5ec33b5368199b8ec8cdb3",
+            "b80a14b45ae6f7e09b0812f78f362124dc68cdb5acd5f75330203ed47bd0325f",
+            "b8bc314351858eca923df634a86bcbc44f4803e9c291bac6973b5cd02d9bb3d1",
+            "c1e3828663404c1d9b0ead18abc5d894288e1f4bb363c1b54ec3c92861eb2763",
+            "c9a7ebf7d2186b8673476a28306315663e7de4a3f1d76aadb71eb280b0045249",
+            "cceed6125e4e8855fa906a1cacf46283529d252dcc07449ca5ad8bbc0e1dbfb7",
+            "cde401d6aa8d678046b7532d7c0cfbb0906d887e2d68789d0c21846e92893967",
+            "cdf6786726617462f2316739650b5ca1bc9847474903e2b207cd560e7c4d3022",
+            "ce4b680950a502a49a1e84783fe2fcb175446dbb737a1b7fb9a8baaac0dffdd9",
+            "ce50e99bf620300d8a39e9f582e1ccf9e054d05be9085c44f88c4d1f6e0c1b68",
+            "d05a6155a565b9ea638de45d990371996a3ae1f02004c0ac80f620a994811234",
+            "d73f3b1ca423cfceaf55dd09c70e84949e02c19650c7fd75c283399c18fdadc9",
+            "da6e4e7e746173fd593beb6b80a2abec8aec0a2318cfb4f095c3887f691d2805",
+            "dc8e4f6a72dee0242ec93d9d0a32475e9725c66aca45bf9d144bc91cef65127d",
+            "e19485dd2736c61fa81a39db36954535f85fdaf353d8e9fd814b491c96ac1677",
+            "e1dd04af001a7c9777e036cf7239bcf941942026f3dbedc243cce88bc382329d",
+            "e648008f97cf8cc8b066e7b27c9334859ac6dfc201554f64a600cfc3e758aa48",
+            "e94a2cd109b3842e804517d09223d2b77f7a67470c4f8b0b2723f339c427f6c6",
+            "ea9ba34a980fd38d6172f11f6930796368481db5f56135b369a99e2f821a44e3",
+            "eaed04e3a8f99374b66e513c25bd88baf9cf7efccfe5a36a506c6bb8b90ea346",
+            "ec2c208d3229e3a7f5e5dc380ebb14f79c7c221a27082e9e472d2768fd7f5e5c",
+            "ef06aa4120427d523714523332e0d17b26440159570430d99f53b593ee5fad7e",
+            "ef4ef5e8bca4055e4e6a4eeb0f11efdfaca487d6e98965571e6bdf29f7e80567",
+            "f15ac5812d010afbb63ba1203f5dd90e4ffe3862e37b43fc2636d8470245ac74",
+            "f1aad0bad1e05e7302851202001cf0c087bc9c963b05df092cebfb10a96e52a4",
+            "f39e5b260331eb060bf51b2f75b798b34230cf178201832dcaf43824c3b13531",
+            "f4a0c967a085488f37cf30d840ddefd801ca35ce44d2eb370615ccf6c6020db2",
+            "f4db6819a2837a2932e180b5af5f5f3c899dfc1e650486fe886ffc7cead29d9a",
+            "f534637c558d62ed998d6e073fc26e0762e78b8f0284ff8b614105370effb589",
+            "fc90a1e1d2caf0073b5673a045358a571637d21d84d7c3e180d24adfe2c58f1a",
+            "ffa86e9436bb3e32a87723bb24d9d68e0fbf3fec8df2adf0087b3699b91c1269",
+            "ffde208f1b0f0cc758e6e08ecc0632a36de3db56635367308152694118cdd1fb"
+          ]
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "NOR_20737",
+      "name": "Gørretråkket 2024",
+      "start_time": "2024-10-26",
+      "end_time": "2024-10-26",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "OK Moss",
+          "country_code": "NOR"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Kjetil Karlsen"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "93064885"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:Bh4HG0QfCBMhFwgTBBhMDEIe"
+        },
+        {
+          "role": "Event director",
+          "name": "Kjetil Karlsen"
+        }
+      ],
+      "classes": [
+        "Damer - kort løype",
+        "Damer - lang løype",
+        "EL -lang",
+        "EL-kort",
+        "Herrer - kort løype",
+        "Herrer - lang løype"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/20737",
+          "title": null,
+          "last_updated_at": "2026-02-09T21:09:20.833632+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Invitation",
+          "title": "Innbydelse",
+          "url": "/Documents/Event/43629/Innbydelse",
+          "published_time": "2024-10-01"
+        },
+        {
+          "type": "Bulletin",
+          "title": "PM",
+          "url": "/Documents/Event/43883/PM",
+          "published_time": "2024-10-25"
+        },
+        {
+          "type": "StartList",
+          "title": "Startliste",
+          "url": "/Documents/Event/43885/Startliste",
+          "published_time": "2024-10-25"
+        }
+      ],
+      "information": "Uformell sykkelorientering. De som sykler hybrid/gravel deltar i ordinær klasse. Egen klasse\nfor el-sykkel.",
+      "region": "Østfold",
+      "punching_system": "Emit",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Gørretråkket 2024",
+          "datetimez": "2024-10-26T00:00:00+02:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=20737&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-02-09T21:09:20.833641+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
       "id": "SWE_41865",
       "name": "O-Ringen Smålandskusten, MTBO",
       "start_time": "2024-07-21",
