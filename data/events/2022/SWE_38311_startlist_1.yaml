@@ -1,0 +1,558 @@
+participants:
+- class: D21
+  club: CMO 17
+  name: Lilou Pauly
+  start_number: 25
+- class: D21
+  club: CMO 17
+  name: Marianne Pauly
+  start_number: 26
+- class: D21
+  club: Linköpings OK
+  name: Mia Eronn
+  start_number: 50
+- class: H21
+  club: Bol d'air
+  name: Leclere Augustin
+  start_number: 110
+- class: H21
+  club: TJ Tesla Brno
+  name: Martin Stepanek
+  start_number: 112
+- class: H21
+  club: Bol d'air
+  name: Nicolas Pinsard
+  start_number: 115
+- class: H21
+  club: OLT Transdanubien
+  name: Thomas Klimo
+  start_number: 117
+- class: H21
+  club: Valbo AIF
+  name: Torbjörn Blom
+  start_number: 119
+- class: D17-20
+  club: COBS
+  name: Agathe Tissandier
+  start_number: 13
+- class: D17-20
+  club: O Jura
+  name: Alina Niggli
+  start_number: 14
+- class: D17-20
+  club: COBS
+  name: Manon Tissandier
+  start_number: 18
+- class: D17-20
+  club: IKHP Huskvarna
+  name: Minna Palm
+  start_number: 20
+- class: D17-20
+  club: SK YETTI Vejprty
+  name: Tereza Kadlecovå
+  start_number: 22
+- class: H17-20
+  club: Allerød OK
+  name: Viktor Magtengaard
+  start_number: 103
+- class: D16
+  club: Nybro OK
+  name: Emilia Jakobsson
+  start_number: 8
+- class: H16
+  club: OK Kåre
+  name: Nils Odlind
+  start_number: 98
+- class: H14
+  club: Balozi
+  name: Adrians Poreiters
+  start_number: 87
+- class: H14
+  club: Espoon Suunta
+  name: Erik Fey
+  start_number: 88
+- class: H14
+  club: Naturfreunde Villach Orienteering
+  name: Louis Walther
+  start_number: 89
+- class: H14
+  club: Balozi
+  name: Marts Poreiters
+  start_number: 90
+- class: H14
+  club: OLC Omström-Sense
+  name: Timo Schnyder
+  start_number: 91
+- class: H14
+  club: Domnarvets GOIF
+  name: Ville Elgesjö
+  start_number: 92
+- class: H14
+  club: Segersta OK
+  name: Einar Blomberg
+  start_number: 93
+- class: H12
+  club: Espoon Suunta
+  name: Mark Fey
+  start_number: 83
+- class: H12
+  club: OK Rodhen
+  name: Wilhelm Blåudd
+  start_number: 86
+- class: H35
+  club: Czech MTB-O Masters Team
+  name: Robert Urbanik
+  start_number: 122
+- class: D40
+  club: Naturfreunde Villach Orienteering
+  name: Katja Walther
+  start_number: 29
+- class: D40
+  club: C.D. Altair
+  name: Miriam Miranda
+  start_number: 31
+- class: D45
+  club: Domnarvets GOIF
+  name: Anna Elgesjö
+  start_number: 32
+- class: D45
+  club: COBS
+  name: Audrey Tissandier
+  start_number: 34
+- class: D45
+  club: O Jura
+  name: Daria Niggli
+  start_number: 35
+- class: D45
+  club: Åmåls OK
+  name: Elinor Dalstrand
+  start_number: 36
+- class: D45
+  club: Västvärmlands OK
+  name: Marina Thyberg Axelsson
+  start_number: 39
+- class: D45
+  club: Haninge SOK
+  name: Ulrika Andersson
+  start_number: 41
+- class: D45
+  club: OK Slovenj Gradec
+  name: Urška Kordiš Miheljak
+  start_number: 42
+- class: H45
+  club: Domnarvets GOIF
+  name: Andreas Elgesjö
+  start_number: 126
+- class: H45
+  club: OK Kåre
+  name: Andreas Odlind
+  start_number: 127
+- class: H45
+  club: OK Slovenj Gradec
+  name: Blaž Miheljak
+  start_number: 128
+- class: H45
+  club: Värska OK Peko
+  name: Indrek Mahla
+  start_number: 129
+- class: H45
+  club: Nybro OK
+  name: Jakob Jakobsson
+  start_number: 130
+- class: H45
+  club: Haninge SOK
+  name: Peter Lennart Kihlstenius
+  start_number: 133
+- class: H45
+  club: Stora Tuna OK
+  name: U Tomas Löfgren
+  start_number: 135
+- class: H45
+  club: COBS
+  name: Yoann Tissandier
+  start_number: 136
+- class: H45
+  club: Linköpings OK
+  name: Bertil Eronn
+  start_number: 139
+- class: D50
+  club: Hässleholms OK
+  name: Carina Rydlund
+  start_number: 44
+- class: D50
+  club: Lunds OK
+  name: Malin Ågren
+  start_number: 48
+- class: D50
+  club: OLG Wislig
+  name: Meieli Sieber
+  start_number: 49
+- class: D50
+  club: IK Vista
+  name: Ulrika Gustafsson
+  start_number: 51
+- class: H50
+  club: OLC Omström-Sense
+  name: Adrian Schnyder
+  start_number: 140
+- class: H50
+  club: CMO 17
+  name: Alexis Pauly
+  start_number: 141
+- class: H50
+  club: Espoon Suunta
+  name: Carl Fey
+  start_number: 143
+- class: H50
+  club: Balozi
+  name: Didzis Poreiters
+  start_number: 144
+- class: H50
+  club: Finspångs SOK
+  name: Erik Ernstsson
+  start_number: 145
+- class: H50
+  club: MTBO Team Germany
+  name: Falk Wenzel
+  start_number: 146
+- class: H50
+  club: Domnarvets GOIF
+  name: Magnus Eliasson
+  start_number: 150
+- class: H50
+  club: Hässleholms OK
+  name: Magnus Rydlund
+  start_number: 151
+- class: H50
+  club: Värend GN OL
+  name: Mikael Johansson
+  start_number: 153
+- class: H50
+  club: Haninge SOK
+  name: Ola Svärd
+  start_number: 155
+- class: H50
+  club: Södertälje-Nykvarn OF
+  name: Ove Jansson
+  start_number: 157
+- class: H50
+  club: Czech MTB-O Masters Team
+  name: Tomas Zrnik
+  start_number: 160
+- class: H50
+  club: Haninge SOK
+  name: Ulf Andersson
+  start_number: 161
+- class: H50
+  club: Suunta Jyväskylä
+  name: Vesa Klemettinen
+  start_number: 162
+- class: D55
+  club: OK Skogsfalken
+  name: Cecilia Lingerud
+  start_number: 52
+- class: D55
+  club: GBR MTBO
+  name: Karena Hanley
+  start_number: 56
+- class: D55
+  club: Ounasvaaran Hiihtoseura
+  name: Lea Pirttilä
+  start_number: 57
+- class: D55
+  club: BALISE 25 BESANCON
+  name: Pourre Valerie
+  start_number: 59
+- class: D55
+  club: OK Skogshjortarna
+  name: Suzy Larsson
+  start_number: 61
+- class: D55
+  club: OLG Thun
+  name: Ursula Hausermann
+  start_number: 62
+- class: H55
+  club: Västvärmlands OK
+  name: Bernth Thyberg Axelsson
+  start_number: 165
+- class: H55
+  club: Järfälla OK
+  name: Erik Nylund
+  start_number: 167
+- class: H55
+  club: Finspångs SOK
+  name: Gunnar Nilsson
+  start_number: 169
+- class: H55
+  club: Sundbybergs IK
+  name: Hans Olsén
+  start_number: 170
+- class: H55
+  club: OK Skogsfalken
+  name: Joakim Sorinder
+  start_number: 172
+- class: H55
+  club: OK Hammaren
+  name: Jonas Holmgren
+  start_number: 173
+- class: H55
+  club: O Jura
+  name: Jurg Niggli
+  start_number: 174
+- class: H55
+  club: JAPAN MTBO master team
+  name: Kazushi Higuchi
+  start_number: 175
+- class: H55
+  club: OK Skogshjortarna
+  name: Kjell Einarsson
+  start_number: 176
+- class: H55
+  club: IKHP Huskvarna
+  name: Kristian Palm
+  start_number: 177
+- class: H55
+  club: IK Vista
+  name: Mikael Gustafsson
+  start_number: 180
+- class: H55
+  club: Domnarvets GOIF
+  name: Per Leidevall
+  start_number: 183
+- class: H55
+  club: BALISE 25 BESANCON
+  name: Pourre Alain
+  start_number: 185
+- class: D60
+  club: Garphyttans IF
+  name: Birgitta Gustafsson
+  start_number: 63
+- class: D60
+  club: OLG St.Gallen/Appenzell
+  name: Isabelle Hellmüller
+  start_number: 64
+- class: D60
+  club: OK Tyr
+  name: Karin Moodh
+  start_number: 65
+- class: D60
+  club: Eksjö SOK
+  name: Monica Kollberg
+  start_number: 69
+- class: H60
+  club: Bol d'air
+  name: Franck Garcin
+  start_number: 188
+- class: H60
+  club: UKS Falenica
+  name: Jan Cegielka
+  start_number: 190
+- class: H60
+  club: OLG St.Gallen/Appenzell
+  name: Jürg Hellmüller
+  start_number: 191
+- class: H60
+  club: GBR MTBO
+  name: Keith Dawson
+  start_number: 192
+- class: H60
+  club: Domnarvets GOIF
+  name: Kjell Emanuelsson
+  start_number: 193
+- class: H60
+  club: Säterbygdens OK
+  name: Kjell Klar
+  start_number: 194
+- class: H60
+  club: IFK Göteborg Orientering
+  name: Magnus Aasa
+  start_number: 198
+- class: H60
+  club: Ottawa OC
+  name: Randy Kemp
+  start_number: 201
+- class: H60
+  club: Eksjö SOK
+  name: Stefan Kollberg
+  start_number: 202
+- class: H60
+  club: Haninge SOK
+  name: Stig Thunell
+  start_number: 203
+- class: H60
+  club: Stora Tuna OK
+  name: Ulf Eriksson
+  start_number: 204
+- class: D65
+  club: SLOW Bern
+  name: Monika Bonafini
+  start_number: 75
+- class: H65
+  club: Garphyttans IF
+  name: Jan Gustafsson
+  start_number: 212
+- class: H65
+  club: Kamrat och IF KIF
+  name: Nils-Robert Persson
+  start_number: 217
+- class: H65
+  club: Kvarnsvedens GOIF OK
+  name: Rune Nolåkers
+  start_number: 218
+- class: H65
+  club: Stora Tuna OK
+  name: Torbjörn Ottosson
+  start_number: 222
+- class: H65
+  club: OLG Pfäffikon
+  name: Walter Rahm
+  start_number: 224
+- class: H65
+  club: OK Tyr
+  name: Yngve Gottfridsson
+  start_number: 225
+- class: H65
+  club: OLV ZUG
+  name: Peter Müller
+  start_number: 226
+- class: D70
+  club: OLG Pfäffikon
+  name: Bea Rahm
+  start_number: 78
+- class: H70
+  club: Surahammars SOK
+  name: Gunnar Munktelius
+  start_number: 229
+- class: H70
+  club: Allerød OK
+  name: Jørgen Nielsen
+  start_number: 230
+- class: H70
+  club: Ulricehamns OK
+  name: Leif Ahlstrand
+  start_number: 233
+- class: H70
+  club: SLOW Bern
+  name: Marco Bonafini
+  start_number: 234
+- class: H70
+  club: Stora Tuna OK
+  name: Torbjörn Larsson
+  start_number: 235
+- class: H70
+  club: Edsbyns OK
+  name: Hans Olevik
+  start_number: 241
+- class: H75
+  club: Ulricehamns OK
+  name: Claes-Göran Lundberg
+  start_number: 240
+- class: H75
+  club: NAVET Mountainbike Orientering
+  name: John Rasmussen
+  start_number: 244
+- class: H75
+  club: OK Södertörn
+  name: Bernt Eriksson
+  start_number: 265
+- class: Öppen Kort
+  club: Åmåls OK
+  name: Frida Eriksson
+  start_number: 249
+- class: Öppen Kort
+  club: Åmåls OK
+  name: Sara Eriksson
+  start_number: 250
+- class: Öppen Kort
+  club: OK Kåre
+  name: Elin Forsberg
+  start_number: null
+- class: Öppen Kort
+  club: OK Kåre
+  name: Hanna Sidenvall
+  start_number: null
+- class: Öppen Kort
+  club: OK Kåre
+  name: Vera Sidenvall
+  start_number: null
+- class: Öppen Kort
+  club: OK Skogshjortarna
+  name: Henning Andreasson
+  start_number: null
+- class: Öppen Kort
+  club: Surahammars SOK
+  name: Ingrid Munktelius
+  start_number: null
+- class: Öppen Medel
+  club: Årsunda IF
+  name: Sven Persson
+  start_number: null
+- class: Öppen Medel
+  club: Segersta OK
+  name: Jonas Blomberg
+  start_number: null
+- class: Öppen Medel
+  club: IK Jarl Rättvik
+  name: Jonny Hansson
+  start_number: null
+- class: Öppen Medel
+  club: Attunda OK
+  name: Malcolm Törnqvist
+  start_number: null
+- class: Öppen Medel
+  club: OK Skogshjortarna
+  name: Emil Andreasson
+  start_number: null
+- class: Öppen Medel
+  club: Klubblös
+  name: Fredrik Sköldberg
+  start_number: null
+- class: Öppen Medel
+  club: Ockelbo OK
+  name: Christer Alkberg
+  start_number: null
+- class: Öppen Lång
+  club: Gävle OK
+  name: Nicolas Lavigne
+  start_number: null
+- class: Öppen Lång
+  club: Tampereen Pyrintö
+  name: Jaakko Paasi
+  start_number: null
+- class: Öppen Lång
+  club: Tampereen Pyrintö
+  name: Antti Paasi
+  start_number: null
+- class: Öppen Lång
+  club: HJS-Vansbro OK
+  name: Andreas Strömstedt
+  start_number: null
+- class: Öppen Lång
+  club: KBK Bikes
+  name: Toni Kivi
+  start_number: null
+- class: Öppen Lång
+  club: Leksands OK
+  name: Sofia Hugg
+  start_number: null
+- class: Öppen Lång
+  club: Ludvika OK
+  name: Peter Bergkvist
+  start_number: 253
+- class: Öppen Lång
+  club: Attunda OK
+  name: Olof Törnqvist
+  start_number: null
+- class: Öppen Lång
+  club: Bol d'air
+  name: Teddy Garcin
+  start_number: null
+- class: Öppen Lång
+  club: Miry mapholders
+  name: Miroslav Rygl
+  start_number: null
+- class: Öppen Lång
+  club: Omstroem
+  name: Catrin Remond
+  start_number: null
+race_number: 1

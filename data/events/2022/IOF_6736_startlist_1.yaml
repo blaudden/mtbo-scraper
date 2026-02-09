@@ -1,0 +1,494 @@
+participants:
+- class: Men
+  club: Latvia
+  name: Andris Sarksna
+  start_number: 75
+- class: Men
+  club: France
+  name: Florian Pinsard
+  start_number: 1
+- class: Men
+  club: Italy
+  name: Riccardo Rossetto
+  start_number: 2
+- class: Men
+  club: New Zealand
+  name: Martin Peat
+  start_number: 3
+- class: Men
+  club: Sweden
+  name: Linus Karlsson Mood
+  start_number: 4
+- class: Men
+  club: Japan
+  name: Ryo Abe
+  start_number: 5
+- class: Men
+  club: Portugal
+  name: Paul Roothans
+  start_number: 6
+- class: Men
+  club: Finland
+  name: Andre Haga
+  start_number: 7
+- class: Men
+  club: Sweden
+  name: Marcus Wadell
+  start_number: 8
+- class: Men
+  club: Estonia
+  name: Mihkel Jarve
+  start_number: 9
+- class: Men
+  club: Spain
+  name: Juan Jose Sancosmed
+  start_number: 10
+- class: Men
+  club: France
+  name: Samson Deriaz
+  start_number: 11
+- class: Men
+  club: Portugal
+  name: Guilherme Marques
+  start_number: 12
+- class: Men
+  club: Poland
+  name: Damian Hyla
+  start_number: 13
+- class: Men
+  club: United States
+  name: Nikolay Nachev
+  start_number: 14
+- class: Men
+  club: Sweden
+  name: Gustav Jonsson
+  start_number: 15
+- class: Men
+  club: Germany
+  name: Mark Huster
+  start_number: 16
+- class: Men
+  club: Spain
+  name: Juan Sanz
+  start_number: 17
+- class: Men
+  club: Finland
+  name: Petrus Hanhijarvi
+  start_number: 18
+- class: Men
+  club: Lithuania
+  name: Jonas Vytautas Gvildys
+  start_number: 19
+- class: Men
+  club: Israel
+  name: Tsach Nahari
+  start_number: 20
+- class: Men
+  club: Sweden
+  name: Joel Ernstsson
+  start_number: 21
+- class: Men
+  club: Finland
+  name: Kare Kaskinen
+  start_number: 22
+- class: Men
+  club: Japan
+  name: Masahiro Shimaoka
+  start_number: 23
+- class: Men
+  club: Portugal
+  name: Daniel Marques
+  start_number: 24
+- class: Men
+  club: Poland
+  name: Bartosz Niebielski
+  start_number: 25
+- class: Men
+  club: Finland
+  name: Teemu Kaksonen
+  start_number: 26
+- class: Men
+  club: Sweden
+  name: Rasmus Nordgren
+  start_number: 27
+- class: Men
+  club: Ireland
+  name: Niall McCarthy
+  start_number: 28
+- class: Men
+  club: Germany
+  name: Lukas Wilms
+  start_number: 29
+- class: Men
+  club: NOR
+  name: Bjornar Kvale
+  start_number: 30
+- class: Men
+  club: Sweden
+  name: Sebastian Svard
+  start_number: 31
+- class: Men
+  club: Australia
+  name: Ricky Thackray
+  start_number: 32
+- class: Men
+  club: Romania
+  name: Klaus Csucs
+  start_number: 33
+- class: Men
+  club: Portugal
+  name: Davide Machado
+  start_number: 34
+- class: Men
+  club: Japan
+  name: Kazushige Hatori
+  start_number: 35
+- class: Men
+  club: Germany
+  name: Lennart Voss
+  start_number: 36
+- class: Men
+  club: Italy
+  name: Piero Turra
+  start_number: 37
+- class: Men
+  club: Austria
+  name: Georg Koffler
+  start_number: 38
+- class: Men
+  club: Czechia
+  name: Jakub Skoda
+  start_number: 39
+- class: Men
+  club: Switzerland
+  name: Noah Rieder
+  start_number: 40
+- class: Men
+  club: Estonia
+  name: Marek Karm
+  start_number: 41
+- class: Men
+  club: Czechia
+  name: Jan Hasek
+  start_number: 42
+- class: Men
+  club: Estonia
+  name: Sander Pritsik
+  start_number: 43
+- class: Men
+  club: Austria
+  name: Martin Illig
+  start_number: 44
+- class: Men
+  club: Spain
+  name: Javier Munoz Guerrero
+  start_number: 45
+- class: Men
+  club: Finland
+  name: Tomi Nykanen
+  start_number: 46
+- class: Men
+  club: Denmark
+  name: Oliver Friis
+  start_number: 47
+- class: Men
+  club: Portugal
+  name: Joao Ferreira
+  start_number: 48
+- class: Men
+  club: France
+  name: Yoann Courtois
+  start_number: 49
+- class: Men
+  club: Finland
+  name: Miika Nurmi
+  start_number: 50
+- class: Men
+  club: Lithuania
+  name: Ignas Ambrazas
+  start_number: 51
+- class: Men
+  club: Denmark
+  name: Mikkel Brunstedt Noergaard
+  start_number: 52
+- class: Men
+  club: Czechia
+  name: Martin Kanta
+  start_number: 53
+- class: Men
+  club: Finland
+  name: Jussi Laurila
+  start_number: 54
+- class: Men
+  club: Switzerland
+  name: Silas Hotz
+  start_number: 55
+- class: Men
+  club: France
+  name: Jeremi Pourre
+  start_number: 56
+- class: Men
+  club: Austria
+  name: Tobias Breitschaedel
+  start_number: 57
+- class: Men
+  club: Spain
+  name: Angel Garcia Garcia
+  start_number: 58
+- class: Men
+  club: Lithuania
+  name: Jonas Maiselis
+  start_number: 59
+- class: Men
+  club: Switzerland
+  name: Simon Braendli
+  start_number: 60
+- class: Men
+  club: France
+  name: Baptiste Fuchs
+  start_number: 61
+- class: Men
+  club: Czechia
+  name: Vojtech Stransky
+  start_number: 62
+- class: Men
+  club: Finland
+  name: Juha Lilja
+  start_number: 63
+- class: Men
+  club: Italy
+  name: Luca Dallavalle
+  start_number: 64
+- class: Men
+  club: Czechia
+  name: Jiri Hradil
+  start_number: 65
+- class: Men
+  club: Sweden
+  name: Marcus Jansson
+  start_number: 66
+- class: Men
+  club: Austria
+  name: Andreas Waldmann
+  start_number: 67
+- class: Men
+  club: Switzerland
+  name: Adrian Jaeggi
+  start_number: 68
+- class: Men
+  club: Czechia
+  name: Krystof Bogar
+  start_number: 69
+- class: Men
+  club: Finland
+  name: Samuel Pokala
+  start_number: 70
+- class: Men
+  club: Denmark
+  name: Morten Oernhagen
+  start_number: 71
+- class: Men
+  club: Italy
+  name: Fabiano Bettega
+  start_number: 72
+- class: Men
+  club: Czechia
+  name: Vojtech Ludvik
+  start_number: 73
+- class: Men
+  club: Estonia
+  name: Lauri Malsroos
+  start_number: 74
+- class: Women
+  club: Estonia
+  name: Piibe Tammemae
+  start_number: 101
+- class: Women
+  club: Spain
+  name: Elena Yllan Ortiz
+  start_number: 102
+- class: Women
+  club: Lithuania
+  name: Juste Umbrasaite
+  start_number: 103
+- class: Women
+  club: Finland
+  name: Saara YliHietanen
+  start_number: 104
+- class: Women
+  club: France
+  name: Laurane Meyers
+  start_number: 105
+- class: Women
+  club: Czechia
+  name: Renata Paulickova
+  start_number: 106
+- class: Women
+  club: Japan
+  name: Amiri Orui
+  start_number: 107
+- class: Women
+  club: Sweden
+  name: Cecilia Thomasson
+  start_number: 108
+- class: Women
+  club: Japan
+  name: Naoko Kano
+  start_number: 109
+- class: Women
+  club: Spain
+  name: Nerea Garcia Rodriguez
+  start_number: 110
+- class: Women
+  club: Germany
+  name: Dorothea Steckhan
+  start_number: 111
+- class: Women
+  club: Hungary
+  name: Laura Csucs Fenyvesi
+  start_number: 112
+- class: Women
+  club: Czechia
+  name: Marie Kamarytova
+  start_number: 113
+- class: Women
+  club: Finland
+  name: Mervi Pesu
+  start_number: 114
+- class: Women
+  club: Portugal
+  name: Marisa Costa
+  start_number: 115
+- class: Women
+  club: Finland
+  name: Eveliina Valimaa
+  start_number: 116
+- class: Women
+  club: Spain
+  name: Monica Aguilera Viladomiu
+  start_number: 117
+- class: Women
+  club: Finland
+  name: Antonia Haga
+  start_number: 118
+- class: Women
+  club: Sweden
+  name: Karin Gustafsson
+  start_number: 119
+- class: Women
+  club: Lithuania
+  name: Karolina Mickeviciute Juodisiene
+  start_number: 120
+- class: Women
+  club: Estonia
+  name: Mari Linnus
+  start_number: 121
+- class: Women
+  club: Finland
+  name: Marika Hara
+  start_number: 122
+- class: Women
+  club: Switzerland
+  name: Lena Hofer
+  start_number: 123
+- class: Women
+  club: Czechia
+  name: Valerie Kamererova
+  start_number: 124
+- class: Women
+  club: Switzerland
+  name: Arianna Arpagaus
+  start_number: 125
+- class: Women
+  club: Austria
+  name: Michaela Gigon
+  start_number: 126
+- class: Women
+  club: Estonia
+  name: Eleri Hirv
+  start_number: 127
+- class: Women
+  club: France
+  name: Lou Garcin
+  start_number: 128
+- class: Women
+  club: Austria
+  name: Marina Reiner
+  start_number: 129
+- class: Women
+  club: France
+  name: Lucie Rudkiewicz
+  start_number: 130
+- class: Women
+  club: Switzerland
+  name: Ursina Jaeggi
+  start_number: 131
+- class: Women
+  club: Germany
+  name: Anke Dannowski
+  start_number: 132
+- class: Women
+  club: Sweden
+  name: Anna Tiderman
+  start_number: 133
+- class: Women
+  club: France
+  name: Constance Devillers
+  start_number: 134
+- class: Women
+  club: Denmark
+  name: Camilla Soegaard
+  start_number: 135
+- class: Women
+  club: Czechia
+  name: Katerina Novakova
+  start_number: 136
+- class: Women
+  club: Finland
+  name: Ruska Saarela
+  start_number: 137
+- class: Women
+  club: Czechia
+  name: Vendula Musilova
+  start_number: 138
+- class: Women
+  club: Great Britain
+  name: Emily Benham Kvale
+  start_number: 139
+- class: Women
+  club: Sweden
+  name: Linn Bylars
+  start_number: 140
+- class: Women
+  club: Czechia
+  name: Martina Tichovska
+  start_number: 141
+- class: Women
+  club: Sweden
+  name: Nadia Larsson
+  start_number: 142
+- class: Women
+  club: Finland
+  name: Henna Saarinen
+  start_number: 143
+- class: Women
+  club: Denmark
+  name: Nikoline Splittorff
+  start_number: 144
+- class: Women
+  club: Lithuania
+  name: Gabriele Andrasiuniene
+  start_number: 145
+- class: Women
+  club: Denmark
+  name: Caecilie Christoffersen
+  start_number: 146
+- class: Women
+  club: Sweden
+  name: Gabriella Gustafsson
+  start_number: 147
+- class: Women
+  club: Finland
+  name: Ingrid Stengard
+  start_number: 148
+race_number: 1

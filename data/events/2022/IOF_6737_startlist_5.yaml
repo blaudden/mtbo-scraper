@@ -1,0 +1,266 @@
+participants:
+- class: Men 20
+  club: CZE
+  name: Matej Tuma
+  start_number: 201
+- class: Men 20
+  club: FIN
+  name: Tatu Aaltonen
+  start_number: 202
+- class: Men 20
+  club: FIN
+  name: Paulus Hanhijarvi
+  start_number: 203
+- class: Men 20
+  club: FIN
+  name: Akseli Pesu
+  start_number: 204
+- class: Men 20
+  club: AUT
+  name: Hannes Hnilica
+  start_number: 205
+- class: Men 20
+  club: SUI
+  name: Flurin Schnyder
+  start_number: 206
+- class: Men 20
+  club: LTU
+  name: Nojus Lukosius
+  start_number: 207
+- class: Men 20
+  club: CZE
+  name: Adam Cernik
+  start_number: 208
+- class: Men 20
+  club: AUT
+  name: Benjamin Gaudernak
+  start_number: 209
+- class: Men 20
+  club: FIN
+  name: Simo Klemettinen
+  start_number: 210
+- class: Men 20
+  club: ESP
+  name: Francisco Cortes Martinez
+  start_number: 211
+- class: Men 20
+  club: EST
+  name: Timo Kudre
+  start_number: 212
+- class: Men 20
+  club: FIN
+  name: Eevert Kenttamies
+  start_number: 213
+- class: Men 20
+  club: FRA
+  name: Timothy Blot
+  start_number: 214
+- class: Men 20
+  club: ITA
+  name: Michele Traversi Montani
+  start_number: 215
+- class: Men 20
+  club: SWE
+  name: Felix Silver
+  start_number: 216
+- class: Men 20
+  club: NOR
+  name: Teodor Mo Hjelseth
+  start_number: 217
+- class: Men 20
+  club: LAT
+  name: Jekabs Toms Andersons
+  start_number: 218
+- class: Men 20
+  club: POL
+  name: Filip Janowski
+  start_number: 219
+- class: Men 20
+  club: SWE
+  name: Sverre Rojgard
+  start_number: 220
+- class: Men 20
+  club: LTU
+  name: Arnas Sausaitis
+  start_number: 221
+- class: Men 20
+  club: LAT
+  name: Arturs Strakss
+  start_number: 222
+- class: Men 20
+  club: FRA
+  name: Noa Lauvergne
+  start_number: 223
+- class: Men 20
+  club: FIN
+  name: Eemil Koskinen
+  start_number: 224
+- class: Men 20
+  club: CZE
+  name: Tomas Zrnik
+  start_number: 225
+- class: Men 20
+  club: AUT
+  name: Lukas Wieser
+  start_number: 226
+- class: Men 20
+  club: GER
+  name: Per Haehnel
+  start_number: 227
+- class: Men 20
+  club: EST
+  name: Mihkel Mahla
+  start_number: 228
+- class: Men 20
+  club: FRA
+  name: Mathieu Vayssat
+  start_number: 229
+- class: Men 20
+  club: JPN
+  name: Hiro Ayano
+  start_number: 230
+- class: Men 20
+  club: LTU
+  name: Simonas Kiela
+  start_number: 231
+- class: Men 20
+  club: ESP
+  name: Noel Espigares Tapia
+  start_number: 232
+- class: Men 20
+  club: POR
+  name: Pedro Peralta
+  start_number: 233
+- class: Men 20
+  club: AUS
+  name: Will Whittington
+  start_number: 234
+- class: Men 20
+  club: NOR
+  name: Lars Lien
+  start_number: 235
+- class: Men 20
+  club: LAT
+  name: Ricards Bisenieks
+  start_number: 236
+- class: Men 20
+  club: ITA
+  name: Matteo Traversi Montani
+  start_number: 237
+- class: Men 20
+  club: NOR
+  name: Ole Gunnar Kleppa Madslien
+  start_number: 238
+- class: Men 20
+  club: ESP
+  name: Jose Antonio Villar Gorriz
+  start_number: 239
+- class: Men 20
+  club: EST
+  name: Raul Viitmaa
+  start_number: 240
+- class: Women 20
+  club: FIN
+  name: Kaarina Nurminen
+  start_number: 301
+- class: Women 20
+  club: CZE
+  name: Lucie Nedomlelova
+  start_number: 302
+- class: Women 20
+  club: FIN
+  name: Silja YliHietanen
+  start_number: 303
+- class: Women 20
+  club: CZE
+  name: Sofie Stranska
+  start_number: 304
+- class: Women 20
+  club: SWE
+  name: Tilda Palm
+  start_number: 305
+- class: Women 20
+  club: LTU
+  name: Vytene Puisyte
+  start_number: 306
+- class: Women 20
+  club: FIN
+  name: Vilma Pesu
+  start_number: 307
+- class: Women 20
+  club: AUT
+  name: Jana Hnilica
+  start_number: 308
+- class: Women 20
+  club: FIN
+  name: Siiri Rasimus
+  start_number: 309
+- class: Women 20
+  club: FRA
+  name: Lou Colle
+  start_number: 310
+- class: Women 20
+  club: LTU
+  name: Eidvile Tevelyte
+  start_number: 311
+- class: Women 20
+  club: SWE
+  name: Yrsa Rojgard
+  start_number: 312
+- class: Women 20
+  club: LAT
+  name: Annija Osane
+  start_number: 313
+- class: Women 20
+  club: FIN
+  name: Emmariikka Laamanen
+  start_number: 314
+- class: Women 20
+  club: CZE
+  name: Rozalie Kucharova
+  start_number: 315
+- class: Women 20
+  club: SWE
+  name: Hanna Ring
+  start_number: 316
+- class: Women 20
+  club: LAT
+  name: Eva Grauda
+  start_number: 317
+- class: Women 20
+  club: FIN
+  name: Aino Kankaanpaa
+  start_number: 318
+- class: Women 20
+  club: EST
+  name: Liis Marii Kaso
+  start_number: 319
+- class: Women 20
+  club: CZE
+  name: Natali Chamrada
+  start_number: 320
+- class: Women 20
+  club: SWE
+  name: Ida Ernstsson
+  start_number: 321
+- class: Women 20
+  club: UKR
+  name: Anna Zhylyk
+  start_number: 322
+- class: Women 20
+  club: ESP
+  name: Sofia Martinez Gomez
+  start_number: 323
+- class: Women 20
+  club: LTU
+  name: Rugile Denisovaite
+  start_number: 324
+- class: Women 20
+  club: LAT
+  name: Ramona Poreitere
+  start_number: 325
+- class: Women 20
+  club: ITA
+  name: Iris Aurora Pecorari
+  start_number: 326
+race_number: 5

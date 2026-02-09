@@ -1,0 +1,394 @@
+participants:
+- class: M21
+  club: AUT
+  name: Bernhard Kogler
+  start_number: 61
+- class: M21
+  club: DEN
+  name: Noah Tristan Hoffmann
+  start_number: 60
+- class: M21
+  club: FRA
+  name: Pierre Martinez
+  start_number: 59
+- class: M21
+  club: FIN
+  name: Paulus Hanhijarvi
+  start_number: 58
+- class: M21
+  club: GER
+  name: Lukas Wilms
+  start_number: 57
+- class: M21
+  club: POR
+  name: Guilherme Marques
+  start_number: 56
+- class: M21
+  club: GER
+  name: Lennart Voss
+  start_number: 55
+- class: M21
+  club: SWE
+  name: Rasmus Nordgren
+  start_number: 54
+- class: M21
+  club: FIN
+  name: Tomi Nykanen
+  start_number: 53
+- class: M21
+  club: IRL
+  name: Niall McCarthy
+  start_number: 52
+- class: M21
+  club: FIN
+  name: Kare Kaskinen
+  start_number: 51
+- class: M21
+  club: GER
+  name: Mark Huster
+  start_number: 50
+- class: M21
+  club: ESP
+  name: Jorge Garcia Pardos
+  start_number: 49
+- class: M21
+  club: FIN
+  name: Teemu Kaksonen
+  start_number: 48
+- class: M21
+  club: ESP
+  name: Juan Sanz
+  start_number: 47
+- class: M21
+  club: POL
+  name: Damian Hyla
+  start_number: 46
+- class: M21
+  club: FRA
+  name: Albin Demaret Joly
+  start_number: 45
+- class: M21
+  club: ESP
+  name: Juan Francisco Marin Vargas
+  start_number: 44
+- class: M21
+  club: LAT
+  name: Martins Linde
+  start_number: 43
+- class: M21
+  club: CZE
+  name: Jan Vacek
+  start_number: 42
+- class: M21
+  club: SVK
+  name: Matej Muller
+  start_number: 41
+- class: M21
+  club: ITA
+  name: Riccardo Rossetto
+  start_number: 40
+- class: M21
+  club: FRA
+  name: Paul Debray
+  start_number: 39
+- class: M21
+  club: ESP
+  name: David Toll Clos
+  start_number: 38
+- class: M21
+  club: POR
+  name: Paul Roothans
+  start_number: 37
+- class: M21
+  club: ESP
+  name: Javier Munoz Guerrero
+  start_number: 36
+- class: M21
+  club: CZE
+  name: Tomas Kamaryt
+  start_number: 35
+- class: M21
+  club: EST
+  name: Sander Pritsik
+  start_number: 34
+- class: M21
+  club: LAT
+  name: Andris Sarksna
+  start_number: 33
+- class: M21
+  club: POR
+  name: Daniel Marques
+  start_number: 32
+- class: M21
+  club: EST
+  name: Marek Karm
+  start_number: 31
+- class: M21
+  club: AUT
+  name: Martin Illig
+  start_number: 30
+- class: M21
+  club: SWE
+  name: Sebastian Svard
+  start_number: 29
+- class: M21
+  club: AUT
+  name: Tobias Breitschaedel
+  start_number: 28
+- class: M21
+  club: LTU
+  name: Sarunas Dmukauskas
+  start_number: 27
+- class: M21
+  club: POR
+  name: Joao Ferreira
+  start_number: 26
+- class: M21
+  club: AUT
+  name: Georg Koffler
+  start_number: 25
+- class: M21
+  club: SUI
+  name: Noah Rieder
+  start_number: 24
+- class: M21
+  club: POL
+  name: Bartosz Niebielski
+  start_number: 23
+- class: M21
+  club: SUI
+  name: Adrian Jaeggi
+  start_number: 22
+- class: M21
+  club: DEN
+  name: Mikkel Brunstedt Noergaard
+  start_number: 21
+- class: M21
+  club: ITA
+  name: Fabiano Bettega
+  start_number: 20
+- class: M21
+  club: LTU
+  name: Jonas Vytautas Gvildys
+  start_number: 19
+- class: M21
+  club: FIN
+  name: Jussi Laurila
+  start_number: 18
+- class: M21
+  club: ITA
+  name: Luca Dallavalle
+  start_number: 17
+- class: M21
+  club: FRA
+  name: Florian Pinsard
+  start_number: 16
+- class: M21
+  club: POR
+  name: Davide Machado
+  start_number: 15
+- class: M21
+  club: FRA
+  name: Jeremi Pourre
+  start_number: 14
+- class: M21
+  club: DEN
+  name: Oliver Friis
+  start_number: 13
+- class: M21
+  club: CZE
+  name: Krystof Bogar
+  start_number: 12
+- class: M21
+  club: FIN
+  name: Samuel Pokala
+  start_number: 11
+- class: M21
+  club: AUT
+  name: Andreas Waldmann
+  start_number: 10
+- class: M21
+  club: CZE
+  name: Vojtech Ludvik
+  start_number: 9
+- class: M21
+  club: EST
+  name: Lauri Malsroos
+  start_number: 8
+- class: M21
+  club: CZE
+  name: Jan Hasek
+  start_number: 7
+- class: M21
+  club: LTU
+  name: Jonas Maiselis
+  start_number: 6
+- class: M21
+  club: CZE
+  name: Vojtech Stransky
+  start_number: 5
+- class: M21
+  club: FIN
+  name: Miika Nurmi
+  start_number: 4
+- class: M21
+  club: LTU
+  name: Ignas Ambrazas
+  start_number: 3
+- class: M21
+  club: FIN
+  name: Andre Haga
+  start_number: 2
+- class: M21
+  club: CZE
+  name: Jiri Hradil
+  start_number: 1
+- class: W21
+  club: POR
+  name: Tania Covas Costa
+  start_number: 137
+- class: W21
+  club: ESP
+  name: Jana Lüscher Alemany
+  start_number: 136
+- class: W21
+  club: POR
+  name: Ana Filipa Silva
+  start_number: 135
+- class: W21
+  club: ESP
+  name: Nerea Garcia Rodriguez
+  start_number: 134
+- class: W21
+  club: GER
+  name: Dorothea Steckhan
+  start_number: 133
+- class: W21
+  club: ESP
+  name: Miren Arina Andueza
+  start_number: 132
+- class: W21
+  club: POL
+  name: Aleksandra Szaturska
+  start_number: 131
+- class: W21
+  club: FIN
+  name: Essi Hakala
+  start_number: 130
+- class: W21
+  club: CZE
+  name: Veronika Kubinova
+  start_number: 129
+- class: W21
+  club: SWE
+  name: Cecilia Thomasson
+  start_number: 128
+- class: W21
+  club: SUI
+  name: Celine Wellenreiter
+  start_number: 127
+- class: W21
+  club: SWE
+  name: Elvira Larsson
+  start_number: 126
+- class: W21
+  club: FRA
+  name: Laurane Meyers
+  start_number: 125
+- class: W21
+  club: EST
+  name: Piibe Tammemae
+  start_number: 124
+- class: W21
+  club: ESP
+  name: Monica Aguilera Viladomiu
+  start_number: 123
+- class: W21
+  club: AUT
+  name: Jana Hnilica
+  start_number: 122
+- class: W21
+  club: ESP
+  name: Elena Yllan Ortiz
+  start_number: 121
+- class: W21
+  club: FRA
+  name: Lou Garcin
+  start_number: 120
+- class: W21
+  club: FIN
+  name: Saara YliHietanen
+  start_number: 119
+- class: W21
+  club: LTU
+  name: Karolina Mickeviciute Juodisiene
+  start_number: 118
+- class: W21
+  club: SWE
+  name: Karin Gustafsson
+  start_number: 117
+- class: W21
+  club: SUI
+  name: Ursina Jaeggi
+  start_number: 116
+- class: W21
+  club: SWE
+  name: Gabriella Gustafsson
+  start_number: 115
+- class: W21
+  club: CZE
+  name: Marie Kamarytova
+  start_number: 114
+- class: W21
+  club: EST
+  name: Eleri Hirv
+  start_number: 113
+- class: W21
+  club: GER
+  name: Anke Dannowski
+  start_number: 112
+- class: W21
+  club: CZE
+  name: Valerie Kamererova
+  start_number: 111
+- class: W21
+  club: FRA
+  name: Lucie Rudkiewicz
+  start_number: 110
+- class: W21
+  club: DEN
+  name: Nikoline Splittorff
+  start_number: 109
+- class: W21
+  club: FIN
+  name: Antonia Haga
+  start_number: 108
+- class: W21
+  club: LTU
+  name: Gabriele Andrasiuniene
+  start_number: 107
+- class: W21
+  club: FIN
+  name: Ingrid Stengard
+  start_number: 106
+- class: W21
+  club: DEN
+  name: Camilla Soegaard
+  start_number: 105
+- class: W21
+  club: FRA
+  name: Constance Devillers
+  start_number: 104
+- class: W21
+  club: FIN
+  name: Ruska Saarela
+  start_number: 103
+- class: W21
+  club: DEN
+  name: Caecilie Christoffersen
+  start_number: 102
+- class: W21
+  club: FIN
+  name: Kaarina Nurminen
+  start_number: 101
+race_number: 1
