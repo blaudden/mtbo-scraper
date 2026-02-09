@@ -1,6 +1,6 @@
 import os
 from datetime import UTC, datetime
-from typing import Any, cast
+from typing import TypedDict
 
 import structlog
 
@@ -12,6 +12,17 @@ from src.utils.date_and_time import parse_date_to_iso
 from src.utils.fingerprint import Participant
 
 logger = structlog.get_logger(__name__)
+
+# Type aliases for YAML start list export.
+# Cannot use TypedDict because the YAML key "class" is a Python reserved word.
+StartListParticipant = dict[str, str | int | None]
+
+
+class StartListData(TypedDict):
+    """Dictionary representation of a race start list for YAML export."""
+
+    race_number: int
+    participants: list[StartListParticipant]
 
 
 class EventorSource(BaseSource):
@@ -137,28 +148,28 @@ class EventorSource(BaseSource):
         known_hashes = self.known_fingerprints.get(year)
 
         race.fingerprints = Fingerprinter.generate_fingerprints(
-            cast(list[dict[str, Any]], unique_participants), known_hashes
+            unique_participants, known_hashes
         )
 
     def _collect_start_list_data(
         self, race: Race, starts: list[Participant]
-    ) -> dict[str, Any]:
+    ) -> StartListData:
         """Formats start list data for YAML export."""
-        return {
-            "race_number": race.race_number,
-            "participants": [
-                {
-                    "start_number": p.get("start_number"),
-                    "name": p.get("name"),
-                    "club": p.get("club"),
-                    "class": p.get("class_name"),
-                }
+        return StartListData(
+            race_number=race.race_number,
+            participants=[
+                StartListParticipant(
+                    start_number=p.get("start_number"),
+                    name=p.get("name", ""),
+                    club=p.get("club", ""),
+                    **{"class": p.get("class_name", "")},
+                )
                 for p in starts
             ],
-        }
+        )
 
     def _save_start_list_yaml(
-        self, event: Event, race_number: int, race_data: dict
+        self, event: Event, race_number: int, race_data: StartListData
     ) -> tuple[bool, str]:
         """Saves a single race's start list to YAML and returns (changed, filepath)."""
         import yaml

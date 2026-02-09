@@ -96,9 +96,19 @@ def test_fingerprint_no_match_different_club() -> None:
 
 
 def test_generate_fingerprints_with_known_hashes() -> None:
-    participants = [
-        {"name": "Blåudd Magnus", "club": "OK Skogsstjärnan", "class_name": "H40"},
-        {"name": "Other Runner", "club": "Club X", "class_name": "H21"},
+    participants: list[Participant] = [
+        {
+            "name": "Blåudd Magnus",
+            "club": "OK Skogsstjärnan",
+            "class_name": "H40",
+            "start_number": None,
+        },
+        {
+            "name": "Other Runner",
+            "club": "Club X",
+            "class_name": "H21",
+            "start_number": None,
+        },
     ]
 
     # Pre-calculated hash for "magnus blåudd|ok skogsstjärnan"

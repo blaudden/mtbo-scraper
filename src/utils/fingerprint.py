@@ -1,5 +1,5 @@
 import hashlib
-from typing import Any, TypedDict
+from typing import TypedDict
 
 from ..models import EventDict
 
@@ -78,12 +78,12 @@ class Fingerprinter:
 
     @staticmethod
     def generate_fingerprints(
-        participants: list[dict[str, Any]], known_hashes: set[str] | None = None
+        participants: list[Participant], known_hashes: set[str] | None = None
     ) -> list[str]:
         """Generates a sorted list of unique fingerprints from a list of participants.
 
         Args:
-            participants: A list of participant dictionaries.
+            participants: A list of Participant typed dicts.
             known_hashes: Optional set of existing fingerprints for the current
                 year/context.
 
@@ -92,15 +92,7 @@ class Fingerprinter:
         """
         fingerprints = set()
         for p in participants:
-            input_p: Participant = {
-                "name": p.get("name", ""),
-                "club": p.get("club", ""),
-                "class_name": p.get("class_name", ""),
-                "start_number": p.get("start_number", None),
-            }
-            fp = Fingerprinter.generate_fingerprint_for_participant(
-                input_p, known_hashes
-            )
+            fp = Fingerprinter.generate_fingerprint_for_participant(p, known_hashes)
             fingerprints.add(fp)
 
         return sorted(fingerprints)
