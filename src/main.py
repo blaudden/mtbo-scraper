@@ -1,5 +1,6 @@
 import logging
 import random
+import resource
 import sys
 import time
 from collections.abc import Iterator
@@ -10,6 +11,7 @@ import click
 import structlog
 
 from src.models import Event
+from src.scraper import Scraper
 from src.sources.eventor_source import EventorSource
 from src.sources.manual_source import ManualSource
 
@@ -173,8 +175,9 @@ def determine_date_range(
 @click.option(
     "--source",
     "source_filter",
-    type=str,
-    help="Specific source to scrape (e.g., SWE, NOR, IOF, MAN)",
+    multiple=True,
+    help="Specific source(s) to scrape (e.g., SWE, NOR, IOF, MAN). "
+    "Can be used multiple times or as a comma-separated list.",
 )
 @click.option(
     "--shuffle/--no-shuffle",
@@ -190,7 +193,7 @@ def main(
     verbose: int,
     json_logs: bool,
     mode: str,
-    source_filter: str | None,
+    source_filter: tuple[str, ...],
     shuffle: bool,
 ) -> None:
     """MTBO Eventor Scraper"""
@@ -238,15 +241,48 @@ def main(
 
     logger.info("scraper_starting", output_file=output)
 
+    # Check resource limits (ulimit -n)
+    try:
+        soft, hard = resource.getrlimit(resource.RLIMIT_NOFILE)
+        if soft < 1024:
+            logger.warning(
+                "low_open_file_limit",
+                suggestion=(
+                    "Run 'ulimit -n 1024' or higher to avoid "
+                    "'Too many open files' errors."
+                ),
+            )
+        else:
+            logger.debug(
+                "resource_limits_check_passed", soft_limit=soft, hard_limit=hard
+            )
+    except Exception as e:
+        logger.warning("resource_limit_check_failed", error=str(e))
+
     # Validate source if provided
     active_configs = SOURCE_CONFIGS
     if source_filter:
-        source_upper = source_filter.upper()
-        active_configs = [c for c in SOURCE_CONFIGS if c["country"] == source_upper]
-        if not active_configs:
+        # source_filter is a tuple due to multiple=True.
+        # Flatten any comma-separated strings inside the tuple.
+        requested_sources: list[str] = []
+        for s in source_filter:
+            requested_sources.extend([part.strip().upper() for part in s.split(",")])
+
+        active_configs = [
+            c for c in SOURCE_CONFIGS if c["country"] in requested_sources
+        ]
+
+        # Verify all requested sources were found
+        found_sources = {c["country"] for c in active_configs}
+        missing_sources = [s for s in requested_sources if s not in found_sources]
+
+        if missing_sources:
             valid_sources = ", ".join([c["country"] for c in SOURCE_CONFIGS])
             logger.error(
-                "invalid_source", provided=source_filter, valid_sources=valid_sources
+                "invalid_source",
+                provided=source_filter,
+                missing=missing_sources,
+                valid_sources=valid_sources,
             )
             sys.exit(1)
 
@@ -279,6 +315,9 @@ def main(
         delay_range = (1.0, 3.0)
         logger.info("standard_mode_detected", delay="1-3s", start_date=start_date)
 
+    # Initialize Scraper
+    scraper = Scraper(delay_range=delay_range)
+
     # Initialize Sources
     eventor_sources: list[EventorSource] = []
     run_manual = False
@@ -292,11 +331,14 @@ def main(
                     config["url"],
                     known_fingerprints=year_to_fps,
                     refresh=refresh,
-                    delay_range=delay_range,
+                    scraper=scraper,
                 )
             )
         elif config["type"] == "manual":
             run_manual = True
+
+    # Track failures for final report
+    failed_event_ids: list[str] = []
 
     # 1. Load Manual Events
     if run_manual:
@@ -380,6 +422,8 @@ def main(
                                 current_pass_events[source.country].append(
                                     detailed_event
                                 )
+                            else:
+                                failed_event_ids.append(event.id)
 
                     except Exception as e:
                         logger.error(
@@ -407,6 +451,14 @@ def main(
                 logger.info("year_segment_completed_no_events", year=segment_year_str)
 
     logger.info("scraping_completed")
+
+    if failed_event_ids:
+        logger.warning(
+            "scraping_failures_summary",
+            count=len(failed_event_ids),
+            failed_ids=failed_event_ids[:50],  # Limit to first 50 for logging
+            more_hidden=len(failed_event_ids) > 50,
+        )
 
     # Calculate stats and write commit message
     sources_used = [c["country"] for c in active_configs] if source_filter else None

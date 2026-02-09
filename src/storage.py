@@ -1,12 +1,22 @@
 import json
-import logging
 from datetime import UTC, datetime
 from pathlib import Path
-from typing import Any
 
-from .models import Event, Source, Url
+import structlog
 
-logger = logging.getLogger(__name__)
+from .models import (
+    Event,
+    EventDict,
+    IndexDict,
+    IndexPartitionDict,
+    IndexSourceDict,
+    RaceDict,
+    Source,
+    Url,
+    UrlDict,
+)
+
+logger = structlog.get_logger(__name__)
 
 
 class Storage:
@@ -27,27 +37,40 @@ class Storage:
         self.index_file = Path(root_path)
         # Default data root if not specified in index
         self.default_data_dir = Path(data_dir)
+        self.schema_version = "2.0"
 
-    def _load_index(self) -> dict[str, Any]:
+    def _load_index(self) -> IndexDict:
         """Loads the index file if it exists."""
         if not self.index_file.exists():
-            return {}
+            return IndexDict(
+                schema_version="2.0",
+                last_scraped_at="",
+                data_root=str(self.default_data_dir),
+                partitions={},
+                sources={},
+            )
 
         try:
             with open(self.index_file, encoding="utf-8") as f:
                 return json.load(f)  # type: ignore
         except Exception as e:
-            logger.error(f"Failed to load index file: {e}")
-            return {}
+            logger.error("index_load_failed", error=str(e), path=str(self.index_file))
+            return IndexDict(
+                schema_version=self.schema_version,
+                last_scraped_at="",
+                data_root=str(self.default_data_dir),
+                partitions={},
+                sources={},
+            )
 
-    def load(self) -> dict[str, dict[str, Any]]:
+    def load(self) -> dict[str, EventDict]:
         """Loads events from all partitions defined in the index.
 
         Returns:
             A dictionary mapping event IDs to their raw dictionary representations.
         """
         index_data = self._load_index()
-        events_map = {}
+        events_map: dict[str, EventDict] = {}
 
         # Handle Umbrella Index
         if "partitions" in index_data:
@@ -68,11 +91,13 @@ class Storage:
                                 if "id" in e:
                                     events_map[e["id"]] = e
                     except Exception as e:
-                        logger.error(f"Failed to load partition {full_path}: {e}")
+                        logger.error(
+                            "partition_load_failed", error=str(e), path=str(full_path)
+                        )
 
         return events_map
 
-    def save(self, events_by_source: dict[str, list[Event]]) -> list[dict[str, Any]]:
+    def save(self, events_by_source: dict[str, list[Event]]) -> list[EventDict]:
         """Saves events, splitting them into year-based partitions and updating
         the Index.
 
@@ -101,8 +126,10 @@ class Storage:
                 try:
                     self._process_event_timestamps(event, existing_event)
                 except Exception as e:
-                    logger.error(f"Error merging timestamps for {event.id}: {e}")
-                    raise e
+                    logger.error(
+                        "timestamp_merge_failed", event_id=event.id, error=str(e)
+                    )
+                    raise
 
                 event_dict = event.to_dict()
                 if existing_event != event_dict:
@@ -112,7 +139,9 @@ class Storage:
             all_new_events.extend(source_events)
 
             # Update Source Metadata in Index
-            meta = source_meta.get(source_name, {})
+            meta = source_meta.get(source_name) or IndexSourceDict(
+                count=0, last_updated_at=now_iso
+            )
             last_updated = meta.get("last_updated_at", now_iso)
 
             if source_changed:
@@ -124,7 +153,7 @@ class Storage:
             }
 
         # 3. Group by Year and Calculate Source Totals
-        events_by_year: dict[str, list[dict[str, Any]]] = {}
+        events_by_year: dict[str, list[EventDict]] = {}
         source_counts: dict[str, int] = dict.fromkeys(source_meta.keys(), 0)
 
         def _identify_source(eid: str) -> str:
@@ -153,7 +182,7 @@ class Storage:
             if start_time:
                 year = start_time[:4]
             else:
-                logger.error(f"Event {e_id} has no start_time.")
+                logger.error("event_missing_start_time", event_id=e_id)
                 raise ValueError(f"Event {e_id} has no start_time")
 
             if year not in events_by_year:
@@ -163,7 +192,9 @@ class Storage:
         # Update final counts in source_meta
         for name, count in source_counts.items():
             if name in source_meta:
-                source_meta[name]["count"] = count
+                source_meta[name] = IndexSourceDict(
+                    count=count, last_updated_at=source_meta[name]["last_updated_at"]
+                )
 
         # 4. Prepare Index Structure
         # Ensure 'partitions' dict exists
@@ -228,43 +259,50 @@ class Storage:
                 with open(file_path, "w", encoding="utf-8") as f:
                     json.dump(output_dict, f, indent=2, ensure_ascii=False)
                     f.write("\n")
-                logger.info(f"Updated partition {year} at {file_path}")
+                logger.info(
+                    "partition_updated",
+                    year=year,
+                    path=str(file_path),
+                    count=len(sorted_events),
+                )
 
             # Update Partition Metadata in Index
             # Preserve last_updated_at if no change, else update it
-            existing_meta = partitions.get(year, {})
+            existing_meta = partitions.get(year) or IndexPartitionDict(
+                path=str(file_path), count=0, last_updated_at=""
+            )
             last_updated = existing_meta.get("last_updated_at", now_iso)
 
             if content_changed:
                 last_updated = now_iso
 
-            partitions[year] = {
-                "path": str(file_path),
-                "count": len(sorted_events),
-                "last_updated_at": last_updated,
-            }
+            partitions[year] = IndexPartitionDict(
+                path=str(file_path),
+                count=len(sorted_events),
+                last_updated_at=last_updated,
+            )
 
             all_saved_events.extend(sorted_events)
 
         # 6. Save Umbrella Index
         # Update always to record "last_scraped_at" (Consumer requirement)
-        new_index = {
-            "schema_version": "2.0",
-            "last_scraped_at": now_iso,
-            "data_root": str(self.default_data_dir),
-            "partitions": partitions,
-            "sources": source_meta,
-        }
+        new_index = IndexDict(
+            schema_version="2.0",
+            last_scraped_at=now_iso,
+            data_root=str(self.default_data_dir),
+            partitions=partitions,
+            sources=source_meta,
+        )
 
         with open(self.index_file, "w", encoding="utf-8") as f:
             json.dump(new_index, f, indent=2, ensure_ascii=False)
             f.write("\n")
-        logger.info(f"Updated index file at {self.index_file}")
+        logger.info("index_updated", path=str(self.index_file))
 
         return all_saved_events
 
     def _process_event_timestamps(
-        self, event: Event, existing_event: dict[str, Any] | None
+        self, event: Event, existing_event: EventDict | None
     ) -> None:
         """Updates timestamps for the event and its races using existing data."""
         # Event URLs
@@ -273,19 +311,20 @@ class Storage:
 
         # Merge Race URLs, build a map of races by race_number and
         # then merge their urls
-        old_races = {}
+        old_races: dict[int, RaceDict] = {}
         if existing_event:
             for old_race in existing_event.get("races", []):
                 race_num = old_race.get("race_number")
-                old_races[race_num] = old_race
+                if race_num is not None:
+                    old_races[race_num] = old_race
 
         for race in event.races:
-            old_race = old_races.get(race.race_number, {})
-            old_urls = old_race.get("urls", [])
+            old_r_dict = old_races.get(race.race_number)
+            old_urls = old_r_dict.get("urls", []) if old_r_dict else []
             race.urls = self._merge_url_timestamps(race.urls, old_urls)
 
     def _merge_url_timestamps(
-        self, new_url_objs: list[Url], old_url_dicts: list[dict[str, Any]]
+        self, new_url_objs: list[Url], old_url_dicts: list[UrlDict]
     ) -> list[Url]:
         """Merges timestamps from old URLs into new Url objects if content matches.
 

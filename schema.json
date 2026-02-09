@@ -282,12 +282,6 @@
                         "null"
                     ]
                 },
-                "punching_system": {
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
                 "position": {
                     "anyOf": [
                         {

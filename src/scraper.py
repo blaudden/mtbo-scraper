@@ -10,6 +10,8 @@ import curl_cffi.requests as requests
 import structlog
 from curl_cffi.requests import RequestsError, Response
 
+from src.exceptions import CloudflareError
+
 logger = structlog.get_logger(__name__)
 
 
@@ -259,7 +261,11 @@ class Scraper:
                     logger.error("browser_fallback_failed_challenge_not_solved")
                     if attempt < retries:
                         continue
-                    return False
+                    raise CloudflareError(
+                        "Managed challenge not solved by browser",
+                        url=url,
+                        challenge_type="managed",
+                    )
 
                 # Extract cookies and apply to curl-cffi session
                 cookies = driver.get_cookies()
@@ -406,13 +412,55 @@ class Scraper:
                 return cast(Response, response)
 
             except RequestsError as e:
-                logger.warning("request_failed", error=str(e))
-                if attempt < retries - 1:
-                    time.sleep(2**attempt)  # Exponential backoff
-                else:
+                # Handle "Too many open files" specifically
+                if "too many open files" in str(e).lower() or (
+                    hasattr(e, "errno") and e.errno == 24
+                ):
                     logger.error(
-                        "request_failed_max_attempts", url=url, retries=retries
+                        "resource_limit_reached",
+                        error="Too many open files (errno 24)",
+                        suggestion=(
+                            "Increase system file limits (ulimit -n) "
+                            "or reduce concurrency/session usage."
+                        ),
                     )
+                    # Fatal for the current process unless we close descriptors
                     return None
+
+                status_code = getattr(e, "response", None)
+                if status_code:
+                    status_code = status_code.status_code
+
+                # Determine if it's retryable
+                retryable = True
+                if status_code in (400, 401, 403, 404):
+                    retryable = False
+
+                logger.warning(
+                    "request_failed",
+                    url=url,
+                    status_code=status_code,
+                    error=str(e),
+                    attempt=attempt + 1,
+                    retryable=retryable,
+                )
+
+                if retryable and attempt < retries - 1:
+                    wait_time = (2**attempt) + random.uniform(0, 1)
+                    time.sleep(wait_time)  # Exponential backoff with jitter
+                else:
+                    if not retryable:
+                        logger.error(
+                            "request_failed_non_retryable", url=url, status=status_code
+                        )
+                    else:
+                        logger.error(
+                            "request_failed_max_attempts", url=url, retries=retries
+                        )
+                    return None
+
+            except Exception:
+                logger.exception("unexpected_request_error", url=url)
+                return None
 
         return None

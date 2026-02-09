@@ -1,5 +1,6 @@
 import os
 from datetime import UTC, datetime
+from typing import Any, cast
 
 import structlog
 
@@ -8,6 +9,7 @@ from src.scraper import Scraper
 from src.sources.base_source import BaseSource
 from src.sources.eventor_parser import EventorParser
 from src.utils.date_and_time import parse_date_to_iso
+from src.utils.fingerprint import Participant
 
 logger = structlog.get_logger(__name__)
 
@@ -22,7 +24,7 @@ class EventorSource(BaseSource):
         output_dir: str = "data/events",
         known_fingerprints: dict[str, set[str]] | None = None,
         refresh: bool = False,
-        delay_range: tuple[float, float] = (1.0, 3.0),
+        scraper: Scraper | None = None,
     ):
         """Initializes the EventorSource.
 
@@ -33,14 +35,14 @@ class EventorSource(BaseSource):
             known_fingerprints: Dictionary mapping year (str) to set of existing
                 fingerprints.
             refresh: Whether to force refresh of startlists.
-            delay_range: Tuple of (min, max) delay in seconds.
+            scraper: An optional shared Scraper instance.
         """
         self.country = country
         self.base_url = base_url.rstrip("/")
         self.output_dir = output_dir
         self.known_fingerprints = known_fingerprints or {}
         self.refresh = refresh
-        self.scraper = Scraper(delay_range=delay_range)
+        self.scraper = scraper or Scraper()
         self.parser = EventorParser()
 
     def fetch_event_list(self, start_date: str, end_date: str) -> list[Event]:
@@ -85,7 +87,7 @@ class EventorSource(BaseSource):
         logger.info("events_found", count=len(events), country=self.country)
         return events
 
-    def _fetch_race_list_items(self, race: Race, list_type: str) -> list[dict]:
+    def _fetch_race_list_items(self, race: Race, list_type: str) -> list[Participant]:
         """Fetches and parses a specific list type (Entry/Start/Result) for a race."""
         url_obj = next((u for u in race.urls if u.type == list_type), None)
         if not url_obj:
@@ -104,7 +106,7 @@ class EventorSource(BaseSource):
         return self.parser.parse_participant_list(resp.text)
 
     def _update_race_counts(
-        self, race: Race, list_type: str, items: list[dict]
+        self, race: Race, list_type: str, items: list[Participant]
     ) -> None:
         """Aggregates class counts and updates the race object."""
         counts: dict[str, int] = {}
@@ -119,7 +121,9 @@ class EventorSource(BaseSource):
         elif list_type == "ResultList":
             race.result_counts = counts
 
-    def _generate_race_fingerprints(self, race: Race, lists: list[list[dict]]) -> None:
+    def _generate_race_fingerprints(
+        self, race: Race, lists: list[list[Participant]]
+    ) -> None:
         """Generates fingerprints for the race based on participant lists."""
         from src.utils.fingerprint import Fingerprinter
 
@@ -133,10 +137,12 @@ class EventorSource(BaseSource):
         known_hashes = self.known_fingerprints.get(year)
 
         race.fingerprints = Fingerprinter.generate_fingerprints(
-            unique_participants, known_hashes
+            cast(list[dict[str, Any]], unique_participants), known_hashes
         )
 
-    def _collect_start_list_data(self, race: Race, starts: list[dict]) -> dict:
+    def _collect_start_list_data(
+        self, race: Race, starts: list[Participant]
+    ) -> dict[str, Any]:
         """Formats start list data for YAML export."""
         return {
             "race_number": race.race_number,

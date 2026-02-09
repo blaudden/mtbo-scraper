@@ -4,8 +4,6 @@ Provides structured exceptions with error context and correction hints
 to enable AI agents to understand and recover from failures.
 """
 
-from typing import Any
-
 
 class ScraperError(Exception):
     """Base exception for all scraper errors.
@@ -19,7 +17,7 @@ class ScraperError(Exception):
     def __init__(
         self,
         message: str,
-        error_data: dict[str, Any] | None = None,
+        error_data: dict[str, object] | None = None,
         suggestion: str | None = None,
     ):
         """Initialize the scraper error.
@@ -41,7 +39,7 @@ class ScraperError(Exception):
             return f"{base}\nSuggestion: {self.suggestion}"
         return base
 
-    def to_dict(self) -> dict[str, Any]:
+    def to_dict(self) -> dict[str, object]:
         """Convert exception to structured dictionary for logging.
 
         Returns:
@@ -70,7 +68,7 @@ class NetworkError(ScraperError):
         url: str | None = None,
         status_code: int | None = None,
         retryable: bool = True,
-        error_data: dict[str, Any] | None = None,
+        error_data: dict[str, object] | None = None,
         suggestion: str | None = None,
     ):
         """Initialize network error.
@@ -83,7 +81,7 @@ class NetworkError(ScraperError):
             error_data: Additional context.
             suggestion: How to resolve the error.
         """
-        data = error_data or {}
+        data = dict(error_data or {})
         data.update({"url": url, "status_code": status_code, "retryable": retryable})
 
         default_suggestion = suggestion or (
@@ -113,7 +111,7 @@ class CloudflareError(ScraperError):
         message: str,
         url: str | None = None,
         challenge_type: str | None = None,
-        error_data: dict[str, Any] | None = None,
+        error_data: dict[str, object] | None = None,
         suggestion: str | None = None,
     ):
         """Initialize Cloudflare error.
@@ -125,7 +123,7 @@ class CloudflareError(ScraperError):
             error_data: Additional context.
             suggestion: How to resolve the error.
         """
-        data = error_data or {}
+        data = dict(error_data or {})
         data.update({"url": url, "challenge_type": challenge_type})
 
         default_suggestion = suggestion or (
@@ -155,7 +153,7 @@ class ParseError(ScraperError):
         field: str | None = None,
         selector: str | None = None,
         html_snippet: str | None = None,
-        error_data: dict[str, Any] | None = None,
+        error_data: dict[str, object] | None = None,
         suggestion: str | None = None,
     ):
         """Initialize parse error.
@@ -169,7 +167,7 @@ class ParseError(ScraperError):
             error_data: Additional context.
             suggestion: How to resolve the error.
         """
-        data = error_data or {}
+        data = dict(error_data or {})
         data.update(
             {
                 "event_id": event_id,
@@ -209,8 +207,8 @@ class ValidationError(ScraperError):
         message: str,
         field: str | None = None,
         expected: str | None = None,
-        received: Any = None,
-        error_data: dict[str, Any] | None = None,
+        received: object = None,
+        error_data: dict[str, object] | None = None,
         suggestion: str | None = None,
     ):
         """Initialize validation error.
@@ -223,7 +221,7 @@ class ValidationError(ScraperError):
             error_data: Additional context.
             suggestion: How to resolve the error.
         """
-        data = error_data or {}
+        data = dict(error_data or {})
         data.update(
             {
                 "field": field,
@@ -260,7 +258,7 @@ class ConfigurationError(ScraperError):
         parameter: str | None = None,
         expected_format: str | None = None,
         example: str | None = None,
-        error_data: dict[str, Any] | None = None,
+        error_data: dict[str, object] | None = None,
         suggestion: str | None = None,
     ):
         """Initialize configuration error.
@@ -273,7 +271,7 @@ class ConfigurationError(ScraperError):
             error_data: Additional context.
             suggestion: How to resolve the error.
         """
-        data = error_data or {}
+        data = dict(error_data or {})
         data.update(
             {
                 "parameter": parameter,

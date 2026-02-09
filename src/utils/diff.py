@@ -1,10 +1,11 @@
 import datetime
-from typing import Any
+
+from ..models import EventDict
 
 
 def calculate_stats(
-    old_events: list[dict[str, Any]],
-    new_events: list[dict[str, Any]],
+    old_events: list[EventDict],
+    new_events: list[EventDict],
     start_date: str,
     end_date: str,
     sources: list[str] | None = None,

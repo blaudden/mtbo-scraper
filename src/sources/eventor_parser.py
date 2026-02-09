@@ -2,11 +2,21 @@ import json
 import logging
 import re
 from datetime import UTC, datetime
-from typing import Any
 
 from bs4 import BeautifulSoup, Tag
 
-from src.models import Area, Document, Event, Official, Organiser, Position, Race, Url
+from src.models import (
+    Area,
+    Document,
+    Event,
+    ListCountDict,
+    Official,
+    Organiser,
+    ParsedServiceLinkDict,
+    Position,
+    Race,
+    Url,
+)
 from src.utils.country import get_iso_country_code
 from src.utils.crypto import Crypto
 from src.utils.date_and_time import (
@@ -14,6 +24,7 @@ from src.utils.date_and_time import (
     format_iso_datetime,
     parse_date_to_iso,
 )
+from src.utils.fingerprint import Participant
 
 
 class EventorParser:
@@ -370,7 +381,7 @@ class EventorParser:
 
     def _extract_links_from_infoboxes(
         self, soup: Tag, base_url: str | None = None
-    ) -> list[dict[str, Any]]:
+    ) -> list[ParsedServiceLinkDict]:
         """Extracts Start/Result/Entry/Livelox links from eventInfoBox containers.
 
         Args:
@@ -379,9 +390,7 @@ class EventorParser:
         Returns:
             A list of dictionaries containing 'race_index' (1-based), 'type', and 'url'.
         """
-        from typing import Any
-
-        links: list[dict[str, Any]] = []
+        links: list[ParsedServiceLinkDict] = []
         boxes = soup.find_all("div", class_="eventInfoBox")
 
         # Track counters per type to handle sequences without explicit stage numbers
@@ -446,12 +455,12 @@ class EventorParser:
                 ):
                     title = a.get_text(strip=True)
                     links.append(
-                        {
-                            "race_index": race_index,
-                            "type": l_type,
-                            "url": href,
-                            "title": title,
-                        }
+                        ParsedServiceLinkDict(
+                            race_index=race_index,
+                            type=l_type,
+                            url=href,
+                            title=title,
+                        )
                     )
 
         return links
@@ -605,7 +614,7 @@ class EventorParser:
                 continue
         return results
 
-    def parse_list_count(self, html: str) -> dict[str, Any]:
+    def parse_list_count(self, html: str) -> ListCountDict:
         """
         Parses Entry/Start/Result list pages.
         """
@@ -641,7 +650,7 @@ class EventorParser:
                 if tbody and isinstance(tbody, Tag):
                     total_count += len(tbody.find_all("tr"))
 
-        return {"total_count": total_count, "class_counts": class_counts}
+        return ListCountDict(total_count=total_count, class_counts=class_counts)
 
     def _extract_raw_general_info(self, soup: Tag) -> dict[str, str]:
         """Extracts raw key-value pairs from the 'General information' table.
@@ -1365,9 +1374,7 @@ class EventorParser:
                 if areas:
                     event.races[i].areas.extend(areas)
 
-    def parse_participant_list(
-        self, html_content: str
-    ) -> list[dict[str, str | int | None]]:
+    def parse_participant_list(self, html_content: str) -> list[Participant]:
         """Parses a start, result, or entry list to extract participants.
 
         Args:
@@ -1381,7 +1388,7 @@ class EventorParser:
             - start_number (optional)
         """
         soup = BeautifulSoup(html_content, "html.parser")
-        participants = []
+        participants: list[Participant] = []
 
         # Eventor lists usually follow the pattern:
         # div.eventClassHeader -> table (startList, resultList, entryList, etc)
@@ -1436,12 +1443,12 @@ class EventorParser:
 
                     if name:  # basic validation
                         participants.append(
-                            {
-                                "name": name,
-                                "club": club,
-                                "class_name": class_name,
-                                "start_number": start_number,
-                            }
+                            Participant(
+                                name=name,
+                                club=club,
+                                class_name=class_name,
+                                start_number=start_number,
+                            )
                         )
 
         return participants

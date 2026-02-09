@@ -38,6 +38,7 @@ Run the scraper using the provided bash script:
 - `--start-date YYYY-MM-DD`: Start date for scraping (default: 4 weeks ago).
 - `--end-date YYYY-MM-DD`: End date for scraping (default: Dec 31st of current year).
 - `--output FILE`: Output Index file path (default: `data/events/mtbo_events.json`). The actual event data is stored in `data/events/{year}/events.json`.
+- `--source SOURCE`: Specific source(s) to scrape (e.g., `SWE`, `NOR`, `IOF`, `MAN`). Can be used multiple times or as a comma-separated list.
 - `--verbose, -v`: Increase logging verbosity. Use multiple times for more detail:
   - No flag: WARNING level (errors and warnings only)
   - `-v`: INFO level (general progress information)
@@ -75,6 +76,18 @@ JSON logs for automated monitoring:
 
 ```bash
 ./scrape_now.sh --json-logs --output events.json
+```
+
+Scrape multiple sources (multiple flags):
+
+```bash
+./scrape_now.sh --source SWE --source NOR
+```
+
+Scrape multiple sources (comma-separated list):
+
+```bash
+./scrape_now.sh --source SWE,NOR,IOF
 ```
 
 ## Scheduling

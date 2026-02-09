@@ -1,12 +1,14 @@
 import hashlib
-from typing import TypedDict
+from typing import Any, TypedDict
+
+from ..models import EventDict
 
 
 class Participant(TypedDict):
     name: str
     club: str
     class_name: str
-    start_number: str | None
+    start_number: str | int | None
 
 
 class Fingerprinter:
@@ -47,18 +49,18 @@ class Fingerprinter:
         return h1
 
     @staticmethod
-    def merge_participants(lists: list[list[dict]]) -> list[dict]:
+    def merge_participants(lists: list[list[Participant]]) -> list[Participant]:
         """Merges multiple lists of participants, removing duplicates based on
         Name+Club.
 
         Args:
-            lists: A list of participant lists (each being a list of dicts/Participant).
+            lists: A list of participant lists (each being a list of Participants).
 
         Returns:
             A single merged list of unique participants.
         """
-        seen = set()
-        merged = []
+        seen: set[tuple[str, str]] = set()
+        merged: list[Participant] = []
 
         for participant_list in lists:
             for p in participant_list:
@@ -76,7 +78,7 @@ class Fingerprinter:
 
     @staticmethod
     def generate_fingerprints(
-        participants: list[dict], known_hashes: set[str] | None = None
+        participants: list[dict[str, Any]], known_hashes: set[str] | None = None
     ) -> list[str]:
         """Generates a sorted list of unique fingerprints from a list of participants.
 
@@ -104,7 +106,7 @@ class Fingerprinter:
         return sorted(fingerprints)
 
     @staticmethod
-    def extract_year_to_fingerprints(events: list[dict]) -> dict[str, set[str]]:
+    def extract_year_to_fingerprints(events: list[EventDict]) -> dict[str, set[str]]:
         """Extracts existing fingerprints from a list of events, grouped by year.
 
         Args:

@@ -84,7 +84,7 @@ Run the scraper using the provided bash script:
 - `--start-date YYYY-MM-DD` - Start date for scraping (default: 4 weeks ago)
 - `--end-date YYYY-MM-DD` - End date for scraping (default: Dec 31st of next year)
 - `--output FILE` - Output JSON file path (default: `data/events/mtbo_events.json`)
-- `--source SOURCE` - Specific source to scrape (e.g., `SWE`, `NOR`, `IOF`, `MAN`)
+- `--source SOURCE` - Specific source to scrape (e.g., `SWE`, `NOR`, `IOF`, `MAN`). Can be used multiple times or as a comma-separated list.
 - `--verbose, -v` - Increase logging verbosity (use multiple times: `-v`, `-vv`)
 - `--json-logs` - Output logs in JSON format for machine parsing
 
@@ -102,6 +102,12 @@ Run the scraper using the provided bash script:
 
 # Scrape only IOF source
 ./scrape_now.sh --source IOF
+
+# Scrape multiple sources (multiple flags)
+./scrape_now.sh --source SWE --source NOR
+
+# Scrape multiple sources (comma-separated)
+./scrape_now.sh --source SWE,NOR,IOF
 ```
 
 See [docs/operation.md](docs/operation.md) for detailed usage and scheduling instructions.
