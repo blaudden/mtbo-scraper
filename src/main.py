@@ -191,6 +191,12 @@ def determine_date_range(
     multiple=True,
     help="Fetch specific event(s) by ID (e.g. SWE_5115). Can be repeated.",
 )
+@click.option(
+    "--purge-event-id",
+    "purge_ids",
+    multiple=True,
+    help="Remove event(s) by ID from data and exit. Can be repeated.",
+)
 def main(
     start_date: str | None,
     end_date: str | None,
@@ -203,6 +209,7 @@ def main(
     source_filter: tuple[str, ...],
     shuffle: bool,
     event_ids: tuple[str, ...],
+    purge_ids: tuple[str, ...],
 ) -> None:
     """MTBO Eventor Scraper"""
     # Configure logging based on verbosity
@@ -299,6 +306,15 @@ def main(
     logger.info("date_range_determined", start_date=start_date, end_date=end_date)
 
     storage = Storage(output)
+
+    # Handle purge-event-id: remove events and exit
+    if purge_ids:
+        removed = storage.purge(list(purge_ids))
+        if removed:
+            logger.info("purge_completed", removed=removed)
+        else:
+            logger.warning("purge_no_events_found", requested=list(purge_ids))
+        return
     # Load old events to calculate diff later
     old_events_dict = storage.load()
     old_events = list(old_events_dict.values())
@@ -366,6 +382,9 @@ def main(
     current_pass_events: dict[str, list[Event]] = {}
 
     if event_ids and eventor_sources:
+        # Load existing events from disk to use as stubs
+        existing_map = storage.load()
+
         # Map country code to source
         source_by_country = {s.country: s for s in eventor_sources}
 
@@ -387,18 +406,23 @@ def main(
             if country not in current_pass_events:
                 current_pass_events[country] = []
 
-            # Construct a stub Event to pass to fetch_event_details
-            stub = Event(
-                id=eid,
-                name="",
-                start_time="",
-                end_time="",
-                status="",
-                original_status="",
-                races=[],
-                url=f"/Events/Show/{numeric_id}",
+            # Require existing event from disk (rescrape only)
+            existing = existing_map.get(eid)
+            if not existing:
+                logger.warning(
+                    "event_not_found_locally",
+                    event_id=eid,
+                    message="Use --event-id only for rescraping existing events.",
+                )
+                continue
+
+            stub = Event.from_dict(existing)
+            stub.url = stub.url or f"/Events/Show/{numeric_id}"
+            logger.info(
+                "fetching_event_by_id",
+                event_id=eid,
+                from_disk=True,
             )
-            logger.info("fetching_event_by_id", event_id=eid)
             detailed = source.fetch_event_details(stub)
             if detailed:
                 if is_excluded(detailed):

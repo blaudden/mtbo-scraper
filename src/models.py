@@ -265,6 +265,46 @@ class Race:
     # Internal tracking
     _internal_eventor_id: str | None = None
 
+    @classmethod
+    def from_dict(cls, data: RaceDict) -> "Race":
+        """Creates a Race object from a dictionary."""
+        return cls(
+            race_number=data["race_number"],
+            name=data["name"],
+            datetimez=data["datetimez"],
+            discipline=data["discipline"],
+            night_or_day=data.get("night_or_day"),
+            position=Position(lat=pos["lat"], lng=pos["lng"])
+            if (pos := data.get("position"))
+            else None,
+            areas=[
+                Area(lat=a["lat"], lng=a["lng"], polygon=a.get("polygon"))
+                for a in data.get("areas", [])
+            ],
+            urls=[
+                Url(
+                    type=u["type"],
+                    url=u["url"],
+                    title=u.get("title"),
+                    last_updated_at=u.get("last_updated_at"),
+                )
+                for u in data.get("urls", [])
+            ],
+            documents=[
+                Document(
+                    type=d["type"],
+                    title=d["title"],
+                    url=d["url"],
+                    published_time=d.get("published_time"),
+                )
+                for d in data.get("documents", [])
+            ],
+            entry_counts=data.get("entry_counts"),
+            start_counts=data.get("start_counts"),
+            result_counts=data.get("result_counts"),
+            fingerprints=data.get("fingerprints", []),
+        )
+
 
 @dataclass
 class Event:
@@ -391,6 +431,56 @@ class Event:
                 for d in self.entry_deadlines
             ],
         }
+
+    @classmethod
+    def from_dict(cls, data: EventDict) -> "Event":
+        """Creates an Event object from a dictionary."""
+        return cls(
+            id=data["id"],
+            name=data["name"],
+            start_time=data["start_time"],
+            end_time=data["end_time"],
+            status=data["status"],
+            original_status=data["original_status"],
+            types=data.get("types", []),
+            tags=data.get("tags", []),
+            form=data.get("form"),
+            organisers=[
+                Organiser(name=o["name"], country_code=o.get("country_code"))
+                for o in data.get("organisers", [])
+            ],
+            officials=[
+                Official(role=o["role"], name=o["name"])
+                for o in data.get("officials", [])
+            ],
+            classes=data.get("classes", []),
+            urls=[
+                Url(
+                    type=u["type"],
+                    url=u["url"],
+                    title=u.get("title"),
+                    last_updated_at=u.get("last_updated_at"),
+                )
+                for u in data.get("urls", [])
+            ],
+            documents=[
+                Document(
+                    type=d["type"],
+                    title=d["title"],
+                    url=d["url"],
+                    published_time=d.get("published_time"),
+                )
+                for d in data.get("documents", [])
+            ],
+            information=data.get("information"),
+            region=data.get("region"),
+            punching_system=data.get("punching_system"),
+            races=[Race.from_dict(r) for r in data.get("races", [])],
+            entry_deadlines=[
+                EntryDeadline(type=d["type"], datetimez=d["datetimez"])
+                for d in data.get("entry_deadlines", [])
+            ],
+        )
 
 
 @dataclass

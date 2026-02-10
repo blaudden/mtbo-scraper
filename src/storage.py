@@ -301,6 +301,75 @@ class Storage:
 
         return all_saved_events
 
+    def purge(self, event_ids: list[str]) -> list[str]:
+        """Removes events by ID from partitioned data and updates the index.
+
+        Also deletes associated startlist YAML files.
+
+        Args:
+            event_ids: List of event IDs to remove (e.g. ["SWE_1351"]).
+
+        Returns:
+            List of event IDs that were actually found and removed.
+        """
+        ids_to_remove = set(event_ids)
+        removed: list[str] = []
+        index_data = self._load_index()
+        partitions = index_data.get("partitions", {})
+        now_iso = datetime.now(UTC).isoformat()
+
+        for year, meta in partitions.items():
+            path_str = meta.get("path")
+            if not path_str:
+                continue
+
+            full_path = Path(path_str)
+            if not full_path.exists():
+                continue
+
+            with open(full_path, encoding="utf-8") as f:
+                partition_data = json.load(f)
+
+            events = partition_data.get("events", [])
+            original_count = len(events)
+            filtered = [e for e in events if e.get("id") not in ids_to_remove]
+            purged_ids = [e["id"] for e in events if e.get("id") in ids_to_remove]
+
+            if len(filtered) < original_count:
+                removed.extend(purged_ids)
+                partition_data["events"] = filtered
+                with open(full_path, "w", encoding="utf-8") as f:
+                    json.dump(partition_data, f, indent=2, ensure_ascii=False)
+                    f.write("\n")
+
+                # Update partition metadata
+                partitions[year] = IndexPartitionDict(
+                    path=path_str,
+                    count=len(filtered),
+                    last_updated_at=now_iso,
+                )
+                logger.info(
+                    "events_purged",
+                    year=year,
+                    purged=purged_ids,
+                    remaining=len(filtered),
+                )
+
+        # Delete associated startlist YAML files
+        for eid in removed:
+            for yaml_dir in self.default_data_dir.rglob(f"{eid}_startlist_*.yaml"):
+                yaml_dir.unlink()
+                logger.info("startlist_deleted", path=str(yaml_dir))
+
+        # Update index
+        index_data["partitions"] = partitions
+        index_data["last_scraped_at"] = now_iso
+        with open(self.index_file, "w", encoding="utf-8") as f:
+            json.dump(index_data, f, indent=2, ensure_ascii=False)
+            f.write("\n")
+
+        return removed
+
     def _process_event_timestamps(
         self, event: Event, existing_event: EventDict | None
     ) -> None:

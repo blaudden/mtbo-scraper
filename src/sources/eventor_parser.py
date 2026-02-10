@@ -530,20 +530,33 @@ class EventorParser:
                 path = path.split("://", 1)[1].split("/", 1)[1]
             elif path.startswith("/"):
                 path = path.lstrip("/")
-            event.urls.append(Url(type="Path", url=path))
+
+            # Check for existing Path URL to avoid duplication
+            path_url = Url(type="Path", url=path)
+            if not any(u.type == "Path" and u.url == path for u in event.urls):
+                event.urls.append(path_url)
 
         # 2. Info Text
         event.information = self._extract_info_text(content_root)
 
         # 3. Contacts / Officials
         officials, web_urls = self._extract_officials_and_urls(content_root)
-        event.officials.extend(officials)
-        event.urls.extend(web_urls)
+        # Overwrite officials as the detail page is authoritative
+        event.officials = officials
+
+        # Merge web_urls avoiding duplicates
+        for w_url in web_urls:
+            if not any(
+                existing.url == w_url.url and existing.type == w_url.type
+                for existing in event.urls
+            ):
+                event.urls.append(w_url)
 
         # 4. Classes
         event.classes = self._extract_classes_list(content_root)
 
         # 5. Documents
+        # Overwrite documents as the detail page is authoritative
         event.documents = self._extract_documents_list(content_root, base_url)
 
         # 6. Races extraction
