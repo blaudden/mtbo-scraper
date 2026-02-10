@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "last_scraped_at": "2026-02-10T20:15:52.539674+00:00",
+  "last_scraped_at": "2026-02-10T21:03:02.960325+00:00",
   "data_root": "data/events",
   "partitions": {
     "2010": {
@@ -15,8 +15,8 @@
     },
     "2025": {
       "path": "data/events/2025/events.json",
-      "count": 140,
-      "last_updated_at": "2026-02-09T21:16:28.614716+00:00"
+      "count": 139,
+      "last_updated_at": "2026-02-10T21:03:02.960325+00:00"
     },
     "2026": {
       "path": "data/events/2026/events.json",
