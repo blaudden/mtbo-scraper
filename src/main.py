@@ -10,6 +10,7 @@ from typing import Literal, TypedDict
 import click
 import structlog
 
+from src.event_filter import is_excluded
 from src.models import Event
 from src.scraper import Scraper
 from src.sources.eventor_source import EventorSource
@@ -184,6 +185,12 @@ def determine_date_range(
     default=True,
     help="Shuffle chunks and events (default: True)",
 )
+@click.option(
+    "--event-id",
+    "event_ids",
+    multiple=True,
+    help="Fetch specific event(s) by ID (e.g. SWE_5115). Can be repeated.",
+)
 def main(
     start_date: str | None,
     end_date: str | None,
@@ -195,6 +202,7 @@ def main(
     mode: str,
     source_filter: tuple[str, ...],
     shuffle: bool,
+    event_ids: tuple[str, ...],
 ) -> None:
     """MTBO Eventor Scraper"""
     # Configure logging based on verbosity
@@ -352,12 +360,68 @@ def main(
             source_dir=MANUAL_EVENTS_DIR,
         )
     else:
-        # If no manual events run, new_events is just the old state (re-loaded/saved)
-        # or we can just initialize it with current state
         new_events = list(storage.load().values())
 
-    # 2. Process Eventor Sources in year-aligned segments
-    if eventor_sources:
+    # 2. Fetch specific events by ID (skip date-range listing)
+    current_pass_events: dict[str, list[Event]] = {}
+
+    if event_ids and eventor_sources:
+        # Map country code to source
+        source_by_country = {s.country: s for s in eventor_sources}
+
+        for eid in event_ids:
+            parts = eid.split("_", 1)
+            if len(parts) != 2:
+                logger.error("invalid_event_id", event_id=eid)
+                continue
+            country, numeric_id = parts
+            source = source_by_country.get(country)
+            if not source:
+                logger.error(
+                    "no_source_for_event_id",
+                    event_id=eid,
+                    country=country,
+                )
+                continue
+
+            if country not in current_pass_events:
+                current_pass_events[country] = []
+
+            # Construct a stub Event to pass to fetch_event_details
+            stub = Event(
+                id=eid,
+                name="",
+                start_time="",
+                end_time="",
+                status="",
+                original_status="",
+                races=[],
+                url=f"/Events/Show/{numeric_id}",
+            )
+            logger.info("fetching_event_by_id", event_id=eid)
+            detailed = source.fetch_event_details(stub)
+            if detailed:
+                if is_excluded(detailed):
+                    logger.info(
+                        "event_excluded",
+                        event_id=detailed.id,
+                        name=detailed.name,
+                    )
+                    continue
+                current_pass_events[country].append(detailed)
+            else:
+                failed_event_ids.append(eid)
+
+        if current_pass_events:
+            new_events = storage.save(current_pass_events)
+            logger.info(
+                "event_id_fetch_completed",
+                fetched=sum(len(v) for v in current_pass_events.values()),
+                failed=len(failed_event_ids),
+            )
+
+    # 3. Process Eventor Sources by date range (normal mode)
+    elif eventor_sources:
         # Split the total range into year segments
         year_segments = list(split_range_by_year(start_date, end_date))
         total_segments = len(year_segments)
@@ -371,7 +435,7 @@ def main(
                 random.shuffle(chunks)
 
             # Accumulator for this segment/year
-            current_pass_events: dict[str, list[Event]] = {}
+            current_pass_events = {}
 
             total_chunks = len(chunks)
             for i, (chunk_start, chunk_end) in enumerate(chunks):
@@ -419,6 +483,13 @@ def main(
 
                             detailed_event = source.fetch_event_details(event)
                             if detailed_event:
+                                if is_excluded(detailed_event):
+                                    logger.info(
+                                        "event_excluded",
+                                        event_id=detailed_event.id,
+                                        name=detailed_event.name,
+                                    )
+                                    continue
                                 current_pass_events[source.country].append(
                                     detailed_event
                                 )
@@ -450,15 +521,15 @@ def main(
             else:
                 logger.info("year_segment_completed_no_events", year=segment_year_str)
 
-    logger.info("scraping_completed")
+        logger.info("scraping_completed")
 
-    if failed_event_ids:
-        logger.warning(
-            "scraping_failures_summary",
-            count=len(failed_event_ids),
-            failed_ids=failed_event_ids[:50],  # Limit to first 50 for logging
-            more_hidden=len(failed_event_ids) > 50,
-        )
+        if failed_event_ids:
+            logger.warning(
+                "scraping_failures_summary",
+                count=len(failed_event_ids),
+                failed_ids=failed_event_ids[:50],
+                more_hidden=len(failed_event_ids) > 50,
+            )
 
     # Calculate stats and write commit message
     sources_used = [c["country"] for c in active_configs] if source_filter else None

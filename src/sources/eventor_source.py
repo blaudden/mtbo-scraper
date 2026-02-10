@@ -4,6 +4,7 @@ from typing import TypedDict
 
 import structlog
 
+from src.event_filter import OringenFilter
 from src.models import Event, Race, Url
 from src.scraper import Scraper
 from src.sources.base_source import BaseSource
@@ -133,15 +134,36 @@ class EventorSource(BaseSource):
             race.result_counts = counts
 
     def _generate_race_fingerprints(
-        self, race: Race, lists: list[list[Participant]]
+        self,
+        race: Race,
+        lists: list[list[Participant]],
+        allowed_classes: set[str] | None = None,
     ) -> None:
-        """Generates fingerprints for the race based on participant lists."""
+        """Generates fingerprints for the race based on participant lists.
+
+        Args:
+            race: The race to update.
+            lists: Participant lists (entries, starts, results).
+            allowed_classes: If provided, only fingerprint participants
+                whose class_name is in this set.
+        """
         from src.utils.fingerprint import Fingerprinter
 
         if not lists:
             return
 
         unique_participants = Fingerprinter.merge_participants(lists)
+
+        # Filter to allowed classes (e.g. MTBO only for O-Ringen)
+        if allowed_classes is not None:
+            unique_participants = [
+                p
+                for p in unique_participants
+                if p.get("class_name", "") in allowed_classes
+            ]
+
+        if not unique_participants:
+            return
 
         # Use known fingerprints for the current year if available
         year = race.datetimez[:4]
@@ -261,9 +283,16 @@ class EventorSource(BaseSource):
                 return False
         return True
 
-    def fetch_and_process_lists(self, event: Event) -> None:
+    def fetch_and_process_lists(
+        self, event: Event, allowed_classes: set[str] | None = None
+    ) -> None:
         """Fetches Start/Result/Entry lists, updates counts, fingerprints,
         and saves YAML.
+
+        Args:
+            event: The event to process.
+            allowed_classes: If provided, only fingerprint participants
+                whose class_name is in this set (used for O-Ringen filtering).
         """
         # Determine if we should save Start Lists to YAML
         save_yaml = self._should_download_start_list(event)
@@ -319,7 +348,9 @@ class EventorSource(BaseSource):
                 # 3. Fingerprinting (SWE and NOR)
                 if self.country in ("SWE", "NOR"):
                     valid_lists = [lst for lst in [entries, starts, results] if lst]
-                    self._generate_race_fingerprints(race, valid_lists)
+                    self._generate_race_fingerprints(
+                        race, valid_lists, allowed_classes=allowed_classes
+                    )
 
             # 4. Save Start List YAML for this race
             if save_yaml and starts:
@@ -369,8 +400,14 @@ class EventorSource(BaseSource):
                         event.end_time = max(race_dates).split("T")[0]
 
                 # Fetch and parse lists for each race
+                # Step 1: Filter O-Ringen umbrella classes before
+                # counts/fingerprints so participants are scoped correctly.
+                of = OringenFilter(event)
+                of.filter_classes()
                 # Fetch and process lists (counts, fingerprints, YAML)
-                self.fetch_and_process_lists(event)
+                self.fetch_and_process_lists(event, allowed_classes=of.allowed_classes)
+                # Step 2: Filter counts and add tags.
+                of.finalize()
 
                 return event
             except Exception as e:
