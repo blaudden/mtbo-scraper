@@ -132,7 +132,7 @@
       "id": "IOF_8961",
       "name": "European MTB Orienteering Championships 2027",
       "start_time": "2027-05-04",
-      "end_time": "2027-05-04",
+      "end_time": "2027-05-09",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -176,14 +176,59 @@
       "races": [
         {
           "race_number": 1,
-          "name": "European MTB Orienteering Championships 2027",
-          "datetimez": "2027-05-04T00:00:00+00:00",
-          "discipline": "Other",
+          "name": "Sprint",
+          "datetimez": "2027-05-06T10:00:00+02:00",
+          "discipline": "Sprint",
           "night_or_day": null,
           "position": {
             "lat": 50.2031462924644,
             "lng": 15.8950961485978
           },
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        },
+        {
+          "race_number": 2,
+          "name": "Middle",
+          "datetimez": "2027-05-07T10:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        },
+        {
+          "race_number": 3,
+          "name": "Long",
+          "datetimez": "2027-05-08T10:00:00+02:00",
+          "discipline": "Long",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        },
+        {
+          "race_number": 4,
+          "name": "Relay",
+          "datetimez": "2027-05-09T10:00:00+02:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
           "areas": [],
           "urls": [],
           "documents": [],
@@ -264,7 +309,7 @@
       "id": "IOF_8963",
       "name": "MTB Orienteering World Cup round 3 and U23 World MTB Orienteering Championships 2027",
       "start_time": "2027-09-20",
-      "end_time": "2027-09-20",
+      "end_time": "2027-09-25",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -296,14 +341,170 @@
       "races": [
         {
           "race_number": 1,
-          "name": "MTB Orienteering World Cup round 3 and U23 World MTB Orienteering Championships 2027",
-          "datetimez": "2027-09-20T00:00:00+00:00",
-          "discipline": "Other",
+          "name": "Middle",
+          "datetimez": "2027-09-23T09:00:00+01:00",
+          "discipline": "Middle",
           "night_or_day": null,
           "position": {
             "lat": 38.0147445418679,
             "lng": -8.69490295144451
           },
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        },
+        {
+          "race_number": 2,
+          "name": "Mass start",
+          "datetimez": "2027-09-24T09:00:00+01:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        },
+        {
+          "race_number": 3,
+          "name": "Sprint",
+          "datetimez": "2027-09-25T09:00:00+01:00",
+          "discipline": "Sprint",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_8972",
+      "name": "World Masters MTB Orienteering Championships 2027",
+      "start_time": "2027-09-22",
+      "end_time": "2027-09-25",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Masters"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Portugal",
+          "country_code": "PRT"
+        }
+      ],
+      "officials": [],
+      "classes": [
+        "M35",
+        "M40",
+        "M45",
+        "M50",
+        "M55",
+        "M60",
+        "M65",
+        "M70",
+        "M75",
+        "M80",
+        "M85",
+        "W35",
+        "W40",
+        "W45",
+        "W50",
+        "W55",
+        "W60",
+        "W65",
+        "W70",
+        "W75",
+        "W80",
+        "W85"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/8972",
+          "title": null,
+          "last_updated_at": "2026-02-11T17:44:13.739229+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": null,
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Mass start",
+          "datetimez": "2027-09-22T10:00:00+01:00",
+          "discipline": "Other",
+          "night_or_day": "day",
+          "position": null,
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Entry?eventId=8972",
+              "title": "Enter",
+              "last_updated_at": "2026-02-11T17:44:13.739235+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        },
+        {
+          "race_number": 2,
+          "name": "Middle",
+          "datetimez": "2027-09-23T10:00:00+01:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        },
+        {
+          "race_number": 3,
+          "name": "Long",
+          "datetimez": "2027-09-24T10:00:00+01:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        },
+        {
+          "race_number": 4,
+          "name": "Sprint",
+          "datetimez": "2027-09-25T10:00:00+01:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "position": null,
           "areas": [],
           "urls": [],
           "documents": [],
