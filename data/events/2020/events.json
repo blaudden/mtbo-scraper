@@ -22064,7 +22064,8 @@
       "tags": [
         "FootO",
         "SkiO",
-        "TrailO"
+        "TrailO",
+        "EVENT_SKIP"
       ],
       "form": "Individual",
       "organisers": [
