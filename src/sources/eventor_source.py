@@ -233,7 +233,7 @@ class EventorSource(BaseSource):
             local_url_obj = Url(
                 type="LocalStartList",
                 url=filepath,
-                last_updated_at=now_iso,
+                last_updated_at=now_iso if changed else None,
             )
             race.urls.append(local_url_obj)
         elif changed:
