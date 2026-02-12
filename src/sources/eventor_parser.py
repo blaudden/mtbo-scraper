@@ -568,6 +568,9 @@ class EventorParser:
             base_url,
         )
 
+        # 6.5 Derive Dates (must happen after races)
+        self._derive_event_dates(event, attributes)
+
         # 7. Service Links
         self._assign_service_links(content_root, event, base_url)
 
@@ -693,8 +696,8 @@ class EventorParser:
                     if th and td:
                         key = th.get_text(strip=True)
                         value = td.get_text(separator="\n", strip=True)
-                        # Skip Event and Date rows as they are standard headers
-                        if key not in ["Event", "Date"]:
+                        # Skip Event as it is a standard header
+                        if key not in ["Event"]:
                             attributes[key] = value
 
         return attributes
@@ -819,6 +822,55 @@ class EventorParser:
 
         # Parse discipline tags
         event.tags = self._parse_disciplines(attributes)
+
+    def _derive_event_dates(self, event: Event, attributes: dict[str, str]) -> None:
+        """Derives event start and end dates from races or the Date attribute.
+
+        Strategy 1: Derive from races (most accurate for multi-day events).
+        Strategy 2: Fallback to Date attribute.
+        """
+        # Strategy 1: Derive from races
+        race_dates = []
+        for race in event.races:
+            if race.datetimez:
+                # datetimez is ISO (YYYY-MM-DD...)
+                # We just want the date part
+                race_dates.append(race.datetimez.split("T")[0])
+
+        if race_dates:
+            event.start_time = min(race_dates)
+            event.end_time = max(race_dates)
+        else:
+            # Strategy 2: Fallback to Date attribute (detail page is source of truth)
+            date_str = attributes.get("Date")
+            if date_str:
+                if " - " in date_str:
+                    # Handle range: "Monday 21 July 2025 - Saturday 26 July 2025"
+                    parts = date_str.split(" - ")
+                    if len(parts) == 2:
+                        start_part, end_part = parts
+                        # Clean and parse start
+                        clean_start, _, _ = extract_time_from_date(start_part)
+                        iso_start = parse_date_to_iso(clean_start)
+
+                        # Clean and parse end
+                        clean_end, _, _ = extract_time_from_date(end_part)
+                        iso_end = parse_date_to_iso(clean_end)
+
+                        if iso_start != clean_start and iso_end != clean_end:
+                            event.start_time = iso_start
+                            event.end_time = iso_end
+                else:
+                    # Handle single date
+                    # Clean up (remove time, etc.)
+                    clean_date, _, _ = extract_time_from_date(date_str)
+                    # Parse to ISO
+                    iso_date = parse_date_to_iso(clean_date)
+                    if (
+                        iso_date != clean_date
+                    ):  # If parsing changed something (succesful parse)
+                        event.start_time = iso_date
+                        event.end_time = iso_date
 
     def _extract_info_text(self, soup: Tag) -> str | None:
         """Extracts the main information text from the event page.
@@ -1079,8 +1131,8 @@ class EventorParser:
             else Race(
                 race_number=1,
                 name=event.name,
-                datetimez=event.start_time,
-                discipline="Other",
+                datetimez="",  # Empty to allow date derivation fallback
+                discipline="MTBO",
             )
         )
 

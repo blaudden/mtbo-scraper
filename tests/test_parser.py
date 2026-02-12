@@ -331,8 +331,8 @@ def test_iof_venue_timezone(parser: EventorParser) -> None:
 
     updated_event = parser.parse_event_details(html, event)
 
-    # start_time (2026-08-25) should remain a plain date
-    assert updated_event.start_time == "2026-08-25"
+    # start_time (2026-08-26) derived from race date
+    assert updated_event.start_time == "2026-08-26"
 
     # Race date (2026-08-26 10:00) -> 2026-08-26T10:00:00+02:00 (extracted from UTC+2)
     assert updated_event.races[0].datetimez == "2026-08-26T10:00:00+02:00"
