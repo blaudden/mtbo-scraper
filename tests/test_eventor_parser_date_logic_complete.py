@@ -23,11 +23,11 @@ class TestDateDerivationLogic:
             races=[],
         )
 
-    def test_case_1_races_present_take_precedence(
+    def test_case_1_date_attribute_takes_precedence(
         self, parser: EventorParser, base_event: Event
     ) -> None:
-        """Case 1: Races are present. Min/Max of race dates should be used."""
-        # Setup races with specific dates
+        """Case 1: Both races and Date attribute present. Date attribute wins."""
+        # Setup races with specific dates (e.g. June)
         races = [
             Race(
                 race_number=1,
@@ -41,22 +41,17 @@ class TestDateDerivationLogic:
                 datetimez="2026-06-03T10:00:00",
                 discipline="Long",
             ),
-            Race(
-                race_number=3,
-                name="R3",
-                datetimez="2026-06-05T10:00:00",
-                discipline="Sprint",
-            ),
         ]
         base_event.races = races
 
-        # Attributes might even have a conflicting date, races should win
+        # Attribute says January (e.g. training camp + races later?)
+        # User wants Attribute to win.
         attributes = {"Date": "Sunday 1 January 2026"}
 
         parser._derive_event_dates(base_event, attributes)
 
-        assert base_event.start_time == "2026-06-01"
-        assert base_event.end_time == "2026-06-05"
+        assert base_event.start_time == "2026-01-01"
+        assert base_event.end_time == "2026-01-01"
 
     def test_case_2_no_races_date_range(
         self, parser: EventorParser, base_event: Event
