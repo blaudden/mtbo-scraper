@@ -406,7 +406,7 @@ class Scraper:
                 if attempt == 0 and domain in self._browser_cookies_obtained:
                     # Double check it's not a challenge before logging success
                     if not self._is_managed_challenge(response):
-                        logger.info("cookie_reuse_bypass_successful", domain=domain)
+                        logger.debug("cookie_reuse_bypass_successful", domain=domain)
 
                 response.raise_for_status()
                 return cast(Response, response)
