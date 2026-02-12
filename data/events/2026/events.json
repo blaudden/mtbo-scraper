@@ -23,7 +23,7 @@
     {
       "id": "IOF_8277",
       "name": "World MTB Orienteering Championships 2026 and CX80 World Cup",
-      "start_time": "2026-08-26",
+      "start_time": "2026-08-25",
       "end_time": "2026-08-30",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -620,7 +620,7 @@
     {
       "id": "IOF_8278",
       "name": "Junior World MTB Orienteering Championships 2026",
-      "start_time": "2026-08-26",
+      "start_time": "2026-08-25",
       "end_time": "2026-08-30",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -1236,7 +1236,7 @@
     {
       "id": "IOF_8557",
       "name": "CX80 World Cup Round 2 in MTB Orienteering and European MTB Orienteering Championships 2026",
-      "start_time": "2026-05-25",
+      "start_time": "2026-05-24",
       "end_time": "2026-05-28",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -1397,7 +1397,7 @@
     {
       "id": "IOF_8558",
       "name": "European Junior and Youth MTB Orienteering Championships 2026",
-      "start_time": "2026-05-25",
+      "start_time": "2026-05-24",
       "end_time": "2026-05-28",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -1558,7 +1558,7 @@
     {
       "id": "IOF_8614",
       "name": "CX80 World Cup Round 1 in MTB Orienteering and U23 World MTB Orienteering Championships 2026",
-      "start_time": "2026-05-01",
+      "start_time": "2026-04-30",
       "end_time": "2026-05-03",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -1878,7 +1878,7 @@
     {
       "id": "IOF_8805",
       "name": "MTBO Spring days 2026 - Mass start",
-      "start_time": "2026-04-17",
+      "start_time": "2026-04-18",
       "end_time": "2026-04-17",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -2019,7 +2019,7 @@
     {
       "id": "IOF_8806",
       "name": "MTBO Spring days 2026 - Sprint",
-      "start_time": "2026-04-18",
+      "start_time": "2026-04-19",
       "end_time": "2026-04-18",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -2354,7 +2354,7 @@
     {
       "id": "IOF_8884",
       "name": "Australian MTBO Long Distance Championships",
-      "start_time": "2026-10-10",
+      "start_time": "2026-10-11",
       "end_time": "2026-10-10",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -2457,7 +2457,7 @@
     {
       "id": "IOF_8885",
       "name": "Australian MTBO Middle Distance Championships",
-      "start_time": "2026-10-09",
+      "start_time": "2026-10-10",
       "end_time": "2026-10-09",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -2900,7 +2900,7 @@
     {
       "id": "IOF_8915",
       "name": "Coppa Italia Middle",
-      "start_time": "2026-09-25",
+      "start_time": "2026-09-26",
       "end_time": "2026-09-25",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -2964,7 +2964,7 @@
     {
       "id": "IOF_8916",
       "name": "Coppa Italia Long",
-      "start_time": "2026-09-26",
+      "start_time": "2026-09-27",
       "end_time": "2026-09-26",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -4050,7 +4050,7 @@
     {
       "id": "SWE_53809",
       "name": "MTBO, DM, lång, Blekinge+Skåne+Småland",
-      "start_time": "2026-09-18",
+      "start_time": "2026-09-19",
       "end_time": "2026-09-18",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -4122,7 +4122,7 @@
     {
       "id": "SWE_53810",
       "name": "MTBO, DM, medel, Blekinge+Skåne+Småland",
-      "start_time": "2026-09-19",
+      "start_time": "2026-09-20",
       "end_time": "2026-09-19",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -4194,7 +4194,7 @@
     {
       "id": "SWE_54359",
       "name": "MTBO, Svenska cupen, #1, sprint + Haningeträffen",
-      "start_time": "2026-05-08",
+      "start_time": "2026-05-09",
       "end_time": "2026-05-08",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -4326,7 +4326,7 @@
     {
       "id": "SWE_54361",
       "name": "MTBO, Svenska cupen, #2, lång + Haningeträffen",
-      "start_time": "2026-05-09",
+      "start_time": "2026-05-10",
       "end_time": "2026-05-09",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -4454,7 +4454,7 @@
     {
       "id": "SWE_56226",
       "name": "MTBO, Publiktävling VM, lång",
-      "start_time": "2026-08-27",
+      "start_time": "2026-08-28",
       "end_time": "2026-08-27",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -4532,7 +4532,7 @@
     {
       "id": "SWE_56227",
       "name": "MTBO, Publiktävling VM, medel",
-      "start_time": "2026-08-28",
+      "start_time": "2026-08-29",
       "end_time": "2026-08-28",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -4610,7 +4610,7 @@
     {
       "id": "SWE_56228",
       "name": "MTBO, Publiktävling VM, sprint",
-      "start_time": "2026-08-29",
+      "start_time": "2026-08-30",
       "end_time": "2026-08-29",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -4688,7 +4688,7 @@
     {
       "id": "SWE_57105",
       "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #3, medel",
-      "start_time": "2026-08-14",
+      "start_time": "2026-08-15",
       "end_time": "2026-08-14",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -4939,7 +4939,7 @@
     {
       "id": "SWE_57106",
       "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #4, sprint",
-      "start_time": "2026-08-14",
+      "start_time": "2026-08-15",
       "end_time": "2026-08-14",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -5194,7 +5194,7 @@
     {
       "id": "SWE_57107",
       "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #5, lång",
-      "start_time": "2026-08-15",
+      "start_time": "2026-08-16",
       "end_time": "2026-08-15",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -5477,7 +5477,7 @@
     {
       "id": "SWE_57406",
       "name": "Skånepremiären MTBO",
-      "start_time": "2026-03-06",
+      "start_time": "2026-03-07",
       "end_time": "2026-03-06",
       "status": "Sanctioned",
       "original_status": "Active",

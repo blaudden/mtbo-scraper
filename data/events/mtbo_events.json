@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "last_scraped_at": "2026-02-12T18:43:53.401013+00:00",
+  "last_scraped_at": "2026-02-12T19:02:39.387886+00:00",
   "data_root": "data/events",
   "partitions": {
     "2010": {
@@ -21,12 +21,12 @@
     "2026": {
       "path": "data/events/2026/events.json",
       "count": 31,
-      "last_updated_at": "2026-02-12T18:42:42.234230+00:00"
+      "last_updated_at": "2026-02-12T19:01:11.014003+00:00"
     },
     "2027": {
       "path": "data/events/2027/events.json",
       "count": 8,
-      "last_updated_at": "2026-02-12T18:43:53.401013+00:00"
+      "last_updated_at": "2026-02-12T19:02:39.387886+00:00"
     },
     "2012": {
       "path": "data/events/2012/events.json",
@@ -97,7 +97,7 @@
   "sources": {
     "IOF": {
       "count": 416,
-      "last_updated_at": "2026-02-12T18:43:53.401013+00:00"
+      "last_updated_at": "2026-02-12T19:02:39.387886+00:00"
     },
     "MAN": {
       "count": 2,
@@ -105,7 +105,7 @@
     },
     "SWE": {
       "count": 1172,
-      "last_updated_at": "2026-02-12T18:42:42.234230+00:00"
+      "last_updated_at": "2026-02-12T19:02:39.387886+00:00"
     },
     "NOR": {
       "count": 78,
