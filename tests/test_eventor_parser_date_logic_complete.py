@@ -48,7 +48,7 @@ class TestDateDerivationLogic:
         # User wants Attribute to win.
         attributes = {"Date": "Sunday 1 January 2026"}
 
-        parser._derive_event_dates(base_event, attributes)
+        parser._derive_event_dates(base_event, attributes, "IOF")
 
         assert base_event.start_time == "2026-01-01"
         assert base_event.end_time == "2026-01-01"
@@ -60,7 +60,7 @@ class TestDateDerivationLogic:
         base_event.races = []
         attributes = {"Date": "Monday 21 July 2025 - Saturday 26 July 2025"}
 
-        parser._derive_event_dates(base_event, attributes)
+        parser._derive_event_dates(base_event, attributes, "IOF")
 
         assert base_event.start_time == "2025-07-21"
         assert base_event.end_time == "2025-07-26"
@@ -72,7 +72,7 @@ class TestDateDerivationLogic:
         base_event.races = []
         attributes = {"Date": "Sunday 10 May 2026"}
 
-        parser._derive_event_dates(base_event, attributes)
+        parser._derive_event_dates(base_event, attributes, "IOF")
 
         assert base_event.start_time == "2026-05-10"
         assert base_event.end_time == "2026-05-10"
@@ -88,7 +88,7 @@ class TestDateDerivationLogic:
         base_event.start_time = "ORIGINAL_START"
         base_event.end_time = "ORIGINAL_END"
 
-        parser._derive_event_dates(base_event, attributes)
+        parser._derive_event_dates(base_event, attributes, "IOF")
 
         assert base_event.start_time == "ORIGINAL_START"
         assert base_event.end_time == "ORIGINAL_END"
@@ -103,7 +103,7 @@ class TestDateDerivationLogic:
         base_event.races = races
         attributes = {"Date": "Wednesday 12 August 2026"}
 
-        parser._derive_event_dates(base_event, attributes)
+        parser._derive_event_dates(base_event, attributes, "IOF")
 
         # Races were empty of valid dates, so fallback logic applies
         assert base_event.start_time == "2026-08-12"

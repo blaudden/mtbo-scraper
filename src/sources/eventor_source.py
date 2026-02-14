@@ -390,15 +390,6 @@ class EventorSource(BaseSource):
                 event.start_time = parse_date_to_iso(event.start_time)
                 event.end_time = parse_date_to_iso(event.end_time)
 
-                # For multi-day events, calculate end_date from last race
-                if event.races and len(event.races) > 0:
-                    # Find the latest race date
-                    race_dates = [r.datetimez for r in event.races if r.datetimez]
-                    if race_dates:
-                        # Dates are already in ISO format from parsing
-                        # But event level end_time should be a plain date
-                        event.end_time = max(race_dates).split("T")[0]
-
                 # Fetch and parse lists for each race
                 # Step 1: Filter O-Ringen umbrella classes before
                 # counts/fingerprints so participants are scoped correctly.

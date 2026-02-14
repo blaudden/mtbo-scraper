@@ -569,7 +569,8 @@ class EventorParser:
         )
 
         # 6.5 Derive Dates (must happen after races)
-        self._derive_event_dates(event, attributes)
+        # 6.5 Derive Dates (must happen after races)
+        self._derive_event_dates(event, attributes, venue_country)
 
         # 7. Service Links
         self._assign_service_links(content_root, event, base_url)
@@ -823,53 +824,62 @@ class EventorParser:
         # Parse discipline tags
         event.tags = self._parse_disciplines(attributes)
 
-    def _derive_event_dates(self, event: Event, attributes: dict[str, str]) -> None:
-        """Derives event start and end dates from races or the Date attribute.
+    def _derive_event_dates(
+        self, event: Event, attributes: dict[str, str], venue_country: str
+    ) -> None:
+        """Derives event start and end dates from the 'Date' attribute or race dates.
 
-        Strategy 1: Derive from races (most accurate for multi-day events).
-        Strategy 2: Fallback to Date attribute.
+        The 'Date' attribute is prioritized as the source of truth. If it provides a
+        valid date or range, it is used to set the event's start and end times.
+        Additionally, if the event has a single race with no specified date, the derived
+        event start date is backfilled to the race.
+
+        If the 'Date' attribute is missing or invalid, dates are derived from the
+        earliest and latest race dates available.
         """
-        # Strategy 1: "Date" attribute (detail page is source of truth)
-        # Events often have non-race days (training) listed in the date range.
+        # Prioritize the "Date" attribute as the source of truth for the event duration.
         date_str = attributes.get("Date")
         if date_str:
+            dates_derived = False
             if " - " in date_str:
-                # Handle range: "Monday 21 July 2025 - Saturday 26 July 2025"
+                # Parse date range (e.g., "Monday 21 July 2025 - Saturday 26 July 2025")
                 parts = date_str.split(" - ")
                 if len(parts) == 2:
                     start_part, end_part = parts
-                    # Clean and parse start
                     clean_start, _, _ = extract_time_from_date(start_part)
                     iso_start = parse_date_to_iso(clean_start)
 
-                    # Clean and parse end
                     clean_end, _, _ = extract_time_from_date(end_part)
                     iso_end = parse_date_to_iso(clean_end)
 
                     if iso_start != clean_start and iso_end != clean_end:
                         event.start_time = iso_start
                         event.end_time = iso_end
-                        return
-            else:
-                # Handle single date
-                # Clean up (remove time, etc.)
+                        dates_derived = True
+
+            if not dates_derived:
+                # Fallback to single date if range parsing failed or wasn't applicable
                 clean_date, _, _ = extract_time_from_date(date_str)
-                # Parse to ISO
                 iso_date = parse_date_to_iso(clean_date)
 
-                if (
-                    iso_date != clean_date
-                ):  # If parsing changed something (succesful parse)
+                if iso_date != clean_date:
                     event.start_time = iso_date
                     event.end_time = iso_date
-                    return
+                    dates_derived = True
 
-        # Strategy 2: Derive from races (Fallback)
+            # If the event date was successfully derived and there is exactly one race
+            # without a specified date, assume the race occurs on the event start date.
+            if dates_derived:
+                if len(event.races) == 1 and not event.races[0].datetimez:
+                    event.races[0].datetimez = format_iso_datetime(
+                        event.start_time, None, venue_country
+                    )
+                return
+
+        # Fallback: derive event dates from the range of race dates if available.
         race_dates = []
         for race in event.races:
             if race.datetimez:
-                # datetimez is ISO (YYYY-MM-DD...)
-                # We just want the date part
                 race_dates.append(race.datetimez.split("T")[0])
 
         if race_dates:
@@ -1135,7 +1145,7 @@ class EventorParser:
             else Race(
                 race_number=1,
                 name=event.name,
-                datetimez="",  # Empty to allow date derivation fallback
+                datetimez="",  # Populated by _derive_event_dates fallback
                 discipline="MTBO",
             )
         )
