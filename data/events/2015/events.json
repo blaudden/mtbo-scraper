@@ -23,8 +23,8 @@
     {
       "id": "IOF_4817",
       "name": "5days MTBO Plzen 2015",
-      "start_time": "2015-07-03",
-      "end_time": "2015-07-03",
+      "start_time": "2015-07-04",
+      "end_time": "2015-07-04",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -125,8 +125,8 @@
     {
       "id": "IOF_4818",
       "name": "5days MTBO Plzen 2015",
-      "start_time": "2015-07-04",
-      "end_time": "2015-07-04",
+      "start_time": "2015-07-05",
+      "end_time": "2015-07-05",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -745,8 +745,8 @@
     {
       "id": "IOF_4823",
       "name": "Costa Alentejana MTBO Trophy",
-      "start_time": "2015-05-29",
-      "end_time": "2015-05-29",
+      "start_time": "2015-05-30",
+      "end_time": "2015-05-30",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -850,8 +850,8 @@
     {
       "id": "IOF_4824",
       "name": "Costa Alentejana MTBO Trophy",
-      "start_time": "2015-05-30",
-      "end_time": "2015-05-30",
+      "start_time": "2015-05-31",
+      "end_time": "2015-05-31",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1231,7 +1231,7 @@
     {
       "id": "IOF_4840",
       "name": "MTB Orienteering World Cup 2015 Round 1",
-      "start_time": "2015-04-30",
+      "start_time": "2015-05-01",
       "end_time": "2015-05-03",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -1439,8 +1439,8 @@
     {
       "id": "IOF_4843",
       "name": "Russian Cup",
-      "start_time": "2015-05-08",
-      "end_time": "2015-05-08",
+      "start_time": "2015-05-09",
+      "end_time": "2015-05-09",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1555,8 +1555,8 @@
     {
       "id": "IOF_4844",
       "name": "Russian Cup",
-      "start_time": "2015-05-09",
-      "end_time": "2015-05-09",
+      "start_time": "2015-05-10",
+      "end_time": "2015-05-10",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1671,8 +1671,8 @@
     {
       "id": "IOF_4849",
       "name": "Junior World MTB Orienteering Championships 2015",
-      "start_time": "2015-08-13",
-      "end_time": "2015-08-22",
+      "start_time": "2015-08-14",
+      "end_time": "2015-08-23",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1895,8 +1895,8 @@
     {
       "id": "IOF_4854",
       "name": "European MTB Orienteering Championships 2015 and World Cup 2015 Round 2",
-      "start_time": "2015-06-07",
-      "end_time": "2015-06-13",
+      "start_time": "2015-06-08",
+      "end_time": "2015-06-14",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2127,8 +2127,8 @@
     {
       "id": "IOF_4858",
       "name": "World MTB Orienteering Championships 2015 and World Cup 2015 Round 3",
-      "start_time": "2015-08-13",
-      "end_time": "2015-08-22",
+      "start_time": "2015-08-14",
+      "end_time": "2015-08-23",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2394,8 +2394,8 @@
     {
       "id": "IOF_4869",
       "name": "Trimtex MTBO Cup",
-      "start_time": "2015-09-18",
-      "end_time": "2015-09-18",
+      "start_time": "2015-09-19",
+      "end_time": "2015-09-19",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2513,8 +2513,8 @@
     {
       "id": "IOF_4870",
       "name": "Trimtex MTBO Cup",
-      "start_time": "2015-09-19",
-      "end_time": "2015-09-19",
+      "start_time": "2015-09-20",
+      "end_time": "2015-09-20",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -3556,8 +3556,8 @@
     {
       "id": "NOR_6014",
       "name": "O-troll leir",
-      "start_time": "2015-09-17",
-      "end_time": "2015-09-17",
+      "start_time": "2015-09-18",
+      "end_time": "2015-09-19",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -4280,8 +4280,8 @@
     {
       "id": "SWE_11141",
       "name": "MTBO, Trollhättan, sprint",
-      "start_time": "2015-05-22",
-      "end_time": "2015-05-22",
+      "start_time": "2015-05-23",
+      "end_time": "2015-05-23",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -4572,8 +4572,8 @@
     {
       "id": "SWE_11142",
       "name": "MTBO Trollhättan Medel",
-      "start_time": "2015-05-23",
-      "end_time": "2015-05-23",
+      "start_time": "2015-05-24",
+      "end_time": "2015-05-24",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -4897,8 +4897,8 @@
     {
       "id": "SWE_11307",
       "name": "MTBO Svenska Cupen",
-      "start_time": "2015-05-30",
-      "end_time": "2015-05-30",
+      "start_time": "2015-05-31",
+      "end_time": "2015-05-31",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -5220,8 +5220,8 @@
     {
       "id": "SWE_11327",
       "name": "Svenska Cupen MTB-O",
-      "start_time": "2015-05-29",
-      "end_time": "2015-05-29",
+      "start_time": "2015-05-30",
+      "end_time": "2015-05-30",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -6031,8 +6031,8 @@
     {
       "id": "SWE_11488",
       "name": "Kanonstafetten",
-      "start_time": "2015-09-18",
-      "end_time": "2015-09-18",
+      "start_time": "2015-09-19",
+      "end_time": "2015-09-19",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -7422,8 +7422,8 @@
     {
       "id": "SWE_11867",
       "name": "MtbO, SM, lång",
-      "start_time": "2015-09-04",
-      "end_time": "2015-09-04",
+      "start_time": "2015-09-05",
+      "end_time": "2015-09-05",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -7783,8 +7783,8 @@
     {
       "id": "SWE_11868",
       "name": "MtbO, SM, medel",
-      "start_time": "2015-09-05",
-      "end_time": "2015-09-05",
+      "start_time": "2015-09-06",
+      "end_time": "2015-09-06",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -9121,8 +9121,8 @@
     {
       "id": "SWE_12438",
       "name": "ABCD-cupen Söders",
-      "start_time": "2015-05-31",
-      "end_time": "2015-05-31",
+      "start_time": "2015-06-01",
+      "end_time": "2015-06-01",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -10154,8 +10154,8 @@
     {
       "id": "SWE_12578",
       "name": "MTBO Dalaserien HJS Vansbro",
-      "start_time": "2015-04-27",
-      "end_time": "2015-04-27",
+      "start_time": "2015-04-28",
+      "end_time": "2015-04-28",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -10236,8 +10236,8 @@
     {
       "id": "SWE_12595",
       "name": "MTBO Dalaserien, Kvarnsveden",
-      "start_time": "2015-09-15",
-      "end_time": "2015-09-15",
+      "start_time": "2015-09-16",
+      "end_time": "2015-09-16",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -11662,8 +11662,8 @@
     {
       "id": "SWE_13534",
       "name": "MTBO Medel Trollhättan",
-      "start_time": "2015-09-15",
-      "end_time": "2015-09-15",
+      "start_time": "2015-09-16",
+      "end_time": "2015-09-16",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -11942,8 +11942,8 @@
     {
       "id": "SWE_13550",
       "name": "MtbO, Ultra Lång samt prolog",
-      "start_time": "2015-10-16",
-      "end_time": "2015-10-16",
+      "start_time": "2015-10-17",
+      "end_time": "2015-10-17",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -12437,8 +12437,8 @@
     {
       "id": "SWE_13682",
       "name": "MtbO, Rodhenloppet, natt",
-      "start_time": "2015-10-30",
-      "end_time": "2015-10-30",
+      "start_time": "2015-10-31",
+      "end_time": "2015-10-31",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -12601,8 +12601,8 @@
     {
       "id": "SWE_13751",
       "name": "Haninge MTBO",
-      "start_time": "2015-10-23",
-      "end_time": "2015-10-23",
+      "start_time": "2015-10-24",
+      "end_time": "2015-10-24",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -13251,8 +13251,8 @@
     {
       "id": "SWE_13971",
       "name": "Dalaoffensiven 2015",
-      "start_time": "2015-11-28",
-      "end_time": "2015-11-28",
+      "start_time": "2015-11-29",
+      "end_time": "2015-11-29",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
