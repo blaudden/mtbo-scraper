@@ -2301,7 +2301,7 @@
       "id": "IOF_8272",
       "name": "IV International Trophy MURCIA COSTA CÁLIDA MTBO LONG DISTANCE",
       "start_time": "2025-05-03",
-      "end_time": "2025-05-02",
+      "end_time": "2025-05-03",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2406,7 +2406,7 @@
       "id": "IOF_8273",
       "name": "IV International Trophy MURCIA COSTA CÁLIDA MTBO SPRINT",
       "start_time": "2025-05-04",
-      "end_time": "2025-05-03",
+      "end_time": "2025-05-04",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2511,7 +2511,7 @@
       "id": "IOF_8346",
       "name": "Championnat de France Mass Start",
       "start_time": "2025-04-21",
-      "end_time": "2025-04-20",
+      "end_time": "2025-04-21",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2639,7 +2639,7 @@
       "id": "IOF_8347",
       "name": "Nationale Moyenne Distance",
       "start_time": "2025-04-19",
-      "end_time": "2025-04-18",
+      "end_time": "2025-04-19",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2860,7 +2860,7 @@
       "id": "IOF_8391",
       "name": "Polish Championships",
       "start_time": "2025-04-12",
-      "end_time": "2025-04-11",
+      "end_time": "2025-04-12",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2982,7 +2982,7 @@
       "id": "IOF_8392",
       "name": "Polish Championships",
       "start_time": "2025-04-13",
-      "end_time": "2025-04-12",
+      "end_time": "2025-04-13",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -3104,7 +3104,7 @@
       "id": "IOF_8393",
       "name": "Mazovia MTBO’25",
       "start_time": "2025-06-19",
-      "end_time": "2025-06-18",
+      "end_time": "2025-06-19",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -3222,7 +3222,7 @@
       "id": "IOF_8394",
       "name": "Mazovia MTBO’25",
       "start_time": "2025-06-20",
-      "end_time": "2025-06-19",
+      "end_time": "2025-06-20",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -3340,7 +3340,7 @@
       "id": "IOF_8395",
       "name": "Mazovia MTBO’25",
       "start_time": "2025-06-22",
-      "end_time": "2025-06-21",
+      "end_time": "2025-06-22",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -3458,7 +3458,7 @@
       "id": "IOF_8442",
       "name": "MTBO5days 2025 - stage 3",
       "start_time": "2025-07-04",
-      "end_time": "2025-07-03",
+      "end_time": "2025-07-04",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -3569,7 +3569,7 @@
       "id": "IOF_8443",
       "name": "MTBO5days 2025 - stage 4",
       "start_time": "2025-07-05",
-      "end_time": "2025-07-04",
+      "end_time": "2025-07-05",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -3680,7 +3680,7 @@
       "id": "IOF_8473",
       "name": "Estonian and Baltic MTBO championships in long distance",
       "start_time": "2025-07-13",
-      "end_time": "2025-07-12",
+      "end_time": "2025-07-13",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -4362,7 +4362,7 @@
       "id": "NOR_21169",
       "name": "Modum MtbO Festival",
       "start_time": "2025-07-12",
-      "end_time": "2025-07-11",
+      "end_time": "2025-07-12",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -4498,7 +4498,7 @@
       "id": "NOR_21170",
       "name": "Modum MtbO Festival",
       "start_time": "2025-07-13",
-      "end_time": "2025-07-12",
+      "end_time": "2025-07-13",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -9508,7 +9508,7 @@
       "id": "SWE_50558",
       "name": "MTBO, O-helg i Jokkmokk, dag 1, sprint",
       "start_time": "2025-06-27",
-      "end_time": "2025-06-26",
+      "end_time": "2025-06-27",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -9783,7 +9783,7 @@
       "id": "SWE_50560",
       "name": "MTBO, O-helg i Jokkmokk, dag 2, medel",
       "start_time": "2025-06-28",
-      "end_time": "2025-06-27",
+      "end_time": "2025-06-28",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -11129,7 +11129,7 @@
       "id": "SWE_51273",
       "name": "MTBO, Svenska cupen, #5, lång + Camp Glasriket + DM, lång, Småland",
       "start_time": "2025-05-29",
-      "end_time": "2025-05-28",
+      "end_time": "2025-05-29",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -11746,7 +11746,7 @@
       "id": "SWE_51274",
       "name": "MTBO, Svenska cupen, #6, sprint + Camp Glasriket  + DM, sprint, Småland",
       "start_time": "2025-05-30",
-      "end_time": "2025-05-29",
+      "end_time": "2025-05-30",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -12378,7 +12378,7 @@
       "id": "SWE_51275",
       "name": "MTBO, Camp Glasriket, ultralång",
       "start_time": "2025-05-31",
-      "end_time": "2025-05-30",
+      "end_time": "2025-05-31",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -12828,7 +12828,7 @@
       "id": "SWE_51276",
       "name": "MTBO, Camp Glasriket, medel + DM, medel, Småland",
       "start_time": "2025-06-01",
-      "end_time": "2025-05-31",
+      "end_time": "2025-06-01",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -14025,7 +14025,7 @@
       "id": "SWE_51338",
       "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #10, lång",
       "start_time": "2025-08-30",
-      "end_time": "2025-08-29",
+      "end_time": "2025-08-30",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -14617,7 +14617,7 @@
       "id": "SWE_51339",
       "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #11, medel",
       "start_time": "2025-08-31",
-      "end_time": "2025-08-30",
+      "end_time": "2025-08-31",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -16565,7 +16565,7 @@
       "id": "SWE_51561",
       "name": "MTBO, Svenska cupen, #4, sprint",
       "start_time": "2025-05-25",
-      "end_time": "2025-05-24",
+      "end_time": "2025-05-25",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -17672,7 +17672,7 @@
       "id": "SWE_52620",
       "name": "MTBO Blekingecup",
       "start_time": "2025-04-21",
-      "end_time": "2025-04-20",
+      "end_time": "2025-04-21",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -17924,7 +17924,7 @@
       "id": "SWE_52671",
       "name": "Åshöjdenloppet MTBO och KM Lunds OK",
       "start_time": "2025-10-19",
-      "end_time": "2025-10-18",
+      "end_time": "2025-10-19",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -18624,11 +18624,11 @@
         },
         {
           "role": "Contact persons",
-          "name": "Pia Redin Lindholm"
+          "name": "Pia Lindholm"
         },
         {
           "role": "Event director",
-          "name": "Pia Redin Lindholm"
+          "name": "Pia Lindholm"
         },
         {
           "role": "Course setter",
@@ -19559,7 +19559,7 @@
       "id": "SWE_53092",
       "name": "MTBO Falun / Borlänge Lång",
       "start_time": "2025-08-16",
-      "end_time": "2025-08-15",
+      "end_time": "2025-08-16",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -20492,7 +20492,7 @@
       "id": "SWE_53309",
       "name": "MTBO-träning",
       "start_time": "2025-04-06",
-      "end_time": "2025-04-05",
+      "end_time": "2025-04-06",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -21441,7 +21441,7 @@
       "id": "SWE_53933",
       "name": "OK Kåre MTBO träning #2",
       "start_time": "2025-04-09",
-      "end_time": "2025-04-08",
+      "end_time": "2025-04-09",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -21593,7 +21593,7 @@
       "id": "SWE_53935",
       "name": "OK Kåre MTBO träning #4",
       "start_time": "2025-04-23",
-      "end_time": "2025-04-22",
+      "end_time": "2025-04-23",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -21671,7 +21671,7 @@
       "id": "SWE_53937",
       "name": "OK Kåre MTBO träning #5",
       "start_time": "2025-05-14",
-      "end_time": "2025-05-13",
+      "end_time": "2025-05-14",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -22686,7 +22686,7 @@
       "id": "SWE_53962",
       "name": "MTBO Ö-viksserien #7 och Natt-KM",
       "start_time": "2025-10-01",
-      "end_time": "2025-09-30",
+      "end_time": "2025-10-01",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -23258,7 +23258,7 @@
       "id": "SWE_54081",
       "name": "Värmlandserien MTBO #1",
       "start_time": "2025-05-19",
-      "end_time": "2025-05-18",
+      "end_time": "2025-05-19",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -23402,7 +23402,7 @@
       "id": "SWE_54093",
       "name": "Närträning för MTBO  Smålandskusten",
       "start_time": "2025-05-08",
-      "end_time": "2025-05-07",
+      "end_time": "2025-05-08",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -24490,7 +24490,7 @@
       "id": "SWE_54640",
       "name": "MTBO Östgötaserien",
       "start_time": "2025-08-13",
-      "end_time": "2025-08-12",
+      "end_time": "2025-08-13",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -27205,7 +27205,7 @@
       "id": "SWE_55332",
       "name": "Veckans bana v31 MTBO",
       "start_time": "2025-07-30",
-      "end_time": "2025-07-30",
+      "end_time": "2025-08-03",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -28006,7 +28006,7 @@
       "id": "SWE_55423",
       "name": "Värmlandsserien mtbo 5",
       "start_time": "2025-08-25",
-      "end_time": "2025-08-24",
+      "end_time": "2025-08-25",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -28168,7 +28168,7 @@
       "id": "SWE_55460",
       "name": "MTBO Östgötaserien",
       "start_time": "2025-09-29",
-      "end_time": "2025-09-28",
+      "end_time": "2025-09-29",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -29288,7 +29288,7 @@
       "id": "SWE_55739",
       "name": "MTBO-Träning",
       "start_time": "2025-08-26",
-      "end_time": "2025-08-25",
+      "end_time": "2025-08-26",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
