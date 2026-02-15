@@ -12,7 +12,7 @@ import structlog
 
 from src.event_filter import is_excluded
 from src.html_cache import HtmlCache
-from src.models import Event
+from src.models import Event, EventDict
 from src.scraper import Scraper
 from src.sources.eventor_source import EventorSource
 from src.sources.manual_source import ManualSource
@@ -103,6 +103,41 @@ def split_range_by_year(start_date: str, end_date: str) -> Iterator[tuple[str, s
 
         # Prepare for next iteration
         current = segment_end + timedelta(days=1)
+
+
+def _get_local_events(
+    events_dict: dict[str, EventDict],
+    country: str,
+    start_date: str,
+    end_date: str,
+) -> list[Event]:
+    """Filter locally stored events by country and date range.
+
+    Used in history mode to avoid fetching event listings from Eventor.
+    Events are matched by country prefix and start_time within the range.
+
+    Args:
+        events_dict: All known events keyed by ID.
+        country: Country code to filter by (e.g. "SWE").
+        start_date: Inclusive start date (YYYY-MM-DD).
+        end_date: Inclusive end date (YYYY-MM-DD).
+
+    Returns:
+        List of Event objects matching the criteria.
+    """
+    prefix = f"{country}_"
+    matched: list[Event] = []
+    for event_id, event_data in events_dict.items():
+        if not event_id.startswith(prefix):
+            continue
+        event_start = event_data.get("start_time", "")
+        if start_date <= event_start <= end_date:
+            event = Event.from_dict(event_data)
+            # Reconstruct the detail URL from the numeric ID
+            numeric_id = event_id.split("_", 1)[1]
+            event.url = f"/Events/Show/{numeric_id}"
+            matched.append(event)
+    return matched
 
 
 def determine_date_range(
@@ -198,6 +233,13 @@ def determine_date_range(
     multiple=True,
     help="Remove event(s) by ID from data and exit. Can be repeated.",
 )
+@click.option(
+    "--fetch-listing/--no-fetch-listing",
+    "fetch_listing",
+    default=None,
+    help="Force fetch/skip event listings from Eventor. "
+    "Default: auto (skip in history mode).",
+)
 def main(
     start_date: str | None,
     end_date: str | None,
@@ -211,6 +253,7 @@ def main(
     shuffle: bool,
     event_ids: tuple[str, ...],
     purge_ids: tuple[str, ...],
+    fetch_listing: bool | None,
 ) -> None:
     """MTBO Eventor Scraper"""
     # Configure logging based on verbosity
@@ -330,10 +373,12 @@ def main(
     if start_dt.date() < threshold_date.date():
         delay_range = (5.0, 15.0)
         html_cache: HtmlCache | None = HtmlCache()
+        use_local_listing = fetch_listing is not True
         logger.info(
             "history_mode_detected",
             delay="5-15s",
             cache_enabled=True,
+            local_listing=use_local_listing,
             reason="start_date_older_than_4_weeks",
             start_date=start_date,
             threshold=threshold_date.strftime("%Y-%m-%d"),
@@ -341,7 +386,13 @@ def main(
     else:
         delay_range = (1.0, 3.0)
         html_cache = None
-        logger.info("standard_mode_detected", delay="1-3s", start_date=start_date)
+        use_local_listing = fetch_listing is False
+        logger.info(
+            "standard_mode_detected",
+            delay="1-3s",
+            local_listing=use_local_listing,
+            start_date=start_date,
+        )
 
     # Initialize Scraper
     scraper = Scraper(
@@ -485,7 +536,23 @@ def main(
 
                     try:
                         # 1. Fetch List for this chunk
-                        events = source.fetch_event_list(chunk_start, chunk_end)
+                        if use_local_listing:
+                            # Use local events as list for this chunk
+                            events = _get_local_events(
+                                old_events_dict,
+                                source.country,
+                                chunk_start,
+                                chunk_end,
+                            )
+                            logger.info(
+                                "local_listing_used",
+                                country=source.country,
+                                count=len(events),
+                                chunk=f"{chunk_start} to {chunk_end}",
+                            )
+                        else:
+                            # Fetch events from Eventor
+                            events = source.fetch_event_list(chunk_start, chunk_end)
                         total_events = len(events)
 
                         if total_events == 0:
@@ -536,8 +603,8 @@ def main(
                         )
                         continue
 
-                # Sleep between chunks
-                if i < len(chunks) - 1:
+                # Sleep between chunks, unless using local listing
+                if i < len(chunks) - 1 and not use_local_listing:
                     sleep_sec = 5
                     logger.info("sleeping_between_chunks", seconds=sleep_sec)
                     time.sleep(sleep_sec)
