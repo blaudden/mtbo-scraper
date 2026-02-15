@@ -23,7 +23,7 @@
     {
       "id": "IOF_5192",
       "name": "World MTB Orienteering Championships & World Cup 2 & Junior World MTB Orienteering Championship",
-      "start_time": "2018-08-04",
+      "start_time": "2018-08-05",
       "end_time": "2018-08-12",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -295,7 +295,7 @@
     {
       "id": "IOF_5528",
       "name": "European MTB Orienteering Championships and World Cup Round 1",
-      "start_time": "2018-06-26",
+      "start_time": "2018-06-27",
       "end_time": "2018-07-01",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -510,7 +510,7 @@
     {
       "id": "IOF_5529",
       "name": "MTB Orienteering World Cup Round 3",
-      "start_time": "2018-09-20",
+      "start_time": "2018-09-21",
       "end_time": "2018-09-23",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -712,7 +712,7 @@
     {
       "id": "IOF_5689",
       "name": "European Junior MTB Orienteering Championships",
-      "start_time": "2018-06-26",
+      "start_time": "2018-06-27",
       "end_time": "2018-07-01",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -959,7 +959,7 @@
     {
       "id": "IOF_5718",
       "name": "European Youth MTB Orienteering Championships",
-      "start_time": "2018-08-04",
+      "start_time": "2018-08-05",
       "end_time": "2018-08-12",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -1117,8 +1117,8 @@
     {
       "id": "IOF_5826",
       "name": "MTBO Sprint Italian Campionship & WRE",
-      "start_time": "2018-04-06",
-      "end_time": "2018-04-06",
+      "start_time": "2018-04-07",
+      "end_time": "2018-04-07",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1237,8 +1237,8 @@
     {
       "id": "IOF_5827",
       "name": "First Round MTBO Italian Cup - Middle",
-      "start_time": "2018-04-07",
-      "end_time": "2018-04-07",
+      "start_time": "2018-04-08",
+      "end_time": "2018-04-08",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1353,8 +1353,8 @@
     {
       "id": "IOF_5857",
       "name": "BOM MTBO WRE 2018 - Long",
-      "start_time": "2018-09-14",
-      "end_time": "2018-09-14",
+      "start_time": "2018-09-15",
+      "end_time": "2018-09-15",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1487,8 +1487,8 @@
     {
       "id": "IOF_5858",
       "name": "BOM MTBO WRE 2018 - Middle",
-      "start_time": "2018-09-15",
-      "end_time": "2018-09-15",
+      "start_time": "2018-09-16",
+      "end_time": "2018-09-16",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1613,8 +1613,8 @@
     {
       "id": "IOF_5926",
       "name": "Latvia MTBO 3-days / Baltic Championships 2018",
-      "start_time": "2018-06-07",
-      "end_time": "2018-06-07",
+      "start_time": "2018-06-08",
+      "end_time": "2018-06-08",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1735,8 +1735,8 @@
     {
       "id": "IOF_5927",
       "name": "Latvia MTBO 3-days / Baltic Championships 2018",
-      "start_time": "2018-06-08",
-      "end_time": "2018-06-08",
+      "start_time": "2018-06-09",
+      "end_time": "2018-06-09",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2085,8 +2085,8 @@
     {
       "id": "IOF_5939",
       "name": "Czech Championships - sprint",
-      "start_time": "2018-06-01",
-      "end_time": "2018-06-01",
+      "start_time": "2018-06-02",
+      "end_time": "2018-06-02",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2197,8 +2197,8 @@
     {
       "id": "IOF_5940",
       "name": "Czech Cup - middle distance",
-      "start_time": "2018-06-02",
-      "end_time": "2018-06-02",
+      "start_time": "2018-06-03",
+      "end_time": "2018-06-03",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2301,8 +2301,8 @@
     {
       "id": "IOF_5962",
       "name": "World Masters MTB Orienteering Championships 2018",
-      "start_time": "2018-06-26",
-      "end_time": "2018-06-30",
+      "start_time": "2018-06-27",
+      "end_time": "2018-07-01",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2594,8 +2594,8 @@
     {
       "id": "IOF_5963",
       "name": "World Masters MTB Orienteering unofficial relay",
-      "start_time": "2018-06-30",
-      "end_time": "2018-06-30",
+      "start_time": "2018-07-01",
+      "end_time": "2018-07-01",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2737,8 +2737,8 @@
     {
       "id": "IOF_5978",
       "name": "Danish Mountainbike orienteering championships Long distance",
-      "start_time": "2018-06-15",
-      "end_time": "2018-06-15",
+      "start_time": "2018-06-16",
+      "end_time": "2018-06-16",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2825,8 +2825,8 @@
     {
       "id": "IOF_5979",
       "name": "Danish Mountainbike orienteering championships Middle distance",
-      "start_time": "2018-06-16",
-      "end_time": "2018-06-16",
+      "start_time": "2018-06-17",
+      "end_time": "2018-06-17",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -3939,8 +3939,8 @@
     {
       "id": "SWE_20035",
       "name": "MtbO, DM, medel, Värmland",
-      "start_time": "2018-06-16",
-      "end_time": "2018-06-16",
+      "start_time": "2018-06-17",
+      "end_time": "2018-06-17",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -4173,7 +4173,7 @@
     {
       "id": "SWE_20111",
       "name": "O-Ringen Höga Kusten",
-      "start_time": "2018-07-21",
+      "start_time": "2018-07-22",
       "end_time": "2018-07-27",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -4673,8 +4673,8 @@
     {
       "id": "SWE_20232",
       "name": "MtbO, Leksands orienteringssöndag",
-      "start_time": "2018-08-04",
-      "end_time": "2018-08-04",
+      "start_time": "2018-08-05",
+      "end_time": "2018-08-05",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -4961,8 +4961,8 @@
     {
       "id": "SWE_20484",
       "name": "MtbO, USM/JSM/SM/VSM, Svenska Cupen, #3, sprint",
-      "start_time": "2018-06-07",
-      "end_time": "2018-06-07",
+      "start_time": "2018-06-08",
+      "end_time": "2018-06-08",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -5476,8 +5476,8 @@
     {
       "id": "SWE_20485",
       "name": "MtbO, USM/JSM/SM/VSM, Svenska Cupen, #4, lång",
-      "start_time": "2018-06-08",
-      "end_time": "2018-06-08",
+      "start_time": "2018-06-09",
+      "end_time": "2018-06-09",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -6051,8 +6051,8 @@
     {
       "id": "SWE_20486",
       "name": "MtbO, USM/JSM/SM/VSM, Svenska Cupen, #5, medel",
-      "start_time": "2018-06-09",
-      "end_time": "2018-06-09",
+      "start_time": "2018-06-10",
+      "end_time": "2018-06-10",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -7367,8 +7367,8 @@
     {
       "id": "SWE_20728",
       "name": "Värmlandsserien MTBO deltävling 1",
-      "start_time": "2018-05-06",
-      "end_time": "2018-05-06",
+      "start_time": "2018-05-07",
+      "end_time": "2018-05-07",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -7514,8 +7514,8 @@
     {
       "id": "SWE_20732",
       "name": "MtbO, Svenska Cupen, #9, sprint",
-      "start_time": "2018-08-31",
-      "end_time": "2018-08-31",
+      "start_time": "2018-09-01",
+      "end_time": "2018-09-01",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -7885,8 +7885,8 @@
     {
       "id": "SWE_20733",
       "name": "MtbO, Svenska Cupen, #10, masstart, final",
-      "start_time": "2018-09-01",
-      "end_time": "2018-09-01",
+      "start_time": "2018-09-02",
+      "end_time": "2018-09-02",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -8753,8 +8753,8 @@
     {
       "id": "SWE_20875",
       "name": "MtbO, Kvarnsveden, MTBO-touren Dalarna, medel",
-      "start_time": "2018-06-05",
-      "end_time": "2018-06-05",
+      "start_time": "2018-06-06",
+      "end_time": "2018-06-06",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -9035,8 +9035,8 @@
     {
       "id": "SWE_20876",
       "name": "MtbO, Kvarnsveden, MTBO-touren Dalarna, teknikträning",
-      "start_time": "2018-06-06",
-      "end_time": "2018-06-06",
+      "start_time": "2018-06-07",
+      "end_time": "2018-06-07",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -9830,8 +9830,8 @@
     {
       "id": "SWE_21060",
       "name": "Östhammars cykeläventyr",
-      "start_time": "2018-05-25",
-      "end_time": "2018-05-25",
+      "start_time": "2018-05-26",
+      "end_time": "2018-05-26",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -11768,8 +11768,8 @@
     {
       "id": "SWE_21733",
       "name": "MTBO-cupen 1",
-      "start_time": "2018-04-24",
-      "end_time": "2018-04-24",
+      "start_time": "2018-04-25",
+      "end_time": "2018-04-25",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -11838,8 +11838,8 @@
     {
       "id": "SWE_21734",
       "name": "MTBO-cupen 5",
-      "start_time": "2018-08-28",
-      "end_time": "2018-08-28",
+      "start_time": "2018-08-29",
+      "end_time": "2018-08-29",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -11975,8 +11975,8 @@
     {
       "id": "SWE_21735",
       "name": "MTBO-cupen 6",
-      "start_time": "2018-09-11",
-      "end_time": "2018-09-11",
+      "start_time": "2018-09-12",
+      "end_time": "2018-09-12",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -13163,8 +13163,8 @@
     {
       "id": "SWE_22164",
       "name": "MTBO, Golden Weekend, Sprint",
-      "start_time": "2018-08-17",
-      "end_time": "2018-08-17",
+      "start_time": "2018-08-18",
+      "end_time": "2018-08-18",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -13313,8 +13313,8 @@
     {
       "id": "SWE_22307",
       "name": "Östgötaserien i MTBO deltävling 1",
-      "start_time": "2018-05-13",
-      "end_time": "2018-05-13",
+      "start_time": "2018-05-14",
+      "end_time": "2018-05-14",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -15421,8 +15421,8 @@
     {
       "id": "SWE_22903",
       "name": "Kristinehamns OK Träningsbana MTBO",
-      "start_time": "2018-06-15",
-      "end_time": "2018-06-15",
+      "start_time": "2018-06-16",
+      "end_time": "2018-06-16",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -15488,7 +15488,7 @@
     {
       "id": "SWE_22907",
       "name": "O-Ringen Höga Kusten, MTBO",
-      "start_time": "2018-07-21",
+      "start_time": "2018-07-22",
       "end_time": "2018-07-27",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -18841,8 +18841,8 @@
     {
       "id": "SWE_23115",
       "name": "Prova på MtbO, O-Ringen Höga Kusten",
-      "start_time": "2018-07-23",
-      "end_time": "2018-07-23",
+      "start_time": "2018-07-24",
+      "end_time": "2018-07-24",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
