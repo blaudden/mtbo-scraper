@@ -23,7 +23,7 @@
     {
       "id": "IOF_4861",
       "name": "World MTB Orienteering Championships 2016 and World Cup Round 2",
-      "start_time": "2016-07-23",
+      "start_time": "2016-07-24",
       "end_time": "2016-07-30",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -307,7 +307,7 @@
     {
       "id": "IOF_4862",
       "name": "Junior World MTB orienteering Championships 2016",
-      "start_time": "2016-07-23",
+      "start_time": "2016-07-24",
       "end_time": "2016-07-30",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -577,7 +577,7 @@
     {
       "id": "IOF_5019",
       "name": "European Youth MTB Orienteering Championships",
-      "start_time": "2016-07-23",
+      "start_time": "2016-07-25",
       "end_time": "2016-07-30",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -843,7 +843,7 @@
     {
       "id": "IOF_5116",
       "name": "MTB Orienteering World Cup 2016 Round 1",
-      "start_time": "2016-05-13",
+      "start_time": "2016-05-14",
       "end_time": "2016-05-16",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -1082,7 +1082,7 @@
     {
       "id": "IOF_5117",
       "name": "MTB Orienteering World Cup 2016 Round 3",
-      "start_time": "2016-09-28",
+      "start_time": "2016-09-29",
       "end_time": "2016-10-02",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -2260,8 +2260,8 @@
     {
       "id": "IOF_5275",
       "name": "Latvia MTBO 3-days 2016",
-      "start_time": "2016-06-17",
-      "end_time": "2016-06-17",
+      "start_time": "2016-06-18",
+      "end_time": "2016-06-18",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2362,8 +2362,8 @@
     {
       "id": "IOF_5276",
       "name": "Latvia MTBO 3-days 2016",
-      "start_time": "2016-06-18",
-      "end_time": "2016-06-18",
+      "start_time": "2016-06-19",
+      "end_time": "2016-06-19",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2968,8 +2968,8 @@
     {
       "id": "IOF_5307",
       "name": "RUSSIAN CHAMPIONSHIPS",
-      "start_time": "2016-05-06",
-      "end_time": "2016-05-06",
+      "start_time": "2016-05-07",
+      "end_time": "2016-05-07",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -3072,8 +3072,8 @@
     {
       "id": "IOF_5308",
       "name": "RUSSIAN CHAMPIONSHIPS",
-      "start_time": "2016-05-07",
-      "end_time": "2016-05-07",
+      "start_time": "2016-05-08",
+      "end_time": "2016-05-08",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -3448,7 +3448,7 @@
     {
       "id": "IOF_5440",
       "name": "World Masters MTB Orienteering Championships 2016",
-      "start_time": "2016-09-29",
+      "start_time": "2016-09-30",
       "end_time": "2016-10-02",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -3656,7 +3656,7 @@
     {
       "id": "SWE_13230",
       "name": "MtbO, O-Ringen Sälen 2016",
-      "start_time": "2016-07-24",
+      "start_time": "2016-07-25",
       "end_time": "2016-07-27",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -5936,8 +5936,8 @@
     {
       "id": "SWE_13852",
       "name": "MtbO, Tour de Stockholm, dag 1, Svenska Cupen, #1, sprint - Inställd",
-      "start_time": "2016-05-04",
-      "end_time": "2016-05-04",
+      "start_time": "2016-05-05",
+      "end_time": "2016-05-05",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -6301,8 +6301,8 @@
     {
       "id": "SWE_13854",
       "name": "MtbO, Tour de Stockholm, dag 4, Svenska Cupen, #2, lång",
-      "start_time": "2016-05-07",
-      "end_time": "2016-05-07",
+      "start_time": "2016-05-08",
+      "end_time": "2016-05-08",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -7162,8 +7162,8 @@
     {
       "id": "SWE_13900",
       "name": "MtbO, Grycksbo, sprint",
-      "start_time": "2016-08-30",
-      "end_time": "2016-08-30",
+      "start_time": "2016-08-31",
+      "end_time": "2016-08-31",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -7363,8 +7363,8 @@
     {
       "id": "SWE_13910",
       "name": "MtbO, Tour de Stockholm, dag 3, Svenska Cupen, #1, medel",
-      "start_time": "2016-05-06",
-      "end_time": "2016-05-06",
+      "start_time": "2016-05-07",
+      "end_time": "2016-05-07",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -7735,8 +7735,8 @@
     {
       "id": "SWE_13914",
       "name": "MtbO, Svenska Cupen, #4, lång",
-      "start_time": "2016-05-28",
-      "end_time": "2016-05-28",
+      "start_time": "2016-05-29",
+      "end_time": "2016-05-29",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -8052,8 +8052,8 @@
     {
       "id": "SWE_13915",
       "name": "MtbO, Svenska Cupen, #6, sprint",
-      "start_time": "2016-08-12",
-      "end_time": "2016-08-12",
+      "start_time": "2016-08-13",
+      "end_time": "2016-08-13",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -8382,8 +8382,8 @@
     {
       "id": "SWE_13916",
       "name": "MtbO, USM/JSM/SM/VSM, medel",
-      "start_time": "2016-08-11",
-      "end_time": "2016-08-11",
+      "start_time": "2016-08-12",
+      "end_time": "2016-08-12",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -8774,8 +8774,8 @@
     {
       "id": "SWE_13917",
       "name": "MtbO, USM/JSM/SM/VSM, lång, masstart",
-      "start_time": "2016-08-13",
-      "end_time": "2016-08-13",
+      "start_time": "2016-08-14",
+      "end_time": "2016-08-14",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -11876,8 +11876,8 @@
     {
       "id": "SWE_14033",
       "name": "MtbO, Furubodasprinten (WRE)",
-      "start_time": "2016-04-21",
-      "end_time": "2016-04-21",
+      "start_time": "2016-04-22",
+      "end_time": "2016-04-22",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -12330,8 +12330,8 @@
     {
       "id": "SWE_14034",
       "name": "MtbO, Äspetmedeln (WRE)",
-      "start_time": "2016-04-22",
-      "end_time": "2016-04-22",
+      "start_time": "2016-04-23",
+      "end_time": "2016-04-23",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -13158,8 +13158,8 @@
     {
       "id": "SWE_14321",
       "name": "MtbO, Rodhenloppet",
-      "start_time": "2016-11-04",
-      "end_time": "2016-11-04",
+      "start_time": "2016-11-05",
+      "end_time": "2016-11-05",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -13963,8 +13963,8 @@
     {
       "id": "SWE_14617",
       "name": "MTBO 3",
-      "start_time": "2016-06-14",
-      "end_time": "2016-06-14",
+      "start_time": "2016-06-15",
+      "end_time": "2016-06-15",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -14390,8 +14390,8 @@
     {
       "id": "SWE_14768",
       "name": "MtbO, Köping-Kolsva",
-      "start_time": "2016-09-02",
-      "end_time": "2016-09-02",
+      "start_time": "2016-09-03",
+      "end_time": "2016-09-03",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -14627,8 +14627,8 @@
     {
       "id": "SWE_14823",
       "name": "MtbO, Klåveröds QuattrO",
-      "start_time": "2016-08-13",
-      "end_time": "2016-08-13",
+      "start_time": "2016-08-14",
+      "end_time": "2016-08-14",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -15153,8 +15153,8 @@
     {
       "id": "SWE_14965",
       "name": "MtbO, DM, Västergötland, Medel",
-      "start_time": "2016-06-11",
-      "end_time": "2016-06-11",
+      "start_time": "2016-06-12",
+      "end_time": "2016-06-12",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -15402,8 +15402,8 @@
     {
       "id": "SWE_15135",
       "name": "ABC Cupen",
-      "start_time": "2016-04-12",
-      "end_time": "2016-04-12",
+      "start_time": "2016-04-13",
+      "end_time": "2016-04-13",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -15574,8 +15574,8 @@
     {
       "id": "SWE_15149",
       "name": "ABC Cupen MTBO",
-      "start_time": "2016-04-26",
-      "end_time": "2016-04-26",
+      "start_time": "2016-04-27",
+      "end_time": "2016-04-27",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -17934,8 +17934,8 @@
     {
       "id": "SWE_15660",
       "name": "OK Kontinents MTBO-Träningstävling med Cykeltest",
-      "start_time": "2016-04-24",
-      "end_time": "2016-04-24",
+      "start_time": "2016-04-25",
+      "end_time": "2016-04-25",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
