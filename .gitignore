@@ -19,3 +19,6 @@ venv/
 .vscode/
 # Scraping data
 .cookies.json
+
+# HTML cache
+cache/

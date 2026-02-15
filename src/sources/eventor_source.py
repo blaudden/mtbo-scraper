@@ -99,8 +99,16 @@ class EventorSource(BaseSource):
         logger.info("events_found", count=len(events), country=self.country)
         return events
 
-    def _fetch_race_list_items(self, race: Race, list_type: str) -> list[Participant]:
-        """Fetches and parses a specific list type (Entry/Start/Result) for a race."""
+    def _fetch_race_list_items(
+        self, race: Race, list_type: str, event_id: str | None = None
+    ) -> list[Participant]:
+        """Fetches and parses a specific list type (Entry/Start/Result) for a race.
+
+        Args:
+            race: The race to fetch lists for.
+            list_type: Type of list (EntryList, StartList, ResultList).
+            event_id: Event ID for cache key prefix (optional).
+        """
         url_obj = next((u for u in race.urls if u.type == list_type), None)
         if not url_obj:
             return []
@@ -111,7 +119,14 @@ class EventorSource(BaseSource):
             else url_obj.url
         )
 
-        resp = self.scraper.get(full_url)
+        # Extract year from race date for cache partitioning
+        cache_year = race.datetimez[:4] if race.datetimez else None
+
+        resp = self.scraper.get(
+            full_url,
+            cache_key_prefix=event_id,
+            cache_year=cache_year,
+        )
         if not resp:
             return []
 
@@ -325,12 +340,18 @@ class EventorSource(BaseSource):
                         should_fetch = True  # Fallback to fetch if date parsing fails
 
                 if should_fetch:
-                    starts = self._fetch_race_list_items(race, "StartList")
+                    starts = self._fetch_race_list_items(
+                        race, "StartList", event_id=event.id
+                    )
 
             # Only fetch entry/result lists if we need counts
             if fetch_counts:
-                entries = self._fetch_race_list_items(race, "EntryList")
-                results = self._fetch_race_list_items(race, "ResultList")
+                entries = self._fetch_race_list_items(
+                    race, "EntryList", event_id=event.id
+                )
+                results = self._fetch_race_list_items(
+                    race, "ResultList", event_id=event.id
+                )
 
                 # 2. Update Counts
                 if entries:
@@ -338,7 +359,9 @@ class EventorSource(BaseSource):
                 # Ensure 'starts' are available for counts and fingerprints
                 # (even if YAML generation is skipped for this race).
                 if not starts and fetch_counts:
-                    starts = self._fetch_race_list_items(race, "StartList")
+                    starts = self._fetch_race_list_items(
+                        race, "StartList", event_id=event.id
+                    )
 
                 if starts:
                     self._update_race_counts(race, "StartList", starts)
@@ -379,7 +402,14 @@ class EventorSource(BaseSource):
 
         detail_url = f"{self.base_url}{event.url}"
 
-        detail_response = self.scraper.get(detail_url)
+        # Extract year for cache partitioning
+        cache_year = event.start_time[:4] if event.start_time else None
+
+        detail_response = self.scraper.get(
+            detail_url,
+            cache_key_prefix=event.id,
+            cache_year=cache_year,
+        )
         if detail_response:
             try:
                 event = self.parser.parse_event_details(

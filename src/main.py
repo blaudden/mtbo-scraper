@@ -11,6 +11,7 @@ import click
 import structlog
 
 from src.event_filter import is_excluded
+from src.html_cache import HtmlCache
 from src.models import Event
 from src.scraper import Scraper
 from src.sources.eventor_source import EventorSource
@@ -328,19 +329,25 @@ def main(
 
     if start_dt.date() < threshold_date.date():
         delay_range = (5.0, 15.0)
+        html_cache: HtmlCache | None = HtmlCache()
         logger.info(
             "history_mode_detected",
             delay="5-15s",
+            cache_enabled=True,
             reason="start_date_older_than_4_weeks",
             start_date=start_date,
             threshold=threshold_date.strftime("%Y-%m-%d"),
         )
     else:
         delay_range = (1.0, 3.0)
+        html_cache = None
         logger.info("standard_mode_detected", delay="1-3s", start_date=start_date)
 
     # Initialize Scraper
-    scraper = Scraper(delay_range=delay_range)
+    scraper = Scraper(
+        delay_range=delay_range,
+        html_cache=html_cache,
+    )
 
     # Initialize Sources
     eventor_sources: list[EventorSource] = []

@@ -36,7 +36,9 @@ def test_fingerprint_and_yaml_saving(
     source.scraper = mock_scraper
 
     # Define side effect for get
-    def get_side_effect(url: str, params: dict | None = None) -> MagicMock | None:
+    def get_side_effect(
+        url: str, params: dict | None = None, **kwargs: object
+    ) -> MagicMock | None:
         print(f"Mock GET called with: {url}")
         mock_resp = MagicMock()
         if "events/show/46200" in url.lower():

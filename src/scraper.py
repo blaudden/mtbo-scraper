@@ -4,7 +4,8 @@ import random
 import shutil
 import subprocess
 import time
-from typing import cast
+from dataclasses import dataclass
+from typing import TYPE_CHECKING, cast
 
 import curl_cffi.requests as requests
 import structlog
@@ -12,7 +13,22 @@ from curl_cffi.requests import RequestsError, Response
 
 from src.exceptions import CloudflareError
 
+if TYPE_CHECKING:
+    from src.html_cache import HtmlCache
+
 logger = structlog.get_logger(__name__)
+
+
+@dataclass
+class CachedResponse:
+    """Response-like object for cached HTML."""
+
+    text: str
+    status_code: int = 200
+
+    def raise_for_status(self) -> None:
+        """No-op for cached responses (always successful)."""
+        pass
 
 
 class Scraper:
@@ -23,6 +39,7 @@ class Scraper:
         self,
         delay_range: tuple[float, float] = (1.0, 3.0),
         default_timeout: int = 30,
+        html_cache: "HtmlCache | None" = None,
     ):
         """Initialize the Scraper.
 
@@ -32,6 +49,7 @@ class Scraper:
         Args:
             delay_range: Tuple (min, max) seconds to sleep between requests.
             default_timeout: Default timeout in seconds for requests.
+            html_cache: HtmlCache instance for caching HTML responses.
         """
         # Primary: curl-cffi session with browser impersonation
         self.scraper: requests.Session = requests.Session(impersonate="chrome120")
@@ -39,6 +57,9 @@ class Scraper:
         self.delay_range = delay_range
         self.default_timeout = default_timeout
         self.last_request_time: float = 0.0
+
+        # HTML caching
+        self.html_cache = html_cache
 
         # Track domains where we've obtained browser cookies
         self._browser_cookies_obtained: set[str] = set()
@@ -321,7 +342,9 @@ class Scraper:
         params: dict[str, str] | None = None,
         retries: int = 3,
         timeout: int | None = None,
-    ) -> Response | None:
+        cache_key_prefix: str | None = None,
+        cache_year: str | None = None,
+    ) -> Response | CachedResponse | None:
         """Perform a GET request with rate limiting and retries.
 
         Primary: uses curl-cffi with 'chrome120' impersonation to bypass TLS-based
@@ -334,10 +357,32 @@ class Scraper:
             retries: Number of retries on failure.
             timeout: Timeout in seconds for this request
                      (defaults to self.default_timeout).
+            cache_key_prefix: Event key prefix for cache (e.g. "SWE_5115").
+            cache_year: Year for cache partitioning (e.g. "2024").
 
         Returns:
             Response object or None if failed.
         """
+        # Build full URL for cache lookup
+        full_url = url
+        if params:
+            from urllib.parse import urlencode
+
+            full_url = f"{url}?{urlencode(params)}"
+
+        # Check cache before rate limiting (if enabled)
+        if self.html_cache and cache_key_prefix and cache_year:
+            cached_html = self.html_cache.get(cache_year, cache_key_prefix, full_url)
+            if cached_html:
+                logger.debug(
+                    "cache_hit",
+                    url=url,
+                    prefix=cache_key_prefix,
+                    year=cache_year,
+                )
+                return CachedResponse(text=cached_html)
+
+        # Cache miss or cache disabled - proceed with rate limiting
         self._wait_for_rate_limit()
 
         # Ensure culture parameter is set to en-GB for English content
@@ -409,6 +454,13 @@ class Scraper:
                         logger.debug("cookie_reuse_bypass_successful", domain=domain)
 
                 response.raise_for_status()
+
+                # Save to cache if enabled
+                if self.html_cache and cache_key_prefix and cache_year:
+                    self.html_cache.put(
+                        cache_year, cache_key_prefix, full_url, response.text
+                    )
+
                 return cast(Response, response)
 
             except RequestsError as e:
