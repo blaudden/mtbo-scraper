@@ -23,8 +23,8 @@
     {
       "id": "IOF_6113",
       "name": "World MTB Orienteering Championships 2021 and CX80 MTBO World Cup",
-      "start_time": "2021-06-09",
-      "end_time": "2021-06-17",
+      "start_time": "2021-06-10",
+      "end_time": "2021-06-18",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -300,8 +300,8 @@
     {
       "id": "IOF_6114",
       "name": "Junior World MTB Orienteering Championships 2021",
-      "start_time": "2021-06-09",
-      "end_time": "2021-06-17",
+      "start_time": "2021-06-10",
+      "end_time": "2021-06-18",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -568,8 +568,8 @@
     {
       "id": "IOF_6498",
       "name": "European MTB Orienteering Championships 2021",
-      "start_time": "2021-08-16",
-      "end_time": "2021-08-21",
+      "start_time": "2021-08-17",
+      "end_time": "2021-08-23",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -701,7 +701,7 @@
     {
       "id": "IOF_6503",
       "name": "European Junior and Youth MTB Orienteering Championships 2021",
-      "start_time": "2021-08-16",
+      "start_time": "2021-08-17",
       "end_time": "2021-08-21",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -979,8 +979,8 @@
     {
       "id": "IOF_6942",
       "name": "National competition Middle distance",
-      "start_time": "2021-05-21",
-      "end_time": "2021-05-21",
+      "start_time": "2021-05-22",
+      "end_time": "2021-05-22",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1406,7 +1406,7 @@
     {
       "id": "IOF_7019",
       "name": "European MTB Orienteering Championships & CX80 MTBO World Cup Final",
-      "start_time": "2021-10-06",
+      "start_time": "2021-10-07",
       "end_time": "2021-10-10",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -1641,8 +1641,8 @@
     {
       "id": "IOF_7028",
       "name": "Balaton MTBO Long",
-      "start_time": "2021-05-08",
-      "end_time": "2021-05-08",
+      "start_time": "2021-05-09",
+      "end_time": "2021-05-09",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1729,8 +1729,8 @@
     {
       "id": "IOF_7029",
       "name": "Balaton MTBO Middle",
-      "start_time": "2021-05-07",
-      "end_time": "2021-05-07",
+      "start_time": "2021-05-08",
+      "end_time": "2021-05-08",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1817,8 +1817,8 @@
     {
       "id": "IOF_7086",
       "name": "MTBO 5 Days, 4th stage - middle",
-      "start_time": "2021-07-04",
-      "end_time": "2021-07-04",
+      "start_time": "2021-07-05",
+      "end_time": "2021-07-05",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1918,8 +1918,8 @@
     {
       "id": "IOF_7087",
       "name": "MTBO 5 Days, 3rd stage - long",
-      "start_time": "2021-07-03",
-      "end_time": "2021-07-03",
+      "start_time": "2021-07-04",
+      "end_time": "2021-07-04",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2026,8 +2026,8 @@
     {
       "id": "IOF_7109",
       "name": "Austrian MTBOdays 2021 – Sprint",
-      "start_time": "2021-07-09",
-      "end_time": "2021-07-09",
+      "start_time": "2021-07-10",
+      "end_time": "2021-07-10",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2152,8 +2152,8 @@
     {
       "id": "IOF_7110",
       "name": "Austrian MTBOdays 2021 – Long",
-      "start_time": "2021-07-10",
-      "end_time": "2021-07-10",
+      "start_time": "2021-07-11",
+      "end_time": "2021-07-11",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2278,8 +2278,8 @@
     {
       "id": "IOF_7146",
       "name": "Shtraklevo Cup",
-      "start_time": "2021-09-18",
-      "end_time": "2021-09-18",
+      "start_time": "2021-09-19",
+      "end_time": "2021-09-19",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2404,8 +2404,8 @@
     {
       "id": "IOF_7147",
       "name": "Popovo Cup",
-      "start_time": "2021-09-17",
-      "end_time": "2021-09-17",
+      "start_time": "2021-09-18",
+      "end_time": "2021-09-18",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2892,8 +2892,8 @@
     {
       "id": "IOF_7209",
       "name": "Coppa Italia MTBO - Sprint",
-      "start_time": "2021-09-11",
-      "end_time": "2021-09-11",
+      "start_time": "2021-09-12",
+      "end_time": "2021-09-12",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2986,8 +2986,8 @@
     {
       "id": "IOF_7210",
       "name": "Campionato Italiano MTBO Long",
-      "start_time": "2021-09-10",
-      "end_time": "2021-09-10",
+      "start_time": "2021-09-11",
+      "end_time": "2021-09-11",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -3080,7 +3080,7 @@
     {
       "id": "IOF_7222",
       "name": "European Junior and Youth MTB Orienteering Championships 2021",
-      "start_time": "2021-10-05",
+      "start_time": "2021-10-06",
       "end_time": "2021-10-10",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -3554,7 +3554,7 @@
           "published_time": null
         }
       ],
-      "information": "Har du ikke prøvd sykkelorientering, så er dette en god mulighet for deg å prøve i en av B, C eller N løypene, da disse er beregnet for de som ikke har så mye orienteringserfaring. Det er også egen klasse for El-sykkel.\nIntersport Brandbu selger også kartstativer for 800 kr, send gjerne en forhåndsbestilling til Hanne Kvåle: hanne.kvale@g-sport-brandbu.no. For å være sikret levering av kartstativer på løpsdagen, så må hun ha bestilling i løpet av mandag 27 september.",
+      "information": "Har du ikke prøvd sykkelorientering, så er dette en god mulighet for deg å prøve i en av B, C eller N løypene, da disse er beregnet for de som ikke har så mye orienteringserfaring. Det er også egen klasse for El-sykkel.\nIntersport Brandbu selger også kartstativer for 800 kr, send gjerne en forhåndsbestilling til Hanne Kvåle:\n[email protected]\n. For å være sikret levering av kartstativer på løpsdagen, så må hun ha bestilling i løpet av mandag 27 september.",
       "region": "Vestfold og Telemark\nInnlandet",
       "punching_system": "Emit",
       "races": [
@@ -3734,7 +3734,7 @@
     {
       "id": "SWE_28196",
       "name": "O-Ringen, Uppsala, MTBO",
-      "start_time": "2021-07-25",
+      "start_time": "2021-07-26",
       "end_time": "2021-07-31",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -3888,8 +3888,8 @@
     {
       "id": "SWE_33168",
       "name": "MTBO, Svenska Cupen, #1, sprint",
-      "start_time": "2021-05-28",
-      "end_time": "2021-05-28",
+      "start_time": "2021-05-29",
+      "end_time": "2021-05-29",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -3966,8 +3966,8 @@
     {
       "id": "SWE_33169",
       "name": "MTBO, Svenska Cupen, #2, medel",
-      "start_time": "2021-05-29",
-      "end_time": "2021-05-29",
+      "start_time": "2021-05-30",
+      "end_time": "2021-05-30",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -4047,8 +4047,8 @@
     {
       "id": "SWE_33585",
       "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #1, sprint",
-      "start_time": "2021-08-05",
-      "end_time": "2021-08-05",
+      "start_time": "2021-08-06",
+      "end_time": "2021-08-06",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -5400,8 +5400,8 @@
     {
       "id": "SWE_33587",
       "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #3, medel",
-      "start_time": "2021-08-07",
-      "end_time": "2021-08-07",
+      "start_time": "2021-08-08",
+      "end_time": "2021-08-08",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -5966,8 +5966,8 @@
     {
       "id": "SWE_34032",
       "name": "MTBO, Svenska Cupen, #4, sprint",
-      "start_time": "2021-08-27",
-      "end_time": "2021-08-27",
+      "start_time": "2021-08-28",
+      "end_time": "2021-08-28",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -6555,8 +6555,8 @@
     {
       "id": "SWE_34033",
       "name": "MTBO, Svenska Cupen, #5, medel",
-      "start_time": "2021-08-28",
-      "end_time": "2021-08-28",
+      "start_time": "2021-08-29",
+      "end_time": "2021-08-29",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -7297,8 +7297,8 @@
     {
       "id": "SWE_34156",
       "name": "MTBO, Svenska Cupen, #3, medel",
-      "start_time": "2021-05-28",
-      "end_time": "2021-05-28",
+      "start_time": "2021-05-29",
+      "end_time": "2021-05-29",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -7361,8 +7361,8 @@
     {
       "id": "SWE_34157",
       "name": "MTBO, Svenska Cupen, #4, lång",
-      "start_time": "2021-05-29",
-      "end_time": "2021-05-29",
+      "start_time": "2021-05-30",
+      "end_time": "2021-05-30",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -8739,8 +8739,8 @@
     {
       "id": "SWE_34499",
       "name": "MTBO-träning",
-      "start_time": "2021-03-09",
-      "end_time": "2021-03-09",
+      "start_time": "2021-03-10",
+      "end_time": "2021-03-10",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -9609,8 +9609,8 @@
     {
       "id": "SWE_35047",
       "name": "Smålandscupen MTBO 2021",
-      "start_time": "2021-06-04",
-      "end_time": "2021-06-04",
+      "start_time": "2021-06-05",
+      "end_time": "2021-06-05",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -9703,8 +9703,8 @@
     {
       "id": "SWE_35079",
       "name": "Motionsorientering MTBO",
-      "start_time": "2021-05-30",
-      "end_time": "2021-05-30",
+      "start_time": "2021-05-31",
+      "end_time": "2021-05-31",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -9763,8 +9763,8 @@
     {
       "id": "SWE_35080",
       "name": "Motionsorientering MTBO",
-      "start_time": "2021-06-14",
-      "end_time": "2021-06-14",
+      "start_time": "2021-06-15",
+      "end_time": "2021-06-15",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -9891,8 +9891,8 @@
     {
       "id": "SWE_35081",
       "name": "Motionsorientering MTBO",
-      "start_time": "2021-06-21",
-      "end_time": "2021-06-21",
+      "start_time": "2021-06-22",
+      "end_time": "2021-06-22",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -12074,8 +12074,8 @@
     {
       "id": "SWE_35593",
       "name": "Värmlandsserien MTBO deltävling 2",
-      "start_time": "2021-05-23",
-      "end_time": "2021-05-23",
+      "start_time": "2021-05-24",
+      "end_time": "2021-05-24",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -12147,8 +12147,8 @@
     {
       "id": "SWE_35769",
       "name": "Östgötaserien MTBO",
-      "start_time": "2021-05-31",
-      "end_time": "2021-05-31",
+      "start_time": "2021-06-01",
+      "end_time": "2021-06-01",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -13323,8 +13323,8 @@
     {
       "id": "SWE_36317",
       "name": "Smålandscupen MTBO 2021",
-      "start_time": "2021-10-01",
-      "end_time": "2021-10-01",
+      "start_time": "2021-10-02",
+      "end_time": "2021-10-02",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -15314,7 +15314,7 @@
     {
       "id": "SWE_36917",
       "name": "SKOGSLÖPARNAS 5-DAGARS 2021",
-      "start_time": "2021-07-24",
+      "start_time": "2021-07-25",
       "end_time": "2021-07-29",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -16311,8 +16311,8 @@
     {
       "id": "SWE_36992",
       "name": "MTBO Ingestrand sommaren 2021",
-      "start_time": "2021-06-07",
-      "end_time": "2021-06-07",
+      "start_time": "2021-06-08",
+      "end_time": "2021-06-08",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -16735,8 +16735,8 @@
     {
       "id": "SWE_37028",
       "name": "MTBO, DM, medel, Värmland",
-      "start_time": "2021-09-17",
-      "end_time": "2021-09-17",
+      "start_time": "2021-09-18",
+      "end_time": "2021-09-18",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -19069,8 +19069,8 @@
     {
       "id": "SWE_37719",
       "name": "Göteborg Multisportrace",
-      "start_time": "2021-09-18",
-      "end_time": "2021-09-18",
+      "start_time": "2021-09-19",
+      "end_time": "2021-09-19",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -21258,8 +21258,8 @@
     {
       "id": "SWE_38334",
       "name": "Haningenatten MTBO",
-      "start_time": "2021-10-28",
-      "end_time": "2021-10-28",
+      "start_time": "2021-10-29",
+      "end_time": "2021-10-29",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
