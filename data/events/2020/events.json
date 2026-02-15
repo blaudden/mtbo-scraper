@@ -23,8 +23,8 @@
     {
       "id": "IOF_5835",
       "name": "World MTB Orienteering Championships 2020",
-      "start_time": "2020-08-16",
-      "end_time": "2020-08-22",
+      "start_time": "2020-08-17",
+      "end_time": "2020-08-23",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -182,8 +182,8 @@
     {
       "id": "IOF_6115",
       "name": "European MTB Orienteering Championships",
-      "start_time": "2020-09-09",
-      "end_time": "2020-09-12",
+      "start_time": "2020-09-10",
+      "end_time": "2020-09-13",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -341,7 +341,7 @@
     {
       "id": "IOF_6279",
       "name": "World Masters MTB Orienteering Championships 2020",
-      "start_time": "2020-09-08",
+      "start_time": "2020-09-09",
       "end_time": "2020-09-13",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -555,7 +555,7 @@
     {
       "id": "IOF_6432",
       "name": "European MTB Orienteering Championships 2020",
-      "start_time": "2020-05-10",
+      "start_time": "2020-05-11",
       "end_time": "2020-05-16",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -681,7 +681,7 @@
     {
       "id": "IOF_6433",
       "name": "European Junior and Youth MTB Orienteering Championships 2020",
-      "start_time": "2020-05-10",
+      "start_time": "2020-05-11",
       "end_time": "2020-05-16",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -824,8 +824,8 @@
     {
       "id": "IOF_6459",
       "name": "Campeonato de España 2020 (Middle Distance)",
-      "start_time": "2020-04-17",
-      "end_time": "2020-04-17",
+      "start_time": "2020-04-18",
+      "end_time": "2020-04-18",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -914,8 +914,8 @@
     {
       "id": "IOF_6460",
       "name": "Campeonato de España 2020 (Long Distance)",
-      "start_time": "2020-04-18",
-      "end_time": "2020-04-18",
+      "start_time": "2020-04-19",
+      "end_time": "2020-04-19",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1004,8 +1004,8 @@
     {
       "id": "IOF_6584",
       "name": "Nationale",
-      "start_time": "2020-05-29",
-      "end_time": "2020-05-29",
+      "start_time": "2020-05-30",
+      "end_time": "2020-05-30",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1083,8 +1083,8 @@
     {
       "id": "IOF_6585",
       "name": "Nationale",
-      "start_time": "2020-05-31",
-      "end_time": "2020-05-31",
+      "start_time": "2020-06-01",
+      "end_time": "2020-06-01",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1574,8 +1574,8 @@
     {
       "id": "IOF_6610",
       "name": "Championship of Russia",
-      "start_time": "2020-06-26",
-      "end_time": "2020-06-26",
+      "start_time": "2020-06-27",
+      "end_time": "2020-06-27",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1640,8 +1640,8 @@
     {
       "id": "IOF_6611",
       "name": "Championship of St. Petersburg",
-      "start_time": "2020-06-27",
-      "end_time": "2020-06-27",
+      "start_time": "2020-06-28",
+      "end_time": "2020-06-28",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1706,8 +1706,8 @@
     {
       "id": "IOF_6614",
       "name": "Balaton MTBO - Long",
-      "start_time": "2020-05-01",
-      "end_time": "2020-05-01",
+      "start_time": "2020-05-02",
+      "end_time": "2020-05-02",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1772,8 +1772,8 @@
     {
       "id": "IOF_6615",
       "name": "Balaton MTBO - Middle",
-      "start_time": "2020-05-02",
-      "end_time": "2020-05-02",
+      "start_time": "2020-05-03",
+      "end_time": "2020-05-03",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1838,8 +1838,8 @@
     {
       "id": "IOF_6617",
       "name": "MTBOdays 2020",
-      "start_time": "2020-07-10",
-      "end_time": "2020-07-10",
+      "start_time": "2020-07-11",
+      "end_time": "2020-07-11",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1941,8 +1941,8 @@
     {
       "id": "IOF_6618",
       "name": "MTBOdays 2020",
-      "start_time": "2020-07-11",
-      "end_time": "2020-07-11",
+      "start_time": "2020-07-12",
+      "end_time": "2020-07-12",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2044,8 +2044,8 @@
     {
       "id": "IOF_6622",
       "name": "Tisvilde Hegn Long Distance WRE",
-      "start_time": "2020-04-22",
-      "end_time": "2020-04-22",
+      "start_time": "2020-04-23",
+      "end_time": "2020-04-23",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2110,8 +2110,8 @@
     {
       "id": "IOF_6623",
       "name": "Teglstrup/Nyrup Hegn Middle Distance WRE",
-      "start_time": "2020-04-23",
-      "end_time": "2020-04-23",
+      "start_time": "2020-04-24",
+      "end_time": "2020-04-24",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2176,8 +2176,8 @@
     {
       "id": "IOF_6723",
       "name": "Estonian championships",
-      "start_time": "2020-07-25",
-      "end_time": "2020-07-25",
+      "start_time": "2020-07-26",
+      "end_time": "2020-07-26",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2242,8 +2242,8 @@
     {
       "id": "IOF_6724",
       "name": "Estonian championships",
-      "start_time": "2020-07-24",
-      "end_time": "2020-07-24",
+      "start_time": "2020-07-25",
+      "end_time": "2020-07-25",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2308,8 +2308,8 @@
     {
       "id": "IOF_6725",
       "name": "Bulgarian MTBO championships - Long",
-      "start_time": "2020-07-17",
-      "end_time": "2020-07-17",
+      "start_time": "2020-07-18",
+      "end_time": "2020-07-18",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2385,8 +2385,8 @@
     {
       "id": "IOF_6726",
       "name": "Bulgarian MTBO championships - Sprint",
-      "start_time": "2020-07-16",
-      "end_time": "2020-07-16",
+      "start_time": "2020-07-17",
+      "end_time": "2020-07-17",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2462,7 +2462,7 @@
     {
       "id": "IOF_6770",
       "name": "World MTB Orienteering Championships 2020",
-      "start_time": "2020-10-01",
+      "start_time": "2020-10-02",
       "end_time": "2020-10-08",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -2619,7 +2619,7 @@
     {
       "id": "IOF_6775",
       "name": "World Junior and European Youth MTB Orienteering Championships 2020",
-      "start_time": "2020-10-01",
+      "start_time": "2020-10-02",
       "end_time": "2020-10-08",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -2777,8 +2777,8 @@
     {
       "id": "IOF_6780",
       "name": "Junior World MTB Orienteering Championships 2020",
-      "start_time": "2020-08-16",
-      "end_time": "2020-08-22",
+      "start_time": "2020-08-17",
+      "end_time": "2020-08-23",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2936,7 +2936,7 @@
     {
       "id": "IOF_6840",
       "name": "European Junior MTB Orienteering Championships",
-      "start_time": "2020-09-08",
+      "start_time": "2020-09-09",
       "end_time": "2020-09-13",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -3101,8 +3101,8 @@
     {
       "id": "IOF_6908",
       "name": "EMTBOC Open WRE Finland 2020 - Middle",
-      "start_time": "2020-09-11",
-      "end_time": "2020-09-11",
+      "start_time": "2020-09-12",
+      "end_time": "2020-09-12",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -3361,7 +3361,7 @@
     {
       "id": "NOR_12490",
       "name": "MTBO in The North",
-      "start_time": "2020-09-03",
+      "start_time": "2020-09-04",
       "end_time": "2020-09-06",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -3507,8 +3507,8 @@
     {
       "id": "SWE_27272",
       "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #7, sprint",
-      "start_time": "2020-06-25",
-      "end_time": "2020-06-25",
+      "start_time": "2020-06-26",
+      "end_time": "2020-06-26",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -3685,8 +3685,8 @@
     {
       "id": "SWE_27273",
       "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #8, lång",
-      "start_time": "2020-06-26",
-      "end_time": "2020-06-26",
+      "start_time": "2020-06-27",
+      "end_time": "2020-06-27",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -3991,8 +3991,8 @@
     {
       "id": "SWE_27274",
       "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #9, medel",
-      "start_time": "2020-06-27",
-      "end_time": "2020-06-27",
+      "start_time": "2020-06-28",
+      "end_time": "2020-06-28",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -5370,7 +5370,7 @@
       "id": "SWE_27986",
       "name": "MtbO träningscamp Småland",
       "start_time": "2020-04-10",
-      "end_time": "2020-04-10",
+      "end_time": "2020-04-12",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -5801,8 +5801,8 @@
     {
       "id": "SWE_28619",
       "name": "DM, MTBO, Medel, Småland (OBS! INSTÄLLD)",
-      "start_time": "2020-05-15",
-      "end_time": "2020-05-15",
+      "start_time": "2020-05-16",
+      "end_time": "2020-05-16",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -6065,8 +6065,8 @@
     {
       "id": "SWE_28688",
       "name": "MTBO, Jarltrampet 2-dagars",
-      "start_time": "2020-09-18",
-      "end_time": "2020-09-18",
+      "start_time": "2020-09-19",
+      "end_time": "2020-09-19",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -6138,8 +6138,8 @@
     {
       "id": "SWE_28752",
       "name": "MTBO, Jarltrampet 2-dagars",
-      "start_time": "2020-09-19",
-      "end_time": "2020-09-19",
+      "start_time": "2020-09-20",
+      "end_time": "2020-09-20",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -6345,8 +6345,8 @@
     {
       "id": "SWE_28891",
       "name": "MTBO, DM, lång, Småland",
-      "start_time": "2020-08-21",
-      "end_time": "2020-08-21",
+      "start_time": "2020-08-22",
+      "end_time": "2020-08-22",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -6448,8 +6448,8 @@
     {
       "id": "SWE_28961",
       "name": "MTBO, OK Älme",
-      "start_time": "2020-09-18",
-      "end_time": "2020-09-18",
+      "start_time": "2020-09-19",
+      "end_time": "2020-09-19",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -6719,8 +6719,8 @@
     {
       "id": "SWE_29019",
       "name": "Dalaserien MTBO Leksand",
-      "start_time": "2020-05-27",
-      "end_time": "2020-05-27",
+      "start_time": "2020-05-28",
+      "end_time": "2020-05-28",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -7771,8 +7771,8 @@
     {
       "id": "SWE_29666",
       "name": "Dalaserien MTBO 2020 Mora",
-      "start_time": "2020-04-09",
-      "end_time": "2020-04-09",
+      "start_time": "2020-04-10",
+      "end_time": "2020-04-10",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -7916,8 +7916,8 @@
     {
       "id": "SWE_29691",
       "name": "MtbO Kalmarsund vårträning",
-      "start_time": "2020-04-07",
-      "end_time": "2020-04-07",
+      "start_time": "2020-04-08",
+      "end_time": "2020-05-31",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -8144,8 +8144,8 @@
     {
       "id": "SWE_29822",
       "name": "Dalaserien MTBO 2020 Kvarnsveden",
-      "start_time": "2020-04-16",
-      "end_time": "2020-04-16",
+      "start_time": "2020-04-17",
+      "end_time": "2020-04-17",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -8515,8 +8515,8 @@
     {
       "id": "SWE_29925",
       "name": "Dalaserien MTBO 2020 Säter",
-      "start_time": "2020-04-29",
-      "end_time": "2020-04-29",
+      "start_time": "2020-04-30",
+      "end_time": "2020-04-30",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -9272,8 +9272,8 @@
     {
       "id": "SWE_30271",
       "name": "Dalaserien MTBO Falun",
-      "start_time": "2020-05-30",
-      "end_time": "2020-05-30",
+      "start_time": "2020-05-31",
+      "end_time": "2020-05-31",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -10605,8 +10605,8 @@
     {
       "id": "SWE_30806",
       "name": "MTBO i Växjö",
-      "start_time": "2020-05-24",
-      "end_time": "2020-05-24",
+      "start_time": "2020-05-25",
+      "end_time": "2020-06-30",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -10886,8 +10886,8 @@
     {
       "id": "SWE_30820",
       "name": "Svenska Cupen MTBO, #1, sprint",
-      "start_time": "2020-08-07",
-      "end_time": "2020-08-07",
+      "start_time": "2020-08-08",
+      "end_time": "2020-08-08",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -10967,8 +10967,8 @@
     {
       "id": "SWE_30821",
       "name": "Svenska Cupen MTBO, #2, förlängd medel",
-      "start_time": "2020-08-08",
-      "end_time": "2020-08-08",
+      "start_time": "2020-08-09",
+      "end_time": "2020-08-09",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -11282,8 +11282,8 @@
     {
       "id": "SWE_30930",
       "name": "Månadens bana Rudan",
-      "start_time": "2020-05-31",
-      "end_time": "2020-05-31",
+      "start_time": "2020-06-01",
+      "end_time": "2020-06-30",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -11393,8 +11393,8 @@
     {
       "id": "SWE_30947",
       "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #5, sprint",
-      "start_time": "2020-09-03",
-      "end_time": "2020-09-03",
+      "start_time": "2020-09-04",
+      "end_time": "2020-09-04",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -11759,8 +11759,8 @@
     {
       "id": "SWE_30949",
       "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #6, lång",
-      "start_time": "2020-09-04",
-      "end_time": "2020-09-04",
+      "start_time": "2020-09-05",
+      "end_time": "2020-09-05",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -12185,8 +12185,8 @@
     {
       "id": "SWE_30950",
       "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #7, medel",
-      "start_time": "2020-09-05",
-      "end_time": "2020-09-05",
+      "start_time": "2020-09-06",
+      "end_time": "2020-09-06",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -13081,8 +13081,8 @@
     {
       "id": "SWE_31165",
       "name": "Östgötaserien MTBO #3",
-      "start_time": "2020-08-16",
-      "end_time": "2020-08-16",
+      "start_time": "2020-08-17",
+      "end_time": "2020-08-17",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -13405,8 +13405,8 @@
     {
       "id": "SWE_31236",
       "name": "MTB-O - veckans bana juli",
-      "start_time": "2020-06-30",
-      "end_time": "2020-06-30",
+      "start_time": "2020-07-01",
+      "end_time": "2020-07-01",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -13768,7 +13768,7 @@
       "id": "SWE_31294",
       "name": "MTBO veckans bana",
       "start_time": "2020-06-23",
-      "end_time": "2020-06-23",
+      "end_time": "2020-06-29",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -14036,7 +14036,7 @@
       "id": "SWE_31371",
       "name": "MTBO - Veckans bana Aneby",
       "start_time": "2020-07-01",
-      "end_time": "2020-07-01",
+      "end_time": "2020-07-15",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -16480,7 +16480,7 @@
       "id": "SWE_31731",
       "name": "MTB-O veckans bana",
       "start_time": "2020-08-04",
-      "end_time": "2020-08-04",
+      "end_time": "2020-08-09",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -17433,8 +17433,8 @@
     {
       "id": "SWE_32025",
       "name": "MtbO-träning i Surahammar",
-      "start_time": "2020-08-12",
-      "end_time": "2020-08-12",
+      "start_time": "2020-08-13",
+      "end_time": "2020-08-13",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -17755,8 +17755,8 @@
     {
       "id": "SWE_32035",
       "name": "MTBO-sprint träning",
-      "start_time": "2020-08-05",
-      "end_time": "2020-08-05",
+      "start_time": "2020-08-06",
+      "end_time": "2020-08-06",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -18160,8 +18160,8 @@
     {
       "id": "SWE_32081",
       "name": "MTBO, USM/JSM/SM/VSM, lång",
-      "start_time": "2020-09-25",
-      "end_time": "2020-09-25",
+      "start_time": "2020-09-26",
+      "end_time": "2020-09-26",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -18644,8 +18644,8 @@
     {
       "id": "SWE_32082",
       "name": "MTBO, OK Kolmården, medel",
-      "start_time": "2020-09-26",
-      "end_time": "2020-09-26",
+      "start_time": "2020-09-27",
+      "end_time": "2020-09-27",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -19047,7 +19047,7 @@
       "id": "SWE_32101",
       "name": "TSOK Öppen MTBO träning",
       "start_time": "2020-08-11",
-      "end_time": "2020-08-11",
+      "end_time": "2020-08-16",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -19334,8 +19334,8 @@
     {
       "id": "SWE_32259",
       "name": "MTBO, DM Småland, medel",
-      "start_time": "2020-10-16",
-      "end_time": "2020-10-16",
+      "start_time": "2020-10-17",
+      "end_time": "2020-10-17",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -20987,8 +20987,8 @@
     {
       "id": "SWE_32804",
       "name": "Dalaserien MTBO 2020 Domnarvet (Borlänge)",
-      "start_time": "2020-09-09",
-      "end_time": "2020-09-09",
+      "start_time": "2020-09-10",
+      "end_time": "2020-09-10",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -21308,8 +21308,8 @@
     {
       "id": "SWE_33019",
       "name": "Göteborg Multisport Race",
-      "start_time": "2020-10-09",
-      "end_time": "2020-10-09",
+      "start_time": "2020-10-10",
+      "end_time": "2020-10-10",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -21774,7 +21774,7 @@
       "officials": [
         {
           "role": "Contact person",
-          "name": "Pia Redin Lindholm"
+          "name": "Pia Lindholm"
         },
         {
           "role": "Contact phone number",
@@ -21786,7 +21786,7 @@
         },
         {
           "role": "Event director",
-          "name": "Pia Redin Lindholm"
+          "name": "Pia Lindholm"
         },
         {
           "role": "Course setter",
@@ -21978,7 +21978,7 @@
       "id": "SWE_33880",
       "name": "UsynligO",
       "start_time": "2020-12-19",
-      "end_time": "2020-12-19",
+      "end_time": "2020-12-20",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -22054,8 +22054,8 @@
     {
       "id": "SWE_33912",
       "name": "MTBO Julgranen på O-Ringen torget",
-      "start_time": "2020-12-18",
-      "end_time": "2020-12-18",
+      "start_time": "2020-12-19",
+      "end_time": "2021-01-10",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -22172,8 +22172,8 @@
     {
       "id": "SWE_33955",
       "name": "Månadens Bana Januari",
-      "start_time": "2020-12-26",
-      "end_time": "2020-12-26",
+      "start_time": "2020-12-27",
+      "end_time": "2020-12-27",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
