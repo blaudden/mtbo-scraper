@@ -23,7 +23,7 @@
     {
       "id": "IOF_5118",
       "name": "World MTBO Championships 2017, Junior World MTBO Championships 2017, World Cup 2017 Round 3",
-      "start_time": "2017-08-19",
+      "start_time": "2017-08-20",
       "end_time": "2017-08-26",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -312,7 +312,7 @@
     {
       "id": "IOF_5189",
       "name": "European MTB Orienteering Championships & World Cup Round 2 & Youth / Junior Championships",
-      "start_time": "2017-07-28",
+      "start_time": "2017-07-29",
       "end_time": "2017-08-05",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -573,7 +573,7 @@
     {
       "id": "IOF_5193",
       "name": "MTB Orienteering World Cup Round 1",
-      "start_time": "2017-06-01",
+      "start_time": "2017-06-02",
       "end_time": "2017-06-05",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -769,7 +769,7 @@
       "id": "IOF_5485",
       "name": "World Masters MTB Orienteering Champinonships 2017",
       "start_time": "2017-07-30",
-      "end_time": "2017-08-03",
+      "end_time": "2017-08-04",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -970,8 +970,8 @@
     {
       "id": "IOF_5490",
       "name": "WMMBTBOC Unofficial Sprint Relay",
-      "start_time": "2017-08-03",
-      "end_time": "2017-08-03",
+      "start_time": "2017-08-04",
+      "end_time": "2017-08-04",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1073,8 +1073,8 @@
     {
       "id": "IOF_5491",
       "name": "WMMBTBOC Unofficial Relay",
-      "start_time": "2017-08-04",
-      "end_time": "2017-08-04",
+      "start_time": "2017-08-05",
+      "end_time": "2017-08-05",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1448,8 +1448,8 @@
     {
       "id": "IOF_5565",
       "name": "III Costa Alentejana MTBO Trophy 2017",
-      "start_time": "2017-03-31",
-      "end_time": "2017-03-31",
+      "start_time": "2017-04-01",
+      "end_time": "2017-04-01",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1574,8 +1574,8 @@
     {
       "id": "IOF_5566",
       "name": "III Costa Alentejana MTBO Trophy 2017",
-      "start_time": "2017-04-01",
-      "end_time": "2017-04-01",
+      "start_time": "2017-04-02",
+      "end_time": "2017-04-02",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1700,8 +1700,8 @@
     {
       "id": "IOF_5569",
       "name": "Czech Sprint Championship / MTBO 5days Plzen",
-      "start_time": "2017-07-05",
-      "end_time": "2017-07-05",
+      "start_time": "2017-07-06",
+      "end_time": "2017-07-06",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1805,8 +1805,8 @@
     {
       "id": "IOF_5570",
       "name": "MTBO 5days Plzen",
-      "start_time": "2017-07-07",
-      "end_time": "2017-07-07",
+      "start_time": "2017-07-08",
+      "end_time": "2017-07-08",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1910,8 +1910,8 @@
     {
       "id": "IOF_5582",
       "name": "Austrian MTBO Days 2017-Bad Vöslau; E2",
-      "start_time": "2017-07-14",
-      "end_time": "2017-07-14",
+      "start_time": "2017-07-15",
+      "end_time": "2017-07-15",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2034,8 +2034,8 @@
     {
       "id": "IOF_5583",
       "name": "Austrian MTBO Days 2017-Bad Vöslau; E3",
-      "start_time": "2017-07-15",
-      "end_time": "2017-07-15",
+      "start_time": "2017-07-16",
+      "end_time": "2017-07-16",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2404,8 +2404,8 @@
     {
       "id": "IOF_5626",
       "name": "Latvia MTBO 3-days 2017",
-      "start_time": "2017-06-09",
-      "end_time": "2017-06-09",
+      "start_time": "2017-06-10",
+      "end_time": "2017-06-10",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2512,8 +2512,8 @@
     {
       "id": "IOF_5627",
       "name": "Latvia MTBO 3-days 2017",
-      "start_time": "2017-06-10",
-      "end_time": "2017-06-10",
+      "start_time": "2017-06-11",
+      "end_time": "2017-06-11",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2618,8 +2618,8 @@
     {
       "id": "IOF_5651",
       "name": "RUSSIAN CUP",
-      "start_time": "2017-05-11",
-      "end_time": "2017-05-11",
+      "start_time": "2017-05-12",
+      "end_time": "2017-05-12",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2722,8 +2722,8 @@
     {
       "id": "IOF_5652",
       "name": "RUSSIAN CUP",
-      "start_time": "2017-05-12",
-      "end_time": "2017-05-12",
+      "start_time": "2017-05-13",
+      "end_time": "2017-05-13",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -3082,7 +3082,7 @@
     {
       "id": "IOF_5775",
       "name": "2017 South China Historical Road Orienteering Championships",
-      "start_time": "2017-05-23",
+      "start_time": "2017-05-24",
       "end_time": "2017-05-24",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -3181,8 +3181,8 @@
     {
       "id": "SWE_14737",
       "name": "MtbO, Golden Weekend, medel",
-      "start_time": "2017-08-25",
-      "end_time": "2017-08-25",
+      "start_time": "2017-08-26",
+      "end_time": "2017-08-26",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -3502,8 +3502,8 @@
     {
       "id": "SWE_14738",
       "name": "MtbO, Golden Weekend, sprint",
-      "start_time": "2017-08-25",
-      "end_time": "2017-08-25",
+      "start_time": "2017-08-26",
+      "end_time": "2017-08-26",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -3792,8 +3792,8 @@
     {
       "id": "SWE_15141",
       "name": "MtbO, OK Rodhen",
-      "start_time": "2017-08-12",
-      "end_time": "2017-08-12",
+      "start_time": "2017-08-13",
+      "end_time": "2017-08-13",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -4247,8 +4247,8 @@
     {
       "id": "SWE_15727",
       "name": "MtbO, Svenska Cupen, #3, sprint",
-      "start_time": "2017-05-26",
-      "end_time": "2017-05-26",
+      "start_time": "2017-05-27",
+      "end_time": "2017-05-27",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -4533,8 +4533,8 @@
     {
       "id": "SWE_15728",
       "name": "MtbO, Svenska Cupen, #4, medel",
-      "start_time": "2017-05-27",
-      "end_time": "2017-05-27",
+      "start_time": "2017-05-28",
+      "end_time": "2017-05-28",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -5800,7 +5800,7 @@
     {
       "id": "SWE_16881",
       "name": "O-Ringen Värmland 2017",
-      "start_time": "2017-07-22",
+      "start_time": "2017-07-23",
       "end_time": "2017-07-28",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -6048,8 +6048,8 @@
     {
       "id": "SWE_16884",
       "name": "MtbO, Falun",
-      "start_time": "2017-09-15",
-      "end_time": "2017-09-15",
+      "start_time": "2017-09-16",
+      "end_time": "2017-09-16",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -6881,8 +6881,8 @@
     {
       "id": "SWE_17106",
       "name": "MtbO, Svenska Cupen, #1, sprint",
-      "start_time": "2017-05-12",
-      "end_time": "2017-05-12",
+      "start_time": "2017-05-13",
+      "end_time": "2017-05-13",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -7232,8 +7232,8 @@
     {
       "id": "SWE_17107",
       "name": "MtbO, Svenska Cupen, #2, medel",
-      "start_time": "2017-05-13",
-      "end_time": "2017-05-13",
+      "start_time": "2017-05-14",
+      "end_time": "2017-05-14",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -10483,8 +10483,8 @@
     {
       "id": "SWE_18132",
       "name": "MTBO-cupen Gotland 1",
-      "start_time": "2017-05-02",
-      "end_time": "2017-05-02",
+      "start_time": "2017-05-03",
+      "end_time": "2017-05-03",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -10554,8 +10554,8 @@
     {
       "id": "SWE_18133",
       "name": "MTBO-cupen Gotland 3",
-      "start_time": "2017-07-09",
-      "end_time": "2017-07-09",
+      "start_time": "2017-07-10",
+      "end_time": "2017-07-10",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -10684,8 +10684,8 @@
     {
       "id": "SWE_18134",
       "name": "MTBO-cupen Gotland 6",
-      "start_time": "2017-09-22",
-      "end_time": "2017-09-22",
+      "start_time": "2017-09-23",
+      "end_time": "2017-09-23",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -11394,8 +11394,8 @@
     {
       "id": "SWE_18539",
       "name": "DM Medel MtbO",
-      "start_time": "2017-09-15",
-      "end_time": "2017-09-15",
+      "start_time": "2017-09-16",
+      "end_time": "2017-09-16",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -12001,7 +12001,7 @@
       "id": "SWE_18759",
       "name": "Kalmarsundscupen MTBO",
       "start_time": "2017-04-26",
-      "end_time": "2017-06-27",
+      "end_time": "2017-04-26",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -12427,8 +12427,8 @@
     {
       "id": "SWE_18770",
       "name": "MtbO, Falun; Sprint",
-      "start_time": "2017-09-16",
-      "end_time": "2017-09-16",
+      "start_time": "2017-09-17",
+      "end_time": "2017-09-17",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -16118,7 +16118,7 @@
     {
       "id": "SWE_19591",
       "name": "O-Ringen Värmland 2017, MtbO",
-      "start_time": "2017-07-22",
+      "start_time": "2017-07-23",
       "end_time": "2017-07-28",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -18800,8 +18800,8 @@
     {
       "id": "SWE_19720",
       "name": "Borlänge-Säter träning",
-      "start_time": "2017-08-09",
-      "end_time": "2017-08-09",
+      "start_time": "2017-08-10",
+      "end_time": "2017-08-10",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -20022,8 +20022,8 @@
     {
       "id": "SWE_19990",
       "name": "ABCD-cup - Söders",
-      "start_time": "2017-09-23",
-      "end_time": "2017-09-23",
+      "start_time": "2017-09-24",
+      "end_time": "2017-09-24",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -20741,8 +20741,8 @@
     {
       "id": "SWE_20257",
       "name": "Haninge MTBO Natt ABCD-Cupen",
-      "start_time": "2017-10-26",
-      "end_time": "2017-10-26",
+      "start_time": "2017-10-27",
+      "end_time": "2017-10-27",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -20876,8 +20876,8 @@
     {
       "id": "SWE_20283",
       "name": "Rolles Nattcup MTBO",
-      "start_time": "2017-10-10",
-      "end_time": "2017-10-10",
+      "start_time": "2017-10-11",
+      "end_time": "2017-10-11",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
