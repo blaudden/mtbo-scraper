@@ -23,7 +23,7 @@
     {
       "id": "IOF_5690",
       "name": "World MTB Orienteering Championships 2019 and Junior World MTB Orienteering Championships",
-      "start_time": "2019-07-27",
+      "start_time": "2019-07-28",
       "end_time": "2019-08-03",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -418,7 +418,7 @@
     {
       "id": "IOF_5823",
       "name": "MTB Orienteering World Cup Round 3",
-      "start_time": "2019-10-03",
+      "start_time": "2019-10-04",
       "end_time": "2019-10-06",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -592,7 +592,7 @@
     {
       "id": "IOF_5824",
       "name": "World Masters MTB Orienteering Championships 2019",
-      "start_time": "2019-10-02",
+      "start_time": "2019-10-03",
       "end_time": "2019-10-06",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -801,7 +801,7 @@
     {
       "id": "IOF_5825",
       "name": "European Junior and Youth MTB Orienteering Championships",
-      "start_time": "2019-10-02",
+      "start_time": "2019-10-03",
       "end_time": "2019-10-06",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -1010,7 +1010,7 @@
     {
       "id": "IOF_5832",
       "name": "European MTBO Championships and World Cup Round 1",
-      "start_time": "2019-06-07",
+      "start_time": "2019-06-08",
       "end_time": "2019-06-10",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -1593,8 +1593,8 @@
     {
       "id": "IOF_6194",
       "name": "Championnat de France de Longue Distance",
-      "start_time": "2019-05-18",
-      "end_time": "2019-05-18",
+      "start_time": "2019-05-19",
+      "end_time": "2019-05-19",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1778,8 +1778,8 @@
     {
       "id": "IOF_6195",
       "name": "Championnat de France de Sprint",
-      "start_time": "2019-05-17",
-      "end_time": "2019-05-17",
+      "start_time": "2019-05-18",
+      "end_time": "2019-05-18",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1947,8 +1947,8 @@
     {
       "id": "IOF_6199",
       "name": "MTBO Austria Cup",
-      "start_time": "2019-05-24",
-      "end_time": "2019-05-24",
+      "start_time": "2019-05-25",
+      "end_time": "2019-05-25",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2069,8 +2069,8 @@
     {
       "id": "IOF_6200",
       "name": "MTBO Austria Cup, Austrian Championships Sprint",
-      "start_time": "2019-05-25",
-      "end_time": "2019-05-25",
+      "start_time": "2019-05-26",
+      "end_time": "2019-05-26",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2811,8 +2811,8 @@
     {
       "id": "IOF_6367",
       "name": "SG MTBO 2019 - Long",
-      "start_time": "2019-05-04",
-      "end_time": "2019-05-04",
+      "start_time": "2019-05-05",
+      "end_time": "2019-05-05",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2939,8 +2939,8 @@
     {
       "id": "IOF_6378",
       "name": "Swedish Championship, long",
-      "start_time": "2019-08-23",
-      "end_time": "2019-08-23",
+      "start_time": "2019-08-24",
+      "end_time": "2019-08-24",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -3094,8 +3094,8 @@
     {
       "id": "IOF_6379",
       "name": "Swedish Championship, middle",
-      "start_time": "2019-08-24",
-      "end_time": "2019-08-24",
+      "start_time": "2019-08-25",
+      "end_time": "2019-08-25",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -3313,8 +3313,8 @@
     {
       "id": "SWE_21397",
       "name": "MTBO Rodhenloppet",
-      "start_time": "2019-11-01",
-      "end_time": "2019-11-01",
+      "start_time": "2019-11-02",
+      "end_time": "2019-11-02",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -3376,8 +3376,8 @@
     {
       "id": "SWE_21928",
       "name": "MTBO, OK Rodhen",
-      "start_time": "2019-09-06",
-      "end_time": "2019-09-06",
+      "start_time": "2019-09-07",
+      "end_time": "2019-09-07",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -5377,7 +5377,7 @@
     {
       "id": "SWE_23637",
       "name": "O-Ringen Kolmården, MTBO",
-      "start_time": "2019-07-21",
+      "start_time": "2019-07-22",
       "end_time": "2019-07-27",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -8430,8 +8430,8 @@
     {
       "id": "SWE_24299",
       "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #7, sprint",
-      "start_time": "2019-08-22",
-      "end_time": "2019-08-22",
+      "start_time": "2019-08-23",
+      "end_time": "2019-08-23",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -12182,8 +12182,8 @@
     {
       "id": "SWE_24347",
       "name": "MTBO, Svenska Cupen, #10, Sprint",
-      "start_time": "2019-09-06",
-      "end_time": "2019-09-06",
+      "start_time": "2019-09-07",
+      "end_time": "2019-09-07",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -12534,8 +12534,8 @@
     {
       "id": "SWE_24348",
       "name": "MTBO, Svenska Cupen, #11, Masstart, Final",
-      "start_time": "2019-09-07",
-      "end_time": "2019-09-07",
+      "start_time": "2019-09-08",
+      "end_time": "2019-09-08",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -12983,8 +12983,8 @@
     {
       "id": "SWE_24364",
       "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #8, lång (WRE)",
-      "start_time": "2019-08-23",
-      "end_time": "2019-08-23",
+      "start_time": "2019-08-24",
+      "end_time": "2019-08-24",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -13569,8 +13569,8 @@
     {
       "id": "SWE_24386",
       "name": "MTBO, Ockelbo OK",
-      "start_time": "2019-08-12",
-      "end_time": "2019-08-12",
+      "start_time": "2019-08-13",
+      "end_time": "2019-08-13",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -16242,8 +16242,8 @@
     {
       "id": "SWE_25368",
       "name": "MTBO-cupen 6 Gotland",
-      "start_time": "2019-09-10",
-      "end_time": "2019-09-10",
+      "start_time": "2019-09-11",
+      "end_time": "2019-09-11",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -17808,8 +17808,8 @@
     {
       "id": "SWE_25792",
       "name": "Tränings-OL",
-      "start_time": "2019-07-22",
-      "end_time": "2019-07-22",
+      "start_time": "2019-07-23",
+      "end_time": "2019-07-23",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -21371,8 +21371,8 @@
     {
       "id": "SWE_26260",
       "name": "Öppet MTBO-DM Dalarna, lång, Dalaserien #8",
-      "start_time": "2019-09-27",
-      "end_time": "2019-09-27",
+      "start_time": "2019-09-28",
+      "end_time": "2019-09-28",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -23994,8 +23994,8 @@
     {
       "id": "SWE_26753",
       "name": "O-Ringen Kolmården, träningsrace",
-      "start_time": "2019-07-19",
-      "end_time": "2019-07-19",
+      "start_time": "2019-07-20",
+      "end_time": "2019-07-20",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -25514,8 +25514,8 @@
     {
       "id": "SWE_27099",
       "name": "Dalaserien MTBO Nr 7",
-      "start_time": "2019-09-10",
-      "end_time": "2019-09-10",
+      "start_time": "2019-09-11",
+      "end_time": "2019-09-11",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -26336,8 +26336,8 @@
     {
       "id": "SWE_27481",
       "name": "MTBO Haningenatten",
-      "start_time": "2019-10-24",
-      "end_time": "2019-10-24",
+      "start_time": "2019-10-25",
+      "end_time": "2019-10-25",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
