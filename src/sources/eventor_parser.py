@@ -1447,11 +1447,10 @@ class EventorParser:
         map_positions = self._extract_map_positions(soup)
         for i, (pos, areas) in enumerate(map_positions):
             if i < len(event.races):
-                if pos and not event.races[i].position:
+                if pos:
                     event.races[i].position = pos
-
                 if areas:
-                    event.races[i].areas.extend(areas)
+                    event.races[i].areas = areas
 
     def parse_participant_list(self, html_content: str) -> list[Participant]:
         """Parses a start, result, or entry list to extract participants.
