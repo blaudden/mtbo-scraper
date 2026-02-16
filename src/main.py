@@ -368,7 +368,23 @@ def main(
     # Determine delay range based on start date threshold (4 weeks ago)
     # If start_date is older than 4 weeks ago, assume History Mode (slower)
     start_dt = datetime.strptime(start_date, "%Y-%m-%d")
-    threshold_date = datetime.now() - timedelta(weeks=4)
+    end_dt = datetime.strptime(end_date, "%Y-%m-%d")
+    threshold_date = (datetime.now() - timedelta(weeks=4)).replace(
+        hour=0, minute=0, second=0, microsecond=0
+    )
+
+    # Restriction: prevent mixed history/current mode scrapes
+    if start_dt.date() < threshold_date.date() <= end_dt.date():
+        logger.error(
+            "mixed_mode_scrape_prevented",
+            start_date=start_date,
+            end_date=end_date,
+            threshold=threshold_date.strftime("%Y-%m-%d"),
+            reason="Scrapes crossing the 4-week history threshold are not allowed. "
+            "Please split into two runs: one for historical data (<4 weeks old) "
+            "and one for recent/future data.",
+        )
+        sys.exit(1)
 
     if start_dt.date() < threshold_date.date():
         delay_range = (5.0, 15.0)
