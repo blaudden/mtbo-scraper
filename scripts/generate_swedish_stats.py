@@ -8,10 +8,14 @@ Outputs a summary table and generates charts for:
 """
 
 import json
+import sys
 from collections import defaultdict
 from datetime import date, datetime
 from pathlib import Path
 from typing import TypedDict, cast
+
+# Add project root to path for imports
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import matplotlib.pyplot as plt
 import numpy as np

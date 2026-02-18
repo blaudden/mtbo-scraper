@@ -29,6 +29,8 @@ dev = [
     "types-lxml>=2026.1.1",
     "types-pyyaml>=6.0.12.20250915",
     "types-requests>=2.32.4.20260107",
+    "matplotlib>=3.10.0",
+    "numpy>=2.2.0",
 ]
 
 [tool.pytest.ini_options]
