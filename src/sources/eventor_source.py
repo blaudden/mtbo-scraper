@@ -254,6 +254,23 @@ class EventorSource(BaseSource):
         elif changed:
             local_url_obj.last_updated_at = now_iso
 
+    def _is_swedish_event(self, event: Event) -> bool:
+        """Check if any organiser has country_code 'SWE'."""
+        return any(o.country_code == "SWE" for o in event.organisers)
+
+    def _should_fingerprint(self, event: Event) -> bool:
+        """Whether to generate participant fingerprints for this event.
+
+        Fingerprints are generated for:
+        - SWE and NOR events (always)
+        - IOF events with a Swedish organiser (for better Swedish statistics)
+        """
+        if self.country in ("SWE", "NOR"):
+            return True
+        if self.country == "IOF":
+            return self._is_swedish_event(event)
+        return False
+
     def _should_download_start_list(self, event: Event) -> bool:
         """Determines if a local start list in YAML format should be generated."""
         # Swedish Cup events
@@ -345,6 +362,8 @@ class EventorSource(BaseSource):
                     )
 
             # Only fetch entry/result lists if we need counts
+            entries = None
+            results = None
             if fetch_counts:
                 entries = self._fetch_race_list_items(
                     race, "EntryList", event_id=event.id
@@ -358,7 +377,7 @@ class EventorSource(BaseSource):
                     self._update_race_counts(race, "EntryList", entries)
                 # Ensure 'starts' are available for counts and fingerprints
                 # (even if YAML generation is skipped for this race).
-                if not starts and fetch_counts:
+                if not starts:
                     starts = self._fetch_race_list_items(
                         race, "StartList", event_id=event.id
                     )
@@ -368,12 +387,17 @@ class EventorSource(BaseSource):
                 if results:
                     self._update_race_counts(race, "ResultList", results)
 
-                # 3. Fingerprinting (SWE and NOR)
-                if self.country in ("SWE", "NOR"):
-                    valid_lists = [lst for lst in [entries, starts, results] if lst]
-                    self._generate_race_fingerprints(
-                        race, valid_lists, allowed_classes=allowed_classes
+            # 3. Fingerprinting
+            if self._should_fingerprint(event):
+                # Ensure starts are available for fingerprinting
+                if not starts:
+                    starts = self._fetch_race_list_items(
+                        race, "StartList", event_id=event.id
                     )
+                valid_lists = [lst for lst in [entries, starts, results] if lst]
+                self._generate_race_fingerprints(
+                    race, valid_lists, allowed_classes=allowed_classes
+                )
 
             # 4. Save Start List YAML for this race
             if save_yaml and starts:

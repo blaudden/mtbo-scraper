@@ -95,3 +95,141 @@ def test_iof_startlist_download(
     print(
         f"✅ Count fetching disabled: {not source._should_fetch_counts(updated_event)}"
     )
+
+
+def test_iof_swedish_championship_gets_fingerprints(
+    iof_7490_main_html: str,
+    iof_7490_race2_start_list_html: str,
+    temp_event_data_dir: Path,
+) -> None:
+    """IOF championship events with Swedish organisers get fingerprints."""
+    source = EventorSource(
+        "IOF", "https://eventor.orienteering.org", output_dir=str(temp_event_data_dir)
+    )
+
+    mock_scraper = MagicMock()
+    source.scraper = mock_scraper
+
+    from src.models import Organiser
+
+    def get_side_effect(
+        url: str, params: dict | None = None, **kwargs: object
+    ) -> MagicMock | None:
+        mock_resp = MagicMock()
+        if "events/show/7490" in url.lower():
+            mock_resp.text = iof_7490_main_html
+            return mock_resp
+        elif "startlist" in url.lower():
+            mock_resp.text = iof_7490_race2_start_list_html
+            return mock_resp
+        return None
+
+    mock_scraper.get.side_effect = get_side_effect
+
+    event = Event(
+        id="IOF_7490",
+        name="CX80 World MTB Orienteering Championships 2025",
+        start_time="2025-08-11",
+        end_time="2025-08-17",
+        status="Sanctioned",
+        original_status="Active",
+        url="/Events/Show/7490",
+        types=["Test event"],
+        races=[],
+    )
+
+    # Parse event details (organisers come from HTML = POL)
+    updated_event = source.fetch_event_details(event)
+    assert updated_event is not None
+    assert "World Championships" in updated_event.types
+
+    # Override organisers to Swedish — simulates a Swedish championship
+    updated_event.organisers = [
+        Organiser(name="Sweden", country_code="SWE"),
+        Organiser(name="OK Kåre", country_code="SWE"),
+    ]
+
+    # Clear fingerprints from initial pass, then re-run with SWE organisers
+    for race in updated_event.races:
+        race.fingerprints = []
+
+    source.fetch_and_process_lists(updated_event)
+
+    # Championship: counts should NOT be fetched, but fingerprints SHOULD
+    assert source._should_fetch_counts(updated_event) is False
+    assert source._should_fingerprint(updated_event) is True
+
+    # Verify fingerprints were generated from start list data
+    races_with_fps = [r for r in updated_event.races if r.fingerprints]
+    assert len(races_with_fps) > 0, (
+        "Expected fingerprints on at least one race for IOF Swedish championship"
+    )
+
+
+def test_iof_non_swedish_championship_no_fingerprints(
+    iof_7490_main_html: str,
+    iof_7490_race2_start_list_html: str,
+    temp_event_data_dir: Path,
+) -> None:
+    """IOF championship events with non-Swedish organisers get no fingerprints."""
+    source = EventorSource(
+        "IOF", "https://eventor.orienteering.org", output_dir=str(temp_event_data_dir)
+    )
+
+    mock_scraper = MagicMock()
+    source.scraper = mock_scraper
+
+    from src.models import Organiser
+
+    def get_side_effect(
+        url: str, params: dict | None = None, **kwargs: object
+    ) -> MagicMock | None:
+        mock_resp = MagicMock()
+        if "events/show/7490" in url.lower():
+            mock_resp.text = iof_7490_main_html
+            return mock_resp
+        elif "startlist" in url.lower():
+            mock_resp.text = iof_7490_race2_start_list_html
+            return mock_resp
+        return None
+
+    mock_scraper.get.side_effect = get_side_effect
+
+    event = Event(
+        id="IOF_7490",
+        name="CX80 World MTB Orienteering Championships 2025",
+        start_time="2025-08-11",
+        end_time="2025-08-17",
+        status="Sanctioned",
+        original_status="Active",
+        url="/Events/Show/7490",
+        types=["Test event"],
+        races=[],
+        # Non-Swedish organisers set upfront
+        organisers=[
+            Organiser(name="Lithuania", country_code="LTU"),
+        ],
+    )
+
+    # Parse event details — organisers will be overwritten by parser (POL)
+    updated_event = source.fetch_event_details(event)
+    assert updated_event is not None
+
+    # Override organisers to non-Swedish
+    updated_event.organisers = [
+        Organiser(name="Lithuania", country_code="LTU"),
+    ]
+
+    assert source._should_fingerprint(updated_event) is False
+
+    # Clear and re-run to verify no fingerprints are generated
+    for race in updated_event.races:
+        race.fingerprints = []
+
+    source.fetch_and_process_lists(updated_event)
+
+    for race in updated_event.races:
+        assert race.fingerprints == [], (
+            f"Expected no fingerprints for non-Swedish IOF event, "
+            f"got {len(race.fingerprints)} on race {race.race_number}"
+        )
