@@ -387,12 +387,12 @@ def main(
         sys.exit(1)
 
     if start_dt.date() < threshold_date.date():
-        delay_range = (5.0, 15.0)
+        delay_range = (0.5, 1.5)
         html_cache: HtmlCache | None = HtmlCache()
         use_local_listing = fetch_listing is not True
         logger.info(
             "history_mode_detected",
-            delay="5-15s",
+            delay="0.5-1.5s",
             cache_enabled=True,
             local_listing=use_local_listing,
             reason="start_date_older_than_4_weeks",
@@ -621,7 +621,7 @@ def main(
 
                 # Sleep between chunks, unless using local listing
                 if i < len(chunks) - 1 and not use_local_listing:
-                    sleep_sec = 5
+                    sleep_sec = 0.5
                     logger.info("sleeping_between_chunks", seconds=sleep_sec)
                     time.sleep(sleep_sec)
 
