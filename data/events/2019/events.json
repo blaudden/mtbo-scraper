@@ -1363,7 +1363,7 @@
         {
           "race_number": 1,
           "name": "TROFEO MALVARICHE",
-          "datetimez": "2019-04-27T00:00:00+00:00",
+          "datetimez": "2019-04-27T08:30:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1522,7 +1522,7 @@
         {
           "race_number": 1,
           "name": "TROFEO MALVARICHE",
-          "datetimez": "2019-04-28T00:00:00+00:00",
+          "datetimez": "2019-04-28T09:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1677,7 +1677,7 @@
         {
           "race_number": 1,
           "name": "Championnat de France de Longue Distance",
-          "datetimez": "2019-05-18T00:00:00+00:00",
+          "datetimez": "2019-05-19T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1854,7 +1854,7 @@
         {
           "race_number": 1,
           "name": "Championnat de France de Sprint",
-          "datetimez": "2019-05-17T00:00:00+00:00",
+          "datetimez": "2019-05-18T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2023,7 +2023,7 @@
         {
           "race_number": 1,
           "name": "MTBO Austria Cup",
-          "datetimez": "2019-05-24T00:00:00+00:00",
+          "datetimez": "2019-05-25T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2145,7 +2145,7 @@
         {
           "race_number": 1,
           "name": "MTBO Austria Cup, Austrian Championships Sprint",
-          "datetimez": "2019-05-25T00:00:00+00:00",
+          "datetimez": "2019-05-26T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2265,7 +2265,7 @@
         {
           "race_number": 1,
           "name": "Baltic MTBO Championships 2019 middle",
-          "datetimez": "2019-07-20T00:00:00+00:00",
+          "datetimez": "2019-07-20T11:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2385,7 +2385,7 @@
         {
           "race_number": 1,
           "name": "Baltic MTBO Championships 2019 long",
-          "datetimez": "2019-07-21T00:00:00+00:00",
+          "datetimez": "2019-07-21T11:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2511,7 +2511,7 @@
         {
           "race_number": 1,
           "name": "Balaton MTBO, Hungarian Cup, Austria Cup",
-          "datetimez": "2019-04-07T00:00:00+00:00",
+          "datetimez": "2019-04-07T09:30:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2637,7 +2637,7 @@
         {
           "race_number": 1,
           "name": "Balaton MTBO, Hungarian Cup, Austria Cup",
-          "datetimez": "2019-04-06T00:00:00+00:00",
+          "datetimez": "2019-04-06T13:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2765,7 +2765,7 @@
         {
           "race_number": 1,
           "name": "SG MTBO 2019 - Middle",
-          "datetimez": "2019-05-04T00:00:00+00:00",
+          "datetimez": "2019-05-04T12:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2893,7 +2893,7 @@
         {
           "race_number": 1,
           "name": "SG MTBO 2019 - Long",
-          "datetimez": "2019-05-04T00:00:00+00:00",
+          "datetimez": "2019-05-05T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -3017,7 +3017,7 @@
         {
           "race_number": 1,
           "name": "Swedish Championship, long",
-          "datetimez": "2019-08-23T00:00:00+00:00",
+          "datetimez": "2019-08-24T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -3219,7 +3219,7 @@
         {
           "race_number": 1,
           "name": "Swedish Championship, middle",
-          "datetimez": "2019-08-24T00:00:00+00:00",
+          "datetimez": "2019-08-25T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -3447,7 +3447,7 @@
         {
           "race_number": 1,
           "name": "MTBO Rodhenloppet",
-          "datetimez": "2019-11-01T00:00:00+01:00",
+          "datetimez": "2019-11-02T00:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "night",
           "position": {
@@ -3510,7 +3510,7 @@
         {
           "race_number": 1,
           "name": "MTBO, OK Rodhen",
-          "datetimez": "2019-09-06T00:00:00+02:00",
+          "datetimez": "2019-09-07T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -3617,7 +3617,7 @@
         {
           "race_number": 1,
           "name": "MTBO, DM, Södermanland + Stockholm och Kringelträffen",
-          "datetimez": "2019-03-31T00:00:00+01:00",
+          "datetimez": "2019-03-31T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -4088,7 +4088,7 @@
         {
           "race_number": 1,
           "name": "Nationaldagsmedeln med MTBO i Boden",
-          "datetimez": "2019-06-06T00:00:00+02:00",
+          "datetimez": "2019-06-06T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -4493,7 +4493,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #1, medel",
-          "datetimez": "2019-05-18T00:00:00+02:00",
+          "datetimez": "2019-05-18T11:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -5040,7 +5040,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #2, masstart (övriga lång)",
-          "datetimez": "2019-05-19T00:00:00+02:00",
+          "datetimez": "2019-05-19T09:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -8631,7 +8631,7 @@
         {
           "race_number": 1,
           "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #7, sprint",
-          "datetimez": "2019-08-22T00:00:00+02:00",
+          "datetimez": "2019-08-23T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -9228,7 +9228,7 @@
         {
           "race_number": 1,
           "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #9, medel (WRE)",
-          "datetimez": "2019-08-25T00:00:00+02:00",
+          "datetimez": "2019-08-25T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -9889,7 +9889,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #3, sprint",
-          "datetimez": "2019-06-01T00:00:00+02:00",
+          "datetimez": "2019-06-01T13:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -10398,7 +10398,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #4, medel",
-          "datetimez": "2019-06-02T00:00:00+02:00",
+          "datetimez": "2019-06-02T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -11027,7 +11027,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #5, sprint",
-          "datetimez": "2019-08-17T00:00:00+02:00",
+          "datetimez": "2019-08-17T14:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -11694,7 +11694,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #6, medel",
-          "datetimez": "2019-08-18T00:00:00+02:00",
+          "datetimez": "2019-08-18T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -12389,7 +12389,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #10, Sprint",
-          "datetimez": "2019-09-06T00:00:00+02:00",
+          "datetimez": "2019-09-07T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -12741,7 +12741,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #11, Masstart, Final",
-          "datetimez": "2019-09-07T00:00:00+02:00",
+          "datetimez": "2019-09-08T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -13180,7 +13180,7 @@
         {
           "race_number": 1,
           "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #8, lång (WRE)",
-          "datetimez": "2019-08-23T00:00:00+02:00",
+          "datetimez": "2019-08-24T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -13731,7 +13731,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Ockelbo OK",
-          "datetimez": "2019-08-12T00:00:00+02:00",
+          "datetimez": "2019-08-13T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -13909,7 +13909,7 @@
         {
           "race_number": 1,
           "name": "Vinterserien + MTBO",
-          "datetimez": "2019-01-27T00:00:00+01:00",
+          "datetimez": "2019-01-27T10:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -14229,7 +14229,7 @@
         {
           "race_number": 1,
           "name": "Vinterserien - MtbO",
-          "datetimez": "2019-03-09T00:00:00+01:00",
+          "datetimez": "2019-03-09T11:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -14798,7 +14798,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Blekingecupen #3",
-          "datetimez": "2019-06-09T00:00:00+02:00",
+          "datetimez": "2019-06-09T16:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -14963,7 +14963,7 @@
         {
           "race_number": 1,
           "name": "MTBO Blekingecupen #1",
-          "datetimez": "2019-04-07T00:00:00+02:00",
+          "datetimez": "2019-04-07T16:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -15144,7 +15144,7 @@
         {
           "race_number": 1,
           "name": "MTBO Kalmarsundscupen 2019 deltävling 1",
-          "datetimez": "2019-05-15T00:00:00+02:00",
+          "datetimez": "2019-05-15T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -15280,7 +15280,7 @@
         {
           "race_number": 1,
           "name": "KartoHoj etapp 1",
-          "datetimez": "2019-05-13T00:00:00+02:00",
+          "datetimez": "2019-05-13T17:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -15343,7 +15343,7 @@
         {
           "race_number": 1,
           "name": "KartoHoj etapp 2",
-          "datetimez": "2019-05-20T00:00:00+02:00",
+          "datetimez": "2019-05-20T17:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -15406,7 +15406,7 @@
         {
           "race_number": 1,
           "name": "KartoHoj etspp 3",
-          "datetimez": "2019-05-27T00:00:00+02:00",
+          "datetimez": "2019-05-27T17:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -15469,7 +15469,7 @@
         {
           "race_number": 1,
           "name": "KartoHoj etapp 4",
-          "datetimez": "2019-06-03T00:00:00+02:00",
+          "datetimez": "2019-06-03T17:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -15532,7 +15532,7 @@
         {
           "race_number": 1,
           "name": "KartoHoj 5 final",
-          "datetimez": "2019-06-10T00:00:00+02:00",
+          "datetimez": "2019-06-10T17:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -15625,7 +15625,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO 3",
-          "datetimez": "2019-05-27T00:00:00+02:00",
+          "datetimez": "2019-05-27T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -15786,7 +15786,7 @@
         {
           "race_number": 1,
           "name": "Östgötaserien i MTBO, #1",
-          "datetimez": "2019-05-21T00:00:00+02:00",
+          "datetimez": "2019-05-21T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -15958,7 +15958,7 @@
         {
           "race_number": 1,
           "name": "Östgötaserien i MTBO, #2",
-          "datetimez": "2019-06-17T00:00:00+02:00",
+          "datetimez": "2019-06-17T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -16116,7 +16116,7 @@
         {
           "race_number": 1,
           "name": "MTBO-cupen 1 Gotland",
-          "datetimez": "2019-04-17T00:00:00+02:00",
+          "datetimez": "2019-04-17T17:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -16252,7 +16252,7 @@
         {
           "race_number": 1,
           "name": "MTBO-cupen 5 Gotland",
-          "datetimez": "2019-08-28T00:00:00+02:00",
+          "datetimez": "2019-08-28T17:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -16393,7 +16393,7 @@
         {
           "race_number": 1,
           "name": "MTBO-cupen 6 Gotland",
-          "datetimez": "2019-09-10T00:00:00+02:00",
+          "datetimez": "2019-09-11T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -16560,7 +16560,7 @@
         {
           "race_number": 1,
           "name": "Dalaserien MTBO, #2, Kvarnsveden",
-          "datetimez": "2019-04-24T00:00:00+02:00",
+          "datetimez": "2019-04-24T17:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -16741,7 +16741,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien etapp #7/8",
-          "datetimez": "2019-08-20T00:00:00+02:00",
+          "datetimez": "2019-08-20T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -16907,7 +16907,7 @@
         {
           "race_number": 1,
           "name": "Dalaserien MTBO #1",
-          "datetimez": "2019-04-10T00:00:00+02:00",
+          "datetimez": "2019-04-10T17:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -17006,7 +17006,7 @@
         {
           "race_number": 1,
           "name": "MTBO-cupen 2 Gotland",
-          "datetimez": "2019-05-15T00:00:00+02:00",
+          "datetimez": "2019-05-15T17:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -17165,7 +17165,7 @@
         {
           "race_number": 1,
           "name": "MTBO-cupen 3 Gotland",
-          "datetimez": "2019-06-19T00:00:00+02:00",
+          "datetimez": "2019-06-19T17:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -17332,7 +17332,7 @@
         {
           "race_number": 1,
           "name": "MTBO-cupen 4 Gotland",
-          "datetimez": "2019-08-14T00:00:00+02:00",
+          "datetimez": "2019-08-14T17:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -17494,7 +17494,7 @@
         {
           "race_number": 1,
           "name": "MTBO Kalmarsundscupen 2019 deltävling 2",
-          "datetimez": "2019-05-22T00:00:00+02:00",
+          "datetimez": "2019-05-22T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -17655,7 +17655,7 @@
         {
           "race_number": 1,
           "name": "Östgötaserien i MTBO, #3",
-          "datetimez": "2019-09-09T00:00:00+02:00",
+          "datetimez": "2019-09-09T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -17805,7 +17805,7 @@
         {
           "race_number": 1,
           "name": "Norrträning MTB-O 2019-07-09",
-          "datetimez": "2019-07-09T00:00:00+02:00",
+          "datetimez": "2019-07-09T11:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -17945,7 +17945,7 @@
         {
           "race_number": 1,
           "name": "Tränings-OL",
-          "datetimez": "2019-07-22T00:00:00+02:00",
+          "datetimez": "2019-07-23T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -18063,7 +18063,7 @@
         {
           "race_number": 1,
           "name": "Dalaserien MTBO #1",
-          "datetimez": "2019-04-13T00:00:00+02:00",
+          "datetimez": "2019-04-13T15:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -18221,7 +18221,7 @@
         {
           "race_number": 1,
           "name": "Öppet MTBO-DM Dalarna, medel",
-          "datetimez": "2019-08-31T00:00:00+02:00",
+          "datetimez": "2019-08-31T12:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -18491,7 +18491,7 @@
         {
           "race_number": 1,
           "name": "Västsvenska MTBO-Cupen",
-          "datetimez": "2019-05-22T00:00:00+02:00",
+          "datetimez": "2019-05-22T17:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -18659,7 +18659,7 @@
         {
           "race_number": 1,
           "name": "Motionsorientering och MTBO Umeå (Röbäck)",
-          "datetimez": "2019-06-04T00:00:00+02:00",
+          "datetimez": "2019-06-04T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -18761,7 +18761,7 @@
         {
           "race_number": 1,
           "name": "MTB-O-träning",
-          "datetimez": "2019-05-02T00:00:00+02:00",
+          "datetimez": "2019-05-02T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -18929,7 +18929,7 @@
         {
           "race_number": 1,
           "name": "Gammelstads sprintcup, #3",
-          "datetimez": "2019-05-12T00:00:00+02:00",
+          "datetimez": "2019-05-12T15:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -19227,7 +19227,7 @@
         {
           "race_number": 1,
           "name": "MTBO Blekingecupen #2",
-          "datetimez": "2019-05-12T00:00:00+02:00",
+          "datetimez": "2019-05-12T16:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -19405,7 +19405,7 @@
         {
           "race_number": 1,
           "name": "Motions-OL - Borås 4 av 5 VT [Kype]",
-          "datetimez": "2019-06-05T00:00:00+02:00",
+          "datetimez": "2019-06-05T17:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -19667,7 +19667,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien i MTBO 2019 Deltävling 1",
-          "datetimez": "2019-05-06T00:00:00+02:00",
+          "datetimez": "2019-05-06T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -19837,7 +19837,7 @@
         {
           "race_number": 1,
           "name": "Träningstävling MTBO",
-          "datetimez": "2019-05-08T00:00:00+02:00",
+          "datetimez": "2019-05-08T17:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -20009,7 +20009,7 @@
         {
           "race_number": 1,
           "name": "Dalaserien MTBO, #3, Säterbygdens OK",
-          "datetimez": "2019-05-15T00:00:00+02:00",
+          "datetimez": "2019-05-15T17:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -20177,7 +20177,7 @@
         {
           "race_number": 1,
           "name": "7-Klubbs",
-          "datetimez": "2019-05-07T00:00:00+02:00",
+          "datetimez": "2019-05-07T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -20414,7 +20414,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO deltävling 2",
-          "datetimez": "2019-05-13T00:00:00+02:00",
+          "datetimez": "2019-05-13T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -20609,7 +20609,7 @@
         {
           "race_number": 1,
           "name": "7-klubbs Örnligan 2",
-          "datetimez": "2019-06-04T00:00:00+02:00",
+          "datetimez": "2019-06-04T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -20885,7 +20885,7 @@
         {
           "race_number": 1,
           "name": "7-Klubbs",
-          "datetimez": "2019-05-14T00:00:00+02:00",
+          "datetimez": "2019-05-14T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -21104,7 +21104,7 @@
         {
           "race_number": 1,
           "name": "Dalaserien MTBO #4, Öppet KM IFK Mora OK",
-          "datetimez": "2019-05-22T00:00:00+02:00",
+          "datetimez": "2019-05-22T17:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -21300,7 +21300,7 @@
         {
           "race_number": 1,
           "name": "7-Klubbs Bodum",
-          "datetimez": "2019-06-18T00:00:00+02:00",
+          "datetimez": "2019-06-18T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -21553,7 +21553,7 @@
         {
           "race_number": 1,
           "name": "Öppet MTBO-DM Dalarna, lång, Dalaserien #8",
-          "datetimez": "2019-09-27T00:00:00+02:00",
+          "datetimez": "2019-09-28T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -21755,7 +21755,7 @@
         {
           "race_number": 1,
           "name": "7-klubbs",
-          "datetimez": "2019-05-21T00:00:00+02:00",
+          "datetimez": "2019-05-21T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -21831,7 +21831,7 @@
         {
           "race_number": 1,
           "name": "Motionsorientering Rudan",
-          "datetimez": "2019-05-20T00:00:00+02:00",
+          "datetimez": "2019-05-20T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -21967,7 +21967,7 @@
         {
           "race_number": 1,
           "name": "Motionsorientering Rudan",
-          "datetimez": "2019-06-03T00:00:00+02:00",
+          "datetimez": "2019-06-03T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -22127,7 +22127,7 @@
         {
           "race_number": 1,
           "name": "Dalaserien MTBO #6, Stora Tuna OK",
-          "datetimez": "2019-08-29T00:00:00+02:00",
+          "datetimez": "2019-08-29T17:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -22292,7 +22292,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO 4",
-          "datetimez": "2019-06-10T00:00:00+02:00",
+          "datetimez": "2019-06-10T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -22439,7 +22439,7 @@
         {
           "race_number": 1,
           "name": "Norrträning MTB-O 2019-06-25",
-          "datetimez": "2019-06-25T00:00:00+02:00",
+          "datetimez": "2019-06-25T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -22579,7 +22579,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTB-O deltävling 5",
-          "datetimez": "2019-06-17T00:00:00+02:00",
+          "datetimez": "2019-06-17T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -22753,7 +22753,7 @@
         {
           "race_number": 1,
           "name": "Dalaserien MTBO #5, KM OK Kåre och Domnarvets GoIF",
-          "datetimez": "2019-08-21T00:00:00+02:00",
+          "datetimez": "2019-08-21T17:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -22935,7 +22935,7 @@
         {
           "race_number": 1,
           "name": "7-klubbs",
-          "datetimez": "2019-06-11T00:00:00+02:00",
+          "datetimez": "2019-06-11T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -23163,7 +23163,7 @@
         {
           "race_number": 1,
           "name": "MTBO Kalmarsundscupen etapp 3",
-          "datetimez": "2019-08-14T00:00:00+02:00",
+          "datetimez": "2019-08-14T17:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -23263,7 +23263,7 @@
         {
           "race_number": 1,
           "name": "Västsvenska MTBO-Cupen",
-          "datetimez": "2019-08-13T00:00:00+02:00",
+          "datetimez": "2019-08-13T17:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -23433,7 +23433,7 @@
         {
           "race_number": 1,
           "name": "Kalmarsundscupen",
-          "datetimez": "2019-08-21T00:00:00+02:00",
+          "datetimez": "2019-08-21T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -23554,7 +23554,7 @@
         {
           "race_number": 1,
           "name": "MTBO träning",
-          "datetimez": "2019-06-27T00:00:00+02:00",
+          "datetimez": "2019-06-27T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -23674,7 +23674,7 @@
         {
           "race_number": 1,
           "name": "Ärla MTBO_Björndammen",
-          "datetimez": "2019-07-06T00:00:00+02:00",
+          "datetimez": "2019-07-06T14:45:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -23849,7 +23849,7 @@
         {
           "race_number": 1,
           "name": "7-klubbs",
-          "datetimez": "2019-07-02T00:00:00+02:00",
+          "datetimez": "2019-07-02T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -24052,7 +24052,7 @@
         {
           "race_number": 1,
           "name": "MTBO 1 BJÄSTAMON",
-          "datetimez": "2019-06-26T00:00:00+02:00",
+          "datetimez": "2019-06-26T18:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -24141,7 +24141,7 @@
         {
           "race_number": 1,
           "name": "O-Ringen Kolmården, träningsrace",
-          "datetimez": "2019-07-19T00:00:00+02:00",
+          "datetimez": "2019-07-20T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -24291,7 +24291,7 @@
         {
           "race_number": 1,
           "name": "Gävletrampen MTBO",
-          "datetimez": "2019-08-06T00:00:00+02:00",
+          "datetimez": "2019-08-06T17:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -24434,7 +24434,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO 6",
-          "datetimez": "2019-08-12T00:00:00+02:00",
+          "datetimez": "2019-08-12T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -24598,7 +24598,7 @@
         {
           "race_number": 1,
           "name": "Dalaserien MTBO #5, KM OK Kåre och Domnarvets GoIF",
-          "datetimez": "2019-08-21T00:00:00+02:00",
+          "datetimez": "2019-08-21T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -24661,7 +24661,7 @@
         {
           "race_number": 1,
           "name": "MTBO",
-          "datetimez": "2019-08-06T00:00:00+02:00",
+          "datetimez": "2019-08-06T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -24837,7 +24837,7 @@
         {
           "race_number": 1,
           "name": "MTBO, DM, medel, Ångermanland",
-          "datetimez": "2019-09-01T00:00:00+02:00",
+          "datetimez": "2019-09-01T11:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -24996,7 +24996,7 @@
         {
           "race_number": 1,
           "name": "Östgötaserien MTBO, #6",
-          "datetimez": "2019-09-16T00:00:00+02:00",
+          "datetimez": "2019-09-16T17:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -25141,7 +25141,7 @@
         {
           "race_number": 1,
           "name": "Motionsorientering Umeå + MTBO",
-          "datetimez": "2019-09-22T00:00:00+02:00",
+          "datetimez": "2019-09-22T11:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -25306,7 +25306,7 @@
         {
           "race_number": 1,
           "name": "SSOK - Motionsorientering Skåre",
-          "datetimez": "2019-09-24T00:00:00+02:00",
+          "datetimez": "2019-09-24T17:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -25386,7 +25386,7 @@
         {
           "race_number": 1,
           "name": "Östgötaserien i MTBO",
-          "datetimez": "2019-08-26T00:00:00+02:00",
+          "datetimez": "2019-08-26T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -25523,7 +25523,7 @@
         {
           "race_number": 1,
           "name": "Östgötaserien i MTBO, #4",
-          "datetimez": "2019-09-02T00:00:00+02:00",
+          "datetimez": "2019-09-02T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -25669,7 +25669,7 @@
         {
           "race_number": 1,
           "name": "Dalaserien MTBO Nr 7",
-          "datetimez": "2019-09-10T00:00:00+02:00",
+          "datetimez": "2019-09-11T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -25822,7 +25822,7 @@
         {
           "race_number": 1,
           "name": "MTB-O och träning",
-          "datetimez": "2019-08-28T00:00:00+02:00",
+          "datetimez": "2019-08-28T17:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -25971,7 +25971,7 @@
         {
           "race_number": 1,
           "name": "Final Värmlandsserien MTBO",
-          "datetimez": "2019-09-02T00:00:00+02:00",
+          "datetimez": "2019-09-02T18:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -26124,7 +26124,7 @@
         {
           "race_number": 1,
           "name": "Skogslöparnas MTBO KM",
-          "datetimez": "2019-09-07T00:00:00+02:00",
+          "datetimez": "2019-09-07T11:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -26242,7 +26242,7 @@
         {
           "race_number": 1,
           "name": "Svartåtrampet 2019 (MTB-träning med tidtagning)",
-          "datetimez": "2019-10-12T00:00:00+02:00",
+          "datetimez": "2019-10-12T11:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -26400,7 +26400,7 @@
         {
           "race_number": 1,
           "name": "MORR – Mölndal Outdoor Runt Race – MTBO",
-          "datetimez": "2019-10-19T00:00:00+02:00",
+          "datetimez": "2019-10-19T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -26488,7 +26488,7 @@
         {
           "race_number": 1,
           "name": "MTBO Haningenatten",
-          "datetimez": "2019-10-24T00:00:00+02:00",
+          "datetimez": "2019-10-25T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "night",
           "position": {
@@ -26628,7 +26628,7 @@
         {
           "race_number": 1,
           "name": "MTB-O KM",
-          "datetimez": "2019-10-05T00:00:00+02:00",
+          "datetimez": "2019-10-05T11:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -26772,7 +26772,7 @@
         {
           "race_number": 1,
           "name": "MTBO Blekingecupen #4",
-          "datetimez": "2019-09-29T00:00:00+02:00",
+          "datetimez": "2019-09-29T16:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -26928,7 +26928,7 @@
         {
           "race_number": 1,
           "name": "Getaren Runt",
-          "datetimez": "2019-10-29T00:00:00+01:00",
+          "datetimez": "2019-10-29T18:15:00+01:00",
           "discipline": "Long",
           "night_or_day": "night",
           "position": {
@@ -27091,7 +27091,7 @@
         {
           "race_number": 1,
           "name": "MTBO-DM Småland",
-          "datetimez": "2019-11-02T00:00:00+01:00",
+          "datetimez": "2019-11-02T11:00:00+01:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -27327,7 +27327,7 @@
         {
           "race_number": 1,
           "name": "Öppet KM MtbO Lunds OK",
-          "datetimez": "2019-11-10T00:00:00+01:00",
+          "datetimez": "2019-11-10T13:00:00+01:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -27507,7 +27507,7 @@
         {
           "race_number": 1,
           "name": "MTBO-närtävling",
-          "datetimez": "2019-11-16T00:00:00+01:00",
+          "datetimez": "2019-11-16T10:00:00+01:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -27657,7 +27657,7 @@
         {
           "race_number": 1,
           "name": "Träningstävling MTBO + OL",
-          "datetimez": "2019-12-08T00:00:00+01:00",
+          "datetimez": "2019-12-08T10:00:00+01:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {

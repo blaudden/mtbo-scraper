@@ -1053,7 +1053,7 @@
         {
           "race_number": 1,
           "name": "National competition Middle distance",
-          "datetimez": "2021-05-21T00:00:00+00:00",
+          "datetimez": "2021-05-22T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1171,7 +1171,7 @@
         {
           "race_number": 1,
           "name": "National competition Mass start",
-          "datetimez": "2021-05-24T00:00:00+00:00",
+          "datetimez": "2021-05-24T09:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1256,7 +1256,7 @@
         {
           "race_number": 1,
           "name": "Finnish MTBO Championship Sprint",
-          "datetimez": "2021-05-22T00:00:00+00:00",
+          "datetimez": "2021-05-22T14:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1360,7 +1360,7 @@
         {
           "race_number": 1,
           "name": "Finnish MTBO Championship Long distance",
-          "datetimez": "2021-05-23T00:00:00+00:00",
+          "datetimez": "2021-05-23T10:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1708,7 +1708,7 @@
         {
           "race_number": 1,
           "name": "Balaton MTBO Long",
-          "datetimez": "2021-05-08T00:00:00+00:00",
+          "datetimez": "2021-05-09T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1796,7 +1796,7 @@
         {
           "race_number": 1,
           "name": "Balaton MTBO Middle",
-          "datetimez": "2021-05-07T00:00:00+00:00",
+          "datetimez": "2021-05-08T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1872,7 +1872,7 @@
         {
           "race_number": 1,
           "name": "MTBO 5 Days, 4th stage - middle",
-          "datetimez": "2021-07-04T00:00:00+00:00",
+          "datetimez": "2021-07-05T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1980,7 +1980,7 @@
         {
           "race_number": 1,
           "name": "MTBO 5 Days, 3rd stage - long",
-          "datetimez": "2021-07-03T00:00:00+00:00",
+          "datetimez": "2021-07-04T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2106,7 +2106,7 @@
         {
           "race_number": 1,
           "name": "Austrian MTBOdays 2021 – Sprint",
-          "datetimez": "2021-07-09T00:00:00+00:00",
+          "datetimez": "2021-07-10T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2232,7 +2232,7 @@
         {
           "race_number": 1,
           "name": "Austrian MTBOdays 2021 – Long",
-          "datetimez": "2021-07-10T00:00:00+00:00",
+          "datetimez": "2021-07-11T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2358,7 +2358,7 @@
         {
           "race_number": 1,
           "name": "Shtraklevo Cup",
-          "datetimez": "2021-09-18T00:00:00+00:00",
+          "datetimez": "2021-09-19T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2490,7 +2490,7 @@
         {
           "race_number": 1,
           "name": "Popovo Cup",
-          "datetimez": "2021-09-17T00:00:00+00:00",
+          "datetimez": "2021-09-18T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2943,7 +2943,7 @@
         {
           "race_number": 1,
           "name": "Coppa Italia MTBO - Sprint",
-          "datetimez": "2021-09-11T00:00:00+00:00",
+          "datetimez": "2021-09-12T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -3037,7 +3037,7 @@
         {
           "race_number": 1,
           "name": "Campionato Italiano MTBO Long",
-          "datetimez": "2021-09-10T00:00:00+00:00",
+          "datetimez": "2021-09-11T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -3423,7 +3423,7 @@
         {
           "race_number": 1,
           "name": "O-triatlon",
-          "datetimez": "2021-08-18T00:00:00+02:00",
+          "datetimez": "2021-08-18T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -3700,7 +3700,7 @@
         {
           "race_number": 1,
           "name": "Gørretråkket 2021",
-          "datetimez": "2021-10-23T00:00:00+02:00",
+          "datetimez": "2021-10-23T11:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -3948,7 +3948,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #1, sprint",
-          "datetimez": "2021-05-28T00:00:00+02:00",
+          "datetimez": "2021-05-29T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": null,
@@ -4026,7 +4026,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #2, medel",
-          "datetimez": "2021-05-29T00:00:00+02:00",
+          "datetimez": "2021-05-30T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -4236,7 +4236,7 @@
         {
           "race_number": 1,
           "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #1, sprint",
-          "datetimez": "2021-08-05T00:00:00+02:00",
+          "datetimez": "2021-08-06T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -4874,7 +4874,7 @@
         {
           "race_number": 1,
           "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #2, lång",
-          "datetimez": "2021-08-07T00:00:00+02:00",
+          "datetimez": "2021-08-07T11:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -5589,7 +5589,7 @@
         {
           "race_number": 1,
           "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #3, medel",
-          "datetimez": "2021-08-07T00:00:00+02:00",
+          "datetimez": "2021-08-08T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -6109,7 +6109,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #4, sprint",
-          "datetimez": "2021-08-27T00:00:00+02:00",
+          "datetimez": "2021-08-28T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -6698,7 +6698,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #5, medel",
-          "datetimez": "2021-08-28T00:00:00+02:00",
+          "datetimez": "2021-08-29T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -7276,7 +7276,7 @@
         {
           "race_number": 1,
           "name": "MTBO 2021 Kvarnsveden",
-          "datetimez": "2021-10-02T00:00:00+02:00",
+          "datetimez": "2021-10-02T14:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -7343,7 +7343,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #3, medel",
-          "datetimez": "2021-05-28T00:00:00+02:00",
+          "datetimez": "2021-05-29T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": null,
@@ -7407,7 +7407,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #4, lång",
-          "datetimez": "2021-05-29T00:00:00+02:00",
+          "datetimez": "2021-05-30T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": null,
@@ -7588,7 +7588,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #6, sprint",
-          "datetimez": "2021-09-25T00:00:00+02:00",
+          "datetimez": "2021-09-25T15:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -8181,7 +8181,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #7, medeldistans, final",
-          "datetimez": "2021-09-26T00:00:00+02:00",
+          "datetimez": "2021-09-26T11:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -8794,7 +8794,7 @@
         {
           "race_number": 1,
           "name": "MTBO-träning",
-          "datetimez": "2021-03-09T00:00:00+01:00",
+          "datetimez": "2021-03-10T00:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -8910,7 +8910,7 @@
         {
           "race_number": 1,
           "name": "Träning MTBO",
-          "datetimez": "2021-03-20T00:00:00+01:00",
+          "datetimez": "2021-03-20T10:30:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -9060,7 +9060,7 @@
         {
           "race_number": 1,
           "name": "Smålandscupen MTBO",
-          "datetimez": "2021-05-23T00:00:00+02:00",
+          "datetimez": "2021-05-23T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -9537,7 +9537,7 @@
         {
           "race_number": 1,
           "name": "MTBO, DM, Sprint, Småland",
-          "datetimez": "2021-05-22T00:00:00+02:00",
+          "datetimez": "2021-05-22T10:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -9682,7 +9682,7 @@
         {
           "race_number": 1,
           "name": "Smålandscupen MTBO 2021",
-          "datetimez": "2021-06-04T00:00:00+02:00",
+          "datetimez": "2021-06-05T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -9745,7 +9745,7 @@
         {
           "race_number": 1,
           "name": "Motionsorientering MTBO",
-          "datetimez": "2021-05-30T00:00:00+02:00",
+          "datetimez": "2021-05-31T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": null,
@@ -9816,7 +9816,7 @@
         {
           "race_number": 1,
           "name": "Motionsorientering MTBO",
-          "datetimez": "2021-06-14T00:00:00+02:00",
+          "datetimez": "2021-06-15T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": null,
@@ -9944,7 +9944,7 @@
         {
           "race_number": 1,
           "name": "Motionsorientering MTBO",
-          "datetimez": "2021-06-21T00:00:00+02:00",
+          "datetimez": "2021-06-22T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": null,
@@ -10125,7 +10125,7 @@
         {
           "race_number": 1,
           "name": "Smålandscupen MTBO",
-          "datetimez": "2021-08-21T00:00:00+02:00",
+          "datetimez": "2021-08-21T13:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -10372,7 +10372,7 @@
         {
           "race_number": 1,
           "name": "MTBO, DM, medel, Småland",
-          "datetimez": "2021-08-22T00:00:00+02:00",
+          "datetimez": "2021-08-22T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -10732,7 +10732,7 @@
         {
           "race_number": 1,
           "name": "Smålandscupen MTBO",
-          "datetimez": "2021-09-18T00:00:00+02:00",
+          "datetimez": "2021-09-18T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -10944,7 +10944,7 @@
         {
           "race_number": 1,
           "name": "Öppen MTBO-träning",
-          "datetimez": "2021-04-24T00:00:00+02:00",
+          "datetimez": "2021-04-24T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -11139,7 +11139,7 @@
         {
           "race_number": 1,
           "name": "VM-Test MTBO Medel",
-          "datetimez": "2021-05-08T00:00:00+02:00",
+          "datetimez": "2021-05-08T14:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -11378,7 +11378,7 @@
         {
           "race_number": 1,
           "name": "MTBO VM-Test Långdistans",
-          "datetimez": "2021-05-09T00:00:00+02:00",
+          "datetimez": "2021-05-09T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": null,
@@ -11537,7 +11537,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO",
-          "datetimez": "2021-08-16T00:00:00+02:00",
+          "datetimez": "2021-08-16T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -11793,7 +11793,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO",
-          "datetimez": "2021-08-30T00:00:00+02:00",
+          "datetimez": "2021-08-30T17:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -11961,7 +11961,7 @@
         {
           "race_number": 1,
           "name": "Östgötaserien MTB-O",
-          "datetimez": "2021-06-07T00:00:00+02:00",
+          "datetimez": "2021-06-07T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -12119,7 +12119,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO deltävling 2",
-          "datetimez": "2021-05-23T00:00:00+02:00",
+          "datetimez": "2021-05-24T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -12223,7 +12223,7 @@
         {
           "race_number": 1,
           "name": "Östgötaserien MTBO",
-          "datetimez": "2021-05-31T00:00:00+02:00",
+          "datetimez": "2021-06-01T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -12411,7 +12411,7 @@
         {
           "race_number": 1,
           "name": "MTBO",
-          "datetimez": "2021-05-02T00:00:00+02:00",
+          "datetimez": "2021-05-02T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -12531,7 +12531,7 @@
         {
           "race_number": 1,
           "name": "VM-test Sprint",
-          "datetimez": "2021-05-29T00:00:00+02:00",
+          "datetimez": "2021-05-29T14:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -12748,7 +12748,7 @@
         {
           "race_number": 1,
           "name": "VM-test Medel",
-          "datetimez": "2021-05-30T00:00:00+02:00",
+          "datetimez": "2021-05-30T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -12968,7 +12968,7 @@
         {
           "race_number": 1,
           "name": "7-Klubbs",
-          "datetimez": "2021-06-15T00:00:00+02:00",
+          "datetimez": "2021-06-15T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -13242,7 +13242,7 @@
         {
           "race_number": 1,
           "name": "Kils OK Värmlandsserien MTBO",
-          "datetimez": "2021-06-07T00:00:00+02:00",
+          "datetimez": "2021-06-07T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -13438,7 +13438,7 @@
         {
           "race_number": 1,
           "name": "Smålandscupen MTBO 2021",
-          "datetimez": "2021-10-01T00:00:00+02:00",
+          "datetimez": "2021-10-02T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -13841,7 +13841,7 @@
         {
           "race_number": 1,
           "name": "Smålandscupen MTBO",
-          "datetimez": "2021-06-19T00:00:00+02:00",
+          "datetimez": "2021-06-19T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -14117,7 +14117,7 @@
         {
           "race_number": 1,
           "name": "MTBO, DM, Sprint, Småland",
-          "datetimez": "2021-10-23T00:00:00+02:00",
+          "datetimez": "2021-10-23T10:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -14460,7 +14460,7 @@
         {
           "race_number": 1,
           "name": "Smålandscupen MTBO",
-          "datetimez": "2021-10-24T00:00:00+02:00",
+          "datetimez": "2021-10-24T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -14685,7 +14685,7 @@
         {
           "race_number": 1,
           "name": "Prova på MTBO",
-          "datetimez": "2021-06-02T00:00:00+02:00",
+          "datetimez": "2021-06-02T17:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -14782,7 +14782,7 @@
         {
           "race_number": 1,
           "name": "MTBO-KM",
-          "datetimez": "2021-06-10T00:00:00+02:00",
+          "datetimez": "2021-06-10T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -14975,7 +14975,7 @@
         {
           "race_number": 1,
           "name": "7-klubbs, Örnligan 1",
-          "datetimez": "2021-06-08T00:00:00+02:00",
+          "datetimez": "2021-06-08T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -15283,7 +15283,7 @@
         {
           "race_number": 1,
           "name": "MTBO träning, sprint med slingor",
-          "datetimez": "2021-06-15T00:00:00+02:00",
+          "datetimez": "2021-06-15T18:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": null,
@@ -16373,7 +16373,7 @@
         {
           "race_number": 1,
           "name": "MTBO Ingestrand sommaren 2021",
-          "datetimez": "2021-06-07T00:00:00+02:00",
+          "datetimez": "2021-06-08T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": null,
@@ -16447,7 +16447,7 @@
         {
           "race_number": 1,
           "name": "Tränings-OL + Mtb-O",
-          "datetimez": "2021-07-20T00:00:00+02:00",
+          "datetimez": "2021-07-20T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -16583,7 +16583,7 @@
         {
           "race_number": 1,
           "name": "Tränings-OL + Mtb-O",
-          "datetimez": "2021-07-22T00:00:00+02:00",
+          "datetimez": "2021-07-22T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -16707,7 +16707,7 @@
         {
           "race_number": 1,
           "name": "MTBO, träning, Pattons Hage",
-          "datetimez": "2021-06-16T00:00:00+02:00",
+          "datetimez": "2021-06-16T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -16850,7 +16850,7 @@
         {
           "race_number": 1,
           "name": "MTBO, DM, medel, Värmland",
-          "datetimez": "2021-09-17T00:00:00+02:00",
+          "datetimez": "2021-09-18T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -17026,7 +17026,7 @@
         {
           "race_number": 1,
           "name": "Sommar Simrishamn 2",
-          "datetimez": "2021-08-02T00:00:00+02:00",
+          "datetimez": "2021-08-02T18:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -17195,7 +17195,7 @@
         {
           "race_number": 1,
           "name": "Leksands OK, MTBO-träning & Prova på",
-          "datetimez": "2021-06-23T00:00:00+02:00",
+          "datetimez": "2021-06-23T17:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -17346,7 +17346,7 @@
         {
           "race_number": 1,
           "name": "Prova på MTBO",
-          "datetimez": "2021-06-15T00:00:00+02:00",
+          "datetimez": "2021-06-15T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": null,
@@ -17421,7 +17421,7 @@
         {
           "race_number": 1,
           "name": "MTB-O 210622",
-          "datetimez": "2021-06-22T00:00:00+02:00",
+          "datetimez": "2021-06-22T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -17537,7 +17537,7 @@
         {
           "race_number": 1,
           "name": "MtbO/TrailO",
-          "datetimez": "2021-07-01T00:00:00+02:00",
+          "datetimez": "2021-07-01T18:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -17711,7 +17711,7 @@
         {
           "race_number": 1,
           "name": "MTBO 2021 Kvarnsveden",
-          "datetimez": "2021-09-18T00:00:00+02:00",
+          "datetimez": "2021-09-18T14:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -18017,7 +18017,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Domnarvets GoIF, lång",
-          "datetimez": "2021-09-19T00:00:00+02:00",
+          "datetimez": "2021-09-19T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -18248,7 +18248,7 @@
         {
           "race_number": 1,
           "name": "Sommarträning MTB-O",
-          "datetimez": "2021-07-20T00:00:00+02:00",
+          "datetimez": "2021-07-20T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": null,
@@ -18387,7 +18387,7 @@
         {
           "race_number": 1,
           "name": "MTBO",
-          "datetimez": "2021-07-13T00:00:00+02:00",
+          "datetimez": "2021-07-13T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": null,
@@ -18484,7 +18484,7 @@
         {
           "race_number": 1,
           "name": "Östgötaserien MTBO, #3",
-          "datetimez": "2021-08-23T00:00:00+02:00",
+          "datetimez": "2021-08-23T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -18634,7 +18634,7 @@
         {
           "race_number": 1,
           "name": "MTBO 27 juli",
-          "datetimez": "2021-07-27T00:00:00+02:00",
+          "datetimez": "2021-07-27T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -18780,7 +18780,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Kolmårdsträffen",
-          "datetimez": "2021-08-21T00:00:00+02:00",
+          "datetimez": "2021-08-21T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -18966,7 +18966,7 @@
         {
           "race_number": 1,
           "name": "MTBO, DM, medel, Ångermanland",
-          "datetimez": "2021-09-05T00:00:00+02:00",
+          "datetimez": "2021-09-05T12:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -19123,7 +19123,7 @@
         {
           "race_number": 1,
           "name": "Göteborg Multisportrace",
-          "datetimez": "2021-09-18T00:00:00+02:00",
+          "datetimez": "2021-09-19T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": null,
@@ -19326,7 +19326,7 @@
         {
           "race_number": 1,
           "name": "MtbO",
-          "datetimez": "2021-08-18T00:00:00+02:00",
+          "datetimez": "2021-08-18T17:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -19418,7 +19418,7 @@
         {
           "race_number": 1,
           "name": "Östgötaserien MTBO #4",
-          "datetimez": "2021-08-30T00:00:00+02:00",
+          "datetimez": "2021-08-30T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -19587,7 +19587,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserie MTBO",
-          "datetimez": "2021-08-23T00:00:00+02:00",
+          "datetimez": "2021-08-23T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -19754,7 +19754,7 @@
         {
           "race_number": 1,
           "name": "IFK Lidingös öppna KM MTBO-2021",
-          "datetimez": "2021-09-01T00:00:00+02:00",
+          "datetimez": "2021-09-01T17:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -19946,7 +19946,7 @@
         {
           "race_number": 1,
           "name": "Östgötaserien MTBO, #5",
-          "datetimez": "2021-09-14T00:00:00+02:00",
+          "datetimez": "2021-09-14T17:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -20215,7 +20215,7 @@
         {
           "race_number": 1,
           "name": "MtbO 6 2021",
-          "datetimez": "2021-09-15T00:00:00+02:00",
+          "datetimez": "2021-09-15T17:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -20333,7 +20333,7 @@
         {
           "race_number": 1,
           "name": "MTBO/TrailO-träning",
-          "datetimez": "2021-09-01T00:00:00+02:00",
+          "datetimez": "2021-09-01T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -20440,7 +20440,7 @@
         {
           "race_number": 1,
           "name": "Svartåtrampet 2021 (MTB-träning med tidtagning)",
-          "datetimez": "2021-10-03T00:00:00+02:00",
+          "datetimez": "2021-10-03T11:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -20591,7 +20591,7 @@
         {
           "race_number": 1,
           "name": "MTBO-KM OK Kåre och Domnarvets GoIF",
-          "datetimez": "2021-09-13T00:00:00+02:00",
+          "datetimez": "2021-09-13T17:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": null,
@@ -20707,7 +20707,7 @@
         {
           "race_number": 1,
           "name": "MTBO SM-banor",
-          "datetimez": "2021-09-15T00:00:00+02:00",
+          "datetimez": "2021-09-15T17:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -20867,7 +20867,7 @@
         {
           "race_number": 1,
           "name": "Öppet KM MTB-O, medel",
-          "datetimez": "2021-10-16T00:00:00+02:00",
+          "datetimez": "2021-10-16T13:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -21035,7 +21035,7 @@
         {
           "race_number": 1,
           "name": "BJÄSTANATTA",
-          "datetimez": "2021-09-22T00:00:00+02:00",
+          "datetimez": "2021-09-22T19:15:00+02:00",
           "discipline": "Middle",
           "night_or_day": "night",
           "position": {
@@ -21173,7 +21173,7 @@
         {
           "race_number": 1,
           "name": "Tullinge SKs öppna MTBO-KM",
-          "datetimez": "2021-10-05T00:00:00+02:00",
+          "datetimez": "2021-10-05T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "combined",
           "position": {
@@ -21336,7 +21336,7 @@
         {
           "race_number": 1,
           "name": "Haningenatten MTBO",
-          "datetimez": "2021-10-28T00:00:00+02:00",
+          "datetimez": "2021-10-29T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "night",
           "position": null,
@@ -21516,7 +21516,7 @@
         {
           "race_number": 1,
           "name": "Rodhenloppet MTBO, masstart",
-          "datetimez": "2021-10-30T00:00:00+02:00",
+          "datetimez": "2021-10-30T16:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "combined",
           "position": {
@@ -21675,7 +21675,7 @@
         {
           "race_number": 1,
           "name": "JÄBONATTA",
-          "datetimez": "2021-10-07T00:00:00+02:00",
+          "datetimez": "2021-10-07T18:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "night",
           "position": {
@@ -21856,7 +21856,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Novembertävlingarna",
-          "datetimez": "2021-11-13T00:00:00+01:00",
+          "datetimez": "2021-11-13T10:30:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -22052,7 +22052,7 @@
         {
           "race_number": 1,
           "name": "Stockholm Rogaining",
-          "datetimez": "2021-11-27T00:00:00+01:00",
+          "datetimez": "2021-11-27T12:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "combined",
           "position": {
@@ -22149,7 +22149,7 @@
         {
           "race_number": 1,
           "name": "MTBO-sprint",
-          "datetimez": "2021-10-23T00:00:00+02:00",
+          "datetimez": "2021-10-23T10:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -22345,7 +22345,7 @@
         {
           "race_number": 1,
           "name": "MTBO i Bockeboda",
-          "datetimez": "2021-11-07T00:00:00+01:00",
+          "datetimez": "2021-11-07T10:00:00+01:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -22517,7 +22517,7 @@
         {
           "race_number": 1,
           "name": "Novembermuggen",
-          "datetimez": "2021-11-03T00:00:00+01:00",
+          "datetimez": "2021-11-03T18:00:00+01:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -22640,7 +22640,7 @@
         {
           "race_number": 1,
           "name": "Träningscup MTBO vinter",
-          "datetimez": "2021-12-05T00:00:00+01:00",
+          "datetimez": "2021-12-05T10:30:00+01:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -22714,7 +22714,7 @@
         {
           "race_number": 1,
           "name": "Träningscup MTBO vinter delträning 2",
-          "datetimez": "2021-12-18T00:00:00+01:00",
+          "datetimez": "2021-12-18T10:30:00+01:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {

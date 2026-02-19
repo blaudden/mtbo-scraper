@@ -886,7 +886,7 @@
         {
           "race_number": 1,
           "name": "Campeonato de España 2020 (Middle Distance)",
-          "datetimez": "2020-04-17T00:00:00+00:00",
+          "datetimez": "2020-04-18T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -976,7 +976,7 @@
         {
           "race_number": 1,
           "name": "Campeonato de España 2020 (Long Distance)",
-          "datetimez": "2020-04-18T00:00:00+00:00",
+          "datetimez": "2020-04-19T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1062,7 +1062,7 @@
         {
           "race_number": 1,
           "name": "Nationale",
-          "datetimez": "2020-05-29T00:00:00+00:00",
+          "datetimez": "2020-05-30T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1141,7 +1141,7 @@
         {
           "race_number": 1,
           "name": "Nationale",
-          "datetimez": "2020-05-31T00:00:00+00:00",
+          "datetimez": "2020-06-01T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1250,7 +1250,7 @@
         {
           "race_number": 1,
           "name": "Svenska Cupen MTBO #11 Masstart",
-          "datetimez": "2020-08-30T00:00:00+00:00",
+          "datetimez": "2020-08-30T10:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1458,7 +1458,7 @@
         {
           "race_number": 1,
           "name": "Svenska Cupen MTBO #10 Sprint",
-          "datetimez": "2020-08-29T00:00:00+00:00",
+          "datetimez": "2020-08-29T13:30:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1622,7 +1622,7 @@
         {
           "race_number": 1,
           "name": "Championship of Russia",
-          "datetimez": "2020-06-26T00:00:00+00:00",
+          "datetimez": "2020-06-27T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1688,7 +1688,7 @@
         {
           "race_number": 1,
           "name": "Championship of St. Petersburg",
-          "datetimez": "2020-06-27T00:00:00+00:00",
+          "datetimez": "2020-06-28T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1754,7 +1754,7 @@
         {
           "race_number": 1,
           "name": "Balaton MTBO - Long",
-          "datetimez": "2020-05-01T00:00:00+00:00",
+          "datetimez": "2020-05-02T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1820,7 +1820,7 @@
         {
           "race_number": 1,
           "name": "Balaton MTBO - Middle",
-          "datetimez": "2020-05-02T00:00:00+00:00",
+          "datetimez": "2020-05-03T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1920,7 +1920,7 @@
         {
           "race_number": 1,
           "name": "MTBOdays 2020",
-          "datetimez": "2020-07-10T00:00:00+00:00",
+          "datetimez": "2020-07-11T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2023,7 +2023,7 @@
         {
           "race_number": 1,
           "name": "MTBOdays 2020",
-          "datetimez": "2020-07-11T00:00:00+00:00",
+          "datetimez": "2020-07-12T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2092,7 +2092,7 @@
         {
           "race_number": 1,
           "name": "Tisvilde Hegn Long Distance WRE",
-          "datetimez": "2020-04-22T00:00:00+00:00",
+          "datetimez": "2020-04-23T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2158,7 +2158,7 @@
         {
           "race_number": 1,
           "name": "Teglstrup/Nyrup Hegn Middle Distance WRE",
-          "datetimez": "2020-04-23T00:00:00+00:00",
+          "datetimez": "2020-04-24T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2224,7 +2224,7 @@
         {
           "race_number": 1,
           "name": "Estonian championships",
-          "datetimez": "2020-07-25T00:00:00+00:00",
+          "datetimez": "2020-07-26T00:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2290,7 +2290,7 @@
         {
           "race_number": 1,
           "name": "Estonian championships",
-          "datetimez": "2020-07-24T00:00:00+00:00",
+          "datetimez": "2020-07-25T00:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2367,7 +2367,7 @@
         {
           "race_number": 1,
           "name": "Bulgarian MTBO championships - Long",
-          "datetimez": "2020-07-17T00:00:00+00:00",
+          "datetimez": "2020-07-18T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2444,7 +2444,7 @@
         {
           "race_number": 1,
           "name": "Bulgarian MTBO championships - Sprint",
-          "datetimez": "2020-07-16T00:00:00+00:00",
+          "datetimez": "2020-07-17T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -3185,7 +3185,7 @@
         {
           "race_number": 1,
           "name": "EMTBOC Open WRE Finland 2020 - Middle",
-          "datetimez": "2020-09-11T00:00:00+00:00",
+          "datetimez": "2020-09-12T00:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -3315,7 +3315,7 @@
         {
           "race_number": 1,
           "name": "EMTBOC Open WRE Finland 2020 - Sprint",
-          "datetimez": "2020-09-11T00:00:00+00:00",
+          "datetimez": "2020-09-11T14:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -3581,7 +3581,7 @@
         {
           "race_number": 1,
           "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #7, sprint",
-          "datetimez": "2020-06-25T00:00:00+02:00",
+          "datetimez": "2020-06-26T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -3759,7 +3759,7 @@
         {
           "race_number": 1,
           "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #8, lång",
-          "datetimez": "2020-06-26T00:00:00+02:00",
+          "datetimez": "2020-06-27T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -4065,7 +4065,7 @@
         {
           "race_number": 1,
           "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #9, medel",
-          "datetimez": "2020-06-27T00:00:00+02:00",
+          "datetimez": "2020-06-28T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -4456,7 +4456,7 @@
         {
           "race_number": 1,
           "name": "Svenska Cupen MTBO, #10, sprint (WRE)",
-          "datetimez": "2020-08-29T00:00:00+02:00",
+          "datetimez": "2020-08-29T13:30:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -4654,7 +4654,7 @@
         {
           "race_number": 1,
           "name": "Svenska Cupen MTBO, #11, masstart (WRE)",
-          "datetimez": "2020-08-30T00:00:00+02:00",
+          "datetimez": "2020-08-30T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -4833,7 +4833,7 @@
         {
           "race_number": 1,
           "name": "Svenska Cupen MTBO, #5, sprint",
-          "datetimez": "2020-06-06T00:00:00+02:00",
+          "datetimez": "2020-06-06T15:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -4953,7 +4953,7 @@
         {
           "race_number": 1,
           "name": "Svenska Cupen MTBO, #6, förlängd medel",
-          "datetimez": "2020-06-07T00:00:00+02:00",
+          "datetimez": "2020-06-07T10:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -5118,7 +5118,7 @@
         {
           "race_number": 1,
           "name": "Svenska Cupen MTBO, #1, sprint",
-          "datetimez": "2020-04-18T00:00:00+02:00",
+          "datetimez": "2020-04-18T14:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -5294,7 +5294,7 @@
         {
           "race_number": 1,
           "name": "Svenska Cupen MTBO, #2, medel + DM, medel, Sörmland",
-          "datetimez": "2020-04-19T00:00:00+02:00",
+          "datetimez": "2020-04-19T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -5419,7 +5419,7 @@
         {
           "race_number": 1,
           "name": "MtbO träningscamp Småland",
-          "datetimez": "2020-04-10T00:00:00+02:00",
+          "datetimez": "2020-04-10T13:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -5553,7 +5553,7 @@
         {
           "race_number": 1,
           "name": "Svenska Cupen MTBO, #3, medel",
-          "datetimez": "2020-05-23T00:00:00+02:00",
+          "datetimez": "2020-05-23T14:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -5730,7 +5730,7 @@
         {
           "race_number": 1,
           "name": "Svenska Cupen MTBO, #4, masstart",
-          "datetimez": "2020-05-24T00:00:00+02:00",
+          "datetimez": "2020-05-24T09:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -5851,7 +5851,7 @@
         {
           "race_number": 1,
           "name": "DM, MTBO, Medel, Småland (OBS! INSTÄLLD)",
-          "datetimez": "2020-05-15T00:00:00+02:00",
+          "datetimez": "2020-05-16T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -5948,7 +5948,7 @@
         {
           "race_number": 1,
           "name": "Vinterserien - MTBO",
-          "datetimez": "2020-02-29T00:00:00+01:00",
+          "datetimez": "2020-02-29T13:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -6117,7 +6117,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Jarltrampet 2-dagars",
-          "datetimez": "2020-09-18T00:00:00+02:00",
+          "datetimez": "2020-09-19T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -6194,7 +6194,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Jarltrampet 2-dagars",
-          "datetimez": "2020-09-19T00:00:00+02:00",
+          "datetimez": "2020-09-20T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -6269,7 +6269,7 @@
         {
           "race_number": 1,
           "name": "Vintercup #3",
-          "datetimez": "2020-02-19T00:00:00+01:00",
+          "datetimez": "2020-02-19T18:00:00+01:00",
           "discipline": "Middle",
           "night_or_day": "night",
           "position": {
@@ -6427,7 +6427,7 @@
         {
           "race_number": 1,
           "name": "MTBO, DM, lång, Småland",
-          "datetimez": "2020-08-21T00:00:00+02:00",
+          "datetimez": "2020-08-22T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -6556,7 +6556,7 @@
         {
           "race_number": 1,
           "name": "MTBO, OK Älme",
-          "datetimez": "2020-09-18T00:00:00+02:00",
+          "datetimez": "2020-09-19T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -6821,7 +6821,7 @@
         {
           "race_number": 1,
           "name": "Dalaserien MTBO Leksand",
-          "datetimez": "2020-05-27T00:00:00+02:00",
+          "datetimez": "2020-05-28T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -6913,7 +6913,7 @@
         {
           "race_number": 1,
           "name": "MTBO träning söders",
-          "datetimez": "2020-05-11T00:00:00+02:00",
+          "datetimez": "2020-05-11T17:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -7077,7 +7077,7 @@
         {
           "race_number": 1,
           "name": "MTBO, DM, sprint Ångermanland",
-          "datetimez": "2020-08-16T00:00:00+02:00",
+          "datetimez": "2020-08-16T14:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -7258,7 +7258,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO 2",
-          "datetimez": "2020-08-10T00:00:00+02:00",
+          "datetimez": "2020-08-10T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -7605,7 +7605,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO",
-          "datetimez": "2020-05-11T00:00:00+02:00",
+          "datetimez": "2020-05-11T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -7674,7 +7674,7 @@
         {
           "race_number": 1,
           "name": "MTBO träning",
-          "datetimez": "2020-04-13T00:00:00+02:00",
+          "datetimez": "2020-04-13T11:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -7750,7 +7750,7 @@
         {
           "race_number": 1,
           "name": "Träningsdag",
-          "datetimez": "2020-04-10T00:00:00+02:00",
+          "datetimez": "2020-04-10T11:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -7895,7 +7895,7 @@
         {
           "race_number": 1,
           "name": "Dalaserien MTBO 2020 Mora",
-          "datetimez": "2020-04-09T00:00:00+02:00",
+          "datetimez": "2020-04-10T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -8012,7 +8012,7 @@
         {
           "race_number": 1,
           "name": "MtbO Kalmarsund vårträning",
-          "datetimez": "2020-04-07T00:00:00+02:00",
+          "datetimez": "2020-04-08T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -8116,7 +8116,7 @@
         {
           "race_number": 1,
           "name": "April månads MtbO bana med Livelox",
-          "datetimez": "2020-05-16T00:00:00+02:00",
+          "datetimez": "2020-05-16T09:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -8264,7 +8264,7 @@
         {
           "race_number": 1,
           "name": "Dalaserien MTBO 2020 Kvarnsveden",
-          "datetimez": "2020-04-16T00:00:00+02:00",
+          "datetimez": "2020-04-17T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -8372,7 +8372,7 @@
         {
           "race_number": 1,
           "name": "Östgötaserien MTBO delserie 1",
-          "datetimez": "2020-05-05T00:00:00+02:00",
+          "datetimez": "2020-05-05T18:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -8635,7 +8635,7 @@
         {
           "race_number": 1,
           "name": "Dalaserien MTBO 2020 Säter",
-          "datetimez": "2020-04-29T00:00:00+02:00",
+          "datetimez": "2020-04-30T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -8711,7 +8711,7 @@
         {
           "race_number": 1,
           "name": "Maj månads MtbO bana",
-          "datetimez": "2020-05-17T00:00:00+02:00",
+          "datetimez": "2020-05-17T09:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -8796,7 +8796,7 @@
         {
           "race_number": 1,
           "name": "MTBO träning",
-          "datetimez": "2020-05-05T00:00:00+02:00",
+          "datetimez": "2020-05-05T18:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -8933,7 +8933,7 @@
         {
           "race_number": 1,
           "name": "OK Södertörns  MTBO träning",
-          "datetimez": "2020-05-21T00:00:00+02:00",
+          "datetimez": "2020-05-21T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -9108,7 +9108,7 @@
         {
           "race_number": 1,
           "name": "Östgötaserien MTBO, #2",
-          "datetimez": "2020-06-15T00:00:00+02:00",
+          "datetimez": "2020-06-15T17:45:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -9386,7 +9386,7 @@
         {
           "race_number": 1,
           "name": "Dalaserien MTBO Falun",
-          "datetimez": "2020-05-30T00:00:00+02:00",
+          "datetimez": "2020-05-31T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -9501,7 +9501,7 @@
         {
           "race_number": 1,
           "name": "Tolered MTB-O träning banor",
-          "datetimez": "2020-05-31T00:00:00+02:00",
+          "datetimez": "2020-05-31T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -9696,7 +9696,7 @@
         {
           "race_number": 1,
           "name": "Tolered MTB-O träning slingor",
-          "datetimez": "2020-05-24T00:00:00+02:00",
+          "datetimez": "2020-05-24T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -9794,7 +9794,7 @@
         {
           "race_number": 1,
           "name": "MtbO /TrailO med resultat",
-          "datetimez": "2020-05-12T00:00:00+02:00",
+          "datetimez": "2020-05-12T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -9887,7 +9887,7 @@
         {
           "race_number": 1,
           "name": "Motionsorientering Rudan MTBO",
-          "datetimez": "2020-05-18T00:00:00+02:00",
+          "datetimez": "2020-05-18T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -10016,7 +10016,7 @@
         {
           "race_number": 1,
           "name": "Motionsorientering Rudan nr2",
-          "datetimez": "2020-06-01T00:00:00+02:00",
+          "datetimez": "2020-06-01T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -10150,7 +10150,7 @@
         {
           "race_number": 1,
           "name": "Motionsorientering Rudan MTBO nr3",
-          "datetimez": "2020-06-16T00:00:00+02:00",
+          "datetimez": "2020-06-16T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -10278,7 +10278,7 @@
         {
           "race_number": 1,
           "name": "Teknikträning GBG SYD",
-          "datetimez": "2020-05-28T00:00:00+02:00",
+          "datetimez": "2020-05-28T17:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -10351,7 +10351,7 @@
         {
           "race_number": 1,
           "name": "MTBO sprint Hörnsjön",
-          "datetimez": "2020-05-22T00:00:00+02:00",
+          "datetimez": "2020-05-22T15:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -10459,7 +10459,7 @@
         {
           "race_number": 1,
           "name": "Veckans Bana MTB-O (24-31 maj)",
-          "datetimez": "2020-05-24T00:00:00+02:00",
+          "datetimez": "2020-05-24T14:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -10538,7 +10538,7 @@
         {
           "race_number": 1,
           "name": "MtbO/ TrailO Skyttis",
-          "datetimez": "2020-05-27T00:00:00+02:00",
+          "datetimez": "2020-05-27T18:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -10670,7 +10670,7 @@
         {
           "race_number": 1,
           "name": "MTBO i Växjö",
-          "datetimez": "2020-05-24T00:00:00+02:00",
+          "datetimez": "2020-05-25T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -10770,7 +10770,7 @@
         {
           "race_number": 1,
           "name": "Månadens Bana Juni & MTBO",
-          "datetimez": "2020-06-23T00:00:00+02:00",
+          "datetimez": "2020-06-23T17:45:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -10946,7 +10946,7 @@
         {
           "race_number": 1,
           "name": "Svenska Cupen MTBO, #1, sprint",
-          "datetimez": "2020-08-07T00:00:00+02:00",
+          "datetimez": "2020-08-08T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -11027,7 +11027,7 @@
         {
           "race_number": 1,
           "name": "Svenska Cupen MTBO, #2, förlängd medel",
-          "datetimez": "2020-08-08T00:00:00+02:00",
+          "datetimez": "2020-08-09T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -11120,7 +11120,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Kolmårdsträffen",
-          "datetimez": "2020-08-22T00:00:00+02:00",
+          "datetimez": "2020-08-22T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -11248,7 +11248,7 @@
         {
           "race_number": 1,
           "name": "Veckans Bana MTB-O (31 maj - 7 juni)",
-          "datetimez": "2020-05-31T00:00:00+02:00",
+          "datetimez": "2020-05-31T14:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -11365,7 +11365,7 @@
         {
           "race_number": 1,
           "name": "Månadens bana Rudan",
-          "datetimez": "2020-05-31T00:00:00+02:00",
+          "datetimez": "2020-06-01T00:01:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -11504,7 +11504,7 @@
         {
           "race_number": 1,
           "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #5, sprint",
-          "datetimez": "2020-09-03T00:00:00+02:00",
+          "datetimez": "2020-09-04T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -11870,7 +11870,7 @@
         {
           "race_number": 1,
           "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #6, lång",
-          "datetimez": "2020-09-04T00:00:00+02:00",
+          "datetimez": "2020-09-05T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -12296,7 +12296,7 @@
         {
           "race_number": 1,
           "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #7, medel",
-          "datetimez": "2020-09-05T00:00:00+02:00",
+          "datetimez": "2020-09-06T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -12648,7 +12648,7 @@
         {
           "race_number": 1,
           "name": "MTBO träning",
-          "datetimez": "2020-06-02T00:00:00+02:00",
+          "datetimez": "2020-06-02T18:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -12751,7 +12751,7 @@
         {
           "race_number": 1,
           "name": "MtbO 3/TrailO Bjästamon",
-          "datetimez": "2020-06-10T00:00:00+02:00",
+          "datetimez": "2020-06-10T18:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -12871,7 +12871,7 @@
         {
           "race_number": 1,
           "name": "MtbO 5 Stadssprint",
-          "datetimez": "2020-06-16T00:00:00+02:00",
+          "datetimez": "2020-06-16T20:30:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -12985,7 +12985,7 @@
         {
           "race_number": 1,
           "name": "Öppen MTBO-träning",
-          "datetimez": "2020-06-14T00:00:00+02:00",
+          "datetimez": "2020-06-14T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -13165,7 +13165,7 @@
         {
           "race_number": 1,
           "name": "Östgötaserien MTBO #3",
-          "datetimez": "2020-08-16T00:00:00+02:00",
+          "datetimez": "2020-08-17T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -13371,7 +13371,7 @@
         {
           "race_number": 1,
           "name": "MTBO Prova På",
-          "datetimez": "2020-06-21T00:00:00+02:00",
+          "datetimez": "2020-06-21T11:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -13466,7 +13466,7 @@
         {
           "race_number": 1,
           "name": "MTB-O - veckans bana juli",
-          "datetimez": "2020-06-30T00:00:00+02:00",
+          "datetimez": "2020-07-01T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -13541,7 +13541,7 @@
         {
           "race_number": 1,
           "name": "MTB-O + Tränings-OL",
-          "datetimez": "2020-07-07T00:00:00+02:00",
+          "datetimez": "2020-07-07T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -13683,7 +13683,7 @@
         {
           "race_number": 1,
           "name": "MTB-O + Tränings-OL",
-          "datetimez": "2020-07-09T00:00:00+02:00",
+          "datetimez": "2020-07-09T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -13813,7 +13813,7 @@
         {
           "race_number": 1,
           "name": "MTBO veckans bana",
-          "datetimez": "2020-06-23T00:00:00+02:00",
+          "datetimez": "2020-06-23T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -13923,7 +13923,7 @@
         {
           "race_number": 1,
           "name": "KM Mtbo",
-          "datetimez": "2020-07-02T00:00:00+02:00",
+          "datetimez": "2020-07-02T17:45:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -14094,7 +14094,7 @@
         {
           "race_number": 1,
           "name": "MTBO - Veckans bana Aneby",
-          "datetimez": "2020-07-01T00:00:00+02:00",
+          "datetimez": "2020-07-01T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -14164,7 +14164,7 @@
         {
           "race_number": 1,
           "name": "Stolpjakten Skyttis",
-          "datetimez": "2020-06-30T00:00:00+02:00",
+          "datetimez": "2020-06-30T18:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -14258,7 +14258,7 @@
         {
           "race_number": 1,
           "name": "Sommarträning MTB-O",
-          "datetimez": "2020-07-08T00:00:00+02:00",
+          "datetimez": "2020-07-08T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -14472,7 +14472,7 @@
         {
           "race_number": 1,
           "name": "MTBO, USM/JSM/SM/VSM, sprint",
-          "datetimez": "2020-08-29T00:00:00+02:00",
+          "datetimez": "2020-08-29T11:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -15136,7 +15136,7 @@
         {
           "race_number": 1,
           "name": "MTBO, USM/JSM/SM/VSM, medel",
-          "datetimez": "2020-08-30T00:00:00+02:00",
+          "datetimez": "2020-08-30T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -15641,7 +15641,7 @@
         {
           "race_number": 1,
           "name": "MTBO KM för DGoIF och OK Kåre",
-          "datetimez": "2020-08-12T00:00:00+02:00",
+          "datetimez": "2020-08-12T17:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -15797,7 +15797,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO 1",
-          "datetimez": "2020-08-03T00:00:00+02:00",
+          "datetimez": "2020-08-03T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -15960,7 +15960,7 @@
         {
           "race_number": 1,
           "name": "Östgötaserien i MTBO #4",
-          "datetimez": "2020-08-24T00:00:00+02:00",
+          "datetimez": "2020-08-24T17:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -16171,7 +16171,7 @@
         {
           "race_number": 1,
           "name": "Kolmårdsträffen light MTB-OL",
-          "datetimez": "2020-08-22T00:00:00+02:00",
+          "datetimez": "2020-08-22T13:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -16338,7 +16338,7 @@
         {
           "race_number": 1,
           "name": "Femte etappen",
-          "datetimez": "2020-07-25T00:00:00+02:00",
+          "datetimez": "2020-07-25T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -16413,7 +16413,7 @@
         {
           "race_number": 1,
           "name": "Norrbo MTBO",
-          "datetimez": "2020-07-26T00:00:00+02:00",
+          "datetimez": "2020-07-26T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -16558,7 +16558,7 @@
         {
           "race_number": 1,
           "name": "MTB-O veckans bana",
-          "datetimez": "2020-08-04T00:00:00+02:00",
+          "datetimez": "2020-08-04T08:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -16648,7 +16648,7 @@
         {
           "race_number": 1,
           "name": "MTBO träningstävling",
-          "datetimez": "2020-08-09T00:00:00+02:00",
+          "datetimez": "2020-08-09T10:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -16749,7 +16749,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO 3",
-          "datetimez": "2020-08-17T00:00:00+02:00",
+          "datetimez": "2020-08-17T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -16954,7 +16954,7 @@
         {
           "race_number": 1,
           "name": "KM MTBO",
-          "datetimez": "2020-09-08T00:00:00+02:00",
+          "datetimez": "2020-09-08T17:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -17134,7 +17134,7 @@
         {
           "race_number": 1,
           "name": "Östgötaserien MTB-O",
-          "datetimez": "2020-08-31T00:00:00+02:00",
+          "datetimez": "2020-08-31T17:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -17321,7 +17321,7 @@
         {
           "race_number": 1,
           "name": "IFK Lidingös öppna KM MTBO",
-          "datetimez": "2020-08-19T00:00:00+02:00",
+          "datetimez": "2020-08-19T17:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -17517,7 +17517,7 @@
         {
           "race_number": 1,
           "name": "MtbO-träning i Surahammar",
-          "datetimez": "2020-08-12T00:00:00+02:00",
+          "datetimez": "2020-08-13T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -17603,7 +17603,7 @@
         {
           "race_number": 1,
           "name": "MTB-O träning Touch-free stämpling",
-          "datetimez": "2020-08-12T00:00:00+02:00",
+          "datetimez": "2020-08-12T18:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -17730,7 +17730,7 @@
         {
           "race_number": 1,
           "name": "MtbO-klubbträning SSOK",
-          "datetimez": "2020-08-12T00:00:00+02:00",
+          "datetimez": "2020-08-12T16:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": null,
@@ -17826,7 +17826,7 @@
         {
           "race_number": 1,
           "name": "MTBO-sprint träning",
-          "datetimez": "2020-08-05T00:00:00+02:00",
+          "datetimez": "2020-08-06T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -17973,7 +17973,7 @@
         {
           "race_number": 1,
           "name": "MTBO, DM, lång, Småland",
-          "datetimez": "2020-09-05T00:00:00+02:00",
+          "datetimez": "2020-09-05T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -18290,7 +18290,7 @@
         {
           "race_number": 1,
           "name": "MTBO, USM/JSM/SM/VSM, lång",
-          "datetimez": "2020-09-25T00:00:00+02:00",
+          "datetimez": "2020-09-26T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -18762,7 +18762,7 @@
         {
           "race_number": 1,
           "name": "MTBO, OK Kolmården, medel",
-          "datetimez": "2020-09-26T00:00:00+02:00",
+          "datetimez": "2020-09-27T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -19114,7 +19114,7 @@
         {
           "race_number": 1,
           "name": "TSOK Öppen MTBO träning",
-          "datetimez": "2020-08-11T00:00:00+02:00",
+          "datetimez": "2020-08-11T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -19225,7 +19225,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTB-O deltävling 4",
-          "datetimez": "2020-08-24T00:00:00+02:00",
+          "datetimez": "2020-08-24T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -19464,7 +19464,7 @@
         {
           "race_number": 1,
           "name": "MTBO, DM Småland, medel",
-          "datetimez": "2020-10-16T00:00:00+02:00",
+          "datetimez": "2020-10-17T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -19723,7 +19723,7 @@
         {
           "race_number": 1,
           "name": "MTBO-träning #1",
-          "datetimez": "2020-08-19T00:00:00+02:00",
+          "datetimez": "2020-08-19T17:45:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -19811,7 +19811,7 @@
         {
           "race_number": 1,
           "name": "MtbO/ TrailO Bjästamon",
-          "datetimez": "2020-08-25T00:00:00+02:00",
+          "datetimez": "2020-08-25T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -19946,7 +19946,7 @@
         {
           "race_number": 1,
           "name": "MTBO Sommarhemmet",
-          "datetimez": "2020-08-23T00:00:00+02:00",
+          "datetimez": "2020-08-23T11:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -20084,7 +20084,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO - final",
-          "datetimez": "2020-09-07T00:00:00+02:00",
+          "datetimez": "2020-09-07T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -20239,7 +20239,7 @@
         {
           "race_number": 1,
           "name": "MTBO Haningenatten",
-          "datetimez": "2020-10-23T00:00:00+02:00",
+          "datetimez": "2020-10-23T18:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "night",
           "position": {
@@ -20443,7 +20443,7 @@
         {
           "race_number": 1,
           "name": "Ängetsprinten MtbO",
-          "datetimez": "2020-09-27T00:00:00+02:00",
+          "datetimez": "2020-09-27T12:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -20559,7 +20559,7 @@
         {
           "race_number": 1,
           "name": "Svartåtrampet 2020 (MTB-träning med tidtagning)",
-          "datetimez": "2020-10-10T00:00:00+02:00",
+          "datetimez": "2020-10-10T11:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -20784,7 +20784,7 @@
         {
           "race_number": 1,
           "name": "MTBO, OK Rodhen, medel (DM för Stockholm och Uppland)",
-          "datetimez": "2020-10-24T00:00:00+02:00",
+          "datetimez": "2020-10-24T11:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -21082,7 +21082,7 @@
         {
           "race_number": 1,
           "name": "Dalaserien MTBO 2020 Domnarvet (Borlänge)",
-          "datetimez": "2020-09-09T00:00:00+02:00",
+          "datetimez": "2020-09-10T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": null,
@@ -21185,7 +21185,7 @@
         {
           "race_number": 1,
           "name": "MtbO Orup",
-          "datetimez": "2020-10-11T00:00:00+02:00",
+          "datetimez": "2020-10-11T13:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -21358,7 +21358,7 @@
         {
           "race_number": 1,
           "name": "Göteborg Multisport Race",
-          "datetimez": "2020-10-09T00:00:00+02:00",
+          "datetimez": "2020-10-10T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": null,
@@ -21459,7 +21459,7 @@
         {
           "race_number": 1,
           "name": "Novembertävlingarna MTB-O",
-          "datetimez": "2020-11-08T00:00:00+01:00",
+          "datetimez": "2020-11-08T09:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -21547,7 +21547,7 @@
         {
           "race_number": 1,
           "name": "Getaren Runt 2020",
-          "datetimez": "2020-10-27T00:00:00+01:00",
+          "datetimez": "2020-10-27T18:15:00+01:00",
           "discipline": "Long",
           "night_or_day": "night",
           "position": {
@@ -21683,7 +21683,7 @@
         {
           "race_number": 1,
           "name": "Matteus SI MTB-O Öppet KM",
-          "datetimez": "2020-10-24T00:00:00+02:00",
+          "datetimez": "2020-10-24T11:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -21827,7 +21827,7 @@
         {
           "race_number": 1,
           "name": "SOKs Öppna Höjdletarcup Bonus-etapp MTBO",
-          "datetimez": "2020-10-24T00:00:00+02:00",
+          "datetimez": "2020-10-24T14:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -21949,7 +21949,7 @@
         {
           "race_number": 1,
           "name": "MTBO Träningstävling Åhus Norra",
-          "datetimez": "2020-11-08T00:00:00+01:00",
+          "datetimez": "2020-11-08T10:30:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -22026,7 +22026,7 @@
         {
           "race_number": 1,
           "name": "UsynligO",
-          "datetimez": "2020-12-19T00:00:00+01:00",
+          "datetimez": "2020-12-19T11:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -22144,7 +22144,7 @@
         {
           "race_number": 1,
           "name": "MTBO Julgranen på O-Ringen torget",
-          "datetimez": "2020-12-18T00:00:00+01:00",
+          "datetimez": "2020-12-19T00:00:00+01:00",
           "discipline": "Sprint",
           "night_or_day": "combined",
           "position": {
@@ -22255,7 +22255,7 @@
         {
           "race_number": 1,
           "name": "Månadens Bana Januari",
-          "datetimez": "2020-12-26T00:00:00+01:00",
+          "datetimez": "2020-12-27T00:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": null,

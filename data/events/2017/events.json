@@ -1045,7 +1045,7 @@
         {
           "race_number": 1,
           "name": "WMMBTBOC Unofficial Sprint Relay",
-          "datetimez": "2017-08-03T00:00:00+00:00",
+          "datetimez": "2017-08-04T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1150,7 +1150,7 @@
         {
           "race_number": 1,
           "name": "WMMBTBOC Unofficial Relay",
-          "datetimez": "2017-08-04T00:00:00+00:00",
+          "datetimez": "2017-08-05T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1270,7 +1270,7 @@
         {
           "race_number": 1,
           "name": "German Championship",
-          "datetimez": "2017-10-07T00:00:00+00:00",
+          "datetimez": "2017-10-07T13:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1402,7 +1402,7 @@
         {
           "race_number": 1,
           "name": "MTBO Deutschland-Cup",
-          "datetimez": "2017-10-08T00:00:00+00:00",
+          "datetimez": "2017-10-08T10:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1528,7 +1528,7 @@
         {
           "race_number": 1,
           "name": "III Costa Alentejana MTBO Trophy 2017",
-          "datetimez": "2017-03-31T00:00:00+00:00",
+          "datetimez": "2017-04-01T00:00:00+01:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1654,7 +1654,7 @@
         {
           "race_number": 1,
           "name": "III Costa Alentejana MTBO Trophy 2017",
-          "datetimez": "2017-04-01T00:00:00+00:00",
+          "datetimez": "2017-04-02T00:00:00+01:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1759,7 +1759,7 @@
         {
           "race_number": 1,
           "name": "Czech Sprint Championship / MTBO 5days Plzen",
-          "datetimez": "2017-07-05T00:00:00+00:00",
+          "datetimez": "2017-07-06T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1864,7 +1864,7 @@
         {
           "race_number": 1,
           "name": "MTBO 5days Plzen",
-          "datetimez": "2017-07-07T00:00:00+00:00",
+          "datetimez": "2017-07-08T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -1988,7 +1988,7 @@
         {
           "race_number": 1,
           "name": "Austrian MTBO Days 2017-Bad Vöslau; E2",
-          "datetimez": "2017-07-14T00:00:00+00:00",
+          "datetimez": "2017-07-15T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2106,7 +2106,7 @@
         {
           "race_number": 1,
           "name": "Austrian MTBO Days 2017-Bad Vöslau; E3",
-          "datetimez": "2017-07-15T00:00:00+00:00",
+          "datetimez": "2017-07-16T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2232,7 +2232,7 @@
         {
           "race_number": 1,
           "name": "Estonian MTBO Championships, BikEST 2017 middle",
-          "datetimez": "2017-07-15T00:00:00+00:00",
+          "datetimez": "2017-07-15T11:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2358,7 +2358,7 @@
         {
           "race_number": 1,
           "name": "Estonian MTBO Championships, BikEST 2017 long",
-          "datetimez": "2017-07-16T00:00:00+00:00",
+          "datetimez": "2017-07-16T12:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2466,7 +2466,7 @@
         {
           "race_number": 1,
           "name": "Latvia MTBO 3-days 2017",
-          "datetimez": "2017-06-09T00:00:00+00:00",
+          "datetimez": "2017-06-10T00:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2574,7 +2574,7 @@
         {
           "race_number": 1,
           "name": "Latvia MTBO 3-days 2017",
-          "datetimez": "2017-06-10T00:00:00+00:00",
+          "datetimez": "2017-06-11T00:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2676,7 +2676,7 @@
         {
           "race_number": 1,
           "name": "RUSSIAN CUP",
-          "datetimez": "2017-05-11T00:00:00+00:00",
+          "datetimez": "2017-05-12T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2780,7 +2780,7 @@
         {
           "race_number": 1,
           "name": "RUSSIAN CUP",
-          "datetimez": "2017-05-12T00:00:00+00:00",
+          "datetimez": "2017-05-13T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2908,7 +2908,7 @@
         {
           "race_number": 1,
           "name": "5th Hiiltomiehet MTBO race",
-          "datetimez": "2017-05-27T00:00:00+00:00",
+          "datetimez": "2017-05-27T11:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -3036,7 +3036,7 @@
         {
           "race_number": 1,
           "name": "5th Hiiltomiehet MTBO race",
-          "datetimez": "2017-05-27T00:00:00+00:00",
+          "datetimez": "2017-05-27T14:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -3269,7 +3269,7 @@
         {
           "race_number": 1,
           "name": "MtbO, Golden Weekend, medel",
-          "datetimez": "2017-08-25T00:00:00+02:00",
+          "datetimez": "2017-08-26T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -3590,7 +3590,7 @@
         {
           "race_number": 1,
           "name": "MtbO, Golden Weekend, sprint",
-          "datetimez": "2017-08-25T00:00:00+02:00",
+          "datetimez": "2017-08-26T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -3882,7 +3882,7 @@
         {
           "race_number": 1,
           "name": "MtbO, OK Rodhen",
-          "datetimez": "2017-08-12T00:00:00+02:00",
+          "datetimez": "2017-08-13T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -4129,7 +4129,7 @@
         {
           "race_number": 1,
           "name": "MtbO Rodhenloppet",
-          "datetimez": "2017-11-04T00:00:00+01:00",
+          "datetimez": "2017-11-04T17:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "night",
           "position": {
@@ -4336,7 +4336,7 @@
         {
           "race_number": 1,
           "name": "MtbO, Svenska Cupen, #3, sprint",
-          "datetimez": "2017-05-26T00:00:00+02:00",
+          "datetimez": "2017-05-27T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -4628,7 +4628,7 @@
         {
           "race_number": 1,
           "name": "MtbO, Svenska Cupen, #4, medel",
-          "datetimez": "2017-05-27T00:00:00+02:00",
+          "datetimez": "2017-05-28T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -4925,7 +4925,7 @@
         {
           "race_number": 1,
           "name": "Gnestatrippeln, MtbO",
-          "datetimez": "2017-05-01T00:00:00+02:00",
+          "datetimez": "2017-05-01T23:59:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -5220,7 +5220,7 @@
         {
           "race_number": 1,
           "name": "MtbO, Svenska Cupen, #5, sprint",
-          "datetimez": "2017-06-10T00:00:00+02:00",
+          "datetimez": "2017-06-10T12:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -5549,7 +5549,7 @@
         {
           "race_number": 1,
           "name": "MtbO, Svenska Cupen, #6, masstart",
-          "datetimez": "2017-06-11T00:00:00+02:00",
+          "datetimez": "2017-06-11T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -6139,7 +6139,7 @@
         {
           "race_number": 1,
           "name": "MtbO, Falun",
-          "datetimez": "2017-09-15T00:00:00+02:00",
+          "datetimez": "2017-09-16T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -6517,7 +6517,7 @@
         {
           "race_number": 1,
           "name": "MtbO, USM/JSM/SM/VSM, Svenska Cupen, #9, final, lång",
-          "datetimez": "2017-06-18T00:00:00+02:00",
+          "datetimez": "2017-06-18T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -6980,7 +6980,7 @@
         {
           "race_number": 1,
           "name": "MtbO, Svenska Cupen, #1, sprint",
-          "datetimez": "2017-05-12T00:00:00+02:00",
+          "datetimez": "2017-05-13T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -7333,7 +7333,7 @@
         {
           "race_number": 1,
           "name": "MtbO, Svenska Cupen, #2, medel",
-          "datetimez": "2017-05-13T00:00:00+02:00",
+          "datetimez": "2017-05-14T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -7783,7 +7783,7 @@
         {
           "race_number": 1,
           "name": "MtbO, USM/JSM/SM/VSM, Svenska Cupen, #7, sprint",
-          "datetimez": "2017-06-16T00:00:00+02:00",
+          "datetimez": "2017-06-16T18:30:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -8230,7 +8230,7 @@
         {
           "race_number": 1,
           "name": "MtbO, USM/JSM/SM/VSM, Svenska Cupen, #8, medel",
-          "datetimez": "2017-06-17T00:00:00+02:00",
+          "datetimez": "2017-06-17T11:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -8730,7 +8730,7 @@
         {
           "race_number": 1,
           "name": "Bergebosprinten",
-          "datetimez": "2017-05-17T00:00:00+02:00",
+          "datetimez": "2017-05-17T18:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -8979,7 +8979,7 @@
         {
           "race_number": 1,
           "name": "Vinterserien + MTBO",
-          "datetimez": "2017-01-22T00:00:00+01:00",
+          "datetimez": "2017-01-22T10:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -9374,7 +9374,7 @@
         {
           "race_number": 1,
           "name": "Säterträffen",
-          "datetimez": "2017-08-06T00:00:00+02:00",
+          "datetimez": "2017-08-06T11:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -9590,7 +9590,7 @@
         {
           "race_number": 1,
           "name": "Norrcupen 2017-05-16",
-          "datetimez": "2017-05-16T00:00:00+02:00",
+          "datetimez": "2017-05-16T17:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -9746,7 +9746,7 @@
         {
           "race_number": 1,
           "name": "VinterSerienMTBO",
-          "datetimez": "2017-01-21T00:00:00+01:00",
+          "datetimez": "2017-01-21T11:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -9922,7 +9922,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO deltävling 1",
-          "datetimez": "2017-05-08T00:00:00+02:00",
+          "datetimez": "2017-05-08T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -10054,7 +10054,7 @@
         {
           "race_number": 1,
           "name": "Norrcupen 170822",
-          "datetimez": "2017-08-22T00:00:00+02:00",
+          "datetimez": "2017-08-22T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -10206,7 +10206,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO deltävling 3",
-          "datetimez": "2017-05-22T00:00:00+02:00",
+          "datetimez": "2017-05-22T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -10361,7 +10361,7 @@
         {
           "race_number": 1,
           "name": "Haninge SOK Motionsorientering Rudan",
-          "datetimez": "2017-05-30T00:00:00+02:00",
+          "datetimez": "2017-05-30T17:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -10533,7 +10533,7 @@
         {
           "race_number": 1,
           "name": "MTBO-cupen Gotland 1",
-          "datetimez": "2017-05-02T00:00:00+02:00",
+          "datetimez": "2017-05-03T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -10600,7 +10600,7 @@
         {
           "race_number": 1,
           "name": "MTBO-cupen Gotland 3",
-          "datetimez": "2017-07-09T00:00:00+02:00",
+          "datetimez": "2017-07-10T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -10730,7 +10730,7 @@
         {
           "race_number": 1,
           "name": "MTBO-cupen Gotland 6",
-          "datetimez": "2017-09-22T00:00:00+02:00",
+          "datetimez": "2017-09-23T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -10852,7 +10852,7 @@
         {
           "race_number": 1,
           "name": "MtbO Uppland, träning, Uppsala",
-          "datetimez": "2017-04-05T00:00:00+02:00",
+          "datetimez": "2017-04-05T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -10940,7 +10940,7 @@
         {
           "race_number": 1,
           "name": "MtbO Uppland, träning, Uppsala",
-          "datetimez": "2017-04-19T00:00:00+02:00",
+          "datetimez": "2017-04-19T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -11024,7 +11024,7 @@
         {
           "race_number": 1,
           "name": "Öppen träning MTBO-natt",
-          "datetimez": "2017-03-26T00:00:00+01:00",
+          "datetimez": "2017-03-26T19:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "combined",
           "position": {
@@ -11118,7 +11118,7 @@
         {
           "race_number": 1,
           "name": "ABCD-cupen 2017 #1 Järfälla OK",
-          "datetimez": "2017-04-12T00:00:00+02:00",
+          "datetimez": "2017-04-12T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -11269,7 +11269,7 @@
         {
           "race_number": 1,
           "name": "MTBO-träning Tegera Arena, Leksand",
-          "datetimez": "2017-04-12T00:00:00+02:00",
+          "datetimez": "2017-04-12T17:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -11341,7 +11341,7 @@
         {
           "race_number": 1,
           "name": "Tränings-OL",
-          "datetimez": "2017-07-20T00:00:00+02:00",
+          "datetimez": "2017-07-20T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -11482,7 +11482,7 @@
         {
           "race_number": 1,
           "name": "DM Medel MtbO",
-          "datetimez": "2017-09-15T00:00:00+02:00",
+          "datetimez": "2017-09-16T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -11666,7 +11666,7 @@
         {
           "race_number": 1,
           "name": "Motionsorientering MTBO och Challenge, Hultet",
-          "datetimez": "2017-05-11T00:00:00+02:00",
+          "datetimez": "2017-05-11T17:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -11790,7 +11790,7 @@
         {
           "race_number": 1,
           "name": "MtbO Uppland, träning, Uppsala",
-          "datetimez": "2017-05-03T00:00:00+02:00",
+          "datetimez": "2017-05-03T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -11878,7 +11878,7 @@
         {
           "race_number": 1,
           "name": "MtbO Uppland, träning, Uppsala, SM uppladning",
-          "datetimez": "2017-06-14T00:00:00+02:00",
+          "datetimez": "2017-06-14T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -11966,7 +11966,7 @@
         {
           "race_number": 1,
           "name": "MtbO Uppland, träning, Uppsala",
-          "datetimez": "2017-05-31T00:00:00+02:00",
+          "datetimez": "2017-05-31T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -12330,7 +12330,7 @@
         {
           "race_number": 1,
           "name": "DM, MtbO, Ångermanland",
-          "datetimez": "2017-09-02T00:00:00+02:00",
+          "datetimez": "2017-09-02T14:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -12518,7 +12518,7 @@
         {
           "race_number": 1,
           "name": "MtbO, Falun; Sprint",
-          "datetimez": "2017-09-16T00:00:00+02:00",
+          "datetimez": "2017-09-17T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -12780,7 +12780,7 @@
         {
           "race_number": 1,
           "name": "MTBO ABC-cupen Tullinge",
-          "datetimez": "2017-06-14T00:00:00+02:00",
+          "datetimez": "2017-06-14T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -12944,7 +12944,7 @@
         {
           "race_number": 1,
           "name": "MTB-O Säter",
-          "datetimez": "2017-04-18T00:00:00+02:00",
+          "datetimez": "2017-04-18T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -13032,7 +13032,7 @@
         {
           "race_number": 1,
           "name": "MTBO-cupen Gotland 2",
-          "datetimez": "2017-05-24T00:00:00+02:00",
+          "datetimez": "2017-05-24T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -13163,7 +13163,7 @@
         {
           "race_number": 1,
           "name": "MTBO-cupen Gotland 4",
-          "datetimez": "2017-08-16T00:00:00+02:00",
+          "datetimez": "2017-08-16T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -13331,7 +13331,7 @@
         {
           "race_number": 1,
           "name": "MTBO-cupen Gotland 5",
-          "datetimez": "2017-09-06T00:00:00+02:00",
+          "datetimez": "2017-09-06T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -13483,7 +13483,7 @@
         {
           "race_number": 1,
           "name": "VärmlandsSerien MTBO Del. 2",
-          "datetimez": "2017-05-15T00:00:00+02:00",
+          "datetimez": "2017-05-15T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -13638,7 +13638,7 @@
         {
           "race_number": 1,
           "name": "MTBO-träning Trollhättan",
-          "datetimez": "2017-05-03T00:00:00+02:00",
+          "datetimez": "2017-05-03T17:30:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -13752,7 +13752,7 @@
         {
           "race_number": 1,
           "name": "MTBO-träning Trollhättan",
-          "datetimez": "2017-05-10T00:00:00+02:00",
+          "datetimez": "2017-05-10T17:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -13895,7 +13895,7 @@
         {
           "race_number": 1,
           "name": "MtbO Uppland, träning, Hammarskog retro",
-          "datetimez": "2017-05-17T00:00:00+02:00",
+          "datetimez": "2017-05-17T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -14003,7 +14003,7 @@
         {
           "race_number": 1,
           "name": "MtbO, Änggårdsracet",
-          "datetimez": "2017-06-13T00:00:00+02:00",
+          "datetimez": "2017-06-13T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -14195,7 +14195,7 @@
         {
           "race_number": 1,
           "name": "MTBO-träning Gruvlig sprint",
-          "datetimez": "2017-04-26T00:00:00+02:00",
+          "datetimez": "2017-04-26T18:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": null,
@@ -14266,7 +14266,7 @@
         {
           "race_number": 1,
           "name": "MTBO-träning Kårestugan",
-          "datetimez": "2017-05-31T00:00:00+02:00",
+          "datetimez": "2017-05-31T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": null,
@@ -14331,7 +14331,7 @@
         {
           "race_number": 1,
           "name": "MTBO-träning Lugnet",
-          "datetimez": "2017-07-12T00:00:00+02:00",
+          "datetimez": "2017-07-12T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -14419,7 +14419,7 @@
         {
           "race_number": 1,
           "name": "MTB-O - Högbo Multi",
-          "datetimez": "2017-07-08T00:00:00+02:00",
+          "datetimez": "2017-07-08T10:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -14489,7 +14489,7 @@
         {
           "race_number": 1,
           "name": "7-klubbs",
-          "datetimez": "2017-06-27T00:00:00+02:00",
+          "datetimez": "2017-06-27T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -14699,7 +14699,7 @@
         {
           "race_number": 1,
           "name": "MTBO #1",
-          "datetimez": "2017-06-12T00:00:00+02:00",
+          "datetimez": "2017-06-12T16:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -14777,7 +14777,7 @@
         {
           "race_number": 1,
           "name": "MTBO #2",
-          "datetimez": "2017-06-15T00:00:00+02:00",
+          "datetimez": "2017-06-15T16:30:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -14863,7 +14863,7 @@
         {
           "race_number": 1,
           "name": "VärmlandsSerien MTBO deltävling 5",
-          "datetimez": "2017-06-12T00:00:00+02:00",
+          "datetimez": "2017-06-12T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -14986,7 +14986,7 @@
         {
           "race_number": 1,
           "name": "MTBO-träning Tällberg",
-          "datetimez": "2017-05-24T00:00:00+02:00",
+          "datetimez": "2017-05-24T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -15079,7 +15079,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO, Kilene deltävling 4",
-          "datetimez": "2017-05-29T00:00:00+02:00",
+          "datetimez": "2017-05-29T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -15234,7 +15234,7 @@
         {
           "race_number": 1,
           "name": "MTBO TRÄNING",
-          "datetimez": "2017-06-29T00:00:00+02:00",
+          "datetimez": "2017-06-29T17:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -15307,7 +15307,7 @@
         {
           "race_number": 1,
           "name": "MTBO Eketånga",
-          "datetimez": "2017-06-28T00:00:00+02:00",
+          "datetimez": "2017-06-28T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -15434,7 +15434,7 @@
         {
           "race_number": 1,
           "name": "MtbO, DM, medel, Småland",
-          "datetimez": "2017-09-09T00:00:00+02:00",
+          "datetimez": "2017-09-09T14:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -15611,7 +15611,7 @@
         {
           "race_number": 1,
           "name": "Motions-OL MTBO och Challenge Stenstalidskolan",
-          "datetimez": "2017-08-29T00:00:00+02:00",
+          "datetimez": "2017-08-29T17:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -15795,7 +15795,7 @@
         {
           "race_number": 1,
           "name": "Provcykling inför O-Ringen 2018",
-          "datetimez": "2017-07-04T00:00:00+02:00",
+          "datetimez": "2017-07-04T17:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -15892,7 +15892,7 @@
         {
           "race_number": 1,
           "name": "MTBO Bjästamon",
-          "datetimez": "2017-08-19T00:00:00+02:00",
+          "datetimez": "2017-08-19T11:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -16090,7 +16090,7 @@
         {
           "race_number": 1,
           "name": "Provcykling inför O-Ringen 2018",
-          "datetimez": "2017-07-11T00:00:00+02:00",
+          "datetimez": "2017-07-11T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -17949,7 +17949,7 @@
         {
           "race_number": 1,
           "name": "Höglands-OL, sprint  och Höglands-OL MTBO",
-          "datetimez": "2017-08-15T00:00:00+02:00",
+          "datetimez": "2017-08-15T17:30:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -18179,7 +18179,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO - Deltävling 6",
-          "datetimez": "2017-08-21T00:00:00+02:00",
+          "datetimez": "2017-08-21T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -18339,7 +18339,7 @@
         {
           "race_number": 1,
           "name": "MTBO-träning Trollhättan",
-          "datetimez": "2017-08-15T00:00:00+02:00",
+          "datetimez": "2017-08-15T17:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -18497,7 +18497,7 @@
         {
           "race_number": 1,
           "name": "Veckotur Bönan",
-          "datetimez": "2017-08-23T00:00:00+02:00",
+          "datetimez": "2017-08-23T17:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -18688,7 +18688,7 @@
         {
           "race_number": 1,
           "name": "MtbO-träning Kappelberget",
-          "datetimez": "2017-08-16T00:00:00+02:00",
+          "datetimez": "2017-08-16T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -18772,7 +18772,7 @@
         {
           "race_number": 1,
           "name": "MtbO-träning och Prova På",
-          "datetimez": "2017-09-13T00:00:00+02:00",
+          "datetimez": "2017-09-13T17:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -18860,7 +18860,7 @@
         {
           "race_number": 1,
           "name": "Borlänge-Säter träning",
-          "datetimez": "2017-08-09T00:00:00+02:00",
+          "datetimez": "2017-08-10T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -18989,7 +18989,7 @@
         {
           "race_number": 1,
           "name": "Provcykling inför O-Ringen 2018 MTBOE4",
-          "datetimez": "2017-08-09T00:00:00+02:00",
+          "datetimez": "2017-08-09T17:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -19115,7 +19115,7 @@
         {
           "race_number": 1,
           "name": "Provcykling inför O-Ringen 2018 MTBOE5",
-          "datetimez": "2017-08-14T00:00:00+02:00",
+          "datetimez": "2017-08-14T17:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -19195,7 +19195,7 @@
         {
           "race_number": 1,
           "name": "IFK Lidingö ABCD-cup",
-          "datetimez": "2017-08-23T00:00:00+02:00",
+          "datetimez": "2017-08-23T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -19333,7 +19333,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO - Deltävling 7",
-          "datetimez": "2017-08-28T00:00:00+02:00",
+          "datetimez": "2017-08-28T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -19503,7 +19503,7 @@
         {
           "race_number": 1,
           "name": "Mtbo, Änggårdsracet höst",
-          "datetimez": "2017-09-30T00:00:00+02:00",
+          "datetimez": "2017-09-30T11:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -19721,7 +19721,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO - Deltävling 8",
-          "datetimez": "2017-09-04T00:00:00+02:00",
+          "datetimez": "2017-09-04T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -19893,7 +19893,7 @@
         {
           "race_number": 1,
           "name": "Siljanskrets & KM i MTBO",
-          "datetimez": "2017-09-06T00:00:00+02:00",
+          "datetimez": "2017-09-06T18:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -20082,7 +20082,7 @@
         {
           "race_number": 1,
           "name": "ABCD-cup - Söders",
-          "datetimez": "2017-09-23T00:00:00+02:00",
+          "datetimez": "2017-09-24T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -20228,7 +20228,7 @@
         {
           "race_number": 1,
           "name": "MTBO Uppland, träning, Uppsala",
-          "datetimez": "2017-09-06T00:00:00+02:00",
+          "datetimez": "2017-09-06T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -20320,7 +20320,7 @@
         {
           "race_number": 1,
           "name": "ABCD-cupen 2017, MTBO Uppland, Uppsala",
-          "datetimez": "2017-09-20T00:00:00+02:00",
+          "datetimez": "2017-09-20T17:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "combined",
           "position": {
@@ -20471,7 +20471,7 @@
         {
           "race_number": 1,
           "name": "mtb",
-          "datetimez": "2017-05-03T00:00:00+02:00",
+          "datetimez": "2017-05-03T17:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -20598,7 +20598,7 @@
         {
           "race_number": 1,
           "name": "Luta Pre-Raid",
-          "datetimez": "2017-09-17T00:00:00+02:00",
+          "datetimez": "2017-09-17T11:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -20713,7 +20713,7 @@
         {
           "race_number": 1,
           "name": "Provcykling Hörnsjön",
-          "datetimez": "2017-09-14T00:00:00+02:00",
+          "datetimez": "2017-09-14T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -20793,7 +20793,7 @@
         {
           "race_number": 1,
           "name": "Haninge MTBO Natt ABCD-Cupen",
-          "datetimez": "2017-10-26T00:00:00+02:00",
+          "datetimez": "2017-10-27T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "night",
           "position": {
@@ -20925,7 +20925,7 @@
         {
           "race_number": 1,
           "name": "Rolles Nattcup MTBO",
-          "datetimez": "2017-10-10T00:00:00+02:00",
+          "datetimez": "2017-10-11T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "night",
           "position": {
@@ -21038,7 +21038,7 @@
         {
           "race_number": 1,
           "name": "MTBO Uppland, specialträning och prova på MTBO",
-          "datetimez": "2017-10-02T00:00:00+02:00",
+          "datetimez": "2017-10-02T17:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -21129,7 +21129,7 @@
         {
           "race_number": 1,
           "name": "SprintKM MtbO",
-          "datetimez": "2017-10-15T00:00:00+02:00",
+          "datetimez": "2017-10-15T12:30:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -21273,7 +21273,7 @@
         {
           "race_number": 1,
           "name": "Getaren Runt",
-          "datetimez": "2017-10-31T00:00:00+01:00",
+          "datetimez": "2017-10-31T18:15:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -21360,7 +21360,7 @@
         {
           "race_number": 1,
           "name": "Novemberkåsan",
-          "datetimez": "2017-10-21T00:00:00+02:00",
+          "datetimez": "2017-10-21T14:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "combined",
           "position": {
@@ -21513,7 +21513,7 @@
         {
           "race_number": 1,
           "name": "Svartåtrampet 2017 (MTB-träning med tidtagning)",
-          "datetimez": "2017-11-11T00:00:00+01:00",
+          "datetimez": "2017-11-11T11:00:00+01:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -21638,7 +21638,7 @@
         {
           "race_number": 1,
           "name": "Öppen MTBO-träning",
-          "datetimez": "2017-11-05T00:00:00+01:00",
+          "datetimez": "2017-11-05T11:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -21778,7 +21778,7 @@
         {
           "race_number": 1,
           "name": "Träningstävling",
-          "datetimez": "2017-12-02T00:00:00+01:00",
+          "datetimez": "2017-12-02T10:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -21886,7 +21886,7 @@
         {
           "race_number": 1,
           "name": "MTB-O ungdoms träning/prova på",
-          "datetimez": "2017-12-16T00:00:00+01:00",
+          "datetimez": "2017-12-16T10:00:00+01:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {

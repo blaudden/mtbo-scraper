@@ -2137,7 +2137,7 @@
         {
           "race_number": 1,
           "name": "Nationale MD",
-          "datetimez": "2022-06-04T00:00:00+00:00",
+          "datetimez": "2022-06-04T13:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2245,7 +2245,7 @@
         {
           "race_number": 1,
           "name": "Nationale MS",
-          "datetimez": "2022-06-06T00:00:00+00:00",
+          "datetimez": "2022-06-06T10:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2376,7 +2376,7 @@
         {
           "race_number": 1,
           "name": "Balaton MTBO Middle",
-          "datetimez": "2022-04-23T00:00:00+00:00",
+          "datetimez": "2022-04-23T13:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2510,7 +2510,7 @@
         {
           "race_number": 1,
           "name": "Balaton MTBO Long",
-          "datetimez": "2022-04-24T00:00:00+00:00",
+          "datetimez": "2022-04-24T10:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2621,7 +2621,7 @@
         {
           "race_number": 1,
           "name": "Danish MTBO Camp Race #1 Tisvilde Hegn",
-          "datetimez": "2022-04-08T00:00:00+00:00",
+          "datetimez": "2022-04-09T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2729,7 +2729,7 @@
         {
           "race_number": 1,
           "name": "Danish MTBO Camp Race #3 Klosterris Hegn",
-          "datetimez": "2022-04-09T00:00:00+00:00",
+          "datetimez": "2022-04-10T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2834,7 +2834,7 @@
         {
           "race_number": 1,
           "name": "BUL MTBO Champs Long",
-          "datetimez": "2022-07-22T00:00:00+00:00",
+          "datetimez": "2022-07-23T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2942,7 +2942,7 @@
         {
           "race_number": 1,
           "name": "BUL MTBO Champs Sprint",
-          "datetimez": "2022-07-21T00:00:00+00:00",
+          "datetimez": "2022-07-22T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -3291,7 +3291,7 @@
         {
           "race_number": 1,
           "name": "Campionato Italiano MTBO Sprint",
-          "datetimez": "2022-10-07T00:00:00+00:00",
+          "datetimez": "2022-10-08T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -3423,7 +3423,7 @@
         {
           "race_number": 1,
           "name": "Campionato Italiano MTBO Middle",
-          "datetimez": "2022-10-08T00:00:00+00:00",
+          "datetimez": "2022-10-09T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -3831,7 +3831,7 @@
         {
           "race_number": 1,
           "name": "Estonian MTBO Championships/ Baltic MTBO Championships",
-          "datetimez": "2022-07-02T00:00:00+00:00",
+          "datetimez": "2022-07-02T12:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -3935,7 +3935,7 @@
         {
           "race_number": 1,
           "name": "Estonian MTBO Championships/ Baltic MTBO Championships",
-          "datetimez": "2022-07-03T00:00:00+00:00",
+          "datetimez": "2022-07-03T12:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -4068,7 +4068,7 @@
         {
           "race_number": 1,
           "name": "Fet MTB-O",
-          "datetimez": "2022-06-11T00:00:00+02:00",
+          "datetimez": "2022-06-11T11:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -4238,7 +4238,7 @@
         {
           "race_number": 1,
           "name": "Randsfjorden Sykkel-o dag 1",
-          "datetimez": "2022-05-07T00:00:00+02:00",
+          "datetimez": "2022-05-07T10:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -4424,7 +4424,7 @@
         {
           "race_number": 1,
           "name": "Randsfjorden Sykkel-o dag 2",
-          "datetimez": "2022-05-08T00:00:00+02:00",
+          "datetimez": "2022-05-08T10:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -4622,7 +4622,7 @@
         {
           "race_number": 1,
           "name": "Modum SykkelO",
-          "datetimez": "2022-07-03T00:00:00+02:00",
+          "datetimez": "2022-07-03T09:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -4804,7 +4804,7 @@
         {
           "race_number": 1,
           "name": "SykkelO Kongsberg",
-          "datetimez": "2022-07-02T00:00:00+02:00",
+          "datetimez": "2022-07-02T11:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -4972,7 +4972,7 @@
         {
           "race_number": 1,
           "name": "Treningsløp Skiorientering",
-          "datetimez": "2022-02-06T00:00:00+01:00",
+          "datetimez": "2022-02-06T10:00:00+01:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -5096,7 +5096,7 @@
         {
           "race_number": 1,
           "name": "MTBO-Skien mellom",
-          "datetimez": "2022-04-23T00:00:00+02:00",
+          "datetimez": "2022-04-23T15:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -5310,7 +5310,7 @@
         {
           "race_number": 1,
           "name": "MTBO-Skien sprint",
-          "datetimez": "2022-04-23T00:00:00+02:00",
+          "datetimez": "2022-04-23T11:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -5511,7 +5511,7 @@
         {
           "race_number": 1,
           "name": "Vestfold Sykkel-O Festival",
-          "datetimez": "2022-10-07T00:00:00+02:00",
+          "datetimez": "2022-10-08T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -5729,7 +5729,7 @@
         {
           "race_number": 1,
           "name": "Vestfold Sykkel-O Festival",
-          "datetimez": "2022-10-08T00:00:00+02:00",
+          "datetimez": "2022-10-09T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -5930,7 +5930,7 @@
         {
           "race_number": 1,
           "name": "Vestfold Sykkel-O Festival",
-          "datetimez": "2022-10-07T00:00:00+02:00",
+          "datetimez": "2022-10-08T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -6142,7 +6142,7 @@
         {
           "race_number": 1,
           "name": "Varingskollen Sykkel-o",
-          "datetimez": "2022-06-12T00:00:00+02:00",
+          "datetimez": "2022-06-12T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -6278,7 +6278,7 @@
         {
           "race_number": 1,
           "name": "O-triatlon",
-          "datetimez": "2022-08-17T00:00:00+02:00",
+          "datetimez": "2022-08-17T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -6491,7 +6491,7 @@
         {
           "race_number": 1,
           "name": "Gørretråkket 2022",
-          "datetimez": "2022-10-29T00:00:00+02:00",
+          "datetimez": "2022-10-29T12:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -6615,7 +6615,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Rodhenloppet",
-          "datetimez": "2022-10-28T00:00:00+02:00",
+          "datetimez": "2022-10-29T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "night",
           "position": null,
@@ -6710,7 +6710,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Uppsala, ultralång",
-          "datetimez": "2022-07-22T00:00:00+02:00",
+          "datetimez": "2022-07-22T12:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -6892,7 +6892,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Uppsala, medel",
-          "datetimez": "2022-07-23T00:00:00+02:00",
+          "datetimez": "2022-07-23T12:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -7075,7 +7075,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Uppsala, model event",
-          "datetimez": "2022-07-24T00:00:00+02:00",
+          "datetimez": "2022-07-24T13:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": null,
@@ -7199,7 +7199,7 @@
         {
           "race_number": 1,
           "name": "MTBO, DM, medel, Ångermanland",
-          "datetimez": "2022-06-15T00:00:00+02:00",
+          "datetimez": "2022-06-16T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -10455,7 +10455,7 @@
         {
           "race_number": 1,
           "name": "MTBO, VM, publiktävling 3, medel (Young Guns World Series)",
-          "datetimez": "2022-07-16T00:00:00+02:00",
+          "datetimez": "2022-07-17T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -10858,7 +10858,7 @@
         {
           "race_number": 1,
           "name": "MTBO, VM, publiktävling 4, sprint (Young Guns World Series, World Masters Series)",
-          "datetimez": "2022-07-18T00:00:00+02:00",
+          "datetimez": "2022-07-19T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -11296,7 +11296,7 @@
         {
           "race_number": 1,
           "name": "MTBO, VM, publiktävling 5, masstart",
-          "datetimez": "2022-07-19T00:00:00+02:00",
+          "datetimez": "2022-07-20T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -11695,7 +11695,7 @@
         {
           "race_number": 1,
           "name": "MTBO, VM, publiktävling 1, medel",
-          "datetimez": "2022-07-14T00:00:00+02:00",
+          "datetimez": "2022-07-15T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -12344,7 +12344,7 @@
         {
           "race_number": 1,
           "name": "MTBO, VM, publiktävling 2, medel (World Masters Series)",
-          "datetimez": "2022-07-15T00:00:00+02:00",
+          "datetimez": "2022-07-16T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -12976,7 +12976,7 @@
         {
           "race_number": 1,
           "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #5, sprint",
-          "datetimez": "2022-05-26T00:00:00+02:00",
+          "datetimez": "2022-05-27T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -13603,7 +13603,7 @@
         {
           "race_number": 1,
           "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #6, lång",
-          "datetimez": "2022-05-27T00:00:00+02:00",
+          "datetimez": "2022-05-28T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -14293,7 +14293,7 @@
         {
           "race_number": 1,
           "name": "MTBO, USM/JSM/SM/VSM, Svenska Cupen, #7, medel",
-          "datetimez": "2022-05-28T00:00:00+02:00",
+          "datetimez": "2022-05-29T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -14952,7 +14952,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #1, sprint",
-          "datetimez": "2022-04-23T00:00:00+02:00",
+          "datetimez": "2022-04-23T14:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -15435,7 +15435,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #2, medel",
-          "datetimez": "2022-04-24T00:00:00+02:00",
+          "datetimez": "2022-04-24T11:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -15946,7 +15946,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Veterancupen + DM, medel, Södermanland",
-          "datetimez": "2022-04-01T00:00:00+02:00",
+          "datetimez": "2022-04-02T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -16420,7 +16420,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Veterancupen + DM, sprint, Södermanland",
-          "datetimez": "2022-04-02T00:00:00+02:00",
+          "datetimez": "2022-04-03T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -16856,7 +16856,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #3, lång",
-          "datetimez": "2022-04-30T00:00:00+02:00",
+          "datetimez": "2022-04-30T14:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -17325,7 +17325,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #4, medel",
-          "datetimez": "2022-04-30T00:00:00+02:00",
+          "datetimez": "2022-05-01T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -17874,7 +17874,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #10, sprint",
-          "datetimez": "2022-09-02T00:00:00+02:00",
+          "datetimez": "2022-09-03T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -18288,7 +18288,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #11, masstart, final",
-          "datetimez": "2022-09-03T00:00:00+02:00",
+          "datetimez": "2022-09-04T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -18656,7 +18656,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #8, sprint",
-          "datetimez": "2022-08-20T00:00:00+02:00",
+          "datetimez": "2022-08-20T16:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -19039,7 +19039,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska Cupen, #9, medel",
-          "datetimez": "2022-08-21T00:00:00+02:00",
+          "datetimez": "2022-08-21T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -19418,7 +19418,7 @@
         {
           "race_number": 1,
           "name": "Lunds OK VinterSerien MTBO 2021/22",
-          "datetimez": "2022-01-08T00:00:00+01:00",
+          "datetimez": "2022-01-08T11:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -19606,7 +19606,7 @@
         {
           "race_number": 1,
           "name": "Träningscup MTBO vinter delträning 3",
-          "datetimez": "2022-01-16T00:00:00+01:00",
+          "datetimez": "2022-01-16T10:30:00+01:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -19680,7 +19680,7 @@
         {
           "race_number": 1,
           "name": "Träningscup MTBO vinter delträning 4",
-          "datetimez": "2022-01-30T00:00:00+01:00",
+          "datetimez": "2022-01-30T10:30:00+01:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -19754,7 +19754,7 @@
         {
           "race_number": 1,
           "name": "Träningscup MTBO vinter delträning 5",
-          "datetimez": "2022-02-13T00:00:00+01:00",
+          "datetimez": "2022-02-13T10:30:00+01:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -19879,7 +19879,7 @@
         {
           "race_number": 1,
           "name": "MTBO, DM, Småland, stafett",
-          "datetimez": "2022-05-14T00:00:00+02:00",
+          "datetimez": "2022-05-15T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -20017,7 +20017,7 @@
         {
           "race_number": 1,
           "name": "Träningscup MTBO vinter delträning",
-          "datetimez": "2022-02-27T00:00:00+01:00",
+          "datetimez": "2022-02-27T10:30:00+01:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": null,
@@ -20088,7 +20088,7 @@
         {
           "race_number": 1,
           "name": "Träningscup MTBO vinter",
-          "datetimez": "2022-03-05T00:00:00+01:00",
+          "datetimez": "2022-03-05T10:30:00+01:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": null,
@@ -20204,7 +20204,7 @@
         {
           "race_number": 1,
           "name": "Skåneserien MTBO",
-          "datetimez": "2022-03-13T00:00:00+01:00",
+          "datetimez": "2022-03-13T10:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -20470,7 +20470,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Smålandscup, Värnamo",
-          "datetimez": "2022-06-05T00:00:00+02:00",
+          "datetimez": "2022-06-06T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -20667,7 +20667,7 @@
         {
           "race_number": 1,
           "name": "MTBO, DM, Västmanland",
-          "datetimez": "2022-08-26T00:00:00+02:00",
+          "datetimez": "2022-08-27T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -20749,7 +20749,7 @@
         {
           "race_number": 1,
           "name": "MTBO Åhus",
-          "datetimez": "2022-02-26T00:00:00+01:00",
+          "datetimez": "2022-02-26T11:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -20994,7 +20994,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Smålandscup, Anderstorp",
-          "datetimez": "2022-05-22T00:00:00+02:00",
+          "datetimez": "2022-05-22T08:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -21181,7 +21181,7 @@
         {
           "race_number": 1,
           "name": "MtbO 1",
-          "datetimez": "2022-04-20T00:00:00+02:00",
+          "datetimez": "2022-04-20T17:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -21313,7 +21313,7 @@
         {
           "race_number": 1,
           "name": "MTBO-träning",
-          "datetimez": "2022-04-26T00:00:00+02:00",
+          "datetimez": "2022-04-26T17:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -21452,7 +21452,7 @@
         {
           "race_number": 1,
           "name": "MTBO-träning",
-          "datetimez": "2022-05-03T00:00:00+02:00",
+          "datetimez": "2022-05-03T17:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -21605,7 +21605,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO deltävling 4",
-          "datetimez": "2022-06-13T00:00:00+02:00",
+          "datetimez": "2022-06-13T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -21797,7 +21797,7 @@
         {
           "race_number": 1,
           "name": "MTBO i Bockeboda",
-          "datetimez": "2022-05-15T00:00:00+02:00",
+          "datetimez": "2022-05-15T11:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -21973,7 +21973,7 @@
         {
           "race_number": 1,
           "name": "Motions MTBO Gotlands 2-dagars",
-          "datetimez": "2022-07-09T00:00:00+02:00",
+          "datetimez": "2022-07-09T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -22123,7 +22123,7 @@
         {
           "race_number": 1,
           "name": "Motions MTBO Gotlands 2-dagars E2",
-          "datetimez": "2022-07-10T00:00:00+02:00",
+          "datetimez": "2022-07-10T09:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -22298,7 +22298,7 @@
         {
           "race_number": 1,
           "name": "Öppet Sprint KM MTBO Domnarvets GoIF och OK Kåre",
-          "datetimez": "2022-06-15T00:00:00+02:00",
+          "datetimez": "2022-06-15T17:30:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -22462,7 +22462,7 @@
         {
           "race_number": 1,
           "name": "Östgötaserien MTBO #1",
-          "datetimez": "2022-05-11T00:00:00+02:00",
+          "datetimez": "2022-05-11T17:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -22645,7 +22645,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO deltävling 3",
-          "datetimez": "2022-05-23T00:00:00+02:00",
+          "datetimez": "2022-05-23T17:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -22853,7 +22853,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO deltävling 1, Deje",
-          "datetimez": "2022-05-09T00:00:00+02:00",
+          "datetimez": "2022-05-09T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -23007,7 +23007,7 @@
         {
           "race_number": 1,
           "name": "MtbO Öviksserien 2",
-          "datetimez": "2022-06-08T00:00:00+02:00",
+          "datetimez": "2022-06-08T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -23242,7 +23242,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO deltävling 2",
-          "datetimez": "2022-05-16T00:00:00+02:00",
+          "datetimez": "2022-05-16T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -23399,7 +23399,7 @@
         {
           "race_number": 1,
           "name": "Öviksserien MtbO 3",
-          "datetimez": "2022-07-06T00:00:00+02:00",
+          "datetimez": "2022-07-06T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -23535,7 +23535,7 @@
         {
           "race_number": 1,
           "name": "MtbO Öviksserien 5",
-          "datetimez": "2022-08-24T00:00:00+02:00",
+          "datetimez": "2022-08-24T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -23671,7 +23671,7 @@
         {
           "race_number": 1,
           "name": "MtbO Öviksserien 6 / TrailO",
-          "datetimez": "2022-10-11T00:00:00+02:00",
+          "datetimez": "2022-10-11T18:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "night",
           "position": {
@@ -23807,7 +23807,7 @@
         {
           "race_number": 1,
           "name": "STAR, Stockholm Adventure Race",
-          "datetimez": "2022-09-24T00:00:00+02:00",
+          "datetimez": "2022-09-24T17:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "combined",
           "position": null,
@@ -23905,7 +23905,7 @@
         {
           "race_number": 1,
           "name": "Östgötaserien MTBO",
-          "datetimez": "2022-06-12T00:00:00+02:00",
+          "datetimez": "2022-06-13T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -24075,7 +24075,7 @@
         {
           "race_number": 1,
           "name": "MtbO Öviksserien 1",
-          "datetimez": "2022-05-16T00:00:00+02:00",
+          "datetimez": "2022-05-16T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -24265,7 +24265,7 @@
         {
           "race_number": 1,
           "name": "MTB-O Tisdagstest",
-          "datetimez": "2022-05-24T00:00:00+02:00",
+          "datetimez": "2022-05-24T17:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": null,
@@ -24356,7 +24356,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO deltävling 5",
-          "datetimez": "2022-06-20T00:00:00+02:00",
+          "datetimez": "2022-06-20T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -24487,7 +24487,7 @@
         {
           "race_number": 1,
           "name": "Tränings-OL + Mtb-O",
-          "datetimez": "2022-07-05T00:00:00+02:00",
+          "datetimez": "2022-07-05T17:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -24640,7 +24640,7 @@
         {
           "race_number": 1,
           "name": "MTB-O-träning",
-          "datetimez": "2022-06-22T00:00:00+02:00",
+          "datetimez": "2022-06-22T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -24827,7 +24827,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Smålandscupen Gränna",
-          "datetimez": "2022-09-24T00:00:00+02:00",
+          "datetimez": "2022-09-24T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -25098,7 +25098,7 @@
         {
           "race_number": 1,
           "name": "Östgötaserien 2022 #3",
-          "datetimez": "2022-08-09T00:00:00+02:00",
+          "datetimez": "2022-08-10T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -25305,7 +25305,7 @@
         {
           "race_number": 1,
           "name": "MTBO Ö-viksserien #4",
-          "datetimez": "2022-08-10T00:00:00+02:00",
+          "datetimez": "2022-08-10T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -25425,7 +25425,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO deltävling 6",
-          "datetimez": "2022-08-15T00:00:00+02:00",
+          "datetimez": "2022-08-15T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -25593,7 +25593,7 @@
         {
           "race_number": 1,
           "name": "TyrTrippeln",
-          "datetimez": "2022-09-10T00:00:00+02:00",
+          "datetimez": "2022-09-10T11:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -25690,7 +25690,7 @@
         {
           "race_number": 1,
           "name": "MTB-O Sommarträning, Ånnaboda",
-          "datetimez": "2022-08-03T00:00:00+02:00",
+          "datetimez": "2022-08-03T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -25838,7 +25838,7 @@
         {
           "race_number": 1,
           "name": "Närtävling MTBO",
-          "datetimez": "2022-08-14T00:00:00+02:00",
+          "datetimez": "2022-08-14T15:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -25967,7 +25967,7 @@
         {
           "race_number": 1,
           "name": "MTBO Bastasjö",
-          "datetimez": "2022-08-10T00:00:00+02:00",
+          "datetimez": "2022-08-10T17:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -26101,7 +26101,7 @@
         {
           "race_number": 1,
           "name": "MTBO, DM, Dalarna",
-          "datetimez": "2022-09-24T00:00:00+02:00",
+          "datetimez": "2022-09-24T14:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -26323,7 +26323,7 @@
         {
           "race_number": 1,
           "name": "Östgötaserien i MTBO 2022 #4",
-          "datetimez": "2022-08-29T00:00:00+02:00",
+          "datetimez": "2022-08-29T17:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -26508,7 +26508,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Smålandscupen Vimmerby OK i Södra Vi",
-          "datetimez": "2022-09-10T00:00:00+02:00",
+          "datetimez": "2022-09-10T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -26687,7 +26687,7 @@
         {
           "race_number": 1,
           "name": "Värmlandsserien MTBO Final",
-          "datetimez": "2022-08-29T00:00:00+02:00",
+          "datetimez": "2022-08-30T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -26878,7 +26878,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Smålandscupen, Lammhult",
-          "datetimez": "2022-09-30T00:00:00+02:00",
+          "datetimez": "2022-10-01T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -27074,7 +27074,7 @@
         {
           "race_number": 1,
           "name": "Träningsrace MTBO",
-          "datetimez": "2022-09-18T00:00:00+02:00",
+          "datetimez": "2022-09-18T11:30:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -27247,7 +27247,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Öppet DM, Medel, Värmland",
-          "datetimez": "2022-09-18T00:00:00+02:00",
+          "datetimez": "2022-09-18T11:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -27451,7 +27451,7 @@
         {
           "race_number": 1,
           "name": "KM MTBO",
-          "datetimez": "2022-08-22T00:00:00+02:00",
+          "datetimez": "2022-08-23T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -27634,7 +27634,7 @@
         {
           "race_number": 1,
           "name": "OK Marks Mtbo träning",
-          "datetimez": "2022-08-24T00:00:00+02:00",
+          "datetimez": "2022-08-24T18:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": null,
@@ -27757,7 +27757,7 @@
         {
           "race_number": 1,
           "name": "OK Marks Mtbo träning",
-          "datetimez": "2022-08-31T00:00:00+02:00",
+          "datetimez": "2022-08-31T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -27894,7 +27894,7 @@
         {
           "race_number": 1,
           "name": "MTB-O Träning, öppen för alla (KM för GIF-medlemmar)",
-          "datetimez": "2022-09-17T00:00:00+02:00",
+          "datetimez": "2022-09-17T11:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -28045,7 +28045,7 @@
         {
           "race_number": 1,
           "name": "Svartåtrampet 2022 (MTB-träning med tidtagning)",
-          "datetimez": "2022-10-02T00:00:00+02:00",
+          "datetimez": "2022-10-02T11:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": null,
@@ -28155,7 +28155,7 @@
         {
           "race_number": 1,
           "name": "MTBO Träning Liss Tansen",
-          "datetimez": "2022-09-07T00:00:00+02:00",
+          "datetimez": "2022-09-08T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -28229,7 +28229,7 @@
         {
           "race_number": 1,
           "name": "OK Tranan MTBO-träning",
-          "datetimez": "2022-09-10T00:00:00+02:00",
+          "datetimez": "2022-09-10T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -28398,7 +28398,7 @@
         {
           "race_number": 1,
           "name": "MTBO, DM, medel, Stockholm",
-          "datetimez": "2022-10-01T00:00:00+02:00",
+          "datetimez": "2022-10-02T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -28596,7 +28596,7 @@
         {
           "race_number": 1,
           "name": "Stockholm Rogaining",
-          "datetimez": "2022-11-26T00:00:00+01:00",
+          "datetimez": "2022-11-26T12:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -28696,7 +28696,7 @@
         {
           "race_number": 1,
           "name": "Zonträning MTBO",
-          "datetimez": "2022-09-22T00:00:00+02:00",
+          "datetimez": "2022-09-22T17:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": null,
@@ -28772,7 +28772,7 @@
         {
           "race_number": 1,
           "name": "IFK Lidingös MTBO-natt 2022",
-          "datetimez": "2022-10-14T00:00:00+02:00",
+          "datetimez": "2022-10-14T18:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -28853,7 +28853,7 @@
         {
           "race_number": 1,
           "name": "Oktobernatta MtbO/TrailO",
-          "datetimez": "2022-10-27T00:00:00+02:00",
+          "datetimez": "2022-10-27T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "night",
           "position": {
@@ -29036,7 +29036,7 @@
         {
           "race_number": 1,
           "name": "MTBO Äspet Åhus",
-          "datetimez": "2022-11-13T00:00:00+01:00",
+          "datetimez": "2022-11-13T11:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -29216,7 +29216,7 @@
         {
           "race_number": 1,
           "name": "Barmarks-SkidO",
-          "datetimez": "2022-11-19T00:00:00+01:00",
+          "datetimez": "2022-11-19T13:15:00+01:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -29413,7 +29413,7 @@
         {
           "race_number": 1,
           "name": "Öppet KM och Vinterserien, MtbO",
-          "datetimez": "2022-12-10T00:00:00+01:00",
+          "datetimez": "2022-12-10T11:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {

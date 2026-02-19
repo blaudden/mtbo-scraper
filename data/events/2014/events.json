@@ -65,7 +65,7 @@
         {
           "race_number": 1,
           "name": "Istanbul MTB Orienteering Cup",
-          "datetimez": "2014-04-04T00:00:00+00:00",
+          "datetimez": "2014-04-05T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -150,7 +150,7 @@
         {
           "race_number": 1,
           "name": "Istanbul MTB Orienteering Cup",
-          "datetimez": "2014-04-05T00:00:00+00:00",
+          "datetimez": "2014-04-06T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -235,7 +235,7 @@
         {
           "race_number": 1,
           "name": "MTBO camp cup 2",
-          "datetimez": "2014-04-11T00:00:00+00:00",
+          "datetimez": "2014-04-12T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -320,7 +320,7 @@
         {
           "race_number": 1,
           "name": "MTBO camp cup 3",
-          "datetimez": "2014-04-12T00:00:00+00:00",
+          "datetimez": "2014-04-13T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -406,7 +406,7 @@
         {
           "race_number": 1,
           "name": "World Cup Event 1",
-          "datetimez": "2014-05-15T00:00:00+00:00",
+          "datetimez": "2014-05-16T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -492,7 +492,7 @@
         {
           "race_number": 1,
           "name": "World Cup Event 2",
-          "datetimez": "2014-05-16T00:00:00+00:00",
+          "datetimez": "2014-05-17T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -575,7 +575,7 @@
         {
           "race_number": 1,
           "name": "World Cup Event 3",
-          "datetimez": "2014-05-17T00:00:00+00:00",
+          "datetimez": "2014-05-18T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -635,7 +635,7 @@
         {
           "race_number": 1,
           "name": "Australian MTBO Middle Distance Championship",
-          "datetimez": "2014-06-13T00:00:00+00:00",
+          "datetimez": "2014-06-14T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -720,7 +720,7 @@
         {
           "race_number": 1,
           "name": "Australian MTBO Long Distance Championship",
-          "datetimez": "2014-06-14T00:00:00+00:00",
+          "datetimez": "2014-06-15T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -805,7 +805,7 @@
         {
           "race_number": 1,
           "name": "Russian national competition",
-          "datetimez": "2014-06-20T00:00:00+00:00",
+          "datetimez": "2014-06-21T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -890,7 +890,7 @@
         {
           "race_number": 1,
           "name": "Russian national competition",
-          "datetimez": "2014-06-21T00:00:00+00:00",
+          "datetimez": "2014-06-22T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -975,7 +975,7 @@
         {
           "race_number": 1,
           "name": "Austrian Championships Middle Distance",
-          "datetimez": "2014-06-27T00:00:00+00:00",
+          "datetimez": "2014-06-28T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1060,7 +1060,7 @@
         {
           "race_number": 1,
           "name": "MTBO Austria Cup Long Distance",
-          "datetimez": "2014-06-28T00:00:00+00:00",
+          "datetimez": "2014-06-29T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1145,7 +1145,7 @@
         {
           "race_number": 1,
           "name": "Czech Sprint MTBO championship",
-          "datetimez": "2014-07-04T00:00:00+00:00",
+          "datetimez": "2014-07-05T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1230,7 +1230,7 @@
         {
           "race_number": 1,
           "name": "Czech MTBO Cup round",
-          "datetimez": "2014-07-05T00:00:00+00:00",
+          "datetimez": "2014-07-06T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1316,7 +1316,7 @@
         {
           "race_number": 1,
           "name": "World Cup Event 4",
-          "datetimez": "2014-07-17T00:00:00+00:00",
+          "datetimez": "2014-07-18T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1527,7 +1527,7 @@
         {
           "race_number": 1,
           "name": "World Cup Event 5",
-          "datetimez": "2014-07-18T00:00:00+00:00",
+          "datetimez": "2014-07-19T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1731,7 +1731,7 @@
         {
           "race_number": 1,
           "name": "World Cup Event 6",
-          "datetimez": "2014-07-19T00:00:00+00:00",
+          "datetimez": "2014-07-20T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1940,7 +1940,7 @@
         {
           "race_number": 1,
           "name": "Belarus MTBO Cup 2014",
-          "datetimez": "2014-08-15T00:00:00+00:00",
+          "datetimez": "2014-08-16T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2025,7 +2025,7 @@
         {
           "race_number": 1,
           "name": "Belarus MTBO Cup 2014",
-          "datetimez": "2014-08-16T00:00:00+00:00",
+          "datetimez": "2014-08-17T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2112,7 +2112,7 @@
         {
           "race_number": 1,
           "name": "World MTB Orienteering Championships",
-          "datetimez": "2014-08-25T00:00:00+00:00",
+          "datetimez": "2014-08-26T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2199,7 +2199,7 @@
         {
           "race_number": 1,
           "name": "World MTB Orienteering Championships",
-          "datetimez": "2014-08-26T00:00:00+00:00",
+          "datetimez": "2014-08-27T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2286,7 +2286,7 @@
         {
           "race_number": 1,
           "name": "World MTB Orienteering Championships",
-          "datetimez": "2014-08-28T00:00:00+00:00",
+          "datetimez": "2014-08-29T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2370,7 +2370,7 @@
         {
           "race_number": 1,
           "name": "World MTB Orienteering Championships",
-          "datetimez": "2014-08-29T00:00:00+00:00",
+          "datetimez": "2014-08-30T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2437,7 +2437,7 @@
         {
           "race_number": 1,
           "name": "Loka-ajot",
-          "datetimez": "2014-09-26T00:00:00+00:00",
+          "datetimez": "2014-09-27T00:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2522,7 +2522,7 @@
         {
           "race_number": 1,
           "name": "Loka-ajot",
-          "datetimez": "2014-09-27T00:00:00+00:00",
+          "datetimez": "2014-09-28T00:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2607,7 +2607,7 @@
         {
           "race_number": 1,
           "name": "Mountain Tagus Bike Open",
-          "datetimez": "2014-10-10T00:00:00+00:00",
+          "datetimez": "2014-10-11T00:00:00+01:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2692,7 +2692,7 @@
         {
           "race_number": 1,
           "name": "Mountain Tagus Bike Open",
-          "datetimez": "2014-10-11T00:00:00+00:00",
+          "datetimez": "2014-10-12T00:00:00+01:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2777,7 +2777,7 @@
         {
           "race_number": 1,
           "name": "World MTB Orienteering Championships, Long B Final",
-          "datetimez": "2014-08-28T00:00:00+00:00",
+          "datetimez": "2014-08-29T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2863,7 +2863,7 @@
         {
           "race_number": 1,
           "name": "Junior World MTB Orienteering Championships",
-          "datetimez": "2014-08-25T00:00:00+00:00",
+          "datetimez": "2014-08-26T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2949,7 +2949,7 @@
         {
           "race_number": 1,
           "name": "Junior World MTB Orienteering Championships",
-          "datetimez": "2014-08-26T00:00:00+00:00",
+          "datetimez": "2014-08-27T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -3035,7 +3035,7 @@
         {
           "race_number": 1,
           "name": "Junior World MTB Orienteering Championships",
-          "datetimez": "2014-08-28T00:00:00+00:00",
+          "datetimez": "2014-08-29T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -3163,7 +3163,7 @@
         {
           "race_number": 1,
           "name": "Torsdagsløp Stokka",
-          "datetimez": "2014-01-30T00:00:00+01:00",
+          "datetimez": "2014-01-30T19:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "night",
           "position": {
@@ -3302,7 +3302,7 @@
         {
           "race_number": 1,
           "name": "Torsdagsløp Madlamark",
-          "datetimez": "2014-03-06T00:00:00+01:00",
+          "datetimez": "2014-03-06T19:00:00+01:00",
           "discipline": "Middle",
           "night_or_day": "night",
           "position": {
@@ -3422,7 +3422,7 @@
         {
           "race_number": 1,
           "name": "O-troll leir for Vestfold  og Telemark",
-          "datetimez": "2014-09-18T00:00:00+02:00",
+          "datetimez": "2014-09-19T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": null,
@@ -3502,7 +3502,7 @@
         {
           "race_number": 1,
           "name": "Torsdagsløp Desember",
-          "datetimez": "2014-12-18T00:00:00+01:00",
+          "datetimez": "2014-12-18T18:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "night",
           "position": {
@@ -3626,7 +3626,7 @@
         {
           "race_number": 1,
           "name": "Mtb-O och standardCykel-O",
-          "datetimez": "2014-06-19T00:00:00+02:00",
+          "datetimez": "2014-06-19T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -3734,7 +3734,7 @@
         {
           "race_number": 1,
           "name": "Norrcupen 140603 MTB + OL",
-          "datetimez": "2014-06-03T00:00:00+02:00",
+          "datetimez": "2014-06-03T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -3907,7 +3907,7 @@
         {
           "race_number": 1,
           "name": "Sako-MTBO",
-          "datetimez": "2014-06-02T00:00:00+02:00",
+          "datetimez": "2014-06-03T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -4045,7 +4045,7 @@
         {
           "race_number": 1,
           "name": "Sommarträning i Filipshyttan",
-          "datetimez": "2014-06-26T00:00:00+02:00",
+          "datetimez": "2014-06-26T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -4196,7 +4196,7 @@
         {
           "race_number": 1,
           "name": "ABC cupen",
-          "datetimez": "2014-08-27T00:00:00+02:00",
+          "datetimez": "2014-08-28T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -4284,7 +4284,7 @@
         {
           "race_number": 1,
           "name": "SNO MTBO - ABC-cupen - deltävling 4",
-          "datetimez": "2014-08-28T00:00:00+02:00",
+          "datetimez": "2014-08-28T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -4422,7 +4422,7 @@
         {
           "race_number": 1,
           "name": "Kretsträning OK Skogsstjärnan",
-          "datetimez": "2014-07-30T00:00:00+02:00",
+          "datetimez": "2014-07-30T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -4501,7 +4501,7 @@
         {
           "race_number": 1,
           "name": "Kretsteknikträning Marks orienteringskrets",
-          "datetimez": "2014-10-02T00:00:00+02:00",
+          "datetimez": "2014-10-02T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -4585,7 +4585,7 @@
         {
           "race_number": 1,
           "name": "MTBO Dalaserien",
-          "datetimez": "2014-08-26T00:00:00+02:00",
+          "datetimez": "2014-08-26T17:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -4677,7 +4677,7 @@
         {
           "race_number": 1,
           "name": "MTBO träningstävling 140904",
-          "datetimez": "2014-09-04T00:00:00+02:00",
+          "datetimez": "2014-09-04T17:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -4786,7 +4786,7 @@
         {
           "race_number": 1,
           "name": "MTBO Järfälla OK, sprint, natt",
-          "datetimez": "2014-10-11T00:00:00+02:00",
+          "datetimez": "2014-10-11T18:30:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "night",
           "position": {
@@ -4932,7 +4932,7 @@
         {
           "race_number": 1,
           "name": "GOF U:25 MTB-O",
-          "datetimez": "2014-10-01T00:00:00+02:00",
+          "datetimez": "2014-10-01T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -5016,7 +5016,7 @@
         {
           "race_number": 1,
           "name": "SK Örnen Öppen MTB",
-          "datetimez": "2014-09-10T00:00:00+02:00",
+          "datetimez": "2014-09-10T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -5093,7 +5093,7 @@
         {
           "race_number": 1,
           "name": "Träningstävling MTBO",
-          "datetimez": "2014-10-05T00:00:00+02:00",
+          "datetimez": "2014-10-05T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -5240,7 +5240,7 @@
         {
           "race_number": 1,
           "name": "MTBO Järfälla OK, Ultralång Järfälla runt",
-          "datetimez": "2014-10-26T00:00:00+02:00",
+          "datetimez": "2014-10-26T10:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -5422,7 +5422,7 @@
         {
           "race_number": 1,
           "name": "Söders MTBO - Höst",
-          "datetimez": "2014-10-11T00:00:00+02:00",
+          "datetimez": "2014-10-12T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -5548,7 +5548,7 @@
         {
           "race_number": 1,
           "name": "Haninge MTBO",
-          "datetimez": "2014-10-24T00:00:00+02:00",
+          "datetimez": "2014-10-25T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -5706,7 +5706,7 @@
         {
           "race_number": 1,
           "name": "MTB-O Pan-Kristianstad, Åhus N",
-          "datetimez": "2014-10-04T00:00:00+02:00",
+          "datetimez": "2014-10-04T10:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -5823,7 +5823,7 @@
         {
           "race_number": 1,
           "name": "MTB-O Pan-Kristianstad, Furuboda",
-          "datetimez": "2014-10-18T00:00:00+02:00",
+          "datetimez": "2014-10-18T10:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -5952,7 +5952,7 @@
         {
           "race_number": 1,
           "name": "MTB-O Pan-Kristianstad, Äspet",
-          "datetimez": "2014-11-01T00:00:00+01:00",
+          "datetimez": "2014-11-01T10:30:00+01:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -6106,7 +6106,7 @@
         {
           "race_number": 1,
           "name": "MTBO Visborgslätt",
-          "datetimez": "2014-11-01T00:00:00+01:00",
+          "datetimez": "2014-11-01T10:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -6221,7 +6221,7 @@
         {
           "race_number": 1,
           "name": "Dalaoffensiven",
-          "datetimez": "2014-12-06T00:00:00+01:00",
+          "datetimez": "2014-12-06T09:00:00+01:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -6346,7 +6346,7 @@
         {
           "race_number": 1,
           "name": "Lången",
-          "datetimez": "2014-11-15T00:00:00+01:00",
+          "datetimez": "2014-11-15T11:00:00+01:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -6710,7 +6710,7 @@
         {
           "race_number": 1,
           "name": "Öppet Natt-KM i MTBO",
-          "datetimez": "2014-11-13T00:00:00+01:00",
+          "datetimez": "2014-11-13T17:30:00+01:00",
           "discipline": "Middle",
           "night_or_day": "night",
           "position": {
@@ -6846,7 +6846,7 @@
         {
           "race_number": 1,
           "name": "MTBO Järfälla OK, natt-KM",
-          "datetimez": "2014-12-07T00:00:00+01:00",
+          "datetimez": "2014-12-07T15:00:00+01:00",
           "discipline": "Middle",
           "night_or_day": "night",
           "position": {
@@ -8680,7 +8680,7 @@
         {
           "race_number": 1,
           "name": "Södertälje MTBO",
-          "datetimez": "2014-05-31T00:00:00+02:00",
+          "datetimez": "2014-06-01T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": null,
@@ -8913,7 +8913,7 @@
         {
           "race_number": 1,
           "name": "SM MTBO Sprintdistans",
-          "datetimez": "2014-08-08T00:00:00+02:00",
+          "datetimez": "2014-08-08T16:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -9289,7 +9289,7 @@
         {
           "race_number": 1,
           "name": "SM MTBO Långdistans",
-          "datetimez": "2014-08-09T00:00:00+02:00",
+          "datetimez": "2014-08-09T11:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -9710,7 +9710,7 @@
         {
           "race_number": 1,
           "name": "SM MTBO Medeldistans",
-          "datetimez": "2014-08-10T00:00:00+02:00",
+          "datetimez": "2014-08-10T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -10108,7 +10108,7 @@
         {
           "race_number": 1,
           "name": "Falu-finalen MTBO, Svenska cupen",
-          "datetimez": "2014-09-13T00:00:00+02:00",
+          "datetimez": "2014-09-14T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -10433,7 +10433,7 @@
         {
           "race_number": 1,
           "name": "Ösa-Träffen MTB-O, Svenska cupen",
-          "datetimez": "2014-06-05T00:00:00+02:00",
+          "datetimez": "2014-06-06T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -10752,7 +10752,7 @@
         {
           "race_number": 1,
           "name": "MTBO IFK Mora OK",
-          "datetimez": "2014-08-17T00:00:00+02:00",
+          "datetimez": "2014-08-17T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -11069,7 +11069,7 @@
         {
           "race_number": 1,
           "name": "Kvarnsveden MTBO 2014",
-          "datetimez": "2014-06-28T00:00:00+02:00",
+          "datetimez": "2014-06-28T11:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -11283,7 +11283,7 @@
         {
           "race_number": 1,
           "name": "7-klubbs & Örnligan",
-          "datetimez": "2014-06-10T00:00:00+02:00",
+          "datetimez": "2014-06-10T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -11534,7 +11534,7 @@
         {
           "race_number": 1,
           "name": "Faxeträffen MTBO, Svenska Cupen",
-          "datetimez": "2014-06-07T00:00:00+02:00",
+          "datetimez": "2014-06-07T11:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -11778,7 +11778,7 @@
         {
           "race_number": 1,
           "name": "ABC-cupen deltävling 1",
-          "datetimez": "2014-04-09T00:00:00+02:00",
+          "datetimez": "2014-04-09T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -11903,7 +11903,7 @@
         {
           "race_number": 1,
           "name": "ABC-cupen deltävling 2",
-          "datetimez": "2014-04-16T00:00:00+02:00",
+          "datetimez": "2014-04-16T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -12045,7 +12045,7 @@
         {
           "race_number": 1,
           "name": "DM MTBO",
-          "datetimez": "2014-09-06T00:00:00+02:00",
+          "datetimez": "2014-09-06T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -12177,7 +12177,7 @@
         {
           "race_number": 1,
           "name": "Örnflykten",
-          "datetimez": "2014-08-10T00:00:00+02:00",
+          "datetimez": "2014-08-10T11:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -12435,7 +12435,7 @@
         {
           "race_number": 1,
           "name": "MTBO-träning",
-          "datetimez": "2014-04-12T00:00:00+02:00",
+          "datetimez": "2014-04-12T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -12572,7 +12572,7 @@
         {
           "race_number": 1,
           "name": "MTBO Stafett Falun",
-          "datetimez": "2014-09-13T00:00:00+02:00",
+          "datetimez": "2014-09-13T16:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -12681,7 +12681,7 @@
         {
           "race_number": 1,
           "name": "Söders MTBO-vår",
-          "datetimez": "2014-05-24T00:00:00+02:00",
+          "datetimez": "2014-05-25T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -12847,7 +12847,7 @@
         {
           "race_number": 1,
           "name": "O-Ringen MTB-O WC Middle distance",
-          "datetimez": "2014-07-17T00:00:00+02:00",
+          "datetimez": "2014-07-18T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -13246,7 +13246,7 @@
         {
           "race_number": 1,
           "name": "O-Ringen MTB-O WC Long distance",
-          "datetimez": "2014-07-19T00:00:00+02:00",
+          "datetimez": "2014-07-20T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -13651,7 +13651,7 @@
         {
           "race_number": 1,
           "name": "MTB-O DM medel Dalarna",
-          "datetimez": "2014-05-28T00:00:00+02:00",
+          "datetimez": "2014-05-29T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -13953,7 +13953,7 @@
         {
           "race_number": 1,
           "name": "MTB-orientering",
-          "datetimez": "2014-05-17T00:00:00+02:00",
+          "datetimez": "2014-05-17T14:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -14109,7 +14109,7 @@
         {
           "race_number": 1,
           "name": "MTBO - Prova på och ABC-cup",
-          "datetimez": "2014-05-28T00:00:00+02:00",
+          "datetimez": "2014-05-28T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {

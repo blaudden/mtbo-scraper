@@ -65,7 +65,7 @@
         {
           "race_number": 1,
           "name": "2nd MTB Orienteering of Sesimbra - day 1",
-          "datetimez": "2011-02-18T00:00:00+00:00",
+          "datetimez": "2011-02-19T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -150,7 +150,7 @@
         {
           "race_number": 1,
           "name": "2nd MTB Orienteering of Sesimbra - day 2",
-          "datetimez": "2011-02-19T00:00:00+00:00",
+          "datetimez": "2011-02-20T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -236,7 +236,7 @@
         {
           "race_number": 1,
           "name": "Hungarian Cup / World Cup Event 1",
-          "datetimez": "2011-04-14T00:00:00+00:00",
+          "datetimez": "2011-04-15T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -322,7 +322,7 @@
         {
           "race_number": 1,
           "name": "Hungarian Cup / World Cup Event 2",
-          "datetimez": "2011-04-15T00:00:00+00:00",
+          "datetimez": "2011-04-16T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -408,7 +408,7 @@
         {
           "race_number": 1,
           "name": "Hungarian Cup / World Cup Event 3",
-          "datetimez": "2011-04-16T00:00:00+00:00",
+          "datetimez": "2011-04-17T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -493,7 +493,7 @@
         {
           "race_number": 1,
           "name": "Friluftsland MTBO Cup 1",
-          "datetimez": "2011-05-06T00:00:00+00:00",
+          "datetimez": "2011-05-07T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -578,7 +578,7 @@
         {
           "race_number": 1,
           "name": "Friluftsland MTBO Cup 2",
-          "datetimez": "2011-05-07T00:00:00+00:00",
+          "datetimez": "2011-05-08T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -663,7 +663,7 @@
         {
           "race_number": 1,
           "name": "Russian Championships",
-          "datetimez": "2011-05-24T00:00:00+00:00",
+          "datetimez": "2011-05-25T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -748,7 +748,7 @@
         {
           "race_number": 1,
           "name": "regiObike SPRINT",
-          "datetimez": "2011-05-27T00:00:00+00:00",
+          "datetimez": "2011-05-28T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -833,7 +833,7 @@
         {
           "race_number": 1,
           "name": "Swiss Championships Middle",
-          "datetimez": "2011-05-28T00:00:00+00:00",
+          "datetimez": "2011-05-29T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -918,7 +918,7 @@
         {
           "race_number": 1,
           "name": "Russian Championships",
-          "datetimez": "2011-05-28T00:00:00+00:00",
+          "datetimez": "2011-05-29T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1003,7 +1003,7 @@
         {
           "race_number": 1,
           "name": "Estonian Championships in MTBO",
-          "datetimez": "2011-06-10T00:00:00+00:00",
+          "datetimez": "2011-06-11T00:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1088,7 +1088,7 @@
         {
           "race_number": 1,
           "name": "Estonian Championships in MTBO",
-          "datetimez": "2011-06-11T00:00:00+00:00",
+          "datetimez": "2011-06-12T00:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1174,7 +1174,7 @@
         {
           "race_number": 1,
           "name": "World Cup Event 4",
-          "datetimez": "2011-06-17T00:00:00+00:00",
+          "datetimez": "2011-06-18T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1361,7 +1361,7 @@
         {
           "race_number": 1,
           "name": "World Cup Event 5",
-          "datetimez": "2011-06-18T00:00:00+00:00",
+          "datetimez": "2011-06-19T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1545,7 +1545,7 @@
         {
           "race_number": 1,
           "name": "World Cup Event 6",
-          "datetimez": "2011-06-19T00:00:00+00:00",
+          "datetimez": "2011-06-20T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1605,7 +1605,7 @@
         {
           "race_number": 1,
           "name": "Czech cup round + Mtbo 5 days round",
-          "datetimez": "2011-07-02T00:00:00+00:00",
+          "datetimez": "2011-07-03T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1690,7 +1690,7 @@
         {
           "race_number": 1,
           "name": "Czech cup round + Mtbo 5 days round",
-          "datetimez": "2011-07-04T00:00:00+00:00",
+          "datetimez": "2011-07-05T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1775,7 +1775,7 @@
         {
           "race_number": 1,
           "name": "1° Stage",
-          "datetimez": "2011-07-28T00:00:00+00:00",
+          "datetimez": "2011-07-29T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1860,7 +1860,7 @@
         {
           "race_number": 1,
           "name": "2° Stage",
-          "datetimez": "2011-07-29T00:00:00+00:00",
+          "datetimez": "2011-07-30T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1946,7 +1946,7 @@
         {
           "race_number": 1,
           "name": "WMTBOC / World Cup Event 7",
-          "datetimez": "2011-08-22T00:00:00+00:00",
+          "datetimez": "2011-08-23T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2032,7 +2032,7 @@
         {
           "race_number": 1,
           "name": "WMTBOC / World Cup Event 8",
-          "datetimez": "2011-08-24T00:00:00+00:00",
+          "datetimez": "2011-08-25T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2114,7 +2114,7 @@
         {
           "race_number": 1,
           "name": "WMTBOC / World Cup Event 9",
-          "datetimez": "2011-08-25T00:00:00+00:00",
+          "datetimez": "2011-08-26T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2175,7 +2175,7 @@
         {
           "race_number": 1,
           "name": "WMTBOC / World Cup Event 10",
-          "datetimez": "2011-08-26T00:00:00+00:00",
+          "datetimez": "2011-08-27T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2260,7 +2260,7 @@
         {
           "race_number": 1,
           "name": "German/Tschech-Cup",
-          "datetimez": "2011-09-09T00:00:00+00:00",
+          "datetimez": "2011-09-10T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2345,7 +2345,7 @@
         {
           "race_number": 1,
           "name": "German/Tschech-Cup",
-          "datetimez": "2011-09-10T00:00:00+00:00",
+          "datetimez": "2011-09-11T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2425,7 +2425,7 @@
         {
           "race_number": 1,
           "name": "EMTBOC / World Cup Event 11",
-          "datetimez": "2011-09-18T00:00:00+00:00",
+          "datetimez": "2011-09-19T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2505,7 +2505,7 @@
         {
           "race_number": 1,
           "name": "EMTBOC / World Cup Event 12",
-          "datetimez": "2011-09-19T00:00:00+00:00",
+          "datetimez": "2011-09-20T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2581,7 +2581,7 @@
         {
           "race_number": 1,
           "name": "EMTBOC / World Cup Event 13",
-          "datetimez": "2011-09-20T00:00:00+00:00",
+          "datetimez": "2011-09-21T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2636,7 +2636,7 @@
         {
           "race_number": 1,
           "name": "EMTBOC / World Cup Event 14",
-          "datetimez": "2011-09-22T00:00:00+00:00",
+          "datetimez": "2011-09-23T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2721,7 +2721,7 @@
         {
           "race_number": 1,
           "name": "Oceania MTBO Championship",
-          "datetimez": "2011-10-14T00:00:00+00:00",
+          "datetimez": "2011-10-15T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2806,7 +2806,7 @@
         {
           "race_number": 1,
           "name": "Oceania MTBO Championship",
-          "datetimez": "2011-10-15T00:00:00+00:00",
+          "datetimez": "2011-10-16T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2891,7 +2891,7 @@
         {
           "race_number": 1,
           "name": "Championnat de France",
-          "datetimez": "2011-10-21T00:00:00+00:00",
+          "datetimez": "2011-10-22T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2967,7 +2967,7 @@
         {
           "race_number": 1,
           "name": "Sykkel orienteirng",
-          "datetimez": "2011-09-30T00:00:00+02:00",
+          "datetimez": "2011-10-01T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": null,
@@ -3018,7 +3018,7 @@
         {
           "race_number": 1,
           "name": "Sykkel orienteirng",
-          "datetimez": "2011-10-01T00:00:00+02:00",
+          "datetimez": "2011-10-02T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": null,
@@ -3084,7 +3084,7 @@
         {
           "race_number": 1,
           "name": "Sykkel orientering",
-          "datetimez": "2011-09-10T00:00:00+02:00",
+          "datetimez": "2011-09-11T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": null,
@@ -3165,7 +3165,7 @@
         {
           "race_number": 1,
           "name": "Sykkel-o-løp",
-          "datetimez": "2011-05-10T00:00:00+02:00",
+          "datetimez": "2011-05-11T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": null,
@@ -3247,7 +3247,7 @@
         {
           "race_number": 1,
           "name": "Sykkel-o-løp",
-          "datetimez": "2011-06-08T00:00:00+02:00",
+          "datetimez": "2011-06-08T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -3354,7 +3354,7 @@
         {
           "race_number": 1,
           "name": "Sykkelorientering",
-          "datetimez": "2011-06-15T00:00:00+02:00",
+          "datetimez": "2011-06-15T17:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -3458,7 +3458,7 @@
         {
           "race_number": 1,
           "name": "Sykkel-o-løp",
-          "datetimez": "2011-06-20T00:00:00+02:00",
+          "datetimez": "2011-06-21T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -3564,7 +3564,7 @@
         {
           "race_number": 1,
           "name": "Sykkel-o-løp",
-          "datetimez": "2011-08-23T00:00:00+02:00",
+          "datetimez": "2011-08-23T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -3640,7 +3640,7 @@
         {
           "race_number": 1,
           "name": "Asker Skiklubbs sykkel-o-løp",
-          "datetimez": "2011-06-22T00:00:00+02:00",
+          "datetimez": "2011-06-22T17:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": null,
@@ -3724,7 +3724,7 @@
         {
           "race_number": 1,
           "name": "Toppsluker'n",
-          "datetimez": "2011-09-03T00:00:00+02:00",
+          "datetimez": "2011-09-03T09:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -4031,7 +4031,7 @@
         {
           "race_number": 1,
           "name": "Friskus MTBo Race",
-          "datetimez": "2011-05-29T00:00:00+02:00",
+          "datetimez": "2011-05-29T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -4173,7 +4173,7 @@
         {
           "race_number": 1,
           "name": "MTB-o 2011 Friskussvängen",
-          "datetimez": "2011-07-18T00:00:00+02:00",
+          "datetimez": "2011-07-18T17:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -4352,7 +4352,7 @@
         {
           "race_number": 1,
           "name": "Friskus MTB-(o)-Turen",
-          "datetimez": "2011-08-21T00:00:00+02:00",
+          "datetimez": "2011-08-21T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -4461,7 +4461,7 @@
         {
           "race_number": 1,
           "name": "MTB-O Veteran VM medeldistans",
-          "datetimez": "2011-06-17T00:00:00+02:00",
+          "datetimez": "2011-06-18T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -4748,7 +4748,7 @@
         {
           "race_number": 1,
           "name": "MTB-O Veteran VM långdistans",
-          "datetimez": "2011-06-18T00:00:00+02:00",
+          "datetimez": "2011-06-19T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -5025,7 +5025,7 @@
         {
           "race_number": 1,
           "name": "MTB-O Veteran VM sprint",
-          "datetimez": "2011-06-19T00:00:00+02:00",
+          "datetimez": "2011-06-20T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -5308,7 +5308,7 @@
         {
           "race_number": 1,
           "name": "Kvarnsveden MTBO 2011",
-          "datetimez": "2011-06-11T00:00:00+02:00",
+          "datetimez": "2011-06-12T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -5555,7 +5555,7 @@
         {
           "race_number": 1,
           "name": "SM MTBO, Sprint",
-          "datetimez": "2011-06-02T00:00:00+02:00",
+          "datetimez": "2011-06-03T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -5886,7 +5886,7 @@
         {
           "race_number": 1,
           "name": "SM MTBO, Medel",
-          "datetimez": "2011-06-03T00:00:00+02:00",
+          "datetimez": "2011-06-04T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -6218,7 +6218,7 @@
         {
           "race_number": 1,
           "name": "SM MTBO, Lång",
-          "datetimez": "2011-06-04T00:00:00+02:00",
+          "datetimez": "2011-06-05T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -6498,7 +6498,7 @@
         {
           "race_number": 1,
           "name": "MTBO Södertälje",
-          "datetimez": "2011-05-28T00:00:00+02:00",
+          "datetimez": "2011-05-29T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -6688,7 +6688,7 @@
         {
           "race_number": 1,
           "name": "Träningsrace MTB-O",
-          "datetimez": "2011-06-02T00:00:00+02:00",
+          "datetimez": "2011-06-03T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -6849,7 +6849,7 @@
         {
           "race_number": 1,
           "name": "MTB-O Nationell publiktävling medel",
-          "datetimez": "2011-06-17T00:00:00+02:00",
+          "datetimez": "2011-06-18T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -7043,7 +7043,7 @@
         {
           "race_number": 1,
           "name": "MTB-O Nationell publiktävling Lång",
-          "datetimez": "2011-06-18T00:00:00+02:00",
+          "datetimez": "2011-06-19T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -7225,7 +7225,7 @@
         {
           "race_number": 1,
           "name": "MTB-O Nationell publiktävling medel",
-          "datetimez": "2011-06-19T00:00:00+02:00",
+          "datetimez": "2011-06-20T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -7382,7 +7382,7 @@
         {
           "race_number": 1,
           "name": "Uppsala MTBO Kvällstävling",
-          "datetimez": "2011-05-25T00:00:00+02:00",
+          "datetimez": "2011-05-25T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -7515,7 +7515,7 @@
         {
           "race_number": 1,
           "name": "Multisportorientering",
-          "datetimez": "2011-06-11T00:00:00+02:00",
+          "datetimez": "2011-06-11T13:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -7623,7 +7623,7 @@
         {
           "race_number": 1,
           "name": "Uppsala MTBO",
-          "datetimez": "2011-09-30T00:00:00+02:00",
+          "datetimez": "2011-10-01T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -7834,7 +7834,7 @@
         {
           "race_number": 1,
           "name": "Järfälla OK - MTB-OL",
-          "datetimez": "2011-09-14T00:00:00+02:00",
+          "datetimez": "2011-09-14T17:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -8001,7 +8001,7 @@
         {
           "race_number": 1,
           "name": "Mölndal Outdoors hösttävling",
-          "datetimez": "2011-10-01T00:00:00+02:00",
+          "datetimez": "2011-10-01T11:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -8181,7 +8181,7 @@
         {
           "race_number": 1,
           "name": "MTB-O från Flottsbro",
-          "datetimez": "2011-09-25T00:00:00+02:00",
+          "datetimez": "2011-09-25T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -8265,7 +8265,7 @@
         {
           "race_number": 1,
           "name": "Söders MTBO",
-          "datetimez": "2011-10-01T00:00:00+02:00",
+          "datetimez": "2011-10-02T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -8435,7 +8435,7 @@
         {
           "race_number": 1,
           "name": "IFK Mora OKs öppna KM MTBO",
-          "datetimez": "2011-09-18T00:00:00+02:00",
+          "datetimez": "2011-09-18T16:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -8518,7 +8518,7 @@
         {
           "race_number": 1,
           "name": "MTB-O närtävling",
-          "datetimez": "2011-10-01T00:00:00+02:00",
+          "datetimez": "2011-10-02T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -8601,7 +8601,7 @@
         {
           "race_number": 1,
           "name": "MTB-Orientering",
-          "datetimez": "2011-09-19T00:00:00+02:00",
+          "datetimez": "2011-09-19T17:15:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {

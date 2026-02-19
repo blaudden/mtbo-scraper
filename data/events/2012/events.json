@@ -65,7 +65,7 @@
         {
           "race_number": 1,
           "name": "MTBO Camp Cup",
-          "datetimez": "2012-03-30T00:00:00+00:00",
+          "datetimez": "2012-03-31T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -150,7 +150,7 @@
         {
           "race_number": 1,
           "name": "MTBO Camp Cup",
-          "datetimez": "2012-03-31T00:00:00+00:00",
+          "datetimez": "2012-04-01T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -235,7 +235,7 @@
         {
           "race_number": 1,
           "name": "Portugal O\"\" Meeting MTB and National Championships\"\"",
-          "datetimez": "2012-04-13T00:00:00+00:00",
+          "datetimez": "2012-04-14T00:00:00+01:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -320,7 +320,7 @@
         {
           "race_number": 1,
           "name": "Portugal O\"\" Meeting MTB and National Championships\"\"",
-          "datetimez": "2012-04-14T00:00:00+00:00",
+          "datetimez": "2012-04-15T00:00:00+01:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -405,7 +405,7 @@
         {
           "race_number": 1,
           "name": "Slovak & Czech MTBO Cup",
-          "datetimez": "2012-04-27T00:00:00+00:00",
+          "datetimez": "2012-04-28T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -490,7 +490,7 @@
         {
           "race_number": 1,
           "name": "Slovak & Czech MTBO Cup",
-          "datetimez": "2012-04-28T00:00:00+00:00",
+          "datetimez": "2012-04-29T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -576,7 +576,7 @@
         {
           "race_number": 1,
           "name": "World Cup Event 1",
-          "datetimez": "2012-05-04T00:00:00+00:00",
+          "datetimez": "2012-05-05T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -662,7 +662,7 @@
         {
           "race_number": 1,
           "name": "World Cup Event 2",
-          "datetimez": "2012-05-05T00:00:00+00:00",
+          "datetimez": "2012-05-06T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -744,7 +744,7 @@
         {
           "race_number": 1,
           "name": "World Cup Event 3",
-          "datetimez": "2012-05-06T00:00:00+00:00",
+          "datetimez": "2012-05-07T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -804,7 +804,7 @@
         {
           "race_number": 1,
           "name": "Italian Cup",
-          "datetimez": "2012-05-11T00:00:00+00:00",
+          "datetimez": "2012-05-12T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -889,7 +889,7 @@
         {
           "race_number": 1,
           "name": "Italian Middle distance Championship 2012",
-          "datetimez": "2012-05-12T00:00:00+00:00",
+          "datetimez": "2012-05-13T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -971,7 +971,7 @@
         {
           "race_number": 1,
           "name": "Russian Championships",
-          "datetimez": "2012-05-18T00:00:00+00:00",
+          "datetimez": "2012-05-19T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1028,7 +1028,7 @@
         {
           "race_number": 1,
           "name": "Russian Championships",
-          "datetimez": "2012-05-19T00:00:00+00:00",
+          "datetimez": "2012-05-20T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1089,7 +1089,7 @@
         {
           "race_number": 1,
           "name": "World Cup Event 4",
-          "datetimez": "2012-05-31T00:00:00+00:00",
+          "datetimez": "2012-06-01T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1175,7 +1175,7 @@
         {
           "race_number": 1,
           "name": "World Cup Event 5",
-          "datetimez": "2012-06-01T00:00:00+00:00",
+          "datetimez": "2012-06-02T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1261,7 +1261,7 @@
         {
           "race_number": 1,
           "name": "World Cup Event 6",
-          "datetimez": "2012-06-02T00:00:00+00:00",
+          "datetimez": "2012-06-03T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1346,7 +1346,7 @@
         {
           "race_number": 1,
           "name": "Czech 4 days event, round 3",
-          "datetimez": "2012-07-06T00:00:00+00:00",
+          "datetimez": "2012-07-07T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1431,7 +1431,7 @@
         {
           "race_number": 1,
           "name": "5 jours O'VTT de Samois-Sud77 - 5 days MTBO Samois-Sud77",
-          "datetimez": "2012-07-07T00:00:00+00:00",
+          "datetimez": "2012-07-08T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1516,7 +1516,7 @@
         {
           "race_number": 1,
           "name": "Czech 4 days event, round 4",
-          "datetimez": "2012-07-07T00:00:00+00:00",
+          "datetimez": "2012-07-08T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1601,7 +1601,7 @@
         {
           "race_number": 1,
           "name": "5 jours O'VTT de Samois-Sud77 - 5 days MTBO Samois-Sud77",
-          "datetimez": "2012-07-09T00:00:00+00:00",
+          "datetimez": "2012-07-10T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1686,7 +1686,7 @@
         {
           "race_number": 1,
           "name": "Memorial Adrià Triquell Campeonato de Espana",
-          "datetimez": "2012-07-20T00:00:00+00:00",
+          "datetimez": "2012-07-21T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1771,7 +1771,7 @@
         {
           "race_number": 1,
           "name": "Memorial Adrià Triquell Campeonato de Espana",
-          "datetimez": "2012-07-21T00:00:00+00:00",
+          "datetimez": "2012-07-22T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1858,7 +1858,7 @@
         {
           "race_number": 1,
           "name": "World MTB Orienteering Championships",
-          "datetimez": "2012-08-20T00:00:00+00:00",
+          "datetimez": "2012-08-21T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -1945,7 +1945,7 @@
         {
           "race_number": 1,
           "name": "World MTB Orienteering Championships",
-          "datetimez": "2012-08-21T00:00:00+00:00",
+          "datetimez": "2012-08-22T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2028,7 +2028,7 @@
         {
           "race_number": 1,
           "name": "World MTB Orienteering championships",
-          "datetimez": "2012-08-23T00:00:00+00:00",
+          "datetimez": "2012-08-24T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2090,7 +2090,7 @@
         {
           "race_number": 1,
           "name": "World MTB Orienteering Championships",
-          "datetimez": "2012-08-24T00:00:00+00:00",
+          "datetimez": "2012-08-25T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2176,7 +2176,7 @@
         {
           "race_number": 1,
           "name": "World Cup Event 11",
-          "datetimez": "2012-09-20T00:00:00+00:00",
+          "datetimez": "2012-09-21T00:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2262,7 +2262,7 @@
         {
           "race_number": 1,
           "name": "World Cup Event 12",
-          "datetimez": "2012-09-21T00:00:00+00:00",
+          "datetimez": "2012-09-22T00:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2344,7 +2344,7 @@
         {
           "race_number": 1,
           "name": "World Cup Event 13",
-          "datetimez": "2012-09-22T00:00:00+00:00",
+          "datetimez": "2012-09-23T00:00:00+03:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2404,7 +2404,7 @@
         {
           "race_number": 1,
           "name": "Australian MTBO Championships",
-          "datetimez": "2012-10-26T00:00:00+00:00",
+          "datetimez": "2012-10-27T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2489,7 +2489,7 @@
         {
           "race_number": 1,
           "name": "Australian MTBO Championships",
-          "datetimez": "2012-10-27T00:00:00+00:00",
+          "datetimez": "2012-10-28T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2570,7 +2570,7 @@
         {
           "race_number": 1,
           "name": "Treningsløp-Sykkel",
-          "datetimez": "2012-09-02T00:00:00+02:00",
+          "datetimez": "2012-09-03T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": null,
@@ -2640,7 +2640,7 @@
         {
           "race_number": 1,
           "name": "Asker Sykkelorientering",
-          "datetimez": "2012-06-13T00:00:00+02:00",
+          "datetimez": "2012-06-13T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": null,
@@ -2724,7 +2724,7 @@
         {
           "race_number": 1,
           "name": "Sykkel-o-løp",
-          "datetimez": "2012-05-23T00:00:00+02:00",
+          "datetimez": "2012-05-23T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -2839,7 +2839,7 @@
         {
           "race_number": 1,
           "name": "Toppsluker'n",
-          "datetimez": "2012-08-12T00:00:00+02:00",
+          "datetimez": "2012-08-12T09:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -2928,7 +2928,7 @@
         {
           "race_number": 1,
           "name": "Miljøsøndag, MTB-O og familiesykkelorientering",
-          "datetimez": "2012-09-02T00:00:00+02:00",
+          "datetimez": "2012-09-02T13:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -3053,7 +3053,7 @@
         {
           "race_number": 1,
           "name": "PRE-O og Sykkelorientering på Våland",
-          "datetimez": "2012-09-29T00:00:00+02:00",
+          "datetimez": "2012-09-29T13:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -3274,7 +3274,7 @@
         {
           "race_number": 1,
           "name": "Gateroientering November",
-          "datetimez": "2012-11-29T00:00:00+01:00",
+          "datetimez": "2012-11-29T19:30:00+01:00",
           "discipline": "Middle",
           "night_or_day": "night",
           "position": {
@@ -3415,7 +3415,7 @@
         {
           "race_number": 1,
           "name": "Gateløp - Julegløggen",
-          "datetimez": "2012-12-20T00:00:00+01:00",
+          "datetimez": "2012-12-20T19:30:00+01:00",
           "discipline": "Middle",
           "night_or_day": "night",
           "position": {
@@ -3491,7 +3491,7 @@
         {
           "race_number": 1,
           "name": "Gimle IF",
-          "datetimez": "2012-09-08T00:00:00+02:00",
+          "datetimez": "2012-09-09T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -3669,7 +3669,7 @@
         {
           "race_number": 1,
           "name": "MTBO Södertälje",
-          "datetimez": "2012-05-26T00:00:00+02:00",
+          "datetimez": "2012-05-27T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -5259,7 +5259,7 @@
         {
           "race_number": 1,
           "name": "SM MTBO Medeldistans",
-          "datetimez": "2012-06-10T00:00:00+02:00",
+          "datetimez": "2012-06-10T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -5638,7 +5638,7 @@
         {
           "race_number": 1,
           "name": "SM MTBO Sprintdistans",
-          "datetimez": "2012-06-08T00:00:00+02:00",
+          "datetimez": "2012-06-08T17:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -6003,7 +6003,7 @@
         {
           "race_number": 1,
           "name": "SM MTBO Långdistans",
-          "datetimez": "2012-06-09T00:00:00+02:00",
+          "datetimez": "2012-06-09T11:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -6352,7 +6352,7 @@
         {
           "race_number": 1,
           "name": "Gotlands 3-dagars MTB-O Dag 1",
-          "datetimez": "2012-07-10T00:00:00+02:00",
+          "datetimez": "2012-07-10T17:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -6534,7 +6534,7 @@
         {
           "race_number": 1,
           "name": "Gotlands 3-dagars MTB-O Dag 2",
-          "datetimez": "2012-07-11T00:00:00+02:00",
+          "datetimez": "2012-07-11T17:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -6714,7 +6714,7 @@
         {
           "race_number": 1,
           "name": "Gotlands 3-dagars MTB-O Dag 3",
-          "datetimez": "2012-07-12T00:00:00+02:00",
+          "datetimez": "2012-07-12T14:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -6900,7 +6900,7 @@
         {
           "race_number": 1,
           "name": "Öppet DM i MTBO",
-          "datetimez": "2012-09-08T00:00:00+02:00",
+          "datetimez": "2012-09-09T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -7099,7 +7099,7 @@
         {
           "race_number": 1,
           "name": "Kvarnsveden MTBO 2012",
-          "datetimez": "2012-05-13T00:00:00+02:00",
+          "datetimez": "2012-05-13T11:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -7353,7 +7353,7 @@
         {
           "race_number": 1,
           "name": "DM MTB-O medeldistans",
-          "datetimez": "2012-05-26T00:00:00+02:00",
+          "datetimez": "2012-05-27T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -7582,7 +7582,7 @@
         {
           "race_number": 1,
           "name": "Uppsala MTBO",
-          "datetimez": "2012-09-29T00:00:00+02:00",
+          "datetimez": "2012-09-30T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -7824,7 +7824,7 @@
         {
           "race_number": 1,
           "name": "Omma Multisport",
-          "datetimez": "2012-04-21T00:00:00+02:00",
+          "datetimez": "2012-04-21T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": null,
@@ -7904,7 +7904,7 @@
         {
           "race_number": 1,
           "name": "Omma Multisport",
-          "datetimez": "2012-04-21T00:00:00+02:00",
+          "datetimez": "2012-04-21T10:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -7997,7 +7997,7 @@
         {
           "race_number": 1,
           "name": "Multisportorienteringen",
-          "datetimez": "2012-06-24T00:00:00+02:00",
+          "datetimez": "2012-06-24T13:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -8066,7 +8066,7 @@
         {
           "race_number": 1,
           "name": "Uppsala MTBO kvällsträning",
-          "datetimez": "2012-06-06T00:00:00+02:00",
+          "datetimez": "2012-06-06T15:30:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -8184,7 +8184,7 @@
         {
           "race_number": 1,
           "name": "Cykelorientering",
-          "datetimez": "2012-06-12T00:00:00+02:00",
+          "datetimez": "2012-06-12T17:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -8308,7 +8308,7 @@
         {
           "race_number": 1,
           "name": "Kvarnsveden närtävling MTBO",
-          "datetimez": "2012-06-26T00:00:00+02:00",
+          "datetimez": "2012-06-26T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -8447,7 +8447,7 @@
         {
           "race_number": 1,
           "name": "KJT-racet",
-          "datetimez": "2012-08-14T00:00:00+02:00",
+          "datetimez": "2012-08-14T18:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -8569,7 +8569,7 @@
         {
           "race_number": 1,
           "name": "MTBO träningstävling",
-          "datetimez": "2012-07-17T00:00:00+02:00",
+          "datetimez": "2012-07-17T17:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -8677,7 +8677,7 @@
         {
           "race_number": 1,
           "name": "MTB-O Falun",
-          "datetimez": "2012-09-07T00:00:00+02:00",
+          "datetimez": "2012-09-08T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -8918,7 +8918,7 @@
         {
           "race_number": 1,
           "name": "Bahco MTB",
-          "datetimez": "2012-09-22T00:00:00+02:00",
+          "datetimez": "2012-09-22T18:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -9022,7 +9022,7 @@
         {
           "race_number": 1,
           "name": "DM-MTBO Ångermanland",
-          "datetimez": "2012-09-01T00:00:00+02:00",
+          "datetimez": "2012-09-02T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -9175,7 +9175,7 @@
         {
           "race_number": 1,
           "name": "MTB-O Arvika",
-          "datetimez": "2012-09-08T00:00:00+02:00",
+          "datetimez": "2012-09-08T11:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -9305,7 +9305,7 @@
         {
           "race_number": 1,
           "name": "Järfälla MTBO",
-          "datetimez": "2012-09-28T00:00:00+02:00",
+          "datetimez": "2012-09-29T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -9469,7 +9469,7 @@
         {
           "race_number": 1,
           "name": "Öppet KM MTBO",
-          "datetimez": "2012-09-22T00:00:00+02:00",
+          "datetimez": "2012-09-22T10:30:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -9629,7 +9629,7 @@
         {
           "race_number": 1,
           "name": "Mölndal Outdoors hösttävling",
-          "datetimez": "2012-10-06T00:00:00+02:00",
+          "datetimez": "2012-10-06T10:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -9707,7 +9707,7 @@
         {
           "race_number": 1,
           "name": "Söders MTBO-höst - Dag 2",
-          "datetimez": "2012-10-13T00:00:00+02:00",
+          "datetimez": "2012-10-14T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -9840,7 +9840,7 @@
         {
           "race_number": 1,
           "name": "Söders MTBO-höst - Dag 1",
-          "datetimez": "2012-10-12T00:00:00+02:00",
+          "datetimez": "2012-10-13T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
