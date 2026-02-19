@@ -44,6 +44,9 @@ class AnnualStats(TypedDict):
     year: int
     event_count: int
     participant_count: int
+    unique_participant_count: int
+    unique_swe_count: int
+    unique_iof_additional_count: int
     events: list[RaceData]
 
 
@@ -101,6 +104,8 @@ def process_data() -> tuple[list[AnnualStats], list[RaceData]]:
 
         year_event_count = 0
         year_participant_count = 0
+        swe_fps = set()
+        iof_fps = set()
         year_races = []
 
         for event in events:
@@ -110,15 +115,18 @@ def process_data() -> tuple[list[AnnualStats], list[RaceData]]:
                 # Check for races
                 races = event.get("races", [])
                 if not races:
-                    # Fallback for old events without races?
-                    # If strictly adhering to schema, races should exist.
-                    # If not, we might miss data.
-                    # Assuming races exist or we skip.
                     continue
 
                 for race in races:
                     p_count = get_race_participant_count(race)
                     year_participant_count += p_count
+
+                    # Track unique participants by source
+                    fps = race.get("fingerprints", [])
+                    if event["id"].startswith("SWE_"):
+                        swe_fps.update(fps)
+                    elif event["id"].startswith("IOF_"):
+                        iof_fps.update(fps)
 
                     # Get Race Date
                     # Try race['datetimez'] first
@@ -171,11 +179,15 @@ def process_data() -> tuple[list[AnnualStats], list[RaceData]]:
                     year_races.append(race_data)
                     all_races_flat.append(race_data)
 
+        combined = swe_fps | iof_fps
         annual_stats.append(
             {
                 "year": year,
                 "event_count": year_event_count,
                 "participant_count": year_participant_count,
+                "unique_participant_count": len(combined),
+                "unique_swe_count": len(swe_fps),
+                "unique_iof_additional_count": len(iof_fps - swe_fps),
                 "events": year_races,
             }
         )
@@ -185,11 +197,19 @@ def process_data() -> tuple[list[AnnualStats], list[RaceData]]:
 
 def print_summary_table(annual_stats: list[AnnualStats]) -> None:
     print("\n### Annual Summary Table\n")
-    print("| Year | Events | Participants (Starts) |")
-    print("|------|--------|-----------------------|")
+    print(
+        "| Year | Events | Starts | Unique (Total) | Unique (SWE) | Unique (IOF-only) |"
+    )
+    print(
+        "|------|--------|--------|----------------|--------------|-------------------|"
+    )
     for stat in annual_stats:
         print(
-            f"| {stat['year']} | {stat['event_count']} | {stat['participant_count']} |"
+            f"| {stat['year']} | {stat['event_count']} | "
+            f"{stat['participant_count']:>6} | "
+            f"{stat['unique_participant_count']:>14} | "
+            f"{stat['unique_swe_count']:>12} | "
+            f"{stat['unique_iof_additional_count']:>17} |"
         )
 
 
@@ -219,6 +239,102 @@ def plot_annual_overview(annual_stats: list[AnnualStats]) -> None:
     plt.tight_layout()
     plt.savefig(OUTPUT_DIR / "stats_annual_summary.png")
     print(f"Saved annual overview to {OUTPUT_DIR / 'stats_annual_summary.png'}")
+    plt.close()
+
+
+def plot_unique_participants(annual_stats: list[AnnualStats]) -> None:
+    years = [s["year"] for s in annual_stats]
+    swe_counts = [s["unique_swe_count"] for s in annual_stats]
+    iof_additional = [s["unique_iof_additional_count"] for s in annual_stats]
+
+    # Professional color palette
+    swe_color = "#4A90D9"  # Harmonious blue
+    iof_color = "#FFB347"  # Soft orange for highlights
+
+    fig, ax = plt.subplots(figsize=(12, 7))
+    plt.subplots_adjust(bottom=0.12, top=0.90, left=0.08, right=0.95)
+
+    # Vertical stacked bars
+    ax.bar(
+        years,
+        swe_counts,
+        color=swe_color,
+        label="Swedish events",
+        edgecolor="white",
+        linewidth=0.5,
+    )
+    ax.bar(
+        years,
+        iof_additional,
+        bottom=swe_counts,
+        color=iof_color,
+        label="IOF events",
+        edgecolor="white",
+        linewidth=0.5,
+    )
+
+    ax.set_ylabel("Number of participants", fontsize=11, labelpad=10)
+    ax.set_xlabel("Year", fontsize=11, labelpad=10)
+    ax.set_title(
+        "Unique Swedish MTBO Participants (2010–2025)",
+        fontsize=14,
+        fontweight="bold",
+        pad=20,
+    )
+
+    # Add labels for total on top of bars
+    totals = []
+    for i, year in enumerate(years):
+        total = swe_counts[i] + iof_additional[i]
+        totals.append(total)
+        if total > 0:
+            ax.text(
+                year,
+                total + 15,
+                f"{total:,}",
+                ha="center",
+                va="bottom",
+                fontsize=9,
+                fontweight="bold",
+                color="#444444",
+            )
+
+    # Legend at top left
+    ax.legend(frameon=False, loc="upper left", fontsize=10)
+
+    # Gridlines — visible horizontal bars every 1000
+    ax.grid(
+        axis="y",
+        which="major",
+        linestyle="-",
+        linewidth=0.5,
+        alpha=0.4,
+        color="#888888",
+    )
+    ax.set_axisbelow(True)
+
+    # Remove top and right spines
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.spines["left"].set_color("#cccccc")
+    ax.spines["bottom"].set_color("#cccccc")
+
+    # Remove tick notches but keep labels
+    ax.tick_params(axis="y", which="both", length=0)
+
+    # Y-axis limit and ticks (every 1000)
+    if totals:
+        max_total = max(totals)
+        ax.set_ylim(0, max_total * 1.15)
+        yticks = np.arange(0, max_total * 1.2, 1000)
+        ax.set_yticks(yticks)
+
+    plt.xticks(years, rotation=45, fontsize=10)
+    plt.yticks(fontsize=10)
+
+    filename = "stats_unique_participants.png"
+    plt.savefig(OUTPUT_DIR / filename, dpi=120)
+    print(f"Saved unique participants chart to {OUTPUT_DIR / filename}")
     plt.close()
 
 
@@ -279,107 +395,141 @@ def plot_seasonality(annual_stats: list[AnnualStats]) -> None:
     plt.close()
 
 
-def plot_detailed_timeline(all_events: list[RaceData]) -> None:
-    # Filter out events with 0 participants for the timeline visualization
-    valid_events = [e for e in all_events if e["participants"] > 0]
+def _shorten_event_name(name: str) -> str:
+    """Shorten event names for readable axis labels.
 
-    # Group by date
-    events_by_date = defaultdict(list)
-    for e in valid_events:
+    Strips 'MTBO' prefix/suffix, common noise, and truncates long names.
+    """
+    import re
+
+    # Remove common prefixes: "MTBO, ", "MTBO - ", "MTBO " at start
+    name = re.sub(r"^MTBO[\s,\-]+", "", name, flags=re.IGNORECASE)
+    # Remove " - MTBO" suffix or ", MTBO" etc.
+    name = re.sub(r"[\s,\-]+MTBO$", "", name, flags=re.IGNORECASE)
+    # Remove standalone "MTBO" if it's the only remaining word
+    name = re.sub(r"^MTBO$", "MTBO", name, flags=re.IGNORECASE)
+    # Strip leading/trailing separators
+    name = name.strip(" ,-/")
+    # Truncate at 35 chars
+    if len(name) > 35:
+        name = name[:32] + "…"
+    return name
+
+
+def plot_detailed_timeline(all_events: list[RaceData]) -> None:
+    # Include ALL events (including 0 participants)
+    events_by_date: dict[date, list[RaceData]] = defaultdict(list)
+    for e in all_events:
         events_by_date[e["date"]].append(e)
 
     sorted_dates = sorted(events_by_date.keys())
 
-    # Generate one chart PER YEAR
-    # Use original all_events to determine year range? No, just valid ones.
     if not sorted_dates:
         return
 
     years = sorted({d.year for d in sorted_dates})
 
+    # Color palette for stacked segments
+    bar_colors = ["#4A90D9", "#6BAED6", "#9ECAE1", "#C6DBEF", "#DEEBF7"]
+
     for year in years:
-        # Filter dates for this specific year
         year_dates = [d for d in sorted_dates if d.year == year]
 
         if not year_dates:
             continue
 
-        # Calculate total for THIS year's valid events
-        year_total = sum(e["participants"] for e in valid_events if e["year"] == year)
+        year_total = sum(e["participants"] for e in all_events if e["year"] == year)
+        year_event_count = sum(len(events_by_date[d]) for d in year_dates)
 
-        # Dynamic width based on number of dates
         n_dates = len(year_dates)
-        width_in = max(15, n_dates * 0.25)
+        width_in = max(16, n_dates * 0.3)
 
-        fig, ax = plt.subplots(figsize=(width_in, 10))
-        plt.subplots_adjust(bottom=0.5, top=0.9)
+        fig, ax = plt.subplots(figsize=(width_in, 7))
+        plt.subplots_adjust(bottom=0.08, top=0.90, left=0.05, right=0.97)
 
-        # Categorical X-axis
-        x_positions = np.arange(n_dates)
-
-        # Plot stacked bars
-        x_labels = []
+        max_height = 0
 
         for i, event_date in enumerate(year_dates):
             day_events = events_by_date[event_date]
-            # Sort alphabetical
             day_events.sort(key=lambda x: x["name"])
 
             bottom = 0
-            names_list = []
-            for event in day_events:
+            for j, event in enumerate(day_events):
                 p_count = event["participants"]
-                # p_count > 0 is guaranteed by valid_events filter
+                bar_h = max(p_count, 2)  # Minimum bar height for visibility
 
-                # Plot bar at integer position i
+                color = bar_colors[j % len(bar_colors)]
                 ax.bar(
                     i,
-                    p_count,
+                    bar_h,
                     bottom=bottom,
-                    width=0.8,
-                    color="skyblue",
-                    edgecolor="black",
-                    alpha=0.8,
+                    width=0.75,
+                    color=color,
+                    edgecolor="white",
+                    linewidth=0.5,
                 )
-                bottom += p_count
+                bottom += bar_h
 
-                names_list.append(f"{event['name']} ({p_count})")
+            max_height = max(max_height, bottom)
 
-            # Create label string: Date + Names
-            date_str = event_date.strftime("%m-%d")
-            label_text = f"{date_str} " + " / ".join(names_list)
-            x_labels.append(label_text)
+        # Gridlines at every 100
+        grid_max = int(max_height / 100 + 1) * 100
+        ax.set_yticks(range(0, grid_max + 1, 100))
+        ax.yaxis.set_minor_locator(plt.MultipleLocator(50))
+        ax.grid(
+            axis="y",
+            which="major",
+            linestyle="-",
+            linewidth=0.5,
+            alpha=0.4,
+            color="#888888",
+        )
+        ax.grid(
+            axis="y",
+            which="minor",
+            linestyle=":",
+            linewidth=0.3,
+            alpha=0.3,
+            color="#aaaaaa",
+        )
 
-        # Add Year Text at top
+        # Year watermark
         ax.text(
             0.5,
-            0.95,
+            0.5,
             str(year),
             transform=ax.transAxes,
-            fontsize=20,
+            fontsize=80,
             fontweight="bold",
             ha="center",
-            va="top",
-            color="dimgrey",
+            va="center",
+            color="#e0e0e0",
+            zorder=0,
         )
 
-        ax.set_ylabel("Participants (Starts)")
-        # Add Total to Title
+        ax.set_ylabel("Participants (Starts)", fontsize=11)
         ax.set_title(
-            f"Event Participation Timeline - {year} (Total Starts: {year_total})"
+            f"MTBO Event Timeline — {year}  "
+            f"({year_event_count} races, {year_total} total starts)",
+            fontsize=13,
+            fontweight="bold",
+            pad=12,
         )
 
-        # Set X-Axis Ticks and Labels
+        # X-axis — date labels
+        x_positions = np.arange(n_dates)
+        date_labels = [d.strftime("%m-%d") for d in year_dates]
         ax.set_xticks(x_positions)
-        ax.set_xticklabels(x_labels, rotation=45, ha="right", fontsize=9)
-
-        # Limit x-axis to tight range
+        ax.set_xticklabels(date_labels, rotation=90, ha="center", fontsize=7)
         ax.set_xlim(-0.6, n_dates - 0.4)
+        ax.set_ylim(bottom=0)
 
-        ax.grid(axis="y", linestyle="--", alpha=0.5)
+        # Remove top and right spines
+        ax.spines["top"].set_visible(False)
+        ax.spines["right"].set_visible(False)
 
         filename = f"stats_events_detail_{year}.png"
-        plt.savefig(OUTPUT_DIR / filename)
+        plt.savefig(OUTPUT_DIR / filename, dpi=100)
         print(f"Saved detailed timeline to {OUTPUT_DIR / filename}")
         plt.close()
 
@@ -399,6 +549,7 @@ def main() -> None:
 
     print("\nGenerating charts...")
     plot_annual_overview(annual_stats)
+    plot_unique_participants(annual_stats)
     plot_seasonality(annual_stats)
     plot_detailed_timeline(all_events)
     print("\nDone. Check artifacts/stats/ for images.")
