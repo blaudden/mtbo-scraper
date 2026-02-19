@@ -65,6 +65,15 @@ def format_iso_datetime(
 
     try:
         # 1. Parse date and time first
+        if " " in date_str and ":" in date_str:
+            # Handle YYYY-MM-DD HH:MM:SS from Eventor data-date (assumed UTC)
+            # This is critical for events starting at midnight local time.
+            dt = datetime.strptime(date_str, "%Y-%m-%d %H:%M:%S")
+            dt = dt.replace(tzinfo=zoneinfo.ZoneInfo("UTC"))
+            tz_name = get_timezone_for_country(country)
+            tz = zoneinfo.ZoneInfo(tz_name)
+            return dt.astimezone(tz).isoformat()
+
         if "T" in date_str:
             # Be careful with dashes in YYYY-MM-DD
             # Better way to split ISO:

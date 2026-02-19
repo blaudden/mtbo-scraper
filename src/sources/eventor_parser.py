@@ -249,12 +249,15 @@ class EventorParser:
             date_span = date_col.find("span", attrs={"data-date": True})
             start_date_str = ""
             end_date_str = ""
+            race_start_datetime = ""
 
             if date_span:
-                full_date = str(date_span["data-date"])
-                # Usually returned as YYYY-MM-DD
-                start_date_str = full_date.split(" ")[0]
-                end_date_str = start_date_str  # Default to single day
+                full_date_utc = str(date_span["data-date"])
+                # Use UTC-aware formatter to get local ISO datetime
+                race_start_datetime = format_iso_datetime(full_date_utc, None, country)
+                # Extract local date component
+                start_date_str = race_start_datetime.split("T")[0]
+                end_date_str = start_date_str
             else:
                 # Basic fallback
                 pass
@@ -309,8 +312,9 @@ class EventorParser:
 
             # Base Event without details
             # Create default race
-            # Calculate Race datetime with offset from the plain start date
-            race_start_datetime = format_iso_datetime(start_date_str, None, country)
+            # Calculate Race datetime with offset from the start date if not already set
+            if not race_start_datetime and start_date_str:
+                race_start_datetime = format_iso_datetime(start_date_str, None, country)
 
             race = Race(
                 race_number=1,
@@ -859,7 +863,7 @@ class EventorParser:
 
             if not dates_derived:
                 # Fallback to single date if range parsing failed or wasn't applicable
-                clean_date, _, _ = extract_time_from_date(date_str)
+                clean_date, time, offset = extract_time_from_date(date_str)
                 iso_date = parse_date_to_iso(clean_date)
 
                 if iso_date != clean_date:
@@ -867,13 +871,29 @@ class EventorParser:
                     event.end_time = iso_date
                     dates_derived = True
 
-            # If the event date was successfully derived and there is exactly one race
-            # without a specified date, assume the race occurs on the event start date.
+            # If the event date was successfully derived and there is exactly one race,
+            # ensure its date matches the event date (fixing any listing-level errors).
             if dates_derived:
-                if len(event.races) == 1 and not event.races[0].datetimez:
-                    event.races[0].datetimez = format_iso_datetime(
-                        event.start_time, None, venue_country
+                if len(event.races) == 1:
+                    # Capture time from the Date attribute if not already present
+                    clean_date, time, offset = extract_time_from_date(date_str)
+
+                    current_race_date = (
+                        event.races[0].datetimez.split("T")[0]
+                        if event.races[0].datetimez
+                        else ""
                     )
+
+                    # Update if missing date OR if date differs from start_time
+                    # OR if we found a specific time and the current one is midnight
+                    if (
+                        not event.races[0].datetimez
+                        or current_race_date != event.start_time
+                        or (time and "T00:00:00" in event.races[0].datetimez)
+                    ):
+                        event.races[0].datetimez = format_iso_datetime(
+                            event.start_time, time, venue_country, offset=offset
+                        )
                 return
 
         # Fallback: derive event dates from the range of race dates if available.
