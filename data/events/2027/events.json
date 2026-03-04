@@ -56,7 +56,7 @@
         {
           "race_number": 1,
           "name": "CX80 World MTB Orienteering Championships 2027",
-          "datetimez": "2027-06-09T00:00:00+00:00",
+          "datetimez": "2027-06-09T21:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -110,7 +110,7 @@
         {
           "race_number": 1,
           "name": "Junior World MTB Orienteering Championships 2027",
-          "datetimez": "2027-06-09T00:00:00+00:00",
+          "datetimez": "2027-06-09T22:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -130,8 +130,8 @@
     },
     {
       "id": "IOF_8961",
-      "name": "European MTB Orienteering Championships 2027",
-      "start_time": "2027-05-05",
+      "name": "(Preliminary Dates) - European MTB Orienteering Championships 2027",
+      "start_time": "2027-05-06",
       "end_time": "2027-05-09",
       "status": "Sanctioned",
       "original_status": "Active",
@@ -141,18 +141,35 @@
         "World Ranking Event"
       ],
       "tags": [],
-      "form": "Team",
+      "form": null,
       "organisers": [
         {
           "name": "Czechia",
           "country_code": "CZE"
         },
         {
-          "name": "MTBO Racing team Hradec Kralove",
+          "name": "MTBO Hradec Kralove",
           "country_code": "CZE"
         }
       ],
-      "officials": [],
+      "officials": [
+        {
+          "role": "Contact email",
+          "name": "enc:BBoEAG0WDgYDHwZAXUZVQU4J"
+        },
+        {
+          "role": "Event director",
+          "name": "Lukas Chmelar"
+        },
+        {
+          "role": "Event controller",
+          "name": "Milan Meier"
+        },
+        {
+          "role": "Course controller",
+          "name": "Jiri Putik"
+        }
+      ],
       "classes": [],
       "urls": [
         {
@@ -242,27 +259,44 @@
     },
     {
       "id": "IOF_8962",
-      "name": "European Junior and Youth MTB Orienteering Championships 2027",
-      "start_time": "2027-05-05",
-      "end_time": "2027-05-04",
+      "name": "(Preliminary Dates) - European Junior and Youth MTB Orienteering Championships 2027",
+      "start_time": "2027-05-03",
+      "end_time": "2027-05-03",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
         "Regional Championships"
       ],
       "tags": [],
-      "form": "Team",
+      "form": null,
       "organisers": [
         {
           "name": "Czechia",
           "country_code": "CZE"
         },
         {
-          "name": "MTBO Racing team Hradec Kralove",
+          "name": "MTBO Hradec Kralove",
           "country_code": "CZE"
         }
       ],
-      "officials": [],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Lukas Chmelar"
+        },
+        {
+          "role": "Event director",
+          "name": "Lukas Chmelar"
+        },
+        {
+          "role": "Event controller",
+          "name": "Milan Meier"
+        },
+        {
+          "role": "Course controller",
+          "name": "Jiri Putik"
+        }
+      ],
       "classes": [],
       "urls": [
         {
@@ -286,8 +320,8 @@
       "races": [
         {
           "race_number": 1,
-          "name": "European Junior and Youth MTB Orienteering Championships 2027",
-          "datetimez": "2027-05-04T00:00:00+00:00",
+          "name": "(Preliminary Dates) - European Junior and Youth MTB Orienteering Championships 2027",
+          "datetimez": "2027-05-03T22:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -502,7 +536,7 @@
           "race_number": 4,
           "name": "Sprint",
           "datetimez": "2027-09-25T10:00:00+01:00",
-          "discipline": "Long",
+          "discipline": "Sprint",
           "night_or_day": "day",
           "position": null,
           "areas": [],
@@ -520,7 +554,7 @@
       "id": "SWE_57010",
       "name": "MTBO, Karlskrona SOK, lång",
       "start_time": "2027-05-15",
-      "end_time": "2027-05-14",
+      "end_time": "2027-05-15",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -565,7 +599,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Karlskrona SOK, lång",
-          "datetimez": "2027-05-14T00:00:00+02:00",
+          "datetimez": "2027-05-15T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -626,7 +660,7 @@
       "id": "SWE_57011",
       "name": "MTBO, Karlskrona SOK, sprint",
       "start_time": "2027-05-16",
-      "end_time": "2027-05-15",
+      "end_time": "2027-05-16",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -671,7 +705,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Karlskrona SOK, sprint",
-          "datetimez": "2027-05-15T00:00:00+02:00",
+          "datetimez": "2027-05-16T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {

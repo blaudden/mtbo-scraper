@@ -1879,7 +1879,7 @@
       "id": "IOF_8805",
       "name": "MTBO Spring days 2026 - Mass start",
       "start_time": "2026-04-18",
-      "end_time": "2026-04-17",
+      "end_time": "2026-04-18",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -1960,7 +1960,7 @@
         {
           "race_number": 1,
           "name": "MTBO Spring days 2026 - Mass start",
-          "datetimez": "2026-04-17T00:00:00+00:00",
+          "datetimez": "2026-04-18T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2020,7 +2020,7 @@
       "id": "IOF_8806",
       "name": "MTBO Spring days 2026 - Sprint",
       "start_time": "2026-04-19",
-      "end_time": "2026-04-18",
+      "end_time": "2026-04-19",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2101,7 +2101,7 @@
         {
           "race_number": 1,
           "name": "MTBO Spring days 2026 - Sprint",
-          "datetimez": "2026-04-18T00:00:00+00:00",
+          "datetimez": "2026-04-19T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2234,7 +2234,7 @@
         {
           "race_number": 1,
           "name": "National race Long distance",
-          "datetimez": "2026-03-14T00:00:00+00:00",
+          "datetimez": "2026-03-14T11:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2323,7 +2323,7 @@
         {
           "race_number": 1,
           "name": "French Championships Sprint",
-          "datetimez": "2026-03-15T00:00:00+00:00",
+          "datetimez": "2026-03-15T08:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2355,7 +2355,7 @@
       "id": "IOF_8884",
       "name": "Australian MTBO Long Distance Championships",
       "start_time": "2026-10-11",
-      "end_time": "2026-10-10",
+      "end_time": "2026-10-11",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2370,6 +2370,10 @@
         }
       ],
       "officials": [
+        {
+          "role": "Contact person",
+          "name": "John Gavens"
+        },
         {
           "role": "Contact phone number",
           "name": "+61 427840816"
@@ -2425,18 +2429,18 @@
         {
           "type": "Bulletin",
           "title": "Bulletin 1",
-          "url": "https://eventor.orienteering.asn.au/Documents/Event/22515/1/BULLETIN-1",
+          "url": "https://eventor.orienteering.asn.au/Documents/Event/22515/BULLETIN-1",
           "published_time": null
         }
       ],
-      "information": "These events also offer a full range of age classes and are also part of the 2027 World Masters Series.  Entries for those classes are via Australian Eventor - link in Bulletin 1.\nWRE entrants based in Australia are encouraged to enter and pay through AUS Eventor. WRE entrants from outside Australia should enter here in IOF Eventor and may pay when they arrive at Registration at the Australian Champs events.",
+      "information": "These events also offer a full range of age classes and are also part of the 2027 World Masters Series.  Entries for those classes are via Australian Eventor - link in Bulletin 1.\nhttps://eventor.orienteering.asn.au/Events/Show/23068\nWRE entrants based in Australia are encouraged to enter and pay through AUS Eventor. WRE entrants from outside Australia should enter here in IOF Eventor and may pay when they arrive at Registration at the Australian Champs events.",
       "region": null,
       "punching_system": "Sportident",
       "races": [
         {
           "race_number": 1,
           "name": "Australian MTBO Long Distance Championships",
-          "datetimez": "2026-10-10T00:00:00+00:00",
+          "datetimez": "2026-10-11T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2444,7 +2448,14 @@
             "lng": 143.896815663088
           },
           "areas": [],
-          "urls": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Entry?eventId=8884",
+              "title": "Enter and/or order services",
+              "last_updated_at": "2026-03-04T20:42:40.086158+00:00"
+            }
+          ],
           "documents": [],
           "entry_counts": null,
           "start_counts": null,
@@ -2458,7 +2469,7 @@
       "id": "IOF_8885",
       "name": "Australian MTBO Middle Distance Championships",
       "start_time": "2026-10-10",
-      "end_time": "2026-10-09",
+      "end_time": "2026-10-10",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2473,6 +2484,10 @@
         }
       ],
       "officials": [
+        {
+          "role": "Contact person",
+          "name": "John Gavens"
+        },
         {
           "role": "Contact phone number",
           "name": "+61 427840816"
@@ -2518,18 +2533,18 @@
         {
           "type": "Bulletin",
           "title": "Bulletin 1",
-          "url": "https://eventor.orienteering.asn.au/Documents/Event/22515/1/BULLETIN-1",
+          "url": "https://eventor.orienteering.asn.au/Documents/Event/22515/BULLETIN-1",
           "published_time": null
         }
       ],
-      "information": "These events also offer a full range of age classes and are also part of the 2027 World Masters Series.  Entries for those classes are via Australian Eventor - link in Bulletin 1.\nWRE entrants based in Australia are encouraged to enter and pay through AUS Eventor. WRE entrants from outside Australia should enter here in IOF Eventor and may pay when they arrive at Registration at the Australian Champs events.",
+      "information": "These events also offer a full range of age classes and are also part of the 2027 World Masters Series.  Entries for those classes are via Australian Eventor - link in Bulletin 1.\nhttps://eventor.orienteering.asn.au/Events/Show/23066\nWRE entrants based in Australia are encouraged to enter and pay through AUS Eventor. WRE entrants from outside Australia should enter here in IOF Eventor and may pay when they arrive at Registration at the Australian Champs events.",
       "region": null,
       "punching_system": "Sportident",
       "races": [
         {
           "race_number": 1,
           "name": "Australian MTBO Middle Distance Championships",
-          "datetimez": "2026-10-09T00:00:00+00:00",
+          "datetimez": "2026-10-10T00:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2537,7 +2552,14 @@
             "lng": 143.903935127099
           },
           "areas": [],
-          "urls": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Entry?eventId=8885",
+              "title": "Enter and/or order services",
+              "last_updated_at": "2026-03-04T20:42:40.086209+00:00"
+            }
+          ],
           "documents": [],
           "entry_counts": null,
           "start_counts": null,
@@ -2630,7 +2652,7 @@
         {
           "race_number": 1,
           "name": "MTBO Italian Cup Middle distance",
-          "datetimez": "2026-04-18T00:00:00+00:00",
+          "datetimez": "2026-04-18T13:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2807,7 +2829,7 @@
         {
           "race_number": 1,
           "name": "MTBO Italian Championships Long Distance",
-          "datetimez": "2026-04-19T00:00:00+00:00",
+          "datetimez": "2026-04-19T08:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": {
@@ -2901,7 +2923,7 @@
       "id": "IOF_8915",
       "name": "Coppa Italia Middle",
       "start_time": "2026-09-26",
-      "end_time": "2026-09-25",
+      "end_time": "2026-09-26",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -2946,7 +2968,7 @@
         {
           "race_number": 1,
           "name": "Coppa Italia Middle",
-          "datetimez": "2026-09-25T00:00:00+00:00",
+          "datetimez": "2026-09-26T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
@@ -2965,7 +2987,7 @@
       "id": "IOF_8916",
       "name": "Coppa Italia Long",
       "start_time": "2026-09-27",
-      "end_time": "2026-09-26",
+      "end_time": "2026-09-27",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -3010,12 +3032,182 @@
         {
           "race_number": 1,
           "name": "Coppa Italia Long",
-          "datetimez": "2026-09-26T00:00:00+00:00",
+          "datetimez": "2026-09-27T00:00:00+02:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
           "areas": [],
           "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_8923",
+      "name": "III Troféu Ori BTT Duarte Lourenço",
+      "start_time": "2026-05-30",
+      "end_time": "2026-05-30",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Portugal",
+          "country_code": "PRT"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "+351938462348"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:BRIDBl4QAjIGHQQbAVoBAEA="
+        }
+      ],
+      "classes": [
+        "ME",
+        "WE"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/8923",
+          "title": null,
+          "last_updated_at": "2026-03-04T20:42:40.086058+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://bttloule.com",
+          "title": null,
+          "last_updated_at": "2026-03-04T20:42:40.086058+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "All registrations must be made via the link\nhttps://www.orioasis.pt/oasis/events.php?action=event_view&eventid=3220&msg=data-saved",
+      "region": null,
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "III Troféu Ori BTT Duarte Lourenço",
+          "datetimez": "2026-05-30T00:00:00+01:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": {
+            "lat": 37.1393025678672,
+            "lng": -8.02477059697059
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Entry?eventId=8923",
+              "title": "Enter",
+              "last_updated_at": "2026-03-04T20:42:40.086059+00:00"
+            },
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=8923&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-03-04T20:42:40.086059+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_8924",
+      "name": "III Troféu Ori BTT Duarte Lourenço",
+      "start_time": "2026-05-31",
+      "end_time": "2026-05-31",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Portugal",
+          "country_code": "PRT"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "+351938462348"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:BRIDBl4QAjIGHQQbAVoBAEA="
+        }
+      ],
+      "classes": [
+        "ME",
+        "WE"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/8924",
+          "title": null,
+          "last_updated_at": "2026-03-04T20:42:40.086111+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://bttloule.com",
+          "title": null,
+          "last_updated_at": "2026-03-04T20:42:40.086111+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "All registrations must be made via the link\nhttps://www.orioasis.pt/oasis/events.php?action=event_view&eventid=3220&msg=data-saved",
+      "region": null,
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "III Troféu Ori BTT Duarte Lourenço",
+          "datetimez": "2026-05-31T00:00:00+01:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": {
+            "lat": 37.1385739585979,
+            "lng": -8.02330092212725
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Entry?eventId=8924",
+              "title": "Enter",
+              "last_updated_at": "2026-03-04T20:42:40.086113+00:00"
+            },
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=8924&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-03-04T20:42:40.086113+00:00"
+            }
+          ],
           "documents": [],
           "entry_counts": null,
           "start_counts": null,
@@ -3429,6 +3621,10 @@
       "form": "Individual",
       "organisers": [
         {
+          "name": "Göteborgs OF",
+          "country_code": "SWE"
+        },
+        {
           "name": "Svensk Orientering Events",
           "country_code": "SWE"
         }
@@ -3464,7 +3660,7 @@
       ],
       "documents": [],
       "information": "Information och anmälan hittas på\nwww.oringen.se\n/ Information and registration can be found at\nwww.oringen.se",
-      "region": null,
+      "region": "Göteborg",
       "punching_system": "Sportident",
       "races": [
         {
@@ -3483,76 +3679,140 @@
               "lng": 12.0446277631969,
               "polygon": [
                 [
-                  57.70259303649905,
-                  12.024334759189163
+                  57.70762411332035,
+                  12.03711073034897
                 ],
                 [
-                  57.67485420084407,
-                  12.034438205659928
+                  57.69774731243467,
+                  12.03932090014826
                 ],
                 [
-                  57.67534533644488,
-                  12.042245417402052
+                  57.69581457980911,
+                  12.038316277512218
                 ],
                 [
-                  57.67129324768442,
-                  12.054415478281998
+                  57.69581457980911,
+                  12.033895937913643
                 ],
                 [
-                  57.66994245641794,
-                  12.06383005853871
+                  57.68748513348149,
+                  12.044687650364194
                 ],
                 [
-                  57.671907236278884,
-                  12.084266582311045
+                  57.6789746719779,
+                  12.060778140916337
                 ],
                 [
-                  57.68271160021206,
-                  12.102406860843397
+                  57.673840951221706,
+                  12.0694809160781
                 ],
                 [
-                  57.69240822953614,
-                  12.126058111133561
+                  57.67361029915196,
+                  12.078107617248218
                 ],
                 [
-                  57.69891211210185,
-                  12.134783819920544
+                  57.67603207270443,
+                  12.085871648301325
                 ],
                 [
-                  57.70688697738501,
-                  12.149939002765873
+                  57.680875134529515,
+                  12.090184998886384
                 ],
                 [
-                  57.70934042449298,
-                  12.152924098452894
+                  57.68398818975996,
+                  12.095361019588456
                 ],
                 [
-                  57.715473326229585,
-                  12.144887271646981
+                  57.688076318102276,
+                  12.107899096234881
                 ],
                 [
-                  57.72160518910135,
-                  12.138917048738906
+                  57.69226813269702,
+                  12.10659200687872
                 ],
                 [
-                  57.72908465097484,
-                  12.112739932889294
+                  57.702357549387074,
+                  12.106301542577347
                 ],
                 [
-                  57.72736819036436,
-                  12.093451531736951
+                  57.70321114031455,
+                  12.1151607037691
                 ],
                 [
-                  57.71461478466205,
-                  12.05579322122145
+                  57.70903054226906,
+                  12.14028586583751
                 ],
                 [
-                  57.71338825496983,
-                  12.025942127703749
+                  57.71353023855673,
+                  12.136655062070396
                 ],
                 [
-                  57.70259303649905,
-                  12.024334759189163
+                  57.7171761339805,
+                  12.13709075852245
+                ],
+                [
+                  57.718339640330385,
+                  12.1347670441115
+                ],
+                [
+                  57.716943428222436,
+                  12.12924822238549
+                ],
+                [
+                  57.71981336135042,
+                  12.12837682948138
+                ],
+                [
+                  57.72632804050363,
+                  12.11893673968689
+                ],
+                [
+                  57.72842179545975,
+                  12.11211082860472
+                ],
+                [
+                  57.72632804050363,
+                  12.093956809769162
+                ],
+                [
+                  57.72415661109332,
+                  12.092649720413004
+                ],
+                [
+                  57.72012361076119,
+                  12.0880022915911
+                ],
+                [
+                  57.715392018269824,
+                  12.08829275589247
+                ],
+                [
+                  57.7152368736175,
+                  12.075221862330864
+                ],
+                [
+                  57.71601259022984,
+                  12.072752915769227
+                ],
+                [
+                  57.71182352303785,
+                  12.064765147481582
+                ],
+                [
+                  57.71182352303785,
+                  12.055760754139145
+                ],
+                [
+                  57.70891219312722,
+                  12.053988390634442
+                ],
+                [
+                  57.70805347834721,
+                  12.039923673729882
+                ],
+                [
+                  57.70762411332035,
+                  12.03711073034897
                 ]
               ]
             }
@@ -3580,92 +3840,116 @@
               "lng": 12.044607843143,
               "polygon": [
                 [
-                  57.7032290657846,
-                  12.026491688371877
+                  57.698224881776554,
+                  12.03991071041865
                 ],
                 [
-                  57.700156064218675,
-                  12.027871967307423
+                  57.695976112198764,
+                  12.038352794915335
                 ],
                 [
-                  57.69622223746518,
-                  12.029942385710743
+                  57.69155013002444,
+                  12.03879803496395
                 ],
                 [
-                  57.68797073410914,
-                  12.03300943344036
+                  57.67984008638439,
+                  12.056429540889113
                 ],
                 [
-                  57.68375582345655,
-                  12.032446235076824
+                  57.674459814311604,
+                  12.066491965987817
                 ],
                 [
-                  57.67713140491705,
-                  12.039908637563626
+                  57.67379317633808,
+                  12.071122462493413
                 ],
                 [
-                  57.67359286201162,
-                  12.049905448799636
+                  57.67369794134126,
+                  12.077979159242085
                 ],
                 [
-                  57.670957558230754,
-                  12.05511505138697
+                  57.67436458106582,
+                  12.079225831378205
                 ],
                 [
-                  57.67186111331995,
-                  12.074827071454566
+                  57.67498359269214,
+                  12.08260965574768
                 ],
                 [
-                  57.67487280331028,
-                  12.084964687115447
+                  57.68083987197332,
+                  12.088041584340784
                 ],
                 [
-                  57.68515606442293,
-                  12.10700795259165
+                  57.682077663544845,
+                  12.093028272885272
                 ],
                 [
-                  57.68835330788872,
-                  12.11759009811797
+                  57.68350583206549,
+                  12.095165425118624
                 ],
                 [
-                  57.69720573561156,
-                  12.131852973431492
+                  57.68460072315477,
+                  12.10006306565339
                 ],
                 [
-                  57.70360999671422,
-                  12.147059384461183
+                  57.68660000414516,
+                  12.103446890022864
                 ],
                 [
-                  57.71039182543839,
-                  12.149873535378461
+                  57.688694370698414,
+                  12.107275954440954
                 ],
                 [
-                  57.721538760960954,
-                  12.138984421618947
+                  57.6907410210662,
+                  12.10683071439234
                 ],
                 [
-                  57.72513102226091,
-                  12.128612724645135
+                  57.69479617656296,
+                  12.103820411512965
                 ],
                 [
-                  57.72911559155085,
-                  12.11270230158806
+                  57.69574796104445,
+                  12.0877027217531
                 ],
                 [
-                  57.725431758546335,
-                  12.090515165629432
+                  57.6987935033502,
+                  12.081380313062766
                 ],
                 [
-                  57.71293804677319,
-                  12.026491688371877
+                  57.70155330490206,
+                  12.075948384469655
                 ],
                 [
-                  57.70605600055276,
-                  12.026261634862157
+                  57.70318523090694,
+                  12.073547848907397
                 ],
                 [
-                  57.7032290657846,
-                  12.026491688371877
+                  57.70875152605848,
+                  12.069985928518475
+                ],
+                [
+                  57.711891109981934,
+                  12.067047344197617
+                ],
+                [
+                  57.71222408018738,
+                  12.056806823079471
+                ],
+                [
+                  57.70759289697878,
+                  12.050866650112454
+                ],
+                [
+                  57.7078834188967,
+                  12.038218798233911
+                ],
+                [
+                  57.70155570278652,
+                  12.038218798233911
+                ],
+                [
+                  57.698224881776554,
+                  12.03991071041865
                 ]
               ]
             }
@@ -3680,8 +3964,8 @@
         {
           "race_number": 3,
           "name": "Etapp 3",
-          "datetimez": "2026-07-23T00:00:00+02:00",
-          "discipline": "Sprint",
+          "datetimez": "2026-07-22T00:00:00+02:00",
+          "discipline": "Middle",
           "night_or_day": "day",
           "position": {
             "lat": 57.744290488963,
@@ -3790,7 +4074,7 @@
           "race_number": 4,
           "name": "Etapp 4",
           "datetimez": "2026-07-24T00:00:00+02:00",
-          "discipline": "Middle",
+          "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
             "lat": 57.6521853136906,
@@ -4051,7 +4335,7 @@
       "id": "SWE_53809",
       "name": "MTBO, DM, lång, Blekinge+Skåne+Småland",
       "start_time": "2026-09-19",
-      "end_time": "2026-09-18",
+      "end_time": "2026-09-19",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -4104,7 +4388,7 @@
         {
           "race_number": 1,
           "name": "MTBO, DM, lång, Blekinge+Skåne+Småland",
-          "datetimez": "2026-09-18T00:00:00+02:00",
+          "datetimez": "2026-09-19T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": null,
@@ -4123,7 +4407,7 @@
       "id": "SWE_53810",
       "name": "MTBO, DM, medel, Blekinge+Skåne+Småland",
       "start_time": "2026-09-20",
-      "end_time": "2026-09-19",
+      "end_time": "2026-09-20",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -4176,7 +4460,7 @@
         {
           "race_number": 1,
           "name": "MTBO, DM, medel, Blekinge+Skåne+Småland",
-          "datetimez": "2026-09-19T00:00:00+02:00",
+          "datetimez": "2026-09-20T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": null,
@@ -4195,7 +4479,7 @@
       "id": "SWE_54359",
       "name": "MTBO, Svenska cupen, #1, sprint + Haningeträffen",
       "start_time": "2026-05-09",
-      "end_time": "2026-05-08",
+      "end_time": "2026-05-09",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -4246,7 +4530,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska cupen, #1, sprint + Haningeträffen",
-          "datetimez": "2026-05-08T00:00:00+02:00",
+          "datetimez": "2026-05-09T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -4327,7 +4611,7 @@
       "id": "SWE_54361",
       "name": "MTBO, Svenska cupen, #2, lång + Haningeträffen",
       "start_time": "2026-05-10",
-      "end_time": "2026-05-09",
+      "end_time": "2026-05-10",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -4378,7 +4662,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Svenska cupen, #2, lång + Haningeträffen",
-          "datetimez": "2026-05-09T00:00:00+02:00",
+          "datetimez": "2026-05-10T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -4455,7 +4739,7 @@
       "id": "SWE_56226",
       "name": "MTBO, Publiktävling VM, lång",
       "start_time": "2026-08-28",
-      "end_time": "2026-08-27",
+      "end_time": "2026-08-28",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -4514,7 +4798,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Publiktävling VM, lång",
-          "datetimez": "2026-08-27T00:00:00+02:00",
+          "datetimez": "2026-08-28T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": null,
@@ -4533,7 +4817,7 @@
       "id": "SWE_56227",
       "name": "MTBO, Publiktävling VM, medel",
       "start_time": "2026-08-29",
-      "end_time": "2026-08-28",
+      "end_time": "2026-08-29",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -4592,7 +4876,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Publiktävling VM, medel",
-          "datetimez": "2026-08-28T00:00:00+02:00",
+          "datetimez": "2026-08-29T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": null,
@@ -4611,7 +4895,7 @@
       "id": "SWE_56228",
       "name": "MTBO, Publiktävling VM, sprint",
       "start_time": "2026-08-30",
-      "end_time": "2026-08-29",
+      "end_time": "2026-08-30",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -4670,7 +4954,7 @@
         {
           "race_number": 1,
           "name": "MTBO, Publiktävling VM, sprint",
-          "datetimez": "2026-08-29T00:00:00+02:00",
+          "datetimez": "2026-08-30T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": null,
@@ -4689,7 +4973,7 @@
       "id": "SWE_57105",
       "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #3, medel",
       "start_time": "2026-08-15",
-      "end_time": "2026-08-14",
+      "end_time": "2026-08-15",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -4778,7 +5062,7 @@
         {
           "race_number": 1,
           "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #3, medel",
-          "datetimez": "2026-08-14T00:00:00+02:00",
+          "datetimez": "2026-08-15T00:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -4940,7 +5224,7 @@
       "id": "SWE_57106",
       "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #4, sprint",
       "start_time": "2026-08-15",
-      "end_time": "2026-08-14",
+      "end_time": "2026-08-15",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -5029,7 +5313,7 @@
         {
           "race_number": 1,
           "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #4, sprint",
-          "datetimez": "2026-08-14T00:00:00+02:00",
+          "datetimez": "2026-08-15T00:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -5195,7 +5479,7 @@
       "id": "SWE_57107",
       "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #5, lång",
       "start_time": "2026-08-16",
-      "end_time": "2026-08-15",
+      "end_time": "2026-08-16",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -5284,7 +5568,7 @@
         {
           "race_number": 1,
           "name": "MTBO, SM/JSM/USM/VSM, Svenska cupen, #5, lång",
-          "datetimez": "2026-08-15T00:00:00+02:00",
+          "datetimez": "2026-08-16T00:00:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
           "position": {
@@ -5478,7 +5762,7 @@
       "id": "SWE_57406",
       "name": "Skånepremiären MTBO",
       "start_time": "2026-03-07",
-      "end_time": "2026-03-06",
+      "end_time": "2026-03-07",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
@@ -5530,7 +5814,7 @@
           "type": "Bulletin",
           "title": "PM",
           "url": "/Documents/Event/119445/PM",
-          "published_time": "2026-02-05"
+          "published_time": "2026-03-03"
         }
       ],
       "information": null,
@@ -5540,7 +5824,7 @@
         {
           "race_number": 1,
           "name": "Skånepremiären MTBO",
-          "datetimez": "2026-03-06T00:00:00+01:00",
+          "datetimez": "2026-03-07T00:00:00+01:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": {
@@ -5696,7 +5980,7 @@
         {
           "race_number": 1,
           "name": "MTBO, DM, medel, Ångermanland",
-          "datetimez": "2026-06-24T00:00:00+02:00",
+          "datetimez": "2026-06-24T19:00:00+02:00",
           "discipline": "Middle",
           "night_or_day": "day",
           "position": null,
