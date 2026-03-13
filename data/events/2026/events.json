@@ -603,7 +603,7 @@
           "race_number": 4,
           "name": "Relay",
           "datetimez": "2026-08-30T10:00:00+02:00",
-          "discipline": "Other",
+          "discipline": "Relay",
           "night_or_day": null,
           "position": null,
           "areas": [],
@@ -1219,7 +1219,7 @@
           "race_number": 4,
           "name": "Relay",
           "datetimez": "2026-08-30T10:00:00+02:00",
-          "discipline": "Other",
+          "discipline": "Relay",
           "night_or_day": null,
           "position": null,
           "areas": [],
@@ -1283,12 +1283,8 @@
           "name": "Alexandre Reis"
         },
         {
-          "role": "Event controllers",
+          "role": "Event controller",
           "name": "Tiago Fernandes"
-        },
-        {
-          "role": "Event controllers",
-          "name": "Tiago Lopes"
         }
       ],
       "classes": [
@@ -1315,13 +1311,13 @@
           "type": "EmbargoMap",
           "title": "Embargoed areas",
           "url": "/Documents/Event/9015/Embargoed-areas",
-          "published_time": "2026-01-28"
+          "published_time": "2026-03-08"
         },
         {
           "type": "Bulletin",
           "title": "Bulletin 2",
           "url": "/Documents/Event/9014/Bulletin-2",
-          "published_time": "2026-02-05"
+          "published_time": "2026-03-11"
         }
       ],
       "information": null,
@@ -1335,8 +1331,8 @@
           "discipline": "Sprint",
           "night_or_day": null,
           "position": {
-            "lat": 39.6586002305028,
-            "lng": -8.56942608980294
+            "lat": 40.7254321419742,
+            "lng": -6.90612386689331
           },
           "areas": [],
           "urls": [],
@@ -1365,7 +1361,7 @@
           "race_number": 3,
           "name": "Mass start",
           "datetimez": "2026-05-27T09:00:00+01:00",
-          "discipline": "Other",
+          "discipline": "Mass start",
           "night_or_day": null,
           "position": null,
           "areas": [],
@@ -1380,7 +1376,7 @@
           "race_number": 4,
           "name": "Relay",
           "datetimez": "2026-05-28T09:00:00+01:00",
-          "discipline": "Other",
+          "discipline": "Relay",
           "night_or_day": null,
           "position": null,
           "areas": [],
@@ -1442,12 +1438,8 @@
           "name": "Alexandre Reis"
         },
         {
-          "role": "Event controllers",
+          "role": "Event controller",
           "name": "Tiago Fernandes"
-        },
-        {
-          "role": "Event controllers",
-          "name": "Tiago Lopes"
         }
       ],
       "classes": [
@@ -1476,13 +1468,13 @@
           "type": "EmbargoMap",
           "title": "Embargoed areas",
           "url": "/Documents/Event/9017/Embargoed-areas",
-          "published_time": "2026-01-28"
+          "published_time": "2026-03-08"
         },
         {
           "type": "Bulletin",
           "title": "Bulletin 2",
           "url": "/Documents/Event/9016/Bulletin-2",
-          "published_time": "2026-02-05"
+          "published_time": "2026-03-11"
         }
       ],
       "information": null,
@@ -1496,8 +1488,8 @@
           "discipline": "Sprint",
           "night_or_day": null,
           "position": {
-            "lat": 39.6592965472435,
-            "lng": -8.54535850320164
+            "lat": 40.7254321419742,
+            "lng": -6.90612386689331
           },
           "areas": [],
           "urls": [],
@@ -1541,7 +1533,7 @@
           "race_number": 4,
           "name": "Relay",
           "datetimez": "2026-05-28T09:00:00+01:00",
-          "discipline": "Other",
+          "discipline": "Relay",
           "night_or_day": null,
           "position": null,
           "areas": [],
@@ -1646,6 +1638,12 @@
           "title": "Bulletin 2 UPDATE",
           "url": "/Documents/Event/10061/Bulletin-2-UPDATE",
           "published_time": "2026-02-04"
+        },
+        {
+          "type": "Bulletin",
+          "title": "Bulletin 3",
+          "url": "/Documents/Event/10202/Bulletin-3",
+          "published_time": "2026-03-10"
         }
       ],
       "information": null,
@@ -1840,7 +1838,7 @@
           "race_number": 3,
           "name": "Mass start",
           "datetimez": "2026-09-11T10:00:00+01:00",
-          "discipline": "Other",
+          "discipline": "Mass start",
           "night_or_day": "day",
           "position": {
             "lat": 57.60802,
@@ -6076,6 +6074,449 @@
           "discipline": "Middle",
           "night_or_day": "day",
           "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_57925",
+      "name": "Närkeserien i MTBO deltävling 1",
+      "start_time": "2026-05-11",
+      "end_time": "2026-05-11",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Garphyttans IF",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Torbjörn Jansson"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "0760-170004"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:GRpMBUwdEAEOHiUVABULAwMQDB8="
+        }
+      ],
+      "classes": [
+        "Dam 3 km",
+        "Dam 5 km",
+        "Dam 8 km",
+        "Herr 3 km",
+        "Herr 5 km",
+        "Herr 8 km"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/57925",
+          "title": null,
+          "last_updated_at": "2026-03-13T12:42:26.542014+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Other",
+          "title": "Kartnorm MTBO",
+          "url": "/Documents/Event/120011/Kartnorm-MTBO",
+          "published_time": "2026-03-09"
+        },
+        {
+          "type": "Invitation",
+          "title": "Inbjudan hela Närkeserien i MTBO",
+          "url": "/Documents/Event/120012/Inbjudan-hela-N-rkeserien-i-MTBO",
+          "published_time": "2026-03-09"
+        }
+      ],
+      "information": null,
+      "region": "Örebro Län",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Närkeserien i MTBO deltävling 1",
+          "datetimez": "2026-05-11T18:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "position": {
+            "lat": 59.3104536624505,
+            "lng": 14.961821659788
+          },
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_57926",
+      "name": "Närkeserien i MTBO deltävling 2",
+      "start_time": "2026-06-08",
+      "end_time": "2026-06-08",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Garphyttans IF",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Torbjörn Jansson"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "0760-170004"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:GRpMBUwdEAEOHiUVABULAwMQDB8="
+        }
+      ],
+      "classes": [
+        "Dam 3 km",
+        "Dam 5 km",
+        "Dam 8 km",
+        "Herr 3 km",
+        "Herr 5 km",
+        "Herr 8 km"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/57926",
+          "title": null,
+          "last_updated_at": "2026-03-13T12:42:26.542010+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Other",
+          "title": "Kartnorm MTBO",
+          "url": "/Documents/Event/120014/Kartnorm-MTBO",
+          "published_time": "2026-03-09"
+        },
+        {
+          "type": "Invitation",
+          "title": "Inbjudan hela Närkeserien i MTBO",
+          "url": "/Documents/Event/120015/Inbjudan-hela-N-rkeserien-i-MTBO",
+          "published_time": "2026-03-09"
+        }
+      ],
+      "information": null,
+      "region": "Örebro Län",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Närkeserien i MTBO deltävling 2",
+          "datetimez": "2026-06-08T18:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "position": {
+            "lat": 59.3375436871021,
+            "lng": 14.9404933629657
+          },
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_57927",
+      "name": "Närkeserien i MTBO deltävling 3",
+      "start_time": "2026-07-13",
+      "end_time": "2026-07-13",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Garphyttans IF",
+          "country_code": "SWE"
+        },
+        {
+          "name": "OK Djerf",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Torbjörn Jansson"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "0760-170004"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:GRpMBUwdEAEOHiUVABULAwMQDB8="
+        }
+      ],
+      "classes": [
+        "Dam 3 km",
+        "Dam 5 km",
+        "Dam 8 km",
+        "Herr 3 km",
+        "Herr 5 km",
+        "Herr 8 km"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/57927",
+          "title": null,
+          "last_updated_at": "2026-03-13T12:42:26.542024+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Other",
+          "title": "Kartnorm MTBO",
+          "url": "/Documents/Event/120016/Kartnorm-MTBO",
+          "published_time": "2026-03-09"
+        },
+        {
+          "type": "Invitation",
+          "title": "Inbjudan hela Närkeserien i MTBO",
+          "url": "/Documents/Event/120017/Inbjudan-hela-N-rkeserien-i-MTBO",
+          "published_time": "2026-03-09"
+        }
+      ],
+      "information": null,
+      "region": "Örebro Län\nVärmland",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Närkeserien i MTBO deltävling 3",
+          "datetimez": "2026-07-13T18:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "position": {
+            "lat": 59.2914751491593,
+            "lng": 14.7011829623795
+          },
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_57928",
+      "name": "Närkeserien i MTBO deltävling 4",
+      "start_time": "2026-08-03",
+      "end_time": "2026-08-03",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Garphyttans IF",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Torbjörn Jansson"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "0760-170004"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:GRpMBUwdEAEOHiUVABULAwMQDB8="
+        }
+      ],
+      "classes": [
+        "Dam 3 km",
+        "Dam 5 km",
+        "Dam 8 km",
+        "Herr 3 km",
+        "Herr 5 km",
+        "Herr 8 km"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/57928",
+          "title": null,
+          "last_updated_at": "2026-03-13T12:42:26.541951+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Other",
+          "title": "Kartnorm MTBO",
+          "url": "/Documents/Event/120019/Kartnorm-MTBO",
+          "published_time": "2026-03-09"
+        },
+        {
+          "type": "Invitation",
+          "title": "Inbjudan hela Närkeserien i MTBO",
+          "url": "/Documents/Event/120020/Inbjudan-hela-N-rkeserien-i-MTBO",
+          "published_time": "2026-03-09"
+        }
+      ],
+      "information": "Plats meddelas senare.",
+      "region": "Örebro Län",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Närkeserien i MTBO deltävling 4",
+          "datetimez": "2026-08-03T18:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "position": {
+            "lat": 67.4685822228012,
+            "lng": 2.39404439333136
+          },
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_57929",
+      "name": "Närkeserien i MTBO deltävling 5",
+      "start_time": "2026-09-07",
+      "end_time": "2026-09-07",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Garphyttans IF",
+          "country_code": "SWE"
+        },
+        {
+          "name": "Laxå OK",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Torbjörn Jansson"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "0760-170004"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:GRpMBUwdEAEOHiUVABULAwMQDB8="
+        }
+      ],
+      "classes": [
+        "Dam 3 km",
+        "Dam 5 km",
+        "Dam 8 km",
+        "Herr 3 km",
+        "Herr 5 km",
+        "Herr 8 km"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/57929",
+          "title": null,
+          "last_updated_at": "2026-03-13T12:42:26.541940+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Other",
+          "title": "Kartnorm MTBO",
+          "url": "/Documents/Event/120021/Kartnorm-MTBO",
+          "published_time": "2026-03-09"
+        },
+        {
+          "type": "Invitation",
+          "title": "Inbjudan hela Närkeserien i MTBO",
+          "url": "/Documents/Event/120022/Inbjudan-hela-N-rkeserien-i-MTBO",
+          "published_time": "2026-03-09"
+        }
+      ],
+      "information": "OBS!\nTidigarelagd start pga mörkret.",
+      "region": "Örebro Län",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Närkeserien i MTBO deltävling 5",
+          "datetimez": "2026-09-07T17:15:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "position": {
+            "lat": 58.9782601011457,
+            "lng": 14.6238384273735
+          },
           "areas": [],
           "urls": [],
           "documents": [],
