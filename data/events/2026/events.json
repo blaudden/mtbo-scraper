@@ -1565,7 +1565,11 @@
           "country_code": "HUN"
         },
         {
-          "name": "Balatonfuredi Sport Club\nHangya SZKE",
+          "name": "Balatonfuredi Sport Club",
+          "country_code": "HUN"
+        },
+        {
+          "name": "Hangya SZKE",
           "country_code": "HUN"
         }
       ],
