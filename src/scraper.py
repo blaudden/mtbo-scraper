@@ -255,9 +255,44 @@ class Scraper:
 
             driver = None
             try:
+                from webdriver_manager.chrome import ChromeDriverManager
+
+                driver_path = ChromeDriverManager(
+                    driver_version=str(browser_version) if browser_version else None
+                ).install()
+
+                # Monkey-patch undetected_chromedriver to re-sign the binary on macOS
+                # since patching it invalidates the ad-hoc signature on Apple Silicon
+                import subprocess
+                import sys
+
+                import undetected_chromedriver.patcher
+
+                if not hasattr(
+                    undetected_chromedriver.patcher.Patcher, "_is_patched_for_mac"
+                ):
+                    original_patch = undetected_chromedriver.patcher.Patcher.patch_exe
+
+                    def patched_patch_exe(self):
+                        original_patch(self)
+                        if sys.platform.startswith("darwin"):
+                            try:
+                                logger.info("Codesigning patched executable for macOS")
+                                subprocess.check_call(
+                                    ["codesign", "-f", "-s", "-", self.executable_path]
+                                )
+                            except Exception as e:
+                                logger.warning("codesign_failed", error=str(e))
+
+                    undetected_chromedriver.patcher.Patcher.patch_exe = (
+                        patched_patch_exe
+                    )
+                    undetected_chromedriver.patcher.Patcher._is_patched_for_mac = True
+
                 driver = uc.Chrome(
                     options=options,
                     browser_executable_path=browser_path,
+                    driver_executable_path=driver_path,
                     version_main=browser_version,
                 )
                 driver.get(base_url)

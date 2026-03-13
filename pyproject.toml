@@ -16,6 +16,7 @@ dependencies = [
     "undetected-chromedriver>=3.5.5",
     "setuptools",
     "curl-cffi>=0.14.0",
+    "webdriver-manager>=4.0.2",
 ]
 
 [dependency-groups]

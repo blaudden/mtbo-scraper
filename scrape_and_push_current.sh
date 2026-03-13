@@ -41,13 +41,17 @@ fi
 
 # Check data directory size
 get_dir_size() {
-    du -sb "$1" 2>/dev/null | cut -f1 || echo 0
+    du -sk "$1" 2>/dev/null | awk '{print $1}' || echo 0
 }
 
 FILE_SIZE=$(get_dir_size "$OUTPUT_DIR")
+FILE_SIZE=${FILE_SIZE:-0}
 
-if [ "$FILE_SIZE" -lt "$MIN_SIZE_BYTES" ]; then
-    echo "Output directory size ($FILE_SIZE bytes) is suspiciously small. Aborting commit." >> "$LOG_FILE"
+# Provide a lower bound in KB (~100 bytes is 1KB)
+MIN_SIZE_KB=1
+
+if [ "$FILE_SIZE" -lt "$MIN_SIZE_KB" ]; then
+    echo "Output directory size ($FILE_SIZE KB) is suspiciously small. Aborting commit." >> "$LOG_FILE"
     exit 1
 fi
 
