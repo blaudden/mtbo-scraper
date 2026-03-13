@@ -427,6 +427,7 @@ def test_iof_7490_race_links(parser: EventorParser) -> None:
     # Race 5: Relay
     r5 = event.races[4]
     assert r5.name == "Relay"
+    assert r5.discipline == "Relay"
     assert any(u.type == "StartList" and "eventId=8451" in u.url for u in r5.urls)
     # The Relay result link is NOT on the race (PDF/External Document)
     assert not any(u.type == "ResultList" for u in r5.urls)

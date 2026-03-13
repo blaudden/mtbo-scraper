@@ -239,7 +239,7 @@ class Race:
     race_number: int  # 1-based index
     name: str
     datetimez: str  # ISO 8601 datetime with offset (YYYY-MM-DDTHH:mm:ss+HH:MM)
-    discipline: str  # Sprint, Middle, Long, Ultralong
+    discipline: str  # Sprint, Middle, Long, Ultralong, Mass start, Relay
 
     # Optional/Custom fields
     night_or_day: str | None = None  # day, night, combined

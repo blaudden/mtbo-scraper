@@ -274,7 +274,8 @@
                     "format": "date-time"
                 },
                 "discipline": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "e.g., Sprint, Middle, Long, Ultralong, Mass start, Relay, Other"
                 },
                 "night_or_day": {
                     "type": [

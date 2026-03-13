@@ -107,6 +107,10 @@ class EventorParser:
             return "Middle"
         if "ultra" in v:
             return "Ultralong"
+        if "mass" in v:
+            return "Mass start"
+        if "relay" in v:
+            return "Relay"
         return "Other"
 
     def _extract_types(self, attributes: dict[str, str], country: str) -> list[str]:
