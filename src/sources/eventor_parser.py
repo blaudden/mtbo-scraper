@@ -128,9 +128,8 @@ class EventorParser:
             for k, v in attributes.items():
                 k_stripped = k.strip()
                 if k_stripped in ("Event type", "Event types"):
-                    # Split by newlines to get multiple types
-                    types = [t.strip() for t in v.split("\n") if t.strip()]
-                    return types
+                    # Split by common delimiters
+                    return self.split_multi_value_field(v)
         else:
             # For SWE and NOR events, look for "Event classification"
             for k, v in attributes.items():
@@ -287,13 +286,7 @@ class EventorParser:
             # Column 2: Organizer(s)
             org_col = cols[2]
             org_text = org_col.get_text(separator="\n", strip=True)
-            # simple split by newline for organisers.
-            organiser_names = [
-                org.strip() for org in org_text.split("\n") if org.strip()
-            ]
-            organiser_names = [
-                org.strip() for org in org_text.split("\n") if org.strip()
-            ]
+            organiser_names = self.split_multi_value_field(org_text)
 
             organisers = []
             for org_name in organiser_names:
@@ -741,19 +734,25 @@ class EventorParser:
             if "club" in key.lower() or "klubb" in key.lower():
                 organising_club = value.strip()
 
-        organisers = None
-        if organising_federation:
-            organisers = []
-            organisers.append(
-                Organiser(name=organising_federation, country_code=venue_country)
-            )
-            # Only add club if it's different from federation (avoid duplicates)
-            if organising_club and organising_club != organising_federation:
-                organisers.append(
-                    Organiser(name=organising_club, country_code=venue_country)
-                )
+        organisers = []
+        seen_names = set()
 
-        return venue_country, organisers
+        def add_organiser(name: str | None, country_code: str) -> None:
+            if not name:
+                return
+            names = self.split_multi_value_field(name)
+            for n in names:
+                if n not in seen_names:
+                    organisers.append(Organiser(name=n, country_code=country_code))
+                    seen_names.add(n)
+
+        if organising_federation:
+            add_organiser(organising_federation, venue_country)
+        
+        if organising_club:
+            add_organiser(organising_club, venue_country)
+
+        return venue_country, organisers if organisers else None
 
     def _extract_default_attributes_and_country(
         self, soup: Tag, event: Event
