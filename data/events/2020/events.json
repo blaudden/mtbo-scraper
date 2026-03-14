@@ -16,6 +16,11 @@
         "country_code": "NOR",
         "name": "Norwegian Eventor",
         "url": "https://eventor.orientering.no"
+      },
+      {
+        "country_code": "MAN",
+        "name": "Manual Events",
+        "url": ""
       }
     ]
   },

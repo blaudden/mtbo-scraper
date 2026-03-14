@@ -748,7 +748,7 @@ class EventorParser:
 
         if organising_federation:
             add_organiser(organising_federation, venue_country)
-        
+
         if organising_club:
             add_organiser(organising_club, venue_country)
 
@@ -891,7 +891,10 @@ class EventorParser:
                     # OR if we found a specific time and the current one is midnight
                     if (
                         not event.races[0].datetimez
-                        or current_race_date != event.start_time
+                        or (
+                            event.start_time == event.end_time
+                            and current_race_date != event.start_time
+                        )
                         or (time and "T00:00:00" in event.races[0].datetimez)
                     ):
                         event.races[0].datetimez = format_iso_datetime(

@@ -123,6 +123,9 @@ class IndexPartitionDict(TypedDict):
 class IndexSourceDict(TypedDict):
     """Dictionary representation of an index source entry."""
 
+    country_code: str
+    name: str
+    url: str
     count: int
     last_updated_at: str
 

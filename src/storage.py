@@ -19,6 +19,30 @@ from .models import (
 logger = structlog.get_logger(__name__)
 
 
+SOURCES_METADATA: dict[str, Source] = {
+    "SWE": Source(
+        country_code="SWE",
+        name="Swedish Eventor",
+        url="https://eventor.orientering.se",
+    ),
+    "IOF": Source(
+        country_code="IOF",
+        name="IOF Eventor",
+        url="https://eventor.orienteering.org",
+    ),
+    "NOR": Source(
+        country_code="NOR",
+        name="Norwegian Eventor",
+        url="https://eventor.orientering.no",
+    ),
+    "MAN": Source(
+        country_code="MAN",
+        name="Manual Events",
+        url="",
+    ),
+}
+
+
 class Storage:
     """Handles loading and saving of event data, using an Umbrella Index architecture.
 
@@ -115,6 +139,32 @@ class Storage:
         # Track which sources have changed
         source_meta = current_index.get("sources", {})
 
+        def _build_source_metadata(
+            source_id: str, existing_meta: dict | None
+        ) -> IndexSourceDict:
+            """Constructs or updates metadata for a single source."""
+            known = SOURCES_METADATA.get(source_id)
+            default_code = known.country_code if known else source_id
+            default_name = known.name if known else source_id
+            default_url = known.url if known else ""
+
+            if existing_meta:
+                return IndexSourceDict(
+                    country_code=existing_meta.get("country_code", default_code),
+                    name=existing_meta.get("name", default_name),
+                    url=existing_meta.get("url", default_url),
+                    count=existing_meta.get("count", 0),
+                    last_updated_at=existing_meta.get("last_updated_at", now_iso),
+                )
+
+            return IndexSourceDict(
+                country_code=default_code,
+                name=default_name,
+                url=default_url,
+                count=0,
+                last_updated_at=now_iso,
+            )
+
         # 2. Process each source
         all_new_events = []
         for source_name, source_events in events_by_source.items():
@@ -139,18 +189,13 @@ class Storage:
             all_new_events.extend(source_events)
 
             # Update Source Metadata in Index
-            meta = source_meta.get(source_name) or IndexSourceDict(
-                count=0, last_updated_at=now_iso
-            )
-            last_updated = meta.get("last_updated_at", now_iso)
+            meta = _build_source_metadata(source_name, source_meta.get(source_name))
 
             if source_changed:
-                last_updated = now_iso
+                meta["last_updated_at"] = now_iso
 
-            source_meta[source_name] = {
-                "count": 0,  # Will calculate total below
-                "last_updated_at": last_updated,
-            }
+            meta["count"] = 0  # Will calculate total below
+            source_meta[source_name] = meta
 
         # 3. Group by Year and Calculate Source Totals
         events_by_year: dict[str, list[EventDict]] = {}
@@ -191,10 +236,9 @@ class Storage:
 
         # Update final counts in source_meta
         for name, count in source_counts.items():
-            if name in source_meta:
-                source_meta[name] = IndexSourceDict(
-                    count=count, last_updated_at=source_meta[name]["last_updated_at"]
-                )
+            meta = _build_source_metadata(name, source_meta.get(name))
+            meta["count"] = count
+            source_meta[name] = meta
 
         # 4. Prepare Index Structure
         # Ensure 'partitions' dict exists
@@ -202,25 +246,6 @@ class Storage:
 
         # 5. Process Each Partition
         all_saved_events = []
-
-        # Common Metadata for wrappers
-        sources_meta = [
-            Source(
-                country_code="SWE",
-                name="Swedish Eventor",
-                url="https://eventor.orientering.se",
-            ),
-            Source(
-                country_code="IOF",
-                name="IOF Eventor",
-                url="https://eventor.orienteering.org",
-            ),
-            Source(
-                country_code="NOR",
-                name="Norwegian Eventor",
-                url="https://eventor.orientering.no",
-            ),
-        ]
 
         for year, year_events in events_by_year.items():
             year_dir = self.default_data_dir / year
@@ -236,7 +261,7 @@ class Storage:
                 "meta": {
                     "sources": [
                         {"country_code": s.country_code, "name": s.name, "url": s.url}
-                        for s in sources_meta
+                        for s in SOURCES_METADATA.values()
                     ]
                 },
                 "events": sorted_events,
