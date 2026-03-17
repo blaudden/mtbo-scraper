@@ -6536,6 +6536,187 @@
         }
       ],
       "entry_deadlines": []
+    },
+    {
+      "id": "SWE_58114",
+      "name": "MTBO Gotland 1",
+      "start_time": "2026-04-29",
+      "end_time": "2026-04-29",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Visborgs OK",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Stefan Hellström"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:HgAHCUwdTUBWR11CVTQWCkEaAlwCHwg="
+        }
+      ],
+      "classes": [
+        "Kort",
+        "Lång",
+        "Mellan"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/58114",
+          "title": null,
+          "last_updated_at": "2026-03-17T17:36:57.529771+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": "Gotland",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "MTBO Gotland 1",
+          "datetimez": "2026-04-29T17:00:00+02:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_58115",
+      "name": "MTBO Smålandskusten Närtävling",
+      "start_time": "2026-06-11",
+      "end_time": "2026-06-11",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Ålems OK",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Stefan Olsson"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "070-2182110"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:HgAHCUwdTR0NAyUGCBgLDgMQDB8="
+        }
+      ],
+      "classes": [
+        "Kort",
+        "Lång",
+        "Mellan"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/58115",
+          "title": null,
+          "last_updated_at": "2026-03-17T17:36:57.529758+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Invitation",
+          "title": "Huvudinbjudan MTBO Smålandskusten",
+          "url": "/Documents/Event/120204/Huvudinbjudan-MTBO-Sm-landskusten",
+          "published_time": "2026-03-16"
+        }
+      ],
+      "information": "Detta är en av flera närtävlingar, Smålandskusten, se Huvudinbjudan för de andra datumen",
+      "region": "Småland",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "MTBO Smålandskusten Närtävling",
+          "datetimez": "2026-06-11T18:00:00+02:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "position": {
+            "lat": 56.9764028562459,
+            "lng": 16.306243345943
+          },
+          "areas": [
+            {
+              "lat": 56.9764028562459,
+              "lng": 16.306243345943,
+              "polygon": [
+                [
+                  56.98744832969177,
+                  16.293030759688726
+                ],
+                [
+                  56.9926758131262,
+                  16.27414927709354
+                ],
+                [
+                  57.005994141779865,
+                  16.22029063340522
+                ],
+                [
+                  56.96804964485605,
+                  16.20450447599598
+                ],
+                [
+                  56.94247563205269,
+                  16.250975186528922
+                ],
+                [
+                  56.94605002717688,
+                  16.328207675001845
+                ],
+                [
+                  56.98126503754767,
+                  16.319782305195023
+                ],
+                [
+                  56.98744832969177,
+                  16.293030759688726
+                ]
+              ]
+            }
+          ],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
     }
   ]
 }
