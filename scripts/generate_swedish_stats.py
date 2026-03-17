@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
+# /// script
+# dependencies = ["matplotlib", "numpy"]
+# ///
 """
 Generate year-over-year statistics for Swedish MTBO events (2010-2025).
-Outputs a summary table and generates charts for:
-1. Annual Overview (Events & Participants)
-2. Seasonality (Events per month)
-3. Detailed Event Timeline (Stacked participant counts)
+Outputs a summary table and generates charts.
+
+Usage:
+    uv run scripts/generate_swedish_stats.py
 """
 
 import json
