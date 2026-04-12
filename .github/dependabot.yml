@@ -1,0 +1,48 @@
+version: 2
+updates:
+  # Maintain Python dependencies
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Europe/Stockholm"
+
+    # Strictly limit to 2 open PRs (one for safe updates, one for majors)
+    open-pull-requests-limit: 2
+    groups:
+      # Group all safe minor and patch updates into a single PR
+      all-python-minor-patch:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+      # Group all major upgrades into a single separate "Radar" PR
+      all-python-major:
+        patterns:
+          - "*"
+        update-types:
+          - "major"
+    labels:
+      - "dependencies"
+      - "automated"
+
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+
+  # Maintain GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    open-pull-requests-limit: 1
+    groups:
+      all-actions:
+        patterns:
+          - "*"
