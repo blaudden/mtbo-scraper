@@ -32,7 +32,8 @@ updates:
 
     commit-message:
       prefix: "chore"
-      include: "scope"
+
+    rebase-strategy: "disabled"
 
   # Maintain GitHub Actions
   - package-ecosystem: "github-actions"
