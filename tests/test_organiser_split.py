@@ -45,7 +45,8 @@ def test_iof_organiser_multiple_clubs_split(parser: EventorParser) -> None:
     organiser_names = [o.name for o in organisers]
 
     # Expected: ["Hungary", "Balatonfuredi Sport Club", "Hangya SZKE"]
-    # Current behavior likely results in ["Hungary", "Balatonfuredi Sport Club\nHangya SZKE"]
+    # Current behavior should result in successful split
+
     assert "Hungary" in organiser_names
     assert "Balatonfuredi Sport Club" in organiser_names
     assert "Hangya SZKE" in organiser_names

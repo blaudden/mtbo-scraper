@@ -273,7 +273,7 @@ class Scraper:
                 ):
                     original_patch = undetected_chromedriver.patcher.Patcher.patch_exe
 
-                    def patched_patch_exe(self):
+                    def patched_patch_exe(self, original_patch=original_patch):
                         original_patch(self)
                         if sys.platform.startswith("darwin"):
                             try:
