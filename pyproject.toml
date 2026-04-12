@@ -12,7 +12,7 @@ dependencies = [
     "pyvirtualdisplay>=3.0",
     "pyyaml>=6.0.3",
     "requests>=2.32.5",
-    "structlog>=24.1.0",
+    "structlog>=25.5.0",
     "undetected-chromedriver>=3.5.5",
     "setuptools",
     "curl-cffi>=0.14.0",
