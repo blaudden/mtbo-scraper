@@ -8,11 +8,11 @@ dependencies = [
     "beautifulsoup4>=4.14.3",
     "click>=8.3.1",
     "lxml>=6.0.2",
-    "pycountry>=24.6.1",
+    "pycountry>=26.2.16",
     "pyvirtualdisplay>=3.0",
     "pyyaml>=6.0.3",
     "requests>=2.32.5",
-    "structlog>=24.1.0",
+    "structlog>=25.5.0",
     "undetected-chromedriver>=3.5.5",
     "setuptools",
     "curl-cffi>=0.14.0",
@@ -31,7 +31,7 @@ dev = [
     "types-pyyaml>=6.0.12.20250915",
     "types-requests>=2.32.4.20260107",
     "matplotlib>=3.10.0",
-    "numpy>=2.2.0",
+    "numpy>=2.4.4",
 ]
 
 [tool.pytest.ini_options]
