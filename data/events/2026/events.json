@@ -2024,22 +2024,40 @@
           ],
           "urls": [
             {
-              "type": "EntryList",
-              "url": "/Entry?eventId=8805",
-              "title": "Enter",
-              "last_updated_at": "2026-02-07T22:09:12.439677+00:00"
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=//Events/Show/185812",
+              "title": "Map, courses and routes in Livelox",
+              "last_updated_at": "2026-04-25T22:13:52.239154+00:00"
             },
             {
               "type": "EntryList",
               "url": "/Events/Entries?eventId=8805&groupBy=EventClass",
               "title": "All entries",
               "last_updated_at": "2026-04-12T19:43:08.816778+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=8805&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-04-25T22:13:52.239154+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=8805&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-04-25T22:13:52.239154+00:00"
             }
           ],
           "documents": [],
           "entry_counts": null,
-          "start_counts": null,
-          "result_counts": null,
+          "start_counts": {
+            "M21E": 15,
+            "W21E": 6
+          },
+          "result_counts": {
+            "M21E": 15,
+            "W21E": 6
+          },
           "fingerprints": []
         }
       ],
@@ -2193,22 +2211,40 @@
           ],
           "urls": [
             {
-              "type": "EntryList",
-              "url": "/Entry?eventId=8806",
-              "title": "Enter",
-              "last_updated_at": "2026-02-07T22:09:12.439656+00:00"
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=//Events/Show/185813",
+              "title": "Map, courses and routes in Livelox",
+              "last_updated_at": "2026-04-25T22:13:52.239172+00:00"
             },
             {
               "type": "EntryList",
               "url": "/Events/Entries?eventId=8806&groupBy=EventClass",
               "title": "All entries",
               "last_updated_at": "2026-04-12T19:43:08.816801+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=8806&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-04-25T22:13:52.239172+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=8806&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-04-25T22:13:52.239172+00:00"
             }
           ],
           "documents": [],
           "entry_counts": null,
-          "start_counts": null,
-          "result_counts": null,
+          "start_counts": {
+            "M21E": 18,
+            "W21E": 7
+          },
+          "result_counts": {
+            "M21E": 18,
+            "W21E": 7
+          },
           "fingerprints": []
         }
       ],
@@ -2785,21 +2821,33 @@
           "urls": [
             {
               "type": "EntryList",
-              "url": "/Entry?eventId=8906",
-              "title": "Enter",
-              "last_updated_at": "2026-02-07T22:09:12.439813+00:00"
-            },
-            {
-              "type": "EntryList",
               "url": "/Events/Entries?eventId=8906&groupBy=EventClass",
               "title": "All entries",
               "last_updated_at": "2026-02-07T22:09:12.439813+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=8906&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-04-25T22:13:52.239187+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=8906&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-04-25T22:13:52.239187+00:00"
             }
           ],
           "documents": [],
           "entry_counts": null,
-          "start_counts": null,
-          "result_counts": null,
+          "start_counts": {
+            "M21E": 14,
+            "W21E": 6
+          },
+          "result_counts": {
+            "M21E": 14,
+            "W21E": 6
+          },
           "fingerprints": []
         }
       ],
@@ -2958,21 +3006,33 @@
           "urls": [
             {
               "type": "EntryList",
-              "url": "/Entry?eventId=8907",
-              "title": "Enter",
-              "last_updated_at": "2026-02-07T22:09:12.439881+00:00"
-            },
-            {
-              "type": "EntryList",
               "url": "/Events/Entries?eventId=8907&groupBy=EventClass",
               "title": "All entries",
               "last_updated_at": "2026-02-07T22:09:12.439881+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=8907&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-04-25T22:13:52.239118+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=8907&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-04-25T22:13:52.239118+00:00"
             }
           ],
           "documents": [],
           "entry_counts": null,
-          "start_counts": null,
-          "result_counts": null,
+          "start_counts": {
+            "M21E": 13,
+            "W21E": 6
+          },
+          "result_counts": {
+            "M21E": 13,
+            "W21E": 6
+          },
           "fingerprints": []
         }
       ],
@@ -3267,6 +3327,204 @@
               "last_updated_at": "2026-03-04T20:42:40.086113+00:00"
             }
           ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_8999",
+      "name": "MTBO Estonian championships in Middle distance",
+      "start_time": "2026-07-25",
+      "end_time": "2026-07-25",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Estonia",
+          "country_code": "EST"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "+3725256695"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:HxUXAwMYFhYTFSUBCAANAkwSTRcE"
+        }
+      ],
+      "classes": [],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/8999",
+          "title": null,
+          "last_updated_at": "2026-04-25T22:13:52.238935+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "https://avaleht.peko.ee/",
+          "title": null,
+          "last_updated_at": "2026-04-25T22:13:52.238935+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "MTBO Estonian championships in Middle distance",
+          "datetimez": "2026-07-25T00:00:00+03:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_9000",
+      "name": "MTBO Estonian championships in Sprint distance",
+      "start_time": "2026-07-25",
+      "end_time": "2026-07-25",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Estonia",
+          "country_code": "EST"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "+3725256695"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:HxUXAwMYFhYTFSUBCAANAkwSTRcE"
+        }
+      ],
+      "classes": [],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/9000",
+          "title": null,
+          "last_updated_at": "2026-04-25T22:13:52.238916+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "https://avaleht.peko.ee/",
+          "title": null,
+          "last_updated_at": "2026-04-25T22:13:52.238916+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "MTBO Estonian championships in Sprint distance",
+          "datetimez": "2026-07-25T00:00:00+03:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "IOF_9001",
+      "name": "MTBO Estonian championships in Long distance",
+      "start_time": "2026-07-26",
+      "end_time": "2026-07-26",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "World Ranking Event"
+      ],
+      "tags": [],
+      "form": null,
+      "organisers": [
+        {
+          "name": "Estonia",
+          "country_code": "EST"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact phone number",
+          "name": "+3725256695"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:HxUXAwMYFhYTFSUBCAANAkwSTRcE"
+        }
+      ],
+      "classes": [],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/9001",
+          "title": null,
+          "last_updated_at": "2026-04-25T22:13:52.238994+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "https://avaleht.peko.ee/",
+          "title": null,
+          "last_updated_at": "2026-04-25T22:13:52.238994+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": null,
+      "punching_system": null,
+      "races": [
+        {
+          "race_number": 1,
+          "name": "MTBO Estonian championships in Long distance",
+          "datetimez": "2026-07-26T00:00:00+03:00",
+          "discipline": "Other",
+          "night_or_day": null,
+          "position": null,
+          "areas": [],
+          "urls": [],
           "documents": [],
           "entry_counts": null,
           "start_counts": null,
@@ -6289,7 +6547,7 @@
         },
         {
           "role": "Event controller",
-          "name": "Eero Niemi"
+          "name": "Sara Forsgren"
         },
         {
           "role": "Course controller",
@@ -6414,6 +6672,12 @@
       ],
       "documents": [
         {
+          "type": "Invitation",
+          "title": "Inbjudan",
+          "url": "/Documents/Event/121365/Inbjudan",
+          "published_time": "2026-04-17"
+        },
+        {
           "type": "Other",
           "title": "Kartnorm MTBO",
           "url": "/Documents/Event/120011/Kartnorm-MTBO",
@@ -6441,7 +6705,20 @@
             "lng": 14.961821659788
           },
           "areas": [],
-          "urls": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Entry?eventId=57925",
+              "title": "Enter and/or order services",
+              "last_updated_at": "2026-04-25T22:13:52.238823+00:00"
+            },
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=57925&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-04-25T22:13:52.238823+00:00"
+            }
+          ],
           "documents": [],
           "entry_counts": null,
           "start_counts": null,
@@ -6501,6 +6778,12 @@
       ],
       "documents": [
         {
+          "type": "Invitation",
+          "title": "Inbjudan",
+          "url": "/Documents/Event/121366/Inbjudan",
+          "published_time": "2026-04-17"
+        },
+        {
           "type": "Other",
           "title": "Kartnorm MTBO",
           "url": "/Documents/Event/120014/Kartnorm-MTBO",
@@ -6528,7 +6811,20 @@
             "lng": 14.9404933629657
           },
           "areas": [],
-          "urls": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Entry?eventId=57926",
+              "title": "Enter and/or order services",
+              "last_updated_at": "2026-04-25T22:13:52.238516+00:00"
+            },
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=57926&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-04-25T22:13:52.238516+00:00"
+            }
+          ],
           "documents": [],
           "entry_counts": null,
           "start_counts": null,
@@ -6833,6 +7129,14 @@
         {
           "role": "Contact email",
           "name": "enc:HgAHCUwdTUBWR11CVTQWCkEaAlwCHwg="
+        },
+        {
+          "role": "Event director",
+          "name": "Stefan Persson"
+        },
+        {
+          "role": "Course setter",
+          "name": "Stefan Persson"
         }
       ],
       "classes": [
@@ -6848,20 +7152,37 @@
           "last_updated_at": "2026-03-17T17:36:57.529771+00:00"
         }
       ],
-      "documents": [],
-      "information": null,
+      "documents": [
+        {
+          "type": "Bulletin",
+          "title": "PM",
+          "url": "/Documents/Event/121712/PM",
+          "published_time": "2026-04-25"
+        }
+      ],
+      "information": "OBS Start mellan 17:30 och 18:30",
       "region": "Gotland",
       "punching_system": "Sportident",
       "races": [
         {
           "race_number": 1,
           "name": "MTBO Gotland 1",
-          "datetimez": "2026-04-29T17:00:00+02:00",
+          "datetimez": "2026-04-29T17:30:00+02:00",
           "discipline": "Long",
           "night_or_day": "day",
-          "position": null,
+          "position": {
+            "lat": 57.6120804305387,
+            "lng": 18.3815011801238
+          },
           "areas": [],
-          "urls": [],
+          "urls": [
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/186910",
+              "title": "Map, courses and routes will be available in Livelox",
+              "last_updated_at": "2026-04-25T22:13:52.238771+00:00"
+            }
+          ],
           "documents": [],
           "entry_counts": null,
           "start_counts": null,
@@ -7141,12 +7462,6 @@
           "urls": [
             {
               "type": "EntryList",
-              "url": "/Entry?eventId=58155",
-              "title": "Enter",
-              "last_updated_at": "2026-04-12T19:43:08.816367+00:00"
-            },
-            {
-              "type": "EntryList",
               "url": "/Events/Entries?eventId=58155&groupBy=EventClass",
               "title": "All entries",
               "last_updated_at": "2026-04-12T19:43:08.816367+00:00"
@@ -7186,11 +7501,15 @@
         },
         {
           "role": "Contact phone number",
-          "name": "0703146421"
+          "name": "070 6047405"
         },
         {
           "role": "Contact email",
-          "name": "enc:DBoMBkYSTRMKXgAcCgcWHUIeIxoOBAgTBBhMDEIe"
+          "name": "enc:DBoGHUgaTR4AHQoELRIDA1gdTQEE"
+        },
+        {
+          "role": "Course setter",
+          "name": "Andrei Lamov"
         }
       ],
       "classes": [
@@ -7206,7 +7525,14 @@
           "last_updated_at": "2026-04-12T19:43:08.816333+00:00"
         }
       ],
-      "documents": [],
+      "documents": [
+        {
+          "type": "Invitation",
+          "title": "Inbjudan",
+          "url": "/Documents/Event/121322/Inbjudan",
+          "published_time": "2026-04-16"
+        }
+      ],
       "information": "MTBO-träning i och runt Falun. Finns 3 alternativ - Nybörjare, Kort och Lång. Anmäl dig senast på måndagen för att vara säker på att få en karta. Cyklister som inte är med i OK Kåre betalar 40 kr, swish till OK Kåres nr: 1233999018.\nAlla är välkomna!\nSamling denna gång: Falu Gruva, Krongårdsvägen",
       "region": "Dalarna",
       "punching_system": "other",
@@ -7223,12 +7549,6 @@
           },
           "areas": [],
           "urls": [
-            {
-              "type": "EntryList",
-              "url": "/Entry?eventId=58156",
-              "title": "Enter",
-              "last_updated_at": "2026-04-12T19:43:08.816337+00:00"
-            },
             {
               "type": "EntryList",
               "url": "/Events/Entries?eventId=58156&groupBy=EventClass",
@@ -7644,13 +7964,13 @@
     },
     {
       "id": "SWE_58162",
-      "name": "OK Kåre MTBO träning #9",
+      "name": "Dalaserien MTBO #3",
       "start_time": "2026-06-03",
       "end_time": "2026-06-03",
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
-        "Club"
+        "Local"
       ],
       "tags": [],
       "form": "Individual",
@@ -7672,12 +7992,17 @@
         {
           "role": "Contact email",
           "name": "enc:DBoMBkYSTRMKXgAcCgcWHUIeIxoOBAgTBBhMDEIe"
+        },
+        {
+          "role": "Course setter",
+          "name": "Stefan Johansson"
         }
       ],
       "classes": [
-        "Kort",
-        "Lång",
-        "Nybörjare"
+        "Bana A",
+        "Bana B",
+        "Bana C",
+        "Bana D"
       ],
       "urls": [
         {
@@ -7688,15 +8013,15 @@
         }
       ],
       "documents": [],
-      "information": "MTBO-träning i och runt Falun. Finns 3 alternativ - Nybörjare, Kort och Lång. Anmäl dig senast på måndagen för att vara säker på att få en karta. Cyklister som inte är med i OK Kåre betalar 40 kr, swish till OK Kåres nr: 1233999018.\nAlla är välkomna!",
+      "information": null,
       "region": "Dalarna",
-      "punching_system": "other",
+      "punching_system": "Sportident",
       "races": [
         {
           "race_number": 1,
-          "name": "OK Kåre MTBO träning #9",
-          "datetimez": "2026-06-03T18:00:00+02:00",
-          "discipline": "Long",
+          "name": "Dalaserien MTBO #3",
+          "datetimez": "2026-06-03T17:00:00+02:00",
+          "discipline": "Middle",
           "night_or_day": "day",
           "position": {
             "lat": 60.6067566071808,
@@ -7838,7 +8163,17 @@
           "name": "Johan Wennermark"
         }
       ],
-      "classes": [],
+      "classes": [
+        "D-16",
+        "D17-44",
+        "D45-",
+        "H-16",
+        "H17-44",
+        "H45-",
+        "Prova-på",
+        "Öppen kort",
+        "Öppen mellan"
+      ],
       "urls": [
         {
           "type": "Path",
@@ -7847,7 +8182,14 @@
           "last_updated_at": "2026-04-12T19:43:08.816666+00:00"
         }
       ],
-      "documents": [],
+      "documents": [
+        {
+          "type": "Invitation",
+          "title": "Inbjudan",
+          "url": "/Documents/Event/121561/Inbjudan",
+          "published_time": "2026-04-21"
+        }
+      ],
       "information": null,
       "region": "Blekinge",
       "punching_system": "Sportident",
@@ -7855,7 +8197,7 @@
         {
           "race_number": 1,
           "name": "MTBO Närtävling",
-          "datetimez": "2026-05-30T00:00:00+02:00",
+          "datetimez": "2026-05-30T10:00:00+02:00",
           "discipline": "Sprint",
           "night_or_day": "day",
           "position": {
@@ -7863,7 +8205,20 @@
             "lng": 14.7654432569702
           },
           "areas": [],
-          "urls": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Entry?eventId=58165",
+              "title": "Enter",
+              "last_updated_at": "2026-04-25T22:13:52.238431+00:00"
+            },
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=58165&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-04-25T22:13:52.238431+00:00"
+            }
+          ],
           "documents": [],
           "entry_counts": null,
           "start_counts": null,
@@ -7910,10 +8265,9 @@
         }
       ],
       "classes": [
-        "2 km",
-        "4 km",
-        "8 km",
-        "Damer 11",
+        "3 km",
+        "7 km",
+        "Damer 10",
         "Herrar 11",
         "Ungdom/motion 3"
       ],
@@ -7931,9 +8285,15 @@
           "title": "Inbjudan",
           "url": "/Documents/Event/120338/Inbjudan",
           "published_time": "2026-03-22"
+        },
+        {
+          "type": "Bulletin",
+          "title": "PM",
+          "url": "/Documents/Event/121363/PM",
+          "published_time": "2026-04-17"
         }
       ],
-      "information": "Helgen 18-19 april 2026 kommer Sveriges MTBO landslag till Huskvarna/Jönköping för årets första träningshelg.\nI samband med detta arrangerar IKHP Huskvarna en närtävling (där du kan jämföra dig med landslagsåkarna) samt erbjuder ett flertal MTBO träningar under helgen, se inbjudan.",
+      "information": "26-04-17 Nu finns PM att läsa.\nHelgen 18-19 april 2026 kommer Sveriges MTBO landslag till Huskvarna/Jönköping för årets första träningshelg.\nI samband med detta arrangerar IKHP Huskvarna en närtävling (där du kan jämföra dig med landslagsåkarna) samt erbjuder ett flertal MTBO träningar under helgen, se inbjudan.",
       "region": "Småland",
       "punching_system": "Sportident",
       "races": [
@@ -7973,23 +8333,89 @@
           ],
           "urls": [
             {
-              "type": "EntryList",
-              "url": "/Entry?eventId=58210",
-              "title": "Enter",
-              "last_updated_at": "2026-04-12T19:43:08.816376+00:00"
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/186013",
+              "title": "Map, courses and routes in Livelox",
+              "last_updated_at": "2026-04-25T22:13:52.238692+00:00"
             },
             {
               "type": "EntryList",
               "url": "/Events/Entries?eventId=58210&groupBy=EventClass",
               "title": "All entries",
               "last_updated_at": "2026-04-12T19:43:08.816376+00:00"
+            },
+            {
+              "type": "ResultList",
+              "url": "/Events/ResultList?eventId=58210&groupBy=EventClass",
+              "title": "Result list",
+              "last_updated_at": "2026-04-25T22:13:52.238692+00:00"
+            },
+            {
+              "type": "StartList",
+              "url": "/Events/StartList?eventId=58210&groupBy=EventClass",
+              "title": "Start list",
+              "last_updated_at": "2026-04-25T22:13:52.238692+00:00"
             }
           ],
           "documents": [],
           "entry_counts": null,
-          "start_counts": null,
-          "result_counts": null,
-          "fingerprints": []
+          "start_counts": {
+            "Herrar 11,7 km": 21,
+            "Damer 10,7 km": 20,
+            "Ungdom/motion 3,3 km": 4
+          },
+          "result_counts": {
+            "Herrar 11,7 km": 21,
+            "Damer 10,7 km": 20,
+            "Ungdom/motion 3,3 km": 4
+          },
+          "fingerprints": [
+            "042173b9aa097dfc62fec7b214f3bddd862dbe5c5f42a28136a812a59f02d78f",
+            "12bc07431042426573fba82a11a5bc840411af103402f2f524beeaf1bcbf2f49",
+            "1ee61959927bc931c27d41374e14b951c41fe7917a61947dea1ba759c6ca8848",
+            "204f843c22f5fe89a693b2e84f6bf7685c682b5601b8ba37e0a44c2f988bb921",
+            "224c25bff1b3824787906e5b075e6ec3a984debd30d5d02b1070e99f7533814c",
+            "24108de8f05e5db82b55bcedcd514ba62ba231ffdff00b3f6bff4fe9c65d1a02",
+            "2655074a02afca37a3a5fedec2332a96280f9b5c564c9cdd006868431a922979",
+            "2bbeb928a4bc44cb78ba45d9101af4e0ed34a7983a2f433978722502e20bf024",
+            "2cdcf8a50441103eed618a211ae6d3a5f9ddf424a83e93ccaf7626943eb8ca1b",
+            "30274db6d725ce1d89944d6f3ee402a9d36529445f3c8da90911afba2dd57d2e",
+            "3a7cf5f935e75b4aa9a41223744898b73473ef5e801c04fd8b5ab0133be869e5",
+            "3b2abd811a65f8b0580ab79b89e988df36c01b2b05eb4300ebe9c406d452a8d3",
+            "43f0cac19eee6b5b2a53a2ee128b0faebbc0e25a1c0bc475c13ae611c6bda006",
+            "44e74fee1a17e5ef3db4c1c521119a58048013ae3e45bc8cd20dea706638b3f6",
+            "54de0949cd745f2c2d3d033a0125e27ab0e9a6afd154aeb4d58fd290435aa8ce",
+            "615733501cc1b8300b74d37cb7f9e068d718dd4fa1cb1cccf1498872c40363ac",
+            "6a4c8046375f8f4d51dca839ddec2a6d4ae383f056fbcf66b71fe1144c6f1cb7",
+            "6cba10c551e07ba0f182dc06bf8c5757b1edf58e8e08a995b0ea03ea21c0e92d",
+            "6d2196b62681c4688bdbca9f8e4adb43478afdcff44fc30dc7369ab1b186cbaa",
+            "6d4567e22a4c9fa89bc1d2730050d2e96f850a0808e071eb324b37b940723c55",
+            "7f2ca67b9b4bc47abbe6e6ff373ab4463f943921bdb875e9bd414ed4e44a024e",
+            "80a66689e2aeeaffec874dc02d1f18c6f347601c97ba17ba8ab95447b1040060",
+            "8979e3ef3a41ade41fbc8296a4149f43eda8e67bc4c3e9de330f7ee94afdbaf7",
+            "8a5a8df1f81b5071db7a2c82fc2f5875af3d436d565824dd3f0cce199c6e2d80",
+            "8c3780d5193002f18e0d8f1a007286d15532ba72558a027f8d79cd42284ddcc1",
+            "9494133763833752768196b282baa4ffe581ce02e299e6e639d10777005bced0",
+            "a98c9433b793192fc83b47c41a7ff02d1848919d7abdedfbe5236c45c2528711",
+            "aedd759f34f3811cdcda25c481af8839cea24bec117143737f736aba673f0fc1",
+            "b156ab3f20e94dfe448c63bdfbaad9032d64042f8c7964463785778d267c681e",
+            "b30e9d82c96197602bb239713961347f4568b0caa11fa3388b66a0c93c22a5fc",
+            "b6ce920984ee7db33464e031fcbe3d537866d29ef5b5388a86cc8d55b230c4bc",
+            "beb25fb40a855530d02706cf4fb1bbafb88894c528c15f5eadd50db2535624de",
+            "c27bb053f2c01e2932232d0341c9da5061ef47b36973179e8a2666b3c4383cf5",
+            "c298b611db7ebfd328df4e317e488c99785a065b4244f7cbbe4773685b39766e",
+            "cdf9fcfd5728552b001f5d7a73a7feee16cf088c6ef34046c70ce8a06e6068b2",
+            "d069aca574652aa5bf586dfceb3abc2f76b1b3c5b0ca5b16804706a7d26c3f28",
+            "d12c0a71c1e8553bede5d0641bef1285a9aebb756fa1d039830dfc40a0d93c0f",
+            "d6588f2372a6593d6748d7a7987c6f1c2f9eedd87e5e2cf8ba6a6826d0772846",
+            "e2e4a902aa5972294d6e871cf5283de68a8026ab30c423abad7d9d4bd6448e78",
+            "e56fa549ef049fd47e4853cde49ac9c16c6a835a71ba3a2c325adfe810b85d72",
+            "ed710eee02a726be354f5933a43469db905b58d36c479b9357eaab32b9bf9017",
+            "edd864db9241c49ab223fbb946b98e206195e86596cf73e0412ebec956c505be",
+            "f04680060fa3315835510d5484d55efe1d5092db409be626b8b67522ff015b12",
+            "f1f858f941631b4ec0f6536849e18d4da23574adce19f40a71e185e07b319641",
+            "f4ae677290870ff8329ad162924738bf08d6a3156c3d581ec255f2a2fa1be70d"
+          ]
         }
       ],
       "entry_deadlines": []
@@ -8197,7 +8623,7 @@
     },
     {
       "id": "SWE_58247",
-      "name": "Mtbo-träning",
+      "name": "Mtbo närtävling",
       "start_time": "2026-04-29",
       "end_time": "2026-04-29",
       "status": "Sanctioned",
@@ -8231,7 +8657,14 @@
           "name": "Lennart Karlsson"
         }
       ],
-      "classes": [],
+      "classes": [
+        "2",
+        "8",
+        "9",
+        "Öppen 10",
+        "Öppen 5",
+        "Öppen 7"
+      ],
       "urls": [
         {
           "type": "Path",
@@ -8240,20 +8673,40 @@
           "last_updated_at": "2026-04-12T19:43:08.816467+00:00"
         }
       ],
-      "documents": [],
+      "documents": [
+        {
+          "type": "Invitation",
+          "title": "Inbjudan",
+          "url": "/Documents/Event/121287/Inbjudan",
+          "published_time": "2026-04-15"
+        }
+      ],
       "information": null,
       "region": "Västergötland",
       "punching_system": "Sportident",
       "races": [
         {
           "race_number": 1,
-          "name": "Mtbo-träning",
+          "name": "Mtbo närtävling",
           "datetimez": "2026-04-29T00:00:00+02:00",
-          "discipline": "Middle",
+          "discipline": "Long",
           "night_or_day": "day",
           "position": null,
           "areas": [],
-          "urls": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Entry?eventId=58247",
+              "title": "Enter",
+              "last_updated_at": "2026-04-25T22:13:52.238894+00:00"
+            },
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=58247&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-04-25T22:13:52.238894+00:00"
+            }
+          ],
           "documents": [],
           "entry_counts": null,
           "start_counts": null,
@@ -8345,9 +8798,15 @@
           "title": "Inbjudan",
           "url": "/Documents/Event/120960/Inbjudan",
           "published_time": "2026-04-09"
+        },
+        {
+          "type": "Bulletin",
+          "title": "PM MTBO",
+          "url": "/Documents/Event/121569/PM-MTBO",
+          "published_time": "2026-04-22"
         }
       ],
-      "information": "Välkomna till Motionsorientering och Ungdomsserie samt MTBO vid Spånen i Alvesta.\nFör första gången arrangerar vi skogsorientering samtidigt med mountiainbikeorientering vid samma tävlingsplats. Banorna för fot-orientering respektive cykel-orientering kommer naturligtvis förläggas på olika delar av området.\nAnmälan till Ungdomsserie görs innan tävling.\nAnmälan till Motionsklasser och MTBO-klasser görs innan tävling eller på tävlingsplatsen.\nFri minutstart mellan kl 17:00 och 18:30 för både Ungdomsserie, Motionsklasser och MTBO-klasser.\nLiveresultat kommer att presenteras på:\nhttps://liveresultat.orientering.se/index.php",
+      "information": "Välkomna till Motionsorientering och Ungdomsserie samt MTBO vid Spånen i Alvesta.\nFör första gången arrangerar vi skogsorientering samtidigt med mountainbikeorientering vid samma tävlingsplats. Banorna för fot-orientering respektive cykel-orientering kommer naturligtvis förläggas på olika delar av området.\nAnmälan till Ungdomsserie görs innan tävling.\nAnmälan till Motionsklasser och MTBO-klasser görs innan tävling eller på tävlingsplatsen.\nFri minutstart mellan kl 17:00 och 18:30 för både Ungdomsserie, Motionsklasser och MTBO-klasser.\nLiveresultat kommer att presenteras på:\nhttps://liveresultat.orientering.se/index.php",
       "region": "Småland",
       "punching_system": "Sportident",
       "races": [
@@ -8368,6 +8827,18 @@
               "url": "/Entry?eventId=58333",
               "title": "Enter",
               "last_updated_at": "2026-04-12T19:43:08.816508+00:00"
+            },
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=58333&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-04-25T22:13:52.238781+00:00"
+            },
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/186700",
+              "title": "Map, courses and routes will be available in Livelox",
+              "last_updated_at": "2026-04-25T22:13:52.238781+00:00"
             }
           ],
           "documents": [],
@@ -8427,7 +8898,14 @@
           "last_updated_at": "2026-04-12T19:43:08.816654+00:00"
         }
       ],
-      "documents": [],
+      "documents": [
+        {
+          "type": "Invitation",
+          "title": "Inbjudan",
+          "url": "/Documents/Event/121230/Inbjudan",
+          "published_time": "2026-04-14"
+        }
+      ],
       "information": null,
       "region": "Östergötland",
       "punching_system": "Sportident",
@@ -8443,7 +8921,20 @@
             "lng": 15.7994645865184
           },
           "areas": [],
-          "urls": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Entry?eventId=58348",
+              "title": "Enter",
+              "last_updated_at": "2026-04-25T22:13:52.238419+00:00"
+            },
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=58348&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-04-25T22:13:52.238419+00:00"
+            }
+          ],
           "documents": [],
           "entry_counts": null,
           "start_counts": null,
@@ -8984,6 +9475,12 @@
               "url": "/Events/Entries?eventId=58614&groupBy=EventClass",
               "title": "All entries",
               "last_updated_at": "2026-04-12T19:43:08.816493+00:00"
+            },
+            {
+              "type": "Livelox",
+              "url": "/Home/RedirectToLivelox?redirectUrl=/Events/Show/186703",
+              "title": "Map, courses and routes will be available in Livelox",
+              "last_updated_at": "2026-04-25T22:13:52.238707+00:00"
             }
           ],
           "documents": [],
@@ -9003,7 +9500,7 @@
       "status": "Sanctioned",
       "original_status": "Active",
       "types": [
-        "Club"
+        "Local"
       ],
       "tags": [],
       "form": "Individual",
@@ -9025,12 +9522,15 @@
         {
           "role": "Contact email",
           "name": "enc:ARUQHAMDDBwVFQsyChkDBkFdAB0M"
+        },
+        {
+          "role": "Event director",
+          "name": "Lars Pontén"
         }
       ],
       "classes": [
-        "Lång",
-        "Mellan",
-        "Prova på kort"
+        "MTB-cykel",
+        "Prova på vanlig cykel"
       ],
       "urls": [
         {
@@ -9045,12 +9545,12 @@
           "type": "Invitation",
           "title": "Inbjudan",
           "url": "/Documents/Event/121094/Inbjudan",
-          "published_time": "2026-04-11"
+          "published_time": "2026-04-15"
         }
       ],
       "information": null,
       "region": "Uppland",
-      "punching_system": "other",
+      "punching_system": "Sportident",
       "races": [
         {
           "race_number": 1,
@@ -9069,6 +9569,12 @@
               "url": "/Entry?eventId=58722",
               "title": "Enter and/or order services",
               "last_updated_at": "2026-04-12T19:43:08.816487+00:00"
+            },
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=58722&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-04-25T22:13:52.238719+00:00"
             }
           ],
           "documents": [],
@@ -9171,6 +9677,645 @@
               "url": "/Events/Entries?eventId=58724&groupBy=EventClass",
               "title": "All entries",
               "last_updated_at": "2026-04-12T19:43:08.816500+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_58750",
+      "name": "MTBO Träning",
+      "start_time": "2026-04-20",
+      "end_time": "2026-04-20",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Club"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "OK Skogsfalken",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Cecilia Lingerud"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:Dh0RHERdDxsPFwAAGBAiCEASCh5PEwof"
+        }
+      ],
+      "classes": [
+        "Kort",
+        "Lång",
+        "Mellan",
+        "Provapå"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/58750",
+          "title": null,
+          "last_updated_at": "2026-04-25T22:13:52.238682+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "MTBO-träning samling lite norr om Mörrumsvägen 1 i Svängsta. 4 olika banor, kort 4 km, medel 6 km, lång 8,5 km och provapå 3 km. Icke medlemmar swishar 25kr till 1231464528. De som önskar tidtagning använder UsynligO-appen. Kartställ finns att låna.\nVarmt välkomna!",
+      "region": "Blekinge",
+      "punching_system": "other",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "MTBO Träning",
+          "datetimez": "2026-04-20T18:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "position": {
+            "lat": 56.2585890075647,
+            "lng": 14.770573312935
+          },
+          "areas": [
+            {
+              "lat": 56.2585890075647,
+              "lng": 14.770573312935,
+              "polygon": [
+                [
+                  56.25784476815596,
+                  14.771825491769194
+                ],
+                [
+                  56.245619734290585,
+                  14.787196151852282
+                ],
+                [
+                  56.22756762571595,
+                  14.787892512551743
+                ],
+                [
+                  56.2195630564606,
+                  14.77615942386833
+                ],
+                [
+                  56.21986492723323,
+                  14.75308517048043
+                ],
+                [
+                  56.255681140990504,
+                  14.763504103127078
+                ],
+                [
+                  56.25784476815596,
+                  14.771825491769194
+                ]
+              ]
+            }
+          ],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=58750&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-04-25T22:13:52.238683+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_58751",
+      "name": "Östgötaserien MTBO",
+      "start_time": "2026-05-04",
+      "end_time": "2026-05-04",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Björkfors GOIF",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Joakim Karlsson Kjellberg"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:HhhQXFsSDxYEHQQAHgILBG0UDhMIHEsRAhk="
+        }
+      ],
+      "classes": [
+        "Kort Dam",
+        "Kort Herr",
+        "Lång Dam",
+        "Lång Herr",
+        "Mellan Dam",
+        "Mellan Herr"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/58751",
+          "title": null,
+          "last_updated_at": "2026-04-25T22:13:52.238833+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Invitation",
+          "title": "Inbjudan",
+          "url": "/Documents/Event/121439/Inbjudan",
+          "published_time": "2026-04-20"
+        }
+      ],
+      "information": null,
+      "region": "Östergötland",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Östgötaserien MTBO",
+          "datetimez": "2026-05-04T17:00:00+02:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "position": {
+            "lat": 58.134239573138,
+            "lng": 15.6683791663489
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Entry?eventId=58751",
+              "title": "Enter",
+              "last_updated_at": "2026-04-25T22:13:52.238835+00:00"
+            },
+            {
+              "type": "EntryList",
+              "url": "/Events/Entries?eventId=58751&groupBy=EventClass",
+              "title": "All entries",
+              "last_updated_at": "2026-04-25T22:13:52.238835+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_58824",
+      "name": "Dalaserien MTBO #2",
+      "start_time": "2026-05-26",
+      "end_time": "2026-05-26",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Kvarnsvedens GOIF OK",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Esbjörn Andrén"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "0706658015"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:Hh8LA0ERBgAGMA0dGRkDBkFdAB0M"
+        }
+      ],
+      "classes": [],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/58824",
+          "title": null,
+          "last_updated_at": "2026-04-25T22:13:52.238477+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.kgoif.se",
+          "title": null,
+          "last_updated_at": "2026-04-25T22:13:52.238477+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Invitation",
+          "title": "Inbjudan",
+          "url": "/Documents/Event/121303/Inbjudan",
+          "published_time": "2026-04-15"
+        }
+      ],
+      "information": null,
+      "region": "Dalarna",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Dalaserien MTBO #2",
+          "datetimez": "2026-05-26T17:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "position": {
+            "lat": 60.524242732574,
+            "lng": 15.2834505799708
+          },
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_58911",
+      "name": "MTBO Träning",
+      "start_time": "2026-05-04",
+      "end_time": "2026-05-04",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Club"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "OK Skogsfalken",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Cecilia Lingerud"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:Dh0RHERdDxsPFwAAGBAiCEASCh5PEwof"
+        }
+      ],
+      "classes": [
+        "Kort",
+        "Lång",
+        "Mellan",
+        "Provapå"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/58911",
+          "title": null,
+          "last_updated_at": "2026-04-25T22:13:52.238871+00:00"
+        }
+      ],
+      "documents": [],
+      "information": "MTBO-träning samling vid Mörrums Jaktskytteklubb, Kylingaryds byväg, Mörrum. 4 olika banor, kort, medel, lång och provapå. Icke medlemmar swishar 25kr till 1231464528. De som önskar tidtagning använder UsynligO-appen. Kartställ finns att låna.\nVarmt välkomna!",
+      "region": "Blekinge",
+      "punching_system": "other",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "MTBO Träning",
+          "datetimez": "2026-05-04T18:00:00+02:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "position": {
+            "lat": 56.2184269495818,
+            "lng": 14.7657816249426
+          },
+          "areas": [
+            {
+              "lat": 56.2184269495818,
+              "lng": 14.7657816249426,
+              "polygon": [
+                [
+                  56.21507443296724,
+                  14.75731757472669
+                ],
+                [
+                  56.213217379119754,
+                  14.77173008372792
+                ],
+                [
+                  56.23490999011025,
+                  14.802136978860295
+                ],
+                [
+                  56.24506807252749,
+                  14.785791073417794
+                ],
+                [
+                  56.21507443296724,
+                  14.75731757472669
+                ]
+              ]
+            }
+          ],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Entry?eventId=58911",
+              "title": "Enter",
+              "last_updated_at": "2026-04-25T22:13:52.238877+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_58928",
+      "name": "Tränings-OL + Mtb-O",
+      "start_time": "2026-06-30",
+      "end_time": "2026-06-30",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [
+        "FootO"
+      ],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Ljusdals OK",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Bengt Agnér"
+        }
+      ],
+      "classes": [
+        "Korta",
+        "Långa",
+        "MTB Korta",
+        "MTB Långa",
+        "MTB Mellan",
+        "Mellan",
+        "Nybörjare"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/58928",
+          "title": null,
+          "last_updated_at": "2026-04-25T22:13:52.238445+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": "Hälsingland",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Tränings-OL + Mtb-O",
+          "datetimez": "2026-06-30T17:30:00+02:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "position": {
+            "lat": 61.8340718253345,
+            "lng": 16.0319382826236
+          },
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_58954",
+      "name": "Värmlandssserien MTBO #1",
+      "start_time": "2026-05-18",
+      "end_time": "2026-05-18",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "OK Jösse",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Anders Johansson"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "0730602567"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:DBoGCl8AIwAAEw4BGRUGQV4W"
+        },
+        {
+          "role": "Event director",
+          "name": "Anders Johansson"
+        },
+        {
+          "role": "Course setter",
+          "name": "Kristin Johansson"
+        }
+      ],
+      "classes": [
+        "Damer 3 km",
+        "Damer 5 km",
+        "Damer 8 km",
+        "Herrar 3 km",
+        "Herrar 5 km",
+        "Herrar 8 km"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/58954",
+          "title": null,
+          "last_updated_at": "2026-04-25T22:13:52.238505+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": "Värmland",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Värmlandssserien MTBO #1",
+          "datetimez": "2026-05-18T00:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "position": {
+            "lat": 59.6546762609721,
+            "lng": 12.6319129349294
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Entry?eventId=58954",
+              "title": "Enter",
+              "last_updated_at": "2026-04-25T22:13:52.238507+00:00"
+            }
+          ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_58956",
+      "name": "Smålandskustens Närtävling MTB-O",
+      "start_time": "2026-08-20",
+      "end_time": "2026-08-20",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Västerviks OK",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Thomas Almqvist"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "070-2382324"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:GRwNAkwATRMNHRQEBAcWWhszBB8AGQlcDhsP"
+        },
+        {
+          "role": "Event director",
+          "name": "Lotta Lidman Almqvist"
+        },
+        {
+          "role": "Course setter",
+          "name": "Thomas Almqvist"
+        }
+      ],
+      "classes": [
+        "Kort",
+        "Lång",
+        "Mellan"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/58956",
+          "title": null,
+          "last_updated_at": "2026-04-25T22:13:52.238549+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://Vasterviksok.se",
+          "title": null,
+          "last_updated_at": "2026-04-25T22:13:52.238549+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Invitation",
+          "title": "Inbjudan",
+          "url": "/Documents/Event/121632/Inbjudan",
+          "published_time": "2026-04-23"
+        }
+      ],
+      "information": null,
+      "region": "Småland",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Smålandskustens Närtävling MTB-O",
+          "datetimez": "2026-08-20T18:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "position": {
+            "lat": 57.7435243345026,
+            "lng": 16.6310506025168
+          },
+          "areas": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Entry?eventId=58956",
+              "title": "Enter",
+              "last_updated_at": "2026-04-25T22:13:52.238551+00:00"
             }
           ],
           "documents": [],
