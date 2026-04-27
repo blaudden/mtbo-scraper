@@ -2,7 +2,7 @@ name: Dependabot Auto-Approve & Merge
 
 on:
   pull_request_target:
-    branches: [ "main" ]
+    branches: ["main"]
 
 permissions:
   pull-requests: write
@@ -12,11 +12,12 @@ jobs:
   dependabot:
     runs-on: ubuntu-latest
     # Only run for Dependabot
-    if: github.actor == 'dependabot[bot]'
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
     steps:
       - name: Fetch Dependabot metadata
         id: metadata
-        uses: dependabot/fetch-metadata@v2
+        # v2.5.0
+        uses: dependabot/fetch-metadata@21025c705c08248db411dc16f3619e6b5f9ea21a
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
 
