@@ -140,7 +140,7 @@ class Storage:
         source_meta = current_index.get("sources", {})
 
         def _build_source_metadata(
-            source_id: str, existing_meta: dict | None
+            source_id: str, existing_meta: IndexSourceDict | None
         ) -> IndexSourceDict:
             """Constructs or updates metadata for a single source."""
             known = SOURCES_METADATA.get(source_id)

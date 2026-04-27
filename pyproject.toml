@@ -72,7 +72,6 @@ strict_equality = true
 
 [[tool.mypy.overrides]]
 module = [
-    "cloudscraper",
     "undetected_chromedriver",
     "pyvirtualdisplay",
 ]

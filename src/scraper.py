@@ -5,7 +5,7 @@ import shutil
 import subprocess
 import time
 from dataclasses import dataclass
-from typing import TYPE_CHECKING, cast
+from typing import TYPE_CHECKING, Any, cast
 
 import curl_cffi.requests as requests
 import structlog
@@ -266,14 +266,16 @@ class Scraper:
                 import subprocess
                 import sys
 
-                import undetected_chromedriver.patcher
+                import undetected_chromedriver.patcher  # type: ignore
 
                 if not hasattr(
                     undetected_chromedriver.patcher.Patcher, "_is_patched_for_mac"
                 ):
                     original_patch = undetected_chromedriver.patcher.Patcher.patch_exe
 
-                    def patched_patch_exe(self, original_patch=original_patch):
+                    def patched_patch_exe(
+                        self: Any, original_patch: Any = original_patch
+                    ) -> Any:
                         original_patch(self)
                         if sys.platform.startswith("darwin"):
                             try:
