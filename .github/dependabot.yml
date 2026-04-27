@@ -3,6 +3,8 @@ updates:
   # Maintain Python dependencies
   - package-ecosystem: "uv"
     directory: "/"
+    target-branch: "main"
+    rebase-strategy: "auto"
     schedule:
       interval: "weekly"
       day: "monday"
@@ -37,12 +39,20 @@ updates:
   # Maintain GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
+    target-branch: "main"
+    rebase-strategy: "auto"
     schedule:
       interval: "weekly"
       day: "monday"
       time: "09:00"
+      timezone: "Europe/Stockholm"
     open-pull-requests-limit: 1
     groups:
       all-actions:
         patterns:
           - "*"
+    labels:
+      - "dependencies"
+      - "automated"
+    commit-message:
+      prefix: "chore"
