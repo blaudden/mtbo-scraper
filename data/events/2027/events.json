@@ -1263,6 +1263,138 @@
         }
       ],
       "entry_deadlines": []
+    },
+    {
+      "id": "SWE_58993",
+      "name": "Sätervurpan sprint",
+      "start_time": "2027-08-14",
+      "end_time": "2027-08-14",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Säterbygdens OK",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Per Sandberg"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:DhUQBkMSExcTQV0yChkDBkFdAB0M"
+        }
+      ],
+      "classes": [],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/58993",
+          "title": null,
+          "last_updated_at": "2026-04-28T19:36:13.777242+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.saterbygden.se",
+          "title": null,
+          "last_updated_at": "2026-04-28T19:36:13.777242+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": "Dalarna",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Sätervurpan sprint",
+          "datetimez": "2027-08-14T00:00:00+02:00",
+          "discipline": "Sprint",
+          "night_or_day": "day",
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_58994",
+      "name": "Sätervurpan medel",
+      "start_time": "2027-08-15",
+      "end_time": "2027-08-15",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Säterbygdens OK",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Robert Östlund"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:DhUQBkMSExcTQV0yChkDBkFdAB0M"
+        }
+      ],
+      "classes": [],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/58994",
+          "title": null,
+          "last_updated_at": "2026-04-28T19:36:13.777226+00:00"
+        },
+        {
+          "type": "Website",
+          "url": "http://www.saterbygden.se",
+          "title": null,
+          "last_updated_at": "2026-04-28T19:36:13.777226+00:00"
+        }
+      ],
+      "documents": [],
+      "information": null,
+      "region": "Dalarna",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Sätervurpan medel",
+          "datetimez": "2027-08-15T00:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "position": null,
+          "areas": [],
+          "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
     }
   ]
 }
