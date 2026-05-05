@@ -62,7 +62,7 @@ def irregular_chunk_date_range(
     current = start
     while current <= end:
         # Random duration between 1 day and 150 days
-        days = random.randint(0, 150)
+        days = random.SystemRandom().randint(0, 150)
         chunk_end = current + timedelta(days=days)
 
         # Determine actual end for this chunk
@@ -422,7 +422,10 @@ def main(
 
     for config in active_configs:
         if config["type"] == "eventor":
-            assert config["url"] is not None
+            if config["url"] is None:
+                raise ValueError(
+                    f"URL is missing for eventor config {config['country']}"
+                )
             eventor_sources.append(
                 EventorSource(
                     config["country"],

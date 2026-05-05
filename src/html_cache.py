@@ -30,7 +30,7 @@ class HtmlCache:
         Returns:
             First 8 characters of MD5 hex digest.
         """
-        return hashlib.md5(url.encode("utf-8")).hexdigest()[:8]
+        return hashlib.md5(url.encode("utf-8")).hexdigest()[:8]  # noqa: S324
 
     def cache_path(self, year: str, key_prefix: str, url: str) -> Path:
         """Compute the cache file path for a URL.

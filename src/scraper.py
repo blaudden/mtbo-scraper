@@ -129,7 +129,7 @@ class Scraper:
     def _wait_for_rate_limit(self) -> None:
         """Sleeps for a random amount of time to respect rate limits."""
         elapsed = time.time() - self.last_request_time
-        wait_time = random.uniform(*self.delay_range)
+        wait_time = random.SystemRandom().uniform(*self.delay_range)
         if elapsed < wait_time:
             sleep_time = wait_time - elapsed
             logger.debug("rate_limiting_sleep", sleep_time=round(sleep_time, 2))
@@ -185,7 +185,8 @@ class Scraper:
     def _get_binary_version(self, path: str) -> int | None:
         """Get major version of a Chrome/Chromium binary."""
         try:
-            output = subprocess.check_output([path, "--version"], text=True)
+            # Dynamic path from which(); required to execute binary
+            output = subprocess.check_output([path, "--version"], text=True)  # noqa: S603
             # Output format: "Google Chrome 120.0.6099.109" or "Chromium 120.0.6099.109"
             parts = output.strip().split()
             for part in parts:
@@ -280,8 +281,9 @@ class Scraper:
                         if sys.platform.startswith("darwin"):
                             try:
                                 logger.info("Codesigning patched executable for macOS")
-                                subprocess.check_call(
-                                    ["codesign", "-f", "-s", "-", self.executable_path]
+                                # Dynamic path required for the downloaded driver
+                                subprocess.check_call(  # noqa: S603
+                                    ["codesign", "-f", "-s", "-", self.executable_path]  # noqa: S607
                                 )
                             except Exception as e:
                                 logger.warning("codesign_failed", error=str(e))
@@ -363,13 +365,13 @@ class Scraper:
                 if driver:
                     try:
                         driver.quit()
-                    except Exception:
-                        pass
+                    except Exception as e:
+                        logger.debug(f"Exception ignored during quit: {e}")
                 if virtual_display:
                     try:
                         virtual_display.stop()
-                    except Exception:
-                        pass
+                    except Exception as e:
+                        logger.debug(f"Exception ignored during stop: {e}")
 
         return False
 
@@ -535,7 +537,7 @@ class Scraper:
                 )
 
                 if retryable and attempt < retries - 1:
-                    wait_time = (2**attempt) + random.uniform(0, 1)
+                    wait_time = (2**attempt) + random.SystemRandom().uniform(0, 1)
                     time.sleep(wait_time)  # Exponential backoff with jitter
                 else:
                     if not retryable:

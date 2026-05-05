@@ -992,8 +992,8 @@ class EventorParser:
                             enc_email = Crypto.encrypt(email)
                             officials.append(Official(role=key, name=enc_email))
                             continue
-                        except Exception:
-                            pass
+                        except Exception as e:
+                            self.logger.debug(f"Failed to decrypt email: {e}")
 
             if any(
                 x in key.lower()

@@ -229,8 +229,8 @@ class EventorSource(BaseSource):
                     old_yaml_str = f.read()
                 if old_yaml_str == new_yaml_str:
                     content_changed = False
-            except Exception:
-                pass
+            except Exception as e:
+                logger.debug(f"Failed to check existing yaml: {e}")
 
         if content_changed:
             with open(filepath, "w", encoding="utf-8") as f:
