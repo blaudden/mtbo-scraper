@@ -1,0 +1,418 @@
+participants:
+- class: Men
+  club: GER
+  name: Lukas Wilms
+  start_number: 268
+- class: Men
+  club: FRA
+  name: Mathieu Vayssat
+  start_number: 264
+- class: Men
+  club: HUN
+  name: Laszlo Rozsa
+  start_number: 272
+- class: Men
+  club: GER
+  name: Mark Huster
+  start_number: 266
+- class: Men
+  club: FIN
+  name: Eemil Koskinen
+  start_number: 262
+- class: Men
+  club: HUN
+  name: Agoston Fekete
+  start_number: 271
+- class: Men
+  club: LTU
+  name: Daumantas Kiela
+  start_number: 277
+- class: Men
+  club: HUN
+  name: Botond Szasz
+  start_number: 273
+- class: Men
+  club: FRA
+  name: Jocelin Lauret
+  start_number: 263
+- class: Men
+  club: BUL
+  name: Rostislav Kostadinov
+  start_number: 252
+- class: Men
+  club: GER
+  name: Per Haehnel
+  start_number: 265
+- class: Men
+  club: ESP
+  name: Sergi Oliveras i Ferrer
+  start_number: 259
+- class: Men
+  club: CZE
+  name: David Chovanec
+  start_number: 255
+- class: Men
+  club: POL
+  name: Filip Janowski
+  start_number: 278
+- class: Men
+  club: HUN
+  name: Zoltan Toth
+  start_number: 274
+- class: Men
+  club: BUL
+  name: Mihail Stoev
+  start_number: 254
+- class: Men
+  club: ESP
+  name: Jose Antonio Villar Gorriz
+  start_number: 260
+- class: Men
+  club: ITA
+  name: Matteo Traversi Montani
+  start_number: 275
+- class: Men
+  club: CZE
+  name: Lukas Tuma
+  start_number: 257
+- class: Men
+  club: ESP
+  name: Enrique Chousa Esteban
+  start_number: 258
+- class: Men
+  club: EST
+  name: Mihkel Mahla
+  start_number: 261
+- class: Men
+  club: HUN
+  name: Adam Beothy
+  start_number: 270
+- class: Men
+  club: GER
+  name: Lennart Voss
+  start_number: 267
+- class: Men
+  club: POR
+  name: Fabio Goncalves
+  start_number: 279
+- class: Men
+  club: SUI
+  name: Silas Hotz
+  start_number: 280
+- class: Men
+  club: AUT
+  name: Bernhard Kogler
+  start_number: 251
+- class: Men
+  club: CZE
+  name: Jakub Racansky
+  start_number: 256
+- class: Men
+  club: BUL
+  name: Marco Pelov
+  start_number: 253
+- class: Men
+  club: HUN
+  name: Csaba Bedo
+  start_number: 269
+- class: Men
+  club: ITA
+  name: Michele Traversi Montani
+  start_number: 276
+- class: Men
+  club: BUL
+  name: Stanimir Belomazhev
+  start_number: 245
+- class: Men
+  club: FRA
+  name: Antoine Lesquer
+  start_number: 240
+- class: Men
+  club: SVK
+  name: Matej Muller
+  start_number: 236
+- class: Men
+  club: POR
+  name: Joao Ferreira
+  start_number: 232
+- class: Men
+  club: FRA
+  name: Augustin Leclere
+  start_number: 237
+- class: Men
+  club: POL
+  name: Krzysztof Wroniak
+  start_number: 242
+- class: Men
+  club: AUT
+  name: Georg Koffler
+  start_number: 233
+- class: Men
+  club: POL
+  name: Grzegorz Nowak
+  start_number: 238
+- class: Men
+  club: AUT
+  name: Tobias Breitschaedel
+  start_number: 239
+- class: Men
+  club: SUI
+  name: Adrian Jaeggi
+  start_number: 218
+- class: Men
+  club: ITA
+  name: Luca Dallavalle
+  start_number: 225
+- class: Men
+  club: SUI
+  name: Flurin Schnyder
+  start_number: 220
+- class: Men
+  club: CZE
+  name: Jiri Hradil
+  start_number: 227
+- class: Men
+  club: FRA
+  name: Jeremi Pourre
+  start_number: 226
+- class: Men
+  club: DEN
+  name: Oliver Friis
+  start_number: 230
+- class: Men
+  club: FRA
+  name: Paul Debray
+  start_number: 216
+- class: Men
+  club: FIN
+  name: Tomi Nykanen
+  start_number: 219
+- class: Men
+  club: LTU
+  name: Jonas Vytautas Gvildys
+  start_number: 229
+- class: Men
+  club: ITA
+  name: Riccardo Rossetto
+  start_number: 221
+- class: Men
+  club: FIN
+  name: Jussi Laurila
+  start_number: 222
+- class: Men
+  club: CZE
+  name: Krystof Bogar
+  start_number: 203
+- class: Men
+  club: AUT
+  name: Hannes Hnilica
+  start_number: 205
+- class: Men
+  club: CZE
+  name: Vojtech Stransky
+  start_number: 210
+- class: Men
+  club: LTU
+  name: Jonas Maiselis
+  start_number: 215
+- class: Men
+  club: CZE
+  name: Vojtech Ludvik
+  start_number: 201
+- class: Men
+  club: LTU
+  name: Ignas Ambrazas
+  start_number: 212
+- class: Men
+  club: AUT
+  name: Andreas Waldmann
+  start_number: 202
+- class: Men
+  club: CZE
+  name: Jan Hasek
+  start_number: 214
+- class: Men
+  club: POL
+  name: Bartosz Niebielski
+  start_number: 206
+- class: Men
+  club: SUI
+  name: Noah Rieder
+  start_number: 209
+- class: Men
+  club: ITA
+  name: Fabiano Bettega
+  start_number: 204
+- class: Men
+  club: FRA
+  name: Armel Berthaud
+  start_number: 211
+- class: Women
+  club: CZE
+  name: Emma Doubkova
+  start_number: 164
+- class: Women
+  club: FIN
+  name: EmmaRiikka Laamanen
+  start_number: 157
+- class: Women
+  club: CZE
+  name: Klara Kureckova
+  start_number: 153
+- class: Women
+  club: SWE
+  name: Karin Gustafsson
+  start_number: 162
+- class: Women
+  club: ESP
+  name: Alba Munoz del Campo
+  start_number: 156
+- class: Women
+  club: SWE
+  name: Signe Feil
+  start_number: 161
+- class: Women
+  club: FIN
+  name: Salla Mustikkamaa
+  start_number: 158
+- class: Women
+  club: LTU
+  name: Irmante Aleliunaite
+  start_number: 160
+- class: Women
+  club: CZE
+  name: Adela Ryglova
+  start_number: 154
+- class: Women
+  club: SWE
+  name: Ingrid Stengard
+  start_number: 163
+- class: Women
+  club: BUL
+  name: Greta Dimitrova
+  start_number: 151
+- class: Women
+  club: CZE
+  name: Marketa Fiserova
+  start_number: 152
+- class: Women
+  club: HUN
+  name: Vanda Bardon Kinde
+  start_number: 159
+- class: Women
+  club: EST
+  name: Marii Isabel Allikberg
+  start_number: 138
+- class: Women
+  club: CZE
+  name: Ewa Haltof
+  start_number: 131
+- class: Women
+  club: LTU
+  name: Karolina Mickeviciute Juodisiene
+  start_number: 132
+- class: Women
+  club: ITA
+  name: Chiara Magni
+  start_number: 139
+- class: Women
+  club: LTU
+  name: Juste Umbrasaite
+  start_number: 136
+- class: Women
+  club: HUN
+  name: Bianka Tamas
+  start_number: 137
+- class: Women
+  club: FIN
+  name: Silja YliHietanen
+  start_number: 130
+- class: Women
+  club: SUI
+  name: Jana Luescher Alemany
+  start_number: 118
+- class: Women
+  club: CZE
+  name: Rozalie Kucharova
+  start_number: 124
+- class: Women
+  club: POL
+  name: Anna Kaminska
+  start_number: 121
+- class: Women
+  club: FRA
+  name: Lou Garcin
+  start_number: 122
+- class: Women
+  club: SWE
+  name: Elvira Larsson
+  start_number: 126
+- class: Women
+  club: CZE
+  name: Marketa Mulickova
+  start_number: 123
+- class: Women
+  club: FIN
+  name: Siiri Rasimus
+  start_number: 120
+- class: Women
+  club: POL
+  name: Anna Tkaczuk
+  start_number: 128
+- class: Women
+  club: CZE
+  name: Valerie Kamererova
+  start_number: 117
+- class: Women
+  club: POR
+  name: Marisa Costa
+  start_number: 119
+- class: Women
+  club: FRA
+  name: Laurane Meyers
+  start_number: 125
+- class: Women
+  club: FIN
+  name: Antonia Haga
+  start_number: 116
+- class: Women
+  club: SWE
+  name: Gabriella Gustafsson
+  start_number: 105
+- class: Women
+  club: SUI
+  name: Ursina Jaeggi
+  start_number: 109
+- class: Women
+  club: AUT
+  name: Jana Hnilica
+  start_number: 115
+- class: Women
+  club: DEN
+  name: Nikoline Splittorff
+  start_number: 101
+- class: Women
+  club: FIN
+  name: Ruska Saarela
+  start_number: 102
+- class: Women
+  club: DEN
+  name: Caecilie Christoffersen
+  start_number: 112
+- class: Women
+  club: ITA
+  name: Iris Aurora Pecorari
+  start_number: 110
+- class: Women
+  club: LTU
+  name: Algirda Mickuviene
+  start_number: 107
+- class: Women
+  club: FRA
+  name: Constance Devillers
+  start_number: 108
+- class: Women
+  club: SUI
+  name: Celine Wellenreiter
+  start_number: 113
+race_number: 2
