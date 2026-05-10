@@ -27,3 +27,12 @@ repos:
           - types-requests
           - types-PyYAML
         args: [--ignore-missing-imports]
+
+  - repo: local
+    hooks:
+      - id: pytest
+        name: pytest
+        entry: uv run pytest tests/ -v
+        language: system
+        types: [python]
+        pass_filenames: false
