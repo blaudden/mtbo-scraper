@@ -12,8 +12,8 @@ Requires **Python 3.12+**. Install using [uv](https://github.com/astral-sh/uv):
 # Install dependencies
 uv sync
 
-# (Optional) Install pre-commit hooks
-uv run pre-commit install
+# Install pre-commit hooks
+./tools/setup-commit-hooks.sh
 ```
 
 Alternatively, if using pip:
@@ -146,5 +146,5 @@ uv run pytest tests/ -v      # Unit tests
 Install pre-commit hooks to automatically check code quality before commits:
 
 ```bash
-uv run pre-commit install
+./tools/setup-commit-hooks.sh
 ```

@@ -267,7 +267,7 @@ class Scraper:
                 import subprocess
                 import sys
 
-                import undetected_chromedriver.patcher  # type: ignore
+                import undetected_chromedriver.patcher
 
                 if not hasattr(
                     undetected_chromedriver.patcher.Patcher, "_is_patched_for_mac"
