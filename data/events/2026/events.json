@@ -3743,7 +3743,10 @@
           "name": "enc:HxUXAwMYFhYTFSUBCAANAkwSTRcE"
         }
       ],
-      "classes": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
       "urls": [
         {
           "type": "Path",
@@ -3753,25 +3756,32 @@
         },
         {
           "type": "Website",
-          "url": "https://avaleht.peko.ee/",
+          "url": "https://avaleht.peko.ee/events/emv-ro-2026/",
           "title": null,
-          "last_updated_at": "2026-04-25T22:13:52.238935+00:00"
+          "last_updated_at": "2026-05-31T16:36:24.775923+00:00"
         }
       ],
       "documents": [],
       "information": null,
       "region": null,
-      "punching_system": null,
+      "punching_system": "Sportident",
       "races": [
         {
           "race_number": 1,
           "name": "MTBO Estonian championships in Middle distance",
-          "datetimez": "2026-07-25T00:00:00+03:00",
+          "datetimez": "2026-07-25T07:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
           "areas": [],
-          "urls": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Entry?eventId=8999",
+              "title": "Enter",
+              "last_updated_at": "2026-05-31T16:36:24.775926+00:00"
+            }
+          ],
           "documents": [],
           "entry_counts": null,
           "start_counts": null,
@@ -3809,7 +3819,12 @@
           "name": "enc:HxUXAwMYFhYTFSUBCAANAkwSTRcE"
         }
       ],
-      "classes": [],
+      "classes": [
+        "Men",
+        "Men 20",
+        "Women",
+        "Women 20"
+      ],
       "urls": [
         {
           "type": "Path",
@@ -3819,25 +3834,32 @@
         },
         {
           "type": "Website",
-          "url": "https://avaleht.peko.ee/",
+          "url": "https://avaleht.peko.ee/events/emv-ro-2026/",
           "title": null,
-          "last_updated_at": "2026-04-25T22:13:52.238916+00:00"
+          "last_updated_at": "2026-05-31T16:36:24.775861+00:00"
         }
       ],
       "documents": [],
       "information": null,
       "region": null,
-      "punching_system": null,
+      "punching_system": "Sportident",
       "races": [
         {
           "race_number": 1,
           "name": "MTBO Estonian championships in Sprint distance",
-          "datetimez": "2026-07-25T00:00:00+03:00",
+          "datetimez": "2026-07-25T15:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
           "areas": [],
-          "urls": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Entry?eventId=9000",
+              "title": "Enter",
+              "last_updated_at": "2026-05-31T16:36:24.775864+00:00"
+            }
+          ],
           "documents": [],
           "entry_counts": null,
           "start_counts": null,
@@ -3875,7 +3897,10 @@
           "name": "enc:HxUXAwMYFhYTFSUBCAANAkwSTRcE"
         }
       ],
-      "classes": [],
+      "classes": [
+        "Men",
+        "Women"
+      ],
       "urls": [
         {
           "type": "Path",
@@ -3885,25 +3910,32 @@
         },
         {
           "type": "Website",
-          "url": "https://avaleht.peko.ee/",
+          "url": "https://avaleht.peko.ee/events/emv-ro-2026/",
           "title": null,
-          "last_updated_at": "2026-04-25T22:13:52.238994+00:00"
+          "last_updated_at": "2026-05-31T16:36:24.775975+00:00"
         }
       ],
       "documents": [],
       "information": null,
       "region": null,
-      "punching_system": null,
+      "punching_system": "Sportident",
       "races": [
         {
           "race_number": 1,
           "name": "MTBO Estonian championships in Long distance",
-          "datetimez": "2026-07-26T00:00:00+03:00",
+          "datetimez": "2026-07-26T07:00:00+00:00",
           "discipline": "Other",
           "night_or_day": null,
           "position": null,
           "areas": [],
-          "urls": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Entry?eventId=9001",
+              "title": "Enter",
+              "last_updated_at": "2026-05-31T16:36:24.775978+00:00"
+            }
+          ],
           "documents": [],
           "entry_counts": null,
           "start_counts": null,
@@ -12936,7 +12968,9 @@
           "name": "enc:AAAAAG0cEAYEAgIACBpMHEg="
         }
       ],
-      "classes": [],
+      "classes": [
+        "Slingor"
+      ],
       "urls": [
         {
           "type": "Path",
@@ -12946,7 +12980,7 @@
         }
       ],
       "documents": [],
-      "information": "Samling och parkering vid Sporthallen/Moheda skola\nTräning öppen för alla, tidtagning om så önskas medtag egen SI-pinne.",
+      "information": "Samling och parkering vid Sporthallen/Moheda skola\nTräning öppen för alla, tidtagning om så önskas medtag egen SI-pinne.\nSlingorientering, 6 slingor ca 2km vardera, passar alla även nybörjare.\nKartställ finns att låna.\nHjälm är obligatoriskt.\nAnmälan går att göra men är tacksam för föranmälan så kartorna räcker.",
       "region": "Småland",
       "punching_system": "Sportident",
       "races": [
@@ -12961,7 +12995,14 @@
             "lng": 14.5815641960127
           },
           "areas": [],
-          "urls": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Entry?eventId=59057",
+              "title": "Enter",
+              "last_updated_at": "2026-05-31T16:36:24.775236+00:00"
+            }
+          ],
           "documents": [],
           "entry_counts": null,
           "start_counts": null,
@@ -13003,7 +13044,11 @@
           "name": "enc:AAAAAG0cEAYEAgIACBpMHEg="
         }
       ],
-      "classes": [],
+      "classes": [
+        "Kort",
+        "Lång",
+        "Mellan"
+      ],
       "urls": [
         {
           "type": "Path",
@@ -13013,7 +13058,7 @@
         }
       ],
       "documents": [],
-      "information": "Samling och parkering på Rönnvägen i Moheda.\nTräning öppen för alla, tidtagning om så önskas medtag egen SI-pinne.",
+      "information": "Samling och parkering på Rönnvägen 11 i Moheda.\nTräning öppen för alla, tidtagning om så önskas medtag egen SI-pinne.\n3 banor, ca 5, 8 och 12km\nKartställ finns att låna.\nHjälm är obligatoriskt.\nAnmälan går att göra men är tacksam för föranmälan så kartorna räcker.",
       "region": "Småland",
       "punching_system": "Sportident",
       "races": [
@@ -13028,7 +13073,14 @@
             "lng": 14.5866310773267
           },
           "areas": [],
-          "urls": [],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Entry?eventId=59058",
+              "title": "Enter",
+              "last_updated_at": "2026-05-31T16:36:24.774714+00:00"
+            }
+          ],
           "documents": [],
           "entry_counts": null,
           "start_counts": null,
@@ -13486,6 +13538,136 @@
           },
           "areas": [],
           "urls": [],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_59451",
+      "name": "Sommarsmrishamn Etapp 3",
+      "start_time": "2026-07-06",
+      "end_time": "2026-07-06",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [
+        "FootO"
+      ],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Simrishamns OK",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Stig-Arne Nordahl"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "0708305996"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:HhVMAUIBBxMJHCULDBwNAAMABg=="
+        },
+        {
+          "role": "Event director",
+          "name": "Stig-Arne Nordahl"
+        },
+        {
+          "role": "Course setter",
+          "name": "Tony Kellersson"
+        }
+      ],
+      "classes": [
+        "5 km",
+        "Lätt 2",
+        "Medelsvår 5 km"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/59451",
+          "title": null,
+          "last_updated_at": "2026-05-31T16:36:24.775247+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Invitation",
+          "title": "Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/59451/68f1fc5c-77b3-4cbb-af04-bd3ce64aa47c/Inbjudan.Pdf",
+          "published_time": "2026-05-30"
+        }
+      ],
+      "information": null,
+      "region": "Skåne",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "Sommarsmrishamn Etapp 3",
+          "datetimez": "2026-07-06T18:00:00+02:00",
+          "discipline": "Middle",
+          "night_or_day": "day",
+          "position": {
+            "lat": 55.5620984368607,
+            "lng": 14.3467395512372
+          },
+          "areas": [
+            {
+              "lat": 55.5620984368607,
+              "lng": 14.3467395512372,
+              "polygon": [
+                [
+                  55.572340663371165,
+                  14.34034387850115
+                ],
+                [
+                  55.57042355213741,
+                  14.331915212572868
+                ],
+                [
+                  55.56023390591926,
+                  14.328815013143467
+                ],
+                [
+                  55.549109928582396,
+                  14.333465310439708
+                ],
+                [
+                  55.55174051417421,
+                  14.345672345000027
+                ],
+                [
+                  55.55683676700275,
+                  14.363304722094282
+                ],
+                [
+                  55.572340663371165,
+                  14.34034387850115
+                ]
+              ]
+            }
+          ],
+          "urls": [
+            {
+              "type": "EntryList",
+              "url": "/Entry?eventId=59451",
+              "title": "Enter",
+              "last_updated_at": "2026-05-31T16:36:24.775250+00:00"
+            }
+          ],
           "documents": [],
           "entry_counts": null,
           "start_counts": null,
