@@ -765,7 +765,11 @@
           "country_code": "PRT"
         },
         {
-          "name": "Alvito\nCOALA",
+          "name": "Alvito",
+          "country_code": "PRT"
+        },
+        {
+          "name": "COALA",
           "country_code": "PRT"
         }
       ],
@@ -870,7 +874,11 @@
           "country_code": "PRT"
         },
         {
-          "name": "Alvito\nCOALA",
+          "name": "Alvito",
+          "country_code": "PRT"
+        },
+        {
+          "name": "COALA",
           "country_code": "PRT"
         }
       ],
@@ -2414,7 +2422,11 @@
           "country_code": "DNK"
         },
         {
-          "name": "Faaborg OK\nOK Melfar",
+          "name": "Faaborg OK",
+          "country_code": "DNK"
+        },
+        {
+          "name": "OK Melfar",
           "country_code": "DNK"
         }
       ],
@@ -2533,7 +2545,11 @@
           "country_code": "DNK"
         },
         {
-          "name": "Faaborg OK\nOK Melfar",
+          "name": "Faaborg OK",
+          "country_code": "DNK"
+        },
+        {
+          "name": "OK Melfar",
           "country_code": "DNK"
         }
       ],
