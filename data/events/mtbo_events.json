@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "last_scraped_at": "2026-06-01T12:10:54.689344+00:00",
+  "last_scraped_at": "2026-06-01T12:11:22.017136+00:00",
   "data_root": "data/events",
   "partitions": {
     "2010": {
@@ -36,7 +36,7 @@
     "2013": {
       "path": "data/events/2013/events.json",
       "count": 75,
-      "last_updated_at": "2026-03-14T06:47:47.382746+00:00"
+      "last_updated_at": "2026-06-01T12:11:22.017136+00:00"
     },
     "2014": {
       "path": "data/events/2014/events.json",
@@ -100,7 +100,7 @@
       "name": "IOF Eventor",
       "url": "https://eventor.orienteering.org",
       "count": 421,
-      "last_updated_at": "2026-06-01T12:10:54.689344+00:00"
+      "last_updated_at": "2026-06-01T12:11:22.017136+00:00"
     },
     "MAN": {
       "country_code": "MAN",
