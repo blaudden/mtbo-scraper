@@ -2495,7 +2495,32 @@
           "last_updated_at": "2026-02-07T23:08:31.118080+00:00"
         }
       ],
-      "documents": [],
+      "documents": [
+        {
+          "type": "Invitation",
+          "title": "Inbjudan",
+          "url": "",
+          "published_time": null
+        },
+        {
+          "type": "Bulletin",
+          "title": "PM",
+          "url": "",
+          "published_time": null
+        },
+        {
+          "type": "StartList",
+          "title": "Startlista",
+          "url": "",
+          "published_time": null
+        },
+        {
+          "type": "ResultList",
+          "title": "Resultat",
+          "url": "",
+          "published_time": null
+        }
+      ],
       "information": null,
       "region": "Dalarna",
       "punching_system": "Sportident",
@@ -2643,7 +2668,26 @@
           "last_updated_at": "2026-02-07T23:08:31.118106+00:00"
         }
       ],
-      "documents": [],
+      "documents": [
+        {
+          "type": "Invitation",
+          "title": "Inbjudan",
+          "url": "",
+          "published_time": null
+        },
+        {
+          "type": "StartList",
+          "title": "Start-/anmälningslista",
+          "url": "",
+          "published_time": null
+        },
+        {
+          "type": "ResultList",
+          "title": "Resultat klass",
+          "url": "",
+          "published_time": null
+        }
+      ],
       "information": "De deltagare som inte är orienterare, t.ex. MTB-cyklister (och därmed inte finns med i Eventor eller har SI-pinne), kan anmäla sig via E-post, (\n[email protected]\n) !\nAnge ditt namn, klubb, bana och ev. SI-pinne.\nAnmälan senast 18 juli, kl 15:00 !",
       "region": "Halland",
       "punching_system": "Sportident",
@@ -2838,6 +2882,18 @@
         }
       ],
       "documents": [
+        {
+          "type": "Invitation",
+          "title": "Inbjudan",
+          "url": "",
+          "published_time": null
+        },
+        {
+          "type": "Bulletin",
+          "title": "PM",
+          "url": "",
+          "published_time": null
+        },
         {
           "type": "Other",
           "title": "Kartor",
@@ -3132,7 +3188,14 @@
           "last_updated_at": "2026-02-07T23:08:31.117965+00:00"
         }
       ],
-      "documents": [],
+      "documents": [
+        {
+          "type": "Invitation",
+          "title": "Inbjudan",
+          "url": "",
+          "published_time": null
+        }
+      ],
       "information": null,
       "region": "Södermanland",
       "punching_system": "Sportident",
@@ -3228,7 +3291,32 @@
           "last_updated_at": "2026-02-07T23:08:31.118117+00:00"
         }
       ],
-      "documents": [],
+      "documents": [
+        {
+          "type": "Invitation",
+          "title": "Inbjudan",
+          "url": "",
+          "published_time": null
+        },
+        {
+          "type": "Bulletin",
+          "title": "PM",
+          "url": "",
+          "published_time": null
+        },
+        {
+          "type": "StartList",
+          "title": "Startlista Högdalsturen",
+          "url": "",
+          "published_time": null
+        },
+        {
+          "type": "ResultList",
+          "title": "Resultat",
+          "url": "",
+          "published_time": null
+        }
+      ],
       "information": null,
       "region": "Stockholm",
       "punching_system": "Sportident",
@@ -3388,7 +3476,26 @@
           "last_updated_at": "2026-02-07T23:08:31.118042+00:00"
         }
       ],
-      "documents": [],
+      "documents": [
+        {
+          "type": "Invitation",
+          "title": "Invitation",
+          "url": "",
+          "published_time": null
+        },
+        {
+          "type": "Bulletin",
+          "title": "PM",
+          "url": "",
+          "published_time": null
+        },
+        {
+          "type": "Invitation",
+          "title": "Invitation in English",
+          "url": "",
+          "published_time": null
+        }
+      ],
       "information": null,
       "region": "Dalarna",
       "punching_system": "Sportident",
@@ -3483,7 +3590,20 @@
           "last_updated_at": "2026-02-07T23:08:31.118091+00:00"
         }
       ],
-      "documents": [],
+      "documents": [
+        {
+          "type": "Invitation",
+          "title": "Invitation",
+          "url": "",
+          "published_time": null
+        },
+        {
+          "type": "Invitation",
+          "title": "Invitation in English",
+          "url": "",
+          "published_time": null
+        }
+      ],
       "information": null,
       "region": "Dalarna",
       "punching_system": "Sportident",
@@ -3747,7 +3867,32 @@
           "last_updated_at": "2026-02-07T23:08:31.118068+00:00"
         }
       ],
-      "documents": [],
+      "documents": [
+        {
+          "type": "Invitation",
+          "title": "Inbjudan",
+          "url": "",
+          "published_time": null
+        },
+        {
+          "type": "Bulletin",
+          "title": "PM",
+          "url": "",
+          "published_time": null
+        },
+        {
+          "type": "StartList",
+          "title": "Startlista Bröllopssprinten",
+          "url": "",
+          "published_time": null
+        },
+        {
+          "type": "ResultList",
+          "title": "Resultatlista",
+          "url": "",
+          "published_time": null
+        }
+      ],
       "information": null,
       "region": "Stockholm",
       "punching_system": "Sportident",
