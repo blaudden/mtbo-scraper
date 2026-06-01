@@ -3157,7 +3157,11 @@
           "country_code": "SWE"
         },
         {
-          "name": "IFK Enskede\nMalaro SOK",
+          "name": "IFK Enskede",
+          "country_code": "SWE"
+        },
+        {
+          "name": "Malaro SOK",
           "country_code": "SWE"
         }
       ],
