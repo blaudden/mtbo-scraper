@@ -1468,7 +1468,11 @@
           "country_code": "PRT"
         },
         {
-          "name": "CNAlvito\nCOALA",
+          "name": "CNAlvito",
+          "country_code": "PRT"
+        },
+        {
+          "name": "COALA",
           "country_code": "PRT"
         }
       ],
@@ -1594,7 +1598,11 @@
           "country_code": "PRT"
         },
         {
-          "name": "CNAlvito\nCOALA",
+          "name": "CNAlvito",
+          "country_code": "PRT"
+        },
+        {
+          "name": "COALA",
           "country_code": "PRT"
         }
       ],
