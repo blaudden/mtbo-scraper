@@ -203,7 +203,11 @@
           "country_code": "FIN"
         },
         {
-          "name": "Lahden Taimi\nSOC Asikkala",
+          "name": "Lahden Taimi",
+          "country_code": "FIN"
+        },
+        {
+          "name": "SOC Asikkala",
           "country_code": "FIN"
         }
       ],
@@ -361,7 +365,11 @@
           "country_code": "FIN"
         },
         {
-          "name": "Lahden Taimi\nSOC Asikkala",
+          "name": "Lahden Taimi",
+          "country_code": "FIN"
+        },
+        {
+          "name": "SOC Asikkala",
           "country_code": "FIN"
         }
       ],
@@ -2954,7 +2962,11 @@
           "country_code": "FIN"
         },
         {
-          "name": "Lahden Taimi\nSOC Asikkala",
+          "name": "Lahden Taimi",
+          "country_code": "FIN"
+        },
+        {
+          "name": "SOC Asikkala",
           "country_code": "FIN"
         }
       ],
@@ -3121,7 +3133,11 @@
           "country_code": "FIN"
         },
         {
-          "name": "Lahden Taimi\nSOC Asikkala",
+          "name": "Lahden Taimi",
+          "country_code": "FIN"
+        },
+        {
+          "name": "SOC Asikkala",
           "country_code": "FIN"
         }
       ],
@@ -3251,7 +3267,11 @@
           "country_code": "FIN"
         },
         {
-          "name": "Lahden Taimi\nSOC Asikkala",
+          "name": "Lahden Taimi",
+          "country_code": "FIN"
+        },
+        {
+          "name": "SOC Asikkala",
           "country_code": "FIN"
         }
       ],
@@ -4444,13 +4464,13 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/53135/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/27433/28b73e13-72f3-48b6-8ade-b2173263c117/Inbjudan.pdf",
           "published_time": "2020-03-18"
         },
         {
           "type": "Bulletin",
           "title": "Bulletin 1 (WRE)",
-          "url": "/Documents/Event/53137/Bulletin-1-(WRE)",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/27433/3c9fe226-84fc-4a2b-82c4-14d3446ccb38/Bulletin 1 %28WRE%29.pdf",
           "published_time": "2020-03-17"
         }
       ],
@@ -4642,13 +4662,13 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/53136/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/27434/e5835438-2312-4fac-b124-4cbc31f5a077/Inbjudan.pdf",
           "published_time": "2020-03-18"
         },
         {
           "type": "Bulletin",
           "title": "Bulletin 1 (WRE)",
-          "url": "/Documents/Event/53138/Bulletin-1-(WRE)",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/27434/e51ef41e-12c6-4209-8f7a-fbecb1b988cb/Bulletin 1 %28WRE%29.pdf",
           "published_time": "2020-03-17"
         }
       ],
@@ -5112,7 +5132,7 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/52212/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/27772/2e39f2db-2425-48c2-970d-b6da4348376c/Inbjudan.pdf",
           "published_time": "2020-02-12"
         }
       ],
@@ -5288,7 +5308,7 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/52213/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/27773/55f4667e-db24-46f3-a9dd-10729b2b2432/Inbjudan.pdf",
           "published_time": "2020-02-12"
         }
       ],
@@ -5547,7 +5567,7 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/52380/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/28055/cc4b977c-6297-44ee-91af-c20735df28ca/Inbjudan.pdf",
           "published_time": "2020-01-22"
         }
       ],
@@ -5724,7 +5744,7 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/52379/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/28056/dd5192a3-e9da-4aa2-bc52-18f922dc4d49/Inbjudan.pdf",
           "published_time": "2020-01-22"
         }
       ],
@@ -5936,13 +5956,13 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/52419/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/28670/02dddef7-f354-4fef-ae26-58f14afb9d7c/Inbjudan.pdf",
           "published_time": "2020-01-26"
         },
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/52888/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/28670/5428c912-2c43-4966-bc40-820f3f5b0d2d/PM.pdf",
           "published_time": "2020-02-27"
         }
       ],
@@ -6532,19 +6552,19 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/58714/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/28961/39cf21e0-0f6e-48a9-8e07-e027a66b8b6f/Inbjudan.pdf",
           "published_time": "2020-08-10"
         },
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/60564/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/28961/510a3c46-3143-4faa-8850-8e84edc69b40/PM.pdf",
           "published_time": "2020-09-13"
         },
         {
           "type": "Other",
           "title": "Banlängder",
-          "url": "/Documents/Event/60618/Banl-ngder",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/28961/cc5cde8b-daee-41de-a3b3-1fb062fd1c80/Banlängder.pdf",
           "published_time": "2020-09-13"
         },
         {
@@ -6779,43 +6799,43 @@
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/55777/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29019/ca2a4c13-6291-4a24-b36d-8d7b70d85c12/PM.pdf",
           "published_time": "2020-05-28"
         },
         {
           "type": "Other",
           "title": "Bana A 3,3 km",
-          "url": "/Documents/Event/55778/Bana-A-3%2c3-km",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29019/3d56abf4-7411-42e9-90d3-df92d5fc590b/Bana A 3%2C3 km.pdf",
           "published_time": "2020-05-28"
         },
         {
           "type": "Other",
           "title": "Bana B 5,3 km",
-          "url": "/Documents/Event/55779/Bana-B-5%2c3-km",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29019/9b962ff7-09b2-4939-b648-9950a8dc4857/Bana B 5%2C3 km.pdf",
           "published_time": "2020-05-28"
         },
         {
           "type": "Other",
           "title": "Bana C 6,4 km",
-          "url": "/Documents/Event/55781/Bana-C-6%2c4-km",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29019/f192a928-8979-4c78-a72e-9f094f6c5bea/Bana C 6%2C4 km.pdf",
           "published_time": "2020-05-28"
         },
         {
           "type": "Other",
           "title": "Bana D 10 km del 1",
-          "url": "/Documents/Event/55784/Bana-D-10-km-del-1",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29019/1cb06900-2f95-4cbb-b7b6-b937e20c0f21/Bana D 10 km del 1.pdf",
           "published_time": "2020-05-28"
         },
         {
           "type": "Other",
           "title": "BananD 10 km Del 2",
-          "url": "/Documents/Event/55785/BananD-10-km-Del-2",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29019/0be4006b-3706-487e-8c98-112228ee9d96/BananD 10 km Del 2.pdf",
           "published_time": "2020-05-28"
         },
         {
           "type": "ResultList",
           "title": "Resultat Dalaserien MTBO Leksands OK",
-          "url": "/Documents/Event/62759/Resultat-Dalaserien-MTBO-Leksands-OK",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29019/181f41e2-24d7-4acd-b6f5-a0de518e627a/Resultat Dalaserien MTBO Leksands OK.pdf",
           "published_time": "2020-12-16"
         }
       ],
@@ -6901,7 +6921,7 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/53042/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29130/d43d4b71-2525-4d0e-a484-44748eaf55cc/Inbjudan.pdf",
           "published_time": "2020-04-28"
         },
         {
@@ -7041,31 +7061,31 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/57432/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29140/36d5185e-2742-472f-8dc5-6b90804a8d39/Inbjudan.pdf",
           "published_time": "2020-08-03"
         },
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/59053/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29140/6a9d9454-67fa-41b9-9d7c-1fe22633f3b2/PM.pdf",
           "published_time": "2020-08-14"
         },
         {
           "type": "Other",
           "title": "Riskanalys och info Covid-19",
-          "url": "/Documents/Event/57532/Riskanalys-och-info-Covid-19",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29140/2365daf1-78ba-4198-b8e3-b8b8b22eac56/Riskanalys och info Covid-19.pdf",
           "published_time": "2020-07-06"
         },
         {
           "type": "StartList",
           "title": "STARTLISTA",
-          "url": "/Documents/Event/59051/STARTLISTA",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29140/693b38b2-8fd9-46d3-9c9d-829d5b523062/STARTLISTA.pdf",
           "published_time": "2020-08-14"
         },
         {
           "type": "Other",
           "title": "TC KARTA",
-          "url": "/Documents/Event/59052/TC-KARTA",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29140/97eeff23-05b1-4eb9-b743-4e6fd6056c7b/TC KARTA.pdf",
           "published_time": "2020-08-14"
         },
         {
@@ -7252,7 +7272,7 @@
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/58761/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29290/4f88ceff-631b-42bd-b998-6d8c3a8b214c/PM.pdf",
           "published_time": "2020-08-06"
         }
       ],
@@ -7480,13 +7500,13 @@
         {
           "type": "Invitation",
           "title": "Inbjudan Medel DM Söndag",
-          "url": "/Documents/Event/56466/Inbjudan-Medel-DM-S-ndag",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29315/0812501d-e689-422f-b92e-363ecd2c6c09/Inbjudan Medel DM Söndag.pdf",
           "published_time": "2020-06-12"
         },
         {
           "type": "Invitation",
           "title": "Inbjudan Sprint-Lång, fredag-lördag",
-          "url": "/Documents/Event/56467/Inbjudan-Sprint-L-ng%2c-fredag-l-rdag",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29315/c309d7c8-c7de-488d-8216-adef56575954/Inbjudan Sprint-Lång%2C fredag-lördag.pdf",
           "published_time": "2020-06-12"
         }
       ],
@@ -7599,7 +7619,7 @@
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/53225/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29343/83f38453-8e9e-45e1-90bc-c907b9a86494/PM.pdf",
           "published_time": "2020-03-24"
         }
       ],
@@ -7835,61 +7855,61 @@
         {
           "type": "Other",
           "title": "Info träningspaket Dalaserien MTBO 2020 Mora",
-          "url": "/Documents/Event/53563/Info-tr-ningspaket-Dalaserien-MTBO-2020-Mora",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29666/7417c81d-b020-4d58-872f-ac366fa5614b/Info träningspaket Dalaserien MTBO 2020 Mora.pdf",
           "published_time": "2020-04-06"
         },
         {
           "type": "Other",
           "title": "Dalaserien MTBO 2020 Mora Bana A",
-          "url": "/Documents/Event/53564/Dalaserien-MTBO-2020-Mora-Bana-A",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29666/26d4c08a-3267-4047-9f81-3a0183589494/Dalaserien MTBO 2020 Mora Bana A.pdf",
           "published_time": "2020-04-06"
         },
         {
           "type": "Other",
           "title": "Dalaserien MTBO 2020 Mora Bana B",
-          "url": "/Documents/Event/53565/Dalaserien-MTBO-2020-Mora-Bana-B",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29666/d4658e72-5e1f-4f81-955a-27d41e186221/Dalaserien MTBO 2020 Mora Bana B.pdf",
           "published_time": "2020-04-06"
         },
         {
           "type": "Other",
           "title": "Dalaserien MTBO 2020 Mora Bana C",
-          "url": "/Documents/Event/53566/Dalaserien-MTBO-2020-Mora-Bana-C",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29666/93753a47-4eec-4edf-976d-931c67d80180/Dalaserien MTBO 2020 Mora Bana C.pdf",
           "published_time": "2020-04-06"
         },
         {
           "type": "Other",
           "title": "Dalaserien MTBO 2020 Mora Bana D",
-          "url": "/Documents/Event/53567/Dalaserien-MTBO-2020-Mora-Bana-D",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29666/3a704b8f-8bd8-4ea8-85fa-8c472cb5f429/Dalaserien MTBO 2020 Mora Bana D.pdf",
           "published_time": "2020-04-06"
         },
         {
           "type": "Other",
           "title": "Användarmanual MaprunF",
-          "url": "/Documents/Event/53568/Anv-ndarmanual-MaprunF",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29666/a1de66bd-1e25-4dc8-bfc6-2e337e1841b4/Användarmanual MaprunF.pdf",
           "published_time": "2020-04-06"
         },
         {
           "type": "Other",
           "title": "Dalaserien MTBO 2020 Mora Bana A 1:10000",
-          "url": "/Documents/Event/53643/Dalaserien-MTBO-2020-Mora-Bana-A-1-10000",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29666/d151bff7-f441-4fd1-b793-4cb2475824f5/Dalaserien MTBO 2020 Mora Bana A 1%3A10000.pdf",
           "published_time": "2020-04-09"
         },
         {
           "type": "Other",
           "title": "Dalaserien MTBO 2020 Mora Bana B 1:10000",
-          "url": "/Documents/Event/53644/Dalaserien-MTBO-2020-Mora-Bana-B-1-10000",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29666/1123d83d-8d6f-4b7c-9eee-e24e9c4ba80e/Dalaserien MTBO 2020 Mora Bana B 1%3A10000.pdf",
           "published_time": "2020-04-09"
         },
         {
           "type": "Other",
           "title": "Dalaserien MTBO 2020 Mora Bana C 1:10000",
-          "url": "/Documents/Event/53645/Dalaserien-MTBO-2020-Mora-Bana-C-1-10000",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29666/0d4e4d38-f672-4985-8789-704686c52f79/Dalaserien MTBO 2020 Mora Bana C 1%3A10000.pdf",
           "published_time": "2020-04-09"
         },
         {
           "type": "ResultList",
           "title": "Resultat",
-          "url": "/Documents/Event/62318/Resultat",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29666/07b2abd3-a5da-48ce-b08d-7376223d3efd/Resultat.pdf",
           "published_time": "2020-11-26"
         }
       ],
@@ -7970,43 +7990,43 @@
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/53602/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29691/5aa0c6e4-3e98-4180-932b-8d0b5a59ab8f/PM.pdf",
           "published_time": "2020-04-08"
         },
         {
           "type": "Other",
           "title": "bana Ö7 medel",
-          "url": "/Documents/Event/53603/bana--7-medel",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29691/bf06acf1-7fda-4b4d-8e45-fa319167e839/bana Ö7 medel.pdf",
           "published_time": "2020-04-08"
         },
         {
           "type": "Other",
           "title": "bana Ö8 medel",
-          "url": "/Documents/Event/53604/bana--8-medel",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29691/db405075-ba7b-4f59-bc1b-0275133c705a/bana Ö8 medel.pdf",
           "published_time": "2020-04-08"
         },
         {
           "type": "Other",
           "title": "bana Ö9 medel",
-          "url": "/Documents/Event/53605/bana--9-medel",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29691/a3e53c41-0ed1-4f17-9c9a-00c5e1d8bcc5/bana Ö9 medel.pdf",
           "published_time": "2020-04-08"
         },
         {
           "type": "Other",
           "title": "bana Ö7 sprint",
-          "url": "/Documents/Event/53606/bana--7-sprint",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29691/6121499b-28d5-422c-a0e5-59a33173bc3b/bana Ö7 sprint.pdf",
           "published_time": "2020-04-08"
         },
         {
           "type": "Other",
           "title": "Bana Ö8 sprint",
-          "url": "/Documents/Event/53607/Bana--8-sprint",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29691/613c14bb-e2a1-4adf-9a59-853fad3b74f2/Bana Ö8 sprint.pdf",
           "published_time": "2020-04-08"
         },
         {
           "type": "Other",
           "title": "Bana Ö9 sprint",
-          "url": "/Documents/Event/53608/Bana--9-sprint",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29691/a771b054-02a7-4be4-a900-e61fc034d2b2/Bana Ö9 sprint.pdf",
           "published_time": "2020-04-08"
         }
       ],
@@ -8092,25 +8112,25 @@
         {
           "type": "Other",
           "title": "Karta lång",
-          "url": "/Documents/Event/53739/Karta-l-ng",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29739/30228393-28a6-4a9c-b40c-297cab66348c/Karta lång.pdf",
           "published_time": "2020-04-15"
         },
         {
           "type": "Other",
           "title": "Karta mellan",
-          "url": "/Documents/Event/53774/Karta-mellan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29739/43893254-e1aa-4d89-a3e7-53913c10dc55/Karta mellan.pdf",
           "published_time": "2020-04-12"
         },
         {
           "type": "Other",
           "title": "Karta kort",
-          "url": "/Documents/Event/53775/Karta-kort",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29739/26317e0c-4c78-4f43-b974-f3808a67415f/Karta kort.pdf",
           "published_time": "2020-04-12"
         },
         {
           "type": "Other",
           "title": "Karta Lång 2",
-          "url": "/Documents/Event/54441/Karta-L-ng-2",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29739/d393e0d7-0f4d-4c7b-8c19-b15e4bddced2/Karta Lång 2.pdf",
           "published_time": "2020-05-03"
         }
       ],
@@ -8210,55 +8230,55 @@
         {
           "type": "Other",
           "title": "Info",
-          "url": "/Documents/Event/53877/Info",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29822/a5fdf688-fdb5-45ed-b65a-8d7aff72494d/Info.pdf",
           "published_time": "2020-04-16"
         },
         {
           "type": "Other",
           "title": "MaprunF",
-          "url": "/Documents/Event/53878/MaprunF",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29822/8350c6f5-a94f-4b0a-939a-5fbbaa16623f/MaprunF.pdf",
           "published_time": "2020-04-16"
         },
         {
           "type": "Other",
           "title": "Bana A",
-          "url": "/Documents/Event/53879/Bana-A",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29822/612f7ca2-a850-4685-a95c-fdd831407d07/Bana A.pdf",
           "published_time": "2020-04-16"
         },
         {
           "type": "Other",
           "title": "Bana B",
-          "url": "/Documents/Event/53880/Bana-B",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29822/bb6e8a27-0c29-4195-92b0-c4626f73523a/Bana B.pdf",
           "published_time": "2020-04-16"
         },
         {
           "type": "Other",
           "title": "Bana C",
-          "url": "/Documents/Event/53881/Bana-C",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29822/1f5a950e-d8ff-442b-90b7-c7dc66881b2a/Bana C.pdf",
           "published_time": "2020-04-16"
         },
         {
           "type": "Other",
           "title": "Bana D1 A4",
-          "url": "/Documents/Event/53882/Bana-D1-A4",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29822/d0c291fd-6e42-4c24-a435-affa029275ab/Bana D1 A4.pdf",
           "published_time": "2020-04-16"
         },
         {
           "type": "Other",
           "title": "Bana D2 A4",
-          "url": "/Documents/Event/53883/Bana-D2-A4",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29822/f5396c00-034e-432c-be9d-e4f76d0d3622/Bana D2 A4.pdf",
           "published_time": "2020-04-16"
         },
         {
           "type": "Other",
           "title": "Bana D A3",
-          "url": "/Documents/Event/53884/Bana-D-A3",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29822/eb7c7b67-8194-49a8-b2d8-014621aaae5b/Bana D A3.pdf",
           "published_time": "2020-04-16"
         },
         {
           "type": "Other",
           "title": "Resutat",
-          "url": "/Documents/Event/62325/Resutat",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29822/24276c1c-d0f5-463f-8a7b-d540d239d064/Resutat.pdf",
           "published_time": "2020-11-27"
         }
       ],
@@ -8360,13 +8380,13 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/53927/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29824/a2b650a3-c6c5-471c-870d-ba40c9ded2cd/Inbjudan.pdf",
           "published_time": "2020-04-17"
         },
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/54341/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29824/79937867-920f-4a62-a840-cb8af8ddee58/PM.pdf",
           "published_time": "2020-04-30"
         }
       ],
@@ -8581,55 +8601,55 @@
         {
           "type": "Other",
           "title": "Instruktion MapRunF",
-          "url": "/Documents/Event/54033/Instruktion-MapRunF",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29925/8a584f1b-cbf3-403d-a069-b0464c94c65b/Instruktion MapRunF.pdf",
           "published_time": "2020-04-22"
         },
         {
           "type": "Other",
           "title": "Bana A",
-          "url": "/Documents/Event/54072/Bana-A",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29925/1338636b-db94-4e99-ae19-47bef2e16216/Bana A.pdf",
           "published_time": "2020-04-24"
         },
         {
           "type": "Other",
           "title": "Bana B",
-          "url": "/Documents/Event/54073/Bana-B",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29925/d9a6e0b6-ea18-49d7-9011-905d145e3d34/Bana B.pdf",
           "published_time": "2020-04-24"
         },
         {
           "type": "Other",
           "title": "Bana C i A3, skala 1:10000",
-          "url": "/Documents/Event/54074/Bana-C-i-A3%2c-skala-1-10000",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29925/14d6309d-22c9-4ba1-88d2-a66aaeaaa261/Bana C i A3%2C skala 1%3A10000.pdf",
           "published_time": "2020-04-24"
         },
         {
           "type": "Other",
           "title": "Bana C i A4, skala 1:12500",
-          "url": "/Documents/Event/54075/Bana-C-i-A4%2c-skala-1-12500",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29925/c5c8d382-997c-4266-a81c-3f40bfc69482/Bana C i A4%2C skala 1%3A12500.pdf",
           "published_time": "2020-04-24"
         },
         {
           "type": "Other",
           "title": "Bana D i A3, skala 1:10000",
-          "url": "/Documents/Event/54076/Bana-D-i-A3%2c-skala-1-10000",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29925/4b1275fb-6c59-4653-b087-db77e2cd72c0/Bana D i A3%2C skala 1%3A10000.pdf",
           "published_time": "2020-04-24"
         },
         {
           "type": "Other",
           "title": "Bana D i A4, skala 1:12500",
-          "url": "/Documents/Event/54077/Bana-D-i-A4%2c-skala-1-12500",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29925/7bb5edf3-043a-4e67-b730-5fd97049ae2e/Bana D i A4%2C skala 1%3A12500.pdf",
           "published_time": "2020-04-24"
         },
         {
           "type": "Other",
           "title": "Info",
-          "url": "/Documents/Event/54081/Info",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29925/bf01c8ba-6489-4bd4-ba75-cf097e5a88e1/Info.pdf",
           "published_time": "2020-04-24"
         },
         {
           "type": "ResultList",
           "title": "Resultatlista",
-          "url": "/Documents/Event/62324/Resultatlista",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/29925/279e409a-23e5-47a2-a3c8-4a855dba9501/Resultatlista.pdf",
           "published_time": "2020-11-26"
         }
       ],
@@ -8705,7 +8725,7 @@
         {
           "type": "Other",
           "title": "Karta Lång",
-          "url": "/Documents/Event/54407/Karta-L-ng",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30169/d807f9ab-931b-4de2-9c18-31920862c013/Karta Lång.pdf",
           "published_time": "2020-05-02"
         }
       ],
@@ -8927,7 +8947,7 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/54445/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30181/b0939c49-a7f6-47f1-b8dd-495b875e52fc/Inbjudan.pdf",
           "published_time": "2020-05-03"
         }
       ],
@@ -9096,13 +9116,13 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/54477/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30191/5aa6032f-faaa-4e30-907d-4a7d22b3f479/Inbjudan.pdf",
           "published_time": "2020-05-14"
         },
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/56380/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30191/a629302c-3882-4f70-a6fb-47d0adb61b95/PM.pdf",
           "published_time": "2020-06-09"
         }
       ],
@@ -9380,7 +9400,7 @@
         {
           "type": "ResultList",
           "title": "Resultat",
-          "url": "/Documents/Event/62774/Resultat",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30271/b59bd24f-a0af-4025-9025-eae2e776e57e/Resultat.pdf",
           "published_time": "2020-12-17"
         }
       ],
@@ -9465,13 +9485,13 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/54678/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30286/aab07688-2640-44ac-a6cc-855dd8c8b1ec/Inbjudan.pdf",
           "published_time": "2020-05-25"
         },
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/55773/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30286/5a548c63-ed5f-49ff-a393-2c9e5f9b00f9/PM.pdf",
           "published_time": "2020-05-27"
         },
         {
@@ -9483,19 +9503,19 @@
         {
           "type": "StartList",
           "title": "Startkarta",
-          "url": "/Documents/Event/55769/Startkarta",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30286/4df3bdf5-d200-497b-82fb-f0a47aa03be7/Startkarta.pdf",
           "published_time": "2020-05-27"
         },
         {
           "type": "Other",
           "title": "Fördelning av kartställ",
-          "url": "/Documents/Event/55833/F-rdelning-av-kartst-ll",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30286/b3d12e9a-5fa1-47d6-ab62-98039965374b/Fördelning av kartställ.pdf",
           "published_time": "2020-05-29"
         },
         {
           "type": "StartList",
           "title": "Startlista 31 maj",
-          "url": "/Documents/Event/55834/Startlista-31-maj",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30286/c12475fa-1346-4910-a577-827806c22656/Startlista 31 maj.pdf",
           "published_time": "2020-05-30"
         }
       ],
@@ -9666,13 +9686,13 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/54643/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30294/439c3e45-6f88-4334-9568-c6d6599745c6/Inbjudan.pdf",
           "published_time": "2020-05-07"
         },
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/55529/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30294/8d0d48ab-9aa2-4159-b14e-66daa6c676b7/PM.pdf",
           "published_time": "2020-05-23"
         },
         {
@@ -9684,13 +9704,13 @@
         {
           "type": "Other",
           "title": "Kartprov",
-          "url": "/Documents/Event/54837/Kartprov",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30294/c88c7e65-1f0b-41c4-a9d4-1fb4c3cfab80/Kartprov.pdf",
           "published_time": "2020-05-10"
         },
         {
           "type": "StartList",
           "title": "Startlista 24 maj",
-          "url": "/Documents/Event/55449/Startlista-24-maj",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30294/9c9d32f5-f8ca-4e60-8fe3-e1d6539b4077/Startlista 24 maj.pdf",
           "published_time": "2020-05-22"
         }
       ],
@@ -9782,13 +9802,13 @@
         {
           "type": "Other",
           "title": "MANUAL GPS",
-          "url": "/Documents/Event/54780/MANUAL-GPS",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30317/db54d3b3-90d4-4285-9de1-cae32752c46d/MANUAL GPS.pdf",
           "published_time": "2020-05-09"
         },
         {
           "type": "ResultList",
           "title": "RESULTAT",
-          "url": "/Documents/Event/54973/RESULTAT",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30317/f9b25a61-d4d5-4454-8c40-b08df0907db5/RESULTAT.pdf",
           "published_time": "2020-05-13"
         }
       ],
@@ -9881,7 +9901,7 @@
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/55001/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30400/2e798048-06a2-4096-af10-88f098e9010c/PM.pdf",
           "published_time": "2020-05-14"
         }
       ],
@@ -10010,7 +10030,7 @@
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/55186/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30598/74735850-49aa-4b80-a66b-77409cb4980b/PM.pdf",
           "published_time": "2020-05-17"
         }
       ],
@@ -10144,7 +10164,7 @@
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/55188/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30600/808a4745-6951-428b-ae72-3da50916196b/PM.pdf",
           "published_time": "2020-05-17"
         }
       ],
@@ -10435,25 +10455,25 @@
         {
           "type": "Other",
           "title": "Mycket Lätt",
-          "url": "/Documents/Event/55573/Mycket-L-tt",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30674/984df0e1-7eb8-4906-820e-f0e8f9e470a7/Mycket Lätt.pdf",
           "published_time": "2020-05-24"
         },
         {
           "type": "Other",
           "title": "Lätt",
-          "url": "/Documents/Event/55574/L-tt",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30674/bd7ceec7-db53-45e5-9216-5d03766e38f2/Lätt.pdf",
           "published_time": "2020-05-24"
         },
         {
           "type": "Other",
           "title": "Medel",
-          "url": "/Documents/Event/55575/Medel",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30674/84df1cfa-d25a-4452-a8dc-5a5f1c6404c5/Medel.pdf",
           "published_time": "2020-05-24"
         },
         {
           "type": "Other",
           "title": "Svår",
-          "url": "/Documents/Event/55576/Sv-r",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30674/f5db605e-dd47-4afb-a831-0e387c1f1e42/Svår.pdf",
           "published_time": "2020-05-24"
         }
       ],
@@ -10652,19 +10672,19 @@
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/55666/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30806/42a1f7c4-4669-49c5-ba58-3bd47c9b4bd2/PM.pdf",
           "published_time": "2020-05-27"
         },
         {
           "type": "Other",
           "title": "Karta MTBO Långdistans",
-          "url": "/Documents/Event/55667/Karta-MTBO-L-ngdistans",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30806/88a0496f-66a8-4777-ae79-2f9501ec6a7c/Karta MTBO Långdistans.pdf",
           "published_time": "2020-05-27"
         },
         {
           "type": "Other",
           "title": "Karta MTBO Sprint",
-          "url": "/Documents/Event/55668/Karta-MTBO-Sprint",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30806/c5703bc4-897f-488a-86d5-dc5037c2ef56/Karta MTBO Sprint.pdf",
           "published_time": "2020-05-27"
         }
       ],
@@ -10764,7 +10784,7 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/55691/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30812/ff03c379-cf7f-45df-b11f-601c46ec1363/Inbjudan.pdf",
           "published_time": "2020-06-15"
         }
       ],
@@ -11114,7 +11134,7 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/55817/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30851/c3182336-7b42-4af6-97ec-7cd973ab80e5/Inbjudan.pdf",
           "published_time": "2020-05-28"
         }
       ],
@@ -11206,7 +11226,7 @@
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/55818/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30870/3628353f-aac5-408d-b306-7dc57ccca827/PM.pdf",
           "published_time": "2020-05-30"
         },
         {
@@ -11218,31 +11238,31 @@
         {
           "type": "StartList",
           "title": "Startkarta",
-          "url": "/Documents/Event/55820/Startkarta",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30870/9b00248d-78a3-4b7d-b260-b92294363cfa/Startkarta.pdf",
           "published_time": "2020-05-28"
         },
         {
           "type": "Other",
           "title": "Bana Lång 13,5 km",
-          "url": "/Documents/Event/55987/Bana-L-ng-13%2c5-km",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30870/723f4aed-3b2d-4c6a-896c-72a6527ec772/Bana Lång 13%2C5 km.pdf",
           "published_time": "2020-06-01"
         },
         {
           "type": "Other",
           "title": "Bana Mellan 10,7 km",
-          "url": "/Documents/Event/55988/Bana-Mellan-10%2c7-km",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30870/2ed19a61-4537-4db8-b7a4-19d1a6680602/Bana Mellan 10%2C7 km.pdf",
           "published_time": "2020-06-01"
         },
         {
           "type": "Other",
           "title": "Bana Kort 6,7 km",
-          "url": "/Documents/Event/55989/Bana-Kort-6%2c7-km",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30870/0b5d3392-3410-4db6-befc-7d70b6c0f636/Bana Kort 6%2C7 km.pdf",
           "published_time": "2020-06-01"
         },
         {
           "type": "Other",
           "title": "Bana Prova-på 4,8 km",
-          "url": "/Documents/Event/55990/Bana-Prova-p--4%2c8-km",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30870/f15ea61f-8aba-4a72-8f71-7e2d2f3917e2/Bana Prova-på 4%2C8 km.pdf",
           "published_time": "2020-06-01"
         }
       ],
@@ -11335,31 +11355,31 @@
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/55944/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30930/ba9bbd4c-a437-456a-b6b4-1e695fc5d279/PM.pdf",
           "published_time": "2020-05-31"
         },
         {
           "type": "Other",
           "title": "kartavgift betalning via Swish",
-          "url": "/Documents/Event/55945/kartavgift-betalning-via-Swish",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30930/ccfa1525-94fd-42ca-9817-57b42e1f9983/kartavgift betalning via Swish.png",
           "published_time": "2020-05-31"
         },
         {
           "type": "Other",
           "title": "Långa banan A4 1:10000",
-          "url": "/Documents/Event/55982/L-nga-banan-A4-1-10000",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30930/9f8674c2-519e-467d-af71-b266cb287475/Långa banan A4 1%3A10000.pdf",
           "published_time": "2020-06-01"
         },
         {
           "type": "Other",
           "title": "Korta banan A4 1:10000",
-          "url": "/Documents/Event/55983/Korta-banan-A4-1-10000",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30930/3caec5bd-e4ee-4925-8358-59df798411b6/Korta banan A4 1%3A10000.pdf",
           "published_time": "2020-06-01"
         },
         {
           "type": "Other",
           "title": "Mellan banan A4 1:10000",
-          "url": "/Documents/Event/55984/Mellan-banan-A4-1-10000",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30930/006f54b9-0515-4f50-94bf-ba7783c524ef/Mellan banan A4 1%3A10000.pdf",
           "published_time": "2020-06-01"
         }
       ],
@@ -11492,7 +11512,7 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/56449/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30947/54edce67-bf1b-45ce-81f8-c4b2c98b3ab4/Inbjudan.pdf",
           "published_time": "2020-06-12"
         },
         {
@@ -11858,7 +11878,7 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/56450/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30949/859539f7-ec01-41ac-b458-604b56c8072b/Inbjudan.pdf",
           "published_time": "2020-06-12"
         },
         {
@@ -12284,7 +12304,7 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/56451/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/30950/8634386c-bcff-409d-9cd6-c2bc58b8ebfd/Inbjudan.pdf",
           "published_time": "2020-06-12"
         },
         {
@@ -12865,7 +12885,7 @@
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/56592/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31031/9d7bba21-4cff-4169-96c5-269db9695ea4/PM.pdf",
           "published_time": "2020-06-15"
         }
       ],
@@ -12979,7 +12999,7 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/56378/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31106/088086e3-7095-48b4-9f49-6aad5eddd2c6/Inbjudan.pdf",
           "published_time": "2020-06-10"
         }
       ],
@@ -13147,13 +13167,13 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/56522/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31165/792b6f0a-c5ad-45ca-8b1d-910671bd3554/Inbjudan.pdf",
           "published_time": "2020-06-13"
         },
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/58934/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31165/212a1e69-db71-4c15-89e6-ff0e7c12e0b6/PM.pdf",
           "published_time": "2020-08-11"
         },
         {
@@ -13454,13 +13474,13 @@
         {
           "type": "Other",
           "title": "Lång (pdf)",
-          "url": "/Documents/Event/56703/L-ng-(pdf)",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31236/07161822-fca6-4610-902c-68d1946d921f/Lång %28pdf%29.pdf",
           "published_time": "2020-06-17"
         },
         {
           "type": "Other",
           "title": "Lång (png)",
-          "url": "/Documents/Event/56704/L-ng-(png)",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31236/dfbae49c-1aa4-4400-93f5-a658369722ea/Lång %28png%29.png",
           "published_time": "2020-06-17"
         }
       ],
@@ -13911,13 +13931,13 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/57012/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31348/58c266e5-fc68-465c-97f2-ee7c09f081c4/Inbjudan.pdf",
           "published_time": "2020-06-27"
         },
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/57281/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31348/301860a1-2843-4433-8269-4742946b8744/PM.pdf",
           "published_time": "2020-07-01"
         }
       ],
@@ -14088,7 +14108,7 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/57022/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31371/13bfdefe-30de-4c3e-ae0a-19be9bc98920/Inbjudan.pdf",
           "published_time": "2020-06-27"
         }
       ],
@@ -14430,13 +14450,13 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/57300/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31494/a470beb0-62d5-4194-bf87-c3af27a16383/Inbjudan.pdf",
           "published_time": "2020-07-02"
         },
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/59601/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31494/da69ce1c-e44c-4beb-b591-787ee043e3e8/PM.pdf",
           "published_time": "2020-08-27"
         },
         {
@@ -14448,7 +14468,7 @@
         {
           "type": "Other",
           "title": "Vägvisning/parkering",
-          "url": "/Documents/Event/59602/V-gvisning-parkering",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31494/f8ed1a8d-f680-472c-8bae-aa1b5c708276/Vägvisning/parkering.png",
           "published_time": "2020-08-27"
         },
         {
@@ -15094,13 +15114,13 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/57301/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31495/6921f798-71ee-48d6-adc5-8d12c01aae03/Inbjudan.pdf",
           "published_time": "2020-07-02"
         },
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/59603/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31495/ddab9762-bf41-4935-97b6-45abe5c056ae/PM.pdf",
           "published_time": "2020-08-27"
         },
         {
@@ -15112,7 +15132,7 @@
         {
           "type": "Other",
           "title": "Vägvisning/parkering",
-          "url": "/Documents/Event/59604/V-gvisning-parkering",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31495/2a23e683-313a-4f53-8976-e4f0c3c9e06a/Vägvisning/parkering.png",
           "published_time": "2020-08-27"
         },
         {
@@ -15623,13 +15643,13 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/57310/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31510/e6e15bbf-8045-4156-abd0-92dc900a5e67/Inbjudan.pdf",
           "published_time": "2020-08-03"
         },
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/58930/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31510/48ba7d45-80e4-4f88-b2a9-7501c47b3f60/PM.pdf",
           "published_time": "2020-08-11"
         },
         {
@@ -15785,13 +15805,13 @@
         {
           "type": "Other",
           "title": "Arenaskiss",
-          "url": "/Documents/Event/58544/Arenaskiss",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31549/5dc91d35-d58e-4d90-a2ed-5f3391bd1030/Arenaskiss.pdf",
           "published_time": "2020-08-02"
         },
         {
           "type": "ResultList",
           "title": "Alla resultat",
-          "url": "/Documents/Event/58636/Alla-resultat",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31549/7b85cdaf-d509-4be7-a112-d18194bce02f/Alla resultat.pdf",
           "published_time": "2020-08-03"
         }
       ],
@@ -15948,13 +15968,13 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/57631/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31593/eb6b04aa-9000-4f46-ab25-a980e0c01e7d/Inbjudan.pdf",
           "published_time": "2020-07-08"
         },
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/59518/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31593/484b07ce-b772-4884-a481-17f30e4d95ad/PM.pdf",
           "published_time": "2020-08-22"
         }
       ],
@@ -16159,7 +16179,7 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/58182/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31646/0afbfbbc-c497-4274-82ed-6e73fbc6ebe8/Inbjudan.pdf",
           "published_time": "2020-08-10"
         },
         {
@@ -16540,19 +16560,19 @@
         {
           "type": "Other",
           "title": "Kort bana",
-          "url": "/Documents/Event/58616/Kort-bana",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31731/9a23f5cb-12c8-4ba3-9848-222629170a64/Kort bana.pdf",
           "published_time": "2020-08-03"
         },
         {
           "type": "Other",
           "title": "Mellan bana",
-          "url": "/Documents/Event/58617/Mellan-bana",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31731/ff6027ce-602e-4288-a0e7-c7305e14d86b/Mellan bana.pdf",
           "published_time": "2020-08-03"
         },
         {
           "type": "Other",
           "title": "Lång bana",
-          "url": "/Documents/Event/58618/L-ng-bana",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31731/49522ee0-5b25-406d-9f11-9641e41fdad0/Lång bana.pdf",
           "published_time": "2020-08-03"
         }
       ],
@@ -16642,7 +16662,7 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/58274/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/31822/90410412-fb1d-4087-8abc-385042dba2ca/Inbjudan.pdf",
           "published_time": "2020-07-24"
         }
       ],
@@ -16930,13 +16950,13 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/58661/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32012/10dcecd7-55f5-48ac-a5f3-a582e35df823/Inbjudan.docx",
           "published_time": "2020-08-06"
         },
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/60272/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32012/ff610db3-cf55-4fc7-943a-d1cbfa24d331/PM.docx",
           "published_time": "2020-09-06"
         },
         {
@@ -16948,7 +16968,7 @@
         {
           "type": "StartList",
           "title": "Väg till start",
-          "url": "/Documents/Event/60352/V-g-till-start",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32012/50ed1737-d7f9-4300-895f-6142e0056fdc/Väg till start.jpg",
           "published_time": "2020-09-08"
         }
       ],
@@ -17128,7 +17148,7 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/58663/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32023/33624d1a-5cf1-4504-be4d-5659667d112c/Inbjudan.pdf",
           "published_time": "2020-08-04"
         }
       ],
@@ -17309,13 +17329,13 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/58665/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32024/0556efa4-ede2-4405-8017-53fd2bf81690/Inbjudan.pdf",
           "published_time": "2020-08-04"
         },
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/59292/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32024/79f3c7fc-03ed-43c6-807c-873c64112503/PM.pdf",
           "published_time": "2020-08-18"
         }
       ],
@@ -17481,37 +17501,37 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/58664/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32025/ee463f4b-6aad-498b-ae0d-89da38c0a932/Inbjudan.pdf",
           "published_time": "2020-08-06"
         },
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/58926/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32025/29498d18-7065-4d2d-b91e-95b9514d6e97/PM.pdf",
           "published_time": "2020-08-11"
         },
         {
           "type": "Other",
           "title": "Bana 1",
-          "url": "/Documents/Event/59009/Bana-1",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32025/f27f70ca-9a0e-4201-9c17-50cae001e92c/Bana 1.pdf",
           "published_time": "2020-08-13"
         },
         {
           "type": "Other",
           "title": "Bana 2",
-          "url": "/Documents/Event/59010/Bana-2",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32025/8c8488c4-66e9-4f78-80fb-4a2433727537/Bana 2.pdf",
           "published_time": "2020-08-13"
         },
         {
           "type": "Other",
           "title": "Bana 3",
-          "url": "/Documents/Event/59011/Bana-3",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32025/636b4faf-a2ca-409f-8d9b-49d459b45e1b/Bana 3.pdf",
           "published_time": "2020-08-13"
         },
         {
           "type": "Other",
           "title": "Bana 4",
-          "url": "/Documents/Event/59012/Bana-4",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32025/5dec9e77-bbf4-4629-9e32-aa7c4df47358/Bana 4.pdf",
           "published_time": "2020-08-13"
         }
       ],
@@ -17597,7 +17617,7 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/58717/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32030/5242fc71-13ff-47f3-a595-4a9c5f95d2be/Inbjudan.pdf",
           "published_time": "2020-08-05"
         }
       ],
@@ -17724,7 +17744,7 @@
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/58925/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32034/49b22a08-0449-46e5-acfc-c3ddf271ff30/PM.pdf",
           "published_time": "2020-08-11"
         }
       ],
@@ -17808,13 +17828,13 @@
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/58689/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32035/17b253da-732d-4b12-83e4-92cb06396efe/PM.pdf",
           "published_time": "2020-08-05"
         },
         {
           "type": "Other",
           "title": "karta",
-          "url": "/Documents/Event/58690/karta",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32035/a44c00a2-bcc0-4f71-b024-15b8f0157bd9/karta.pdf",
           "published_time": "2020-08-05"
         },
         {
@@ -17949,25 +17969,25 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/58836/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32045/b439864f-06f8-4d7b-9ef0-c3ac970f9c5c/Inbjudan.pdf",
           "published_time": "2020-08-28"
         },
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/60067/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32045/ffa2d951-a01a-4918-af33-69016042ff30/PM.pdf",
           "published_time": "2020-09-01"
         },
         {
           "type": "StartList",
           "title": "Hur jag väljer startgrupp",
-          "url": "/Documents/Event/58711/Hur-jag-v-ljer-startgrupp",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32045/aa9d1c95-af45-4de0-ab70-be84c7eefd74/Hur jag väljer startgrupp.JPG",
           "published_time": "2020-08-05"
         },
         {
           "type": "StartList",
           "title": "startlista pinnstart",
-          "url": "/Documents/Event/60217/startlista-pinnstart",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32045/0a537646-2d1d-408d-b451-32866bdadb41/startlista pinnstart.html",
           "published_time": "2020-09-04"
         }
       ],
@@ -18266,25 +18286,25 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/59267/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32081/b75b8b92-a68a-4a20-bf70-f7378164d198/Inbjudan.pdf",
           "published_time": "2020-09-12"
         },
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/60705/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32081/8c225e8f-5eac-4a2c-b550-1ef04126fb00/PM.pdf",
           "published_time": "2020-09-24"
         },
         {
           "type": "Other",
           "title": "Karta",
-          "url": "/Documents/Event/60582/Karta",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32081/35a2a1d1-e61d-41ac-ae73-cc793fff7149/Karta.pdf",
           "published_time": "2020-09-12"
         },
         {
           "type": "Other",
           "title": "Uppvärmningskarta",
-          "url": "/Documents/Event/60822/Uppv-rmningskarta",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32081/dc820c36-8cb4-4577-ac0c-91a569805569/Uppvärmningskarta.pdf",
           "published_time": "2020-09-19"
         }
       ],
@@ -18744,19 +18764,19 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/59266/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32082/b3a3d0a0-804b-406e-910b-a9d41537dbea/Inbjudan.pdf",
           "published_time": "2020-08-17"
         },
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/60757/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32082/a46c2393-1bf6-4259-b0e9-bbecfa9f232b/PM.pdf",
           "published_time": "2020-09-24"
         },
         {
           "type": "Other",
           "title": "Uppvärmningskarta",
-          "url": "/Documents/Event/60823/Uppv-rmningskarta",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32082/d22073b3-d147-45c0-9abf-c9460321b70d/Uppvärmningskarta.pdf",
           "published_time": "2020-09-19"
         }
       ],
@@ -19096,19 +19116,19 @@
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/58856/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32101/2d89aac2-2537-4b07-9b51-bda4c0ad513d/PM.pdf",
           "published_time": "2020-08-11"
         },
         {
           "type": "Other",
           "title": "Lång 11 km A3",
-          "url": "/Documents/Event/58956/L-ng-11-km-A3",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32101/ff5c5587-5c17-4fab-9473-79990927102d/Lång 11 km A3.pdf",
           "published_time": "2020-08-11"
         },
         {
           "type": "Other",
           "title": "Kort 7 km A4",
-          "url": "/Documents/Event/58957/Kort-7-km-A4",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32101/be9300e1-bb7f-412f-98ba-d637a1f12d79/Kort 7 km A4.pdf",
           "published_time": "2020-08-11"
         }
       ],
@@ -19434,19 +19454,19 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/60574/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32259/7695498a-d216-4358-8aab-0d7bc3f176f3/Inbjudan.pdf",
           "published_time": "2020-09-19"
         },
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/61660/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32259/9931ad3f-95f5-46f4-8617-642948f45ac7/PM.pdf",
           "published_time": "2020-10-16"
         },
         {
           "type": "StartList",
           "title": "Startlista med startgrupper inkl hyrbrickor",
-          "url": "/Documents/Event/61553/Startlista-med-startgrupper-inkl-hyrbrickor",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32259/a12fb855-0d10-41a6-92bf-4d9aa6e48dd0/Startlista med startgrupper inkl hyrbrickor.pdf",
           "published_time": "2020-10-16"
         },
         {
@@ -19799,13 +19819,13 @@
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/59639/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32303/0c6e8de8-05d6-4c3b-9a14-4a62bad0dde1/PM.pdf",
           "published_time": "2020-08-25"
         },
         {
           "type": "Other",
           "title": "MtbO Symboler",
-          "url": "/Documents/Event/59658/MtbO-Symboler",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32303/ab0cd5e2-6095-4330-85de-79a509f4e38a/MtbO Symboler.pdf",
           "published_time": "2020-08-25"
         }
       ],
@@ -20233,7 +20253,7 @@
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/61462/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32560/7bd69068-5cff-42cd-bed9-a2e8ab734b9c/PM.pdf",
           "published_time": "2020-10-09"
         }
       ],
@@ -20437,7 +20457,7 @@
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/61081/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32690/47ea1a0d-0b8d-4916-bd74-2b258f00da56/PM.pdf",
           "published_time": "2020-09-25"
         }
       ],
@@ -20547,13 +20567,13 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/60605/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32758/35c122f0-e438-4815-84d9-4e54ac3c1f44/Inbjudan.pdf",
           "published_time": "2020-09-15"
         },
         {
           "type": "Other",
           "title": "Anmälningslista",
-          "url": "/Documents/Event/61399/Anm-lningslista",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32758/52e142f1-c036-4499-b8d4-b61ee75efec0/Anmälningslista.pdf",
           "published_time": "2020-10-09"
         }
       ],
@@ -20754,19 +20774,19 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/60520/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32786/d5ba69f8-521f-4717-9a2a-fb96a7f3526a/Inbjudan.pdf",
           "published_time": "2020-09-28"
         },
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/61764/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32786/774ea4fd-a93e-4e5f-bafe-fecebd0ae798/PM.pdf",
           "published_time": "2020-10-22"
         },
         {
           "type": "Other",
           "title": "Tidigare OL karta",
-          "url": "/Documents/Event/60879/Tidigare-OL-karta",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32786/85b9c066-0e70-4d79-8932-2ff128a80775/Tidigare OL karta.jpg",
           "published_time": "2020-09-21"
         },
         {
@@ -20778,7 +20798,7 @@
         {
           "type": "Other",
           "title": "Uppvärmningskarta",
-          "url": "/Documents/Event/61762/Uppv-rmningskarta",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32786/bd1ce4a4-5a45-4527-9f47-c9936251d9a5/Uppvärmningskarta.pdf",
           "published_time": "2020-10-22"
         }
       ],
@@ -21028,55 +21048,55 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/60478/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32804/fc268c93-2c62-4740-85ad-c4fba6a5d7d2/Inbjudan.pdf",
           "published_time": "2020-09-10"
         },
         {
           "type": "Other",
           "title": "Karta Bana A",
-          "url": "/Documents/Event/60479/Karta-Bana-A",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32804/bd7e9092-a6bf-4360-852a-a718562de4fc/Karta Bana A.pdf",
           "published_time": "2020-09-10"
         },
         {
           "type": "Other",
           "title": "Utskrivna kartor",
-          "url": "/Documents/Event/60487/Utskrivna-kartor",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32804/50dc94f0-035b-47a5-849c-49e5b580c10d/Utskrivna kartor.pdf",
           "published_time": "2020-09-10"
         },
         {
           "type": "Other",
           "title": "Karta Bana B A4",
-          "url": "/Documents/Event/60497/Karta-Bana-B-A4",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32804/ca5a00c5-1aad-4e51-a0b7-64526c14039f/Karta Bana B A4.pdf",
           "published_time": "2020-09-10"
         },
         {
           "type": "Other",
           "title": "Karta Bana C del1 A4",
-          "url": "/Documents/Event/60498/Karta-Bana-C-del1-A4",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32804/257e6861-ff4f-4a80-98c6-3eb999d77616/Karta Bana C del1 A4.pdf",
           "published_time": "2020-09-10"
         },
         {
           "type": "Other",
           "title": "Karta Bana C del2 A4",
-          "url": "/Documents/Event/60499/Karta-Bana-C-del2-A4",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32804/32431b12-6039-4c82-96e6-c2179cf1fbad/Karta Bana C del2 A4.pdf",
           "published_time": "2020-09-10"
         },
         {
           "type": "Other",
           "title": "Karta Bana D del1 A4",
-          "url": "/Documents/Event/60500/Karta-Bana-D-del1-A4",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32804/12bc07ae-b2c2-4c1a-bfa2-0b5696d43bcd/Karta Bana D del1 A4.pdf",
           "published_time": "2020-09-10"
         },
         {
           "type": "Other",
           "title": "Karta Bana D del2 A4",
-          "url": "/Documents/Event/60501/Karta-Bana-D-del2-A4",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32804/9baba210-e063-438d-abaa-04f5db037e40/Karta Bana D del2 A4.pdf",
           "published_time": "2020-09-10"
         },
         {
           "type": "ResultList",
           "title": "Resultat",
-          "url": "/Documents/Event/62319/Resultat",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32804/af0c9843-4b25-4296-8610-109fc906925f/Resultat.pdf",
           "published_time": "2020-11-26"
         }
       ],
@@ -21173,13 +21193,13 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/60910/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32928/714acac8-3efb-4e7c-b75f-4e329fcb91c4/Inbjudan.pdf",
           "published_time": "2020-10-01"
         },
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/61395/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/32928/791241c1-d6d7-463a-be1e-66e58b1b87a7/PM.pdf",
           "published_time": "2020-10-06"
         }
       ],
@@ -21453,7 +21473,7 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/61528/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/33143/fd9b67a3-5433-41b8-8003-c576a7f77795/Inbjudan.pdf",
           "published_time": "2020-10-11"
         }
       ],
@@ -21541,7 +21561,7 @@
         {
           "type": "Invitation",
           "title": "Inbjudan",
-          "url": "/Documents/Event/61512/Inbjudan",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/33183/e377b890-0752-41a7-90d0-d75dee18508c/Inbjudan.docx",
           "published_time": "2020-10-11"
         }
       ],
@@ -21677,7 +21697,7 @@
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/61749/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/33257/8e69c02e-72d2-4ea8-9a3e-0ea750d0e07b/PM.pdf",
           "published_time": "2020-10-21"
         }
       ],
@@ -21815,13 +21835,13 @@
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/61810/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/33265/89691e1b-64ba-4d9b-902e-de76c94fb24a/PM.pdf",
           "published_time": "2020-10-24"
         },
         {
           "type": "Other",
           "title": "Samlingsplats MTBO 2020-10-24",
-          "url": "/Documents/Event/61809/Samlingsplats-MTBO-2020-10-24",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/33265/ee505953-30fd-43b3-8bba-b33795fbabee/Samlingsplats MTBO 2020-10-24.pdf",
           "published_time": "2020-10-24"
         }
       ],
@@ -22108,37 +22128,37 @@
         {
           "type": "Other",
           "title": "MTBO Julgran Linje",
-          "url": "/Documents/Event/62809/MTBO-Julgran-Linje",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/33912/85fbb79a-03b2-439b-ad26-2cbe3543360a/MTBO Julgran Linje.pdf",
           "published_time": "2020-12-19"
         },
         {
           "type": "Other",
           "title": "MTBO MTBO linje",
-          "url": "/Documents/Event/62810/MTBO-MTBO-linje",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/33912/6497f571-949c-4863-a397-bc1955b2a265/MTBO MTBO linje.pdf",
           "published_time": "2020-12-19"
         },
         {
           "type": "Other",
           "title": "MTBO Julgran bana",
-          "url": "/Documents/Event/62811/MTBO-Julgran-bana",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/33912/bd55b2f1-bb62-4691-9fe5-7714647d1c83/MTBO Julgran bana.pdf",
           "published_time": "2020-12-19"
         },
         {
           "type": "Other",
           "title": "MTBO Julgran Facit",
-          "url": "/Documents/Event/62812/MTBO-Julgran-Facit",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/33912/908ca6c5-ab9d-4b2b-b8ba-f66523e8fc2b/MTBO Julgran Facit.JPG",
           "published_time": "2020-12-19"
         },
         {
           "type": "Other",
           "title": "MTBO MTBO facit",
-          "url": "/Documents/Event/62813/MTBO-MTBO-facit",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/33912/69038911-00a5-4f0c-98e5-523483253fc1/MTBO MTBO facit.JPG",
           "published_time": "2020-12-19"
         },
         {
           "type": "Other",
           "title": "MTBO karta utan bana för tex. QuickRoute",
-          "url": "/Documents/Event/62814/MTBO-karta-utan-bana-f-r-tex.-QuickRoute",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/33912/dfea5129-242b-4eb4-8fa7-83c983984d3e/MTBO karta utan bana för tex. QuickRoute.tif",
           "published_time": "2020-12-19"
         }
       ],
@@ -22219,7 +22239,7 @@
         {
           "type": "Bulletin",
           "title": "PM",
-          "url": "/Documents/Event/62982/PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/33955/d4d708d3-5da9-4def-9527-03471fbc8af2/PM.docx",
           "published_time": "2020-12-26"
         },
         {
