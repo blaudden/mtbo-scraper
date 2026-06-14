@@ -1086,7 +1086,7 @@ class EventorParser:
                     x in lower_name for x in ["inbjudan", "invitation", "innbydelse"]
                 ):
                     doc_type = "Invitation"
-                elif any(x in lower_name for x in ["pm", "bulletin"]):
+                elif lower_name == "pm" or "bulletin" in lower_name:
                     doc_type = "Bulletin"
                 elif "start" in lower_name:
                     doc_type = "StartList"
