@@ -22,9 +22,9 @@ dependencies = [
 dev = [
     "jsonschema>=4.26.0",
     "mypy>=2.3.0",
-    "pre-commit>=4.6.0",
+    "pre-commit>=4.6.1",
     "pytest>=9.1.1",
-    "ruff==0.15.22",
+    "ruff==0.16.0",
     "types-beautifulsoup4>=4.12.0.20250516",
     "types-lxml>=2026.1.1",
     "types-pyyaml>=6.0.12.20260518",
