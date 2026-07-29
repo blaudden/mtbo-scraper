@@ -7,6 +7,7 @@ on:
 permissions:
   pull-requests: write
   contents: write
+  checks: read
 
 jobs:
   dependabot:
@@ -25,8 +26,9 @@ jobs:
         # Only approve if it's NOT a major version bump
         if: steps.metadata.outputs.update-type != 'version-update:semver-major'
         run: |
+          gh pr checks "$PR_URL" --watch
           gh pr review --approve "$PR_URL"
-          gh pr merge --auto --squash "$PR_URL"
+          gh pr merge --squash "$PR_URL" -b "Automated dependency update."
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

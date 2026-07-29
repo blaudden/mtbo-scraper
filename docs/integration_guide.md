@@ -34,6 +34,7 @@ Create a script (e.g., `scripts/sync-events.ts`) that:
 - **Example Validation Logic**:
   ```python
   from jsonschema import validate
+
   with open("schema.json") as s, open("data/events/mtbo_events.json") as d:
       validate(instance=json.load(d), schema=json.load(s))
   ```
