@@ -55,7 +55,7 @@ def calculate_seeding_order(
 
     Seed number = min(previous_year_rank, current_year_rank).
     Tie-breaking prefers current year rank, then previous year rank.
-    Top riders (smaller of 8 and 1/3 of the class field size) form the seeded group.
+    Top riders (up to 8) form the seeded group.
 
     Args:
         current_cup: Current year's cup standings (if available).
@@ -120,7 +120,7 @@ def calculate_seeding_order(
 
         class_seeding.sort(key=sort_key)
 
-        seeded_limit = min(8, len(class_seeding) // 3)
+        seeded_limit = min(8, len(class_seeding))
 
         result_entries: list[SeedingEntry] = []
         for idx, item in enumerate(class_seeding, start=1):

@@ -26,13 +26,13 @@ def test_calculate_seeding_order_2026(
     assert h21_seeded_count == 8
     assert h21_seeding[8].is_seeded is False
 
-    # Check H17-20 small class case (13 riders -> 1/3 cap gives 4 seeded riders)
+    # Check H17-20 small class case (13 riders -> top 8 are marked as seeded group)
     h17_seeding = seeding.classes["H17-20"]
     assert len(h17_seeding) == 13
     h17_seeded_count = sum(1 for e in h17_seeding if e.is_seeded)
-    assert h17_seeded_count == 4
-    assert h17_seeding[3].is_seeded is True
-    assert h17_seeding[4].is_seeded is False
+    assert h17_seeded_count == 8
+    assert h17_seeding[7].is_seeded is True
+    assert h17_seeding[8].is_seeded is False
 
 
 def test_calculate_seeding_order_fallback_previous_year(
