@@ -5,6 +5,9 @@ from typing import Any
 
 import pytest
 
+from src.models import CupStandings
+from src.sources.eventor_parser import EventorParser
+
 
 @pytest.fixture
 def test_data_dir() -> Path:
@@ -33,3 +36,27 @@ def temp_event_data_dir(tmp_path: Path) -> Path:
     data_dir = tmp_path / "data" / "events"
     data_dir.mkdir(parents=True, exist_ok=True)
     return data_dir
+
+
+@pytest.fixture(scope="module")
+def cup_2026() -> CupStandings:
+    """Parses Svenska cupen MTBO 2026 standings from test fixture."""
+    parser = EventorParser()
+    data_dir = Path(__file__).parent / "data"
+    with open(data_dir / "series_1539.html", encoding="utf-8") as f:
+        return parser.parse_series_standings(
+            f.read(),
+            "https://eventor.orientering.se/Standings/View/Series/1539",
+        )
+
+
+@pytest.fixture(scope="module")
+def cup_2025() -> CupStandings:
+    """Parses Svenska Cupen MTBO 2025 standings from test fixture."""
+    parser = EventorParser()
+    data_dir = Path(__file__).parent / "data"
+    with open(data_dir / "series_1418.html", encoding="utf-8") as f:
+        return parser.parse_series_standings(
+            f.read(),
+            "https://eventor.orientering.se/Standings/View/Series/1418",
+        )

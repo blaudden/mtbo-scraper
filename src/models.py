@@ -1,4 +1,4 @@
-from dataclasses import dataclass, field
+from dataclasses import asdict, dataclass, field
 from typing import TypedDict
 
 
@@ -530,3 +530,64 @@ class EventListWrapper:
             ),
             "events": [e.to_dict() for e in self.events],
         }
+
+
+@dataclass
+class CupEntry:
+    """Represents a rider entry in a cup class standing."""
+
+    rank: int
+    name: str
+    club: str
+    points: float
+
+    def to_dict(self) -> dict:
+        """Converts the entry to a dictionary."""
+        return asdict(self)
+
+
+@dataclass
+class CupStandings:
+    """Complete cup standings data."""
+
+    id: str
+    name: str
+    year: int
+    url: str
+    classes: dict[str, list[CupEntry]]
+
+    def to_dict(self) -> dict:
+        """Converts the cup standings to a dictionary."""
+        return asdict(self)
+
+
+@dataclass
+class SeedingEntry:
+    """Rider seeding entry for a class."""
+
+    seed_rank: int
+    name: str
+    club: str
+    seed_val: int
+    current_rank: int | None
+    previous_rank: int | None
+    is_seeded: bool
+
+    def to_dict(self) -> dict:
+        """Converts the seeding entry to a dictionary."""
+        return asdict(self)
+
+
+@dataclass
+class SeedingOrder:
+    """Calculated seeding order for a given year."""
+
+    year: int
+    generated_at: str
+    current_cup_url: str | None
+    previous_cup_url: str | None
+    classes: dict[str, list[SeedingEntry]]
+
+    def to_dict(self) -> dict:
+        """Converts the seeding order to a dictionary."""
+        return asdict(self)
