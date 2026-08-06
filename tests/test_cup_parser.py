@@ -13,7 +13,8 @@ def test_parse_series_standings_1539(cup_2026: CupStandings) -> None:
 
     # Check top entry in H21
     h21_entries = cup_2026.classes["H21"]
-    assert len(h21_entries) > 0
+    # Three rows have an empty place cell and are excluded
+    assert len(h21_entries) == 8
     first = h21_entries[0]
     assert first.rank == 1
     assert first.name == "Rasmus Nordgren"

@@ -284,9 +284,7 @@ class Storage:
                 content_changed = True
 
             if content_changed:
-                with open(file_path, "w", encoding="utf-8") as f:
-                    json.dump(output_dict, f, indent=2, ensure_ascii=False)
-                    f.write("\n")
+                self._write_json(file_path, output_dict)
                 logger.info(
                     "partition_updated",
                     year=year,
@@ -322,9 +320,7 @@ class Storage:
             sources=source_meta,
         )
 
-        with open(self.index_file, "w", encoding="utf-8") as f:
-            json.dump(new_index, f, indent=2, ensure_ascii=False)
-            f.write("\n")
+        self._write_json(self.index_file, new_index)
         logger.info("index_updated", path=str(self.index_file))
 
         return all_saved_events
@@ -366,9 +362,7 @@ class Storage:
             if len(filtered) < original_count:
                 removed.extend(purged_ids)
                 partition_data["events"] = filtered
-                with open(full_path, "w", encoding="utf-8") as f:
-                    json.dump(partition_data, f, indent=2, ensure_ascii=False)
-                    f.write("\n")
+                self._write_json(full_path, partition_data)
 
                 # Update partition metadata
                 partitions[year] = IndexPartitionDict(
@@ -392,9 +386,7 @@ class Storage:
         # Update index
         index_data["partitions"] = partitions
         index_data["last_scraped_at"] = now_iso
-        with open(self.index_file, "w", encoding="utf-8") as f:
-            json.dump(index_data, f, indent=2, ensure_ascii=False)
-            f.write("\n")
+        self._write_json(self.index_file, index_data)
 
         return removed
 
@@ -476,10 +468,7 @@ class Storage:
         clean_slug = re.sub(r"[-\s]+", "_", raw_slug).strip("_")
         file_path = dir_path / f"{clean_slug}.json"
 
-        with open(file_path, "w", encoding="utf-8") as f:
-            json.dump(cup.to_dict(), f, indent=2, ensure_ascii=False)
-            f.write("\n")
-
+        self._write_json(file_path, cup.to_dict())
         logger.info("Saved cup standings", path=str(file_path), cup_name=cup.name)
         return file_path
 
@@ -500,9 +489,12 @@ class Storage:
 
         file_path = dir_path / "seeding_order.json"
 
-        with open(file_path, "w", encoding="utf-8") as f:
-            json.dump(seeding.to_dict(), f, indent=2, ensure_ascii=False)
-            f.write("\n")
-
+        self._write_json(file_path, seeding.to_dict())
         logger.info("Saved seeding order", path=str(file_path), year=seeding.year)
         return file_path
+
+    def _write_json(self, file_path: Path, payload: object) -> None:
+        """Writes payload as UTF-8 JSON with indent=2 and a trailing newline."""
+        with open(file_path, "w", encoding="utf-8") as f:
+            json.dump(payload, f, indent=2, ensure_ascii=False)
+            f.write("\n")
