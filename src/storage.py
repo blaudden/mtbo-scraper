@@ -487,7 +487,7 @@ class Storage:
         dir_path = Path(cups_dir)
         dir_path.mkdir(parents=True, exist_ok=True)
 
-        file_path = dir_path / "seeding_order.json"
+        file_path = dir_path / "svenska_cupen_seeding_order.json"
 
         self._write_json(file_path, seeding.to_dict())
         logger.info("Saved seeding order", path=str(file_path), year=seeding.year)
