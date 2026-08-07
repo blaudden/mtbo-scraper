@@ -7,6 +7,8 @@ from bs4 import BeautifulSoup, Tag
 
 from src.models import (
     Area,
+    CupEntry,
+    CupStandings,
     Document,
     Event,
     ListCountDict,
@@ -669,6 +671,106 @@ class EventorParser:
                     total_count += len(tbody.find_all("tr"))
 
         return ListCountDict(total_count=total_count, class_counts=class_counts)
+
+    def parse_series_standings(self, html: str, url: str) -> CupStandings:
+        """Parses Eventor series standings page HTML.
+
+        Args:
+            html: HTML content of the series page.
+            url: Full URL of the series page.
+
+        Returns:
+            CupStandings containing extracted class standings.
+        """
+        soup = BeautifulSoup(html, "lxml")
+
+        # Extract series ID from URL (e.g. /Standings/View/Series/1539)
+        series_id_match = re.search(r"series/(\d+)", url, re.IGNORECASE)
+        series_id = series_id_match.group(1) if series_id_match else "unknown"
+
+        # Find series title
+        title_el = soup.find(["h1", "h2", "h3"])
+        series_title = title_el.get_text(strip=True) if title_el else "Series Standings"
+
+        # Try to find header containing full series name if first header is generic
+        for header in soup.find_all(["h2", "h3"]):
+            text = header.get_text(strip=True)
+            if (
+                "cup" in text.lower()
+                or "serien" in text.lower()
+                or "series" in text.lower()
+            ):
+                series_title = text
+                break
+
+        # Extract year from title or current year fallback
+        year_match = re.search(r"\b(20\d\d)\b", series_title)
+        year = int(year_match.group(1)) if year_match else datetime.now(UTC).year
+
+        classes_map: dict[str, list[CupEntry]] = {}
+
+        # Look for headers defining class names (e.g. H21, D21, H17-20, D17-20)
+        for header in soup.find_all(["h2", "h3", "h4"]):
+            class_name = header.get_text(strip=True)
+
+            # Inspect immediate following sibling table with classStanding class
+            table = header.find_next_sibling("table")
+            if not table or not isinstance(table, Tag):
+                continue
+
+            table_classes = table.get("class", [])
+            if "classStanding" not in table_classes:
+                continue
+
+            # Select data rows: from tbody if present, else trs with td cells
+            tbody = table.find("tbody")
+            rows: list[Tag]
+            if tbody and isinstance(tbody, Tag):
+                rows = list(tbody.find_all("tr"))
+            else:
+                rows = [tr for tr in table.find_all("tr") if tr.find_all("td")]
+
+            entries: list[CupEntry] = []
+            for row in rows:
+                cols = [td.get_text(strip=True) for td in row.find_all("td")]
+                if len(cols) < 4:
+                    continue
+
+                # Rank: parse numeric value
+                raw_rank = re.sub(r"[^\d]", "", cols[0])
+                if not raw_rank:
+                    continue
+                rank = int(raw_rank)
+
+                name = cols[1]
+                club = cols[2]
+
+                # Points: last column
+                raw_points = cols[-1].replace(",", ".")
+                try:
+                    points = float(raw_points)
+                except ValueError:
+                    points = 0.0
+
+                entries.append(
+                    CupEntry(
+                        rank=rank,
+                        name=name,
+                        club=club,
+                        points=points,
+                    )
+                )
+
+            if entries:
+                classes_map[class_name] = entries
+
+        return CupStandings(
+            id=series_id,
+            name=series_title,
+            year=year,
+            url=url,
+            classes=classes_map,
+        )
 
     def _extract_raw_general_info(self, soup: Tag) -> dict[str, str]:
         """Extracts raw key-value pairs from the 'General information' table.

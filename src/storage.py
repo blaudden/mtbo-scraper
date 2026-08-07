@@ -1,16 +1,19 @@
 import json
+import re
 from datetime import UTC, datetime
 from pathlib import Path
 
 import structlog
 
 from .models import (
+    CupStandings,
     Event,
     EventDict,
     IndexDict,
     IndexPartitionDict,
     IndexSourceDict,
     RaceDict,
+    SeedingOrder,
     Source,
     Url,
     UrlDict,
@@ -281,9 +284,7 @@ class Storage:
                 content_changed = True
 
             if content_changed:
-                with open(file_path, "w", encoding="utf-8") as f:
-                    json.dump(output_dict, f, indent=2, ensure_ascii=False)
-                    f.write("\n")
+                self._write_json(file_path, output_dict)
                 logger.info(
                     "partition_updated",
                     year=year,
@@ -319,9 +320,7 @@ class Storage:
             sources=source_meta,
         )
 
-        with open(self.index_file, "w", encoding="utf-8") as f:
-            json.dump(new_index, f, indent=2, ensure_ascii=False)
-            f.write("\n")
+        self._write_json(self.index_file, new_index)
         logger.info("index_updated", path=str(self.index_file))
 
         return all_saved_events
@@ -363,9 +362,7 @@ class Storage:
             if len(filtered) < original_count:
                 removed.extend(purged_ids)
                 partition_data["events"] = filtered
-                with open(full_path, "w", encoding="utf-8") as f:
-                    json.dump(partition_data, f, indent=2, ensure_ascii=False)
-                    f.write("\n")
+                self._write_json(full_path, partition_data)
 
                 # Update partition metadata
                 partitions[year] = IndexPartitionDict(
@@ -389,9 +386,7 @@ class Storage:
         # Update index
         index_data["partitions"] = partitions
         index_data["last_scraped_at"] = now_iso
-        with open(self.index_file, "w", encoding="utf-8") as f:
-            json.dump(index_data, f, indent=2, ensure_ascii=False)
-            f.write("\n")
+        self._write_json(self.index_file, index_data)
 
         return removed
 
@@ -452,3 +447,54 @@ class Storage:
                 new_u.last_updated_at = now_iso
 
         return new_url_objs
+
+    def save_cup_standings(
+        self, cup: CupStandings, cups_dir: str = "data/cups"
+    ) -> Path:
+        """Saves cup standings data to a JSON file.
+
+        Args:
+            cup: The CupStandings object to save.
+            cups_dir: Base directory for cup files (default: 'data/cups').
+
+        Returns:
+            Path to the saved JSON file.
+        """
+        dir_path = Path(cups_dir) / str(cup.year)
+        dir_path.mkdir(parents=True, exist_ok=True)
+
+        # Generate clean filename slug (e.g., svenska_cupen_mtbo_2026.json)
+        raw_slug = re.sub(r"[^\w\s-]", "", cup.name.lower())
+        clean_slug = re.sub(r"[-\s]+", "_", raw_slug).strip("_")
+        file_path = dir_path / f"{clean_slug}.json"
+
+        self._write_json(file_path, cup.to_dict())
+        logger.info("Saved cup standings", path=str(file_path), cup_name=cup.name)
+        return file_path
+
+    def save_seeding_order(
+        self, seeding: SeedingOrder, cups_dir: str = "data/cups"
+    ) -> Path:
+        """Saves seeding order data to a JSON file.
+
+        Args:
+            seeding: The SeedingOrder object to save.
+            cups_dir: Base directory for cup files (default: 'data/cups').
+
+        Returns:
+            Path to the saved JSON file.
+        """
+        dir_path = Path(cups_dir)
+        dir_path.mkdir(parents=True, exist_ok=True)
+
+        file_path = dir_path / "svenska_cupen_seeding_order.json"
+
+        self._write_json(file_path, seeding.to_dict())
+        logger.info("Saved seeding order", path=str(file_path), year=seeding.year)
+        return file_path
+
+    def _write_json(self, file_path: Path, payload: object) -> None:
+        """Writes payload as UTF-8 JSON with indent=2 and a trailing newline."""
+        with open(file_path, "w", encoding="utf-8") as f:
+            json.dump(payload, f, indent=2, ensure_ascii=False)
+            f.write("\n")

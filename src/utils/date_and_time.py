@@ -1,6 +1,15 @@
 import re
 import zoneinfo
-from datetime import datetime
+from datetime import UTC, datetime
+
+
+def get_current_utc_iso() -> str:
+    """Returns the current UTC timestamp formatted as an ISO 8601 string.
+
+    Returns:
+        An ISO 8601 formatted UTC datetime string.
+    """
+    return datetime.now(UTC).isoformat()
 
 
 def get_timezone_for_country(country_info: str) -> str:

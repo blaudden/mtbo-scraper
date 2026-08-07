@@ -1,4 +1,4 @@
-from dataclasses import dataclass, field
+from dataclasses import asdict, dataclass, field
 from typing import TypedDict
 
 
@@ -530,3 +530,105 @@ class EventListWrapper:
             ),
             "events": [e.to_dict() for e in self.events],
         }
+
+
+class CupEntryDict(TypedDict):
+    """Dictionary representation of a cup entry."""
+
+    rank: int
+    name: str
+    club: str
+    points: float
+
+
+class CupStandingsDict(TypedDict):
+    """Dictionary representation of cup standings."""
+
+    id: str
+    name: str
+    year: int
+    url: str
+    classes: dict[str, list[CupEntryDict]]
+
+
+class SeedingEntryDict(TypedDict):
+    """Dictionary representation of a seeding entry."""
+
+    seed_rank: int
+    name: str
+    club: str
+    seed_val: int
+    current_rank: int | None
+    previous_rank: int | None
+    is_seeded: bool
+
+
+class SeedingOrderDict(TypedDict):
+    """Dictionary representation of seeding order."""
+
+    year: int
+    generated_at: str
+    current_cup_url: str | None
+    previous_cup_url: str | None
+    classes: dict[str, list[SeedingEntryDict]]
+
+
+@dataclass
+class CupEntry:
+    """Represents a rider entry in a cup class standing."""
+
+    rank: int
+    name: str
+    club: str
+    points: float
+
+    def to_dict(self) -> CupEntryDict:
+        """Converts the entry to a dictionary."""
+        return asdict(self)  # type: ignore[return-value]
+
+
+@dataclass
+class CupStandings:
+    """Complete cup standings data."""
+
+    id: str
+    name: str
+    year: int
+    url: str
+    classes: dict[str, list[CupEntry]]
+
+    def to_dict(self) -> CupStandingsDict:
+        """Converts the cup standings to a dictionary."""
+        return asdict(self)  # type: ignore[return-value]
+
+
+@dataclass
+class SeedingEntry:
+    """Rider seeding entry for a class."""
+
+    seed_rank: int
+    name: str
+    club: str
+    seed_val: int
+    current_rank: int | None
+    previous_rank: int | None
+    is_seeded: bool
+
+    def to_dict(self) -> SeedingEntryDict:
+        """Converts the seeding entry to a dictionary."""
+        return asdict(self)  # type: ignore[return-value]
+
+
+@dataclass
+class SeedingOrder:
+    """Calculated seeding order for a given year."""
+
+    year: int
+    generated_at: str
+    current_cup_url: str | None
+    previous_cup_url: str | None
+    classes: dict[str, list[SeedingEntry]]
+
+    def to_dict(self) -> SeedingOrderDict:
+        """Converts the seeding order to a dictionary."""
+        return asdict(self)  # type: ignore[return-value]
