@@ -1,11 +1,11 @@
 """Seeding order calculation for MTBO Svenska Cupen according to competition rules."""
 
-from datetime import UTC, datetime
 from typing import TypedDict
 
 import structlog
 
 from src.models import CupEntry, CupStandings, SeedingEntry, SeedingOrder
+from src.utils.date_and_time import get_current_utc_iso
 
 logger = structlog.get_logger(__name__)
 
@@ -143,7 +143,7 @@ def calculate_seeding_order(
 
     return SeedingOrder(
         year=year,
-        generated_at=datetime.now(UTC).isoformat(),
+        generated_at=get_current_utc_iso(),
         current_cup_url=current_url,
         previous_cup_url=previous_url,
         classes=seeding_classes,
