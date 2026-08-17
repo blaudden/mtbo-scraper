@@ -778,7 +778,7 @@ participants:
 - class: D65
   club: Ronneby OK
   name: Ann-Christin Nero Forsman
-  start_number: 207
+  start_number: 262
 - class: D65
   club: Eksjö SOK
   name: Monica Kollberg
@@ -957,7 +957,95 @@ participants:
   start_number: 222
 - class: Öppen lång
   club: No club membership
+  name: Mats Ehrenström
+  start_number: null
+- class: Öppen lång
+  club: No club membership
   name: Lai Han Dennex Lui
+  start_number: null
+- class: Öppen mellan
+  club: OK Kåre
+  name: Mikael Löfgren
+  start_number: null
+- class: Öppen mellan
+  club: OK Kåre
+  name: Anders Brandin
+  start_number: null
+- class: Öppen mellan
+  club: OK Kåre
+  name: Emil Péclard
+  start_number: null
+- class: Öppen mellan
+  club: Ronneby OK
+  name: Håkan Forsman
+  start_number: null
+- class: Öppen mellan
+  club: Lessebo OK
+  name: Ann Karolina Karlsson
+  start_number: null
+- class: Öppen mellan
+  club: No club membership
+  name: Fredrik Sköldberg
+  start_number: null
+- class: Öppen mellan
+  club: OK Linné
+  name: Selma Kask
+  start_number: null
+- class: Öppen mellan
+  club: No club membership
+  name: Ole Andersson
+  start_number: null
+- class: Öppen mellan
+  club: Kristinehamns OK
+  name: Leif Celander
+  start_number: null
+- class: Öppen mellan
+  club: OK Linné
+  name: Anna Gillman
+  start_number: null
+- class: Öppen mellan
+  club: OK Roslagen
+  name: Magnus Jöngren
+  start_number: null
+- class: Öppen mellan
+  club: OK Linné
+  name: Astrid White
+  start_number: null
+- class: Öppen kort
+  club: No club membership
+  name: Ulrika Jansson Klintberg
+  start_number: null
+- class: Öppen kort
+  club: No club membership
+  name: John Lembke von Schéele
+  start_number: null
+- class: Öppen kort
+  club: No club membership
+  name: Magnus Hellmen
+  start_number: null
+- class: Öppen kort
+  club: OK Linné
+  name: Einar Porsö
+  start_number: null
+- class: Öppen kort
+  club: OK Linné
+  name: Kim Siemsen Sanz
+  start_number: null
+- class: Öppen kort
+  club: IF Thor
+  name: Viol Jokinen Johnson
+  start_number: null
+- class: Öppen kort
+  club: OK Linné
+  name: Karin Porsö
+  start_number: null
+- class: Öppen kort
+  club: OK Rodhen
+  name: Malin Jansson
+  start_number: null
+- class: Öppen kort
+  club: Garphyttans IF
+  name: Birgitta Jansson
   start_number: null
 - class: Öppen kort
   club: Domnarvets GOIF
@@ -966,17 +1054,5 @@ participants:
 - class: Öppen kort
   club: Tullinge SK
   name: Arvid Grankvist
-  start_number: null
-- class: Öppen kort
-  club: IF Thor
-  name: Viol Jokinen Johnson
-  start_number: null
-- class: Öppen kort
-  club: No club membership
-  name: John Lembke von Schéele
-  start_number: null
-- class: Öppen kort
-  club: OK Kåre
-  name: Emil Péclard
   start_number: null
 race_number: 1

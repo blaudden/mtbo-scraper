@@ -12,10 +12,6 @@ participants:
   name: Natasha Thackray
   start_number: 59
 - class: D21
-  club: Wiener Schulcup
-  name: Marisa Costa
-  start_number: 65
-- class: D21
   club: MTBO Collective
   name: Constance Devillers
   start_number: 69
@@ -87,6 +83,10 @@ participants:
   club: IKHP Huskvarna Idrottsklubb
   name: Ella Palm
   start_number: 75
+- class: D21
+  club: Wiener Schulcup
+  name: Marisa Costa
+  start_number: 65
 - class: H21
   club: CRCG Entroncamento
   name: Fábio Gonçalves
@@ -101,8 +101,8 @@ participants:
   start_number: 141
 - class: H21
   club: MTBO Collective
-  name: Armel Berthaud
-  start_number: 119
+  name: Antoine Lesquer
+  start_number: 121
 - class: H21
   club: Wiener Schulcup
   name: Hiro Ayano
@@ -160,10 +160,6 @@ participants:
   name: Joâo Ferreira
   start_number: 134
 - class: H21
-  club: MTBO Collective
-  name: Antoine Lesquer
-  start_number: 121
-- class: H21
   club: Sportcentrum Jicin
   name: Vojtech Stransky
   start_number: 122
@@ -179,6 +175,10 @@ participants:
   club: FK Göingarna
   name: Hampus Larsson
   start_number: 137
+- class: H21
+  club: MTBO Collective
+  name: Armel Berthaud
+  start_number: 119
 - class: D17-20
   club: Västerbergslagens OL
   name: Ellen Forsgren
@@ -666,7 +666,7 @@ participants:
 - class: D65
   club: Ronneby OK
   name: Ann-Christin Nero Forsman
-  start_number: 207
+  start_number: 262
 - class: D65
   club: Lierbygda O-lag
   name: Gunhild Hennum
@@ -726,7 +726,7 @@ participants:
 - class: H65
   club: Västerås SOK
   name: Per-Olov Sjöström
-  start_number: 183
+  start_number: 182
 - class: H65
   club: IFK Lidingö SOK
   name: Anders Stjerndahl
@@ -856,15 +856,79 @@ participants:
   name: Max Svensson
   start_number: 215
 - class: Öppen lång
+  club: IK Rex
+  name: Albin Larsson
+  start_number: null
+- class: Öppen lång
+  club: OK Linné
+  name: Selma Kask
+  start_number: null
+- class: Öppen lång
+  club: OK Linné
+  name: Peter Roxhed
+  start_number: null
+- class: Öppen lång
+  club: OK Linné
+  name: Fredrik Lindgren
+  start_number: null
+- class: Öppen lång
+  club: Klubblös
+  name: Fredrik Sköldberg
+  start_number: null
+- class: Öppen lång
   club: No club membership
   name: Lai Han Dennex Lui
+  start_number: null
+- class: Öppen mellan
+  club: OK Kåre
+  name: Boel Nyberg
+  start_number: null
+- class: Öppen mellan
+  club: Ronneby OK
+  name: Håkan Forsman
   start_number: null
 - class: Öppen mellan
   club: Täby OK
   name: Casper Annerborn
   start_number: null
 - class: Öppen mellan
+  club: Täby OK
+  name: Charlie Annerborn
+  start_number: null
+- class: Öppen mellan
+  club: OK Rodhen
+  name: Axel Sjölander
+  start_number: null
+- class: Öppen mellan
+  club: No club membership
+  name: John Lembke von Schéele
+  start_number: null
+- class: Öppen mellan
+  club: Kristinehamns OK
+  name: Leif Celander
+  start_number: null
+- class: Öppen mellan
   club: Lessebo OK
   name: Henrik Svensson
+  start_number: null
+- class: Öppen kort
+  club: OK Rodhen
+  name: Simon Blåudd
+  start_number: null
+- class: Öppen kort
+  club: OK Linné
+  name: Karin Porsö
+  start_number: null
+- class: Öppen kort
+  club: OK Linné
+  name: Irma Roxhed
+  start_number: null
+- class: Öppen kort
+  club: OK Linné
+  name: Kim Siemsen Sanz
+  start_number: null
+- class: Öppen kort
+  club: OK Linné
+  name: Einar Porsö
   start_number: null
 race_number: 1

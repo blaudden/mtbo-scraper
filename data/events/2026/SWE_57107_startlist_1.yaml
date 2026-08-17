@@ -263,6 +263,10 @@ participants:
   club: Västerås SOK
   name: Albin Wallinder
   start_number: 81
+- class: D14
+  club: Rasbo IK
+  name: Stina Sörqvist
+  start_number: null
 - class: H14
   club: OK Rodhen
   name: Erik Sjölander
@@ -654,7 +658,7 @@ participants:
 - class: D65
   club: Ronneby OK
   name: Ann-Christin Nero Forsman
-  start_number: 207
+  start_number: 262
 - class: D65
   club: Domnarvets GOIF
   name: Maria Emanuelsson
@@ -844,12 +848,24 @@ participants:
   name: Max Svensson
   start_number: 215
 - class: Öppen lång
+  club: IF Thor
+  name: Oskar Flordal
+  start_number: null
+- class: Öppen lång
   club: IFK Lidingö SOK
   name: Vitalii Chaban
   start_number: null
 - class: Öppen lång
+  club: OK Linné
+  name: Peter Roxhed
+  start_number: null
+- class: Öppen lång
   club: No club membership
   name: Lai Han Dennex Lui
+  start_number: null
+- class: Öppen lång
+  club: No club membership
+  name: Niclas Hällström
   start_number: null
 - class: Öppen mellan
   club: Sundbybergs IK
@@ -864,19 +880,87 @@ participants:
   name: Jonathan Blyth
   start_number: null
 - class: Öppen mellan
-  club: Västerbergslagens OL
-  name: Bernt Forsgren
+  club: OK Rodhen
+  name: Jakob Eklund
+  start_number: null
+- class: Öppen mellan
+  club: Sundsvalls OK
+  name: Stina Feil
+  start_number: null
+- class: Öppen mellan
+  club: OK Roslagen
+  name: Magnus Jöngren
+  start_number: null
+- class: Öppen mellan
+  club: IF Thor
+  name: Michelle Nordkvist
   start_number: null
 - class: Öppen mellan
   club: OK Kåre
   name: Emil Péclard
   start_number: null
 - class: Öppen mellan
+  club: Västerbergslagens OL
+  name: Bernt Forsgren
+  start_number: null
+- class: Öppen mellan
+  club: OK Nolaskogsarna
+  name: Patrik Fors
+  start_number: null
+- class: Öppen mellan
+  club: Västerås SOK
+  name: Jenny Ekvall
+  start_number: null
+- class: Öppen mellan
+  club: OK Linné
+  name: Fredrik Lindgren
+  start_number: null
+- class: Öppen mellan
+  club: No club membership
+  name: Fredrik Sköldberg
+  start_number: null
+- class: Öppen mellan
+  club: No club membership
+  name: Fritjof Karlsson
+  start_number: null
+- class: Öppen mellan
+  club: Säterbygdens OK
+  name: Anita Klar
+  start_number: null
+- class: Öppen mellan
+  club: Rasbo IK
+  name: Johan Winquist
+  start_number: null
+- class: Öppen mellan
+  club: Rasbo IK
+  name: Karin Eklöf
+  start_number: null
+- class: Öppen kort
+  club: OK Rodhen
+  name: Malin Jansson
+  start_number: null
+- class: Öppen kort
   club: Lessebo OK
   name: Henrik Svensson
   start_number: null
 - class: Öppen kort
   club: Bibbulmun Orienteers
   name: Natasha Thackray
+  start_number: null
+- class: Öppen kort
+  club: OK Linné
+  name: Einar Porsö
+  start_number: null
+- class: Öppen kort
+  club: Rasbo IK
+  name: Oskar Sörqvist
+  start_number: null
+- class: Öppen kort
+  club: SOK Aneby
+  name: Karin Freyland
+  start_number: null
+- class: Öppen kort
+  club: OK Rodhen
+  name: Simon Blåudd
   start_number: null
 race_number: 1
