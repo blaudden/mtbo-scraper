@@ -21,6 +21,7 @@ from src.sources.manual_source import ManualSource
 from src.storage import Storage
 from src.utils.diff import calculate_stats
 from src.utils.fingerprint import Fingerprinter
+from src.utils.seeding import fetch_and_update_svenska_cupen_seeding
 
 # Setup logging (will be configured in main() based on CLI flags)
 logger = structlog.get_logger(__name__)
@@ -647,6 +648,16 @@ def main(
                 failed_ids=failed_event_ids[:50],
                 more_hidden=len(failed_event_ids) > 50,
             )
+
+        # Update Svenska Cupen standings and seeding order if Swedish source is active
+        if not source_filter or "SWE" in [c["country"] for c in active_configs]:
+            try:
+                target_year = datetime.now().year
+                fetch_and_update_svenska_cupen_seeding(
+                    scraper=scraper, storage=storage, year=target_year
+                )
+            except Exception as e:
+                logger.error("svenska_cupen_seeding_update_failed", error=str(e))
 
     # Calculate stats and write commit message
     sources_used = [c["country"] for c in active_configs] if source_filter else None

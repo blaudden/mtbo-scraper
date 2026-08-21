@@ -6,6 +6,7 @@
 # Configuration
 OUTPUT_FILE="data/events/mtbo_events.json"
 OUTPUT_DIR="data/events"
+CUPS_DIR="data/cups"
 MIN_SIZE_BYTES=100
 LOG_FILE="scraper.log"
 
@@ -56,9 +57,9 @@ if [ "$FILE_SIZE" -lt "$MIN_SIZE_KB" ]; then
 fi
 
 # 3. Git Commit and Push
-# Check if there are changes in either index or data
-if git diff --quiet "$OUTPUT_FILE" "$OUTPUT_DIR"; then
-    echo "No changes to $OUTPUT_FILE or $OUTPUT_DIR." >> "$LOG_FILE"
+# Check if there are changes in either index, event data, or cups data
+if git diff --quiet "$OUTPUT_FILE" "$OUTPUT_DIR" "$CUPS_DIR"; then
+    echo "No changes to $OUTPUT_FILE, $OUTPUT_DIR, or $CUPS_DIR." >> "$LOG_FILE"
 else
     echo "Changes detected. Retrieving stats..." >> "$LOG_FILE"
 
@@ -72,8 +73,8 @@ else
 
     echo "Commit message: $COMMIT_MSG" >> "$LOG_FILE"
 
-    # Stage the directory (new/modified/deleted files) and index
-    git add "$OUTPUT_FILE" "$OUTPUT_DIR"
+    # Stage the directories (new/modified/deleted files) and index
+    git add "$OUTPUT_FILE" "$OUTPUT_DIR" "$CUPS_DIR"
     if git commit -m "$COMMIT_MSG" >> "$LOG_FILE" 2>&1; then
         if git push >> "$LOG_FILE" 2>&1; then
             echo "Pushed changes to git." >> "$LOG_FILE"

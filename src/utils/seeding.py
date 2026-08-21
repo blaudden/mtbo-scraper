@@ -1,11 +1,24 @@
 """Seeding order calculation for MTBO Svenska Cupen according to competition rules."""
 
-from typing import TypedDict
+from collections.abc import Sequence
+from typing import TYPE_CHECKING, TypedDict
 
 import structlog
 
-from src.models import CupEntry, CupStandings, SeedingEntry, SeedingOrder
+from src.models import (
+    CupEntry,
+    CupStandings,
+    Event,
+    EventDict,
+    SeedingEntry,
+    SeedingOrder,
+)
+from src.sources.eventor_parser import EventorParser
 from src.utils.date_and_time import get_current_utc_iso
+
+if TYPE_CHECKING:
+    from src.scraper import Scraper
+    from src.storage import Storage
 
 logger = structlog.get_logger(__name__)
 
@@ -16,6 +29,65 @@ class _SeedingCandidate(TypedDict):
     seed_val: int
     current_rank: int | None
     previous_rank: int | None
+
+
+def _is_svenska_cupen_title(title: str) -> bool:
+    """Checks whether the series title matches Svenska Cupen MTBO."""
+    t = title.lower()
+    return "svenska cupen mtbo" in t and "veteran" not in t
+
+
+def _normalize_url(url: str, base_url: str) -> str:
+    """Ensures a series URL is absolute."""
+    if url.startswith("http://") or url.startswith("https://"):
+        return url
+    if url.startswith("/"):
+        return f"{base_url.rstrip('/')}{url}"
+    return f"{base_url.rstrip('/')}/{url}"
+
+
+def find_svenska_cupen_series_url(
+    events: Sequence[Event | EventDict],
+    base_url: str = "https://eventor.orientering.se",
+) -> str | None:
+    """Finds the Svenska Cupen MTBO series URL from a sequence of events.
+
+    Args:
+        events: List or sequence of Event objects or EventDict dictionaries.
+        base_url: Base URL for Swedish Eventor (default: https://eventor.orientering.se).
+
+    Returns:
+        Full series URL if found, else None.
+    """
+    for event in events:
+        if isinstance(event, dict):
+            event_id = event.get("id", "")
+            if not isinstance(event_id, str) or not event_id.startswith("SWE_"):
+                continue
+            urls = event.get("urls", [])
+            for url_dict in urls:
+                title = url_dict.get("title")
+                if (
+                    url_dict.get("type") == "Series"
+                    and isinstance(title, str)
+                    and _is_svenska_cupen_title(title)
+                ):
+                    raw_url = url_dict.get("url") or ""
+                    if raw_url:
+                        return _normalize_url(raw_url, base_url)
+        else:
+            if not event.id.startswith("SWE_"):
+                continue
+            for url_obj in event.urls:
+                if (
+                    url_obj.type == "Series"
+                    and url_obj.title
+                    and _is_svenska_cupen_title(url_obj.title)
+                ):
+                    raw_url = url_obj.url or ""
+                    if raw_url:
+                        return _normalize_url(raw_url, base_url)
+    return None
 
 
 def _build_rider_map(
@@ -148,3 +220,84 @@ def calculate_seeding_order(
         previous_cup_url=previous_url,
         classes=seeding_classes,
     )
+
+
+def fetch_and_update_svenska_cupen_seeding(
+    scraper: "Scraper",
+    storage: "Storage",
+    year: int,
+    base_url: str = "https://eventor.orientering.se",
+) -> SeedingOrder | None:
+    """Discovers, fetches, and saves Svenska Cupen standings and calculates seeding.
+
+    Args:
+        scraper: Scraper instance for HTTP requests.
+        storage: Storage instance for loading events and saving cup files.
+        year: Target year (e.g. current year).
+        base_url: Swedish Eventor base URL.
+
+    Returns:
+        Generated SeedingOrder if successful, else None.
+    """
+    logger.info("Updating Svenska Cupen seeding", year=year)
+    all_events_map = storage.load()
+    all_events = list(all_events_map.values())
+
+    curr_events = [
+        e for e in all_events if e.get("start_time", "").startswith(str(year))
+    ]
+    prev_events = [
+        e for e in all_events if e.get("start_time", "").startswith(str(year - 1))
+    ]
+
+    curr_series_url = find_svenska_cupen_series_url(curr_events, base_url)
+    prev_series_url = find_svenska_cupen_series_url(prev_events, base_url)
+
+    parser = EventorParser()
+    curr_cup: CupStandings | None = None
+    prev_cup: CupStandings | None = None
+
+    if curr_series_url:
+        logger.info("Fetching current year cup standings", url=curr_series_url)
+        resp = scraper.get(curr_series_url)
+        if resp and resp.text:
+            try:
+                curr_cup = parser.parse_series_standings(resp.text, curr_series_url)
+                storage.save_cup_standings(curr_cup)
+            except Exception as e:
+                logger.error(
+                    "Failed to parse current year cup standings",
+                    error=str(e),
+                    url=curr_series_url,
+                )
+        else:
+            logger.warning(
+                "Failed to fetch current year cup standings HTML", url=curr_series_url
+            )
+
+    if prev_series_url:
+        logger.info("Fetching previous year cup standings", url=prev_series_url)
+        resp = scraper.get(prev_series_url)
+        if resp and resp.text:
+            try:
+                prev_cup = parser.parse_series_standings(resp.text, prev_series_url)
+                storage.save_cup_standings(prev_cup)
+            except Exception as e:
+                logger.error(
+                    "Failed to parse previous year cup standings",
+                    error=str(e),
+                    url=prev_series_url,
+                )
+        else:
+            logger.warning(
+                "Failed to fetch previous year cup standings HTML", url=prev_series_url
+            )
+
+    if not curr_cup and not prev_cup:
+        logger.warning("No cup standings available to calculate seeding", year=year)
+        return None
+
+    seeding = calculate_seeding_order(curr_cup, prev_cup, year=year)
+    storage.save_seeding_order(seeding)
+    logger.info("Successfully updated Svenska Cupen seeding order", year=year)
+    return seeding
