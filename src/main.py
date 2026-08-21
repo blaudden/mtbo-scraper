@@ -649,8 +649,10 @@ def main(
                 more_hidden=len(failed_event_ids) > 50,
             )
 
-        # Update Svenska Cupen standings and seeding order if Swedish source is active
-        if not source_filter or "SWE" in [c["country"] for c in active_configs]:
+        # Update Svenska Cupen standings and seeding order only during full scrapes
+        if mode != "current" and (
+            not source_filter or "SWE" in [c["country"] for c in active_configs]
+        ):
             try:
                 target_year = datetime.now().year
                 fetch_and_update_svenska_cupen_seeding(
