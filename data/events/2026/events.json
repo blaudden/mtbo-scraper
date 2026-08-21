@@ -2173,13 +2173,13 @@
         {
           "type": "Bulletin",
           "title": "Bulletin 1",
-          "url": "/Documents/Event/9725/Bulletin-1",
+          "url": "https://eventor-iof-storage.orientering.se/eventdocuments/8794/789a8d0b-47ef-436a-a9e3-0a5b80b600d2/Bulletin-1.pdf",
           "published_time": "2026-04-01"
         },
         {
           "type": "Bulletin",
           "title": "Bulletin 2",
-          "url": "/Documents/Event/10322/Bulletin-2",
+          "url": "https://eventor-iof-storage.orientering.se/eventdocuments/8794/79510b9a-66f8-492b-9d2f-4f6fe09f191b/Bulletin-2.pdf",
           "published_time": "2026-06-24"
         }
       ],
@@ -2999,7 +2999,7 @@
         {
           "type": "Other",
           "title": "Battle of the Legends - info for Middle and Sprint events",
-          "url": "/Documents/Event/10249/Battle-of-the-Legends---info-for-Middle-and-Sprint-events",
+          "url": "https://eventor-iof-storage.orientering.se/eventdocuments/8885/8c412c2b-1970-4d26-80fa-4bfe1ce53ff2/Battle-of-the-Legends---info-for-Middle-and-Sprint-events.pdf",
           "published_time": "2026-03-18"
         },
         {
@@ -20413,6 +20413,86 @@
               "last_updated_at": "2026-08-19T01:28:17.838790+00:00"
             }
           ],
+          "documents": [],
+          "entry_counts": null,
+          "start_counts": null,
+          "result_counts": null,
+          "fingerprints": []
+        }
+      ],
+      "entry_deadlines": []
+    },
+    {
+      "id": "SWE_60269",
+      "name": "MTBO-Cupen #5",
+      "start_time": "2026-09-09",
+      "end_time": "2026-09-09",
+      "status": "Sanctioned",
+      "original_status": "Active",
+      "types": [
+        "Local"
+      ],
+      "tags": [],
+      "form": "Individual",
+      "organisers": [
+        {
+          "name": "Gotlands Bro OK",
+          "country_code": "SWE"
+        }
+      ],
+      "officials": [
+        {
+          "role": "Contact person",
+          "name": "Kurt Löfgren"
+        },
+        {
+          "role": "Contact phone number",
+          "name": "0727107697"
+        },
+        {
+          "role": "Contact email",
+          "name": "enc:Dx0QCEQHFxNPGA8XHwAKCkMzFxcNGQRcDhsP"
+        }
+      ],
+      "classes": [
+        "3 km",
+        "5 km",
+        "Kort 4",
+        "Lång 11",
+        "Mellan 7"
+      ],
+      "urls": [
+        {
+          "type": "Path",
+          "url": "Events/Show/60269",
+          "title": null,
+          "last_updated_at": "2026-08-21T17:58:32.051670+00:00"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Bulletin",
+          "title": "PM",
+          "url": "https://eventor-sweden-storage.orientering.se/eventdocuments/60269/cd11e485-1b29-4c3a-9e43-130a42c951de/PM.Pdf",
+          "published_time": "2026-08-21"
+        }
+      ],
+      "information": null,
+      "region": "Gotland",
+      "punching_system": "Sportident",
+      "races": [
+        {
+          "race_number": 1,
+          "name": "MTBO-Cupen #5",
+          "datetimez": "2026-09-09T16:30:00+02:00",
+          "discipline": "Long",
+          "night_or_day": "day",
+          "position": {
+            "lat": 57.6926743773122,
+            "lng": 18.3521832757965
+          },
+          "areas": [],
+          "urls": [],
           "documents": [],
           "entry_counts": null,
           "start_counts": null,
