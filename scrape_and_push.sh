@@ -58,9 +58,17 @@ if [ "$FILE_SIZE" -lt "$MIN_SIZE_KB" ]; then
 fi
 
 # 3. Git Commit and Push
-# Check if there are changes in either index, event data, or cups data
-if git diff --quiet "$OUTPUT_FILE" "$OUTPUT_DIR" "$CUPS_DIR"; then
-    echo "No changes to $OUTPUT_FILE, $OUTPUT_DIR, or $CUPS_DIR." >> "$LOG_FILE"
+# Build list of target paths that actually exist
+PATHS_TO_CHECK=()
+for p in "$OUTPUT_FILE" "$OUTPUT_DIR" "$CUPS_DIR"; do
+    if [ -e "$p" ]; then
+        PATHS_TO_CHECK+=("$p")
+    fi
+done
+
+# Check if there are any staged, unstaged, or untracked changes
+if [ ${#PATHS_TO_CHECK[@]} -eq 0 ] || [ -z "$(git status --porcelain "${PATHS_TO_CHECK[@]}")" ]; then
+    echo "No changes to output paths (${PATHS_TO_CHECK[*]})." >> "$LOG_FILE"
 else
     echo "Changes detected. Retrieving stats..." >> "$LOG_FILE"
 
@@ -74,8 +82,8 @@ else
 
     echo "Commit message: $COMMIT_MSG" >> "$LOG_FILE"
 
-    # Stage the directories (new/modified/deleted files) and index
-    git add "$OUTPUT_FILE" "$OUTPUT_DIR" "$CUPS_DIR"
+    # Stage additions, modifications, and deletions for existing paths
+    git add -A "${PATHS_TO_CHECK[@]}"
     if git commit -m "$COMMIT_MSG" >> "$LOG_FILE" 2>&1; then
         if git push >> "$LOG_FILE" 2>&1; then
             echo "Pushed changes to git." >> "$LOG_FILE"
