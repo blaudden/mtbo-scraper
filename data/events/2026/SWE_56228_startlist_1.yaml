@@ -52,12 +52,12 @@ participants:
   name: Ella Palm
   start_number: null
 - class: H21
-  club: Domnarvets GOIF
-  name: Ville Elgesjö
-  start_number: null
-- class: H21
   club: OK Takas
   name: Justas Griksas
+  start_number: null
+- class: H21
+  club: Domnarvets GOIF
+  name: Ville Elgesjö
   start_number: null
 - class: H21
   club: Haninge SOK
@@ -162,6 +162,10 @@ participants:
 - class: H14
   club: OK Kåre
   name: Olle Dahlqvist
+  start_number: null
+- class: D12
+  club: IFK Mora OK
+  name: Alice Eggöy Markhester
   start_number: null
 - class: D12
   club: IK Jarl Rättvik
@@ -340,16 +344,16 @@ participants:
   name: Fredrik Forsgren
   start_number: null
 - class: D55
+  club: OK Fortūna
+  name: Giedre Rubazeviciene
+  start_number: null
+- class: D55
   club: Västvärmlands OK
   name: Kristin Johansson
   start_number: null
 - class: D55
   club: OK Skogsfalken
   name: Cecilia Rönnfjärd
-  start_number: null
-- class: D55
-  club: OK Fortūna
-  name: Giedre Rubazeviciene
   start_number: null
 - class: D55
   club: IK Vista
@@ -362,6 +366,14 @@ participants:
 - class: D55
   club: Haninge SOK
   name: Helene Ripa
+  start_number: null
+- class: H55
+  club: OK Fortūna
+  name: Jurgis Rubazevicius
+  start_number: null
+- class: H55
+  club: OK Takas
+  name: Rolandas Grikšas
   start_number: null
 - class: H55
   club: OSK Sakas
@@ -384,20 +396,12 @@ participants:
   name: Adrian Schnyder
   start_number: null
 - class: H55
-  club: OK Fortūna
-  name: Jurgis Rubazevicius
-  start_number: null
-- class: H55
   club: Täby OK
   name: Ola Bengtsson
   start_number: null
 - class: H55
   club: Haninge SOK
   name: Ronnie Pettersson
-  start_number: null
-- class: H55
-  club: OK Takas
-  name: Rolandas Grikšas
   start_number: null
 - class: H55
   club: OK Kåre
@@ -651,9 +655,9 @@ participants:
   club: Tjällmo-Godegårds OK
   name: Ingemar Löfqvist
   start_number: null
-- class: Öppen kort
-  club: Köpenicker SC
-  name: Katrin Brandt
+- class: Öppen mellan
+  club: Ulricehamns OK
+  name: Leif Ahlstrand
   start_number: null
 - class: Öppen mellan
   club: Kvarnsvedens GOIF OK
@@ -662,6 +666,10 @@ participants:
 - class: Öppen mellan
   club: No club membership
   name: Johanna Böhm
+  start_number: null
+- class: Öppen mellan
+  club: Köpenicker SC
+  name: Katrin Brandt
   start_number: null
 - class: Öppen mellan
   club: Köping-Kolsva OK

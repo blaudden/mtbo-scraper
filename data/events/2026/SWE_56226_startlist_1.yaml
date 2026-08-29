@@ -584,56 +584,172 @@ participants:
   name: Gunnar Munktelius
   start_number: null
 - class: Öppen kort
-  club: Kvarnsvedens GOIF OK
-  name: Ing-Marie Andrén
+  club: IFK Mora OK
+  name: Karl-Erik Andersson
   start_number: null
 - class: Öppen kort
-  club: No club membership
-  name: Johanna Böhm
+  club: Garphyttans IF
+  name: Birgitta Jansson
+  start_number: null
+- class: Öppen kort
+  club: Haninge SOK
+  name: Ulrika Andersson
   start_number: null
 - class: Öppen kort
   club: Köpenicker SC
   name: Katrin Brandt
   start_number: null
 - class: Öppen kort
+  club: Köping-Kolsva OK
+  name: Susanne Welén
+  start_number: null
+- class: Öppen kort
+  club: Surahammars SOK
+  name: Ingrid Munktelius Öhlén
+  start_number: null
+- class: Öppen kort
+  club: Stora Tuna OK
+  name: Ulla-Britt Norström Ottosson
+  start_number: null
+- class: Öppen kort
+  club: No club membership
+  name: Johanna Böhm
+  start_number: null
+- class: Öppen kort
+  club: No club membership
+  name: Benjamin Kröger
+  start_number: null
+- class: Öppen kort
   club: Domnarvets GOIF
   name: Kjell Emanuelsson
+  start_number: null
+- class: Öppen kort
+  club: Kvarnsvedens GOIF OK
+  name: Ing-Marie Andrén
   start_number: null
 - class: Öppen kort
   club: Skogsluffarnas OK
   name: Caroline Gyllenberg
   start_number: null
 - class: Öppen kort
-  club: No club membership
-  name: Benjamin Kröger
+  club: Domnarvets GOIF
+  name: Lars Prästings
+  start_number: null
+- class: Öppen kort
+  club: IFK Mora OK
+  name: William Rost
   start_number: null
 - class: Öppen mellan
-  club: Katrineholms OK
-  name: Fredrik Åslund
+  club: OK Kåre
+  name: Annika Hale
+  start_number: null
+- class: Öppen mellan
+  club: OK Tisaren
+  name: Tomas Yngström
+  start_number: null
+- class: Öppen mellan
+  club: Wiener Schulcup
+  name: Sonja Hnilica
+  start_number: null
+- class: Öppen mellan
+  club: No club membership
+  name: Niklas Hallkvist
+  start_number: null
+- class: Öppen mellan
+  club: Nyköpings OK
+  name: Dan Nilsson
   start_number: null
 - class: Öppen mellan
   club: OK Rodhen
   name: Malin Blåudd
   start_number: null
 - class: Öppen mellan
-  club: Eksjö SOK
-  name: Stefan Kollberg
+  club: Hagaby GoIF Örebro
+  name: Stefan Blomgren
   start_number: null
 - class: Öppen mellan
-  club: Värend GN OL
-  name: Göran Persson
+  club: Kristinehamns OK
+  name: Leif Celander
   start_number: null
 - class: Öppen mellan
-  club: Bibbulmun Orienteers
-  name: Natasha Thackray
+  club: Katrineholms OK
+  name: Fredrik Åslund
   start_number: null
 - class: Öppen mellan
   club: Köping-Kolsva OK
   name: Göran Welén
   start_number: null
 - class: Öppen mellan
-  club: Köping-Kolsva OK
-  name: Susanne Welén
+  club: SK Briksnis
+  name: Artis Dobulis
+  start_number: null
+- class: Öppen mellan
+  club: SK Briksnis
+  name: Leva Dobule
+  start_number: null
+- class: Öppen mellan
+  club: Värend GN OL
+  name: Göran Persson
+  start_number: null
+- class: Öppen mellan
+  club: Ulricehamns OK
+  name: Leif Ahlstrand
+  start_number: null
+- class: Öppen mellan
+  club: No club membership
+  name: Marie Nilsson
+  start_number: null
+- class: Öppen mellan
+  club: Eksjö SOK
+  name: Stefan Kollberg
+  start_number: null
+- class: Öppen mellan
+  club: Sundsvalls OK
+  name: Stina Feil
+  start_number: null
+- class: Öppen mellan
+  club: IFK Mora OK
+  name: Sofia Österdahl
+  start_number: null
+- class: Öppen mellan
+  club: OK Kåre
+  name: Weronica Morell
+  start_number: null
+- class: Öppen mellan
+  club: IFK Mora OK
+  name: Mats Lagerblad
+  start_number: null
+- class: Öppen mellan
+  club: Bibbulmun Orienteers
+  name: Natasha Thackray
+  start_number: null
+- class: Öppen mellan
+  club: Nydalens SK
+  name: Sören Jonsson
+  start_number: null
+- class: Öppen mellan
+  club: No club membership
+  name: Nils Hedberg
+  start_number: null
+- class: Öppen lång
+  club: Czech MTBO Team
+  name: Martin Sevoic
+  start_number: null
+- class: Öppen lång
+  club: OK Kåre
+  name: Steven Hale
+  start_number: null
+- class: Öppen lång
+  club: Lynx
+  name: Salla Lehto
+  start_number: null
+- class: Öppen lång
+  club: Czech MTBO Team
+  name: Leos Bogar
+  start_number: null
+- class: Öppen lång
+  club: Czech MTBO Team
+  name: Matyas Ludvik
   start_number: null
 - class: Öppen lång
   club: Valbo AIF

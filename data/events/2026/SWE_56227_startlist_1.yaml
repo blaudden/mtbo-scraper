@@ -1,5 +1,9 @@
 participants:
 - class: D21
+  club: Linköpings OK
+  name: Mia Eronn
+  start_number: null
+- class: D21
   club: Boxholm-Mjölby OL
   name: Kristin Höög
   start_number: null
@@ -46,10 +50,6 @@ participants:
 - class: D21
   club: Garphyttans IF
   name: Eva Lundin
-  start_number: null
-- class: D21
-  club: Linköpings OK
-  name: Mia Eronn
   start_number: null
 - class: H21
   club: Lev HaSharon
@@ -700,12 +700,12 @@ participants:
   name: Ingemar Löfqvist
   start_number: null
 - class: Öppen kort
-  club: Köpenicker SC
-  name: Katrin Brandt
-  start_number: null
-- class: Öppen kort
   club: Domnarvets GOIF
   name: Kjell Emanuelsson
+  start_number: null
+- class: Öppen mellan
+  club: Ulricehamns OK
+  name: Leif Ahlstrand
   start_number: null
 - class: Öppen mellan
   club: Kvarnsvedens GOIF OK
@@ -714,6 +714,10 @@ participants:
 - class: Öppen mellan
   club: No club membership
   name: Johanna Böhm
+  start_number: null
+- class: Öppen mellan
+  club: Köpenicker SC
+  name: Katrin Brandt
   start_number: null
 - class: Öppen mellan
   club: No club membership
