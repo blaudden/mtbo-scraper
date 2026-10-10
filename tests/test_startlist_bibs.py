@@ -1,6 +1,7 @@
 """Tests for scripts/startlist_bibs.py startlist lookup tool."""
 
 import json
+import sys
 from datetime import date
 from pathlib import Path
 
@@ -9,6 +10,7 @@ import yaml
 
 from scripts.startlist_bibs import (
     _parse_date_bounds,
+    main,
     search_bibs,
 )
 
@@ -138,3 +140,67 @@ def test_search_bibs_real_events_smoke():
     matches = search_bibs(data_dir, date(2026, 8, 26), date(2026, 8, 26), 280)
     assert len(matches) >= 1
     assert any("Rasmus Nordgren" in m.name for m in matches)
+
+
+def test_cli_contract_single_date_stdout_json(capsys, monkeypatch):
+    """Verify CLI contract for single date: <date> <number> -> JSON on stdout."""
+    data_dir = Path("data/events")
+    if not (data_dir / "2026" / "events.json").exists():
+        pytest.skip("Active 2026 event data not found.")
+
+    monkeypatch.setattr(sys, "argv", ["startlist_bibs.py", "2026-08-26", "280"])
+    main()
+
+    captured = capsys.readouterr()
+    payload = json.loads(captured.out)
+    assert isinstance(payload, list)
+    assert len(payload) >= 1
+
+    entry = payload[0]
+    expected_contract_keys = {
+        "event_id",
+        "competition_name",
+        "race_number",
+        "race_name",
+        "distance",
+        "date",
+        "start_time",
+        "start_number",
+        "name",
+        "club",
+        "class_name",
+    }
+    assert expected_contract_keys.issubset(entry.keys())
+    assert entry["start_number"] == 280
+    assert entry["date"] == "2026-08-26"
+    assert "Rasmus Nordgren" in entry["name"]
+
+
+def test_cli_contract_range_stdout_json(capsys, monkeypatch):
+    """Verify CLI interface contract for date range: <start>..<end> <number>."""
+    data_dir = Path("data/events")
+    if not (data_dir / "2026" / "events.json").exists():
+        pytest.skip("Active 2026 event data not found.")
+
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        ["startlist_bibs.py", "2026-08-25..2026-08-30", "330"],
+    )
+    main()
+
+    captured = capsys.readouterr()
+    payload = json.loads(captured.out)
+    assert isinstance(payload, list)
+    assert len(payload) >= 1
+    assert any("Signe Feil" in r["name"] for r in payload)
+
+
+def test_cli_contract_no_matches_returns_empty_json_list(capsys, monkeypatch):
+    """Verify CLI interface returns empty JSON list when no matches are found."""
+    monkeypatch.setattr(sys, "argv", ["startlist_bibs.py", "2026-08-26", "999999"])
+    main()
+
+    captured = capsys.readouterr()
+    payload = json.loads(captured.out)
+    assert payload == []
