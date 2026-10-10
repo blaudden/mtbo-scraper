@@ -113,6 +113,22 @@ Run the scraper using the provided bash script:
 See [docs/operation.md](docs/operation.md) for detailed usage and scheduling instructions.
 See [docs/design.md](docs/design.md) for architectural details.
 
+## Utilities
+
+### Startlist Bib Number Lookup (`scripts/startlist_bibs.py`)
+
+Look up athlete start lists across events by date or date range and bib / start number:
+
+```bash
+# Look up bib 280 on a specific date:
+uv run python scripts/startlist_bibs.py 2026-08-26 280
+
+# Look up across a date range:
+uv run python scripts/startlist_bibs.py 2026-08-25..2026-08-30 280
+```
+
+Outputs structured JSON records with competition name, distance/race, date, start time, athlete name, club/country, and class. Used by the media ingestion pipeline to correlate rider photographs with competitor details.
+
 ## Automation
 
 To automate scraping and version control updates, use `scrape_and_push.sh`. This script:
