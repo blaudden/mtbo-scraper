@@ -107,8 +107,10 @@ def test_obtain_browser_cookies_cdp_click_and_clearance(
     mock_get_chrome: MagicMock,
     mock_uc_chrome: MagicMock,
     scraper: Scraper,
+    monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     """Test Turnstile CDP click dispatch and clearance detection."""
+    monkeypatch.setenv("DISPLAY", ":99")
     mock_get_chrome.return_value = ("/usr/bin/google-chrome", 135)
 
     mock_driver = MagicMock()
@@ -177,3 +179,36 @@ def test_browser_lifecycle_and_cleanup(tmp_path: Path) -> None:
     assert s._driver is None
     assert s._virtual_display is None
     assert len(s._domains_cleared) == 0
+
+
+def test_is_challenge_title(scraper: Scraper) -> None:
+    """Test detection of Cloudflare challenge titles."""
+    assert scraper._is_challenge_title("Just a moment...")
+    assert scraper._is_challenge_title("Checking your browser...")
+    assert not scraper._is_challenge_title("Eventor - Tävlingskalender")
+    assert not scraper._is_challenge_title("Welcome")
+
+
+@patch("undetected_chromedriver.Chrome")
+@patch("src.scraper.Scraper._get_chrome_info")
+def test_fetch_via_browser_considers_checking_title_as_challenge(
+    mock_get_chrome: MagicMock,
+    mock_uc_chrome: MagicMock,
+    scraper: Scraper,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Test that a title containing Checking is treated as unresolved challenge."""
+    monkeypatch.setenv("DISPLAY", ":99")
+    mock_get_chrome.return_value = ("/usr/bin/google-chrome", 135)
+
+    mock_driver = MagicMock()
+    mock_uc_chrome.return_value = mock_driver
+    # Root clears, but target stays on Checking title
+    mock_driver.title = "Checking your browser before accessing..."
+
+    with patch("time.sleep"):
+        resp = scraper._fetch_via_browser(
+            "https://eventor.orientering.se/Events", retries=0
+        )
+
+    assert resp is None

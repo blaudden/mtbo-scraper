@@ -425,301 +425,304 @@ def main(
         delay_range=delay_range,
         html_cache=html_cache,
     )
+    try:
+        # Initialize Sources
+        eventor_sources: list[EventorSource] = []
+        run_manual = False
 
-    # Initialize Sources
-    eventor_sources: list[EventorSource] = []
-    run_manual = False
-
-    for config in active_configs:
-        if config["type"] == "eventor":
-            if config["url"] is None:
-                raise ValueError(
-                    f"URL is missing for eventor config {config['country']}"
-                )
-            eventor_sources.append(
-                EventorSource(
-                    config["country"],
-                    config["url"],
-                    known_fingerprints=year_to_fps,
-                    refresh=refresh,
-                    scraper=scraper,
-                )
-            )
-        elif config["type"] == "manual":
-            run_manual = True
-
-    # Track failures for final report
-    failed_event_ids: list[str] = []
-    failed_sources: list[str] = []
-
-    # 1. Load Manual Events
-    if run_manual:
-        manual_source = ManualSource(MANUAL_EVENTS_DIR)
-        manual_events = manual_source.load_events()
-        # Save manual events immediately
-        new_events = storage.save({"MAN": manual_events})
-        logger.debug(
-            "manual_events_loaded_and_saved",
-            count=len(manual_events),
-            source_dir=MANUAL_EVENTS_DIR,
-        )
-    else:
-        new_events = list(storage.load().values())
-
-    # 2. Fetch specific events by ID (skip date-range listing)
-    current_pass_events: dict[str, list[Event]] = {}
-
-    if event_ids and eventor_sources:
-        # Load existing events from disk to use as stubs
-        existing_map = storage.load()
-
-        # Map country code to source
-        source_by_country = {s.country: s for s in eventor_sources}
-
-        for eid in event_ids:
-            parts = eid.split("_", 1)
-            if len(parts) != 2:
-                logger.error("invalid_event_id", event_id=eid)
-                continue
-            country, numeric_id = parts
-            source = source_by_country.get(country)
-            if not source:
-                logger.error(
-                    "no_source_for_event_id",
-                    event_id=eid,
-                    country=country,
-                )
-                continue
-
-            if country not in current_pass_events:
-                current_pass_events[country] = []
-
-            # Require existing event from disk (rescrape only)
-            existing = existing_map.get(eid)
-            if not existing:
-                logger.warning(
-                    "event_not_found_locally",
-                    event_id=eid,
-                    message="Use --event-id only for rescraping existing events.",
-                )
-                continue
-
-            stub = Event.from_dict(existing)
-            stub.url = stub.url or f"/Events/Show/{numeric_id}"
-            logger.info(
-                "fetching_event_by_id",
-                event_id=eid,
-                from_disk=True,
-            )
-            detailed = source.fetch_event_details(stub)
-            if detailed:
-                if is_excluded(detailed):
-                    logger.info(
-                        "event_excluded",
-                        event_id=detailed.id,
-                        name=detailed.name,
+        for config in active_configs:
+            if config["type"] == "eventor":
+                if config["url"] is None:
+                    raise ValueError(
+                        f"URL is missing for eventor config {config['country']}"
                     )
-                    continue
-                current_pass_events[country].append(detailed)
-            else:
-                failed_event_ids.append(eid)
-
-        if current_pass_events:
-            new_events = storage.save(current_pass_events)
-            logger.info(
-                "event_id_fetch_completed",
-                fetched=sum(len(v) for v in current_pass_events.values()),
-                failed=len(failed_event_ids),
-            )
-
-    # 3. Process Eventor Sources by date range (normal mode)
-    elif eventor_sources:
-        # Split the total range into year segments
-        year_segments = list(split_range_by_year(start_date, end_date))
-        total_segments = len(year_segments)
-
-        staged_events: dict[str, list[Event]] = {}
-
-        for seg_idx, (segment_start, segment_end) in enumerate(year_segments):
-            segment_year_str = segment_start[:4]
-
-            # Generate chunks for this segment
-            chunks = list(irregular_chunk_date_range(segment_start, segment_end))
-            if shuffle:
-                random.shuffle(chunks)
-
-            total_chunks = len(chunks)
-            for i, (chunk_start, chunk_end) in enumerate(chunks):
-                logger.info(
-                    "processing_chunk",
-                    year=segment_year_str,
-                    chunk_index=i + 1,
-                    total_chunks=total_chunks,
-                    chunk=f"{chunk_start} to {chunk_end}",
-                    segment_progress=f"{seg_idx + 1}/{total_segments}",
+                eventor_sources.append(
+                    EventorSource(
+                        config["country"],
+                        config["url"],
+                        known_fingerprints=year_to_fps,
+                        refresh=refresh,
+                        scraper=scraper,
+                    )
                 )
+            elif config["type"] == "manual":
+                run_manual = True
 
-                for source in eventor_sources:
-                    if source.country not in staged_events:
-                        staged_events[source.country] = []
+        # Track failures for final report
+        failed_event_ids: list[str] = []
+        failed_sources: list[str] = []
 
-                    try:
-                        # 1. Fetch List for this chunk
-                        if use_local_listing:
-                            # Use local events as list for this chunk
-                            events = _get_local_events(
-                                old_events_dict,
-                                source.country,
-                                chunk_start,
-                                chunk_end,
-                            )
-                            logger.info(
-                                "local_listing_used",
-                                country=source.country,
-                                count=len(events),
-                                chunk=f"{chunk_start} to {chunk_end}",
-                            )
-                        else:
-                            # Fetch events from Eventor
-                            events = source.fetch_event_list(chunk_start, chunk_end)
-                        total_events = len(events)
-
-                        if total_events == 0:
-                            continue
-
-                        # 2. Fetch Details
-                        # Shuffle events to process detailed pages in random order
-                        if shuffle:
-                            random.shuffle(events)
-
-                        for idx, event in enumerate(events):
-                            # Log progress
-                            if (
-                                idx == 0
-                                or (idx + 1) % 5 == 0
-                                or (idx + 1) == total_events
-                            ):
-                                percent = round(((idx + 1) / total_events) * 100, 1)
-                                logger.info(
-                                    "scraping_progress",
-                                    country=source.country,
-                                    current=idx + 1,
-                                    total=total_events,
-                                    percent=percent,
-                                )
-
-                            detailed_event = source.fetch_event_details(event)
-                            if detailed_event:
-                                if is_excluded(detailed_event):
-                                    logger.info(
-                                        "event_excluded",
-                                        event_id=detailed_event.id,
-                                        name=detailed_event.name,
-                                    )
-                                    continue
-                                staged_events[source.country].append(detailed_event)
-                            else:
-                                failed_event_ids.append(event.id)
-
-                    except EventListFetchError as e:
-                        logger.error(
-                            "source_listing_failed",
-                            country=source.country,
-                            chunk=f"{chunk_start}-{chunk_end}",
-                            error=str(e),
-                        )
-                        failed_sources.append(
-                            f"{source.country} ({chunk_start} to {chunk_end})"
-                        )
-                        continue
-                    except Exception as e:
-                        logger.error(
-                            "source_processing_failed",
-                            country=source.country,
-                            chunk=f"{chunk_start}-{chunk_end}",
-                            error=str(e),
-                        )
-                        failed_sources.append(
-                            f"{source.country} ({chunk_start} to {chunk_end})"
-                        )
-                        continue
-
-                # Sleep between chunks, unless using local listing
-                if i < len(chunks) - 1 and not use_local_listing:
-                    sleep_sec = 0.5
-                    logger.info("sleeping_between_chunks", seconds=sleep_sec)
-                    time.sleep(sleep_sec)
-
-            logger.info("year_segment_completed", year=segment_year_str)
-
-        logger.info("scraping_completed")
-
-        if failed_event_ids:
-            logger.warning(
-                "scraping_failures_summary",
-                count=len(failed_event_ids),
-                failed_ids=failed_event_ids[:50],
-                more_hidden=len(failed_event_ids) > 50,
+        # 1. Load Manual Events
+        if run_manual:
+            manual_source = ManualSource(MANUAL_EVENTS_DIR)
+            manual_events = manual_source.load_events()
+            # Save manual events immediately
+            new_events = storage.save({"MAN": manual_events})
+            logger.debug(
+                "manual_events_loaded_and_saved",
+                count=len(manual_events),
+                source_dir=MANUAL_EVENTS_DIR,
             )
-
-        if failed_sources:
-            logger.error(
-                "scraping_failed_sources_detected",
-                count=len(failed_sources),
-                failed_sources=failed_sources,
-            )
-            if not allow_partial:
-                if commit_msg_file and Path(commit_msg_file).exists():
-                    try:
-                        Path(commit_msg_file).unlink()
-                    except OSError:
-                        pass
-                logger.error(
-                    "aborting_due_to_source_failures",
-                    suggestion=(
-                        "Use --allow-partial to override and allow partial updates."
-                    ),
-                )
-                sys.exit(2)
-
-        # Persist events to storage only after failure validation
-        if staged_events:
-            new_events = storage.save(staged_events)
-            logger.info("scraping_events_saved", count=len(new_events))
         else:
             new_events = list(storage.load().values())
 
-        # Update Svenska Cupen standings and seeding order only during full scrapes
-        if mode != "current" and (
-            not source_filter or "SWE" in [c["country"] for c in active_configs]
-        ):
-            try:
-                target_year = datetime.now().year
-                fetch_and_update_svenska_cupen_seeding(
-                    scraper=scraper, storage=storage, year=target_year
+        # 2. Fetch specific events by ID (skip date-range listing)
+        current_pass_events: dict[str, list[Event]] = {}
+
+        if event_ids and eventor_sources:
+            # Load existing events from disk to use as stubs
+            existing_map = storage.load()
+
+            # Map country code to source
+            source_by_country = {s.country: s for s in eventor_sources}
+
+            for eid in event_ids:
+                parts = eid.split("_", 1)
+                if len(parts) != 2:
+                    logger.error("invalid_event_id", event_id=eid)
+                    continue
+                country, numeric_id = parts
+                source = source_by_country.get(country)
+                if not source:
+                    logger.error(
+                        "no_source_for_event_id",
+                        event_id=eid,
+                        country=country,
+                    )
+                    continue
+
+                if country not in current_pass_events:
+                    current_pass_events[country] = []
+
+                # Require existing event from disk (rescrape only)
+                existing = existing_map.get(eid)
+                if not existing:
+                    logger.warning(
+                        "event_not_found_locally",
+                        event_id=eid,
+                        message="Use --event-id only for rescraping existing events.",
+                    )
+                    continue
+
+                stub = Event.from_dict(existing)
+                stub.url = stub.url or f"/Events/Show/{numeric_id}"
+                logger.info(
+                    "fetching_event_by_id",
+                    event_id=eid,
+                    from_disk=True,
                 )
+                detailed = source.fetch_event_details(stub)
+                if detailed:
+                    if is_excluded(detailed):
+                        logger.info(
+                            "event_excluded",
+                            event_id=detailed.id,
+                            name=detailed.name,
+                        )
+                        continue
+                    current_pass_events[country].append(detailed)
+                else:
+                    failed_event_ids.append(eid)
+
+            if current_pass_events:
+                new_events = storage.save(current_pass_events)
+                logger.info(
+                    "event_id_fetch_completed",
+                    fetched=sum(len(v) for v in current_pass_events.values()),
+                    failed=len(failed_event_ids),
+                )
+
+        # 3. Process Eventor Sources by date range (normal mode)
+        elif eventor_sources:
+            # Split the total range into year segments
+            year_segments = list(split_range_by_year(start_date, end_date))
+            total_segments = len(year_segments)
+
+            staged_events: dict[str, list[Event]] = {}
+
+            for seg_idx, (segment_start, segment_end) in enumerate(year_segments):
+                segment_year_str = segment_start[:4]
+
+                # Generate chunks for this segment
+                chunks = list(irregular_chunk_date_range(segment_start, segment_end))
+                if shuffle:
+                    random.shuffle(chunks)
+
+                total_chunks = len(chunks)
+                for i, (chunk_start, chunk_end) in enumerate(chunks):
+                    logger.info(
+                        "processing_chunk",
+                        year=segment_year_str,
+                        chunk_index=i + 1,
+                        total_chunks=total_chunks,
+                        chunk=f"{chunk_start} to {chunk_end}",
+                        segment_progress=f"{seg_idx + 1}/{total_segments}",
+                    )
+
+                    for source in eventor_sources:
+                        if source.country not in staged_events:
+                            staged_events[source.country] = []
+
+                        try:
+                            # 1. Fetch List for this chunk
+                            if use_local_listing:
+                                # Use local events as list for this chunk
+                                events = _get_local_events(
+                                    old_events_dict,
+                                    source.country,
+                                    chunk_start,
+                                    chunk_end,
+                                )
+                                logger.info(
+                                    "local_listing_used",
+                                    country=source.country,
+                                    count=len(events),
+                                    chunk=f"{chunk_start} to {chunk_end}",
+                                )
+                            else:
+                                # Fetch events from Eventor
+                                events = source.fetch_event_list(chunk_start, chunk_end)
+                            total_events = len(events)
+
+                            if total_events == 0:
+                                continue
+
+                            # 2. Fetch Details
+                            # Shuffle events to process detailed pages in random order
+                            if shuffle:
+                                random.shuffle(events)
+
+                            for idx, event in enumerate(events):
+                                # Log progress
+                                if (
+                                    idx == 0
+                                    or (idx + 1) % 5 == 0
+                                    or (idx + 1) == total_events
+                                ):
+                                    percent = round(((idx + 1) / total_events) * 100, 1)
+                                    logger.info(
+                                        "scraping_progress",
+                                        country=source.country,
+                                        current=idx + 1,
+                                        total=total_events,
+                                        percent=percent,
+                                    )
+
+                                detailed_event = source.fetch_event_details(event)
+                                if detailed_event:
+                                    if is_excluded(detailed_event):
+                                        logger.info(
+                                            "event_excluded",
+                                            event_id=detailed_event.id,
+                                            name=detailed_event.name,
+                                        )
+                                        continue
+                                    staged_events[source.country].append(detailed_event)
+                                else:
+                                    failed_event_ids.append(event.id)
+
+                        except EventListFetchError as e:
+                            logger.error(
+                                "source_listing_failed",
+                                country=source.country,
+                                chunk=f"{chunk_start}-{chunk_end}",
+                                error=str(e),
+                            )
+                            failed_sources.append(
+                                f"{source.country} ({chunk_start} to {chunk_end})"
+                            )
+                            continue
+                        except Exception as e:
+                            logger.error(
+                                "source_processing_failed",
+                                country=source.country,
+                                chunk=f"{chunk_start}-{chunk_end}",
+                                error=str(e),
+                            )
+                            failed_sources.append(
+                                f"{source.country} ({chunk_start} to {chunk_end})"
+                            )
+                            continue
+
+                    # Sleep between chunks, unless using local listing
+                    if i < len(chunks) - 1 and not use_local_listing:
+                        sleep_sec = 0.5
+                        logger.info("sleeping_between_chunks", seconds=sleep_sec)
+                        time.sleep(sleep_sec)
+
+                logger.info("year_segment_completed", year=segment_year_str)
+
+            logger.info("scraping_completed")
+
+            if failed_event_ids:
+                logger.warning(
+                    "scraping_failures_summary",
+                    count=len(failed_event_ids),
+                    failed_ids=failed_event_ids[:50],
+                    more_hidden=len(failed_event_ids) > 50,
+                )
+
+            if failed_sources:
+                logger.error(
+                    "scraping_failed_sources_detected",
+                    count=len(failed_sources),
+                    failed_sources=failed_sources,
+                )
+                if not allow_partial:
+                    if commit_msg_file and Path(commit_msg_file).exists():
+                        try:
+                            Path(commit_msg_file).unlink()
+                        except OSError:
+                            pass
+                    logger.error(
+                        "aborting_due_to_source_failures",
+                        suggestion=(
+                            "Use --allow-partial to override and allow partial updates."
+                        ),
+                    )
+                    sys.exit(2)
+
+            # Persist events to storage only after failure validation
+            if staged_events:
+                new_events = storage.save(staged_events)
+                logger.info("scraping_events_saved", count=len(new_events))
+            else:
+                new_events = list(storage.load().values())
+
+            # Update Svenska Cupen standings and seeding order only during full scrapes
+            if mode != "current" and (
+                not source_filter or "SWE" in [c["country"] for c in active_configs]
+            ):
+                try:
+                    target_year = datetime.now().year
+                    fetch_and_update_svenska_cupen_seeding(
+                        scraper=scraper, storage=storage, year=target_year
+                    )
+                except Exception as e:
+                    logger.error("svenska_cupen_seeding_update_failed", error=str(e))
+
+        # Calculate stats and write commit message
+        sources_used = [c["country"] for c in active_configs] if source_filter else None
+        stats_msg = calculate_stats(
+            old_events,
+            new_events,
+            start_date=start_date,
+            end_date=end_date,
+            sources=sources_used,
+            refresh=refresh,
+        )
+        print(stats_msg)
+
+        if commit_msg_file:
+            try:
+                with open(commit_msg_file, "w") as f:
+                    f.write(stats_msg)
+                logger.info(f"Commit message written to {commit_msg_file}")
             except Exception as e:
-                logger.error("svenska_cupen_seeding_update_failed", error=str(e))
+                logger.error(f"Failed to write commit message: {e}")
 
-    # Calculate stats and write commit message
-    sources_used = [c["country"] for c in active_configs] if source_filter else None
-    stats_msg = calculate_stats(
-        old_events,
-        new_events,
-        start_date=start_date,
-        end_date=end_date,
-        sources=sources_used,
-        refresh=refresh,
-    )
-    print(stats_msg)
-
-    if commit_msg_file:
-        try:
-            with open(commit_msg_file, "w") as f:
-                f.write(stats_msg)
-            logger.info(f"Commit message written to {commit_msg_file}")
-        except Exception as e:
-            logger.error(f"Failed to write commit message: {e}")
+    finally:
+        scraper.close()
 
 
 if __name__ == "__main__":

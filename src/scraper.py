@@ -1,9 +1,11 @@
+import atexit
 import json
 import os
 import random
 import shutil
 import subprocess
 import time
+from contextlib import suppress
 from dataclasses import dataclass
 from typing import TYPE_CHECKING, Any, cast
 
@@ -79,6 +81,9 @@ class Scraper:
         # Cookie persistence
         self.cookie_file = cookie_file
         self._load_cookies()
+
+        # Guarantee browser and display cleanup on exit
+        atexit.register(self.close)
 
     def _load_cookies(self) -> None:
         """Loads cookies and user-agent from disk if they exist."""
@@ -285,7 +290,13 @@ class Scraper:
 
     def close(self) -> None:
         """Closes all browser and driver resources."""
+        with suppress(Exception):
+            atexit.unregister(self.close)
         self.close_browser()
+
+    def _is_challenge_title(self, title: str) -> bool:
+        """Checks if page title indicates Cloudflare challenge/verification."""
+        return "Just a moment" in title or "Checking" in title
 
     def __enter__(self) -> "Scraper":
         return self
@@ -375,13 +386,13 @@ class Scraper:
                     driver.get(base_url)
                     time.sleep(5)  # Wait for Turnstile telemetry initialization
 
-                    if "Just a moment" in driver.title or "Checking" in driver.title:
+                    if self._is_challenge_title(driver.title):
                         self._click_turnstile(driver)
                         # Wait for resolution
                         for _ in range(15):
                             time.sleep(1)
                             title = driver.title
-                            if "Just a moment" not in title and "Checking" not in title:
+                            if not self._is_challenge_title(title):
                                 logger.info(
                                     "root_domain_turnstile_cleared",
                                     domain=domain,
@@ -407,7 +418,7 @@ class Scraper:
                 time.sleep(2)
 
                 # Step 3: Check if deep URL challenged
-                if "Just a moment" in driver.title or "Checking" in driver.title:
+                if self._is_challenge_title(driver.title):
                     logger.warning(
                         "target_url_challenged_attempting_click", url=full_url
                     )
@@ -415,13 +426,10 @@ class Scraper:
                     self._click_turnstile(driver)
                     for _ in range(15):
                         time.sleep(1)
-                        if (
-                            "Just a moment" not in driver.title
-                            and "Checking" not in driver.title
-                        ):
+                        if not self._is_challenge_title(driver.title):
                             break
 
-                if "Just a moment" in driver.title:
+                if self._is_challenge_title(driver.title):
                     logger.error("browser_fetch_failed_still_challenged", url=full_url)
                     if attempt < retries:
                         self.close_browser()
