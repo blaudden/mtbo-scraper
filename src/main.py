@@ -5,6 +5,7 @@ import sys
 import time
 from collections.abc import Iterator
 from datetime import datetime, timedelta
+from pathlib import Path
 from typing import Literal, TypedDict
 
 import click
@@ -14,6 +15,7 @@ from src.event_filter import is_excluded
 from src.html_cache import HtmlCache
 from src.models import Event, EventDict
 from src.scraper import Scraper
+from src.sources.base_source import EventListFetchError
 from src.sources.eventor_source import EventorSource
 from src.sources.manual_source import ManualSource
 
@@ -241,6 +243,12 @@ def determine_date_range(
     help="Force fetch/skip event listings from Eventor. "
     "Default: auto (skip in history mode).",
 )
+@click.option(
+    "--allow-partial",
+    is_flag=True,
+    default=False,
+    help="Allow partial scrape completion even if some sources fail to fetch.",
+)
 def main(
     start_date: str | None,
     end_date: str | None,
@@ -255,6 +263,7 @@ def main(
     event_ids: tuple[str, ...],
     purge_ids: tuple[str, ...],
     fetch_listing: bool | None,
+    allow_partial: bool,
 ) -> None:
     """MTBO Eventor Scraper"""
     # Configure logging based on verbosity
@@ -441,6 +450,7 @@ def main(
 
     # Track failures for final report
     failed_event_ids: list[str] = []
+    failed_sources: list[str] = []
 
     # 1. Load Manual Events
     if run_manual:
@@ -614,12 +624,26 @@ def main(
                             else:
                                 failed_event_ids.append(event.id)
 
+                    except EventListFetchError as e:
+                        logger.error(
+                            "source_listing_failed",
+                            country=source.country,
+                            chunk=f"{chunk_start}-{chunk_end}",
+                            error=str(e),
+                        )
+                        failed_sources.append(
+                            f"{source.country} ({chunk_start} to {chunk_end})"
+                        )
+                        continue
                     except Exception as e:
                         logger.error(
                             "source_processing_failed",
                             country=source.country,
                             chunk=f"{chunk_start}-{chunk_end}",
                             error=str(e),
+                        )
+                        failed_sources.append(
+                            f"{source.country} ({chunk_start} to {chunk_end})"
                         )
                         continue
 
@@ -648,6 +672,26 @@ def main(
                 failed_ids=failed_event_ids[:50],
                 more_hidden=len(failed_event_ids) > 50,
             )
+
+        if failed_sources:
+            logger.error(
+                "scraping_failed_sources_detected",
+                count=len(failed_sources),
+                failed_sources=failed_sources,
+            )
+            if not allow_partial:
+                if commit_msg_file and Path(commit_msg_file).exists():
+                    try:
+                        Path(commit_msg_file).unlink()
+                    except OSError:
+                        pass
+                logger.error(
+                    "aborting_due_to_source_failures",
+                    suggestion=(
+                        "Use --allow-partial to override and allow partial updates."
+                    ),
+                )
+                sys.exit(2)
 
         # Update Svenska Cupen standings and seeding order only during full scrapes
         if mode != "current" and (
