@@ -538,6 +538,8 @@ def main(
         year_segments = list(split_range_by_year(start_date, end_date))
         total_segments = len(year_segments)
 
+        staged_events: dict[str, list[Event]] = {}
+
         for seg_idx, (segment_start, segment_end) in enumerate(year_segments):
             segment_year_str = segment_start[:4]
 
@@ -545,9 +547,6 @@ def main(
             chunks = list(irregular_chunk_date_range(segment_start, segment_end))
             if shuffle:
                 random.shuffle(chunks)
-
-            # Accumulator for this segment/year
-            current_pass_events = {}
 
             total_chunks = len(chunks)
             for i, (chunk_start, chunk_end) in enumerate(chunks):
@@ -561,8 +560,8 @@ def main(
                 )
 
                 for source in eventor_sources:
-                    if source.country not in current_pass_events:
-                        current_pass_events[source.country] = []
+                    if source.country not in staged_events:
+                        staged_events[source.country] = []
 
                     try:
                         # 1. Fetch List for this chunk
@@ -618,9 +617,7 @@ def main(
                                         name=detailed_event.name,
                                     )
                                     continue
-                                current_pass_events[source.country].append(
-                                    detailed_event
-                                )
+                                staged_events[source.country].append(detailed_event)
                             else:
                                 failed_event_ids.append(event.id)
 
@@ -653,15 +650,7 @@ def main(
                     logger.info("sleeping_between_chunks", seconds=sleep_sec)
                     time.sleep(sleep_sec)
 
-            # PERIODIC SAVE: after each year/segment
-            if current_pass_events:
-                # We update 'new_events' so that if this is the last loop,
-                # we have the final state for stats calculation.
-                intermediate_saved_events = storage.save(current_pass_events)
-                new_events = intermediate_saved_events
-                logger.info("year_segment_completed_and_saved", year=segment_year_str)
-            else:
-                logger.info("year_segment_completed_no_events", year=segment_year_str)
+            logger.info("year_segment_completed", year=segment_year_str)
 
         logger.info("scraping_completed")
 
@@ -692,6 +681,13 @@ def main(
                     ),
                 )
                 sys.exit(2)
+
+        # Persist events to storage only after failure validation
+        if staged_events:
+            new_events = storage.save(staged_events)
+            logger.info("scraping_events_saved", count=len(new_events))
+        else:
+            new_events = list(storage.load().values())
 
         # Update Svenska Cupen standings and seeding order only during full scrapes
         if mode != "current" and (

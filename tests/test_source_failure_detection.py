@@ -30,6 +30,57 @@ def test_eventor_source_raises_event_list_fetch_error() -> None:
     assert exc_info.value.country == "SWE"
 
 
+def test_eventor_source_raises_on_empty_response_body() -> None:
+    """EventorSource.fetch_event_list should raise if response body is empty."""
+    mock_scraper = MagicMock(spec=Scraper)
+    mock_response = MagicMock()
+    mock_response.text = "   "
+    mock_scraper.get.return_value = mock_response
+
+    source = EventorSource(
+        country="SWE",
+        base_url="https://eventor.orientering.se",
+        scraper=mock_scraper,
+    )
+
+    with pytest.raises(EventListFetchError) as exc_info:
+        source.fetch_event_list("2026-05-01", "2026-05-31")
+
+    assert "Failed to fetch event list for SWE" in str(exc_info.value)
+
+
+def test_eventor_parser_raises_on_unrecognized_page_structure() -> None:
+    """EventorParser.parse_event_list should raise if eventList container missing."""
+    from src.sources.eventor_parser import EventorParser
+
+    parser = EventorParser()
+    challenge_html = (
+        "<html><head><title>Just a moment...</title></head>"
+        "<body><div>Checking your browser</div></body></html>"
+    )
+
+    with pytest.raises(EventListFetchError) as exc_info:
+        parser.parse_event_list(challenge_html, "SWE")
+
+    assert "Invalid or unrecognized event list page structure" in str(exc_info.value)
+    assert exc_info.value.country == "SWE"
+
+
+def test_eventor_parser_returns_empty_list_for_recognized_empty_page() -> None:
+    """EventorParser.parse_event_list returns [] when eventList container is present."""
+    from src.sources.eventor_parser import EventorParser
+
+    parser = EventorParser()
+    empty_html = (
+        "<html><body><div id='eventList'>"
+        "<table><tbody></tbody></table>"
+        "</div></body></html>"
+    )
+
+    events = parser.parse_event_list(empty_html, "SWE")
+    assert events == []
+
+
 @patch("src.main.split_range_by_year")
 @patch("src.main.irregular_chunk_date_range")
 @patch("src.sources.eventor_source.EventorSource.fetch_event_list")
@@ -74,6 +125,7 @@ def test_main_cli_exits_nonzero_on_source_failure(
 
     assert result.exit_code == 2
     assert not commit_msg_file.exists()
+    mock_save.assert_not_called()
 
 
 @patch("src.main.split_range_by_year")
