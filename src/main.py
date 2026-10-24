@@ -5,6 +5,7 @@ import sys
 import time
 from collections.abc import Iterator
 from datetime import datetime, timedelta
+from pathlib import Path
 from typing import Literal, TypedDict
 
 import click
@@ -14,6 +15,7 @@ from src.event_filter import is_excluded
 from src.html_cache import HtmlCache
 from src.models import Event, EventDict
 from src.scraper import Scraper
+from src.sources.base_source import EventListFetchError
 from src.sources.eventor_source import EventorSource
 from src.sources.manual_source import ManualSource
 
@@ -241,6 +243,12 @@ def determine_date_range(
     help="Force fetch/skip event listings from Eventor. "
     "Default: auto (skip in history mode).",
 )
+@click.option(
+    "--allow-partial",
+    is_flag=True,
+    default=False,
+    help="Allow partial scrape completion even if some sources fail to fetch.",
+)
 def main(
     start_date: str | None,
     end_date: str | None,
@@ -255,6 +263,7 @@ def main(
     event_ids: tuple[str, ...],
     purge_ids: tuple[str, ...],
     fetch_listing: bool | None,
+    allow_partial: bool,
 ) -> None:
     """MTBO Eventor Scraper"""
     # Configure logging based on verbosity
@@ -441,6 +450,7 @@ def main(
 
     # Track failures for final report
     failed_event_ids: list[str] = []
+    failed_sources: list[str] = []
 
     # 1. Load Manual Events
     if run_manual:
@@ -528,6 +538,8 @@ def main(
         year_segments = list(split_range_by_year(start_date, end_date))
         total_segments = len(year_segments)
 
+        staged_events: dict[str, list[Event]] = {}
+
         for seg_idx, (segment_start, segment_end) in enumerate(year_segments):
             segment_year_str = segment_start[:4]
 
@@ -535,9 +547,6 @@ def main(
             chunks = list(irregular_chunk_date_range(segment_start, segment_end))
             if shuffle:
                 random.shuffle(chunks)
-
-            # Accumulator for this segment/year
-            current_pass_events = {}
 
             total_chunks = len(chunks)
             for i, (chunk_start, chunk_end) in enumerate(chunks):
@@ -551,8 +560,8 @@ def main(
                 )
 
                 for source in eventor_sources:
-                    if source.country not in current_pass_events:
-                        current_pass_events[source.country] = []
+                    if source.country not in staged_events:
+                        staged_events[source.country] = []
 
                     try:
                         # 1. Fetch List for this chunk
@@ -608,18 +617,30 @@ def main(
                                         name=detailed_event.name,
                                     )
                                     continue
-                                current_pass_events[source.country].append(
-                                    detailed_event
-                                )
+                                staged_events[source.country].append(detailed_event)
                             else:
                                 failed_event_ids.append(event.id)
 
+                    except EventListFetchError as e:
+                        logger.error(
+                            "source_listing_failed",
+                            country=source.country,
+                            chunk=f"{chunk_start}-{chunk_end}",
+                            error=str(e),
+                        )
+                        failed_sources.append(
+                            f"{source.country} ({chunk_start} to {chunk_end})"
+                        )
+                        continue
                     except Exception as e:
                         logger.error(
                             "source_processing_failed",
                             country=source.country,
                             chunk=f"{chunk_start}-{chunk_end}",
                             error=str(e),
+                        )
+                        failed_sources.append(
+                            f"{source.country} ({chunk_start} to {chunk_end})"
                         )
                         continue
 
@@ -629,15 +650,7 @@ def main(
                     logger.info("sleeping_between_chunks", seconds=sleep_sec)
                     time.sleep(sleep_sec)
 
-            # PERIODIC SAVE: after each year/segment
-            if current_pass_events:
-                # We update 'new_events' so that if this is the last loop,
-                # we have the final state for stats calculation.
-                intermediate_saved_events = storage.save(current_pass_events)
-                new_events = intermediate_saved_events
-                logger.info("year_segment_completed_and_saved", year=segment_year_str)
-            else:
-                logger.info("year_segment_completed_no_events", year=segment_year_str)
+            logger.info("year_segment_completed", year=segment_year_str)
 
         logger.info("scraping_completed")
 
@@ -648,6 +661,33 @@ def main(
                 failed_ids=failed_event_ids[:50],
                 more_hidden=len(failed_event_ids) > 50,
             )
+
+        if failed_sources:
+            logger.error(
+                "scraping_failed_sources_detected",
+                count=len(failed_sources),
+                failed_sources=failed_sources,
+            )
+            if not allow_partial:
+                if commit_msg_file and Path(commit_msg_file).exists():
+                    try:
+                        Path(commit_msg_file).unlink()
+                    except OSError:
+                        pass
+                logger.error(
+                    "aborting_due_to_source_failures",
+                    suggestion=(
+                        "Use --allow-partial to override and allow partial updates."
+                    ),
+                )
+                sys.exit(2)
+
+        # Persist events to storage only after failure validation
+        if staged_events:
+            new_events = storage.save(staged_events)
+            logger.info("scraping_events_saved", count=len(new_events))
+        else:
+            new_events = list(storage.load().values())
 
         # Update Svenska Cupen standings and seeding order only during full scrapes
         if mode != "current" and (

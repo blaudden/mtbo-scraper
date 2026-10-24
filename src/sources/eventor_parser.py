@@ -19,6 +19,7 @@ from src.models import (
     Race,
     Url,
 )
+from src.sources.base_source import EventListFetchError
 from src.utils.country import get_iso_country_code
 from src.utils.crypto import Crypto
 from src.utils.date_and_time import (
@@ -223,6 +224,13 @@ class EventorParser:
             ...     print(f"{event.id}: {event.name}")
         """
         soup = BeautifulSoup(html_content, "lxml")
+        event_list_container = soup.find(id="eventList")
+        if event_list_container is None:
+            raise EventListFetchError(
+                f"Invalid or unrecognized event list page structure for {country}",
+                country=country,
+            )
+
         events = []
 
         # Try multiple selectors to find the event table
