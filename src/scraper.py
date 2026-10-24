@@ -1,17 +1,17 @@
+import atexit
 import json
 import os
 import random
 import shutil
 import subprocess
 import time
+from contextlib import suppress
 from dataclasses import dataclass
 from typing import TYPE_CHECKING, Any, cast
 
 import curl_cffi.requests as requests
 import structlog
 from curl_cffi.requests import RequestsError, Response
-
-from src.exceptions import CloudflareError
 
 if TYPE_CHECKING:
     from src.html_cache import HtmlCache
@@ -21,7 +21,7 @@ logger = structlog.get_logger(__name__)
 
 @dataclass
 class CachedResponse:
-    """Response-like object for cached HTML."""
+    """Response-like object for cached HTML or browser page source."""
 
     text: str
     status_code: int = 200
@@ -40,6 +40,7 @@ class Scraper:
         delay_range: tuple[float, float] = (1.0, 3.0),
         default_timeout: int = 30,
         html_cache: "HtmlCache | None" = None,
+        cookie_file: str = ".cookies.json",
     ):
         """Initialize the Scraper.
 
@@ -50,9 +51,10 @@ class Scraper:
             delay_range: Tuple (min, max) seconds to sleep between requests.
             default_timeout: Default timeout in seconds for requests.
             html_cache: HtmlCache instance for caching HTML responses.
+            cookie_file: Path to cookie persistence file.
         """
         # Primary: curl-cffi session with browser impersonation
-        self.scraper: requests.Session = requests.Session(impersonate="chrome120")
+        self.scraper: requests.Session = requests.Session(impersonate="chrome")
 
         self.delay_range = delay_range
         self.default_timeout = default_timeout
@@ -61,43 +63,53 @@ class Scraper:
         # HTML caching
         self.html_cache = html_cache
 
-        # Track domains where we've obtained browser cookies
+        # Track domains where we have obtained browser cookies
         self._browser_cookies_obtained: set[str] = set()
+
+        # Browser fallback state
+        self._driver: Any | None = None
+        self._virtual_display: Any | None = None
+        self._domains_cleared: set[str] = set()
 
         # Set default headers to request English content and desktop version
         self.scraper.headers.update(
             {
                 "Accept-Language": "en-GB,en;q=0.9",
-                "User-Agent": (
-                    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-                    "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-                ),
             }
         )
 
         # Cookie persistence
-        self.cookie_file = ".cookies.json"
+        self.cookie_file = cookie_file
         self._load_cookies()
 
+        # Guarantee browser and display cleanup on exit
+        atexit.register(self.close)
+
     def _load_cookies(self) -> None:
-        """Loads cookies from disk if they exist."""
+        """Loads cookies and user-agent from disk if they exist."""
         if not os.path.exists(self.cookie_file):
             return
 
         try:
             with open(self.cookie_file, encoding="utf-8") as f:
-                cookies = json.load(f)
+                data = json.load(f)
+                cookies: list[dict[str, Any]] = []
+                if isinstance(data, dict):
+                    cookies = data.get("cookies", [])
+                    user_agent = data.get("user_agent")
+                    if user_agent and isinstance(user_agent, str):
+                        self.scraper.headers.update({"User-Agent": user_agent})
+                elif isinstance(data, list):
+                    cookies = data
+
                 for cookie_dict in cookies:
-                    # Apply each cookie to the curl-cffi session cookies
                     self.scraper.cookies.set(
                         cookie_dict["name"],
                         cookie_dict["value"],
                         domain=cookie_dict.get("domain", ""),
                         path=cookie_dict.get("path", "/"),
                     )
-                    # Pre-populate obtained domains so we can track reuse
                     if "domain" in cookie_dict:
-                        # Strip leading dot for consistency if present
                         domain = cookie_dict["domain"]
                         if domain.startswith("."):
                             domain = domain[1:]
@@ -107,11 +119,10 @@ class Scraper:
             logger.warning("cookie_load_failed", error=str(e))
 
     def _save_cookies(self) -> None:
-        """Saves current session cookies to disk."""
+        """Saves current session cookies and User-Agent to disk."""
         try:
             cookies = []
             for cookie in self.scraper.cookies.jar:
-                # Convert cookie objects to a JSON-serializable format
                 cookies.append(
                     {
                         "name": cookie.name,
@@ -120,8 +131,12 @@ class Scraper:
                         "path": cookie.path,
                     }
                 )
+            payload = {
+                "user_agent": self.scraper.headers.get("User-Agent", ""),
+                "cookies": cookies,
+            }
             with open(self.cookie_file, "w", encoding="utf-8") as f:
-                json.dump(cookies, f, indent=2)
+                json.dump(payload, f, indent=2)
             logger.info("cookies_saved_to_disk", count=len(cookies))
         except Exception as e:
             logger.warning("cookie_save_failed", error=str(e))
@@ -156,7 +171,6 @@ class Scraper:
 
     def _get_chrome_info(self) -> tuple[str | None, int | None]:
         """Detect Chrome/Chromium binary and its major version."""
-        # Common binary names in order of preference
         binaries = [
             "google-chrome",
             "google-chrome-stable",
@@ -164,7 +178,6 @@ class Scraper:
             "chromium-browser",
         ]
 
-        # Check explicitly known paths first if they exist
         known_paths = ["/usr/bin/google-chrome", "/usr/bin/google-chrome-stable"]
         for path in known_paths:
             if os.path.exists(path):
@@ -172,7 +185,6 @@ class Scraper:
                 if version:
                     return path, version
 
-        # Search in PATH
         for binary in binaries:
             binary_path = shutil.which(binary)
             if binary_path:
@@ -185,9 +197,7 @@ class Scraper:
     def _get_binary_version(self, path: str) -> int | None:
         """Get major version of a Chrome/Chromium binary."""
         try:
-            # Dynamic path from which(); required to execute binary
             output = subprocess.check_output([path, "--version"], text=True)  # noqa: S603
-            # Output format: "Google Chrome 120.0.6099.109" or "Chromium 120.0.6099.109"
             parts = output.strip().split()
             for part in parts:
                 if "." in part:
@@ -198,182 +208,281 @@ class Scraper:
             logger.debug("version_check_failed", path=path, error=str(e))
         return None
 
-    def _obtain_browser_cookies(self, url: str, retries: int = 2) -> bool:
-        """Use undetected-chromedriver to bypass Cloudflare and obtain cookies.
+    def _init_browser(self) -> Any:
+        """Initializes undetected-chromedriver with virtual display if needed."""
+        if self._driver is not None:
+            return self._driver
 
-        Opens a real browser window (or virtual display in headless environments),
-        waits for challenge to resolve, then extracts cookies and applies them
-        to the curl-cffi session.
+        has_display = os.environ.get("DISPLAY") is not None
+        if not has_display and self._virtual_display is None:
+            try:
+                from pyvirtualdisplay import Display
 
-        Args:
-            url: The target URL that triggered the challenge.
-            retries: Number of retries for browser initialization/solving.
-
-        Returns:
-            True if cookies were obtained successfully, False otherwise.
-        """
-        from urllib.parse import urlparse
+                logger.info("virtual_display_starting", reason="no_display")
+                self._virtual_display = Display(visible=False, size=(1920, 1080))
+                self._virtual_display.start()
+            except Exception as e:
+                logger.warning("virtual_display_start_failed", error=str(e))
+                logger.warning("Install Xvfb with: sudo apt-get install xvfb")
 
         import undetected_chromedriver as uc
 
-        parsed = urlparse(url)
+        options = uc.ChromeOptions()
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
+        options.add_argument("--ignore-gpu-blocklist")
+        options.add_argument("--enable-webgl")
+        options.add_argument("--disable-features=WebGPU")
+        options.add_argument("--window-size=1920,1080")
+
+        browser_path, browser_version = self._get_chrome_info()
+        if browser_path:
+            logger.info("detected_browser", path=browser_path, version=browser_version)
+        else:
+            logger.warning("no_browser_detected_falling_back_to_defaults")
+
+        # Monkey-patch undetected_chromedriver to re-sign binary on macOS
+        import sys
+
+        import undetected_chromedriver.patcher
+
+        if not hasattr(undetected_chromedriver.patcher.Patcher, "_is_patched_for_mac"):
+            original_patch = undetected_chromedriver.patcher.Patcher.patch_exe
+
+            def patched_patch_exe(
+                patcher_self: Any, original_patch: Any = original_patch
+            ) -> Any:
+                original_patch(patcher_self)
+                if sys.platform.startswith("darwin"):
+                    try:
+                        logger.info("Codesigning patched executable for macOS")
+                        subprocess.check_call(  # noqa: S603
+                            ["codesign", "-f", "-s", "-", patcher_self.executable_path]  # noqa: S607
+                        )
+                    except Exception as err:
+                        logger.warning("codesign_failed", error=str(err))
+
+            undetected_chromedriver.patcher.Patcher.patch_exe = patched_patch_exe
+            undetected_chromedriver.patcher.Patcher._is_patched_for_mac = True
+
+        self._driver = uc.Chrome(
+            options=options,
+            browser_executable_path=browser_path,
+            version_main=browser_version,
+        )
+        return self._driver
+
+    def close_browser(self) -> None:
+        """Closes active browser and virtual display if running."""
+        if self._driver is not None:
+            try:
+                self._driver.quit()
+            except Exception as e:
+                logger.debug("exception_during_driver_quit", error=str(e))
+            self._driver = None
+        if self._virtual_display is not None:
+            try:
+                self._virtual_display.stop()
+            except Exception as e:
+                logger.debug("exception_during_display_stop", error=str(e))
+            self._virtual_display = None
+        self._domains_cleared.clear()
+
+    def close(self) -> None:
+        """Closes all browser and driver resources."""
+        with suppress(Exception):
+            atexit.unregister(self.close)
+        self.close_browser()
+
+    def _is_challenge_title(self, title: str) -> bool:
+        """Checks if page title indicates Cloudflare challenge/verification."""
+        return "Just a moment" in title or "Checking" in title
+
+    def __enter__(self) -> "Scraper":
+        return self
+
+    def __exit__(self, *args: Any) -> None:
+        self.close()
+
+    def _click_turnstile(
+        self, driver: Any, click_x: int = 533, click_y: int = 336
+    ) -> bool:
+        """Dispatches CDP mouse events directly to Turnstile widget coordinates."""
+        try:
+            logger.info("dispatching_turnstile_cdp_click", x=click_x, y=click_y)
+            driver.execute_cdp_cmd(
+                "Input.dispatchMouseEvent",
+                {
+                    "type": "mouseMoved",
+                    "x": click_x,
+                    "y": click_y,
+                    "pointerType": "mouse",
+                },
+            )
+            time.sleep(0.15)
+            driver.execute_cdp_cmd(
+                "Input.dispatchMouseEvent",
+                {
+                    "type": "mousePressed",
+                    "button": "left",
+                    "buttons": 1,
+                    "clickCount": 1,
+                    "x": click_x,
+                    "y": click_y,
+                    "pointerType": "mouse",
+                },
+            )
+            time.sleep(0.15)
+            driver.execute_cdp_cmd(
+                "Input.dispatchMouseEvent",
+                {
+                    "type": "mouseReleased",
+                    "button": "left",
+                    "buttons": 0,
+                    "clickCount": 1,
+                    "x": click_x,
+                    "y": click_y,
+                    "pointerType": "mouse",
+                },
+            )
+            return True
+        except Exception as e:
+            logger.debug("turnstile_click_attempt_failed", error=str(e))
+            return False
+
+    def _fetch_via_browser(
+        self,
+        url: str,
+        params: dict[str, str] | None = None,
+        retries: int = 2,
+    ) -> CachedResponse | None:
+        """Fetches page directly using undetected-chromedriver when challenged.
+
+        Navigates to base domain first if not already cleared to solve Turnstile,
+        then navigates to target URL and returns page HTML as CachedResponse.
+        """
+        from urllib.parse import urlencode, urlparse
+
+        full_url = url
+        if params:
+            delim = "&" if "?" in url else "?"
+            full_url = f"{url}{delim}{urlencode(params)}"
+
+        parsed = urlparse(full_url)
         base_url = f"{parsed.scheme}://{parsed.netloc}/"
+        domain = parsed.netloc
 
         for attempt in range(retries + 1):
-            logger.info(
-                "opening_browser_for_cookies",
-                domain=parsed.netloc,
-                attempt=attempt + 1,
-                max_attempts=retries + 1,
-            )
-
-            # Check if we have a display (for cron/headless environments)
-            has_display = os.environ.get("DISPLAY") is not None
-            virtual_display = None
-
-            if not has_display:
-                try:
-                    from pyvirtualdisplay import Display
-
-                    logger.info("virtual_display_starting", reason="no_display")
-                    virtual_display = Display(visible=False, size=(1920, 1080))
-                    virtual_display.start()
-                except Exception as e:
-                    logger.warning("virtual_display_start_failed", error=str(e))
-                    logger.warning("Install Xvfb with: sudo apt-get install xvfb")
-
-            options = uc.ChromeOptions()
-            options.add_argument("--no-sandbox")
-            options.add_argument("--disable-dev-shm-usage")
-            # Detect browser path and version dynamically
-            browser_path, browser_version = self._get_chrome_info()
-            if browser_path:
-                logger.info(
-                    "detected_browser", path=browser_path, version=browser_version
-                )
-            else:
-                logger.warning("no_browser_detected_falling_back_to_defaults")
-
-            driver = None
             try:
-                from webdriver_manager.chrome import ChromeDriverManager
+                driver = self._init_browser()
 
-                driver_path = ChromeDriverManager(
-                    driver_version=str(browser_version) if browser_version else None
-                ).install()
+                # Step 1: Ensure root domain is cleared
+                if domain not in self._domains_cleared:
+                    logger.info(
+                        "clearing_cloudflare_on_root_domain",
+                        domain=domain,
+                        base_url=base_url,
+                    )
+                    driver.get(base_url)
+                    time.sleep(5)  # Wait for Turnstile telemetry initialization
 
-                # Monkey-patch undetected_chromedriver to re-sign the binary on macOS
-                # since patching it invalidates the ad-hoc signature on Apple Silicon
-                import subprocess
-                import sys
-
-                import undetected_chromedriver.patcher
-
-                if not hasattr(
-                    undetected_chromedriver.patcher.Patcher, "_is_patched_for_mac"
-                ):
-                    original_patch = undetected_chromedriver.patcher.Patcher.patch_exe
-
-                    def patched_patch_exe(
-                        self: Any, original_patch: Any = original_patch
-                    ) -> Any:
-                        original_patch(self)
-                        if sys.platform.startswith("darwin"):
-                            try:
-                                logger.info("Codesigning patched executable for macOS")
-                                # Dynamic path required for the downloaded driver
-                                subprocess.check_call(  # noqa: S603
-                                    ["codesign", "-f", "-s", "-", self.executable_path]  # noqa: S607
+                    if self._is_challenge_title(driver.title):
+                        self._click_turnstile(driver)
+                        # Wait for resolution
+                        for _ in range(15):
+                            time.sleep(1)
+                            title = driver.title
+                            if not self._is_challenge_title(title):
+                                logger.info(
+                                    "root_domain_turnstile_cleared",
+                                    domain=domain,
+                                    title=title,
                                 )
-                            except Exception as e:
-                                logger.warning("codesign_failed", error=str(e))
+                                self._domains_cleared.add(domain)
+                                break
+                        if domain not in self._domains_cleared:
+                            logger.error(
+                                "root_domain_turnstile_failed_to_clear",
+                                domain=domain,
+                            )
+                            if attempt < retries:
+                                self.close_browser()
+                                continue
+                            return None
+                    else:
+                        self._domains_cleared.add(domain)
 
-                    undetected_chromedriver.patcher.Patcher.patch_exe = (
-                        patched_patch_exe
+                # Step 2: Navigate to target URL
+                logger.info("browser_navigating_to_target", url=full_url)
+                driver.get(full_url)
+                time.sleep(2)
+
+                # Step 3: Check if deep URL challenged
+                if self._is_challenge_title(driver.title):
+                    logger.warning(
+                        "target_url_challenged_attempting_click", url=full_url
                     )
-                    undetected_chromedriver.patcher.Patcher._is_patched_for_mac = True
+                    time.sleep(2)
+                    self._click_turnstile(driver)
+                    for _ in range(15):
+                        time.sleep(1)
+                        if not self._is_challenge_title(driver.title):
+                            break
 
-                driver = uc.Chrome(
-                    options=options,
-                    browser_executable_path=browser_path,
-                    driver_executable_path=driver_path,
-                    version_main=browser_version,
-                )
-                driver.get(base_url)
-
-                # Wait for Cloudflare challenge to resolve
-                logger.info("waiting_for_cloudflare_challenge")
-                max_wait = 30
-                for i in range(max_wait):
-                    time.sleep(1)
-                    title = driver.title
-                    if "Just a moment" not in title and "Checking" not in title:
-                        break
-                    if i % 5 == 0:
-                        logger.debug(
-                            "cloudflare_challenge_wait_progress",
-                            seconds=i,
-                            max_wait=max_wait,
-                        )
-
-                # Check if challenge was solved
-                if "Just a moment" in driver.title:
-                    logger.error("browser_fallback_failed_challenge_not_solved")
+                if self._is_challenge_title(driver.title):
+                    logger.error("browser_fetch_failed_still_challenged", url=full_url)
                     if attempt < retries:
+                        self.close_browser()
                         continue
-                    raise CloudflareError(
-                        "Managed challenge not solved by browser",
-                        url=url,
-                        challenge_type="managed",
-                    )
+                    return None
 
-                # Extract cookies and apply to curl-cffi session
-                cookies = driver.get_cookies()
-                for cookie in cookies:
-                    self.scraper.cookies.set(
-                        cookie["name"],
-                        cookie["value"],
-                        domain=cookie.get("domain", ""),
-                        path=cookie.get("path", "/"),
-                    )
-
-                # Save new cookies to disk
-                self._save_cookies()
-
-                # Also update user-agent to match the browser
-                user_agent = driver.execute_script("return navigator.userAgent;")
-                self.scraper.headers.update({"User-Agent": user_agent})
+                # Step 4: Extract page source and session cookies
+                page_source = driver.page_source
+                try:
+                    cookies = driver.get_cookies()
+                    for cookie in cookies:
+                        self.scraper.cookies.set(
+                            cookie["name"],
+                            cookie["value"],
+                            domain=cookie.get("domain", ""),
+                            path=cookie.get("path", "/"),
+                        )
+                    user_agent = driver.execute_script("return navigator.userAgent;")
+                    if user_agent and isinstance(user_agent, str):
+                        self.scraper.headers.update({"User-Agent": user_agent})
+                    self._save_cookies()
+                except Exception as ce:
+                    logger.debug("cookie_sync_failed", error=str(ce))
 
                 logger.info(
-                    "browser_bypass_successful",
-                    cookie_count=len(cookies),
-                    domain=parsed.netloc,
+                    "browser_page_fetch_successful",
+                    url=full_url,
+                    length=len(page_source),
                 )
-                return True
+                return CachedResponse(text=page_source, status_code=200)
 
             except Exception as e:
                 logger.error(
-                    "browser_fallback_error",
+                    "browser_fetch_exception",
                     error=str(e),
                     attempt=attempt + 1,
+                    url=full_url,
                 )
+                self.close_browser()
                 if attempt < retries:
-                    time.sleep(5)  # Wait before retry
+                    time.sleep(3)
                     continue
-                return False
-            finally:
-                if driver:
-                    try:
-                        driver.quit()
-                    except Exception as e:
-                        logger.debug(f"Exception ignored during quit: {e}")
-                if virtual_display:
-                    try:
-                        virtual_display.stop()
-                    except Exception as e:
-                        logger.debug(f"Exception ignored during stop: {e}")
+                return None
 
-        return False
+        return None
+
+    def _obtain_browser_cookies(self, url: str, retries: int = 2) -> bool:
+        """Legacy helper: bypass Cloudflare and obtain cookies.
+
+        Delegates to _fetch_via_browser and returns True if successful.
+        """
+        resp = self._fetch_via_browser(url, retries=retries)
+        return resp is not None
 
     def get(
         self,
@@ -386,8 +495,7 @@ class Scraper:
     ) -> Response | CachedResponse | None:
         """Perform a GET request with rate limiting and retries.
 
-        Primary: uses curl-cffi with 'chrome120' impersonation to bypass TLS-based
-        detection.
+        Primary: uses curl-cffi with browser impersonation to bypass TLS checks.
         Fallback: uses undetected-chromedriver for managed challenges (Turnstile).
 
         Args:
@@ -407,7 +515,8 @@ class Scraper:
         if params:
             from urllib.parse import urlencode
 
-            full_url = f"{url}?{urlencode(params)}"
+            delim = "&" if "?" in url else "?"
+            full_url = f"{url}{delim}{urlencode(params)}"
 
         # Check cache before rate limiting (if enabled)
         if self.html_cache and cache_key_prefix and cache_year:
@@ -454,43 +563,17 @@ class Scraper:
 
                 # Check for Cloudflare managed challenge (fallback to real browser)
                 if self._is_managed_challenge(response):
-                    # Only use browser if we haven't already obtained cookies for this
-                    # domain
-                    if domain not in self._browser_cookies_obtained:
-                        logger.warning("cloudflare_challenge_detected", domain=domain)
-
-                        if self._obtain_browser_cookies(url):
-                            self._browser_cookies_obtained.add(domain)
-                            # Retry the request with the new browser cookies
-                            logger.info("Retrying request with browser cookies...")
-                            response = self.scraper.get(url, params=params)
-
-                            if self._is_managed_challenge(response):
-                                logger.error("Still blocked after obtaining cookies")
-                                return None
-                        else:
-                            logger.error("browser_cookies_fetch_failed", domain=domain)
-                            return None
+                    logger.warning(
+                        "cloudflare_challenge_detected",
+                        domain=domain,
+                        url=full_url,
+                    )
+                    browser_response = self._fetch_via_browser(url, params=params)
+                    if browser_response is not None:
+                        response = browser_response
                     else:
-                        # We already have cookies but still getting challenged
-                        # (expired or invalidated)
-                        logger.error("cloudflare_cookies_expired", domain=domain)
-                        self._browser_cookies_obtained.discard(domain)
-
-                        if self._obtain_browser_cookies(url):
-                            self._browser_cookies_obtained.add(domain)
-                            response = self.scraper.get(url, params=params)
-                            if self._is_managed_challenge(response):
-                                logger.error("Still blocked after refreshing cookies")
-                                return None
-                        else:
-                            return None
-
-                # If first attempt succeeds without challenge and we had cookies, log it
-                if attempt == 0 and domain in self._browser_cookies_obtained:
-                    # Double check it's not a challenge before logging success
-                    if not self._is_managed_challenge(response):
-                        logger.debug("cookie_reuse_bypass_successful", domain=domain)
+                        logger.error("browser_fallback_failed", url=full_url)
+                        return None
 
                 response.raise_for_status()
 
@@ -500,7 +583,7 @@ class Scraper:
                         cache_year, cache_key_prefix, full_url, response.text
                     )
 
-                return cast(Response, response)
+                return cast(Response | CachedResponse, response)
 
             except RequestsError as e:
                 # Handle "Too many open files" specifically
@@ -515,14 +598,13 @@ class Scraper:
                             "or reduce concurrency/session usage."
                         ),
                     )
-                    # Fatal for the current process unless we close descriptors
                     return None
 
                 status_code = getattr(e, "response", None)
                 if status_code:
                     status_code = status_code.status_code
 
-                # Determine if it's retryable
+                # Determine if it is retryable
                 retryable = True
                 if status_code in (400, 401, 403, 404):
                     retryable = False
