@@ -7,7 +7,7 @@ import structlog
 from src.event_filter import OringenFilter
 from src.models import Event, Race, Url
 from src.scraper import Scraper
-from src.sources.base_source import BaseSource
+from src.sources.base_source import BaseSource, EventListFetchError
 from src.sources.eventor_parser import EventorParser
 from src.utils.date_and_time import parse_date_to_iso
 from src.utils.fingerprint import Participant
@@ -89,9 +89,12 @@ class EventorSource(BaseSource):
         list_url = f"{self.base_url}/Events"
 
         response = self.scraper.get(list_url, params=params)
-        if not response:
+        if not response or not response.text.strip():
             logger.error("event_list_fetch_failed", country=self.country)
-            return []
+            raise EventListFetchError(
+                f"Failed to fetch event list for {self.country} from {list_url}",
+                country=self.country,
+            )
 
         events = self.parser.parse_event_list(
             response.text, self.country, self.base_url

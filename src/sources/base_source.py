@@ -3,6 +3,14 @@ from abc import ABC, abstractmethod
 from src.models import Event
 
 
+class EventListFetchError(Exception):
+    """Raised when fetching an event listing fails."""
+
+    def __init__(self, message: str, country: str | None = None) -> None:
+        super().__init__(message)
+        self.country = country
+
+
 class BaseSource(ABC):
     """Abstract base class for event sources."""
 
