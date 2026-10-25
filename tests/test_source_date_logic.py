@@ -234,3 +234,52 @@ def test_preliminary_date_range_derivation() -> None:
     assert event3.is_date_preliminary is False
     assert event3.start_time == "2027-06-10"
     assert event3.end_time == "2027-06-16"
+
+    # Scenario 4: Missing Date attribute resets preliminary state to False
+    event4 = Event(
+        id="IOF_5555",
+        name="Missing Date Attribute",
+        start_time="",
+        end_time="",
+        status="Planned",
+        original_status="Planned",
+        races=[
+            Race(
+                race_number=1,
+                name="Race 1",
+                datetimez="2027-08-01T10:00:00+02:00",
+                discipline="MTBO",
+            )
+        ],
+        is_date_preliminary=True,
+    )
+    attributes4: dict[str, str] = {}
+    parser._derive_event_dates(event4, attributes4, venue_country="SWE")
+
+    assert event4.is_date_preliminary is False
+
+    # Scenario 5: Preliminary range with explicit race from race table preserved
+    table_race = Race(
+        race_number=1,
+        name="Explicit Stage",
+        datetimez="2027-06-12T10:00:00+00:00",
+        discipline="MTBO",
+    )
+    table_race._from_race_table = True
+
+    event5 = Event(
+        id="IOF_8559_table",
+        name="Preliminary Range with Explicit Race",
+        start_time="",
+        end_time="",
+        status="Planned",
+        original_status="Planned",
+        races=[table_race],
+    )
+    attributes5 = {"Date": "10 June 2027 - 16 June 2027 (Date is preliminary)"}
+    parser._derive_event_dates(event5, attributes5, venue_country="GBR")
+
+    assert event5.is_date_preliminary is True
+    assert event5.start_time == "2027-06-10"
+    assert event5.end_time == "2027-06-16"
+    assert event5.races[0].datetimez == "2027-06-12T10:00:00+00:00"
