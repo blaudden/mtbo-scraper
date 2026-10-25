@@ -972,6 +972,21 @@ class EventorParser:
         # Prioritize the "Date" attribute as the source of truth for the event duration.
         date_str = attributes.get("Date")
         if date_str:
+            if "date is preliminary" in date_str.lower():
+                event.is_date_preliminary = True
+                date_str = re.sub(
+                    r"\s*\(\s*Date is preliminary\s*\)",
+                    "",
+                    date_str,
+                    flags=re.IGNORECASE,
+                )
+                date_str = re.sub(
+                    r"\s*Date is preliminary\s*",
+                    "",
+                    date_str,
+                    flags=re.IGNORECASE,
+                ).strip()
+
             dates_derived = False
             if " - " in date_str:
                 # Parse date range (e.g., "Monday 21 July 2025 - Saturday 26 July 2025")
@@ -1013,9 +1028,12 @@ class EventorParser:
                     )
 
                     # Update if missing date OR if date differs from start_time
+                    # OR if date is preliminary (backfill placeholder race)
                     # OR if we found a specific time and the current one is midnight
                     if (
                         not event.races[0].datetimez
+                        or event.is_date_preliminary
+                        or current_race_date < event.start_time
                         or (
                             event.start_time == event.end_time
                             and current_race_date != event.start_time

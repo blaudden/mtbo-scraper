@@ -1,5 +1,5 @@
 from dataclasses import asdict, dataclass, field
-from typing import TypedDict
+from typing import NotRequired, TypedDict
 
 
 class PositionDict(TypedDict):
@@ -96,6 +96,7 @@ class EventDict(TypedDict):
     races: list[RaceDict]
     documents: list[DocumentDict]
     entry_deadlines: list[EntryDeadlineDict]
+    is_date_preliminary: NotRequired[bool]
 
 
 class SourceDict(TypedDict):
@@ -344,6 +345,7 @@ class Event:
     region: str | None = None
     punching_system: str | None = None
     entry_deadlines: list[EntryDeadline] = field(default_factory=list)
+    is_date_preliminary: bool = False
 
     def to_dict(self) -> EventDict:
         """Converts the Event object to a dictionary matching the JSON Schema structure.
@@ -433,6 +435,7 @@ class Event:
                 EntryDeadlineDict(type=d.type, datetimez=d.datetimez)
                 for d in self.entry_deadlines
             ],
+            "is_date_preliminary": self.is_date_preliminary,
         }
 
     @classmethod
@@ -483,6 +486,7 @@ class Event:
                 EntryDeadline(type=d["type"], datetimez=d["datetimez"])
                 for d in data.get("entry_deadlines", [])
             ],
+            is_date_preliminary=data.get("is_date_preliminary", False),
         )
 
 
