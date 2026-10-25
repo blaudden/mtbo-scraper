@@ -972,8 +972,9 @@ class EventorParser:
         # Prioritize the "Date" attribute as the source of truth for the event duration.
         date_str = attributes.get("Date")
         if date_str:
-            if "date is preliminary" in date_str.lower():
-                event.is_date_preliminary = True
+            is_prelim = "date is preliminary" in date_str.lower()
+            event.is_date_preliminary = is_prelim
+            if is_prelim:
                 date_str = re.sub(
                     r"\s*\(\s*Date is preliminary\s*\)",
                     "",
@@ -1027,19 +1028,31 @@ class EventorParser:
                         else ""
                     )
 
-                    # Update if missing date OR if date differs from start_time
-                    # OR if date is preliminary (backfill placeholder race)
-                    # OR if we found a specific time and the current one is midnight
-                    if (
+                    # Update if missing date, if date preceded event start (shift),
+                    # if a single-day event date shifted, or if preliminary placeholder
+                    # lacks explicit time. Preserve valid explicit race datetimes.
+                    needs_backfill = (
                         not event.races[0].datetimez
-                        or event.is_date_preliminary
                         or current_race_date < event.start_time
                         or (
                             event.start_time == event.end_time
                             and current_race_date != event.start_time
                         )
-                        or (time and "T00:00:00" in event.races[0].datetimez)
-                    ):
+                        or (
+                            event.is_date_preliminary
+                            and current_race_date != event.start_time
+                            and (
+                                not event.races[0].datetimez
+                                or "T00:00:00" in event.races[0].datetimez
+                                or "+00:00" in event.races[0].datetimez
+                            )
+                        )
+                    )
+
+                    has_midnight = bool(
+                        time and "T00:00:00" in (event.races[0].datetimez or "")
+                    )
+                    if needs_backfill or has_midnight:
                         event.races[0].datetimez = format_iso_datetime(
                             event.start_time, time, venue_country, offset=offset
                         )
