@@ -159,3 +159,78 @@ def test_source_date_logic_scenarios(
         f"Race dates mismatch for {event_id}.\nExpected: {expected_race_dates}\n"
         f"Actual:   {actual_race_dates}"
     )
+
+
+def test_preliminary_date_range_derivation() -> None:
+    """Verifies that 'Date is preliminary' in IOF Date attribute is detected,
+    flagged on event, and stripped so date range is parsed cleanly."""
+    from src.sources.eventor_parser import EventorParser
+
+    parser = EventorParser()
+
+    # Scenario 1: Multi-day range with preliminary note (like IOF 8559)
+    event1 = Event(
+        id="IOF_8559",
+        name="CX80 World MTB Orienteering Championships 2027",
+        start_time="2027-06-09",
+        end_time="2027-06-09",
+        status="Sanctioned",
+        original_status="Active",
+        races=[
+            Race(
+                race_number=1,
+                name="CX80 World MTB Orienteering Championships 2027",
+                datetimez="2027-06-09T21:00:00+00:00",
+                discipline="Other",
+            )
+        ],
+    )
+    attributes1 = {"Date": "10 June 2027 - 16 June 2027 (Date is preliminary)"}
+    parser._derive_event_dates(event1, attributes1, venue_country="LVA")
+
+    assert event1.is_date_preliminary is True
+    assert event1.start_time == "2027-06-10"
+    assert event1.end_time == "2027-06-16"
+    assert event1.races[0].datetimez == "2027-06-10T00:00:00+03:00"
+
+    # Scenario 2: Single date with preliminary note
+    event2 = Event(
+        id="IOF_9999",
+        name="Preliminary Single Day",
+        start_time="",
+        end_time="",
+        status="Planned",
+        original_status="Planned",
+        races=[
+            Race(
+                race_number=1,
+                name="Race 1",
+                datetimez="",
+                discipline="MTBO",
+            )
+        ],
+    )
+    attributes2 = {"Date": "15 July 2027 (Date is preliminary)"}
+    parser._derive_event_dates(event2, attributes2, venue_country="SWE")
+
+    assert event2.is_date_preliminary is True
+    assert event2.start_time == "2027-07-15"
+    assert event2.end_time == "2027-07-15"
+    assert event2.races[0].datetimez == "2027-07-15T00:00:00+02:00"
+
+    # Scenario 3: Standard range without preliminary note
+    event3 = Event(
+        id="IOF_1234",
+        name="Normal Range",
+        start_time="",
+        end_time="",
+        status="Sanctioned",
+        original_status="Active",
+        races=[],
+    )
+    attributes3 = {"Date": "10 June 2027 - 16 June 2027"}
+    parser._derive_event_dates(event3, attributes3, venue_country="LVA")
+
+    assert event3.is_date_preliminary is False
+    assert event3.start_time == "2027-06-10"
+    assert event3.end_time == "2027-06-16"

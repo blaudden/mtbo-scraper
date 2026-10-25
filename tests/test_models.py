@@ -53,6 +53,7 @@ def test_event_roundtrip_full() -> None:
         entry_deadlines=[
             EntryDeadline(type="normal", datetimez="2022-12-20T23:59:00+01:00"),
         ],
+        is_date_preliminary=True,
         races=[
             Race(
                 race_number=1,
@@ -103,6 +104,7 @@ def test_event_roundtrip_minimal() -> None:
     # Validate defaults are set correctly
     assert original.types == []
     assert original.tags == []
+    assert original.is_date_preliminary is False
 
     as_dict = original.to_dict()
     reconstructed = Event.from_dict(as_dict)
@@ -110,3 +112,4 @@ def test_event_roundtrip_minimal() -> None:
     assert reconstructed == original
     assert reconstructed.id == "SWE_MIN"
     assert reconstructed.races == []
+    assert reconstructed.is_date_preliminary is False
