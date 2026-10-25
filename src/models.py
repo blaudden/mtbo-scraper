@@ -268,6 +268,7 @@ class Race:
 
     # Internal tracking
     _internal_eventor_id: str | None = None
+    _from_race_table: bool = False
 
     @classmethod
     def from_dict(cls, data: RaceDict) -> "Race":

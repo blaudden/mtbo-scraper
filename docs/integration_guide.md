@@ -46,6 +46,7 @@ Update `src/content/config.ts` to match the **v2.0 schema**.
 > The schema follows IOF 3.0 terminology. Significant fields:
 > - `id`: String (e.g., `SWE_53106`)
 > - `status`: Enum (`Planned`, `Applied`, `Proposed`, `Sanctioned`, `Canceled`, `Rescheduled`)
+> - `is_date_preliminary`: Boolean flag indicating that the event date is preliminary.
 > - `types`: Array of Strings (e.g., `["World Championships", "World Cup"]`)
 > - `races`: Array of `Race` objects (each with `datetimez`, `discipline`, `position`, `urls`, `documents`)
 > - `urls` and `documents`: Structured lists with `type`, `title`, and `url`.
