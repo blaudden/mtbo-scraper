@@ -107,6 +107,13 @@ def test_event_roundtrip_minimal() -> None:
     assert original.is_date_preliminary is False
 
     as_dict = original.to_dict()
+
+    # Test backward compatibility when is_date_preliminary is absent
+    legacy_dict = dict(as_dict)
+    legacy_dict.pop("is_date_preliminary", None)
+    from_legacy = Event.from_dict(legacy_dict)
+    assert from_legacy.is_date_preliminary is False
+
     reconstructed = Event.from_dict(as_dict)
 
     assert reconstructed == original

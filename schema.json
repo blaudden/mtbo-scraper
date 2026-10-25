@@ -248,6 +248,9 @@
                     "items": {
                         "$ref": "#/$defs/EntryDeadline"
                     }
+                },
+                "is_date_preliminary": {
+                    "type": "boolean"
                 }
             },
             "required": [
