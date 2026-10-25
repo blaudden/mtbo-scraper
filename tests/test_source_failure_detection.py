@@ -81,6 +81,21 @@ def test_eventor_parser_returns_empty_list_for_recognized_empty_page() -> None:
     assert events == []
 
 
+def test_eventor_parser_returns_empty_list_when_eventlist_container_omitted() -> None:
+    """Eventor omits #eventList entirely when no events match the query."""
+    from src.sources.eventor_parser import EventorParser
+
+    parser = EventorParser()
+    calendar_html = (
+        "<html><head><title>Eventor - Event calendar</title></head>"
+        "<body><div id='main'><div id='eventor-filter'></div>"
+        "<div class='toolbar16'></div></div></body></html>"
+    )
+
+    events = parser.parse_event_list(calendar_html, "NOR")
+    assert events == []
+
+
 @patch("src.main.split_range_by_year")
 @patch("src.main.irregular_chunk_date_range")
 @patch("src.sources.eventor_source.EventorSource.fetch_event_list")

@@ -226,6 +226,21 @@ class EventorParser:
         soup = BeautifulSoup(html_content, "lxml")
         event_list_container = soup.find(id="eventList")
         if event_list_container is None:
+            # When zero events match the requested date range, Eventor renders
+            # a valid calendar page with filter forms and toolbars but omits
+            # the #eventList container entirely.
+            is_empty_calendar = bool(
+                soup.find(id="eventor-filter")
+                or (soup.find(id="main") and soup.find(class_="toolbar16"))
+                or (
+                    soup.title
+                    and "Eventor" in soup.title.get_text()
+                    and soup.find(id="content")
+                )
+            )
+            if is_empty_calendar:
+                return []
+
             raise EventListFetchError(
                 f"Invalid or unrecognized event list page structure for {country}",
                 country=country,
